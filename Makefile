@@ -1,3 +1,3 @@
 
 all:
-	bundle exec jekyll
+	bundle exec jekyll serve --watch
