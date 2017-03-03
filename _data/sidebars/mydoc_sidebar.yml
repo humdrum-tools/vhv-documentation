@@ -32,6 +32,19 @@ entries:
       url: /mydoc_introduction.html
       output: web, pdf
 
+  - title: User Interface
+    output: web, pdf
+    folderitems:
+
+    - title: Overview
+      url: /mydoc_interface_overview.html
+      output: web, pdf
+
+    - title: Help menu
+      url: /mydoc_interface_help_menu.html
+      output: web, pdf
+
+
   - title: Tag archives
     output: web
     folderitems:

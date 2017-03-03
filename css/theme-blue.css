@@ -48,7 +48,7 @@ a[data-toggle="tooltip"] {
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: #015CAE;
-    color: #ffffff;
+    color: #fffcf1;
 }
 
 /* not sure if using this ...*/
@@ -57,7 +57,7 @@ a[data-toggle="tooltip"] {
 }
 
 .btn-primary {
-    color: #ffffff;
+    color: #fffcf1;
     background-color: #01313F;
     border-color: #01313F;
 }
@@ -113,4 +113,8 @@ li.sidebarTitle {
   -webkit-transform: scaleX(-1); /* Webkit */
   transform: scaleX(-1);         /* Standard */
   filter: FlipH;                 /* IE 6/7/8 */
+}
+
+body {
+	background-color: #fffcf1;
 }
