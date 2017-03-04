@@ -1,7 +1,7 @@
 ---
 title: Help menu
 keywords: interface help menu
-last_updated: 2 March 2017
+last_updated: 3 Mar 2017
 tags: [getting_started]
 summary: "A tutorial on using the VHV help menu."
 sidebar: mydoc_sidebar

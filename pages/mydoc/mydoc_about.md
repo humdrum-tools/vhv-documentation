@@ -1,7 +1,7 @@
 ---
 title: About VHV
 keywords: documentation 
-last_updated: July 3, 2016
+last_updated: 3 Jul 2016
 tags: [getting_started]
 summary: "This is a summary"
 sidebar: mydoc_sidebar

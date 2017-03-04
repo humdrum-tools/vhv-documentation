@@ -18,7 +18,8 @@ h4 {color: #808080; }
 }
 
 .nav > li > a:hover {
-    background-color: #248ec2;
+    /* background-color: #248ec2; */
+	background-color: #990000;
 }
 
 div.navbar-collapse .dropdown-menu > li > a:hover {
@@ -37,9 +38,17 @@ a[data-toggle="tooltip"] {
     cursor: default;
 }
 
+.navbar-inverse a {
+    background-color: #01313F;
+    border: none;
+    color: transparent;
+    text-shadow: 0 0 2px #fffc1f;
+}
+
 .navbar-inverse {
     background-color: #01313F;
-    border-color: #015CAE;
+    border: none;
+    box-shadow: 0 2px 10px #01313F;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
@@ -104,7 +113,7 @@ li.sidebarTitle {
 
 .blur {
     color: transparent;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    text-shadow: 0 0 5px #fffcf1;
 }
 
 .flip {
@@ -117,4 +126,10 @@ li.sidebarTitle {
 
 body {
 	background-color: #fffcf1;
+ 	font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+	font-size: 1.60em;
 }
+
+
+
+

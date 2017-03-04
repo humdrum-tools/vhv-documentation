@@ -5,13 +5,16 @@
 	<img class="docimage" 
 		src="{{site.baseurl}}/images/{{include.file}}" 
 		alt="{{include.alt}}" 
-		{% if {{include.max-width}} or {{include.margin-left}} %}
+		{% if {{include.max-width}} or {{include.margin-left}} or {{include.shadow}} %}
 			style="
 			{% if {{include.max-width}} %}
 				max-width: {{include.max-width}};
 			{% endif %}
 			{% if {{include.margin-left}} %}
-				margin-width: {{include.margin-width}};
+				margin-left: {{include.margin-left}};
+			{% endif %}
+			{% if {{include.shadow}} %}
+				box-shadow: {{include.shadow}};
 			{% endif %}
 			"
 		{% endif %} 
@@ -21,7 +24,7 @@
 	{% endif %}
 	{% if {{include.caption}} %}
 		<figcaption
-		{% if {{include.margin-top}} or {{include.margin-left}} %}
+		{% if {{include.caption-margin-top}} or {{include.caption-margin-left}} %}
 			style="
 			{% if {{include.caption-margin-top}} %}
 				margin-top:{{include.caption-margin-top}};
