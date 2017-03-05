@@ -9,4 +9,3 @@ permalink: mydoc_about.html
 folder: mydoc
 ---
 
-{% include links.html %}

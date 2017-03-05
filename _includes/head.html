@@ -4,16 +4,17 @@
 <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
 <meta name="keywords" content="{{page.tags}}{% if page.tags %}, {% endif %} {{page.keywords}}">
 <title>{{ page.title }} | {{ site.site_title }}</title>
-<link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" }}">
+<link rel="stylesheet" href="{{ site.baseurl }}/{{ site.css }}/syntax.css" }}">
+
+{% include setup.html %}
 
 
-<link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
-<link rel="stylesheet" href="{{ site.baseurl }}/css/modern-business.css" >
-<link rel="stylesheet" href="{{ site.baseurl }}/css/lavish-bootstrap.css" >
-<link rel="stylesheet" href="{{ site.baseurl }}/css/customstyles.css" >
-<link rel="stylesheet" href="{{ site.baseurl }}/css/theme-blue.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/{{ site.css }}/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="{{ site.css }}/bootstrap.min.css">-->
+<link rel="stylesheet" href="{{ site.baseurl }}/{{ site.css }}/modern-business.css" >
+<link rel="stylesheet" href="{{ site.baseurl }}/{{ site.css }}/lavish-bootstrap.css" >
+<link rel="stylesheet" href="{{ site.baseurl }}/{{ site.css }}/style.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
@@ -35,3 +36,6 @@
 <![endif]-->
 
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.url }}">
+
+
+

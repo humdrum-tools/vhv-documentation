@@ -1,27 +1,67 @@
+{% comment %}
+
+Example usage:
+	{% include image.html
+		file="someimage.png"
+		url="http://verovio.humdrum.org"
+		alt="VHV main page"
+		caption="Text editor on the left and notation editor on the right"
+		margin-bottom="-20px"
+	%}
+
+
+Required parameters:
+	file         == URL of the image to display
+
+Optional parameters:
+	url          == URL to go to if image is clicked (otherwise, the image will
+			be opened in a separate window/tab.
+	alt          == alternate text if image cannot be displayed.
+	caption      == text describing the figure, displayed below the image.
+
+Optional Parameters with default values:
+	max-width    == maximum width of the image (default is 75% of the text width)
+	shadow="false" == do not draw a shadow under the image.  By default shadows
+		are displayed under images.
+	margin-bottom == margin of the bottom of the image.  Use negative values to
+		tighten up the spacing between the image and the caption.  By default
+		the bottom margin is set to 0%.
+
+{% endcomment %}
+
+
+
 <figure>
+	<div class="image-container">
 	{% if {{include.url}} %}
 		<a class="no_icon" target="_blank" href="{{include.url}}">
+	{% else %}
+		<a class="no_icon" target="_blank" href="{{include.file}}">
 	{% endif %}
-	<img class="docimage" 
-		src="{{site.baseurl}}/images/{{include.file}}" 
+	<img class="docimage
+		{% unless {{include.shadow}} %}
+			shadowed
+		{% endunless %}
+		" 
+		src="{{include.file}}" 
 		alt="{{include.alt}}" 
-		{% if {{include.max-width}} or {{include.margin-left}} or {{include.shadow}} %}
-			style="
-			{% if {{include.max-width}} %}
-				max-width: {{include.max-width}};
-			{% endif %}
-			{% if {{include.margin-left}} %}
-				margin-left: {{include.margin-left}};
-			{% endif %}
-			{% if {{include.shadow}} %}
-				box-shadow: {{include.shadow}};
-			{% endif %}
-			"
-		{% endif %} 
+		style="
+		{% if {{include.margin-bottom}} %}
+			margin-bottom: {{include.margin-bottom}};
+		{% endif %}
+		{% if {{include.max-width}} %}
+			max-width: {{include.max-width}};
+		{% endif %}
+		{% if {{include.margin-left}} %}
+			margin-left: {{include.margin-left}};
+		{% endif %}
+		{% if {{include.margin-top}} %}
+			margin-top: {{include.margin-top}};
+		{% endif %}
+		"
 	/>
-	{% if {{include.url}} %}
-		</a>
-	{% endif %}
+	</a>
+	</div>
 	{% if {{include.caption}} %}
 		<figcaption
 		{% if {{include.caption-margin-top}} or {{include.caption-margin-left}} %}
@@ -39,3 +79,6 @@
 		</figcaption>
 	{% endif %}
 </figure>
+
+
+

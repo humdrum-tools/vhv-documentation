@@ -1,0 +1,157 @@
+{% comment %}
+vim: ts=3 ft=javascript
+
+	This file is used to include content common to all webpages on the website
+
+{% endcomment %}
+
+<script>
+
+window.addEventListener("DOMContentLoaded", function() {
+	externalLinksToNewTab();
+	processSidebar();
+   updateHash(window.location.hash);
+	showSidebar();
+	showNavbar();
+});
+
+//////////////////////////////
+//
+// showNavbar --
+//
+
+function showNavbar() {
+	var navbars = document.querySelectorAll("ul.nav");
+	if (!navbars) {
+		return;
+	}
+	var i;
+	for (i=0; i<navbars.length; i++) {
+		navbars[i].style.visibility = "visible";
+	}
+}
+
+//////////////////////////////
+//
+// showSidebar --
+//
+
+function showSidebar() {
+	var sidebar = document.querySelector("ul#mysidebar");
+	if (!sidebar) {
+		return;
+	}
+	sidebar.style.visibility = "visible";
+	sidebar.style.display = "block";
+}
+
+
+
+//////////////////////////////
+//
+// externalLinksToNewTab -- Make all external links on a page be displayed
+//    in a new tab/window.
+//
+
+function externalLinksToNewTab() {
+	var links = document.querySelectorAll("a");
+	var i;
+	for (i=0; i<links.length; i++) {
+		var text = links[i].getAttribute("href");
+		if (text.match("//")) {
+			links[i].target = "_blank";
+		}
+	}
+}
+
+
+//////////////////////////////
+//
+// processSidebar --
+//
+
+function processSidebar() {
+	var sidebar = document.querySelector("#mysidebar");
+	var mainlist = sidebar.querySelectorAll("#mysidebar > li");
+	var i;
+	for (i=0; i<mainlist.length; i++) {
+		var classname = mainlist[i].className;
+		if (classname.match("sidebarTitle")) {
+			continue;
+		}
+		var foundit = processSubmenu(mainlist[i]);
+		if (foundit) {
+			mainlist[i].className += " active";
+			break;
+		}
+	}
+
+
+}
+
+
+
+//////////////////////////////
+//
+// processSubmenu --
+//
+
+function processSubmenu(list) {
+	newlist = list.querySelectorAll("ul > li > a");
+	var i;
+	var target = window.location.pathname.replace(/\/$/, "");
+	if (target == "") {
+		target = "/";
+	}
+	var found = 0;
+	var index = -1;
+	for (i=0; i<newlist.length; i++) {
+		if (target === newlist[i].getAttribute("href")) {
+			found = 1;
+			index = i;
+			break;
+		}
+	}
+	if (!found) {
+		return 0;
+	}
+	if (index < 0) {
+		return 0;
+	}
+	newlist[index].parentNode.className += " active";
+	var ul = list.querySelector("ul");
+	ul.style.display = "block";
+	return 1;
+
+}
+
+
+//////////////////////////////
+//
+// hashchange event -- Need to shift the page slightly to show the 
+//   top of the anchor text below the navigator bar.
+//
+
+
+window.addEventListener("hashchange", function() {
+	updateHash();
+});
+
+function updateHash(hash) {
+	// console.log("HASH UPDATE", window.location.hash, hash);
+	if (hash) {
+		window.location.hash = hash;
+	}
+	var nav = document.querySelector("nav.navbar");
+	var height = nav.offsetHeight - 60;
+	// wait until after the page location has changed:
+	setTimeout(function(){
+ 		$(window).scrollTop($(window).scrollTop() - height);
+	}, 100);
+}
+
+
+
+</script>
+
+

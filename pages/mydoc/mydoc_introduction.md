@@ -13,4 +13,3 @@ folder: mydoc
 
 To get started, see [Getting Started][index].
 
-{% include links.html %}

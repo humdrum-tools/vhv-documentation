@@ -1,8 +1,8 @@
 ---
-title: "Navigation pages"
-tagName: navigation
+title: "Humdrum tagged pages"
 search: exclude
-permalink: tag_navigation.html
+tagName: humdrum
+permalink: tag_humdrum.html
 sidebar: mydoc_sidebar
 folder: tags
 ---

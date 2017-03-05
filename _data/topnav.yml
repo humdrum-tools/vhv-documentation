@@ -12,10 +12,18 @@ topnav_dropdowns:
   folders:
     - title: Other Resources
       folderitems:
+        - title: Verovio Humdrum Viewer
+          external_url: http://verovio.humdrum.org
         - title: Humdrum documentation
           external_url: http://www.humdrum.org
-        - title: Website documentation
+        - title: Github source for documentation
+          external_url: https://github.com/humdrum-tools/vhv-documentation
+        - title: Documentation manual
           external_url: http://github.com/tomjohnson1492/documentation-theme-jekyll
+        - title: Verovio homepage
+          external_url: http://www.verovio.org
+        - title: Verovio source code
+          external_url: https://github.com/rism-ch/verovio/tree/develop-humdrum
 
 
 

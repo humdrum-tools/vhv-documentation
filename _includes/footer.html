@@ -1,8 +1,8 @@
 <footer>
 
 <table style="border:none; width:100%; margin-bottom:0; table-layout:fixed;" width="100%">
-<col style="width:90%;"/>
-<col style="width:10%"/>
+<col style="width:480px"/>
+<col/>
 <tr style="background-color: #fffcf1;">
 <td style="border-top: none; padding:0;">
 
@@ -12,7 +12,7 @@
         {% assign projectTags = site.data.tags.allowed-tags %}
         {% for tag in page.tags %}
         {% if projectTags contains tag %}
-        <a href="{{ "tag_" | append: tag | append: ".html" }}" class="btn btn-default navbar-btn cursorNorm" role="button">{{page.tagName}}{{tag}}</a>
+        <a href="/{{ "tag_" | append: tag | append: ".html" }}" class="btn btn-default navbar-btn cursorNorm" role="button">{{page.tagName}}{{tag}}</a>
         {% endif %}
         {% endfor %}
         {% endif %}
@@ -24,6 +24,7 @@
 <img src="{{ site.baseurl }}/images/company_logo.png" alt="Company logo"/></p>
 <p>
 
+<div style="red; margin-top:-10px;">
 {% if page.last_updated %}
 	<nobr>
 		<span>&nbsp;Page last updated:</span> {{page.last_updated}}<br/>
@@ -32,9 +33,10 @@
 <nobr>
 	Site last generated: {{ site.time | date: "%-d %b %Y"  }} <br />
 </nobr>
+</div>
 
     {% if site.github_editme_path %}
-	<p style="padding-top:30px">
+	<p style="margin-top:10px">
     <a target="_blank" href="https://github.com/{{site.github_editme_path}}{% unless page.url contains "index.html" %}pages/{% endunless %}{{page.folder}}{{page.url | remove: ".html" | append: ".md"}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
     {% endif %}
 
