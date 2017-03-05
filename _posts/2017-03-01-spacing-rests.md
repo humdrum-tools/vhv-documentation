@@ -13,7 +13,7 @@ of rests, and three additional RDF instructions can control the
 visibility and color of each category of `<space>` that the convert
 generates.
 
-See the documnetation for [invisible rests](/humdrum/invisible_rests) for more
+See the documnetation of [invisible rests](/humdrum/invisible_rests) for more
 information.
 
 [Here is the
