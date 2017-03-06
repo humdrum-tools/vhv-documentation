@@ -139,7 +139,7 @@
                 templatePattern = newTemplatePattern
             }, self.render = function(t, data) {
                 return t.replace(templatePattern, function(match, prop) {
-                    return data[prop] || match
+                    return addKbdToSpanKeypress(data[prop] || match);
                 })
             }
         }
@@ -198,7 +198,9 @@
 
                 function render(results) {
                     if (emptyResultsContainer(), 0 == results.length) return appendToResultsContainer(opt.noResultsText);
-                    for (var i = 0; i < results.length; i++) appendToResultsContainer(templater.render(opt.searchResultTemplate, results[i]))
+                    for (var i = 0; i < results.length; i++) {
+			appendToResultsContainer(templater.render(opt.searchResultTemplate, results[i]))
+			}
                 }
                 var self = this,
                     requiredOptions = ["searchInput", "resultsContainer", "dataSource"],
@@ -206,7 +208,7 @@
                         searchInput: null,
                         resultsContainer: null,
                         dataSource: [],
-                        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+                        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
                         noResultsText: "No results found",
                         limit: 10,
                         fuzzy: !1

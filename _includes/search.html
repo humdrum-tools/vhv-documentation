@@ -10,8 +10,8 @@
             searchInput: document.getElementById('search-input'),
             resultsContainer: document.getElementById('results-container'),
             dataSource: '{{ site.baseurl }}/search.json',
-            searchResultTemplate: '<li><a href="{url}" title="{{page.title | replace: "'", "\"}}">{title}</a></li>',
-        noResultsText: '{{site.data.strings.search_no_results_text}}',
+            searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+        noResultsText: '<li class="no-results">{{site.data.strings.search_no_results_text}}</li>',
         limit: 10,
         fuzzy: true,
 })

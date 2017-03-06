@@ -1,8 +1,8 @@
 ---
-title: "Content types pages"
-tagName: content_types
+title: "Command pages index"
+tagName: commands
 search: exclude
-permalink: tag_content_types.html
+permalink: tag_commands.html
 sidebar: mydoc_sidebar
 folder: tags
 ---

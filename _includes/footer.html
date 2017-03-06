@@ -25,11 +25,25 @@
 <p>
 
 <div style="red; margin-top:-10px;">
-{% if page.last_updated %}
+
+{% if page.author %}
 	<nobr>
-		<span>&nbsp;Page last updated:</span> {{page.last_updated}}<br/>
+		<span>Page author:</span> {{page.author}}<br/>
 	</nobr>
 {% endif %} 
+
+{% if page.creation_date %}
+	<nobr>
+		<span>Creation date:</span> {{page.creation_date}}<br/>
+	</nobr>
+{% endif %} 
+
+{% if page.last_updated %}
+	<nobr>
+		<span>Page last updated:</span> {{page.last_updated}}<br/>
+	</nobr>
+{% endif %} 
+
 <nobr>
 	Site last generated: {{ site.time | date: "%-d %b %Y"  }} <br />
 </nobr>
@@ -37,7 +51,7 @@
 
     {% if site.github_editme_path %}
 	<p style="margin-top:10px">
-    <a target="_blank" href="https://github.com/{{site.github_editme_path}}{% unless page.url contains "index.html" %}pages/{% endunless %}{{page.folder}}{{page.url | remove: ".html" | append: ".md"}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" href="https://github.com/{{site.github_editme_path}}{% unless page.url contains "index.html" %}pages/{% endunless %}{{page.folder}}{{page.url | remove: ".html" | append: ".md"}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
     {% endif %}
 
 </td>

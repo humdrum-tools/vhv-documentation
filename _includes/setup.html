@@ -13,7 +13,10 @@ window.addEventListener("DOMContentLoaded", function() {
    updateHash(window.location.hash);
 	showSidebar();
 	showNavbar();
+	processKeypressSpans();
 });
+
+
 
 //////////////////////////////
 //
@@ -31,6 +34,9 @@ function showNavbar() {
 	}
 }
 
+
+
+
 //////////////////////////////
 //
 // showSidebar --
@@ -43,6 +49,63 @@ function showSidebar() {
 	}
 	sidebar.style.visibility = "visible";
 	sidebar.style.display = "block";
+}
+
+
+
+//////////////////////////////
+//
+// processKeypressSpans --
+//
+
+function processKeypressSpans() {
+	var klist = document.querySelectorAll("span.keypress");
+	var i;
+	var j;
+	for (i=0; i < klist.length; i++) {
+		var text = klist[i].innerHTML;
+		var newtext = insertKbdIntoSpan(text);
+		klist[i].innerHTML = newtext;
+	}
+}
+
+//////////////////////////////
+//
+// addKbdToSpanKeypress -- Only works on a single span.keypress in the text.
+//
+
+function addKbdToSpanKeypress(text) {
+	var ntext = text.replace(/&lt;/g, "<")
+                   .replace(/&gt;/g, ">")
+                   .replace(/&#39;/g, "'");
+	var matches = ntext.match(/(.*<span[^;]*keypress[^;]*>)(.*)(<\/span>.*)/);
+	if (!matches) {
+		return text;
+	} else {
+		// return matches[2];
+		return insertKbdIntoSpan(ntext) + " command";
+	}
+}
+
+
+//////////////////////////////
+//
+// insertKbdIntoSpan --
+//
+
+function insertKbdIntoSpan(text) {
+	if (text.match("kbd")) {
+		return text;
+	}
+	var pieces = text.split("-");
+	var newtext = "";
+	for (j=0; j < pieces.length; j++) {
+		newtext += "<kbd>" + pieces[j] + "</kbd>";
+		if (j < pieces.length - 1) {
+			newtext += "+";
+		}
+	}
+	return newtext;
 }
 
 

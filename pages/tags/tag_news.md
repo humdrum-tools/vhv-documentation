@@ -1,5 +1,5 @@
 ---
-title: "News"
+title: "News pages index"
 tagName: news
 search: exclude
 permalink: tag_news.html

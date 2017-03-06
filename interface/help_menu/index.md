@@ -1,6 +1,7 @@
 ---
 title: Help menu
 keywords: interface help menu
+creation_date: 3 Mar 2017
 last_updated: 4 Mar 2017
 tags: [getting_started]
 summary: "A Description of the VHV help menu."

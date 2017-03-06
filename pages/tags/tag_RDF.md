@@ -1,8 +1,8 @@
 ---
-title: "Navigation pages"
-tagName: navigation
+title: "RDF pages index"
+tagName: RDF
 search: exclude
-permalink: tag_navigation.html
+permalink: tag_RDF.html
 sidebar: mydoc_sidebar
 folder: tags
 ---

@@ -1,7 +1,7 @@
 ---
-title: "Humdrum tagged pages"
-search: exclude
+title: "Humdrum pages index"
 tagName: humdrum
+search: exclude
 permalink: tag_humdrum.html
 sidebar: mydoc_sidebar
 folder: tags
