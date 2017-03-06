@@ -45,7 +45,8 @@ using the default color:
 !!!RDF**kern: show spaces color=hotpink
 ```
 
-Both HTML 5/SVG and hex colors are allowed.
+Both [HTML 5/SVG](http://www.december.com/html/spec/colorsvg.html) and 
+[hex colors](http://www.hexcolortool.com) are allowed.
 
 
 ## Color by rest category ##

@@ -20,7 +20,6 @@ to the text editor:
 {% include image.html
 	file="basic-editing.png"
 	alt="basic editing mode"
-	max-width="75%"
 	url="http://verovio.humdrum.org/?file=chorales/chor012.krn"
 	caption="basic editing mode (indicated by the yellow color of the text editor)."
 	caption-margin-top="-20px"
@@ -32,7 +31,6 @@ from vim mode.  When in vim mode, the text editor has a dark blue background:
 {% include image.html
 	file="vim-editing.png"
 	alt="vim editing mode"
-	max-width="75%"
 	caption="vim editing mode (indicated by the dark blue color of the text editor)."
 	url="http://verovio.humdrum.org/?file=chorales/chor012.krn"
 	caption-margin-top="-20px"

@@ -105,6 +105,8 @@ function insertKbdIntoSpan(text) {
 			newtext += "+";
 		}
 	}
+	newtext = newtext.replace("←", "<span class='glyphicon glyphicon-arrow-left'></span>")
+	                  .replace("→", "<span class='glyphicon glyphicon-arrow-right'></span>");
 	return newtext;
 }
 

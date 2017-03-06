@@ -59,9 +59,17 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: <span class="keypress">alt-f</span>&colon; Freeze notation
+      output: web, pdf
+      url: /commands/alt-f
+
     - title: <span class="keypress">alt-l</span>&colon; Layer coloring
       output: web, pdf
       url: /commands/alt-l
+
+    - title: <span class="keypress">alt-m</span>&colon; MEI data
+      output: web, pdf
+      url: /commands/alt-m
 
     - title: <span class="keypress">alt-v</span>&colon; Vim editing
       output: web, pdf

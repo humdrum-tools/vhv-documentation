@@ -21,22 +21,26 @@
 </td><td style="border-top:none;">
                <!-- &copy;{{ site.time | date: "%Y"  }} {{site.company_name}}. All rights reserved. <br /> -->
 
-<img src="{{ site.baseurl }}/images/company_logo.png" alt="Company logo"/></p>
+<img src="{{ site.baseurl }}/images/company_logo.png" alt="logo"/></p>
 <p>
 
-<div style="red; margin-top:-10px;">
+<div class="footer-data" style="margin-top:-10px;">
 
+{% unless page.url contains "/news-" %}
 {% if page.author %}
 	<nobr>
 		<span>Page author:</span> {{page.author}}<br/>
 	</nobr>
 {% endif %} 
+{% endunless %}
 
+{% unless page.url contains "/news-" %}
 {% if page.creation_date %}
 	<nobr>
 		<span>Creation date:</span> {{page.creation_date}}<br/>
 	</nobr>
 {% endif %} 
+{% endunless %}
 
 {% if page.last_updated %}
 	<nobr>
@@ -45,14 +49,18 @@
 {% endif %} 
 
 <nobr>
-	Site last generated: {{ site.time | date: "%-d %b %Y"  }} <br />
+	<span>Site last generated:</span> {{ site.time | date: "%-d %b %Y"  }} <br />
 </nobr>
 </div>
 
-    {% if site.github_editme_path %}
-	<p style="margin-top:10px">
-    <a target="_blank" href="https://github.com/{{site.github_editme_path}}{% unless page.url contains "index.html" %}pages/{% endunless %}{{page.folder}}{{page.url | remove: ".html" | append: ".md"}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
-    {% endif %}
+    {% unless page.url contains "/tag_" %}
+    {% unless page.url contains "news" %}
+    	{% if site.github_editme_path %}
+		<p style="margin-top:10px">
+    	<a target="_blank" href="https://github.com/{{site.github_editme_path}}{% unless page.url contains "index.html" %}pages/{% endunless %}{{page.folder}}{{page.url | remove: ".html" | append: ".md"}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+    	{% endif %}
+    {% endunless %}
+    {% endunless %}
 
 </td>
 </tr>
