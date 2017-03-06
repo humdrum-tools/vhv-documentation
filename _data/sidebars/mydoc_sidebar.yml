@@ -70,9 +70,14 @@ entries:
 
 
 
+
   - title: Graphical editing
     output: web, pdf
     folderitems:
+
+    - title: Slurs
+      output: web, pdf
+      url: /graphical/slurs
 
 
 
@@ -100,6 +105,10 @@ entries:
     - title: Command pages
       output: web, pdf
       url: /tag_commands.html
+
+    - title: Graphical editing pages
+      output: web, pdf
+      url: /tag_graphical_editing.html
 
     - title: News pages
       output: web, pdf

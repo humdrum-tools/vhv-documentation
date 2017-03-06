@@ -28,7 +28,7 @@ layers are partially expressed.
 
 ## Color all individual rests ##
 
-Invisible rests can be made visible in the nontation by adding this
+Invisible rests can be made visible in the notation by adding this
 meta-RDF line anywhere in the Humdrum data:
 
 ```
@@ -67,6 +67,6 @@ display invisible rests generated for filling in all layers with complete
 durations of the measure.
 
 These three colorizations can be used with the `show spaces` RDF, and each will
-supercede the global invisible rests color for their type of rest.
+supersede the global invisible rests color for their type of rest.
 
 

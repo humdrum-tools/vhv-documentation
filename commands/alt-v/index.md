@@ -21,7 +21,7 @@ to the text editor:
 	file="basic-editing.png"
 	alt="basic editing mode"
 	max-width="75%"
-	url="https://verovio.humdrum.org/?file=chorales/chor012.krn"
+	url="http://verovio.humdrum.org/?file=chorales/chor012.krn"
 	caption="basic editing mode (indicated by the yellow color of the text editor)."
 	caption-margin-top="-20px"
 %}
@@ -34,7 +34,7 @@ from vim mode.  When in vim mode, the text editor has a dark blue background:
 	alt="vim editing mode"
 	max-width="75%"
 	caption="vim editing mode (indicated by the dark blue color of the text editor)."
-	url="https://verovio.humdrum.org/?file=chorales/chor012.krn"
+	url="http://verovio.humdrum.org/?file=chorales/chor012.krn"
 	caption-margin-top="-20px"
 %}
 

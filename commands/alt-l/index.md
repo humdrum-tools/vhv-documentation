@@ -25,15 +25,3 @@ be interchanged).
 	caption="Coloring second layer of notes green."
 %}
 
-Here is an animated demonstration of pressing <span class="keypress">alt-l</span>
-several times in some real music:
-
-
-{% include image.html
-	file="alt-l.gif"
-	url="http://verovio.humdrum.org/?file=mozart/sonatas/sonata11-1f.krn"
-	alt="Effect of pressing alt-l several times"
-	max-width="75%"
-	caption="Pressing <span class='keypress'>alt-l</span> several times to toggle colorizing of secondary layers<br/>(click on the above image to try out the command on this work)."
-%}
-

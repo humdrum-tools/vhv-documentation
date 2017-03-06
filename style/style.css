@@ -163,7 +163,14 @@ table > thead:first-child > tr:first-child > td {
 }
 
 table > tbody > tr:nth-of-type(odd) {
+/*
 	background-color: #ebe7d8;
+*/
+	background-color: #f2eede;
+}
+
+table > tbody > tr:nth-of-type(even) {
+	background-color: #f8f4e6;
 }
 
 table col[class*="col-"] {
@@ -262,7 +269,7 @@ div#toc ul li {
 	list-style: square;
 }
 div#toc ul {
-	background-color: whitesmoke;
+	background-color: #ebe7d8;
 	padding: 5px;
 	border-radius: 5px;
 	max-width: 300px;
@@ -408,6 +415,7 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 ul#mysidebar {
+	margin-top: 60px;
 	border-radius:0px;
 	display: none;
 	visibility: hidden;
@@ -1427,6 +1435,11 @@ span.keypress kbd {
 
 a span.keypress kbd {
 	color: #248ec2;
+}
+
+a span.meta kbd, span.meta kbd {
+	/* color keys such as # which means a range of digits */
+	color: #33cc88;
 }
 
 .nav li > a > span.keypress:after {

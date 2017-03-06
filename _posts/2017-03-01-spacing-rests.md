@@ -1,6 +1,7 @@
 ---
 title:  "Viewing invisible rests"
 author: Craig Stuart Sapp
+creation_date: 1 Mar 2017
 last_updated: 4 Mar 2017
 categories: update
 permalink: news-invisible-rests.html
@@ -16,7 +17,7 @@ of rests, and three additional RDF instructions can control the
 visibility and color of each category of `<space>` that the convert
 generates.
 
-See the documnetation of [invisible rests](/humdrum/invisible_rests) for more
+See the documentation of [invisible rests](/humdrum/invisible_rests) for more
 information.
 
 [Here is the
