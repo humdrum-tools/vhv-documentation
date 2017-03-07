@@ -31,6 +31,13 @@ Try downloading the [same MusicXML file](bwv1011-sarabande.xml) and loading it i
 	content="MXL (compressed MusicXML) files cannot be loaded directly into VHV.  First unzip the MXL file and then drag-and-drop the resulting MusicXML file (with the extension `.xml`) into VHV, or load the MXL files into a notation editor that understands the MXL format and resave as MusicXML."
 %}
 
+{% include note.html
+	content="MusicXML file conversions include a `**recip` spine in the first column.  An explantion or method for removing this spine will be added later."
+
+%}
+
+
+
 ## Copy/Paste MusicXML data ##
 
 MusicXML data can also be copy/pasted into the VHV text editor.  In this case VHV

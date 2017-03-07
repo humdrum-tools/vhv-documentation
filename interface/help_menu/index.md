@@ -57,17 +57,10 @@ documentation window as demonstrated below.
 
 {% include image.html
 	file="tandem-documentation.gif"
+	max-width="100%"
 	alt="opening up a documentation window."
 	caption="Opening up a documentation window from the link to it in the help menu."
 %}
-
-
-
-
-
-
-
-
 
 
 

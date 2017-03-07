@@ -51,3 +51,8 @@ for hiding/showing the text editor by typing <kbd>alt</kbd>+<kbd>y</kbd>.
 %}
 
 
+See the [getting started index page](/tag_getting_started.html) and in particular a description of
+the [help menu](/interface/help_menu) for more basic information about VHV.  Also see the
+[Humdurm load/save page](/interface/humdrum) for more ways of loading Humdrum data into VHV other
+than typing it in by hand.
+
