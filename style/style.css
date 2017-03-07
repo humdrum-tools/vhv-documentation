@@ -66,9 +66,6 @@ body {
 .gi-5x{font-size: 5em;}
 
 
-
-
-
 .breadcrumb > .active {color: #777 !important;}
 
 /* make room for the nav bar */
@@ -714,8 +711,26 @@ a.fa.fa-envelope-o.mailto {
 	font-weight: 600;
 }
 
-h3 {color: #ED1951; font-weight:normal; font-size:130%;}
-h4 {color: #808080; font-weight:normal; font-size:120%; font-style:italic;}
+h2  {
+	font-size:24px;
+	line-height:29px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+h3 {
+	color: #bfb799;
+	font-weight:bold;
+	font-style: italic;
+	font-size:130%;
+}
+
+h4 {
+	color: #808080;
+	font-weight:normal;
+	font-size:120%;
+	font-style:italic;
+}
 
 .alert, .callout {
 	overflow: hidden;
@@ -785,10 +800,6 @@ button.cursorNorm {
 	cursor: pointer;
 }
 
-h2  {
-	font-size:24px;
-	line-height:29px;
-}
 span.otherProgrammingLanguages {
 	font-style: normal;
 }
@@ -1304,10 +1315,6 @@ h4.panel-title {
 	border-left: 5px solid #5599ff;  // ggg
 	font-size:16px;
 }
-
-
-h3 {color: #ED1951; }
-h4 {color: #808080; }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
 	background-color: #248ec2;

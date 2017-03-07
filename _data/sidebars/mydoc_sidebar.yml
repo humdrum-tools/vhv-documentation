@@ -51,6 +51,14 @@ entries:
       output: web, pdf
       url: /interface/help_menu
 
+    - title: Load/Save Humdrum data
+      output: web, pdf
+      url: /interface/humdrum
+
+    - title: Importing MusicXML data
+      output: web, pdf
+      url: /interface/musicxml
+
 
 
 
@@ -102,6 +110,7 @@ entries:
 
 
 
+
   - title: Indexes
     output: web
     folderitems:
@@ -129,5 +138,9 @@ entries:
     - title: RDF pages
       output: web, pdf
       url: /tag_RDF.html
+
+    - title: Maintenance pages
+      output: web, pdf
+      url: /tag_maintenance.html
 
 

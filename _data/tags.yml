@@ -3,6 +3,7 @@ allowed-tags:
   - humdrum
   - commands
   - RDF
+  - maintenance
   - content_types
   - navigation
   - formatting
