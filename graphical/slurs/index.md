@@ -2,7 +2,7 @@
 title: Slurs
 author: Craig Stuart Sapp
 creation_date: 5 Mar 2017
-last_updated: 5 Mar 2017
+last_updated: 7 Mar 2017
 tags: [graphical_editing, RDF]
 sidebar: mydoc_sidebar
 keywords: graphical editing slurs
@@ -42,8 +42,7 @@ will be searched for in the Humdrum data as an RDF line in the form:
 ```
 
 These two RDF signifiers, which could be assigned to other characters
-(although <span class="keypress">&lt;</span> and <span
-class="keypress">&gt;</span> are typically used), are used to
+(although "`<`" and "`>`" are typically used), are used to
 indicate a forced direction on many graphical elements including
 slurs.  If `above`/`below` signifiers are not found in the data
 they will automatically be added the first time a forced direction
@@ -91,7 +90,7 @@ to move the ending of the slur.
 %}
 
 {% include note.html
-	content="While editing a slur, the <span class='keypress'>&larr;</span>/<span class='keypress'>&rarr;</span> keys are not used to move to the next/previous page.  To move to a new page with the arrow keys, either click on an item other than a slur, or press the <span class='keypress'>esc</span> key to deselect the slur."
+	content="While editing a slur, the <span class='keypress'>&larr;</span>/<span class='keypress'>&rarr;</span> keys are not available for their usual functions to move to the next/previous page.  To move to a new page with the arrow keys, press the <span class='keypress'>esc</span> key to deselect the slur."
 %}
 
 

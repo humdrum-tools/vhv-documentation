@@ -39,12 +39,24 @@ Humdrum data can also be pasted directly into the VHV text editor:
 %}
 
 
-## Copy-and-paste from the terminal ##
+## Copy-and-paste with the terminal ##
+
+Copying from the VHV text editor and pasting to another editor in
+the operating system is possible, either with <span
+class="keypress">ctrl-c</span>/<span class="keypress">ctrl-v</span>
+in Windows, or <span class="keypress">command-c</span>/<span
+class="keypress">command-v</span> in MacOS (or you can figure out
+on your own how to copy/paste in linux/unix). Also note that
+<span class="keypress">ctrl-a</span> or <span class="keypress">ctrl-a</span>
+can be used to select all of the VHV text editor content before copying.
+
+The following sections discuss how to copy/paste between *standard input* and 
+*standard output* in the terminal and the VHV editor.
 
 
-### MacOS with pbcopy ###
+### MacOS using pbcopy/pbpaste ###
 
-When working within a terminal in MacOS, you can use the
+When working with a terminal in MacOS, you can use the
 [pbcopy](http://osxdaily.com/2007/03/05/manipulating-the-clipboard-from-the-command-line/)
 command to copy standard output to the clipboard (or *P*aste*B*oard if you
 want to remember the command name).
@@ -65,6 +77,54 @@ class="keypress">command-v</span> to paste into VHV.
 %}
 
 
+Conversely,
+[pbpaste](http://osxdaily.com/2007/03/05/manipulating-the-clipboard-from-the-command-line/)
+can be used to copy data from the VHV editor and paste as standard
+input into the terminal.  The following figure demonstrates this by copying
+data from the VHV text editor to the [census](http://www.humdrum.org/man/census/) command:
+
+{% include image.html
+	file="pbpaste-humdrum.gif"
+	alt="Humdrum file copy/paste to the terminal"
+	max-width="100%"
+	caption="Copy-and-pasting Humdrum to the terminal using pbpaste."
+%}
+
+The command demonstrated above is:
+
+```bash
+pbpaste | census -k
+```
+
+where data from the VHV editor is piped into the census command, resulting in
+this information for the first movement of Beethoven's op. 81a piano sonata:
+
+```
+HUMDRUM DATA
+
+Number of data tokens:     7034
+Number of null tokens:     3329
+Number of multiple-stops:  679
+Number of data records:    2129
+Number of comments:        12
+Number of interpretations: 115
+Number of records:         2256
+
+KERN DATA
+
+Number of note-heads:      3944
+Number of notes:           3917
+Longest note:              2.
+Shortest note:             24
+Highest note:              ffff
+Lowest note:               FFF
+Number of rests:           268
+Maximum number of voices:  9
+Number of single barlines: 197
+Number of double barlines: 1
+```
+
+
 
 ## Saving Humdrum files/data ##
 
@@ -74,7 +134,7 @@ pasted into another editor within the operating system.
 An alternate method is to save the contents of the VHV text editor
 via the web browser with the [<span
 class='keypress'>alt-s</span>](/commands/alt-s) command.  This will
-save the contents of the VHV text editor to wherever files are saved
+save the contents of the editor to wherever files are saved
 from your browser.  Note that the contents of the text editor need
 not contain Humdrum data, which is why the default save filename
 is `data.txt` rather than `data.krn`.
