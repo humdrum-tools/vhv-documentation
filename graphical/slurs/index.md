@@ -90,7 +90,9 @@ to move the ending of the slur.
 	caption="Moving slurs after they are created."
 %}
 
-
+{% include note.html
+	content="While editing a slur, the <span class='keypress'>&larr;</span>/<span class='keypress'>&rarr;</span> keys are not used to move to the next/previous page.  To move to a new page with the arrow keys, either click on an item other than a slur, or press the <span class='keypress'>esc</span> key."
+%}
 
 
 
