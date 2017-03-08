@@ -88,6 +88,7 @@ function addKbdToSpanKeypress(text) {
 }
 
 
+
 //////////////////////////////
 //
 // insertKbdIntoSpan --
@@ -99,15 +100,29 @@ function insertKbdIntoSpan(text) {
 	}
 	var pieces = text.split("-");
 	var newtext = "";
-	for (j=0; j < pieces.length; j++) {
-		newtext += "<kbd>" + pieces[j] + "</kbd>";
+	for (var j=0; j < pieces.length; j++) {
+		var subpieces = pieces[j].split("+");
+		for (var k=0; k < subpieces.length; k++) {
+			newtext += "<kbd>" + subpieces[k] + "</kbd>";
+		}
 		if (j < pieces.length - 1) {
 			newtext += "+";
 		}
 	}
-	newtext = newtext.replace("←", "<span class='glyphicon glyphicon-arrow-left'></span>")
-	                  .replace("→", "<span class='glyphicon glyphicon-arrow-right'></span>")
-	                  .replace("command", "&#8984;");
+	newtext = newtext
+	  	.replace(/shift/gi, "shft")
+	  	.replace(/control/gi, "ctrl")
+	  	.replace(/escape/gi, "esc")
+	  	.replace(/up/gi, "<span style='font-size:95%; position:relative; top:2px;' class='glyphicon glyphicon-arrow-up'></span>")
+	  	.replace(/down/gi, "<span style='font-size:95%; position:relative; top:3px;' class='glyphicon glyphicon-arrow-down'></span>")
+	  	.replace(/left/gi, "<span style='position:relative; top:2px;' class='glyphicon glyphicon-arrow-left'></span>")
+	  	.replace(/right/gi, "<span style='position:relative; top:2px;' class='glyphicon glyphicon-arrow-right'></span>")
+	  	.replace(/minus/gi, "-")
+	  	.replace(/plus/gi, "+")
+	  	.replace(/hash/gi, "#")
+	  	.replace("←", "<span style='position:relative; top:2px;' class='glyphicon glyphicon-arrow-left'></span>")
+	  	.replace("→", "<span style='position:relative; top:2px;' class='glyphicon glyphicon-arrow-right'></span>")
+	  	.replace("command", "&#8984;");
 	return newtext;
 }
 

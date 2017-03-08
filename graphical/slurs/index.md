@@ -78,7 +78,7 @@ notes after the current note.
 Once a slur has been added to the notation, it can be moved around by pressing
 <span class="keypress">&larr;</span>/<span class="keypress">&rarr;</span>
 to move the beginning of the slur forward or backward in the music, or
-<span class="keypress">shft-&larr;</span>/<span class="keypress">shft-&rarr;</span>
+<span class="keypress">shift-left</span>/<span class="keypress">shift-left</span>
 to move the ending of the slur.
 
 

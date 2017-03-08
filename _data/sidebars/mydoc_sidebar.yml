@@ -91,6 +91,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Pitch
+      output: web, pdf
+      url: /graphical/pitch
+
     - title: Slurs
       output: web, pdf
       url: /graphical/slurs
@@ -106,6 +110,26 @@ entries:
     - title: Invisible rests
       output: web, pdf
       url: /humdrum/invisible_rests
+
+
+
+
+
+  - title: myVHV
+    output: web, pdf
+    folderitems:
+
+
+
+
+
+  - title: Maintenance
+    output: web, pdf
+    folderitems:
+
+    - title: Figures
+      output: web, pdf
+      url: /maintenance/figures
 
 
 
