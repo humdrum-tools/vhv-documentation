@@ -114,7 +114,7 @@ var data = [
 Notes can be transposed to a different staffline or space by
 clicking on a note and then using the
 <span class="keypress">up</span> and <span class="keypress">down</span>
-arrow keys to move it vertically.  Below is a demostration
+arrow keys to move it vertically.  Below is a demonstration
 where the D5 pitch is moved down by step to D4:
 
 {% include image.html
@@ -177,7 +177,7 @@ accidental will remove the accidental from the note.  An easy way
 to remove any accidental other than a natural sign would be to type
 <span class="keypress">n+n</span>: once to convert the accidental
 into a natural sign, and another to remove the natural sign (the
-note will still posses an implicit natural, however).
+note will still possess an implicit natural, however).
 
 {% include image.html
 	file="accidentals.gif"
@@ -261,7 +261,7 @@ require them if they are tied over from previous measures:
 	file="accidental-suppressed-tie.png"
 	alt="graphically transposing a note"
 	max-width="75%"
-	caption="Visual accidentals are automatically suppresed for notes tied over barlines."
+	caption="Visual accidentals are automatically suppressed for notes tied over barlines."
 %}
 
 Explicitly suppressing visual accidentals cannot be done within the notation editor
@@ -270,8 +270,8 @@ accidental in the text editor.
 
 ### Ornament accidentals ###
 
-Ornaments containing auxilliary accidentals will automatically force an accidental
-on a following note if it is different from that of the auxilliary accidental.
+Ornaments containing auxiliary accidentals will automatically force an accidental
+on a following note if it is different from that of the auxiliary accidental.
 
 {% include image.html
 	file="ornament-accidentals.gif"
@@ -308,7 +308,7 @@ for an existing editorial accidental RDF entry will be used (even
 if it is not&nbsp;`i`).
 
 Editorial accidentals will always be forced to display, so adding
-a forced-display signifier (`X`) with the <span class="keypress">x</span>
+a forced display signifier (`X`) with the <span class="keypress">x</span>
 key is not necessary.
 
 {% include note.html

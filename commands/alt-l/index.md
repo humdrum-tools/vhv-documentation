@@ -25,3 +25,16 @@ be interchanged).
 	caption="Coloring second layer of notes green."
 %}
 
+
+Here is an example of using <span class="keypress">alt-l</span> on a real 
+piece of music:
+
+{% include image.html
+	file="show-layers.gif"
+	alt="Coloring second layer of notes green."
+	max-width="100%"
+	caption="Showing different layers of music."
+%}
+
+
+

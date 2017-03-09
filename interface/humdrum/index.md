@@ -162,7 +162,16 @@ file rather than a file containing formatting commands such as an
 
 Try saving a file in this manner and then reloading it into the VHV
 text editor either by the drag-and-drop method or the copy-and-paste
-methods described above.
+methods described above.  Here is a demonstration of saving two files
+(Bach chorales 61 and 62), and then dragging them back into the 
+VHV editor from the Download folder.
+
+{% include image.html
+	file="save-drag-drop.gif"
+	alt="saving and loading Humdrum files"
+	max-width="90%"
+	caption="Saving two files with <span class='keypress'>alt-s</span> and then drag-and-dropping them back into VHV."
+%}
 
 
 
