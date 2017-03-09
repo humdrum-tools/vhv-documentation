@@ -59,6 +59,10 @@ entries:
       output: web, pdf
       url: /interface/musicxml
 
+    - title: Exporting MEI data
+      output: web, pdf
+      url: /interface/mei
+
 
 
 
