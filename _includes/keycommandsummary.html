@@ -1,0 +1,64 @@
+
+
+<script>
+
+$(document).ready(function(){
+
+    // parameters passed from Liquid:
+    var numColumns = Object.keys(data[0]).length - 1;
+    var columnsName = "{{include.columns}}" || "columns";
+    var groupColumn = parseInt("{{include.group-column}}" || "0");
+    var groupName = "{{include.group}}" || "group";
+    var dataName = "{{include.data}}" || "data";
+
+    $('table.display').dataTable({
+        paging: false,
+        stateSave: false,
+        searching: false,
+	scrollCollapse: true,
+	ordering: false,
+	orderCellsTop: groupName,
+	select: true,
+	compact: true,
+	data: data,
+	columns: columns,
+	columnDefs: [ {visible: false, targets: groupColumn}],
+
+	drawCallback: function ( settings ) {
+            var api = this.api();
+            var rows = api.rows( {page:'current'} ).nodes();
+            var last=null;
+ 
+            api.column(0, {page:'current'} ).data().each( function ( group, i ) {
+                if ( last !== group ) {
+                    $(rows).eq( i ).before(
+                        '<tr class="group"><td colspan="'+numColumns+'2">'+group+'</td></tr>'
+                    );
+                    last = group;
+                }
+            });
+        }
+
+    });
+
+    // Order by the grouping
+    $('table#{{include.tableId}} tbody').on( 'click', 'tr.group', function () {
+        var currentOrder = table.order()[0];
+        if ( currentOrder[0] === 2 && currentOrder[1] === 'asc' ) {
+            table.order( [ 2, 'desc' ] ).draw();
+        }
+        else {
+            table.order( [ 2, 'asc' ] ).draw();
+        }
+    } );
+
+});
+
+</script>
+<style>
+.dataTables_info { display:none; }
+</style>
+
+{{ include.content }}
+
+<table class="display" style='width:75%; border-bottom: 1px solid rgb(222,222,222);' id='{{include.tableId}}'></table>

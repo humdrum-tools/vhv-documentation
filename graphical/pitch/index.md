@@ -7,117 +7,114 @@ tags: [graphical_editing, RDF]
 sidebar: mydoc_sidebar
 keywords: graphical editing pitch
 datatable: true
-summary: "Description of how to graphically edit the pitch of notes in the VHV notation editor."
+vim: ft=javascript
+summary: "Graphically altering note pitches and accidentals in the notation editor."
 permalink: /graphical/pitch/index.html
 ---
 
-## Pitch-related key commands ##
+## Key command summary ##
 
 <script>
 
-console.log("QQQ");
+var columns = [
+	{ data: "group", title: "Group"},
+	{ data: "keys", title: "Key(s)" },
+	{ data: "action", title: "Action"}
+];
 
 var data = [
 	{
+		group: "pitch",
 		keys: "<span class='keypress'>up</span>",
 		action: "transpose up a step"
 	},
 
 	{
+		group: "pitch",
 		keys: "<span class='keypress'>down</span>",
 		action: "transpose down a step"
 	},
 
 	{
-		keys: "<span class='keypress'>shift-down</span>",
-		action: "transpose down an octave"
-	},
-
-	{
+		group: "pitch",
 		keys: "<span class='keypress'>shift-up</span>",
 		action: "transpose up an octave"
 	},
 
 	{
-		keys: "<span class='keypress'>x</span>",
-		action: "force display of accidental"
+		group: "pitch",
+		keys: "<span class='keypress'>shift-down</span>",
+		action: "transpose down an octave"
 	},
 
 	{
-		keys: "<span class='keypress'>s</span>",
-		action: "toggle sharp accidental"
-	},
-
-	{
-		keys: "<span class='keypress'>2+s</span>",
-		action: "toggle double-sharp accidental"
-	},
-
-	{
-		keys: "<span class='keypress'>f</span>",
-		action: "toggle flat accidental"
-	},
-
-	{
-		keys: "<span class='keypress'>2+f</span>",
-		action: "toggle double-flat accidental"
-	},
-
-	{
-		keys: "<span class='keypress'>n</span>",
-		action: "toggle natural accidental"
-	},
-
-	{
+		group: "pitch",
 		keys: "<span class='keypress'>3+up</span>",
 		action: "transpose up a third"
 	},
 
 	{
+		group: "pitch",
 		keys: "<span class='keypress'>5+down</span>",
 		action: "transpose down a fifth"
 	},
 
 	{
+		group: "accidental",
+		keys: "<span class='keypress'>hash</span>",
+		action: "toggle sharp accidental"
+	},
+
+	{
+		group: "accidental",
+		keys: "<span class='keypress'>minus</span>",
+		action: "toggle flat accidental"
+	},
+
+	{
+		group: "accidental",
+		keys: "<span class='keypress'>n</span>",
+		action: "toggle forced natural accidental"
+	},
+
+	{
+		group: "accidental",
+		keys: "<span class='keypress'>2+hash</span>",
+		action: "toggle double-sharp accidental"
+	},
+
+	{
+		group: "accidental",
+		keys: "<span class='keypress'>2+minus</span>",
+		action: "toggle double-flat accidental"
+	},
+
+	{
+		group: "accidental",
+		keys: "<span class='keypress'>x</span>",
+		action: "toggle forced display of accidental"
+	},
+
+	{
+		group: "accidental",
 		keys: "<span class='keypress'>i</span>",
-		action: "toggle editorial/regular accidental"
+		action: "toggle editorial accidental"
 	},
 
 ];
-
-var columns = [
-	{ data: "keys", title: "Key(s)" },
-	{ data: "action", title: "Action"}
-];
-
-$(document).ready(function(){
-    $('table.display').dataTable({
-        paging: false,
-        stateSave: false,
-        searching: false,
-	collapsible: true,
-	ordering: false,
-	select: true,
-	data: data,
-	columns: columns
-    });
-
-});
-
-
 </script>
 
-
-<table class="display"></table>
-
+{% include keycommandsummary.html
+	tableId="pitchkeysummary"
+%}
 
 
 ## Stepwise transposition ##
 
 Notes can be transposed to a different staffline or space by
-clicking on the note and then using the
+clicking on a note and then using the
 <span class="keypress">up</span> and <span class="keypress">down</span>
-arrow keys to move the note vertically.  Here is an example score
+arrow keys to move it vertically.  Below is a demostration
 where the D5 pitch is moved down by step to D4:
 
 {% include image.html
@@ -134,7 +131,7 @@ automatically to match the new pitch of the note in the notation.
 ## Transposing by diatonic interval ##
 
 If you need to transpose a note by more than a step at a time, a faster
-transposition method would be to prefix the
+transposition method prefixes the
 <span class="keypress">up</span> or <span class="keypress">down</span> keystroke
 with a digit from <span class="keypress">3</span> through
 <span class="keypress">9</span> to transpose up or down by that diatonic
@@ -195,22 +192,22 @@ Cross-staff visual accidentals
 
 
 
-## Printed versus sounding accidentals ##
+## Printed vs. sounding accidentals ##
 
 Humdrum `**kern` pitches always encode *sounding* accidentals.  VHV automatically
-calculates visual accidentals when converting to MEI for rendering to graphical
-music notation.
+calculates visual accidentals when converting to [MEI](http://www.music-encoding.org)
+for rendering to graphical music notation.
 
 
-However there can be exceptions to the visual calculation
-rules which are demonstrated in the sub-sections below.
+However there can be exceptions to the visual accidental calculation
+rules, which are demonstrated in the sub-sections below.
 
 1. *forced accidentals*: the accidental can be forced to display on a selected note by pressing <span class="keypress">x</span>.
 1. *suppressed accidentals*: don't show the accidental regardless of whether or not it should be shown. (not currently available in graphic editing).
 
 Below is a demonstration of changing accidentals in the music. Notice that
-altering the accidental one a note make automatically add an accidental
-on a following note in the measure.
+altering the accidental on one a note may automatically add a different visual
+accidental on a following note in the measure.
 
 {% include image.html
 	file="visual-accidentals.gif"
@@ -226,7 +223,7 @@ automatic courtesy accidental add a `y` after the accidental in the
 Humdrum data.
 
 
-### Forced display of accidentals ###
+### Forced accidentals ###
 
 Accidentals can be forced to display in the notation by typing the
 key <span class="keypress">x</span> while editing a note (mnemonic:
@@ -257,7 +254,7 @@ class="keypress">n</span> to add a natural sign.
 
 ### Suppressed accidentals ###
 
-VHV will automatically suppress printed accidentals on notes which otherwire
+VHV will automatically suppress printed accidentals on notes that otherwise
 require them if they are tied over from previous measures:
 
 {% include image.html
@@ -267,9 +264,20 @@ require them if they are tied over from previous measures:
 	caption="Visual accidentals are automatically suppresed for notes tied over barlines."
 %}
 
-Explicitly suppressing visual accidentals cannot be done withing the notation editor
+Explicitly suppressing visual accidentals cannot be done within the notation editor
 (yet), but this can be accomplished by adding a single `y` after the
 accidental in the text editor.
+
+### Ornament accidentals ###
+
+Ornaments containing auxilliary accidentals will automatically force an accidental
+on a following note if it is different from that of the auxilliary accidental.
+
+{% include image.html
+	file="ornament-accidentals.gif"
+	alt="Ornamental accidentals"
+	caption="Automatically forced accidentals after ornaments.  (typing <span class='keypress'>m</span>, <span class='keypress'>w</span>, and <span class='keypress'>T</span>)"
+%}
 
 
 ## Editorial accidentals ##
@@ -281,7 +289,7 @@ these two types of accidentals.
 {% include image.html
 	file="editorial-accidentals.gif"
 	alt="editorial accidentals"
-	max-width="100%"
+	max-width="90%"
 	caption="Creating, removing and changing editorial accidentals."
 %}
 
@@ -293,7 +301,7 @@ added to the data:
 !!!RDF**kern: i = editorial accidental
 ```
 
-Any user-signifiers other than `i` can be used.  If no editorial
+Any user-signifier other than `i` can also be used.  If no editorial
 accidental RDF is found in the data, one will be inserted at the
 bottom of the Humdrum content automatically; otherwise, the signifier
 for an existing editorial accidental RDF entry will be used (even

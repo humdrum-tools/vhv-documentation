@@ -5,10 +5,101 @@ creation_date: 5 Mar 2017
 last_updated: 7 Mar 2017
 tags: [graphical_editing, RDF]
 sidebar: mydoc_sidebar
+datatable: true
 keywords: graphical editing slurs
-summary: "Typing <span class='keypress'>s</span> while editing a graphical note adds a slur to the next note."
+summary: "Graphically adding and editing slurs."
 permalink: /graphical/slurs/index.html
 ---
+
+## Key command summary ##
+
+<script>
+
+var columns = [
+	{ data: "group", title: "Group"},
+	{ data: "keys", title: "Key(s)" },
+	{ data: "action", title: "Action"}
+];
+
+var data = [
+
+	{
+		group: "adding a slur to a note",
+		keys: "<span class='keypress'>s</span>",
+		action: "Add a slur to the next note"
+	},
+
+	{
+		group: "adding a slur to a note",
+		keys: "<span class='keypress'>2+s</span>",
+		action: "Add slur starting on current note and including next two notes"
+	},
+
+	{
+		group: "adding a slur to a note",
+		keys: "<span class='keypress'>9+s</span>",
+		action: "Add slur starting on current note and including next nine notes"
+	},
+
+	{
+		group: "editing slurs",
+		keys: "<span class='keypress'>a</span>",
+		action: "force slur above notes"
+	},
+
+	{
+		group: "editing slurs",
+		keys: "<span class='keypress'>b</span>",
+		action: "force slur below notes"
+	},
+
+	{
+		group: "editing slurs",
+		keys: "<span class='keypress'>c</span>",
+		action: "clear forced slur direction"
+	},
+
+	{
+		group: "editing slurs",
+		keys: "<span class='keypress'>left</span>",
+		action: "move slur start one note to the left"
+	},
+
+	{
+		group: "editing slurs",
+		keys: "<span class='keypress'>right</span>",
+		action: "move slur start one note to the right"
+	},
+
+	{
+		group: "editing slurs",
+		keys: "<span class='keypress'>shift-left</span>",
+		action: "move slur end one note to the left"
+	},
+
+	{
+		group: "editing slurs",
+		keys: "<span class='keypress'>shift-right</span>",
+		action: "move slur end one note to the right"
+	},
+
+	{
+		group: "editing slurs",
+		keys: "<span class='keypress'>escape</span>",
+		action: "deselect the slur"
+	},
+
+];
+</script>
+
+{% include keycommandsummary.html
+	tableId="pitchkeysummary"
+%}
+
+
+
+
+
 
 ## <span class="keypress">s</span>: Adding a simple slur ##
 

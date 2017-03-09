@@ -1642,6 +1642,14 @@ dt {
 
 dd {
 	color: #aaa;
+}
 
+
+tr.group td {
+	background-color: #f2eede;
+}
+
+table.display {
+	width: 75%;
 }
 
