@@ -3,7 +3,7 @@ title: <span class='keypress'>alt-v</span>
 author: Craig Stuart Sapp
 creation_date: 3 Mar 2017
 last_updated: 5 Mar 2017
-tags: [commands]
+tags: [all, commands]
 sidebar: mydoc_sidebar
 keywords: interface commands editor vim
 summary: "The <span class='keypress'>alt-v</span> command toggles the vim editing mode."

@@ -6,7 +6,7 @@ last_updated: 4 Mar 2017
 categories: update
 permalink: news-invisible-rests.html
 sidebar: mydoc_sidebar
-tags: [news]
+tags: [all, news]
 ---
 
 Special meta-RDF codes have been added for data proof-reading in

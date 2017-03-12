@@ -3,7 +3,7 @@ title: Slurs
 author: Craig Stuart Sapp
 creation_date: 5 Mar 2017
 last_updated: 7 Mar 2017
-tags: [graphical_editing, RDF]
+tags: [all, graphical_editing, RDF]
 sidebar: mydoc_sidebar
 datatable: true
 keywords: graphical editing slurs

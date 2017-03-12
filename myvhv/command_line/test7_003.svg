@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="500px" height="500px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible">
+	<defs>
+		<symbol id="E881" viewBox="0 0 1000 1000" overflow="inherit">
+			<path transform="scale(1,-1)" d="M207 311l-85 -275c-4 -6 7 -11 13 -13l18 -2h11l-6 -21h-158l6 21h15c7 0 14 2 21 5c9 1 16 8 20 20l55 176l-71 -56l-10 10l109 135h62z" />
+		</symbol>
+		<symbol id="E884" viewBox="0 0 1000 1000" overflow="inherit">
+			<path transform="scale(1,-1)" d="M259 110l-6 -21h-59l-16 -52c-3 -6 0 -11 9 -14l34 -2l-6 -21h-155l6 21l18 1l15 4c9 3 16 11 20 23l13 40h-132l5 21c12 10 26 22 39 39l33 43c13 18 27 41 40 68l21 51h97l-36 -49c-13 -16 -33 -34 -49 -49c-36 -35 -76 -67 -115 -100l108 -3l20 72l80 77h5l-44 -149 h55z" />
+		</symbol>
+		<symbol id="E062" viewBox="0 0 1000 1000" overflow="inherit">
+			<path transform="scale(1,-1)" d="M158 96c51 0 73 -14 88 -49l16 -39c0 -17 -2 -30 -7 -40c-3 -11 -10 -21 -19 -31c-17 -18 -49 -43 -84 -43c-55 0 -77 13 -112 44c-24 21 -35 55 -35 100c0 46 14 81 32 112c30 52 71 79 137 93l36 6l26 2c154 0 235 -68 274 -182c11 -32 18 -68 18 -107 c0 -103 -26 -182 -68 -250c-89 -145 -234 -230 -412 -288l-30 -5c-9 0 -14 3 -14 8c3 10 5 11 10 16c35 15 70 30 96 44l78 43c96 57 162 136 197 258c9 33 17 60 22 100c3 22 5 35 6 39c-7 69 -16 115 -23 140s-4 22 -16 40c-8 12 -19 23 -31 34c-24 21 -62 44 -118 44 c-48 0 -84 -8 -113 -28c-28 -19 -42 -44 -42 -73v-16c2 -5 3 -9 4 -11c24 22 52 39 84 39zM585 -118c0 32 23 58 57 58c18 0 33 -6 40 -18c9 -15 16 -18 16 -40c0 -9 -2 -16 -5 -21c-6 -19 -27 -37 -51 -37c-34 0 -57 26 -57 58zM642 177c31 0 56 -27 56 -58 c0 -30 -25 -58 -56 -58l-23 3c-19 7 -34 32 -34 55l3 23c9 20 28 35 54 35z" />
+		</symbol>
+		<symbol id="E260" viewBox="0 0 1000 1000" overflow="inherit">
+			<path transform="scale(1,-1)" d="M20 110c32 16 54 27 93 27c26 0 35 -3 54 -13c13 -7 24 -20 27 -38l4 -25c0 -28 -16 -57 -45 -89c-23 -25 -39 -44 -65 -68l-88 -79v644h20v-359zM90 106c-32 0 -48 -10 -70 -29v-194c31 31 54 59 71 84c21 32 32 59 32 84c0 9 1 16 1 20c0 14 -3 21 -11 30l-8 3z" />
+		</symbol>
+		<symbol id="E0A4" viewBox="0 0 1000 1000" overflow="inherit">
+			<path transform="scale(1,-1)" d="M0 -39c0 68 73 172 200 172c66 0 114 -37 114 -95c0 -84 -106 -171 -218 -171c-64 0 -96 30 -96 94z" />
+		</symbol>
+		<symbol id="E261" viewBox="0 0 1000 1000" overflow="inherit">
+			<path transform="scale(1,-1)" d="M0 -188v539h18v-191l139 22v-533h-17v186zM18 -100l122 17v176l-122 -19v-174z" />
+		</symbol>
+		<symbol id="E262" viewBox="0 0 1000 1000" overflow="inherit">
+			<path transform="scale(1,-1)" d="M136 186v169h17v-164l44 14v-91l-44 -14v-165l44 12v-91l-44 -13v-155h-17v150l-76 -22v-155h-17v149l-43 -13v90l43 14v167l-43 -14v92l43 13v169h17v-163zM60 73v-167l76 22v168z" />
+		</symbol>
+		<symbol id="E886" viewBox="0 0 1000 1000" overflow="inherit">
+			<path transform="scale(1,-1)" d="M154 326c35 0 57 -16 60 -49c0 -7 -1 -13 -2 -16l-8 -14c-4 -7 -13 -12 -28 -15l-13 1l-12 7c-4 4 -7 11 -6 20l1 11l8 10l17 16c-2 7 -9 10 -20 10c-30 0 -53 -25 -69 -74l-9 -31l-6 -36c25 21 42 34 83 34c28 0 56 -29 56 -61c0 -65 -45 -139 -118 -139 c-69 0 -88 38 -88 108v18c0 6 1 13 3 20c0 21 2 20 9 39c17 50 45 95 83 120c20 13 39 21 59 21zM58 58c0 -24 5 -39 27 -39c18 0 35 15 48 47c10 25 16 42 16 72l-3 10l-6 12c-6 7 -14 12 -26 12c-11 0 -24 -11 -37 -33l-14 -40c-3 -15 -5 -28 -5 -41z" />
+		</symbol>
+		<symbol id="E888" viewBox="0 0 1000 1000" overflow="inherit">
+			<path transform="scale(1,-1)" d="M61 247c0 51 57 79 108 79c33 0 52 -12 72 -27c11 -9 19 -20 24 -31c5 -12 9 -24 9 -37c0 -11 -4 -21 -13 -32s-27 -23 -56 -37l14 -20l10 -16c4 -8 6 -14 7 -18l3 -19c0 -62 -58 -89 -124 -89c-58 0 -115 33 -115 87c0 48 48 72 89 88c-10 14 -15 18 -21 35l-6 18z M192 174c27 16 40 39 44 73c0 7 -2 13 -4 19c-3 7 -7 13 -12 19c-12 14 -26 22 -44 22c-27 0 -50 -13 -50 -37c0 -21 11 -44 34 -66zM175 62c0 17 -9 26 -19 42c-1 1 -3 4 -7 8c-16 16 -32 33 -48 50l-25 -17l-18 -16l-12 -21c-3 -7 -4 -17 -4 -28c0 -17 8 -32 23 -45 l24 -12c7 -3 16 -4 26 -4c21 0 35 5 46 12c9 6 15 14 15 25z" />
+		</symbol>
+	</defs>
+	<style type="text/css">g.page-margin{font-family:Times;} g.tempo{font-weight:bold;} g.dir, g.dynam {font-style:italic;}</style>
+	<svg id="definition-scale" viewBox="0 0 10000 10000">
+		<g class="page-margin" transform="translate(500, 500)">
+			<g class="system" id="system-0000000304220876">
+				<use xlink:href="#E881" x="0" y="905" height="720px" width="720px" />
+				<use xlink:href="#E884" x="149" y="905" height="720px" width="720px" />
+				<g class="measure" id="measure-L86">
+					<g class="staff" id="staff-L86F1">
+						<path d="M0 1445 L5131 1445" stroke="#000000" stroke-width="20" />
+						<path d="M0 1625 L5131 1625" stroke="#000000" stroke-width="20" />
+						<path d="M0 1805 L5131 1805" stroke="#000000" stroke-width="20" />
+						<path d="M0 1985 L5131 1985" stroke="#000000" stroke-width="20" />
+						<path d="M0 2165 L5131 2165" stroke="#000000" stroke-width="20" />
+						<g class="staffDef" id="staffdef-0000002056333495">
+							<g class="clef" id="clef-0000000078803683">
+								<use xlink:href="#E062" x="115" y="1625" height="720px" width="720px" />
+							</g>
+							<g class="keySig" id="ksig-0000001603573629">
+								<use xlink:href="#E260" x="796" y="1985" height="720px" width="720px" />
+								<use xlink:href="#E260" x="979" y="1715" height="720px" width="720px" />
+								<use xlink:href="#E260" x="1162" y="2075" height="720px" width="720px" />
+							</g>
+						</g>
+						<g class="layer" id="layer-L86F1">
+							<g class="beam" id="beam-L87F1-L92F1">
+								<path d="M1607 2457 L1607 3045" stroke="#000000" stroke-width="20" />
+								<path d="M2149 1827 L2149 2991" stroke="#000000" stroke-width="20" />
+								<path d="M2690 1557 L2690 2937" stroke="#000000" stroke-width="20" />
+								<path d="M3232 1647 L3232 2883" stroke="#000000" stroke-width="20" />
+								<path d="M3774 1287 L3774 2829" stroke="#000000" stroke-width="20" />
+								<path d="M4471 1377 L4471 2759" stroke="#000000" stroke-width="20" />
+								<polygon points="1597,3065 4481,2779 4481,2689 1597,2975 " />
+								<g class="note" id="note-L87F1">
+									<path d="M1548 2345 L1872 2345" stroke="#000000" stroke-width="20" />
+									<use xlink:href="#E0A4" x="1597" y="2435" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L88F1">
+									<use xlink:href="#E0A4" x="2139" y="1805" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L89F1">
+									<use xlink:href="#E0A4" x="2680" y="1535" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L90F1">
+									<use xlink:href="#E0A4" x="3222" y="1625" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L91F1">
+									<path d="M3715 1265 L4039 1265" stroke="#000000" stroke-width="20" />
+									<use xlink:href="#E0A4" x="3764" y="1265" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L92F1">
+									<use xlink:href="#E0A4" x="4461" y="1355" height="720px" width="720px" />
+									<g class="accid" id="accid-L92F1">
+										<use xlink:href="#E261" x="4257" y="1355" height="720px" width="720px" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="slur" id="slur-L87F1-L89F1N1">
+						<path d="M1710,2172 C1792,1833 2442,1287 2791,1264 C2477,1328 1827,1874 1710,2172" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+					</g>
+					<g class="slur" id="slur-L90F1-L92F1N1">
+						<path d="M3335,1291 C3534,1014 4277,861 4572,1037 C4288,914 3545,1067 3335,1291" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+					</g>
+					<g class="barLineAttr" id="bline-0000000404507737">
+						<path d="M5116 1445 L5116 2165" stroke="#000000" stroke-width="30" />
+					</g>
+				</g>
+				<g class="measure" id="measure-L93">
+					<g class="staff" id="staff-L93F1">
+						<path d="M5131 1445 L9001 1445" stroke="#000000" stroke-width="20" />
+						<path d="M5131 1625 L9001 1625" stroke="#000000" stroke-width="20" />
+						<path d="M5131 1805 L9001 1805" stroke="#000000" stroke-width="20" />
+						<path d="M5131 1985 L9001 1985" stroke="#000000" stroke-width="20" />
+						<path d="M5131 2165 L9001 2165" stroke="#000000" stroke-width="20" />
+						<g class="layer" id="layer-L93F1">
+							<g class="beam" id="beam-L94F1-L99F1">
+								<path d="M5431 1287 L5431 2359" stroke="#000000" stroke-width="20" />
+								<path d="M5972 1467 L5972 2413" stroke="#000000" stroke-width="20" />
+								<path d="M6632 1647 L6632 2479" stroke="#000000" stroke-width="20" />
+								<path d="M7174 1557 L7174 2533" stroke="#000000" stroke-width="20" />
+								<path d="M7800 2007 L7800 2595" stroke="#000000" stroke-width="20" />
+								<path d="M8342 1917 L8342 2650" stroke="#000000" stroke-width="20" />
+								<polygon points="5421,2379 8352,2670 8352,2580 5421,2289 " />
+								<g class="note" id="note-L94F1">
+									<path d="M5372 1265 L5696 1265" stroke="#000000" stroke-width="20" />
+									<use xlink:href="#E0A4" x="5421" y="1265" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L95F1">
+									<use xlink:href="#E0A4" x="5962" y="1445" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L96F1">
+									<use xlink:href="#E0A4" x="6622" y="1625" height="720px" width="720px" />
+									<g class="accid" id="accid-L96F1">
+										<use xlink:href="#E262" x="6390" y="1625" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="note" id="note-L97F1">
+									<use xlink:href="#E0A4" x="7164" y="1535" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L98F1">
+									<use xlink:href="#E0A4" x="7790" y="1985" height="720px" width="720px" />
+									<g class="accid" id="accid-L98F1">
+										<use xlink:href="#E261" x="7586" y="1985" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="note" id="note-L99F1">
+									<use xlink:href="#E0A4" x="8332" y="1895" height="720px" width="720px" />
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="slur" id="slur-L94F1-L95F1N1">
+						<path d="M5534,1107 C5695,982 6020,1090 6074,1287 C6003,1141 5678,1033 5534,1107" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+					</g>
+					<g class="slur" id="slur-L96F1-L97F1N1">
+						<path d="M6735,1467 C6813,1282 7140,1227 7276,1378 C7149,1280 6822,1335 6735,1467" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+					</g>
+					<g class="barLineAttr" id="bline-0000001525349428">
+						<path d="M8986 1445 L8986 2165" stroke="#000000" stroke-width="30" />
+					</g>
+				</g>
+			</g>
+			<g class="system" id="system-0000000061064237">
+				<use xlink:href="#E881" x="0" y="4055" height="720px" width="720px" />
+				<use xlink:href="#E886" x="149" y="4055" height="720px" width="720px" />
+				<g class="measure" id="measure-L100">
+					<g class="staff" id="staff-L100F1">
+						<path d="M0 4595 L5120 4595" stroke="#000000" stroke-width="20" />
+						<path d="M0 4775 L5120 4775" stroke="#000000" stroke-width="20" />
+						<path d="M0 4955 L5120 4955" stroke="#000000" stroke-width="20" />
+						<path d="M0 5135 L5120 5135" stroke="#000000" stroke-width="20" />
+						<path d="M0 5315 L5120 5315" stroke="#000000" stroke-width="20" />
+						<g class="staffDef" id="staffdef-0000000707081945">
+							<g class="clef" id="clef-0000000078803683">
+								<use xlink:href="#E062" x="115" y="4775" height="720px" width="720px" />
+							</g>
+							<g class="keySig" id="ksig-0000001603573629">
+								<use xlink:href="#E260" x="796" y="5135" height="720px" width="720px" />
+								<use xlink:href="#E260" x="979" y="4865" height="720px" width="720px" />
+								<use xlink:href="#E260" x="1162" y="5225" height="720px" width="720px" />
+							</g>
+						</g>
+						<g class="layer" id="layer-L100F1">
+							<g class="beam" id="beam-L101F1-L106F1">
+								<path d="M1532 5337 L1532 5925" stroke="#000000" stroke-width="20" />
+								<path d="M2066 4977 L2066 5872" stroke="#000000" stroke-width="20" />
+								<path d="M2599 4707 L2599 5819" stroke="#000000" stroke-width="20" />
+								<path d="M3249 4797 L3249 5754" stroke="#000000" stroke-width="20" />
+								<path d="M3782 4437 L3782 5700" stroke="#000000" stroke-width="20" />
+								<path d="M4468 4527 L4468 5632" stroke="#000000" stroke-width="20" />
+								<polygon points="1522,5945 4478,5652 4478,5562 1522,5855 " />
+								<g class="note" id="note-L101F1">
+									<use xlink:href="#E0A4" x="1522" y="5315" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L102F1">
+									<use xlink:href="#E0A4" x="2056" y="4955" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L103F1">
+									<use xlink:href="#E0A4" x="2589" y="4685" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L104F1">
+									<use xlink:href="#E0A4" x="3239" y="4775" height="720px" width="720px" />
+									<g class="accid" id="accid-L104F1">
+										<use xlink:href="#E262" x="3007" y="4775" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="note" id="note-L105F1">
+									<path d="M3723 4415 L4047 4415" stroke="#000000" stroke-width="20" />
+									<use xlink:href="#E0A4" x="3772" y="4415" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L106F1">
+									<use xlink:href="#E0A4" x="4458" y="4505" height="720px" width="720px" />
+									<g class="accid" id="accid-L106F1">
+										<use xlink:href="#E261" x="4254" y="4505" height="720px" width="720px" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="slur" id="slur-L101F1-L102F1N1">
+						<path d="M1635,5157 C1644,4945 1966,4728 2168,4798 C1997,4773 1675,4990 1635,5157" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+					</g>
+					<g class="slur" id="slur-L103F1-L104F1N1">
+						<path d="M2702,4527 C2854,4377 3244,4431 3351,4617 C3237,4484 2847,4430 2702,4527" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+					</g>
+					<g class="barLineAttr" id="bline-0000002072517471">
+						<path d="M5105 4595 L5105 5315" stroke="#000000" stroke-width="30" />
+					</g>
+				</g>
+				<g class="measure" id="measure-L107">
+					<g class="staff" id="staff-L107F1">
+						<path d="M5120 4595 L9001 4595" stroke="#000000" stroke-width="20" />
+						<path d="M5120 4775 L9001 4775" stroke="#000000" stroke-width="20" />
+						<path d="M5120 4955 L9001 4955" stroke="#000000" stroke-width="20" />
+						<path d="M5120 5135 L9001 5135" stroke="#000000" stroke-width="20" />
+						<path d="M5120 5315 L9001 5315" stroke="#000000" stroke-width="20" />
+						<g class="layer" id="layer-L107F1">
+							<g class="beam" id="beam-L108F1-L111F1">
+								<path d="M5413 4257 L5413 5260" stroke="#000000" stroke-width="20" />
+								<path d="M5947 4437 L5947 5314" stroke="#000000" stroke-width="20" />
+								<path d="M6666 4797 L6666 5385" stroke="#000000" stroke-width="20" />
+								<path d="M7200 4707 L7200 5439" stroke="#000000" stroke-width="20" />
+								<polygon points="5403,5280 7210,5459 7210,5369 5403,5190 " />
+								<g class="note" id="note-L108F1">
+									<path d="M5354 4415 L5678 4415" stroke="#000000" stroke-width="20" />
+									<path d="M5354 4235 L5678 4235" stroke="#000000" stroke-width="20" />
+									<use xlink:href="#E0A4" x="5403" y="4235" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L109F1">
+									<path d="M5888 4415 L6212 4415" stroke="#000000" stroke-width="20" />
+									<use xlink:href="#E0A4" x="5937" y="4415" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L110F1">
+									<use xlink:href="#E0A4" x="6656" y="4775" height="720px" width="720px" />
+									<g class="accid" id="accid-L110F1">
+										<use xlink:href="#E262" x="6424" y="4775" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="note" id="note-L111F1">
+									<use xlink:href="#E0A4" x="7190" y="4685" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="beam" id="beam-L112F1-L113F1">
+								<path d="M7816 5247 L7816 5835" stroke="#000000" stroke-width="20" />
+								<path d="M8350 4257 L8350 5782" stroke="#000000" stroke-width="20" />
+								<polygon points="7806,5855 8360,5802 8360,5712 7806,5765 " />
+								<g class="note" id="note-L112F1">
+									<use xlink:href="#E0A4" x="7806" y="5225" height="720px" width="720px" />
+									<g class="accid" id="accid-L112F1">
+										<use xlink:href="#E261" x="7602" y="5225" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="note" id="note-L113F1">
+									<path d="M8291 4415 L8615 4415" stroke="#000000" stroke-width="20" />
+									<path d="M8291 4235 L8615 4235" stroke="#000000" stroke-width="20" />
+									<use xlink:href="#E0A4" x="8340" y="4235" height="720px" width="720px" />
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="slur" id="slur-L108F1-L109F1N1">
+						<path d="M5516,4077 C5676,3952 5997,4060 6049,4257 C5980,4111 5659,4003 5516,4077" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+					</g>
+					<g class="slur" id="slur-L110F1-L111F1N1">
+						<path d="M6769,4617 C6846,4432 7167,4378 7302,4528 C7176,4431 6855,4485 6769,4617" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+					</g>
+					<g class="barLineAttr" id="bline-0000002089900331">
+						<path d="M8986 4595 L8986 5315" stroke="#000000" stroke-width="30" />
+					</g>
+				</g>
+			</g>
+			<g class="system" id="system-0000001015714387">
+				<use xlink:href="#E881" x="0" y="7205" height="720px" width="720px" />
+				<use xlink:href="#E888" x="149" y="7205" height="720px" width="720px" />
+				<g class="measure" id="measure-L114">
+					<g class="staff" id="staff-L114F1">
+						<path d="M0 7745 L5284 7745" stroke="#000000" stroke-width="20" />
+						<path d="M0 7925 L5284 7925" stroke="#000000" stroke-width="20" />
+						<path d="M0 8105 L5284 8105" stroke="#000000" stroke-width="20" />
+						<path d="M0 8285 L5284 8285" stroke="#000000" stroke-width="20" />
+						<path d="M0 8465 L5284 8465" stroke="#000000" stroke-width="20" />
+						<g class="staffDef" id="staffdef-0000000991436032">
+							<g class="clef" id="clef-0000000078803683">
+								<use xlink:href="#E062" x="115" y="7925" height="720px" width="720px" />
+							</g>
+							<g class="keySig" id="ksig-0000001603573629">
+								<use xlink:href="#E260" x="796" y="8285" height="720px" width="720px" />
+								<use xlink:href="#E260" x="979" y="8015" height="720px" width="720px" />
+								<use xlink:href="#E260" x="1162" y="8375" height="720px" width="720px" />
+							</g>
+						</g>
+						<g class="layer" id="layer-L114F1">
+							<g class="beam" id="beam-L115F1-L118F1">
+								<path d="M1603 7497 L1603 8491" stroke="#000000" stroke-width="20" />
+								<path d="M2326 7767 L2326 8564" stroke="#000000" stroke-width="20" />
+								<path d="M2944 8037 L2944 8625" stroke="#000000" stroke-width="20" />
+								<path d="M3479 7947 L3479 8679" stroke="#000000" stroke-width="20" />
+								<polygon points="1593,8511 3489,8699 3489,8609 1593,8421 " />
+								<g class="note" id="note-L115F1">
+									<path d="M1544 7565 L1868 7565" stroke="#000000" stroke-width="20" />
+									<use xlink:href="#E0A4" x="1593" y="7475" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L116F1">
+									<use xlink:href="#E0A4" x="2316" y="7745" height="720px" width="720px" />
+									<g class="accid" id="accid-L116F1">
+										<use xlink:href="#E260" x="2082" y="7745" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="note" id="note-L117F1">
+									<use xlink:href="#E0A4" x="2934" y="8015" height="720px" width="720px" />
+									<g class="accid" id="accid-L117F1">
+										<use xlink:href="#E261" x="2730" y="8015" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="note" id="note-L118F1">
+									<use xlink:href="#E0A4" x="3469" y="7925" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="beam" id="beam-L119F1-L120F1">
+								<path d="M4097 8307 L4097 8895" stroke="#000000" stroke-width="20" />
+								<path d="M4632 7857 L4632 8842" stroke="#000000" stroke-width="20" />
+								<polygon points="4087,8915 4642,8862 4642,8772 4087,8825 " />
+								<g class="note" id="note-L119F1">
+									<use xlink:href="#E0A4" x="4087" y="8285" height="720px" width="720px" />
+									<g class="accid" id="accid-L119F1">
+										<use xlink:href="#E261" x="3883" y="8285" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="note" id="note-L120F1">
+									<use xlink:href="#E0A4" x="4622" y="7835" height="720px" width="720px" />
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="slur" id="slur-L115F1-L116F1N1">
+						<path d="M1706,7317 C1909,7211 2343,7373 2428,7587 C2324,7424 1890,7262 1706,7317" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+					</g>
+					<g class="slur" id="slur-L117F1-L118F1N1">
+						<path d="M3047,7857 C3124,7672 3446,7617 3581,7768 C3455,7670 3133,7725 3047,7857" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+					</g>
+					<g class="barLineAttr" id="bline-0000001842017119">
+						<path d="M5269 7745 L5269 8465" stroke="#000000" stroke-width="30" />
+					</g>
+				</g>
+				<g class="measure" id="measure-L121">
+					<g class="staff" id="staff-L121F1">
+						<path d="M5284 7745 L9001 7745" stroke="#000000" stroke-width="20" />
+						<path d="M5284 7925 L9001 7925" stroke="#000000" stroke-width="20" />
+						<path d="M5284 8105 L9001 8105" stroke="#000000" stroke-width="20" />
+						<path d="M5284 8285 L9001 8285" stroke="#000000" stroke-width="20" />
+						<path d="M5284 8465 L9001 8465" stroke="#000000" stroke-width="20" />
+						<g class="layer" id="layer-L121F1">
+							<g class="beam" id="beam-L122F1-L125F1">
+								<path d="M5508 7947 L5508 8780" stroke="#000000" stroke-width="20" />
+								<path d="M6043 8037 L6043 8834" stroke="#000000" stroke-width="20" />
+								<path d="M6661 8307 L6661 8895" stroke="#000000" stroke-width="20" />
+								<path d="M7196 8217 L7196 8949" stroke="#000000" stroke-width="20" />
+								<polygon points="5498,8800 7206,8969 7206,8879 5498,8710 " />
+								<g class="note" id="note-L122F1">
+									<use xlink:href="#E0A4" x="5498" y="7925" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L123F1">
+									<use xlink:href="#E0A4" x="6033" y="8015" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L124F1">
+									<use xlink:href="#E0A4" x="6651" y="8285" height="720px" width="720px" />
+									<g class="accid" id="accid-L124F1">
+										<use xlink:href="#E261" x="6447" y="8285" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="note" id="note-L125F1">
+									<use xlink:href="#E0A4" x="7186" y="8195" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="beam" id="beam-L126F1-L127F1">
+								<path d="M7730 8487 L7730 9075" stroke="#000000" stroke-width="20" />
+								<path d="M8348 7677 L8348 9014" stroke="#000000" stroke-width="20" />
+								<polygon points="7720,9095 8358,9034 8358,8944 7720,9005 " />
+								<g class="note" id="note-L126F1">
+									<use xlink:href="#E0A4" x="7720" y="8465" height="720px" width="720px" />
+								</g>
+								<g class="note" id="note-L127F1">
+									<use xlink:href="#E0A4" x="8338" y="7655" height="720px" width="720px" />
+									<g class="accid" id="accid-L127F1">
+										<use xlink:href="#E261" x="8134" y="7655" height="720px" width="720px" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="slur" id="slur-L122F1-L125F1N1">
+						<path d="M5611,7767 C5996,7518 7009,7680 7297,8037 C7000,7733 5987,7571 5611,7767" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+					</g>
+					<g class="slur" id="slur-L126F1-L127F1N1">
+						<path d="M7833,8115 C7834,7872 8205,7500 8450,7498 C8244,7539 7873,7911 7833,8115" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+					</g>
+					<g class="barLineAttr" id="bline-0000001789773845">
+						<path d="M8986 7745 L8986 8465" stroke="#000000" stroke-width="30" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</svg>
+</svg>

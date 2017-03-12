@@ -3,7 +3,7 @@ title: <span class='keypress'>alt-f</span>
 author: Craig Stuart Sapp
 creation_date: 5 Mar 2017
 last_updated: 5 Mar 2017
-tags: [commands]
+tags: [all, commands]
 sidebar: mydoc_sidebar
 keywords: interface commands freeze notation
 summary: "The <span class='keypress'>alt-f</span> command toggles freezing/unfreezing dynamic notation rendering."

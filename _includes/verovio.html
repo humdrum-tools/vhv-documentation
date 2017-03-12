@@ -1,0 +1,97 @@
+
+
+<!-- verovio.html
+
+	This include sets up a editiable humdrum text region
+	on the page plus dynamcially calculated SVG image 
+	generated from the humdrum text. If you include this file
+	on a markdown or HTML page, you must activate the inclusion
+	of the verovio javascript toolkit with the header parameter:
+		verovio :true
+
+	Input Parameters:
+
+
+	Parameters for verovio:
+	http://www.verovio.org/command-line.xhtml
+
+		adjustPageHeight default 1
+		border           default 50
+		evenNoteSpacing  default 0
+		font             default "Leipzig"
+		inputFormat      default "auto"
+		page             default 1
+		pageHeight       default 60000
+		pageWidth        default 1350
+		scale            default 40
+		spacingLinear    default 0.25
+		spacingNonLinear default 0.6
+		spacingStaff     default 3
+		spacingSystem    default 6
+
+	vim: ts=3
+-->
+
+
+<table style="width:100%; border:none; background-color:transparent">
+<tbody>
+<tr valign="top" style="width:100%; background-color:transparent;">
+
+<td style="border:none !important;">
+<div>
+<pre contenteditable="true" style="background-color:white; white-space:pre; overflow:auto; min-height:200px; max-width:250px; min-width:150px;" id="{{include.source}}-humdrum"></pre>
+</div>
+</td>
+
+<td style="border:none !important;">
+<div style="margin-top:-20px;" id="{{include.source}}-svg"></div>
+</td>
+
+</tr>
+</tbody>
+</table>
+
+<script>
+
+window.addEventListener("DOMContentLoaded", function() {
+
+	// create the verovio options object:
+	var font             = "{{include.font}}" || "Leipzig";
+	var inputFormat      = "{{include.inputFormat}}" || "auto";
+	var adjustPageHeight = parseInt("{{include.adjustPageHeight}}") || 1;
+	var pageHeight       = parseInt("{{include.pageHeight}}") || 60000;
+	var pageWidth        = parseInt("{{include.pageWidth}}") || 1350;
+	var scale            = parseFloat("{{include.scale}}") || 40;
+	var border           = parseInt("{{include.border}}") || 50;
+	var evenNoteSpacing  = parseInt("{{include.evenNoteSpacing}}") || 0;
+	var page             = parseInt("{{include.page}}") || 1;
+	var spacingLinear    = parseFloat("{{include.spacingLinear}}") || 0.25;
+	var spacingNonLinear = parseFloat("{{include.spacingNonLinear}}") || 0.6;
+	var spacingSystem    = parseInt("{{include.spacingSystem}}") || 3;
+	var spacingStaff     = parseInt("{{include.spacingStaff}}") || 6;
+
+	var options = {
+		adjustPageHeight: adjustPageHeight,
+		font:             font,
+		inputFormat:      inputFormat,
+		page:             page,
+		pageHeight:       pageHeight,
+		pageWidth:        pageWidth,
+		scale:            scale,
+		spacingStaff:     spacingStaff,
+		spacingSystem:    spacingSystem
+	};
+
+	var id = "{{include.source}}";
+	if (!initializeHumdrumText(id, options)) {
+		return;
+	}
+	// create initial SVG image of notation:
+	updateSvgDisplay(id, options);
+});
+
+
+</script>
+
+
+

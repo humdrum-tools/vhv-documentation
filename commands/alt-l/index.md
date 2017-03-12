@@ -3,7 +3,7 @@ title: <span class='keypress'>alt-l</span>
 author: Craig Stuart Sapp
 creation_date: 3 Mar 2017
 last_updated: 3 Mar 2017
-tags: [commands]
+tags: [all, commands]
 sidebar: mydoc_sidebar
 keywords: interface commands layers
 summary: "The <span class='keypress'>alt-l</span> command toggles coloring of secondary layers in the graphic notation."

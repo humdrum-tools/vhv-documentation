@@ -3,7 +3,7 @@ title: MEI export
 author: Craig Stuart Sapp
 creation_date: 9 Mar 2017
 last_updated: 9 Mar 2017
-tags: [getting_started]
+tags: [all, getting_started]
 keywords: interface mei
 summary: "MEI files can be generated from Humdrum data and saved to the local file-system."
 sidebar: mydoc_sidebar

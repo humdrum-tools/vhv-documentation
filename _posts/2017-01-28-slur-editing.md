@@ -6,7 +6,7 @@ last_updated: 5 Mar 2017
 categories: update
 permalink: news-slurs-editing.html
 sidebar: mydoc_sidebar
-tags: [news]
+tags: [all, news]
 ---
 
 Slurs can now be edited graphically in the notation editor window.

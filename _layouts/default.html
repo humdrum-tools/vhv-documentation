@@ -41,6 +41,7 @@
     {% if page.datatable == true %}
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css">
     <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.js"></script>
+
     <script>
 /*
         $(document).ready(function(){
@@ -52,10 +53,21 @@
             );
 */
     </script>
+
     {% endif %}
+
+{% if page.verovio == true %}
+	<script src="http://verovio-script.humdrum.org/scripts/verovio-toolkit.js"></script>
+{% endif %}
+
 
 </head>
 <body>
+
+{% if page.verovio == true %}
+	{% include verovio_support_functions.html %}
+{% endif %}
+
 {% include topnav.html %}
 <!-- Page Content -->
 <div class="container">

@@ -1,5 +1,6 @@
-# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
+# The sidebar code loops through sections 
+# here and provides the appropriate formatting.
 
 
 entries:
@@ -7,7 +8,6 @@ entries:
   product: 
   version: 
   folders:
-
 
   - title:
     output: pdf
@@ -25,6 +25,7 @@ entries:
 
 
 
+###########################################################################
 
   - title: Overview
     output: web, pdf
@@ -35,9 +36,7 @@ entries:
       output: web, pdf
       type: homepage
 
-
-
-
+###########################################################################
 
   - title: User interface
     output: web, pdf
@@ -63,9 +62,7 @@ entries:
       output: web, pdf
       url: /interface/mei
 
-
-
-
+###########################################################################
 
   - title: Commands
     output: web, pdf
@@ -87,9 +84,7 @@ entries:
       output: web, pdf
       url: /commands/alt-v
 
-
-
-
+###########################################################################
 
   - title: Graphical editing
     output: web, pdf
@@ -103,9 +98,7 @@ entries:
       output: web, pdf
       url: /graphical/slurs
 
-
-
-
+###########################################################################
 
   - title: Humdrum encoding
     output: web, pdf
@@ -115,29 +108,43 @@ entries:
       output: web, pdf
       url: /humdrum/invisible_rests
 
-
-
-
+###########################################################################
 
   - title: myVHV
     output: web, pdf
     folderitems:
 
+    - title: Introduction
+      output: web, pdf
+      url: /myvhv/introduction
 
+    - title: Command-line generated images
+      output: web, pdf
+      url: /myvhv/command_line
 
+    - title: Static browser-generated images
+      output: web, pdf
+      url: /myvhv/static
 
+    - title: Dynamic notation
+      output: web, pdf
+      url: /myvhv/dynamic
+
+###########################################################################
 
   - title: Maintenance
     output: web, pdf
     folderitems:
 
-    - title: Figures
+    - title: Image figures
       output: web, pdf
       url: /maintenance/figures
 
+    - title: Dynamic humdrum examples
+      output: web, pdf
+      url: /maintenance/verovio
 
-
-
+###########################################################################
 
   - title: Indexes
     output: web
@@ -170,5 +177,9 @@ entries:
     - title: Maintenance pages
       output: web, pdf
       url: /tag_maintenance.html
+
+    - title: All pages
+      output: web, pdf
+      url: /tag_all.html
 
 

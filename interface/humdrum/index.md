@@ -3,7 +3,7 @@ title: Load/Save Humdrum data
 author: Craig Stuart Sapp
 creation_date: 6 Mar 2017
 last_updated: 6 Mar 2017
-tags: [getting_started, humdrum]
+tags: [all, getting_started, humdrum]
 keywords: interface humdrum load save import export
 summary: "Humdrum data can be loaded or saved in multiple ways."
 sidebar: mydoc_sidebar

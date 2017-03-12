@@ -4,7 +4,7 @@ title: Creating and adding figures.
 author: Craig Stuart Sapp
 creation_date: 7 Mar 2017
 last_updated: 7 Mar 2017
-tags: [maintenance]
+tags: [all, maintenance]
 sidebar: mydoc_sidebar
 keywords: maintenance figures images
 summary: "This page describes how to add images to documentation pages and how to create animated GIFs."

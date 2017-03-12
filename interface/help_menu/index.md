@@ -3,7 +3,7 @@ title: Help menu
 author: Craig Stuart Sapp
 creation_date: 3 Mar 2017
 last_updated: 6 Mar 2017
-tags: [getting_started]
+tags: [all, getting_started]
 keywords: interface help menu
 summary: "A Description of the VHV help menu."
 sidebar: mydoc_sidebar
