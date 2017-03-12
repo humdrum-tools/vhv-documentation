@@ -12,7 +12,7 @@ summary:
 
 
 Verovio Humdrum Viewer is an online editor and interactive notation rendering interface 
-for Humdrum files located at [http://verovio.humdrum.org](http://verovio.humdrum.org).
+for Humdrum files, located at [http://verovio.humdrum.org](http://verovio.humdrum.org).
 See the [Getting started](/interface/getting_started) page for a tutorial on using
 the VHV interface, or browse through pages on the website by clicking on the headings
 in the sidebar menu to the left (or above).
