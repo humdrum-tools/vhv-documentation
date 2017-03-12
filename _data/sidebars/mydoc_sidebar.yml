@@ -144,6 +144,10 @@ entries:
       output: web, pdf
       url: /maintenance/verovio
 
+    - title: Keypresses
+      output: web, pdf
+      url: /maintenance/keypresses
+
 ###########################################################################
 
   - title: Indexes
