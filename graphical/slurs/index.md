@@ -6,6 +6,7 @@ last_updated: 7 Mar 2017
 tags: [all, graphical_editing, RDF]
 sidebar: mydoc_sidebar
 datatable: true
+vim: ts=3
 keywords: graphical editing slurs
 summary: "Graphically adding and editing slurs."
 permalink: /graphical/slurs/index.html
@@ -13,92 +14,86 @@ permalink: /graphical/slurs/index.html
 
 ## Key command summary ##
 
-<script>
-
-var columns = [
-	{ data: "group", title: "Group"},
-	{ data: "keys", title: "Key(s)" },
-	{ data: "action", title: "Action"}
-];
-
-var data = [
-
-	{
-		group: "adding a slur to a note",
-		keys: "<span class='keypress'>s</span>",
-		action: "Add a slur to the next note"
-	},
-
-	{
-		group: "adding a slur to a note",
-		keys: "<span class='keypress'>2+s</span>",
-		action: "Add slur starting on current note and including next two notes"
-	},
-
-	{
-		group: "adding a slur to a note",
-		keys: "<span class='keypress'>9+s</span>",
-		action: "Add slur starting on current note and including next nine notes"
-	},
-
-	{
-		group: "editing slurs",
-		keys: "<span class='keypress'>a</span>",
-		action: "force slur above notes"
-	},
-
-	{
-		group: "editing slurs",
-		keys: "<span class='keypress'>b</span>",
-		action: "force slur below notes"
-	},
-
-	{
-		group: "editing slurs",
-		keys: "<span class='keypress'>c</span>",
-		action: "clear forced slur direction"
-	},
-
-	{
-		group: "editing slurs",
-		keys: "<span class='keypress'>left</span>",
-		action: "move slur start one note to the left"
-	},
-
-	{
-		group: "editing slurs",
-		keys: "<span class='keypress'>right</span>",
-		action: "move slur start one note to the right"
-	},
-
-	{
-		group: "editing slurs",
-		keys: "<span class='keypress'>shift-left</span>",
-		action: "move slur end one note to the left"
-	},
-
-	{
-		group: "editing slurs",
-		keys: "<span class='keypress'>shift-right</span>",
-		action: "move slur end one note to the right"
-	},
-
-	{
-		group: "editing slurs",
-		keys: "<span class='keypress'>escape</span>",
-		action: "deselect the slur"
-	},
-
-];
-</script>
-
-{% include keycommandsummary.html
-	tableId="pitchkeysummary"
+{% include keytable.html
+	contentId="slurkeysummary"
 %}
-
-
-
-
+<script type="text/JSON" id="slurkeysummary">
+{
+	"tableColumns":
+	[
+		{ "data": "keys",   "title": "Key(s)" },
+		{ "data": "description", "title": "Action"}
+	],
+	"categoryList": 
+	[
+		{
+			"categoryName": "adding a slur to a note",
+			"keyList":
+			[
+ 				{
+					"keys": "<span class='keypress'>s</span>",
+					"description": "Add a slur to the next note"
+				},
+	
+				{
+					"keys": "<span class='keypress'>2+s</span>",
+					"description": "Add slur starting on current note and including next two notes"
+				},
+			
+				{
+					"keys": "<span class='keypress'>9+s</span>",
+					"description": "Add slur starting on current note and including next nine notes"
+				}
+			]
+		},
+		{
+			"categoryName": "editing slurs",
+			"keyList":
+			[
+				{
+					"keys": "<span class='keypress'>a</span>",
+					"description": "force slur above notes"
+				},
+			
+				{
+					"keys": "<span class='keypress'>b</span>",
+					"description": "force slur below notes"
+				},
+			
+				{
+					"keys": "<span class='keypress'>c</span>",
+					"description": "clear forced slur direction"
+				},
+			
+				{
+					"keys": "<span class='keypress'>left</span>",
+					"description": "move slur start one note to the left"
+				},
+			
+				{
+					"keys": "<span class='keypress'>right</span>",
+					"description": "move slur start one note to the right"
+				},
+			
+				{
+					"keys": "<span class='keypress'>shift-left</span>",
+					"description": "move slur end one note to the left"
+				},
+			
+				{
+					"keys": "<span class='keypress'>shift-right</span>",
+					"description": "move slur end one note to the right"
+				},
+			
+				{
+					"keys": "<span class='keypress'>escape</span>",
+					"description": "deselect the slur"
+				}
+			]	
+		}
+	]
+}
+</script>
 
 
 ## <span class="keypress">s</span>: Adding a simple slur ##

@@ -13,100 +13,94 @@ permalink: /graphical/pitch/index.html
 ---
 
 ## Key command summary ##
-
-<script>
-
-var columns = [
-	{ data: "group", title: "Group"},
-	{ data: "keys", title: "Key(s)" },
-	{ data: "action", title: "Action"}
-];
-
-var data = [
-	{
-		group: "pitch",
-		keys: "<span class='keypress'>up</span>",
-		action: "transpose up a step"
-	},
-
-	{
-		group: "pitch",
-		keys: "<span class='keypress'>down</span>",
-		action: "transpose down a step"
-	},
-
-	{
-		group: "pitch",
-		keys: "<span class='keypress'>shift-up</span>",
-		action: "transpose up an octave"
-	},
-
-	{
-		group: "pitch",
-		keys: "<span class='keypress'>shift-down</span>",
-		action: "transpose down an octave"
-	},
-
-	{
-		group: "pitch",
-		keys: "<span class='keypress'>3+up</span>",
-		action: "transpose up a third"
-	},
-
-	{
-		group: "pitch",
-		keys: "<span class='keypress'>5+down</span>",
-		action: "transpose down a fifth"
-	},
-
-	{
-		group: "accidental",
-		keys: "<span class='keypress'>hash</span>",
-		action: "toggle sharp accidental"
-	},
-
-	{
-		group: "accidental",
-		keys: "<span class='keypress'>minus</span>",
-		action: "toggle flat accidental"
-	},
-
-	{
-		group: "accidental",
-		keys: "<span class='keypress'>n</span>",
-		action: "toggle forced natural accidental"
-	},
-
-	{
-		group: "accidental",
-		keys: "<span class='keypress'>2+hash</span>",
-		action: "toggle double-sharp accidental"
-	},
-
-	{
-		group: "accidental",
-		keys: "<span class='keypress'>2+minus</span>",
-		action: "toggle double-flat accidental"
-	},
-
-	{
-		group: "accidental",
-		keys: "<span class='keypress'>x</span>",
-		action: "toggle forced display of accidental"
-	},
-
-	{
-		group: "accidental",
-		keys: "<span class='keypress'>i</span>",
-		action: "toggle editorial accidental"
-	},
-
-];
-</script>
-
-{% include keycommandsummary.html
-	tableId="pitchkeysummary"
+{% include keytable.html
+	contentId="slurkeysummary"
 %}
+<script type="text/JSON" id="slurkeysummary">
+{
+	"tableColumns":
+	[
+		{ "data": "keys",   "title": "Key(s)" },
+		{ "data": "description", "title": "Action"}
+	],
+	"categoryList": 
+	[
+
+		{
+			"categoryName": "diatonic pitch",
+			"keyList":
+			[
+				{
+					"keys": "<span class='keypress'>up</span>",
+					"description": "transpose up a step"
+				},
+				{
+					"keys": "<span class='keypress'>down</span>",
+					"description": "transpose down a step"
+				},
+				{
+					"keys": "<span class='keypress'>shift-up</span>",
+					"description": "transpose up an octave"
+				},
+				{
+					"keys": "<span class='keypress'>shift-down</span>",
+					"description": "transpose down an octave"
+				},
+				{
+					"keys": "<span class='keypress'>3+up</span>",
+					"description": "transpose up a third"
+				},
+				{
+					"keys": "<span class='keypress'>5+down</span>",
+					"description": "transpose down a fifth"
+				}
+			]	
+		},
+
+		{
+			"categoryName": "accidentals",
+			"keyList":
+			[
+				{
+					"keys": "<span class='keypress'>hash</span>",
+					"description": "toggle sharp accidental"
+				},
+				{
+					"keys": "<span class='keypress'>minus</span>",
+					"description": "toggle flat accidental"
+				},
+				{
+					"keys": "<span class='keypress'>n</span>",
+					"description": "toggle forced natural accidental"
+				},
+				{
+					"keys": "<span class='keypress'>2+hash</span>",
+					"description": "toggle double-sharp accidental"
+				},
+				{
+					"keys": "<span class='keypress'>2+minus</span>",
+					"description": "toggle double-flat accidental"
+				}
+			]	
+		},
+
+		{
+			"categoryName": "accidental manipulation",
+			"keyList":
+			[
+				{
+					"keys": "<span class='keypress'>x</span>",
+					"description": "toggle forced display of accidental"
+				},
+				{
+					"keys": "<span class='keypress'>i</span>",
+					"description": "toggle editorial accidental"
+				}
+			]	
+		}
+	]
+}
+</script>
 
 
 ## Stepwise transposition ##
@@ -322,7 +316,6 @@ key is not necessary.
 {% include note.html
 	content="A small accidental above a note is the common style for editorial accidentals in editions of Renaissance music (typically to indicate an unwritten *musica ficta* accidental).  Other rendering styles for editorial accidentals are not (yet) available."
 %}
-
 
 
 

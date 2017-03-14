@@ -1,69 +1,94 @@
+<! --
+	This is the footer text to place at the bottom of most pages
+	on the website.
+
+	vim: ts=3
+ -->
+
+
+<style>
+#footer-table {
+	border: none;
+	background-color: transparent !important;
+	width: 100%;
+	margin-bottom: 0;
+	table-layout: fixed;
+}
+#footer-table tr {
+	background-color: transparent !important;
+}
+#footer-table td {
+	background-color: transparent !important;
+	border-top: none;
+	padding: 0;
+}
+#footer-table td:nth-of-type(1) {
+	width: 480px;
+}
+</style>
+
+
+
 <footer>
+<table id="footer-table">
+	<tr>
+	<td>
+		<div class="tags">
+		{% if page.tags != null %}
+			<b>Tags: </b>
+			{% assign projectTags = site.data.tags.allowed-tags %}
+			{% for tag in page.tags %}
+				{% if projectTags contains tag %}
+					<a href="/{{ "tag_" | append: tag | append: ".html" }}"
+				   	class="btn btn-default navbar-btn cursorNorm" 
+				   	role="button">{{page.tagName}}{{tag}}</a>
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+		</div>
+	</td>
+	<td>
+		<p><img src="{{ site.baseurl }}/images/company_logo.png" alt="logo"/></p>
+		<p>
+			<div class="footer-data" style="margin-top:-10px;">
 
-<table style="border:none; width:100%; margin-bottom:0; table-layout:fixed;" width="100%">
-<col style="width:480px"/>
-<col/>
-<tr style="background-color: #fffcf1;">
-<td style="border-top: none; padding:0;">
+			{% unless page.url contains "/news-" %}
+				{% if page.author %}
+				<nobr>
+					<span>Page author:</span> {{page.author}}<br/>
+				</nobr>
+				{% endif %} 
+			{% endunless %}
 
-    <div class="tags">
-        {% if page.tags != null %}
-        <b>Tags: </b>
-        {% assign projectTags = site.data.tags.allowed-tags %}
-        {% for tag in page.tags %}
-        {% if projectTags contains tag %}
-        <a href="/{{ "tag_" | append: tag | append: ".html" }}" class="btn btn-default navbar-btn cursorNorm" role="button">{{page.tagName}}{{tag}}</a>
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-    </div>
+			{% unless page.url contains "/news-" %}
+				{% if page.creation_date %}
+					<nobr>
+						<span>Creation date:</span> {{page.creation_date}}<br/>
+					</nobr>
+				{% endif %} 
+			{% endunless %}
 
-</td><td style="border-top:none;">
-               <!-- &copy;{{ site.time | date: "%Y"  }} {{site.company_name}}. All rights reserved. <br /> -->
+			{% if page.last_updated %}
+				<nobr>
+					<span>Page last updated:</span> {{page.last_updated}}<br/>
+				</nobr>
+			{% endif %} 
 
-<img src="{{ site.baseurl }}/images/company_logo.png" alt="logo"/></p>
-<p>
+			<nobr>
+				<span>Site last generated:</span> {{ site.time | date: "%-d %b %Y"  }} <br />
+			</nobr>
+		</div>
 
-<div class="footer-data" style="margin-top:-10px;">
-
-{% unless page.url contains "/news-" %}
-{% if page.author %}
-	<nobr>
-		<span>Page author:</span> {{page.author}}<br/>
-	</nobr>
-{% endif %} 
-{% endunless %}
-
-{% unless page.url contains "/news-" %}
-{% if page.creation_date %}
-	<nobr>
-		<span>Creation date:</span> {{page.creation_date}}<br/>
-	</nobr>
-{% endif %} 
-{% endunless %}
-
-{% if page.last_updated %}
-	<nobr>
-		<span>Page last updated:</span> {{page.last_updated}}<br/>
-	</nobr>
-{% endif %} 
-
-<nobr>
-	<span>Site last generated:</span> {{ site.time | date: "%-d %b %Y"  }} <br />
-</nobr>
-</div>
-
-    {% unless page.url contains "/tag_" %}
-    {% unless page.url contains "news" %}
-    	{% if site.github_editme_path %}
-		<p style="margin-top:10px">
-    	<a target="_blank" href="https://github.com/{{site.github_editme_path}}{% unless page.url contains "index.html" %}pages/{% endunless %}{{page.folder}}{{page.url | remove: ".html" | append: ".md"}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
-    	{% endif %}
-    {% endunless %}
-    {% endunless %}
-
-</td>
-</tr>
+		{% unless page.url contains "/tag_" %}
+			{% unless page.url contains "news" %}
+				{% if site.github_editme_path %}
+					<p style="margin-top:10px">
+					<a target="_blank" href="https://github.com/{{site.github_editme_path}}{% unless page.url contains "index.html" %}pages/{% endunless %}{{page.folder}}{{page.url | remove: ".html" | append: ".md"}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit this page</a>
+				{% endif %}
+			{% endunless %}
+		{% endunless %}
+	</td>
+	</tr>
 </table>
 
 </footer>

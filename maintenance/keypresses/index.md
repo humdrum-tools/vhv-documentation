@@ -145,7 +145,7 @@ var data = [
 ];
 </script>
 
-{% include keycommandsummary.html
+{% include keytable.html
 	tableId="specialkeys"
 %}
 
