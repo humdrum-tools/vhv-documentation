@@ -7,7 +7,7 @@ last_updated: 12 Mar 2017
 tags: [all, maintenance]
 datatable: true
 vim: ts=3
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 keywords: maintenance datatables table
 summary: This page describes how to create tables for VHV documentation.
 permalink: /maintenance/tables/index.html

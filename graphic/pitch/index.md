@@ -3,13 +3,13 @@ title: Pitch
 author: Craig Stuart Sapp
 creation_date: 7 Mar 2017
 last_updated: 7 Mar 2017
-tags: [all, graphical_editing, RDF]
-sidebar: mydoc_sidebar
-keywords: graphical editing pitch
+tags: [all, graphic_editing, RDF]
+sidebar: main_sidebar
+keywords: graphic editing pitch
 datatable: true
 vim: ft=javascript
 summary: "Graphically altering note pitches and accidentals in the notation editor."
-permalink: /graphical/pitch/index.html
+permalink: /graphic/pitch/index.html
 ---
 
 ## Key command summary ##
@@ -115,7 +115,7 @@ where the D5 pitch is moved down by step to D4:
 	file="transpose-note.gif"
 	alt="graphically transposing a note"
 	max-width="75%"
-	caption="Stepwise graphical transposition of a note with <span class='keypress'>down</span>."
+	caption="Stepwise graphic transposition of a note with <span class='keypress'>down</span>."
 %}
 
 Notice that as the note moves down in the notation
@@ -190,7 +190,7 @@ Cross-staff visual accidentals
 
 Humdrum `**kern` pitches always encode *sounding* accidentals.  VHV automatically
 calculates visual accidentals when converting to [MEI](http://www.music-encoding.org)
-for rendering to graphical music notation.
+for rendering to graphic music notation.
 
 
 However there can be exceptions to the visual accidental calculation

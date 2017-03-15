@@ -5,7 +5,7 @@ creation_date: 1 Mar 2017
 last_updated: 4 Mar 2017
 categories: update
 permalink: news-invisible-rests.html
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 tags: [all, news]
 ---
 

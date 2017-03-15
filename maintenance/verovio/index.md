@@ -6,7 +6,7 @@ creation_date: 10 Mar 2017
 last_updated: 10 Mar 2017
 tags: [all, maintenance]
 verovio: true
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 keywords: maintenance figures verovio music notation
 summary: "This page describes how to add verovio-rendered notation figures to documentation pages that have editable Humdrum data alongside the notation."
 permalink: /maintenance/verovio/index.html

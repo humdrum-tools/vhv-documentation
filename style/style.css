@@ -1693,3 +1693,34 @@ table {
 }
 
 
+table.humdrum-verovio {
+	width: 100%; 
+	border: none; 
+	background-color: transparent !important;
+}
+
+table.humdrum-verovio > tbody > tr {
+	width: 100%;
+	background-color: transparent !important;
+}
+
+table.humdrum-verovio tr td {
+	border:none !important;
+	background-color: transparent !important;
+}
+
+table.humdrum-verovio pre.humdrum {
+	background-color: white; 
+	white-space: pre; 
+	overflow: auto; 
+	min-height: 200px; 
+	max-width: 250px; 
+	min-width: 150px;
+}
+
+table.humdrum-verovio div.verovio-svg {
+	margin-top:-20px;
+}
+
+
+

@@ -6,7 +6,7 @@ last_updated: 6 Mar 2017
 tags: [all, getting_started]
 keywords: interface help menu
 summary: "A Description of the VHV help menu."
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 permalink: /interface/help_menu/index.html
 ---
 

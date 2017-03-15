@@ -6,7 +6,7 @@ creation_date: 3 Mar 2017
 last_updated: 3 Mar 2017
 tags: [all, getting_started]
 summary: "Description of the two sub-windows in the VHV interface."
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 url: /interface/getting_started/index.html
 permalink: /interface/getting_started/index.html
 ---

@@ -1,9 +1,9 @@
 ---
 title: "Graphical editing pages index"
-tagName: graphical_editing
+tagName: graphic_editing
 search: exclude
-permalink: tag_graphical_editing.html
-sidebar: mydoc_sidebar
+permalink: tag_graphic_editing.html
+sidebar: main_sidebar
 folder: tags
 ---
 {% include taglogic.html %}

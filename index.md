@@ -4,7 +4,7 @@ author: Craig Stuart Sapp
 creation_date: 3 Mar 2017
 last_updated: 4 Mar 2017
 tags: [getting_started]
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 keywords: homepage
 permalink: index.html
 summary: 
@@ -18,4 +18,30 @@ the VHV interface, or browse through pages on the website by clicking on the hea
 in the sidebar menu to the left (or above).
 
 
+The sidebar found on the left side of the page (or at the top of
+the page if the window is narrow), is organized by topic:
+
+
+User interface
+: A description of the VHV web interface and how to use it.
+
+Commands
+: A list of keyboard commands for interacting with the VHV interface.
+
+Graphic editing
+: A description of editing commands for altering the music notation graphically.
+
+Humdrum encoding
+: Topics about Humdrum encoding, mostly advanced topics related to VHV for now
+(otherwise see the [Humdrum documentation](http://www.humdrum.org).
+
+myVHV
+: Instructions for how to use [Verovio](http://www.verovio.org) and 
+[Humdrum](http://www.humdrum.org) for your own projects.
+
+Maintenance
+: Topics related to creating pages and maintaining this website.
+
+Indexes
+: Lists of pages by tag category.
 

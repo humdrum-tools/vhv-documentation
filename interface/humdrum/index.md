@@ -6,7 +6,7 @@ last_updated: 6 Mar 2017
 tags: [all, getting_started, humdrum]
 keywords: interface humdrum load save import export
 summary: "Humdrum data can be loaded or saved in multiple ways."
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 permalink: /interface/humdrum/index.html
 ---
 

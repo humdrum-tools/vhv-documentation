@@ -5,7 +5,7 @@ creation_date: 5 Mar 2017
 last_updated: 5 Mar 2017
 categories: update
 permalink: news-graphical.html
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 tags: [all, news]
 ---
 

@@ -4,7 +4,7 @@ author: Craig Stuart Sapp
 creation_date: 3 Mar 2017
 last_updated: 5 Mar 2017
 tags: [all, commands]
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 keywords: interface commands editor vim
 summary: "The <span class='keypress'>alt-v</span> command toggles the vim editing mode."
 permalink: /commands/alt-v/index.html

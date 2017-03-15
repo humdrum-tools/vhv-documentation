@@ -4,7 +4,7 @@ author: Craig Stuart Sapp
 creation_date: 5 Mar 2017
 last_updated: 5 Mar 2017
 tags: [all, commands]
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 keywords: interface commands 
 summary: "The <span class='keypress'>alt-m</span> command displays the MEI data conversion in the text editor."
 permalink: /commands/alt-m/index.html

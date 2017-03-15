@@ -6,7 +6,7 @@ creation_date: 11 Mar 2017
 last_updated: 11 Mar 2017
 tags: [all, maintenance]
 datatable: true
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 keywords: maintenance key press
 summary: "This page describes how to add key icons to documentation text."
 permalink: /maintenance/keypresses/index.html

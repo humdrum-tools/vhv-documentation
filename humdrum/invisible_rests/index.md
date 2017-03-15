@@ -5,7 +5,7 @@ keywords: humdrum invisible rests
 last_updated: 4 Mar 2017
 tags: [all, humdrum, RDF]
 summary: "Description of invisible rests and how to display them for proof-reading."
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 permalink: /humdrum/invisible_rests/index.html
 ---
 

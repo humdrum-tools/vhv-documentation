@@ -3,13 +3,13 @@ title: Slurs
 author: Craig Stuart Sapp
 creation_date: 5 Mar 2017
 last_updated: 7 Mar 2017
-tags: [all, graphical_editing, RDF]
-sidebar: mydoc_sidebar
+tags: [all, graphic_editing, RDF]
+sidebar: main_sidebar
 datatable: true
 vim: ts=3
-keywords: graphical editing slurs
+keywords: graphic editing slurs
 summary: "Graphically adding and editing slurs."
-permalink: /graphical/slurs/index.html
+permalink: /graphic/slurs/index.html
 ---
 
 ## Key command summary ##
@@ -129,7 +129,7 @@ will be searched for in the Humdrum data as an RDF line in the form:
 
 These two RDF signifiers, which could be assigned to other characters
 (although "`<`" and "`>`" are typically used), are used to
-indicate a forced direction on many graphical elements including
+indicate a forced direction on many graphic elements including
 slurs.  If `above`/`below` signifiers are not found in the data
 they will automatically be added the first time a forced direction
 command is given.  You can remove a forced direction by typing <span

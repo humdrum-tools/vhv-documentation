@@ -6,7 +6,7 @@ last_updated: 9 Mar 2017
 tags: [all, getting_started]
 keywords: interface mei
 summary: "MEI files can be generated from Humdrum data and saved to the local file-system."
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 permalink: /interface/mei/index.html
 ---
 

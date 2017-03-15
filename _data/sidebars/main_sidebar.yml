@@ -1,4 +1,3 @@
-
 # The sidebar code loops through sections 
 # here and provides the appropriate formatting.
 
@@ -9,21 +8,22 @@ entries:
   version: 
   folders:
 
+###########################################################################
+
   - title:
     output: pdf
     type: frontmatter
     folderitems:
+
     - title:
       url: /titlepage
       output: pdf
       type: frontmatter
+
     - title:
       url: /tocpage
       output: pdf
       type: frontmatter
-
-
-
 
 ###########################################################################
 
@@ -86,17 +86,17 @@ entries:
 
 ###########################################################################
 
-  - title: Graphical editing
+  - title: Graphic editing
     output: web, pdf
     folderitems:
 
     - title: Pitch
       output: web, pdf
-      url: /graphical/pitch
+      url: /graphic/pitch
 
     - title: Slurs
       output: web, pdf
-      url: /graphical/slurs
+      url: /graphic/slurs
 
 ###########################################################################
 
@@ -136,6 +136,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Create a new page
+      output: web, pdf
+      url: /maintenance/newpage
+
     - title: Image figures
       output: web, pdf
       url: /maintenance/figures
@@ -151,6 +155,10 @@ entries:
     - title: Tables
       output: web, pdf
       url: /maintenance/tables
+
+    - title: Create a new tag
+      output: web, pdf
+      url: /maintenance/newtag
 
 ###########################################################################
 
@@ -168,7 +176,7 @@ entries:
 
     - title: Graphical editing pages
       output: web, pdf
-      url: /tag_graphical_editing.html
+      url: /tag_graphic_editing.html
 
     - title: News pages
       output: web, pdf

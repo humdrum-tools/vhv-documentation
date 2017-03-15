@@ -5,7 +5,7 @@ author: Craig Stuart Sapp
 creation_date: 7 Mar 2017
 last_updated: 7 Mar 2017
 tags: [all, maintenance]
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 keywords: maintenance figures images
 summary: "This page describes how to add images to documentation pages and how to create animated GIFs."
 permalink: /maintenance/figures/index.html

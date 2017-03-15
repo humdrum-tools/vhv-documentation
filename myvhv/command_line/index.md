@@ -3,7 +3,7 @@ title: Using verovio in a terminal
 author: Craig Stuart Sapp
 creation_date: 10 Mar 2017
 last_updated: 10 Mar 2017
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 tags: [all]
 vim: ts=3
 keywords: verovio humdrum command-line terminal unix

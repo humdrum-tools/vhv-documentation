@@ -5,7 +5,7 @@ vim: ts=3
 creation_date: 11 Mar 2017
 last_updated: 11 Mar 2017
 tags: [all]
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 verovio: true
 keywords: verovio dynamic
 summary: Dynamic use of the verovio javascript toolkit to update the notation display of editable Humdrum data on the page.

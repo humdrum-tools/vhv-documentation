@@ -4,7 +4,7 @@ author: Craig Stuart Sapp
 vim: ts=3
 creation_date: 9 Mar 2017
 last_updated: 9 Mar 2017
-sidebar: mydoc_sidebar
+sidebar: main_sidebar
 tags: [all]
 verovio: true
 keywords: graphical editing pitch
