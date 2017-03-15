@@ -8,7 +8,7 @@ sidebar: main_sidebar
 datatable: true
 vim: ts=3
 keywords: graphic editing slurs
-summary: "Graphically adding and editing slurs."
+summary: Graphically adding and editing slurs in the notation editor.
 permalink: /graphic/slurs/index.html
 ---
 
