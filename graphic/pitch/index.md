@@ -7,99 +7,18 @@ tags: [all, graphic_editing, RDF]
 sidebar: main_sidebar
 keywords: graphic editing pitch
 datatable: true
-vim: ft=javascript
+vim: ts=3 ft=javascript
 summary: "Graphically altering note pitches and accidentals in the notation editor."
 permalink: /graphic/pitch/index.html
 ---
 
 ## Key command summary ##
+
 {% include keytable.html
-	contentId="slurkeysummary"
+	contentId="pitchkeysummary"
 %}
-<script type="text/JSON" id="slurkeysummary">
-{
-	"tableColumns":
-	[
-		{ "data": "keys",   "title": "Key(s)" },
-		{ "data": "description", "title": "Action"}
-	],
-	"categoryList": 
-	[
-
-		{
-			"categoryName": "diatonic pitch",
-			"keyList":
-			[
-				{
-					"keys": "<span class='keypress'>up</span>",
-					"description": "transpose up a step"
-				},
-				{
-					"keys": "<span class='keypress'>down</span>",
-					"description": "transpose down a step"
-				},
-				{
-					"keys": "<span class='keypress'>shift-up</span>",
-					"description": "transpose up an octave"
-				},
-				{
-					"keys": "<span class='keypress'>shift-down</span>",
-					"description": "transpose down an octave"
-				},
-				{
-					"keys": "<span class='keypress'>3+up</span>",
-					"description": "transpose up a third"
-				},
-				{
-					"keys": "<span class='keypress'>5+down</span>",
-					"description": "transpose down a fifth"
-				}
-			]	
-		},
-
-		{
-			"categoryName": "accidentals",
-			"keyList":
-			[
-				{
-					"keys": "<span class='keypress'>hash</span>",
-					"description": "toggle sharp accidental"
-				},
-				{
-					"keys": "<span class='keypress'>minus</span>",
-					"description": "toggle flat accidental"
-				},
-				{
-					"keys": "<span class='keypress'>n</span>",
-					"description": "toggle forced natural accidental"
-				},
-				{
-					"keys": "<span class='keypress'>2+hash</span>",
-					"description": "toggle double-sharp accidental"
-				},
-				{
-					"keys": "<span class='keypress'>2+minus</span>",
-					"description": "toggle double-flat accidental"
-				}
-			]	
-		},
-
-		{
-			"categoryName": "accidental manipulation",
-			"keyList":
-			[
-				{
-					"keys": "<span class='keypress'>x</span>",
-					"description": "toggle forced display of accidental"
-				},
-				{
-					"keys": "<span class='keypress'>i</span>",
-					"description": "toggle editorial accidental"
-				}
-			]	
-		}
-	]
-}
+<script type="text/JSON" id="pitchkeysummary">
+{% include keypresses/pitchkeys.json %}
 </script>
 
 
@@ -188,9 +107,10 @@ Cross-staff visual accidentals
 
 ## Printed vs. sounding accidentals ##
 
-Humdrum `**kern` pitches always encode *sounding* accidentals.  VHV automatically
-calculates visual accidentals when converting to [MEI](http://www.music-encoding.org)
-for rendering to graphic music notation.
+Humdrum `**kern` pitches always encode *sounding* accidentals.  VHV
+automatically calculates visual accidentals when converting to
+[MEI](http://www.music-encoding.org) for rendering to graphic music
+notation.
 
 
 However there can be exceptions to the visual accidental calculation
@@ -316,7 +236,6 @@ key is not necessary.
 {% include note.html
 	content="A small accidental above a note is the common style for editorial accidentals in editions of Renaissance music (typically to indicate an unwritten *musica ficta* accidental).  Other rendering styles for editorial accidentals are not (yet) available."
 %}
-
 
 
 

@@ -331,13 +331,11 @@ description
 : A description of what the key(s) do.
 
 <style>
-
 code {
 	-moz-tab-size: 1;
 	-o-tab-size: 1;
 	tab-size: 1;
 }
-
 </style>
 
 
@@ -348,81 +346,7 @@ code {
 {{ specialend1 }}{{ specialend2 }}
 
 <script type="text/JSON" id="slurkeysummary">
-{
-	"tableColumns":
-	[
-		{ "data": "keys",   "title": "Key(s)" },
-		{ "data": "description", "title": "Action"}
-	],
-	"categoryList": 
-	[
-		{
-			"categoryName": "adding a slur to a note",
-			"keyList":
-			[
- 				{
-					"keys": "<span class='keypress'>s</span>",
-					"description": "Add a slur to the next note"
-				},
-	
-				{
-					"keys": "<span class='keypress'>2+s</span>",
-					"description": "Add slur starting on current note and including next two notes"
-				},
-			
-				{
-					"keys": "<span class='keypress'>9+s</span>",
-					"description": "Add slur starting on current note and including next nine notes"
-				}
-			]
-		},
-		{
-			"groupName": "editing slurs",
-			"keyList":
-			[
-				{
-					"keys": "<span class='keypress'>a</span>",
-					"description": "force slur above notes"
-				},
-			
-				{
-					"keys": "<span class='keypress'>b</span>",
-					"description": "force slur below notes"
-				},
-			
-				{
-					"keys": "<span class='keypress'>c</span>",
-					"description": "clear forced slur direction"
-				},
-			
-				{
-					"keys": "<span class='keypress'>left</span>",
-					"description": "move slur start one note to the left"
-				},
-			
-				{
-					"keys": "<span class='keypress'>right</span>",
-					"description": "move slur start one note to the right"
-				},
-			
-				{
-					"keys": "<span class='keypress'>shift-left</span>",
-					"description": "move slur end one note to the left"
-				},
-			
-				{
-					"keys": "<span class='keypress'>shift-right</span>",
-					"description": "move slur end one note to the right"
-				},
-			
-				{
-					"keys": "<span class='keypress'>escape</span>",
-					"description": "deselect the slur"
-				}
-			]	
-		}
-	]
-}
+{% include keypresses/slurkeys.json %}
 </script>
 ```
 
@@ -432,81 +356,7 @@ This renders as:
 	contentId="slurkeysummary"
 %}
 <script type="text/JSON" id="slurkeysummary">
-{
-	"tableColumns":
-	[
-		{ "data": "keys",   "title": "Key(s)" },
-		{ "data": "description", "title": "Action"}
-	],
-	"categoryList": 
-	[
-		{
-			"categoryName": "adding a slur to a note",
-			"keyList":
-			[
- 				{
-					"keys": "<span class='keypress'>s</span>",
-					"description": "Add a slur to the next note"
-				},
-	
-				{
-					"keys": "<span class='keypress'>2+s</span>",
-					"description": "Add slur starting on current note and including next two notes"
-				},
-			
-				{
-					"keys": "<span class='keypress'>9+s</span>",
-					"description": "Add slur starting on current note and including next nine notes"
-				}
-			]
-		},
-		{
-			"categoryName": "editing slurs",
-			"keyList":
-			[
-				{
-					"keys": "<span class='keypress'>a</span>",
-					"description": "force slur above notes"
-				},
-			
-				{
-					"keys": "<span class='keypress'>b</span>",
-					"description": "force slur below notes"
-				},
-			
-				{
-					"keys": "<span class='keypress'>c</span>",
-					"description": "clear forced slur direction"
-				},
-			
-				{
-					"keys": "<span class='keypress'>left</span>",
-					"description": "move slur start one note to the left"
-				},
-			
-				{
-					"keys": "<span class='keypress'>right</span>",
-					"description": "move slur start one note to the right"
-				},
-			
-				{
-					"keys": "<span class='keypress'>shift-left</span>",
-					"description": "move slur end one note to the left"
-				},
-			
-				{
-					"keys": "<span class='keypress'>shift-right</span>",
-					"description": "move slur end one note to the right"
-				},
-			
-				{
-					"keys": "<span class='keypress'>escape</span>",
-					"description": "deselect the slur"
-				}
-			]	
-		}
-	]
-}
+{% include keypresses/slurkeys.json %}
 </script>
 
 

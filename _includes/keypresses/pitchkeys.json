@@ -1,0 +1,83 @@
+{
+	"tableColumns":
+	[
+		{ "data": "keys",   "title": "Key(s)" },
+		{ "data": "description", "title": "Action"}
+	],
+	"categoryList": 
+	[
+
+		{
+			"categoryName": "diatonic pitch",
+			"keyList":
+			[
+				{
+					"keys": "<span class='keypress'>up</span>",
+					"description": "transpose up a step"
+				},
+				{
+					"keys": "<span class='keypress'>down</span>",
+					"description": "transpose down a step"
+				},
+				{
+					"keys": "<span class='keypress'>shift-up</span>",
+					"description": "transpose up an octave"
+				},
+				{
+					"keys": "<span class='keypress'>shift-down</span>",
+					"description": "transpose down an octave"
+				},
+				{
+					"keys": "<span class='keypress'>3+up</span>",
+					"description": "transpose up a third"
+				},
+				{
+					"keys": "<span class='keypress'>5+down</span>",
+					"description": "transpose down a fifth"
+				}
+			]	
+		},
+
+		{
+			"categoryName": "accidentals",
+			"keyList":
+			[
+				{
+					"keys": "<span class='keypress'>hash</span>",
+					"description": "toggle sharp accidental"
+				},
+				{
+					"keys": "<span class='keypress'>minus</span>",
+					"description": "toggle flat accidental"
+				},
+				{
+					"keys": "<span class='keypress'>n</span>",
+					"description": "toggle forced natural accidental"
+				},
+				{
+					"keys": "<span class='keypress'>2+hash</span>",
+					"description": "toggle double-sharp accidental"
+				},
+				{
+					"keys": "<span class='keypress'>2+minus</span>",
+					"description": "toggle double-flat accidental"
+				}
+			]	
+		},
+
+		{
+			"categoryName": "accidental manipulation",
+			"keyList":
+			[
+				{
+					"keys": "<span class='keypress'>x</span>",
+					"description": "toggle forced display of accidental"
+				},
+				{
+					"keys": "<span class='keypress'>i</span>",
+					"description": "toggle editorial accidental"
+				}
+			]	
+		}
+	]
+}

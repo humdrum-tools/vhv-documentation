@@ -9,41 +9,6 @@
 // vim: ts=3
 //
 
-function makeFlatTableData(jsonData) {
-	var data = JSON.parse(jsonData);
-	var dataOutput = [];
-	var columnOutput = [{
-		data: "group", title: "Group"}
-	];
-	var i;
-	var j;
-	var obj;
-	var entry;
-	var kentry;
-
-	for (i=0; i<data.tableColumns.length; i++) {
-		entry = data.tableColumns[i];
-		obj = {};
-		obj.data = entry.data;
-		obj.title = entry.title;
-		columnOutput.push(obj);
-	}
-
-	for (i=0; i<data.categoryList.length; i++) {
-		entry = data.categoryList[i];
-		for (j=0; j<entry.keyList.length; j++) {
-			kentry = entry.keyList[j];
-			obj = {};
-			obj.group = entry.categoryName;
-			obj.keys = kentry.keys;
-			obj.description = kentry.description;
-			dataOutput.push(obj);
-		}
-	}
-
-	return [columnOutput, dataOutput];
-}
-
 
 $(document).ready(function() {
 	var dataid = "{{include.contentId}}";
@@ -60,7 +25,7 @@ $(document).ready(function() {
 	var numColumns  = Object.keys(flatData[0]).length - 1;
 	var groupColumn = 0;
 
-	$('table.keytable').dataTable({
+	$('table#{{include.contentId}}-table').dataTable({
 		paging:         false,
 		stateSave:      false,
 		searching:      false,
@@ -91,13 +56,12 @@ $(document).ready(function() {
 });
 
 </script>
+
 <style>
 #{{include.contentId}}-table_info.dataTables_info { display:none; }
 </style>
 
-<table id="{{include.contentId}}-table" class="keytable" 
-style="width:75%; border-bottom: 1px solid rgb(222,222,222);">
-</table>
+<table id="{{include.contentId}}-table" class="keytable"></table>
 
 
 

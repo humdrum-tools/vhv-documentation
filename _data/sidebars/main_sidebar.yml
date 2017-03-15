@@ -98,6 +98,10 @@ entries:
       output: web, pdf
       url: /graphic/slurs
 
+    - title: Key-command summary
+      output: web, pdf
+      url: /graphic/summary
+
 ###########################################################################
 
   - title: Humdrum encoding

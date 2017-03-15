@@ -43,15 +43,52 @@
     <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.js"></script>
 
     <script>
-/*
-        $(document).ready(function(){
 
-            $('table.datatable').DataTable( {
-                        paging: false,
-                        stateSave: true
-                    }
-            );
-*/
+
+//////////////////////////////
+//
+// makeFlatTableData -- used for creating key tables from JSON data in keytable.html
+//      template.
+//
+
+function makeFlatTableData(jsonData) {
+	var data = JSON.parse(jsonData);
+	var dataOutput = [];
+	var columnOutput = [{
+		data: "group", title: "Group"}
+	];
+	var i;
+	var j;
+	var obj;
+	var entry;
+	var kentry;
+
+	for (i=0; i<data.tableColumns.length; i++) {
+		entry = data.tableColumns[i];
+		obj = {};
+		obj.data = entry.data;
+		obj.title = entry.title;
+		columnOutput.push(obj);
+	}
+
+	for (i=0; i<data.categoryList.length; i++) {
+		entry = data.categoryList[i];
+		for (j=0; j<entry.keyList.length; j++) {
+			kentry = entry.keyList[j];
+			obj = {};
+			obj.group = entry.categoryName;
+			obj.keys = kentry.keys;
+			obj.description = kentry.description;
+			dataOutput.push(obj);
+		}
+	}
+
+	return [columnOutput, dataOutput];
+}
+
+
+
+
     </script>
 
     {% endif %}

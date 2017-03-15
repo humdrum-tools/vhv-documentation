@@ -1724,5 +1724,33 @@ table.humdrum-verovio div.verovio-svg {
 	margin-top:-20px;
 }
 
+table.keytable thead tr th {
+	border-bottom: 0;
+}
+
+table.keytable thead tr th:first-child {
+	border-radius: 5px 0 0 0;
+}
+
+table.keytable thead tr th:last-child {
+	border-radius: 0 5px 0 0;
+}
+
+table.keytable {
+	width:75%; 
+	border-bottom: 1px solid rgb(222,222,222) !important;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-collapse: collapse;
+}
+
+table.keytable tr td:first-child {
+	border-left: 1px solid #dedede;
+}
+
+table.keytable tr td:last-child {
+	border-right: 1px solid #dedede;
+}
 
 
