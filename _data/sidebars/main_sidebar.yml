@@ -80,6 +80,10 @@ entries:
       output: web, pdf
       url: /commands/alt-m
 
+    - title: <span class="keypress">alt-o</span>&colon; Original clefs
+      output: web, pdf
+      url: /commands/alt-o
+
     - title: <span class="keypress">alt-v</span>&colon; Vim editing
       output: web, pdf
       url: /commands/alt-v
