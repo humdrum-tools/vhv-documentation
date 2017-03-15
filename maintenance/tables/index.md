@@ -235,7 +235,7 @@ $(document).ready(function() {
 </table>
 ```
 
-here is the reuslting table that is displayed on the page:
+Here is the reuslting table that is displayed on the page:
 
 <script>
 $(document).ready(function() {
