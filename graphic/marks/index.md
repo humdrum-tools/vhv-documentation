@@ -352,4 +352,9 @@ And adding these filters to the top of the SVG:
 %}
 
 
+## Multiple marks on a single note ##
+
+If more than two marks are placed on a single note, currently only one color
+will be shown.
+
 
