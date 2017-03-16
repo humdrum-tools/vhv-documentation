@@ -9,8 +9,8 @@ sidebar: main_sidebar
 tags: [all, news]
 ---
 
-Marking notes with user signifiers has been enabled in the VHV
-interface.  Multiple marks can be used, each using a different
+Marking notes with user signifiers has been implemented in the VHV
+notation editor.  Multiple marks can be used, each using a different
 color.  See the description of [marks](/graphic/marks) for more
 details.
 
