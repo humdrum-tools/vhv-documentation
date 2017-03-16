@@ -96,6 +96,12 @@ var data = [
 
 	{
 		group: "special keys",
+		key: "<span class='keypress'>at</span>",
+		action: "<code>&lt;span class='keypress'&gt;at&lt;span&gt;</code>",
+	},
+
+	{
+		group: "special keys",
 		key: "<span class='keypress'>minus</span>",
 		action: "<code>&lt;span class='keypress'&gt;minus&lt;span&gt;</code>",
 	},
