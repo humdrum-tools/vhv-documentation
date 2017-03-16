@@ -102,6 +102,10 @@ entries:
       output: web, pdf
       url: /graphic/slurs
 
+    - title: Marks
+      output: web, pdf
+      url: /graphic/marks
+
     - title: Key-command summary
       output: web, pdf
       url: /graphic/summary
