@@ -27,7 +27,7 @@ storing pitch and rhythm for notes.  A Humdrum note such as:
 
 is converted into this MEI note element:
 
-```
+```xml
 <note xml:id="note-L6F3S1" type="qon-12 qoff-25_2 b40-146" dur="8" oct="3" pname="g" accid="s" />
 ```
 
