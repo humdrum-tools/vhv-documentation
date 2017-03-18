@@ -70,7 +70,7 @@ Here is a list of keys which have special names:
 	[
 		{
 			"categoryName": "special keys",
-			"keylist": 
+			"keyList": 
 			[
 
 				{
@@ -147,18 +147,6 @@ Here is a list of keys which have special names:
 	]
 }
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
