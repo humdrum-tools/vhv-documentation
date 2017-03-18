@@ -49,6 +49,8 @@ feedback_email: craigsapp@gmail.com
 # feedback_link: "http://helpy.io/"
 # if you uncomment the previous line, it changes where the feedback link points to
 
+google_analytics: UA-93835119-1
+
 highlighter: rouge
 # library used for syntax highlighting
 

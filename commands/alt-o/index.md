@@ -6,7 +6,7 @@ last_updated: 15 Mar 2017
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands original clef
-summary: "The <span class='keypress'>alt-o</span> command toggles between \"original\" and \"modern\" clefs."
+summary: The <span class='keypress'>alt-o</span> command toggles between 'original' and 'modern' clefs.
 permalink: /commands/alt-o/index.html
 ---
 
