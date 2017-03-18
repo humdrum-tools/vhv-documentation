@@ -20,6 +20,7 @@ $(document).ready(function() {
 	var flatData;
 	var columnInfo;
 	[columnInfo, flatData] = makeFlatTableData(dataElement.textContent);
+console.log("FLATDATA", flatData);
 
 	// parameters passed from Liquid:
 	var numColumns  = Object.keys(flatData[0]).length - 1;

@@ -52,7 +52,7 @@ is created by the text:
 
 ## Special key names ##
 
-Here is a list of keys which have special names:
+Here is a list of keys that have special names:
 
 {% include keytable.html
 	contentId="specialkeys"
