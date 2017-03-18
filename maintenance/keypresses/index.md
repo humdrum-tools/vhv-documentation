@@ -54,106 +54,101 @@ is created by the text:
 
 Here is a list of keys which have special names:
 
-<script>
+{% include keytable.html
+	conteny="specialkeys"
+%}
 
-var columns = [
-	{ data: "group", title: "Group"},
-	{ data: "key",    title: "Key" },
-	{ data: "action", title: "Text"},
-];
+<script type="text/json" id="specialkeys">
+{
+	"tableColumns":
+	[
+		{ "data": "key",  "title": "Key" },
+		{ "data": "text", "title": "Text"}
+	],
 
-var data = [
+	"categoryList":
+	[
+		{
+			"categoryName": "special keys",
+			"keylist": 
+			[
 
-	{
-		group: "special keys",
-		key: "<span class='keypress'>command</span>",
-		action: "<code>&lt;span class='keypress'&gt;command&lt;span&gt;</code>",
-	},
+				{
+					"key": "<span class='keypress'>command</span>",
+					"text": "<code>&lt;span class='keypress'&gt;command&lt;span&gt;</code>"
+				},
 
-	{
-		group: "special keys",
-		key: "<span class='keypress'>control</span>",
-		action: "<code>&lt;span class='keypress'&gt;control&lt;span&gt;</code>",
-	},
+				{
+					"key": "<span class='keypress'>control</span>",
+					"text": "<code>&lt;span class='keypress'&gt;control&lt;span&gt;</code>"
+				},
 
-	{
-		group: "special keys",
-		key: "<span class='keypress'>alt</span>",
-		action: "<code>&lt;span class='keypress'&gt;alt&lt;span&gt;</code>",
-	},
+				{
+					"key": "<span class='keypress'>alt</span>",
+					"text": "<code>&lt;span class='keypress'&gt;alt&lt;span&gt;</code>"
+				},
 
-	{
-		group: "special keys",
-		key: "<span class='keypress'>shift</span>",
-		action: "<code>&lt;span class='keypress'&gt;shift&lt;span&gt;</code>",
-	},
+				{
+					"key": "<span class='keypress'>shift</span>",
+					"text": "<code>&lt;span class='keypress'&gt;shift&lt;span&gt;</code>"
+				},
 
-	{
-		group: "special keys",
-		key: "<span class='keypress'>hash</span>",
-		action: "<code>&lt;span class='keypress'&gt;hash&lt;span&gt;</code>",
-	},
+				{
+					"key": "<span class='keypress'>hash</span>",
+					"text": "<code>&lt;span class='keypress'&gt;hash&lt;span&gt;</code>"
+				},
 
-	{
-		group: "special keys",
-		key: "<span class='keypress'>at</span>",
-		action: "<code>&lt;span class='keypress'&gt;at&lt;span&gt;</code>",
-	},
+				{
+					"key": "<span class='keypress'>at</span>",
+					"text": "<code>&lt;span class='keypress'&gt;at&lt;span&gt;</code>"
+				},
 
-	{
-		group: "special keys",
-		key: "<span class='keypress'>minus</span>",
-		action: "<code>&lt;span class='keypress'&gt;minus&lt;span&gt;</code>",
-	},
-
-	{
-		group: "special keys",
-		key: "<span class='keypress'>plus</span>",
-		action: "<code>&lt;span class='keypress'&gt;plus&lt;span&gt;</code>",
-	},
-
-	{
-		group: "special keys",
-		key: "<span class='keypress'>escape</span>",
-		action: "<code>&lt;span class='keypress'&gt;escape&lt;span&gt;</code>",
-	},
-
-	{
-		group: "special keys",
-		key: "<span class='keypress'>space</span>",
-		action: "<code>&lt;span class='keypress'&gt;space&lt;span&gt;</code>",
-	},
-
-	{
-		group: "special keys",
-		key: "<span class='keypress'>up</span>",
-		action: "<code>&lt;span class='keypress'&gt;up&lt;span&gt;</code>",
-	},
-
-	{
-		group: "special keys",
-		key: "<span class='keypress'>down</span>",
-		action: "<code>&lt;span class='keypress'&gt;down&lt;span&gt;</code>",
-	},
-
-	{
-		group: "special keys",
-		key: "<span class='keypress'>left</span>",
-		action: "<code>&lt;span class='keypress'&gt;left&lt;span&gt;</code>",
-	},
-
-	{
-		group: "special keys",
-		key: "<span class='keypress'>right</span>",
-		action: "<code>&lt;span class='keypress'&gt;right&lt;span&gt;</code>",
-	},
-
-];
+				{
+					"key": "<span class='keypress'>minus</span>",
+					"text": "<code>&lt;span class='keypress'&gt;minus&lt;span&gt;</code>"
+				},
+			
+				{
+					"key": "<span class='keypress'>plus</span>",
+					"text": "<code>&lt;span class='keypress'&gt;plus&lt;span&gt;</code>"
+				},
+			
+				{
+					"key": "<span class='keypress'>escape</span>",
+					"text": "<code>&lt;span class='keypress'&gt;escape&lt;span&gt;</code>"
+				},
+			
+				{
+					"key": "<span class='keypress'>space</span>",
+					"text": "<code>&lt;span class='keypress'&gt;space&lt;span&gt;</code>"
+				},
+			
+				{
+					"key": "<span class='keypress'>up</span>",
+					"text": "<code>&lt;span class='keypress'&gt;up&lt;span&gt;</code>"
+				},
+			
+				{
+					"key": "<span class='keypress'>down</span>",
+					"text": "<code>&lt;span class='keypress'&gt;down&lt;span&gt;</code>"
+				},
+			
+				{
+					"key": "<span class='keypress'>left</span>",
+					"text": "<code>&lt;span class='keypress'&gt;left&lt;span&gt;</code>"
+				},
+			
+				{
+					"key": "<span class='keypress'>right</span>",
+					"text": "<code>&lt;span class='keypress'&gt;right&lt;span&gt;</code>"
+				}
+			]
+		}
+	]
+}
 </script>
 
-{% include keytable.html
-	tableId="specialkeys"
-%}
+
 
 
 
