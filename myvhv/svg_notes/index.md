@@ -13,12 +13,14 @@ summary: Demonstration of extracting embedded pitch and rhythm information from 
 permalink: /myvhv/svg_notes/index.html
 ---
 
-SVG images generated from Humdrum data contain embedded pitch and rhythm parameters
-for notes.  These parameters are stored in the `class` parameter of `g` elements
-that enclose graphical elements for each note.  This information can be used to
-style notes with CSS or do basic pitch/rhythm analyses directly from the SVG image.
+SVG images generated from Humdrum data contain embedded pitch and
+rhythm parameters for notes.  These parameters are stored in the
+`class` parameter of `g` elements that enclose graphical elements
+for each note.  This information can be used to style notes with
+CSS, align audio/MIDI with the image, or do basic pitch/rhythm
+analyses directly from the SVG image.
 
-Conversion from Humdrum data into MEI data inserts a `type` attribute 
+Conversion from Humdrum data into MEI data inserts a `type` attribute
 storing pitch and rhythm for notes.  A Humdrum note such as:
 
 ```
@@ -63,7 +65,7 @@ the SVG attribute `class="note qon-12 qoff-25_2 b40-146"`, preserving basic
 pitch and rhythm information about the note within the image.
 
 
-## Example: Key analysis directly from SVG images ## 
+## Key analysis directly from SVG images ## 
 
 The following example generates a pitch-class histogram table
 directly from the displayed SVG image.  As you mouse-over notes in
