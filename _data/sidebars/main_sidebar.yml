@@ -142,6 +142,10 @@ entries:
       output: web, pdf
       url: /myvhv/dynamic
 
+    - title: SVG note data
+      output: web, pdf
+      url: /myvhv/svg_notes
+
 ###########################################################################
 
   - title: Maintenance
