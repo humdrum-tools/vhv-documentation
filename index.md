@@ -36,7 +36,7 @@ Humdrum encoding
 (otherwise see the [Humdrum documentation](http://www.humdrum.org).
 
 myVHV
-: Instructions for how to use [Verovio](http://www.verovio.org) and 
+: Instructions and demos for using [Verovio](http://www.verovio.org) and 
 [Humdrum](http://www.humdrum.org) for your own projects.
 
 Maintenance
