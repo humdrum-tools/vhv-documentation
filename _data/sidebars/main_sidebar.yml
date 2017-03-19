@@ -116,6 +116,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Tuplet styling
+      output: web, pdf
+      url: /humdrum/tuplet_styling
+
     - title: Invisible rests
       output: web, pdf
       url: /humdrum/invisible_rests

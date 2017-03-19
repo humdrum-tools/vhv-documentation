@@ -733,5 +733,10 @@ function pearsonCorrelation(x, y, shift) {
 
 </script>
 
+<br/>
+<br/>
+<br/>
+<br/>
 
+View the [Markdown source](https://raw.githubusercontent.com/humdrum-tools/vhv-documentation/gh-pages/myvhv/svg_notes/index.md) for this page to view the JavaScript code for the example.
 

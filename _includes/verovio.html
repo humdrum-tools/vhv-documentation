@@ -10,7 +10,7 @@
 		verovio :true
 
 	Input Parameters:
-
+		tabsize			default none (browser default)
 
 	Parameters for verovio:
 	http://www.verovio.org/command-line.xhtml
@@ -32,6 +32,31 @@
 	vim: ts=3
 -->
 
+<script>
+
+// insert tab characters in Humdrum element.
+window.addEventListener("DOMContentLoaded", function () {
+	var pre = document.querySelector("pre#{{include.source}}-humdrum");
+	pre.style.display = "block";
+	pre.addEventListener("keydown", function(event) {
+		if (event.keyCode==9 || event.which==9) {
+			event.preventDefault();
+			document.execCommand("styleWithCSS", true, null);
+			document.execCommand("insertHTML", true, "\t");
+		}
+	});
+});
+</script>
+
+<style>
+#{{include.source}}-humdrum {
+	white-space: pre;
+	tab-size: {{include.tabsize}};
+	-o-tab-size: {{include.tabsize}};
+	-moz-tab-size: {{include.tabsize}};
+	-webkit-tab-size: {{include.tabsize}};
+}
+</style>
 
 <table class="humdrum-verovio">
 <tbody>
@@ -39,7 +64,7 @@
 
 <td>
 <div>
-<pre class="humdrum" contenteditable="true" id="{{include.source}}-humdrum"></pre>
+<pre style="display:none;" class="humdrum" contenteditable="true" id="{{include.source}}-humdrum"></pre>
 </div>
 </td>
 
