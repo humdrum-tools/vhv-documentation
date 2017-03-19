@@ -11,6 +11,7 @@
 
 	Input Parameters:
 		tabsize			default none (browser default)
+		humdrum-min-height: the minimum height of the humdrum text box
 
 	Parameters for verovio:
 	http://www.verovio.org/command-line.xhtml
@@ -55,6 +56,9 @@ window.addEventListener("DOMContentLoaded", function () {
 	-o-tab-size: {{include.tabsize}};
 	-moz-tab-size: {{include.tabsize}};
 	-webkit-tab-size: {{include.tabsize}};
+	{% if {{include.humdrum-min-height}} != "" %}
+		min-height: {{include.humdrum-min-height}};
+	{% endif %}
 }
 </style>
 
@@ -62,11 +66,19 @@ window.addEventListener("DOMContentLoaded", function () {
 <tbody>
 <tr valign="top">
 
-<td>
-<div>
-<pre style="display:none;" class="humdrum" contenteditable="true" id="{{include.source}}-humdrum"></pre>
-</div>
-</td>
+{% unless {{include.humdrum-visible}} == "false" %}
+	<td>
+	<div>
+	<pre style="display:none;" class="humdrum" contenteditable="true" id="{{include.source}}-humdrum"></pre>
+	</div>
+	</td>
+{% else %}
+	<td style="display:none;">
+	<div>
+	<pre style="display:none;" class="humdrum" contenteditable="true" id="{{include.source}}-humdrum"></pre>
+	</div>
+	</td>
+{% endunless %}
 
 <td>
 <div class="verovio-svg" style="margin-top:-20px;" id="{{include.source}}-svg"></div>

@@ -120,6 +120,10 @@ entries:
       output: web, pdf
       url: /humdrum/tuplet_styling
 
+    - title: Ottava marks
+      output: web, pdf
+      url: /humdrum/ottava_marks
+
     - title: Invisible rests
       output: web, pdf
       url: /humdrum/invisible_rests
