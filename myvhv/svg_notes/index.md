@@ -65,6 +65,102 @@ the SVG attribute `class="note qon-12 qoff-25_2 b40-146"`, preserving basic
 pitch and rhythm information about the note within the image.
 
 
+## Coloring notes by pitch-class ##
+
+
+Here is an example of using CSS to color pitches in an SVG image:
+
+
+{% include verovio.html
+	source="colorednotes"
+	pageWidth="950"
+	scale="70"
+%}
+
+<script type="application/humdrum" id="colorednotes">
+!!!OTL: Mister Frog's Wedding
+!!!filter: autobeam
+**kern
+*clefG2
+*k[]
+*M2/4
+{8g
+=1
+8cc
+8cc
+8cc
+8ee
+=2
+8dd
+8cc
+8a}
+{(8g
+=3
+4.cc)
+(8g
+=4
+4.cc)}
+{8cc
+=5
+8ee
+8gg
+8.gg
+16gg
+=6
+8aa
+8gg
+4ee}
+=7
+{8gg
+16ee
+16ee
+16dd
+16dd
+8cc
+=8
+16ee
+16ee
+8cc
+8a}
+{(8g
+=9
+4.cc)
+(8g
+=10
+4.cc)}
+==
+*-
+</script>
+
+<style>
+#colorednotes-svg .note.b40-202 { fill: green; }
+#colorednotes-svg .note.b40-208 { fill: blue; }
+#colorednotes-svg .note.b40-214 { fill: #a00; }
+#colorednotes-svg .note.b40-185,
+#colorednotes-svg .note.b40-225 { fill: lightblue; }
+#colorednotes-svg .note.b40-191,
+#colorednotes-svg .note.b40-231 { fill: purple; }
+</style>
+
+
+Here is the styling added to the page in order to color the pitches:
+
+```css
+<style>
+.note.b40-202 { fill: green; }
+.note.b40-208 { fill: blue; }
+.note.b40-214 { fill: #a00; }
+.note.b40-185,
+.note.b40-225 { fill: lightblue; }
+.note.b40-191,
+.note.b40-231 { fill: purple; }
+</style>
+```
+
+
+
+
+
 ## Key analysis directly from SVG images ## 
 
 The following example generates a pitch-class histogram table
@@ -351,7 +447,7 @@ function extractPitchMap() {
 	Target.innerHTML = content;
    $(Target.firstChild).DataTable({
         paging: false,
-        stateSave: false,
+        stateSave: true,
         searching: false,
 		  destroy: true
     });

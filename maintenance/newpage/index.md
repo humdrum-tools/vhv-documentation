@@ -113,7 +113,7 @@ permalink
 : the URL pathname for the compiled HTML page.  This should almost always be the same location and name as `index.md`, but renamed `index.html`.
 
 {% include warning.html
-	content="The `permalink` parameter is important, and should be set correctly.  This parameter instructs jekyll where to save the final HTML file generated from the page."
+	content="The `permalink` parameter is important, and should be set correctly, particularly when copying an existing page and modifying it to create a new page.  This parameter instructs jekyll where to save the final HTML file generated from the page."
 %}
 
 ## Adding a new page to main sidebar ##

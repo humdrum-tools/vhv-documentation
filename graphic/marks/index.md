@@ -352,9 +352,9 @@ And adding these filters to the top of the SVG:
 %}
 
 
-## Multiple marks on a single note ##
 
-If more than two marks are placed on a single note, currently only one color
-will be shown.
+{% include warning.html
+	content="If more than one mark is placed on a single note, only one color will currently be shown."
+%}
 
 

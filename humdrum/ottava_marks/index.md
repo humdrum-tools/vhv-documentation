@@ -20,7 +20,8 @@ with the tandem interpretation `*8va` and ending it with the interpretation
 {% include verovio.html
 	source="paganini15a"
 	humdrum-min-height="560px"
-	pageWidth="1450"
+	scale="55"
+	pageWidth="1000"
 %}
 
 <script type="application/json" id="paganini15a">
@@ -65,8 +66,8 @@ notation like this:
 {% include verovio.html
 	source="paganini15b"
 	humdrum-visible="false"
-	scale="50"
-	pageWidth="2200"
+	scale="60"
+	pageWidth="1000"
 %}
 
 <script type="application/json" id="paganini15b">
@@ -101,6 +102,12 @@ notation like this:
 </script>
 
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 {% include warning.html
 	content="If you do not close the ottava mark with \"*X8va\", the notes will currently be transposed, but the mark will not be visible."
 %}

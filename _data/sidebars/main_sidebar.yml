@@ -124,6 +124,10 @@ entries:
       output: web, pdf
       url: /humdrum/ottava_marks
 
+    - title: Pedal marks
+      output: web, pdf
+      url: /humdrum/pedal_marks
+
     - title: Invisible rests
       output: web, pdf
       url: /humdrum/invisible_rests
