@@ -13,6 +13,6 @@ A section called *Graphical editing* was added to the sidebar to document
 how to interact with the music notation in VHV to alter the contents
 of the Humdrum data in the text editor.
 
-Current pages include instructions on editing [pitch](/graphical/pitch) and
-[slurs](/graphical/slurs) in the notation.
+Current pages include instructions on editing [pitch](/graphic/pitch) and
+[slurs](/graphic/slurs) in the notation.
 

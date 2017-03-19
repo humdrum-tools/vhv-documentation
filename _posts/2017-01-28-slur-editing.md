@@ -17,5 +17,5 @@ Typing a number between <span class="keypress">2</span> and
 <span class="keypress">s</span> will add a longer slur.
 Slurs can also be moved in the graphic notation after they are created.
 
-See the documentation about [graphical slurs](/graphical/slurs) for more
+See the documentation about [graphic slurs](/graphic/slurs) for more
 information.

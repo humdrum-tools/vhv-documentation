@@ -90,6 +90,16 @@ entries:
 
 ###########################################################################
 
+  - title: Repertories
+    output: web, pdf
+    folderitems:
+
+    - title: Bach chorales
+      output: web, pdf
+      url: /repertory/bach-chorales
+
+###########################################################################
+
   - title: Graphic editing
     output: web, pdf
     folderitems:
@@ -206,24 +216,27 @@ entries:
       output: web, pdf
       url: /tag_graphic_editing.html
 
-    - title: News pages
-      output: web, pdf
-      url: /tag_news.html
-
     - title: Humdrum pages
       output: web, pdf
       url: /tag_humdrum.html
-
-    - title: RDF pages
-      output: web, pdf
-      url: /tag_RDF.html
 
     - title: Maintenance pages
       output: web, pdf
       url: /tag_maintenance.html
 
+    - title: News pages
+      output: web, pdf
+      url: /tag_news.html
+
+    - title: Repertory pages
+      output: web, pdf
+      url: /tag_repertories.html
+
+    - title: RDF pages
+      output: web, pdf
+      url: /tag_RDF.html
+
     - title: All pages
       output: web, pdf
       url: /tag_all.html
-
 

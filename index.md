@@ -31,6 +31,9 @@ Commands
 Graphic editing
 : A description of editing commands for altering the music notation graphically.
 
+Repertories
+: A description of online musical repertories available for display in VHV.
+
 Humdrum encoding
 : Topics about Humdrum encoding, mostly advanced topics related to VHV for now
 (otherwise see the [Humdrum documentation](http://www.humdrum.org).
