@@ -56,5 +56,40 @@ as you change it.
 *-
 </script>
 
+Display of the Humdrum data is optional, but then the notation is not editable:
+
+
+
+<div style="margin-top: -10px;">
+{% include verovio.html
+	source="myhumdrum2"
+	pageWidth="1600"
+	humdrum-visible="false"
+%}
+<script type="text/humdrum" id="myhumdrum2">
+**kern
+*M4/4
+=1-
+4c
+4c
+4g
+4g
+=2
+4a
+4a
+2g
+=3
+4f
+4f
+4e
+4e
+=4
+4d
+4d
+2c;
+==
+*-
+</script>
+</div>
 
 
