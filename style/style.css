@@ -3,6 +3,14 @@
  * vim: ts=3
  */
 
+
+
+svg:not(:root) {
+	/* This is needed for Firefox when Bootstrap is used */
+  overflow: inherit; 
+}
+
+
 body {
 	font-size:15px;
 }
