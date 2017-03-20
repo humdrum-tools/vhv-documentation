@@ -5,6 +5,7 @@ author: Craig Stuart Sapp
 creation_date: 10 Mar 2017
 last_updated: 10 Mar 2017
 tags: [all, maintenance]
+vim: ts=3 ft=javascript
 verovio: true
 sidebar: main_sidebar
 keywords: maintenance figures verovio music notation
@@ -140,9 +141,46 @@ should place a single parameter indented with a tab on each line after the
 include line.
 
 
-Here is a list of the parameters recognized by the image template:
+Here is a list of the parameters recognized by the verovio template:
 
-### verovio toolkit parameters ###
+### Required parameters ###
+
+source="*id*"
+: The **source** parameter's value is an ID of an HTML element on the webpage that stores the Humdrum data.  Below are example container elements, where **source** should be set to *myhumdrum*:
+
+<pre>
+&lt;script id="myhumdrum" type="x-application/humdrum"&gt;
+**kern
+1c
+*-
+&lt;/script&gt;
+</pre>
+
+or
+
+<pre>
+&lt;div id="myhumdrum" style="display:none"&gt;
+**kern
+1c
+*-
+&lt;/div&gt;
+</pre>
+
+In the second case, the `div` element should be hidden on the page,
+since the verovio template will copy the Humdrum data to a visible
+location on the page by itself (unless the **humdrum-visible** 
+parameter is set to *false*).
+
+{% include warning.html
+	content="The source *id* must be a unique ID on the HTML page.  If you want to show more than one verovio-generated example on a page, then use a different ID for example, such as \"myhumdrum1\", \"myhumdrum2\", etc.  Note that an HTML ID cannot contain a space and cannot start with a digit and can only contain the additional characters \"-\" and \"_\"."
+%}
+
+
+### Verovio toolkit parameters ###
+
+The following verovio template parameters are passed on to the 
+verovio toolkit in order to control layout and options when rendering
+graphical notation from the Humdrum data:
 
 font (default `"Leipzig"`)
 : This is the musical font to use when creating the music notation.  The
@@ -205,8 +243,59 @@ that is added between systems to increase space between them. The `spacingStaff`
 value will also be added to this value, since the last staff on a system also
 adds a `spacingStaff` pad.
 
-### layout parameters ###
+### Webpage layout parameters ###
 
-Layout parameters for the Humdrum+notation figure will be added in the future.
+tabsize
+: This controls the width of a tab in the display of the Humdrum data.  
+The default width is 8 characters but this is too narrow if chords are to
+be displayed nicely in multiple columns.  To change to 12 spaces, use `tabsize="12"`.
+
+
+humdrum-visible="false"
+: This parameter will hide the Humdrum text and only show the output graphical
+notation:
+
+<div style="margin-top: -40px;">
+{% include verovio.html
+	source="myhumdrum2"
+	pageWidth="1600"
+	humdrum-visible="false"
+%}
+<script type="text/humdrum" id="myhumdrum2">
+**kern
+*M4/4
+=1-
+4c
+4c
+4g
+4g
+=2
+4a
+4a
+2g
+=3
+4f
+4f
+4e
+4e
+=4
+4d
+4d
+2c;
+==
+*-
+</script>
+</div>
+
+humdrum-min-height
+: The minimum height of the Humdrum text box.  The Humdrum text box
+will normally match the height of the SVG image rendered from verovio.  If
+SVG is short, the Humdrum text may be too small for your purposes.  In that
+case, increase the minimum height, such as `humdrum-min-height="400px"`.
+
+
+humdrum-max-width
+: the maximum width of the Humdrum text box.
+
 
 

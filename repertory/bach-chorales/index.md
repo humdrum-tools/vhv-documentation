@@ -4,6 +4,7 @@ author: Craig Stuart Sapp
 keywords: humdrum Bach chorales
 creation_date: 18 Mar 2017
 last_updated: 18 Mar 2017
+verovio: true
 tags: [all, repertories]
 vim: ts=3 ft=javascript
 summary: J.S. Bach chorale repertory
@@ -33,8 +34,7 @@ Alfred Dörffel. Breitkopf & Härtel, Leipzig [c. 1875]. 178 pp. Plate
 Number: V.A.10. Retypeset c. 1915 as Edition Breitkopf 10. Reprinted
 by Associated Music Publishers, Inc., New York [c. 1940].  
 
-Scans
-of the source edition for the first 50 chorales can be viewed 
+Scans of the source edition for the first 50 chorales can be viewed
 by pressing <span class="keypress">alt-p</span> when viewing a
 particular chorale:
 
@@ -51,6 +51,78 @@ article: [The History of the Breitkopf Collection of J.S. Bach's
 Four-Part Chorales](http://www.bach-cantatas.com/Articles/Breitkopf-History.htm) 
 by Thomas Braatz for more information about the source edition of the
 Bach chorales.
+
+
+## Original-clef feature ##
+
+The Bach-chorale repertory demonstrates how to encode 
+[original clefs](/commands/alt-o).  Type 
+<span class="keypress">alt-o</span> in VHV to switch between modern and original clefs
+when viewing the chorales:
+
+{% include image.html
+	file="alt-o-clef-switching.png"
+	alt="alt-o demonstration"
+	caption=""
+%}
+
+
+
+
+The first edition of this chorale collection was actually published
+in grand-staff arrangement, using soprano clef for the top staff
+and bass clef on the bottom staff:
+
+{% include image.html
+	file="chorale-first-edition.png"
+	alt="first edition"
+	caption="First edtion of the chorales in soprano and bass clefs on a grand staff."
+%}
+
+Here is an example arrangement of the music that more closely matches the original edition:
+
+{% include verovio.html
+	source="chorale001"
+	humdrum-max-width="220px"
+	scale="50"
+	pageWidth="1000"
+%}
+
+<script type="application/humdrum" id="chorale001">
+!!!OTL:	Aus meines Herzens Grunde
+!!!SCT:	BWV 269
+!!!PC#:	1
+**kern	**kern
+*clefF4	*clefC1
+*k[f#]	*k[f#]
+*M3/4	*M3/4
+*^	*^
+4B	4GG	4g	4d
+=1	=1	=1	=1
+4B	4G	2g	4d
+8cL	4E	.	4e
+8BJ	.	.	.
+4A	4F#	4dd	4d
+=2	=2	=2	=2
+4G	4G	4.b	2d
+4F#	4D	.	.
+.	.	8a	.
+4G	4E	4g	4B
+=3	=3	=3	=3
+8cL	4C	4.g	8eL
+8BJ	.	.	8d
+4c	8BBL	.	8e
+.	8AAJ	8a	8f#J
+4d	4GG	4b	4g
+=4	=4	=4	=4
+2d;y	2D;	2a;	2f#;y
+*v	*v	*	*
+*	*v	*v
+*-	*-
+</script>
+
+
+
 
 
 ## Grand-staff arrangement ##
@@ -71,7 +143,7 @@ using this link: [verovio.humdrum.org/?file=chorales&filter=satb2gs](http://vero
 
 The Bach chorales can also be transposed all to the same tonic pitch 
 in grand-staff layout by 
-adding a transpose filter to the URL: [verovio.humdrum.org/?file=chorales&filter=satb2gs](http://verovio.humdrum.org/?file=chorales&filter=satb2gs%7ctranspose%20-kc).
+adding a transpose filter to the URL: [verovio.humdrum.org/?file=chorales&filter=satb2gs%7ctranspose%20-kc](http://verovio.humdrum.org/?file=chorales&filter=satb2gs%7ctranspose%20-kc).
 
 
 {% include image.html

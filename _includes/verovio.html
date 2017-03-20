@@ -12,6 +12,9 @@
 	Input Parameters:
 		tabsize			default none (browser default)
 		humdrum-min-height: the minimum height of the humdrum text box
+		humdrum-max-width: the maximum width of the humdrum text box
+		humdrum-visible: "false" will hide the humdrum text.
+
 
 	Parameters for verovio:
 	http://www.verovio.org/command-line.xhtml
@@ -58,6 +61,9 @@ window.addEventListener("DOMContentLoaded", function () {
 	-webkit-tab-size: {{include.tabsize}};
 	{% if {{include.humdrum-min-height}} != "" %}
 		min-height: {{include.humdrum-min-height}};
+	{% endif %}
+	{% if {{include.humdrum-max-width}} != "" %}
+		max-width: {{include.humdrum-max-width}};
 	{% endif %}
 }
 </style>
