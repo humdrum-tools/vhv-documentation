@@ -105,6 +105,10 @@ window.addEventListener("DOMContentLoaded", function () {
 	var settings = document.querySelector("#settings-data").textContent;
 	SET = aton.parse(settings).SETTING;
 
+	for (var i=0; i<SET.length; i++) {
+		SET[i].SOLERTI = SET[i].SOLERTI.replace(/sm/, "");
+	}
+
 	$('#example2').DataTable( {
 		data: SET,
 		columns: [
