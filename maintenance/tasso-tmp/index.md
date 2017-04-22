@@ -152,6 +152,7 @@ console.log("TTLE", title);
 <table id="example2" class="display" width="1000px">
 </table>
 
+<!--
 
 ## Rime ##
 
@@ -211,6 +212,8 @@ console.log("TTLE", title);
 
 <table id="example3" class="display" width="1000px">
 </table>
+
+-->
 
 
 ## Rime by Print Source ##

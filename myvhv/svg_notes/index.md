@@ -13,12 +13,14 @@ summary: Demonstration of extracting embedded pitch and rhythm information from 
 permalink: /myvhv/svg_notes/index.html
 ---
 
-SVG images generated from Humdrum data contain embedded pitch and
-rhythm parameters for notes.  These parameters are stored in the
-`class` parameter of `g` elements that enclose graphical elements
-for each note.  This information can be used to style notes with
-CSS, align audio/MIDI with the image, or do basic pitch/rhythm
-analyses directly from the SVG image.
+Pitch and rhythm information can be embedded in SVG images generated
+from Humdrum data with verovio.  To embed this information, add the
+option `humType: 1` to the verovio options.  These extra parameters
+are stored in the `class` parameter of `g` elements that enclose
+graphical elements for each note.  This information can be used to
+style notes with CSS, align audio/MIDI with the image, or do basic
+pitch/rhythm analyses directly from the SVG image as demonstrated
+further below on this page.
 
 Conversion from Humdrum data into MEI data inserts a `type` attribute
 storing pitch and rhythm for notes.  A Humdrum note such as:
@@ -30,10 +32,10 @@ storing pitch and rhythm for notes.  A Humdrum note such as:
 is converted into this MEI note element:
 
 ```xml
-<note xml:id="note-L6F3S1" type="qon-12 qoff-25_2 b40-146" dur="8" oct="3" pname="g" accid="s" />
+<note xml:id="note-L6F3S1" type="qon-12 qoff-25_2 pname-g acc-s oct-3 b40c-26 b12c-7" dur="8" oct="3" pname="g" accid="s" />
 ```
 
-The `type` attribute contains three separate embedded parameters for passing through to the final SVG image:
+The `type` attribute contains several separate embedded parameters for passing through to the final SVG image:
 
 qon-12 <span style="color:#AAA">(quarter-note on-time)</span>
 : The starting time of the note in units of quarter notes since the start of the music.
@@ -42,8 +44,21 @@ qoff-25_2 <span style="color:#AAA">(quarter-note off-time)</span>
 : The ending time of the note.  This is a rational value, representing "25/2" or 12.5 in
 floating point.
 
-b40-146 <span style="color:#AAA">(base-40 pitch number)</span>
-: This is the base-40 representation of the pitch G#3.
+pname-g
+: The diatonic pitch name (a, b, c, d, e, f, or g).
+
+acc-s
+: The chromatic alteration (n=natural, s=sharp, f=flat, ff=double flat, ss=double sharp).
+
+oct-3
+: Fourth octave (middle-C octave)
+
+b40c-26 <span style="color:#AAA">(base-40 pitch class)</span>
+: This is the base-40 representation of the pitch class G#.
+
+b40c-12 <span style="color:#AAA">(base-12 pitch class)</span>
+: This is the base-12 representation of the pitch class G#/A-flat.
+
 
 Subtracting the on-time from the off-time yields the duration 
 of the note: 25/2 &ndash; 12 = 1/2 of a quarter note, or an eighth note.
@@ -52,7 +67,7 @@ Here is the graphical rendering of the above MEI element in and SVG
 conversion of the score:
 
 ```xml
-<g class="note qon-12 qoff-25_2 b40-146" id="note-L6F3S1">
+<g class="note qon-12 qoff-25_2 pname-g acc-s oct-3 b40c-26 b12c-7" id="note-L6F3S1">
    <use xlink:href="#E0A4" x="2049" y="2615" height="720px" width="720px" />
    <g class="accid" id="accid-L6F3S1">
       <use xlink:href="#E262" x="1824" y="2615" height="720px" width="720px" />
@@ -60,9 +75,11 @@ conversion of the score:
 </g>
 ```
 
-The MEI attribute `type="qon-12 qoff-25_2 b40-146"` has been transformed into
-the SVG attribute `class="note qon-12 qoff-25_2 b40-146"`, preserving basic
-pitch and rhythm information about the note within the image.
+The MEI attribute 
+`type="qon-12 qoff-25_2 pname-g acc-s oct-3 b40c-26 b12c-7"`
+has been transformed into the SVG attribute 
+`class="qon-12 qoff-25_2 pname-g acc-s oct-3 b40c-26 b12c-7"`,
+preserving basic pitch and rhythm information about the note within the image.
 
 
 ## Coloring notes by pitch-class ##
@@ -133,13 +150,13 @@ Here is an example of using CSS to color pitches in an SVG image:
 </script>
 
 <style>
-#colorednotes-svg .note.b40-202 { fill: green; }
-#colorednotes-svg .note.b40-208 { fill: blue; }
-#colorednotes-svg .note.b40-214 { fill: #a00; }
-#colorednotes-svg .note.b40-185,
-#colorednotes-svg .note.b40-225 { fill: lightblue; }
-#colorednotes-svg .note.b40-191,
-#colorednotes-svg .note.b40-231 { fill: purple; }
+#colorednotes-svg .note.pname-c { fill: green; }
+#colorednotes-svg .note.pname-d { fill: blue; }
+#colorednotes-svg .note.pname-e { fill: firebrick; }
+#colorednotes-svg .note.pname-f { fill: gold; }
+#colorednotes-svg .note.pname-g { fill: lightblue; }
+#colorednotes-svg .note.pname-a { fill: indigo}
+#colorednotes-svg .note.pname-b { fill: purple; }
 </style>
 
 
@@ -147,13 +164,13 @@ Here is the styling added to the page in order to color the pitches:
 
 ```css
 <style>
-.note.b40-202 { fill: green; }
-.note.b40-208 { fill: blue; }
-.note.b40-214 { fill: #a00; }
-.note.b40-185,
-.note.b40-225 { fill: lightblue; }
-.note.b40-191,
-.note.b40-231 { fill: purple; }
+.note.pname-c { fill: green;     }
+.note.pname-d { fill: blue;      }
+.note.pname-e { fill: firebrick; }
+.note.pname-f { fill: gold;      }
+.note.pname-g { fill: lightblue; }
+.note.pname-a { fill: indigo;    }
+.note.pname-b { fill: purple;    }
 </style>
 ```
 
@@ -410,11 +427,11 @@ function extractPitchMap() {
 		Base40Counts[i] = [];
 		Base40Durs[i] = 0;
 	}
-	var notes  = SvgTarget.querySelectorAll("svg g[class*='b40-'");
+	var notes  = SvgTarget.querySelectorAll("svg g[class*='b40c-'");
 	var matches;
 	for (var i=0; i<notes.length; i++) {
 		var content = notes[i].className.baseVal;
-		if (matches = content.match(/b40-([\d_]+)/)) {
+		if (matches = content.match(/b40c-([\d_]+)/)) {
 			var b40 = matches[1];
 			var b7 = base40ToBase7(b40);
 			var dur = getDuration(content);
@@ -501,7 +518,7 @@ function hidePitchInSvg(pc) {
 
 function showPitchInTable(pc) {
 	pc = pc % 40;
-	var element = document.querySelector("#b40-" + pc);
+	var element = document.querySelector("#b40c-" + pc);
 	if (element.nodeName == "TR") {
 		var elements = element.querySelectorAll("td");
 		element.style.backgroundColor = FILLCOLOR + " !important";
@@ -513,7 +530,7 @@ function showPitchInTable(pc) {
 
 function hidePitchInTable(pc) {
 	pc = pc % 40;
-	var element = document.querySelector("#b40-" + pc);
+	var element = document.querySelector("#b40c-" + pc);
 	element.style["background-color"] = "";
 	if (element.nodeName == "TR") {
 		var elements = element.querySelectorAll("td");
