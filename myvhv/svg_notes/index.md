@@ -13,12 +13,12 @@ summary: Demonstration of extracting embedded pitch and rhythm information from 
 permalink: /myvhv/svg_notes/index.html
 ---
 
-{% include_relative introduction-include.md %}
+{% include_relative introduction.include %}
 
-{% include_relative colored_notes-include.md %}
+{% include_relative colored_notes.include %}
 
-{% include_relative colored_beams-include.md %}
+{% include_relative colored_beams.include %}
 
-{% include_relative key_analysis-include.md %}
+{% include_relative key_analysis.include %}
 
 

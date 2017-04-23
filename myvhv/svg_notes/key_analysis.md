@@ -13,7 +13,7 @@ summary: Demonstration of extracting key from SVG image of notation.
 permalink: /myvhv/svg_notes/key_analysis.html
 ---
 
-{% include_relative key_analysis-include.md %}
+{% include_relative key_analysis.include %}
 
 
 

@@ -12,7 +12,7 @@ summary: Demonstration of coloring beams by pitch-classes of attached notes.
 permalink: /myvhv/svg_notes/colored_beams.html
 ---
 
-{% include_relative colored_beams-include.md %}
+{% include_relative colored_beams.include %}
 
 
 

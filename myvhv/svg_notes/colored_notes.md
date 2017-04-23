@@ -12,7 +12,7 @@ summary: Demonstration of extracting embedded pitch and rhythm information from 
 permalink: /myvhv/svg_notes/colored_notes.html
 ---
 
-{% include_relative colored_notes-include.md %}
+{% include_relative colored_notes.include %}
 
 
 
