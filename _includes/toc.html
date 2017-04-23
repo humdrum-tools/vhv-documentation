@@ -21,7 +21,7 @@ $( document ).ready(function() {
 
 	// don't show TOC if only one entry:
 	var entries = document.querySelectorAll("#toc ul li");
-	if (entries.size < 2) {
+	if (entries.length < 2) {
 		var toc = document.querySelector("#toc");
 		toc.style.display = "none";
 	}
