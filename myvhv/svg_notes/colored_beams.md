@@ -8,7 +8,7 @@ tags: [all]
 sidebar: main_sidebar
 verovio: true
 keywords: verovio dynamic svg pitch rhythm
-summary: Demonstration of coloring beams by pitch-classes of attached notes.
+summary: Demonstration of coloring beams with SVG gradient filters.
 permalink: /myvhv/svg_notes/colored_beams.html
 ---
 

@@ -9,7 +9,7 @@ sidebar: main_sidebar
 verovio: true
 datatable: true
 keywords: verovio dynamic svg pitch rhythm
-summary: Demonstration of extracting key from SVG image of notation.
+summary: Demonstration of extracting a key estimate from an SVG image of music notation.
 permalink: /myvhv/svg_notes/key_analysis.html
 ---
 

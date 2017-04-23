@@ -64,7 +64,11 @@ note in the beam.
 4.a
 8g
 =8
-2.g
+16cLL
+16d
+16e
+16f#JJ
+2g
 ==
 *-
 </script>
@@ -79,7 +83,7 @@ note in the beam.
 #coloredbeams-svg .pname-f, #coloredbeams-svg .pname-f [stroke]
 	 { fill: gold;      stroke: gold; }
 #coloredbeams-svg .pname-g, #coloredbeams-svg .pname-g [stroke]
-	 { fill: lightblue; stroke: lightblue; }
+	 { fill: darkturquoise; stroke: darkturquoise; }
 #coloredbeams-svg .pname-a, #coloredbeams-svg .pname-a [stroke]
 	 { fill: purple;    stroke: purple}
 #coloredbeams-svg .pname-b, #coloredbeams-svg .pname-b [stroke]
@@ -87,13 +91,20 @@ note in the beam.
 
 #coloredbeams-svg .clef,
 #coloredbeams-svg .rest,
+#coloredbeams-svg .fermata,
 #coloredbeams-svg .keySig,
+#coloredbeams-svg .ledgerLines,
+#coloredbeams-svg .artic,
+#coloredbeams-svg .dir,           /* text directions */
 #coloredbeams-svg .meterSig,      /* time signatures */
 #coloredbeams-svg .barLineAttr,   /* barlines */
 #coloredbeams-svg .staff > path,  /* staff lines */
 #coloredbeams-svg .system > use   /* measure numbers */
 {
-	opacity: 0.15;
+	fill: #000;
+	color: #000;
+	stroke: #000;
+	opacity: 0.15 !important;
 }
 </style>
 
@@ -104,6 +115,15 @@ note in the beam.
 // Set up a mutation watch to update the SVG coloring whenever a new
 // SVG is generated.
 //
+
+var colors = {};
+colors["c"] = "green";
+colors["d"] = "blue";
+colors["e"] = "firebrick";
+colors["f"] = "gold";
+colors["g"] = "darkturquoise";
+colors["a"] = "purple";
+colors["b"] = "orange";
 
 var observer2 = new MutationObserver(function(mutations) {
 	mutations.forEach(function(mutation) {
@@ -129,8 +149,19 @@ function colorall(selector) {
 	for (var i=0; i<ties.length; i++) {
 		colorTie(ties[i], notes);
 	}
+	var beamfilters = "";
 	for (i=0; i<beams.length; i++) {
-		colorBeam(beams[i], notes);
+		beamfilters += colorBeam(beams[i], notes);
+	}
+	var svg = document.querySelector(selector);
+	if (!svg) {
+		return;
+	}
+	if (beamfilters.length > 0) {
+  		var svgns = "http://www.w3.org/2000/svg";
+		var defs = document.createElementNS(svgns, "defs");
+		defs.innerHTML = beamfilters;
+		svg.insertBefore(defs, svg.firstChild);
 	}
 }
 
@@ -172,31 +203,135 @@ function colorTie(tie, notes) {
 
 //////////////////////////////
 //
+// getNoteAndChorDListFromBeam --
+//
+
+function getNoteAndChordListFromBeam(beam) {
+	var notes_and_chords = [];
+	for (var i=0; i<beam.childNodes.length; i++) {
+		var child = beam.childNodes[i];
+		if ((child.nodeName === "g") && child.className.baseVal.match(/note/)) {
+			notes_and_chords.push(child);
+		} else if ((child.nodeName === "g") && child.className.baseVal.match(/chord/)) {
+			// For now pull out the first note in the chord (later 
+			// pull out the note closest to the beam).
+			var chordlist = child.childNodes;
+			for (var j=0; j<chordlist.length; j++) {
+				if ((chordlist[j].nodeName === "g") && 
+						chordlist[j].className.baseVal.match(/note/)) {
+					notes_and_chords.push(chordlist[j]);
+					break;
+				}
+			}
+		}
+	}
+	return notes_and_chords;
+}
+
+
+
+//////////////////////////////
+//
 // colorBeam -- Color a beam according to the first and last note's pitch classes.
 //
 
-function colorBeam(beam, notes) {
-	var matches;
-	var id1;
-	var id2;
-	if (!(matches = beam.id.match(/beam-([^-]+)-([^-]+)/))) {
-		return;
+function colorBeam(beam) {
+	var notes = getNoteAndChordListFromBeam(beam);
+
+	if (notes.length < 2) {
+		return "";
 	}
-	var note1;
-	var note2;
-	var noteid1 = "note-" + matches[1];
-	var noteid2 = "note-" + matches[2];
-	for (var i=0; i< notes.length; i++) {
-		if (notes[i].id == noteid1) {
-			note1 = notes[i];
-		}
-		if (notes[i].id == noteid2) {
-			note2 = notes[i];
+	if (notes.length == 2) {
+		// apply a pre-defined two-note beam filter
+		addTwoNoteFilter(beam, notes);
+		return "";
+	}
+	return generateBeamFilter(beam, notes);
+}
+
+
+
+//////////////////////////////
+//
+// generateBeamFilter --
+//
+
+function generateBeamFilter(beam, notes) {
+	var noteinfo = [];
+	for (var i=0; i<notes.length; i++) {
+		noteinfo.push({
+			id: notes[i].id,
+			x: parseInt(getXPosition(notes[i])),
+			pname: getPname(notes[i])
+		});
+	}
+	var firstnote = noteinfo[0];
+	var lastnote = noteinfo.slice(-1)[0];
+	var length = lastnote.x - firstnote.x;
+	firstnote.percent = 0;
+	lastnote.percent = 100;
+	for (i=1; i<noteinfo.length - 1; i++) {
+		noteinfo[i].percent = (noteinfo[i].x - firstnote.x)/length * 100.0;
+	}
+	var id = beam.id.replace(/beam/, "filter");
+	var output = "";
+	output += "<linearGradient id='" + id + "'>\n";
+	for (i=0; i<noteinfo.length; i++) {
+		output += "<stop offset='" + noteinfo[i].percent + "%' ";
+		output += "stop-color='" + colors[noteinfo[i].pname] + "'/>\n";
+	}
+	output += "</linearGradient>\n";
+	beam.style.fill = "url(#" + id + ")";
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// getPname --
+//
+
+function getPname(note) {
+	if (!note.classList) {
+		return "";
+	}
+	for (var i=0; i<note.classList.length; i++) {
+		var tag = note.classList[i];
+		if (tag.match(/^pname-/)) {
+			return tag.replace(/^pname-/, "");
 		}
 	}
+	return "";
+}
+
+
+
+//////////////////////////////
+//
+// getXPosition --
+//
+
+function getXPosition(note) {
+	var use = note.querySelector("use");
+	if (!use) {
+		return 0;
+	}
+	return use.getAttribute("x");
+}
+
+
+
+//////////////////////////////
+//
+// addTwoNoteFilter --
+//
+
+function addTwoNoteFilter(beam, notes) {
+	var note1 = notes[0];
+	var note2 = notes[1];
 	if (!note1) { return; }
 	if (!note2) { return; }
-
 	var pname1 = "";
 	var pname2 = "";
 	for (i=0; i<note1.classList.length; i++) {
@@ -232,14 +367,6 @@ function insertFilters(selector) {
 	if (!svg) {
 		return;
 	}
-	var colors = {};
-	colors["c"] = "green";
-	colors["d"] = "blue";
-	colors["e"] = "firebrick";
-	colors["f"] = "gold";
-	colors["g"] = "lightblue";
-	colors["a"] = "purple";
-	colors["b"] = "orange";
 
 	content = "";
 	for (var key1 in colors) {
@@ -272,7 +399,7 @@ function insertFilters(selector) {
 
 View the 
 [Markdown source](https://github.com/humdrum-tools/vhv-documentation/blob/gh-pages/myvhv/svg_notes/colored_beams.include)
-for this page to view the JavaScript code for the example.
+for this page to view the CSS and JavaScript code for the example.
 
 
 
