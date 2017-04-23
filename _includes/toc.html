@@ -1,21 +1,44 @@
 
-<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
 <script>
+// vim: ts=3 ft=javascript
+//
+// This file handles the automatic toc. Use ## for subheads to auto-generate 
+// the on-page minitoc.  if you use html tags, you must supply an ID for the 
+// heading element in order for it to appear in the minitoc.
+//
+
 $( document ).ready(function() {
   // Handler for .ready() called.
 
-$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+	$('#toc').toc(
+		{
+			minimumHeaders: 0, 
+			listType: 'ul',
+			showSpeed: 0,
+			headers: 'h2,h3,h4'
+		}
+	);
 
-/* this offset helps account for the space taken up by the floating toolbar. */
-$('#toc').on('click', 'a', function() {
-  var target = $(this.getAttribute('href'))
-    , scroll_target = target.offset().top
+	// don't show TOC if only one entry:
+	var entries = document.querySelectorAll("#toc ul li");
+	if (entries.size < 2) {
+		var toc = document.querySelector("#toc");
+		toc.style.display = "none";
+	}
 
-  $(window).scrollTop(scroll_target - 10);
-  return false
-})
-  
+	// this offset helps account for the space taken up by the floating toolbar.
+	$('#toc').on('click', 'a', function() {
+  		var target = $(this.getAttribute('href')); 
+		var scroll_target = target.offset().top;
+  		$(window).scrollTop(scroll_target - 10);
+  		return false
+	})
+
 });
+
+
+
 </script>
 
 <div id="toc"></div>
+

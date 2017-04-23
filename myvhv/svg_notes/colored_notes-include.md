@@ -1,0 +1,93 @@
+## Coloring notes by pitch-class ##
+
+
+Here is an example of using CSS to color pitches in an SVG image:
+
+
+{% include verovio.html
+	source="colorednotes"
+	pageWidth="950"
+	scale="70"
+%}
+
+<script type="application/humdrum" id="colorednotes">
+!!!OTL: Mister Frog&apos;s Wedding
+!!!filter: autobeam
+**kern
+*clefG2
+*k[]
+*M2/4
+{8g
+=1
+8cc
+8cc
+8cc
+8ee
+=2
+8dd
+8cc
+8a}
+{(8g
+=3
+4.cc)
+(8g
+=4
+4.cc)}
+{8cc
+=5
+8ee
+8gg
+8.gg
+16gg
+=6
+8aa
+8gg
+4ee}
+=7
+{8gg
+16ee
+16ee
+16dd
+16dd
+8cc
+=8
+16ee
+16ee
+8cc
+8a}
+{(8g
+=9
+4.cc)
+(8g
+=10
+4.cc)}
+==
+*-
+</script>
+
+<style>
+#colorednotes-svg .note.pname-c { fill: green; }
+#colorednotes-svg .note.pname-d { fill: blue; }
+#colorednotes-svg .note.pname-e { fill: firebrick; }
+#colorednotes-svg .note.pname-f { fill: gold; }
+#colorednotes-svg .note.pname-g { fill: lightblue; }
+#colorednotes-svg .note.pname-a { fill: purple}
+#colorednotes-svg .note.pname-b { fill: orange; }
+</style>
+
+
+Here is the styling added to the page in order to color the pitches:
+
+```css
+<style>
+.note.pname-c { fill: green;     }
+.note.pname-d { fill: blue;      }
+.note.pname-e { fill: firebrick; }
+.note.pname-f { fill: gold;      }
+.note.pname-g { fill: lightblue; }
+.note.pname-a { fill: purple;    }
+.note.pname-b { fill: orange;    }
+</style>
+```
+
+
