@@ -19,14 +19,31 @@ commands into Humdrum files.  Filters have the form:
 !!!filter: command 
 ```
 
+Multiple filters can be given on separate lines and will be executed in sequence, 
+or combined into a single line separated by a pipe character.
+
+```
+!!!filter: command1
+!!!filter: command2
+!!!filter: command3
+```
+
+or
+
+
+```
+!!!filter: command1 | command2 | command3
+```
+
+
 These filter lines will be processed by verovio as the Humdrum data is being
-loaded.  This allows for Humdrum Extras commands to be used easily within
+loaded, allowing Humdrum Extras commands to be used easily within
 the web browser to transform the data before it is converted into notation.
 
 
-An easy, buy handy, filter to use is the `autobeam` tool.  Notice in the 
+A simple, buy handy, filter to use is the `autobeam` tool.  Notice in the 
 following example that there are no explicit beams in the data (`L` for a
-beam start and `J` for a beam end).  Never the less, the notation is
+beam start and `J` for a beam end).  Nevertheless, the notation is
 displaying beams.  Try to add more notes and/or remove the filter line
 to see what happens.  The filter line can occur anywhere in the data,
 so also try moving it to the bottom of the data.
@@ -540,7 +557,8 @@ which results in
 The last line has been changed from `!!!filter:` to `!!!Xfilter:` which indicates
 that the filter has been applied to the data.
 
-Filters use the same code library as [Humdrum Extras](http://extras.humdrum.org),
+Filters use the same code library as Humdrum Extras (specifically 
+[humlib](http://humlib.humdrum.org) which is a C++ parsing library for Humdrum files),
 so an equivalent way to transpose the data using the command-line `transpose` tool
 would be:
 
@@ -548,4 +566,10 @@ would be:
 transpose -k e scale.krn
 ```
 
+or even more similar as a pipeline acting like a filter:
+
+
+```bash
+cat scale.krn | transpose -k e  > scale2.krn
+```
 
