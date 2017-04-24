@@ -76,6 +76,10 @@ entries:
       output: web, pdf
       url: /commands/alt-l
 
+    - title: <span class="keypress">alt-g</span>&colon; View SVG code
+      output: web, pdf
+      url: /commands/alt-g
+
     - title: <span class="keypress">alt-m</span>&colon; MEI data
       output: web, pdf
       url: /commands/alt-m
