@@ -70,7 +70,7 @@ Here is an example of using CSS to color pitches in an SVG image:
 #colorednotes-svg .note.pname-d { fill: blue; }
 #colorednotes-svg .note.pname-e { fill: firebrick; }
 #colorednotes-svg .note.pname-f { fill: gold; }
-#colorednotes-svg .note.pname-g { fill: lightblue; }
+#colorednotes-svg .note.pname-g { fill: darkturquoise; }
 #colorednotes-svg .note.pname-a { fill: purple}
 #colorednotes-svg .note.pname-b { fill: orange; }
 </style>
@@ -80,13 +80,13 @@ Here is the styling added to the page in order to color the pitches:
 
 ```css
 <style>
-.note.pname-c { fill: green;     }
-.note.pname-d { fill: blue;      }
-.note.pname-e { fill: firebrick; }
-.note.pname-f { fill: gold;      }
-.note.pname-g { fill: lightblue; }
-.note.pname-a { fill: purple;    }
-.note.pname-b { fill: orange;    }
+.note.pname-c { fill: green;         }
+.note.pname-d { fill: blue;          }
+.note.pname-e { fill: firebrick;     }
+.note.pname-f { fill: gold;          }
+.note.pname-g { fill: darkturquoise; }
+.note.pname-a { fill: purple;        }
+.note.pname-b { fill: orange;        }
 </style>
 ```
 
