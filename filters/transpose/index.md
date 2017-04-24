@@ -138,6 +138,7 @@ from G major to A-flat major:
 *-	*-	*-	*-
 </script>
 
+Try changing `a-` to `a` in the filter line to transpose to A major instead.
 
 The transpose filter is identical to the Humdrum Extras command-line tool
 [transpose](http://extras.humdrum.org/man/transpose).  See its documentation for

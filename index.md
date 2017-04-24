@@ -31,6 +31,12 @@ Commands
 Graphic editing
 : A description of editing commands for altering the music notation graphically.
 
+Filters
+: Filters are embedded commands within data that modify the data.
+
+Repertories
+: A description of online musical repertories available for display in VHV.
+
 Repertories
 : A description of online musical repertories available for display in VHV.
 
