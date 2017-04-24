@@ -108,6 +108,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Introduction
+      output: web, pdf
+      url: /graphic/index.html
+
     - title: Pitch
       output: web, pdf
       url: /graphic/pitch
@@ -123,6 +127,36 @@ entries:
     - title: Key-command summary
       output: web, pdf
       url: /graphic/summary
+
+###########################################################################
+
+  - title: Filters
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      output: web, pdf
+      url: /filters/index.html
+
+    - title: autobeam
+      output: web, pdf
+      url: /filters/autobeam
+
+    - title: extract
+      output: web, pdf
+      url: /filters/extract
+
+    - title: myank
+      output: web, pdf
+      url: /filters/myank
+
+    - title: satb2gs
+      output: web, pdf
+      url: /filters/satb2gs
+
+    - title: transpose
+      output: web, pdf
+      url: /filters/transpose
 
 ###########################################################################
 

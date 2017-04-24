@@ -5,6 +5,7 @@ allowed-tags:
   - RDF
   - all
   - maintenance
+  - filters
   - graphic_editing
   - news
   - repertories

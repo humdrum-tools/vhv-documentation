@@ -1,0 +1,21 @@
+**kern
+*M4/4
+*k[]
+*C:
+=1-
+1c
+=2
+2d
+2e
+=3
+4f
+2g
+4f
+=4
+2e
+2d
+=5
+1c
+==
+*-
+!!!filter: transpose -k e
