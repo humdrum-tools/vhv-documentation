@@ -1,0 +1,1 @@
+Here are [slides](http://bit.ly/mec2017-vhv) for a presentation about Verovio Humdrum Viewer at the [Music Encoding Conference](http://music-encoding.org/community/conference) happening this month in Tours, France.
