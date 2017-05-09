@@ -138,6 +138,10 @@ entries:
       output: web, pdf
       url: /filters/index.html
 
+    - title: URL filters
+      output: web, pdf
+      url: /filters/url
+
     - title: autobeam
       output: web, pdf
       url: /filters/autobeam
