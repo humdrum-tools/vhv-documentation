@@ -76,6 +76,10 @@ entries:
       output: web, pdf
       url: /commands/alt-c
 
+    - title: <span class="keypress">alt-e</span>&colon; Erase music
+      output: web, pdf
+      url: /commands/alt-e
+
     - title: <span class="keypress">alt-f</span>&colon; Freeze notation
       output: web, pdf
       url: /commands/alt-f
