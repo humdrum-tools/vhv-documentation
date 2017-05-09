@@ -68,6 +68,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: <span class="keypress">alt-c</span>&colon; Compile filters
+      output: web, pdf
+      url: /commands/alt-c
+
     - title: <span class="keypress">alt-f</span>&colon; Freeze notation
       output: web, pdf
       url: /commands/alt-f
