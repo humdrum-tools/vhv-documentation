@@ -42,7 +42,7 @@ Repertories
 
 Humdrum encoding
 : Topics about Humdrum encoding, mostly advanced topics related to VHV for now
-(otherwise see the [Humdrum documentation](http://www.humdrum.org).
+(otherwise see the [Humdrum documentation](http://www.humdrum.org)).
 
 myVHV
 : Instructions and demos for using [Verovio](http://www.verovio.org) and 
