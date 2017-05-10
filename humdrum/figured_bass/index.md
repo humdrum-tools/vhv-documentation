@@ -117,6 +117,56 @@ figures are shown on (such as 3# in measure 15).
 
 `**Bnum` can be used as an alias for `**fb`.
 
+## Realization hints ##
+
+Here is an example of adding realization hints in a basso continuo parts:
+
+{% include verovio.html
+	source="beschrankt"
+	humdrum-min-height="560px"
+	scale="55"
+	pageWidth="1000"
+%}
+
+<script type="application/json" id="beschrankt">
+!!!COM: Bach, Johann Sebastian
+!!!OTL: Beschränkt, ihr Weisen
+!!!SCT: Riemenschneider no. 47/69
+**kern	**fb
+*clefF4	*
+*k[f#c#g#]	*
+*M3/4	*
+*^	*
+4G#N 4BN	4E	.
+4AN 4eN	4C#	6
+4AN 4c#N	4F#	.
+=	=	=
+*^	*	*
+2F#N	4c#N	2D	76
+.	4BN	.	.
+*v	*v	*	*
+4BN 4eN	4Gn	6
+=	=	=
+4A#N 4c#N 4f#N	4F#	#
+2F#N 2BN 2dN	8EL	7 5 2
+.	8D	_
+.	8C#	_
+.	8BBJ	_
+=	=	=
+2.A#N 2.c#N 2.f#N	4F#	#
+.	4FF#	_
+.	4GG#	_
+=	=	=
+4C#N 4F#N	4AA#	6
+4EN 4G#N	4BB	6 4
+4EN 4F#N 4A#N	4C#	6# 4 3
+=	=	=
+*v	*v	*
+*-	*-
+!!!RDF**kern: N = no stem, cue size
+!!!URL: https://en.wikipedia.org/wiki/File:Figured_bass.png
+</script>
+
 
 
 
