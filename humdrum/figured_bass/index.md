@@ -170,27 +170,31 @@ Here is an example of adding realization hints in a basso continuo part:
 
 <script>
 
+//////////////////////////////
+//
+// DOMContentLoaded event listener --
+//
 
-var observer;
-var config;
-var SvgTarget;
-document.addEventListener("DOMContentLoaded", function() {
-	var interval = setInterval(function(){
-		SvgTarget = document.querySelector("#beschrankt-svg");
-		if (!SvgTarget) {
+document.addEventListener("DOMContentLoaded", function () {
+	var containerSelector = "#beschrankt-svg"
+	var svgSelector = containerSelector + " svg";
+	var color = "#aaa";
+	var interval = setInterval(function () {
+		var svgTargetElement = document.querySelector(containerSelector);
+		if (!svgTargetElement) {
 			return;
 		}
-		observer = new MutationObserver(function(mutations) {
-			mutations.forEach(function(mutation) {
-				color514("#beschrankt-svg svg");
+		clearInterval(interval);
+		var observer = new MutationObserver(function (mutations) {
+			mutations.forEach(function (mutation) {
+				color514(svgSelector, color);
    		});
 		});
-		config = { attributes: false, childList: true, characterData: false};
-		observer.observe(SvgTarget, config);
-		clearInterval(interval);
-		color514("#beschrankt-svg svg");
+		var config = { attributes: false, childList: true, characterData: false };
+		observer.observe(svgTargetElement, config);
+		// Have to color manually the first time since SVG is already in place:
+		color514(svgSelector, color);
 	}, 100);
-console.log("YYY");
 });
 
 
@@ -199,7 +203,7 @@ console.log("YYY");
 // color514 -- color notes with size 514 in gray.
 //
 
-function color514(selector) {
+function color514(selector, color) {
 	var item = document.querySelector(selector);
 	var notes = item.querySelectorAll("g.note");
 	for (var i=0; i<notes.length; i++) {
@@ -211,20 +215,14 @@ function color514(selector) {
 		if (height !== "514px") {
 			continue;
 		}
-		console.log("HEIGHT", height);
-		notes[i].style.fill = "#aaa";
-		notes[i].style.stroke = "#aaa";
-		var parent = notes[i].parentNode;
-		if (parent.classList && parent.classList[0] !== "chord") {
-			continue;
-		}
-		var dots = parent.querySelectorAll("g.dots");
-		if (!dots) {
-			continue;
-		}
-		for (var j=0; j<dots.length; j++) {
-			dots[j].style.fill = "#aaa";
-			dots[j].style.stroke = "#aaa";
+
+		var par = notes[i].parentNode;
+		if (par.classList && par.classList[0] !== "chord") {
+			notes[i].style.fill = color;
+			notes[i].style.stroke = color;
+		} else {
+			par.style.fill = color;
+			par.style.stroke = color;
 		}
 	}
 
@@ -236,7 +234,6 @@ function color514(selector) {
 <style>
 svg g.ledgerLines.cue [stroke]
 	 { fill: #999;     stroke: #999; }
-
 </style>
 
 
