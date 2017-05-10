@@ -180,9 +180,13 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Tuplet styling
+    - title: Figured bass
       output: web, pdf
-      url: /humdrum/tuplet_styling
+      url: /humdrum/figured_bass
+
+    - title: Invisible rests
+      output: web, pdf
+      url: /humdrum/invisible_rests
 
     - title: Ottava marks
       output: web, pdf
@@ -192,9 +196,9 @@ entries:
       output: web, pdf
       url: /humdrum/pedal_marks
 
-    - title: Invisible rests
+    - title: Tuplet styling
       output: web, pdf
-      url: /humdrum/invisible_rests
+      url: /humdrum/tuplet_styling
 
 ###########################################################################
 
