@@ -168,5 +168,78 @@ Here is an example of adding realization hints in a basso continuo parts:
 </script>
 
 
+<script>
+
+
+var observer;
+var config;
+var SvgTarget;
+document.addEventListener("DOMContentLoaded", function() {
+	var interval = setInterval(function(){
+		SvgTarget = document.querySelector("#beschrankt-svg");
+		if (!SvgTarget) {
+			return;
+		}
+		observer = new MutationObserver(function(mutations) {
+			mutations.forEach(function(mutation) {
+				color514("#beschrankt-svg svg");
+   		});
+		});
+		config = { attributes: false, childList: true, characterData: false};
+		observer.observe(SvgTarget, config);
+		clearInterval(interval);
+		color514("#beschrankt-svg svg");
+	}, 100);
+console.log("YYY");
+});
+
+
+//////////////////////////////
+//
+// color514 -- color notes with size 514 in gray.
+//
+
+function color514(selector) {
+	var item = document.querySelector(selector);
+	var notes = item.querySelectorAll("g.note");
+	for (var i=0; i<notes.length; i++) {
+		var use = notes[i].querySelector("use");
+		if (!use) {
+			continue;
+		}
+		var height = use.getAttribute("height");
+		if (height !== "514px") {
+			continue;
+		}
+		console.log("HEIGHT", height);
+		notes[i].style.fill = "#aaa";
+		notes[i].style.stroke = "#aaa";
+		var parent = notes[i].parentNode;
+		if (parent.classList && parent.classList[0] !== "chord") {
+			continue;
+		}
+		var dots = parent.querySelectorAll("g.dots");
+		if (!dots) {
+			continue;
+		}
+		for (var j=0; j<dots.length; j++) {
+			dots[j].style.fill = "#aaa";
+			dots[j].style.stroke = "#aaa";
+		}
+	}
+
+}
+
+</script>
+
+
+<style>
+svg g.ledgerLines.cue [stroke]
+	 { fill: #999;     stroke: #999; }
+
+</style>
+
+
+
 
 
