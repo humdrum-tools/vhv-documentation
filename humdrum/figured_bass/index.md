@@ -119,7 +119,7 @@ figures are shown on (such as 3# in measure 15).
 
 ## Realization hints ##
 
-Here is an example of adding realization hints in a basso continuo parts:
+Here is an example of adding realization hints in a basso continuo part:
 
 {% include verovio.html
 	source="beschrankt"
