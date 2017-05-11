@@ -114,6 +114,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Introduction
+      output: web, pdf
+      url: /repertory
+
     - title: Bach chorales
       output: web, pdf
       url: /repertory/bach-chorales
