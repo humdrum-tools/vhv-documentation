@@ -78,7 +78,7 @@ Here is a list of some of the available repertories:
 
 <tr>
 	<td>
-		<nobr><a href="http://verovio.humdrum.org/?file=beethoven/quartets&k=e">16 Beethoven piano sonatas</a></nobr>
+		<nobr><a href="http://verovio.humdrum.org/?file=beethoven/quartets&k=e">16 Beethoven quartets</a></nobr>
 	</td>
 	<td>
       <nobr><a href="https://github.com/craigsapp/beethoven-quartets">on Github</a></nobr>
@@ -166,10 +166,46 @@ Here is a list of some of the available repertories:
 
 <tr>
 	<td>
-		<nobr><a href="http://verovio.humdrum.org/?file=jrp/Rue&k=e">23 Works of Mabrianus de Orto (c.1460&ndash;1529)</a></nobr>
+		<nobr><a href="http://verovio.humdrum.org/?file=jrp/Ort&k=e">23 Works of Mabrianus de Orto (c.1460&ndash;1529)</a></nobr>
 	</td>
 	<td>
-      <nobr><a href="https://github.com/josquin-research-project/Rue">on Github</a></nobr>
+      <nobr><a href="https://github.com/josquin-research-project/Ort">on Github</a></nobr>
+	</td>
+	<td>
+		<nobr><a href="http://josquin.stanford.edu">josquin.stanford.edu</a></nobr>
+	</td>
+</tr>
+
+<tr>
+	<td>
+		<nobr><a href="http://verovio.humdrum.org/?file=jrp/Bus&k=e">66 Works of Antoine Busnoys (c.1430&ndash;1492)</a></nobr>
+	</td>
+	<td>
+      <nobr><a href="https://github.com/josquin-research-project/Bus">on Github</a></nobr>
+	</td>
+	<td>
+		<nobr><a href="http://josquin.stanford.edu">josquin.stanford.edu</a></nobr>
+	</td>
+</tr>
+
+<tr>
+	<td>
+		<nobr><a href="http://verovio.humdrum.org/?file=jrp/Duf&k=e">19 Works of Guillame Du Fay (c.1397&ndash;1474)</a></nobr>
+	</td>
+	<td>
+      <nobr><a href="https://github.com/josquin-research-project/Duf">on Github</a></nobr>
+	</td>
+	<td>
+		<nobr><a href="http://josquin.stanford.edu">josquin.stanford.edu</a></nobr>
+	</td>
+</tr>
+
+<tr>
+	<td>
+		<nobr><a href="http://verovio.humdrum.org/?file=jrp/Jap&k=e">22 Works of Jean Japart (c.1476&ndash;1481)</a></nobr>
+	</td>
+	<td>
+      <nobr><a href="https://github.com/josquin-research-project/Duf">on Github</a></nobr>
 	</td>
 	<td>
 		<nobr><a href="http://josquin.stanford.edu">josquin.stanford.edu</a></nobr>
@@ -325,12 +361,6 @@ key combination to compile the filter.
 If you do not want another work in the repertory to be filtered, then delete
 the `!!!filter` line that is automatically placed at the top of the 
 digital score that is extracted from the reperoty URL.
-
-
-
-
-
-
 
 
 
