@@ -68,7 +68,7 @@ Here is a list of some of the available repertories:
 
 <tr>
 	<td>
-		<nobr><a href="http://verovio.humdrum.org/?file=beethoven/quartets&k=e">32 Beethoven piano sonatas</a></nobr>
+		<nobr><a href="http://verovio.humdrum.org/?file=beethoven/sonatas&k=e">32 Beethoven piano sonatas</a></nobr>
 	</td>
 	<td>
       <nobr><a href="https://github.com/craigsapp/beethoven-piano-sonatas">on Github</a></nobr>
