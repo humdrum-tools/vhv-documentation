@@ -6,7 +6,7 @@ creation_date: 9 Mar 2017
 last_updated: 9 Mar 2017
 sidebar: main_sidebar
 tags: [all]
-verovio: true
+verovio: "true"
 keywords: graphical editing pitch
 summary: "Simple use of the verovio javascript toolkit to display Humdrum data as graphical notation on a stand-alone webpage with a tiny bit of javascript."
 permalink: /myvhv/static/index.html

@@ -5,7 +5,7 @@ creation_date: 23 Apr 2017
 last_updated: 23 Apr 2017
 tags: [all, filters]
 sidebar: main_sidebar
-verovio: true
+verovio: "true"
 keywords: interface commands 
 summary: 
 permalink: /filters/extract/index.html

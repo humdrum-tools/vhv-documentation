@@ -5,7 +5,7 @@ keywords: humdrum tuplet styling
 creation_date: 18 Mar 2017
 last_updated: 18 Mar 2017
 tags: [all, humdrum ]
-verovio: true
+verovio: "true"
 vim: ts=3 ft=javascript
 summary: Visual tuplet numbers can be turned on or off for a spine.
 sidebar: main_sidebar

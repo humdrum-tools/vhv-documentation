@@ -5,7 +5,7 @@ author: Craig Stuart Sapp
 creation_date: 12 Mar 2017
 last_updated: 12 Mar 2017
 tags: [all, maintenance]
-datatable: true
+datatable: "true"
 vim: ts=3
 sidebar: main_sidebar
 keywords: maintenance datatables table

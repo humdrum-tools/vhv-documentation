@@ -6,7 +6,7 @@ last_updated: 15 Mar 2017
 tags: [all, graphic_editing]
 sidebar: main_sidebar
 keywords: graphic editing 
-datatable: true
+datatable: "true"
 vim: ts=3 ft=javascript
 summary: "Summary of graphic editing commands."
 permalink: /graphic/summary/index.html

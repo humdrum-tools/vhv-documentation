@@ -4,7 +4,7 @@ author: Craig Stuart Sapp
 keywords: humdrum Bach chorales
 creation_date: 18 Mar 2017
 last_updated: 18 Mar 2017
-verovio: true
+verovio: "true"
 tags: [all, repertories]
 vim: ts=3 ft=javascript
 summary: J.S. Bach chorale repertory

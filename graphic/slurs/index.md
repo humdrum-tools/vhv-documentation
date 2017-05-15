@@ -5,7 +5,7 @@ creation_date: 5 Mar 2017
 last_updated: 7 Mar 2017
 tags: [all, graphic_editing, RDF]
 sidebar: main_sidebar
-datatable: true
+datatable: "true"
 vim: ts=3
 keywords: graphic editing slurs
 summary: Graphically adding and editing slurs in the notation editor.

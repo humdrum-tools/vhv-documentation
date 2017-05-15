@@ -5,7 +5,7 @@ creation_date: 10 Mar 2017
 last_updated: 10 Mar 2017
 sidebar: main_sidebar
 tags: [all]
-verovio: true
+verovio: "true"
 vim: ts=3 ft=html
 keywords: verovio humdrum
 summary: The myVHV section of the documentation demonstrates how VHV technology can be used on your own webpages.

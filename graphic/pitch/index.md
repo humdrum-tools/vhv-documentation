@@ -6,7 +6,7 @@ last_updated: 7 Mar 2017
 tags: [all, graphic_editing, RDF]
 sidebar: main_sidebar
 keywords: graphic editing pitch
-datatable: true
+datatable: "true"
 vim: ts=3 ft=javascript
 summary: "Graphically altering note pitches and accidentals in the notation editor."
 permalink: /graphic/pitch/index.html

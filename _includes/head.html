@@ -9,20 +9,38 @@
 {% include setup.html %}
 
 
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+{% if site.local == "true" %} 
+	<link rel="stylesheet" href="{{ site.baseurl }}/{{ site.css }}/local/Lato/latofonts.css" >
+{% else %}
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+{% endif %}
+
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/{{ site.css }}/font-awesome.min.css">
 <!--<link rel="stylesheet" type="text/css" href="{{ site.css }}/bootstrap.min.css">-->
 <link rel="stylesheet" href="{{ site.baseurl }}/{{ site.css }}/modern-business.css" >
 <link rel="stylesheet" href="{{ site.baseurl }}/{{ site.css }}/lavish-bootstrap.css" >
 <link rel="stylesheet" href="{{ site.baseurl }}/{{ site.css }}/style.css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+{% if site.local == "true" %}
+	<script src="{{ site.baseurl }}/js/local/jquery.min.js"</script>
+	<script src="{{ site.baseurl }}/js/local/jquery.cookie.min.js"></script>
+{% else %}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+{% endif %}
+
 <script src="{{ site.baseurl }}/js/jquery.navgoco.min.js"></script>
 
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+{% if site.local == "true" %}
+	<script src="{{ site.baseurl }}/js/local/bootstrap.min.js"></script>
+	<script src="{{ site.baseurl }}/js/local/anchor.min.js"></script>
+{% else %}
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+
+{% endif %}
+
 <script src="{{ site.baseurl }}/js/toc.js"></script>
 <script src="{{ site.baseurl }}/js/customscripts.js"></script>
 

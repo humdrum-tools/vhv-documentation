@@ -6,7 +6,7 @@ creation_date: 10 Mar 2017
 last_updated: 10 Mar 2017
 tags: [all, maintenance]
 vim: ts=3 ft=javascript
-verovio: true
+verovio: "true"
 sidebar: main_sidebar
 keywords: maintenance figures verovio music notation
 summary: "This page describes how to add verovio-rendered notation figures to documentation pages that have editable Humdrum data alongside the notation."
@@ -14,7 +14,7 @@ permalink: /maintenance/verovio/index.html
 ---
 
 {% include warning.html
-	content="You must also activate verovio on the page by including the page header parameter \"`verovio: true`\" &nbsp;&nbsp; (at the top of the file)."
+	content="You must also activate verovio on the page by including the page header parameter \"`verovio: \"true\"`\" &nbsp;&nbsp; (at the top of the file)."
 %}
 
 

@@ -5,7 +5,7 @@ keywords: humdrum figured bass
 creation_date: 9 May 2017
 last_updated: 9 May 2017
 tags: [all, humdrum ]
-verovio: true
+verovio: "true"
 vim: ts=3 ft=javascript
 summary: A description of how to encode figured bass (basso continuo) in **fb spines.
 sidebar: main_sidebar

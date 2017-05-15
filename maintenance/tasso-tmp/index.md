@@ -5,8 +5,8 @@ author: Craig Stuart Sapp
 creation_date: 12 Mar 2017
 last_updated: 12 Mar 2017
 tags: [all, maintenance]
-datatable: true
-aton: true
+datatable: "true"
+aton: "true"
 vim: ts=3 ft=javascript
 sidebar: dull
 keywords: maintenance datatables table
