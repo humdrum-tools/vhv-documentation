@@ -1,10 +1,12 @@
 ---
 title: dissonant filter
-author: Craig Stuart Sapp
+author: ["Alex Morgan", "Craig Sapp"]
 creation_date: 29 May 2017
 last_updated: 29 May 2017
 tags: [all, filters]
 sidebar: main_sidebar
+examplewidth: 1200
+vim: ft=html
 verovio: "true"
 keywords: "interface commands"
 summary: "The dissonant filter labels the function of non-harmonic tones in contrapuntal textures."
@@ -139,6 +141,8 @@ Here is an example of the tool in action:
 
 Try editing the above Humdrum textual score to generate various types of dissonances.
 
+## Dissonant function labels ##
+
 <style>
 
 .dense td { 
@@ -161,20 +165,21 @@ Try editing the above Humdrum textual score to generate various types of dissona
 </style>
 
 <table class="dense twocol">
-<tr><th>Label</th><th> Meaning</th><th>Label</th><th> Meaning</th></tr>
-<tr><td> P </td><td> rising passing tone</td><td> p </td><td> downward passing tone</td></tr>
-<tr><td> N </td><td> upper neighbor</td><td> n </td><td> lower neighbor</td></tr>
-<tr><td> E </td><td> upper échappée</td><td> e </td><td> lower échappée</td></tr>
-<tr><td> C </td><td> ascending short nota cambiata</td><td> c </td><td> descending short nota cambiata</td></tr>
-<tr><td> K </td><td> ascending long nota cambiata</td><td> k </td><td> descending long nota cambiata</td></tr>
-<tr><td> J </td><td> incomplete posterior upper neighbor</td><td> j </td><td> incomplete posterior lower neighbor</td></tr>
-<tr><td> I </td><td> incomplete anterior upper neighbor</td><td> i </td><td> incomplete anterior lower neighbor</td></tr>
-<tr><td> A </td><td> rising anticipation</td><td> a </td><td> descending anticipation</td></tr>
-<tr><td> s </td><td> suspension</td><td> F </td><td> fake suspension</td></tr>
-<tr><td> G </td><td> suspension agent</td><td> o </td><td> suspension ornament</td></tr>
-<tr><td> r </td><td> suspension repeated note</td><td> h </td><td> chanson idiom</td></tr>
-<tr><td> Q </td><td> dissonant third quarter</td><td> Z2 </td><td> unknown dissonance, 2nd interval</td></tr>
-<tr><td> Z7 </td><td> unknown dissonance, 7th interval</td><td> Z4 </td><td> unknown dissonance, 4th interval</td></tr>
+<tr><th>Label</th><th> Meaning</th>                             <th>Label</th><th> Meaning</th>                                 </tr>
+<tr><td> P </td><td> rising passing tone</td>                   <td> p </td>  <td> downward passing tone</td>                   </tr>
+<tr><td> N </td><td> upper neighbor</td>                        <td> n </td>  <td> lower neighbor</td>                          </tr>
+<tr><td> E </td><td> upper échappée</td>                        <td> e </td>  <td> lower échappée</td>                          </tr>
+<tr><td> C </td><td> ascending short nota cambiata</td>         <td> c </td>  <td> descending short nota cambiata</td>          </tr>
+<tr><td> K </td><td> ascending long nota cambiata</td>          <td> k </td>  <td> descending long nota cambiata</td>           </tr>
+<tr><td> J </td><td> incomplete posterior upper neighbor</td>   <td> j </td>  <td> incomplete posterior lower neighbor</td>     </tr>
+<tr><td> I </td><td> incomplete anterior upper neighbor</td>    <td> i </td>  <td> incomplete anterior lower neighbor</td>      </tr>
+<tr><td> A </td><td> rising anticipation</td>                   <td> a </td>  <td> descending anticipation</td>                 </tr>
+<tr><td> s </td><td> suspension</td>                            <td> G </td>  <td> suspension agent</td>                        </tr>
+<tr><td> F </td><td> fake suspension approached by step up</td> <td> f </td>  <td> fake suspension approached by step down</td> </tr>
+<tr><td> o </td><td> suspension ornament</td>                   <td> r </td>  <td> suspension repeated note</td>                </tr>
+<tr><td> h </td><td> chanson idiom</td>                         <td> Q </td>  <td> dissonant third quarter</td>                 </tr>
+<tr><td> Z2 </td><td> unknown dissonance, 2nd interval</td>     <td> Z7 </td ><td> unknown dissonance, 7th interval</td></tr>
+<tr><td> Z4 </td><td> unknown dissonance, 4th interval</td>     <td>    </td ><td></td>                                 </tr>
 </table>
 
 The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a single case:
@@ -200,7 +205,89 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 </table>
 
 
-### URL filtering of repertories ###
+### Passing notes ###
+
+{% include verovio.html
+	source="passing"
+	scale="60"
+	pageWidth="1000"
+	tabsize="10"
+%}
+
+<script type="application/json" id="passing">**kern	**kern
+*M2/4	*M2/4
+4C	8cL
+.	8dJ
+4AA	4e
+=2	=2
+4FF	8fL
+.	8eJ
+4GG	4d
+==	==
+*-	*-
+!!!filter: dissonant
+</script>
+
+### Neighboring notes ###
+
+{% include verovio.html
+	source="nei"
+	scale="60"
+	pageWidth="1000"
+	tabsize="10"
+%}
+
+<script type="application/json" id="nei">**kern	**kern
+*M2/4	*M2/4
+4C	8ccL
+.	8ddJ
+4AA	4cc
+=2	=2
+4GG	8bL
+.	8aJ
+4EE	4b
+==	==
+*-	*-
+!!!filter: dissonant
+</script>
+
+###  Échappée notes ###
+
+{% include verovio.html
+	source="chap"
+	scale="60"
+	pageWidth="1000"
+	tabsize="10"
+%}
+
+<script type="application/json" id="chap">**kern	**kern
+*clefF4	*clefG2
+*M2/4	*M2/4
+4F	8aL
+.	8gJ
+4E	4cc
+==	==
+*-	*-
+!!!filter: dissonant
+</script>
+
+###  Cambiatas notes ###
+
+###  Incomplete neighbors ###
+
+###  Anticipations ###
+
+###  Suspensions ###
+
+### Dissonant third-quarter notes ###
+
+### Chanson idioms ###
+
+### Unknown dissonances ###
+
+
+
+## URL filtering of repertories ##
 
 The dissonant tool can be used with works from the Tasso in Music Project through this link:
 
@@ -213,15 +300,15 @@ To remove lyric text from analysis results, use the filter: `extractx -i kern | 
 [http://verovio.humdrum.org/?k=ey&file=tmp&filter=extract%20-ikern%7cdissonant](http://verovio.humdrum.org/?k=ey&file=tmp&filter=extract%20-ikern%7cdissonant)
 
 
-### JRP dissonant tool ###
+## JRP dissonant tool ##
 
 Work pages on the Josquin Research Project website have links to VHV for the current work to view the
-dissonant labelling analysis.  For example the page:
+dissonant labeling analysis.  For example the page:
 
 [http://josquin.stanford.edu/work/?id=Jos2801](http://josquin.stanford.edu/work/?id=Jos2801)
 
 Contains a button labeled "Dissonant" on the bottom left side of the page.  Clicking on that button will load
-the score for the current page into VHV and do an online anaysis of the dissonant labels.
+the score for the current page into VHV and do an online analysis of the dissonant labels.
 
 
 ### Non-notational output ###
@@ -257,8 +344,7 @@ Z7	1	0	0	1
 ```
 
 
-
 ### References ###
 
-Morgan, Alexander. "[Renaissance interval-succession theory: treatises and anlaysis](http://digitool.library.mcgill.ca/R/DPIVYXI71HL5ILGG61U4D2N5YR6UMUAASGK4S4JC42B2BFPGCD-00398?func=results-jump-full&set_entry=000001&set_number=001123&base=GEN01)". Ph.D. disserataion: McGill University: Canada; 2017.
+Morgan, Alexander. "[Renaissance interval-succession theory: treatises and analysis](http://digitool.library.mcgill.ca/R/DPIVYXI71HL5ILGG61U4D2N5YR6UMUAASGK4S4JC42B2BFPGCD-00398?func=results-jump-full&set_entry=000001&set_number=001123&base=GEN01)". Ph.D. dissertation: McGill University: Canada; 2017.
 

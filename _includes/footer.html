@@ -54,9 +54,18 @@
 
 			{% unless page.url contains "/news-" %}
 				{% if page.author %}
-				<nobr>
-					<span>Page author:</span> {{page.author}}<br/>
-				</nobr>
+					<nobr>
+					{% if page.author.first %}
+						<span>Page authors:</span>
+						{% for aname in page.author %}
+							{{aname}}
+							{% unless forloop.last %},{% endunless %}
+						{% endfor %}
+						<br/>
+					{% else %}
+							<span>Page author:</span> {{page.author}}<br/>
+					{% endif %}
+					</nobr>
 				{% endif %} 
 			{% endunless %}
 
