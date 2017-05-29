@@ -167,8 +167,8 @@ Try editing the above Humdrum textual score to generate various types of dissona
 <tr><td> E </td><td> upper échappée</td><td> e </td><td> lower échappée</td></tr>
 <tr><td> C </td><td> ascending short nota cambiata</td><td> c </td><td> descending short nota cambiata</td></tr>
 <tr><td> K </td><td> ascending long nota cambiata</td><td> k </td><td> descending long nota cambiata</td></tr>
-<tr><td> J </td><td> incomplete posterior upper neighbor</td><td> j </td><td> incomplete posterior lower neighbor</td></tr>
 <tr><td> I </td><td> incomplete anterior upper neighbor</td><td> i </td><td> incomplete anterior lower neighbor</td></tr>
+<tr><td> J </td><td> incomplete posterior upper neighbor</td><td> j </td><td> incomplete posterior lower neighbor</td></tr>
 <tr><td> A </td><td> rising anticipation</td><td> a </td><td> descending anticipation</td></tr>
 <tr><td> s </td><td> suspension</td><td> F </td><td> fake suspension</td></tr>
 <tr><td> G </td><td> suspension agent</td><td> o </td><td> suspension ornament</td></tr>
@@ -186,8 +186,8 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 <tr><td> E </td><td> échappée</td></tr>
 <tr><td> C </td><td> short nota cambiata</td></tr>
 <tr><td> K </td><td> long nota cambiata</td></tr>
-<tr><td> J </td><td> incomplete posterior neighbor</td></tr>
 <tr><td> I </td><td> incomplete anterior neighbor</td></tr>
+<tr><td> J </td><td> incomplete posterior neighbor</td></tr>
 <tr><td> A </td><td> anticipation</td></tr>
 <tr><td> Q </td><td> dissonant third quarter</td></tr>
 <tr><td> s </td><td> suspension</td></tr>
