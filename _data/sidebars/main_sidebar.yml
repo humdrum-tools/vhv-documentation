@@ -166,6 +166,10 @@ entries:
       output: web, pdf
       url: /filters/autobeam
 
+    - title: dissonant
+      output: web, pdf
+      url: /filters/dissonant
+
     - title: extract
       output: web, pdf
       url: /filters/extract
