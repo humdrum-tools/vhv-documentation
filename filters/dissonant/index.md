@@ -1,6 +1,6 @@
 ---
 title: dissonant filter
-author: ["Alex Morgan", "Craig Sapp"]
+author: ["Craig Sapp", "Alex Morgan"]
 creation_date: 29 May 2017
 last_updated: 29 May 2017
 tags: [all, filters]
@@ -310,21 +310,18 @@ dissonant labeling analysis.  For example the page:
 Contains a button labeled "Dissonant" on the bottom left side of the page.  Clicking on that button will load
 the score for the current page into VHV and do an online analysis of the dissonant labels.
 
-
-### Non-notational output ###
+### Dissonance symmaries ###
 
 These are more useful for the command-line version of the tool, but can be viewed in VHV by typing command-c when the option is used.
 
 
-The `--count` option displays a count of the different types of dissonances and total dissonances
+The `-c` option displays a count of the different types of dissonances and total dissonances
 within a work:
 
 
+``` bash
+humcat jrp://Jos2721 | dissonant -c
 ```
-humcat jrp://Jos2721 | dissonant --count
-```
-
-
 ```
 **dis	**sum	**v1	**v2	**v3
 P	31	17	6	8
@@ -342,6 +339,30 @@ Z7	1	0	0	1
 *-	*-	*-	*-	*-
 !!total_dissonances:	90
 ```
+
+The `-u` option can also be used with the `-c` option to count dissonances without
+subgrouping them by direction:
+
+``` bash
+humcat jrp://Jos2721 | dissonant -cu
+```
+```
+**disu	**sum	**v1	**v2	**v3
+P	44	26	7	11
+N	23	5	3	15
+E	2	0	1	1
+Q	1	0	1	0
+S	6	1	2	3
+G	11	5	4	2
+H	1	0	0	1
+Z	2	1	0	1
+*-	*-	*-	*-	*-
+!!total_dissonances:	90
+```
+
+In this case the first spine data type is labeled as `**disu` to indicate the
+undifferentiated directions for each category.
+
 
 
 ### References ###
