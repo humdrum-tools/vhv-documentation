@@ -280,12 +280,11 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 
 {% include verovio.html
 	source="camb_dn"
-	scale="40"
-	pageWidth="1100"
+	scale="60"
+	pageWidth="1000"
 	tabsize="10"
-	spacingLinear="0.00"
-	spacingNonLinear="0.10"
-	evenNoteSpacing="1"
+	spacingLinear="0.15"
+	spacingNonLinear="0.50"
 %}
 <script type="application/json" id="camb_dn">**kern	**kern
 *clefF4	*clefG2
@@ -304,6 +303,33 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 *-	*-
 !!!filter: dissonant
 </script>
+
+{% include verovio.html
+	source="camb_up"
+	scale="60"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/json" id="camb_up">**kern	**kern
+*k[b-]	*k[b-]
+*M4/2	*M4/2
+2B-	2.d
+2G	.
+.	1e
+2B-	2g
+2C	2a
+=2	=2
+2B-	2.d
+2G	.
+.	1e
+2B-	2g
+2A	2f
+==	==
+*-	*-
+!!!filter: dissonant
+</script>
+
+
 
 ###  Incomplete neighbors (I, i, J, j) ###
 
