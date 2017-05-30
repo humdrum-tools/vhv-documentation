@@ -177,7 +177,7 @@ Try editing the above Humdrum textual score to generate various types of dissona
 <tr><td> Z7 </td><td> unknown dissonance, 7th interval</td><td> Z4 </td><td> unknown dissonance, 4th interval</td></tr>
 </table>
 
-The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a single case:
+The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a single case designated with an uppercase letter:
 
 <table class="dense onecol">
 <tr><th>Label</th><th> Meaning</th></tr>
@@ -190,11 +190,11 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 <tr><td> J </td><td> incomplete posterior neighbor</td></tr>
 <tr><td> A </td><td> anticipation</td></tr>
 <tr><td> Q </td><td> dissonant third quarter</td></tr>
-<tr><td> s </td><td> suspension</td></tr>
+<tr><td> S </td><td> suspension</td></tr>
 <tr><td> F </td><td> fake suspension</td></tr>
 <tr><td> G </td><td> suspension agent</td></tr>
-<tr><td> o </td><td> suspension ornament</td></tr>
-<tr><td> r </td><td> suspension repeated note</td></tr>
+<tr><td> O </td><td> suspension ornament</td></tr>
+<tr><td> R </td><td> suspension repeated note</td></tr>
 <tr><td> H </td><td> chanson idiom</td></tr>
 <tr><td> Z </td><td> unknown dissonance</td></tr>
 </table>
