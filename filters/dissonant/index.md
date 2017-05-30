@@ -314,13 +314,13 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 *k[b-]	*k[b-]
 *M4/2	*M4/2
 2B-	2.d
-2G	.
+2F	.
 .	4e
 2B-	2g
 2C	2a
 =2	=2
 2B-	2.d
-2G	.
+2F	.
 .	4e
 2B-	2g
 2A	2f
@@ -334,6 +334,27 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 ###  Incomplete neighbors (I, i, J, j) ###
 
 ###  Anticipations (A, a) ###
+
+{% include verovio.html
+	source="ant"
+	scale="60"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/json" id="ant">**kern	**kern
+*clefF4	*clefF4
+*M4/2	*M4/2
+4g	2ee
+4f	.
+1f	4dd
+.	4cc
+.	4dd
+.	4ee
+2e	2ee
+==	==
+*-	*-
+!!!filter: dissonant
+</script>
 
 ###  Suspensions (s, G, F, f, r, o) ###
 
