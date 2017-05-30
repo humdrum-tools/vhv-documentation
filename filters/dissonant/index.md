@@ -279,18 +279,24 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 ###  Cambiatas notes (C, c, K, k) ###
 
 {% include verovio.html
-	source="camb"
+	source="camb_dn"
 	scale="60"
-	pageWidth="1000"
+	pageWidth="1200"
 	tabsize="10"
 %}
-<script type="application/json" id="camb">**kern	**kern
+<script type="application/json" id="camb_dn">**kern	**kern
 *clefF4	*clefG2
 *M3/2	*M3/2
-2G	2.gg
+2G	2.g
 2E	.
-.	4ff
-2G	2dd
+.	4f
+[2G	2d
+=2	=2
+2G]	2.g
+2E	.
+.	4f
+2G	4d
+.	4e
 ==	==
 *-	*-
 !!!filter: dissonant
