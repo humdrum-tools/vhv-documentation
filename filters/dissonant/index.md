@@ -310,7 +310,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 
 ### Dissonant third-quarter notes (Q) ###
 
-### Chanson idioms (h) ###
+### Chanson idiom (h) ###
 
 ### Unknown dissonances (Z, z) ###
 
