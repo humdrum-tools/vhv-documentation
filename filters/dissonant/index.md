@@ -19,7 +19,12 @@ spine is expected to be monophonic and have no subspine branching.
 If there are chords in the music, the first note of the chord is
 used, and secondary subspines will be ignored.
 
-Here is an example of the tool in action:
+Below is an example of the dissonant filter in action.  To apply the filter to 
+a file, include the line `!!!filter: dissonant` anywhere in the file.  The label
+for each voice will be inserted in spines immediately to the left of each
+`**kern` spine.  In the following display the labels are shown above the notes
+to which they apply.  `P` means a rising passing tone and `p` means a lower
+passing tone.  See the complete list of label abbreviations further below.
 
 {% include verovio.html
 	source="josex"
@@ -168,7 +173,7 @@ Try editing the above Humdrum textual score to generate various types of dissona
 <tr><th>Label</th><th> Meaning</th>                             <th>Label</th><th> Meaning</th>                                 </tr>
 <tr><td> P </td><td> rising passing tone</td>                   <td> p </td>  <td> downward passing tone</td>                   </tr>
 <tr><td> N </td><td> upper neighbor</td>                        <td> n </td>  <td> lower neighbor</td>                          </tr>
-<tr><td> E </td><td> upper échappée</td>                        <td> e </td>  <td> lower échappée</td>                          </tr>
+<tr><td> E </td><td> upper &eacute;chapp&eacute;e</td>                        <td> e </td>  <td> lower &eacute;chapp&eacute;e</td>                          </tr>
 <tr><td> C </td><td> ascending short nota cambiata</td>         <td> c </td>  <td> descending short nota cambiata</td>          </tr>
 <tr><td> K </td><td> ascending long nota cambiata</td>          <td> k </td>  <td> descending long nota cambiata</td>           </tr>
 <tr><td> J </td><td> incomplete posterior upper neighbor</td>   <td> j </td>  <td> incomplete posterior lower neighbor</td>     </tr>
@@ -188,7 +193,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 <tr><th>Label</th><th> Meaning</th></tr>
 <tr><td> P </td><td> passing tone</td></tr>
 <tr><td> N </td><td> neighbor</td></tr>
-<tr><td> E </td><td> échappée</td></tr>
+<tr><td> E </td><td> &eacute;chapp&eacute;e</td></tr>
 <tr><td> C </td><td> short nota cambiata</td></tr>
 <tr><td> K </td><td> long nota cambiata</td></tr>
 <tr><td> J </td><td> incomplete posterior neighbor</td></tr>
@@ -213,7 +218,6 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 	pageWidth="1000"
 	tabsize="10"
 %}
-
 <script type="application/json" id="passing">**kern	**kern
 *M2/4	*M2/4
 4C	8cL
@@ -236,7 +240,6 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 	pageWidth="1000"
 	tabsize="10"
 %}
-
 <script type="application/json" id="nei">**kern	**kern
 *M2/4	*M2/4
 4C	8ccL
@@ -251,7 +254,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 !!!filter: dissonant
 </script>
 
-###  Échappée notes ###
+###  &Eacute;chapp&eacute;e notes ###
 
 {% include verovio.html
 	source="chap"
@@ -259,19 +262,40 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 	pageWidth="1000"
 	tabsize="10"
 %}
-
 <script type="application/json" id="chap">**kern	**kern
 *clefF4	*clefG2
 *M2/4	*M2/4
 4F	8aL
 .	8gJ
 4E	4cc
+=2	=2
+4F	8aL
+.	8bJ
+4G	4g
 ==	==
 *-	*-
 !!!filter: dissonant
 </script>
 
 ###  Cambiatas notes ###
+
+{% include verovio.html
+	source="camb"
+	scale="60"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/json" id="camb">**kern	**kern
+*clefF4	*clefG2
+*M6/4	*M6/4
+2G	2.gg
+2E	.
+.	4ff
+2G	2dd
+==	==
+*-	*-
+!!!filter: dissonant
+</script>
 
 ###  Incomplete neighbors ###
 
@@ -289,9 +313,8 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 
 ## URL filtering of repertories ##
 
-The dissonant tool can be used with works from the Tasso in Music Project through this link:
-
-Applying the `dissonant` filter:
+The dissonant tool can be used with available repertories by adding the
+filter to the URL for the works, such as with the Tasso in Music Project:
 
 [http://verovio.humdrum.org/?k=ey&file=tmp&filter=dissonant](http://verovio.humdrum.org/?k=ey&file=tmp&filter=dissonant)
 
@@ -302,8 +325,9 @@ To remove lyric text from analysis results, use the filter: `extractx -i kern | 
 
 ## JRP dissonant tool ##
 
-Work pages on the Josquin Research Project website have links to VHV for the current work to view the
-dissonant labeling analysis.  For example the page:
+Work pages on the Josquin Research Project website have links to
+VHV for the current work to view the dissonant labeling analysis.
+For example the page:
 
 [http://josquin.stanford.edu/work/?id=Jos2801](http://josquin.stanford.edu/work/?id=Jos2801)
 
