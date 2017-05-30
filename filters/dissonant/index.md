@@ -183,8 +183,7 @@ Try editing the above Humdrum textual score to generate various types of dissona
 <tr><td> F </td><td> fake suspension approached by step up</td> <td> f </td>  <td> fake suspension approached by step down</td> </tr>
 <tr><td> o </td><td> suspension ornament</td>                   <td> r </td>  <td> suspension repeated note</td>                </tr>
 <tr><td> h </td><td> chanson idiom</td>                         <td> Q </td>  <td> dissonant third quarter</td>                 </tr>
-<tr><td> Z2 </td><td> unknown dissonance, 2nd interval</td>     <td> Z7 </td ><td> unknown dissonance, 7th interval</td></tr>
-<tr><td> Z4 </td><td> unknown dissonance, 4th interval</td>     <td>    </td ><td></td>                                 </tr>
+<tr><td> Z </td><td> unknown dissonance, 2nd or 7th interval</td>      <td> z </td ><td> unknown dissonance, 4th interval</td></tr>
 </table>
 
 The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a single case designated with an uppercase letter:
@@ -210,7 +209,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 </table>
 
 
-### Passing notes ###
+### Passing notes (P, p) ###
 
 {% include verovio.html
 	source="passing"
@@ -232,7 +231,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 !!!filter: dissonant
 </script>
 
-### Neighboring notes ###
+### Neighboring notes (N, n) ###
 
 {% include verovio.html
 	source="nei"
@@ -254,7 +253,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 !!!filter: dissonant
 </script>
 
-###  &Eacute;chapp&eacute;e notes ###
+###  &Eacute;chapp&eacute;e notes (E, e) ###
 
 {% include verovio.html
 	source="chap"
@@ -277,7 +276,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 !!!filter: dissonant
 </script>
 
-###  Cambiatas notes ###
+###  Cambiatas notes (C, c, K, k) ###
 
 {% include verovio.html
 	source="camb"
@@ -297,17 +296,17 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 !!!filter: dissonant
 </script>
 
-###  Incomplete neighbors ###
+###  Incomplete neighbors (I, i, J, j) ###
 
-###  Anticipations ###
+###  Anticipations (A, a) ###
 
-###  Suspensions ###
+###  Suspensions (s, G, F, f, r, o) ###
 
-### Dissonant third-quarter notes ###
+### Dissonant third-quarter notes (Q) ###
 
-### Chanson idioms ###
+### Chanson idioms (h) ###
 
-### Unknown dissonances ###
+### Unknown dissonances (Z, z) ###
 
 
 
