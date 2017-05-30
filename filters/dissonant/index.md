@@ -284,7 +284,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 	pageWidth="1000"
 	tabsize="10"
 	spacingLinear="0.15"
-	spacingNonLinear="0.55"
+	spacingNonLinear="0.50"
 %}
 <script type="application/json" id="camb_dn">**kern	**kern
 *clefF4	*clefG2
@@ -292,9 +292,9 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 2G	2.g
 2E	.
 .	4f
-[2G	2d
+2G	2d
 =2	=2
-2G]	2.g
+2G	2.g
 2E	.
 .	4f
 2G	4d
