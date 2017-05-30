@@ -342,7 +342,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 	tabsize="10"
 %}
 <script type="application/json" id="ant">**kern	**kern
-*clefF4	*clefF4
+*clefG2	*clefG2
 *M4/2	*M4/2
 4g	2ee
 4f	.
