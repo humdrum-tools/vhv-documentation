@@ -281,8 +281,9 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 {% include verovio.html
 	source="camb_dn"
 	scale="60"
-	pageWidth="1200"
+	pageWidth="1000"
 	tabsize="10"
+	evenNoteSpacing="1"
 %}
 <script type="application/json" id="camb_dn">**kern	**kern
 *clefF4	*clefG2
