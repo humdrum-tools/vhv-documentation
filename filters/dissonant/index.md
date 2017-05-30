@@ -287,7 +287,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 %}
 <script type="application/json" id="camb">**kern	**kern
 *clefF4	*clefG2
-*M6/4	*M6/4
+*M3/2	*M3/2
 2G	2.gg
 2E	.
 .	4ff
