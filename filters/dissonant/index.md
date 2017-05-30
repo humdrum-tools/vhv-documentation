@@ -176,8 +176,8 @@ Try editing the above Humdrum textual score to generate various types of dissona
 <tr><td> E </td><td> upper &eacute;chapp&eacute;e</td>                        <td> e </td>  <td> lower &eacute;chapp&eacute;e</td>                          </tr>
 <tr><td> C </td><td> ascending short nota cambiata</td>         <td> c </td>  <td> descending short nota cambiata</td>          </tr>
 <tr><td> K </td><td> ascending long nota cambiata</td>          <td> k </td>  <td> descending long nota cambiata</td>           </tr>
-<tr><td> J </td><td> incomplete posterior upper neighbor</td>   <td> j </td>  <td> incomplete posterior lower neighbor</td>     </tr>
 <tr><td> I </td><td> incomplete anterior upper neighbor</td>    <td> i </td>  <td> incomplete anterior lower neighbor</td>      </tr>
+<tr><td> J </td><td> incomplete posterior upper neighbor</td>   <td> j </td>  <td> incomplete posterior lower neighbor</td>     </tr>
 <tr><td> A </td><td> rising anticipation</td>                   <td> a </td>  <td> descending anticipation</td>                 </tr>
 <tr><td> s </td><td> suspension</td>                            <td> G </td>  <td> suspension agent</td>                        </tr>
 <tr><td> F </td><td> fake suspension approached by step up</td> <td> f </td>  <td> fake suspension approached by step down</td> </tr>
@@ -187,7 +187,7 @@ Try editing the above Humdrum textual score to generate various types of dissona
 <tr><td> Z4 </td><td> unknown dissonance, 4th interval</td>     <td>    </td ><td></td>                                 </tr>
 </table>
 
-The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a single case:
+The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a single case designated with an uppercase letter:
 
 <table class="dense onecol">
 <tr><th>Label</th><th> Meaning</th></tr>
@@ -196,15 +196,15 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 <tr><td> E </td><td> &eacute;chapp&eacute;e</td></tr>
 <tr><td> C </td><td> short nota cambiata</td></tr>
 <tr><td> K </td><td> long nota cambiata</td></tr>
-<tr><td> J </td><td> incomplete posterior neighbor</td></tr>
 <tr><td> I </td><td> incomplete anterior neighbor</td></tr>
+<tr><td> J </td><td> incomplete posterior neighbor</td></tr>
 <tr><td> A </td><td> anticipation</td></tr>
 <tr><td> Q </td><td> dissonant third quarter</td></tr>
-<tr><td> s </td><td> suspension</td></tr>
+<tr><td> S </td><td> suspension</td></tr>
 <tr><td> F </td><td> fake suspension</td></tr>
 <tr><td> G </td><td> suspension agent</td></tr>
-<tr><td> o </td><td> suspension ornament</td></tr>
-<tr><td> r </td><td> suspension repeated note</td></tr>
+<tr><td> O </td><td> suspension ornament</td></tr>
+<tr><td> R </td><td> suspension repeated note</td></tr>
 <tr><td> H </td><td> chanson idiom</td></tr>
 <tr><td> Z </td><td> unknown dissonance</td></tr>
 </table>
