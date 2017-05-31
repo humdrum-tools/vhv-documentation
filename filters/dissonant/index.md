@@ -132,13 +132,7 @@ passing tone.  See the complete list of label abbreviations further below.
 .	4E	.
 .	4F	.
 .	4G	.
-.	1A	[1cc
-=20	=20	=20
-1E	2G	2cc]
-.	1c	4b
-.	.	4a
-1F	.	2a
-.	2A	2cc
+.	1A	1cc
 =	=	=
 *-	*-	*-
 !!!RDF**kern: i=editorial accidental
