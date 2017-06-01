@@ -354,12 +354,12 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 
 {% include verovio.html
 	source="sus"
-	scale="60"
-	pageWidth="1000"
+	scale="40"
+	pageWidth="1100"
 	tabsize="10"
 %}
 <script type="application/json" id="sus">**kern	**kern
-*I"Tenor	*I"Discantus
+*I"T	*I"Di
 *clefGv2	*clefG2
 *M3/1	*M3/1
 =36	=36
@@ -368,7 +368,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 [1G	2e
 .	[2g
 =37	=37
-1G]	2g]
+1G	2g
 .	1e
 0F	4d
 .	4c
