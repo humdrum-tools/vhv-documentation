@@ -359,7 +359,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 	tabsize="10"
 %}
 <script type="application/json" id="sus">**kern	**kern
-*I"T	*I"Di
+*I"T	*I"D
 *clefGv2	*clefG2
 *M3/1	*M3/1
 =36	=36
@@ -386,6 +386,31 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 A suspension consists of a voice that becomes dissonant either by sustaining or restriking a note before resolving the dissonance down by step. This sustained voice was refered to as the (*patient*) by Artusi, and it gets the `s` label at the moment of the dissonance. Another voice strikes a note that is dissonant against the suspended note, and this voice gets a `G` label for (*agent*). It is common to have more than one agent per suspension.
 
 In Renaissance music with a ternary tactus, the dissonant portion of a suspension usually lands on the second beat of the tactus. So in order to detect ternary suspensions, like the example above taken from Obrecht's four-voice motet Mille quingentis, the definition of a suspension that we use allows the dissonance to be metrically strong or weak. Consonant suspensions are ignored.
+
+{% include verovio.html
+	source="fsus"
+	scale="40"
+	pageWidth="1100"
+	tabsize="10"
+%}
+<script type="application/json" id="fsus">**kern	**kern	**kern	**kern
+*I'B	*I'T	*I'A	*I'S
+*clefF4	*clefGv2	*clefGv2	*clefG2
+*k[b-]	*k[b-]	*k[b-]	*k[b-]
+*M2/1	*M2/1	*M2/1	*M2/1
+=26	=26	=26	=26
+2D\	0A	4d\]	2f/
+.	.	4c\	.
+2C/	.	2e-i\	1g
+1D	.	[1d	.
+.	.	.	2f#i/
+==	==
+*-	*-
+!!!filter: dissonant
+</script>
+Sometimes the preparation of a suspension is itself dissonant like in the example above from the Kyrie of Mouton's Missa Da pacem. This is often refered to as a (*fake suspension*) though would more accurately be called a fake preparation. It is approached by step up or down and remains in place or is restruck to become the dissonant portion of a suspension. Since we know the suspension will generally resolve down by step, we use an uppercase `F` or lowercase `f` to convey whether the dissonance was approached by step up or down respectfully. Because this happens over a pedal, and an agent is also needed for the suspension, this is generally only found in three or more voices, though could happen in two voice if the pedal tone were rearticulated at the moment it serves as the agent of the suspension.
+
+Occasionally a fake suspension is preceded by an anticipation. In this case the fake suspension label takes the same case as that of the anticipation.
 
 ### Dissonant third-quarter notes (Q) ###
 
