@@ -368,7 +368,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 [1G	2e
 .	[2g
 =37	=37
-1G	2g
+1G]	2g]
 .	1e
 0F	.
 .	4d
