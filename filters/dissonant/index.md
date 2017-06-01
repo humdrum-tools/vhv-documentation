@@ -359,8 +359,14 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 	tabsize="10"
 %}
 <script type="application/json" id="sus">**kern	**kern
+*I"Tenor	*I"Discantus
 *clefGv2	*clefG2
 *M3/1	*M3/1
+=36	=36
+1E	1e
+1F	1d
+[1G	2e
+.	[2g
 =37	=37
 1G]	2g]
 .	1e
