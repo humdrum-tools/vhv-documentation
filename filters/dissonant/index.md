@@ -370,7 +370,8 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 =37	=37
 1G	2g
 .	1e
-0F	4d
+0F	.
+.	4d
 .	4c
 .	1d
 =38	=38
@@ -382,9 +383,9 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 *-	*-
 !!!filter: dissonant
 </script>
-A suspension consists of a voice that becomes dissonant either by sustaining or restriking a note before resolving the dissonance down by step. This sustained voice was refered to as the `patient` by Artusi, and it gets the `s` label at the moment of the dissonance. Another voice strikes a note that is dissonant against the suspended note, and this voice gets a `G` label for `agent.` It is common to have more than one agent per suspension.
+A suspension consists of a voice that becomes dissonant either by sustaining or restriking a note before resolving the dissonance down by step. This sustained voice was refered to as the (*patient*) by Artusi, and it gets the `s` label at the moment of the dissonance. Another voice strikes a note that is dissonant against the suspended note, and this voice gets a `G` label for (*agent*). It is common to have more than one agent per suspension.
 
-In Renaissance music with a ternary tactus, the dissonant portion of a suspension usually lands on the second beat of the tactus. So in order to detect ternary suspensions, like the example above taken from Obrecht's four-voice motet `Mille quingentis`, the definition of a suspension that we use allows the dissonance to be metrically strong or weak. Consonant suspensions are ignored.
+In Renaissance music with a ternary tactus, the dissonant portion of a suspension usually lands on the second beat of the tactus. So in order to detect ternary suspensions, like the example above taken from Obrecht's four-voice motet Mille quingentis, the definition of a suspension that we use allows the dissonance to be metrically strong or weak. Consonant suspensions are ignored.
 
 ### Dissonant third-quarter notes (Q) ###
 
