@@ -404,8 +404,8 @@ In Renaissance music with a ternary tactus, the dissonant portion of a suspensio
 2C/	.	2e-i\	1g
 1D	.	[1d	.
 .	.	.	2f#i/
-==	==
-*-	*-
+==	==	==	==
+*-	*-	*-	*-
 !!!filter: dissonant
 </script>
 Sometimes the preparation of a suspension is itself dissonant like in the example above from the Kyrie of Mouton's Missa Da pacem. This is often refered to as a (*fake suspension*) though would more accurately be called a fake preparation. It is approached by step up or down and remains in place or is restruck to become the dissonant portion of a suspension. Since we know the suspension will generally resolve down by step, we use an uppercase `F` or lowercase `f` to convey whether the dissonance was approached by step up or down respectfully. Because this happens over a pedal, and an agent is also needed for the suspension, this is generally only found in three or more voices, though could happen in two voice if the pedal tone were rearticulated at the moment it serves as the agent of the suspension.
