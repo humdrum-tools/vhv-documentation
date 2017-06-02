@@ -350,7 +350,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 !!!filter: dissonant
 </script>
 
-###  Suspensions (s, G, F, f, r, o) ###
+###  Suspensions (s, G, r, o) ###
 
 {% include verovio.html
 	source="sus"
@@ -388,6 +388,32 @@ A suspension consists of a voice that becomes dissonant either by sustaining or 
 In Renaissance music with a ternary tactus, the dissonant portion of a suspension usually lands on the second beat of the tactus. So in order to detect ternary suspensions, like the example above taken from Obrecht's four-voice motet Mille quingentis, the definition of a suspension that we use allows the dissonance to be metrically strong or weak. Consonant suspensions are ignored.
 
 {% include verovio.html
+	source="rsus"
+	scale="60"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/json" id="rsus">**kern	**kern
+*clefGv2	*clefG2
+*M4/2	*M4/2
+2e	2g
+2d	2.f
+1c	.
+.	1f
+.	2e
+=	=
+1d	2f
+.	2r
+2e	1r
+2f	.
+==	==
+*-	*-
+!!!filter: dissonant
+</script>
+
+We detect two types of dissonant suspension ornaments both of which occur during what would normally be the dissonant phase of the suspension. The first consists of a simple rearticulation of the suspended note before it resolves down by step. The reartuclated note is generally a quarter note and is labeled with an `r`. While this figure, shown above, does occur in tonal music there are almost no occurences of this in the entire JRP database of scores. This demonstrates how dissonance analysis can be used to inform the study of style change over time.
+
+{% include verovio.html
 	source="fsus"
 	scale="40"
 	pageWidth="1100"
@@ -414,6 +440,9 @@ In Renaissance music with a ternary tactus, the dissonant portion of a suspensio
 *-	*-	*-	*-
 !!!filter: dissonant
 </script>
+
+###  Fake Suspensions (F, f) ###
+
 Sometimes the preparation of a suspension is itself dissonant like in the example above from the Kyrie of Mouton's Missa Da pacem. This is often refered to as a (*fake suspension*) though would more accurately be called a fake preparation. It is approached by step up or down and remains in place or is restruck to become the dissonant portion of a suspension. Since we know the suspension will generally resolve down by step, we use an uppercase `F` or lowercase `f` to convey whether the dissonance was approached by step up or down respectfully. Because this happens over a pedal, and an agent is also needed for the suspension, this is generally only found in three or more voices, though could happen in two voice if the pedal tone were rearticulated at the moment it serves as the agent of the suspension.
 
 {% include verovio.html
