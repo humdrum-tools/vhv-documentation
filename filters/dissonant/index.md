@@ -399,7 +399,7 @@ In Renaissance music with a ternary tactus, the dissonant portion of a suspensio
 2e	2g
 2d	2.f
 1c	.
-.	1f
+.	4f
 .	2e
 =	=
 1d	2f
@@ -412,6 +412,8 @@ In Renaissance music with a ternary tactus, the dissonant portion of a suspensio
 </script>
 
 We detect two types of dissonant suspension ornaments both of which occur during what would normally be the dissonant phase of the suspension. The first consists of a simple rearticulation of the suspended note before it resolves down by step. The reartuclated note is generally a quarter note and is labeled with an `r`. While this figure, shown above, does occur in tonal music there are almost no occurences of this in the entire JRP database of scores. This demonstrates how dissonance analysis can be used to inform the study of style change over time.
+
+###  Fake Suspensions (F, f) ###
 
 {% include verovio.html
 	source="fsus"
@@ -440,8 +442,6 @@ We detect two types of dissonant suspension ornaments both of which occur during
 *-	*-	*-	*-
 !!!filter: dissonant
 </script>
-
-###  Fake Suspensions (F, f) ###
 
 Sometimes the preparation of a suspension is itself dissonant like in the example above from the Kyrie of Mouton's Missa Da pacem. This is often refered to as a (*fake suspension*) though would more accurately be called a fake preparation. It is approached by step up or down and remains in place or is restruck to become the dissonant portion of a suspension. Since we know the suspension will generally resolve down by step, we use an uppercase `F` or lowercase `f` to convey whether the dissonance was approached by step up or down respectfully. Because this happens over a pedal, and an agent is also needed for the suspension, this is generally only found in three or more voices, though could happen in two voice if the pedal tone were rearticulated at the moment it serves as the agent of the suspension.
 
