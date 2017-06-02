@@ -404,13 +404,55 @@ In Renaissance music with a ternary tactus, the dissonant portion of a suspensio
 2C/	.	2e-i\	1g
 1D	.	[1d	.
 .	.	.	2f#i/
+=27	=27	=27	=27
+1GG	0G	2d\]	0g
+.	.	2.B-\	.
+1r	.	.	.
+.	.	4c\	.
+.	.	2d\	.
 ==	==	==	==
 *-	*-	*-	*-
 !!!filter: dissonant
 </script>
 Sometimes the preparation of a suspension is itself dissonant like in the example above from the Kyrie of Mouton's Missa Da pacem. This is often refered to as a (*fake suspension*) though would more accurately be called a fake preparation. It is approached by step up or down and remains in place or is restruck to become the dissonant portion of a suspension. Since we know the suspension will generally resolve down by step, we use an uppercase `F` or lowercase `f` to convey whether the dissonance was approached by step up or down respectfully. Because this happens over a pedal, and an agent is also needed for the suspension, this is generally only found in three or more voices, though could happen in two voice if the pedal tone were rearticulated at the moment it serves as the agent of the suspension.
 
-Occasionally a fake suspension is preceded by an anticipation. In this case the fake suspension label takes the same case as that of the anticipation.
+{% include verovio.html
+	source="afsus"
+	scale="40"
+	pageWidth="1100"
+	tabsize="10"
+%}
+<script type="application/json" id="afsus">**kern	**kern	**kern	**kern
+*I'B	*I'T	*I'A	*I'S
+*clefF4	*clefGv2	*clefGv2	*clefG2
+*k[b-]	*k[b-]	*k[b-]	*k[b-]
+*M3/1	*M3/1	*M3/1	*M3/1
+=9	=9	=9	=9
+1C	0.c	1r	4a/
+.	.	.	4b-\
+.	.	.	2.cc\
+1E	.	1g	.
+.	.	.	4b-\
+.	.	.	1b-
+1F	.	2.f\	.
+.	.	.	2a/
+.	.	4e\	.
+=10	=10	=10	=10
+2.G\	0B-	4d\	1b-
+.	.	4c\	.
+.	.	2B-\	.
+4F\	.	.	.
+2D\	.	2F/	2r
+2.E-i\	.	2G/	2.g/
+.	1r	1B-	.
+4D\	.	.	4f/
+2BB-/	.	.	2d/
+==	==	==	==
+*-	*-	*-	*-
+!!!filter: dissonant
+</script>
+
+Occasionally a fake suspension is preceded by an anticipation as in the example above. In this case the fake suspension label takes the same case as that of the anticipation.
 
 ### Dissonant third-quarter notes (Q) ###
 
