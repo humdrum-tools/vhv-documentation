@@ -389,7 +389,7 @@ In Renaissance music with a ternary tactus, the dissonant portion of a suspensio
 
 {% include verovio.html
 	source="rsus"
-	scale="60"
+	scale="40"
 	pageWidth="1000"
 	tabsize="10"
 %}
@@ -404,7 +404,7 @@ In Renaissance music with a ternary tactus, the dissonant portion of a suspensio
 =	=
 1d	2f
 .	2r
-2e	1r
+2e	1cc
 2f	.
 ==	==
 *-	*-
@@ -481,7 +481,7 @@ Sometimes the preparation of a suspension is itself dissonant like in the exampl
 !!!filter: dissonant
 </script>
 
-Occasionally a fake suspension is preceded by an anticipation as in the example above. In this case the fake suspension label takes the same case as that of the anticipation.
+Occasionally a fake suspension is preceded by an anticipation as in the example above taken from the same Mouton Kyrie. In this case the fake suspension label takes the same case as that of the anticipation.
 
 ### Dissonant third-quarter notes (Q) ###
 
