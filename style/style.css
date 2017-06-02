@@ -1122,6 +1122,12 @@ a[href^="http://"]:after, a[href^="https://"]:after {
 	vertical-align: super;
 }
 
+/* this part suppressed the above rule for logos */
+
+a.logo:after {
+	content: "" !important;
+}
+
 /* Strip the outbound icon when this class is present */
 a[href].noCrossRef::after,
 a.no_icon:after
