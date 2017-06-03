@@ -88,9 +88,11 @@ ul.brief li {
 Non-programmers can participate by submitting <a
 href="https://github.com/humdrum-tools/verovio-humdrum-viewer/issues">bug
 reports and feature requests</a> for the VHV web interface.  Reports for <a
-href="/filters">filters</a> should preferrably be submitted <a
-href="https://github.com/craigsapp/humlib/issues">here</a>.  Most
-VHV documentation pages have editing buttons that can be used to
+href="/filters">filters</a> should preferrably be submitted to <a
+href="https://github.com/craigsapp/humlib/issues">humlib issues</a>, and reports
+for graphical notation should be submitted to 
+<a href="https://github.com/rism-ch/verovio/issues">verovio issues</a>.
+Most VHV documentation pages have editing buttons that can be used to
 fix typos or add content, if you have a <a
 href="https://github.com">Github</a> account.
 
