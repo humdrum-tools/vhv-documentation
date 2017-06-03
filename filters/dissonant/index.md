@@ -618,5 +618,58 @@ undifferentiated directions for each category.
 
 ### References ###
 
-Morgan, Alexander. "[Renaissance interval-succession theory: treatises and analysis](http://digitool.library.mcgill.ca/R/DPIVYXI71HL5ILGG61U4D2N5YR6UMUAASGK4S4JC42B2BFPGCD-00398?func=results-jump-full&set_entry=000001&set_number=001123&base=GEN01)". Ph.D. dissertation: McGill University: Canada; 2017.
+Antila, Christopher, Alexander Morgan, et al. VIS Framework (version 3.0.3). Python. Montreal: McGill University, 2016.
 
+Bent, Margaret. “Grammar of Early Music: Preconditions for Analysis.” In Tonal Structures in Early Music, edited by Cristle Collins Judd, 15-59. London: Garland Publishing, 1998.
+
+Burmeister, Joachim. Musical Poetics. Translation by Benito Rivera. New Haven: Yale University Press, 1993. Originally published 1606.
+
+Cohen, David. “Metaphysics, Ideology, Discipline: Consonance, Dissonance, and the Foundations of Western Polyphony.” Theoria 7: 1–86.
+
+Conklin, Darrell, and Mathieu Bergeron, “Discovery of Contrapuntal Patterns.” In Proceedings of the International Society for Music Information Retrieval (2010): 201–206.
+
+DeFord, Ruth. Tactus Mensuration, and Rhythm in Renaissance Music. Cambridge: Cambridge University Press, 2015.
+
+Fuller, Sarah. “Contrapunctus Theory, Dissonance Regulation, and French Polyphony of the Fourteenth Century.” In Medieval Music in Practice: Studies in Honor of Richard Crocker, edited by Judith Peraino, 113–52. Middleton, Wisconsin: American Institute of Musicology, 2013.
+
+———. “Organum – discantus – contrapunctus in the Middle Ages.” In The Cambridge History of Western Music Theory, edited by Thomas Christensen, 477–502. Cambridge: Cambridge University Press, 2002.
+
+Jeppesen, Knud. Counterpoint: The Polyphonic Vocal Style of the Sixteenth Century. Translated by Glen Haydon. New York: Dover Publications, 1992 (original Danish edition published by Wilhelm Hansen, in Copenhagen, 1931).
+
+Melin, William Eugene. “The Music of Johannes Tinctoris: A Comparative Study of Theory and Practice.” PhD diss., Ohio State University, 1973.
+
+Milsom, John. “‘Imitatio,’ ‘intertextuality’, and early music.” In Citation and authority in Medieval and Renaissance musical culture: Learning from the learned, edited by Suzannah Clark and Elizabeth Eva Leach, 141–51. Woodbridge: Boydell & Brewer, 2005.
+
+Moll, Kevin. Counterpoint and Compositional Process in the Time of Dufay: Perspectives from German Musicology. Edited and translated by Kevin Moll. New York: Garland Publishing Inc., 1997.
+
+Morgan, Alexander. "[Renaissance Interval-Succession Theory: Treatises and Analysis](http://digitool.library.mcgill.ca/R/DPIVYXI71HL5ILGG61U4D2N5YR6UMUAASGK4S4JC42B2BFPGCD-00398?func=results-jump-full&set_entry=000001&set_number=001123&base=GEN01)". PhD diss., McGill University, 2017.
+
+Morris, R. O. Contrapuntal Technique. Oxford: Oxford University Press, 1922.
+
+Pontio, Pietro. Ragionamento di musica. Compiled by Suzanne Clercx. Kassel: Bärenreiter, 1959. Originally published Parma: 1588.
+
+———. [Ragionamento di musica](http://www.ums3323.paris-sorbonne.fr/TREMIR/TReMiR_Pontio/R0_start.htm). Electronic version published by Dupraz, Christophe. Traités Musicaux Romans, 2013. Accessed August 14, 2016.
+
+Rothfarb, Lee. “Tinctoris vs. Tinctoris: Theory and Practice of Dissonance in Counterpoint.” In Theory Only 9.2–3 (1986): 3–31.
+
+Sachs, Klaus-Jürgen. "[Counterpoint](http://www.oxfordmusiconline.com/subscriber/article/grove/music/06690)."  Grove Music Online. (accessed July 12, 2016).
+
+———. Der Contrapunctus im 14. und 15. Jahrhundert: Untersuchungen zum Terminus, zur Lehre und zu den Quellen. Wiesbaden: Steiner, 1974.
+
+Schubert, Peter. Modal Counterpoint, Renaissance Style, 2nd ed. New York: Oxford University Press, 2008.
+
+Schubert, Peter and Julie Cumming, “Another Lesson from Lassus: using Computers to Analyze Counterpoint.” Early Music 43.4 (November 2015): 577–86.
+
+Siegler, Andie, and Jon Wild. “Schematizing the Treatment of Dissonance in 16th-century Counterpoint.” In Proceedings of the International Society for Music Information Retrieval (2015): 645–650.
+
+Tinctoris, Johannes. Liber de arte contrapuncti. In Johannes Tinctoris Opera Theoretica. Compiled by Albert Seay. n.p.: American Institute of Musicology, 1975. Originally written 1477.
+
+———. Liber de arte contrapuncti. Translated by Albert Seay. Rome: American Institute of Musicology, 1961. Originally written c. 1477.
+
+———. "[Liber de arte contrapuncti](http://earlymusictheory.org/Tinctoris/texts/deartecontrapuncti/). Translated by Jeffrey Dean. Last accessed November 16, 2015. Originally written 1477.
+
+Trachier, Olivier. Contrepoint du XVIe siècle. Paris: Durand, 1999.
+
+Vicentino, Nicola. Ancient music adapted to modern practice (L’antica musica ridotta alla moderna prattica). Translated by Maria Rika Maniates and edited by Claude Palisca. New Haven, Yale University Press 1996. Originally published 1555.
+
+Zarlino, Gioseffo. Art of Counterpoint. Translated by Guy Marco and Claude Palisca, edited by Claude Palisca. New Haven and London: Yale University Press, 1968. Originally published: 1558.
