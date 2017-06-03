@@ -511,6 +511,27 @@ Occasionally a fake suspension is preceded by an anticipation as in the example 
 
 ### Dissonant third-quarter notes (Q) ###
 
+{% include verovio.html
+	source="d3q"
+	scale="60"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/json" id="d3q">**kern	**kern
+*clefG2	*clefG2
+*M4/2	*M4/2
+2f	1.a
+2e	.
+1d	.
+.	4g
+.	4f
+==	==
+*-	*-
+!!!filter: dissonant
+</script>
+
+A dissonant third quarter, labeled `q` like the one shown above, is similar to a descending passing tone. It corresponds to a dissonance in the metric position of a weak minim that lasts only a quarter note. It is approached and left by step down and must be preceded by a note with a duration of at least a minim. 
+
 ### Chanson idiom (h) ###
 
 ### Unknown dissonances (Z, z) ###
