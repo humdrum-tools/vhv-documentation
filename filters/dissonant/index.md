@@ -626,8 +626,6 @@ Burmeister, Joachim. Musical Poetics. Translation by Benito Rivera. New Haven: Y
 
 Cohen, David. “Metaphysics, Ideology, Discipline: Consonance, Dissonance, and the Foundations of Western Polyphony.” Theoria 7: 1–86.
 
-Conklin, Darrell, and Mathieu Bergeron, “Discovery of Contrapuntal Patterns.” In Proceedings of the International Society for Music Information Retrieval (2010): 201–206.
-
 DeFord, Ruth. Tactus Mensuration, and Rhythm in Renaissance Music. Cambridge: Cambridge University Press, 2015.
 
 Fuller, Sarah. “Contrapunctus Theory, Dissonance Regulation, and French Polyphony of the Fourteenth Century.” In Medieval Music in Practice: Studies in Honor of Richard Crocker, edited by Judith Peraino, 113–52. Middleton, Wisconsin: American Institute of Musicology, 2013.
@@ -637,8 +635,6 @@ Fuller, Sarah. “Contrapunctus Theory, Dissonance Regulation, and French Polyph
 Jeppesen, Knud. Counterpoint: The Polyphonic Vocal Style of the Sixteenth Century. Translated by Glen Haydon. New York: Dover Publications, 1992 (original Danish edition published by Wilhelm Hansen, in Copenhagen, 1931).
 
 Melin, William Eugene. “The Music of Johannes Tinctoris: A Comparative Study of Theory and Practice.” PhD diss., Ohio State University, 1973.
-
-Milsom, John. “‘Imitatio,’ ‘intertextuality’, and early music.” In Citation and authority in Medieval and Renaissance musical culture: Learning from the learned, edited by Suzannah Clark and Elizabeth Eva Leach, 141–51. Woodbridge: Boydell & Brewer, 2005.
 
 Moll, Kevin. Counterpoint and Compositional Process in the Time of Dufay: Perspectives from German Musicology. Edited and translated by Kevin Moll. New York: Garland Publishing Inc., 1997.
 
@@ -657,8 +653,6 @@ Sachs, Klaus-Jürgen. "[Counterpoint](http://www.oxfordmusiconline.com/subscribe
 ———. Der Contrapunctus im 14. und 15. Jahrhundert: Untersuchungen zum Terminus, zur Lehre und zu den Quellen. Wiesbaden: Steiner, 1974.
 
 Schubert, Peter. Modal Counterpoint, Renaissance Style, 2nd ed. New York: Oxford University Press, 2008.
-
-Schubert, Peter and Julie Cumming, “Another Lesson from Lassus: using Computers to Analyze Counterpoint.” Early Music 43.4 (November 2015): 577–86.
 
 Siegler, Andie, and Jon Wild. “Schematizing the Treatment of Dissonance in 16th-century Counterpoint.” In Proceedings of the International Society for Music Information Retrieval (2015): 645–650.
 
