@@ -20,8 +20,8 @@ in the sidebar menu to the left (or above), which is organized by topic:
 <style>
 
 dl {
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 10%;
+	margin-right: 10%;
 
 }
 

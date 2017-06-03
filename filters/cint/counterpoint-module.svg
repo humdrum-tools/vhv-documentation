@@ -1,0 +1,846 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="31 0 494 105"
+     width="706" height="150">
+<g transform="translate(0,152) scale(1,-1) scale(.01800) translate(2100,27250)" stroke-linejoin="round" color="black" stroke="currentColor" fill="none" stroke-width="26.7067"  fill-rule="evenodd">
+<defs>
+<g id="P00">
+<path  d="
+M118 -168
+L162 -168
+L200 -162
+L256 -143
+L306 -118
+L350 -87
+L368 -68
+L400 -31
+L418 6
+L425 43
+L425 68
+L418 93
+L412 106
+L393 131
+L368 150
+L356 156
+L337 162
+L306 168
+L262 168
+L225 162
+L187 150
+L168 143
+L118 118
+L75 87
+L56 68
+L25 31
+L6 -6
+L0 -43
+L0 -68
+L6 -93
+L12 -106
+L31 -131
+L56 -150
+L68 -156
+L87 -162
+L118 -168
+Z" fill="currentColor"/>
+</g>
+</defs>
+<path  d="
+M0 -24000
+L27000 -24000
+M0 -23650
+L27000 -23650
+M0 -23300
+L27000 -23300
+M0 -22950
+L27000 -22950
+M0 -22600
+L27000 -22600
+"/>
+<path  d="
+M0 -24000
+L0 -19450
+M6 -24000
+L6 -19450
+"/>
+<path  d="
+M-300 -19223
+L-74 -19223
+L45 -19208
+L157 -19167
+L255 -19100
+L333 -19010
+L420 -18875
+L307 -18995
+L236 -19043
+L138 -19081
+L-3 -19100
+L-300 -19100
+L-300 -19223
+Z" fill="currentColor"/>
+<path  d="
+M-300 -24226
+L-74 -24226
+L45 -24241
+L157 -24282
+L255 -24350
+L333 -24440
+L420 -24575
+L307 -24455
+L236 -24406
+L138 -24368
+L-3 -24350
+L-300 -24350
+L-300 -24226
+Z" fill="currentColor"/>
+<path  d="
+M-240 -24350
+L-352 -19100
+"/>
+<path  d="
+M-352 -19100
+L-352 -24350
+L-240 -24350
+L-240 -19100
+L-352 -19100
+Z" fill="currentColor"/>
+<path  d="
+M300 -22968
+L312 -23000
+L331 -23025
+L356 -23050
+L387 -23062
+L425 -23068
+L437 -23068
+L481 -23062
+L512 -23050
+L537 -23031
+L556 -23006
+L568 -22981
+L575 -22943
+L575 -22925
+L568 -22893
+L556 -22868
+L531 -22843
+L512 -22831
+L487 -22818
+L456 -22812
+L425 -22812
+L387 -22825
+L368 -22837
+L350 -22868
+L331 -22850
+L337 -22806
+L350 -22768
+L362 -22743
+L393 -22693
+L356 -22731
+L337 -22756
+L325 -22781
+L306 -22831
+L293 -22881
+L293 -22918
+L300 -22968
+Z" fill="currentColor"/>
+<path  d="
+M393 -22693
+L437 -22662
+L475 -22643
+L512 -22631
+L550 -22625
+"/>
+<path  d="
+M462 -23637
+L537 -23593
+L625 -23537
+L718 -23462
+L800 -23381
+L837 -23331
+L881 -23268
+L906 -23218
+L931 -23162
+L943 -23118
+L950 -23075
+L956 -23018
+L956 -22975
+L950 -22912
+L937 -22868
+L918 -22818
+L900 -22781
+L868 -22737
+L837 -22706
+L800 -22681
+L775 -22662
+L731 -22643
+L687 -22631
+L631 -22625
+L550 -22625
+L625 -22637
+L656 -22650
+L693 -22675
+L731 -22718
+L750 -22750
+L768 -22800
+L781 -22862
+L787 -22937
+L787 -23006
+L781 -23106
+L768 -23175
+L756 -23231
+L737 -23293
+L706 -23362
+L681 -23406
+L643 -23456
+L600 -23506
+L575 -23531
+L531 -23568
+L481 -23606
+L443 -23631
+L368 -23675
+L250 -23737
+L250 -23743
+L331 -23706
+L462 -23637
+Z" fill="currentColor"/>
+<path  d="
+M1056 -22787
+L1062 -22800
+L1075 -22818
+L1093 -22825
+L1112 -22825
+L1131 -22818
+L1143 -22800
+L1150 -22787
+L1150 -22762
+L1143 -22750
+L1131 -22731
+L1112 -22725
+L1093 -22725
+L1075 -22731
+L1062 -22750
+L1056 -22762
+L1056 -22787
+Z" fill="currentColor"/>
+<path  d="
+M1056 -23131
+L1062 -23143
+L1075 -23162
+L1093 -23168
+L1112 -23168
+L1131 -23162
+L1143 -23143
+L1150 -23131
+L1150 -23106
+L1143 -23093
+L1131 -23075
+L1112 -23068
+L1093 -23068
+L1075 -23075
+L1062 -23093
+L1056 -23106
+L1056 -23131
+Z" fill="currentColor"/>
+<use transform="translate(2841,-23125)" xlink:href="#P00"/>
+<path  d="
+M2841 -23177
+L2841 -24350
+"/>
+<use transform="translate(6117,-23300)" xlink:href="#P00"/>
+<path  d="
+M6117 -23352
+L6117 -24525
+"/>
+<use transform="translate(20091,-23125)" xlink:href="#P00"/>
+<use transform="translate(24867,-23300)" xlink:href="#P00"/>
+<path  d="
+M27000 -24000
+L27000 -19450
+M27006 -24000
+L27006 -19450
+"/>
+<path  d="
+M0 -20850
+L27000 -20850
+M0 -20500
+L27000 -20500
+M0 -20150
+L27000 -20150
+M0 -19800
+L27000 -19800
+M0 -19450
+L27000 -19450
+"/>
+<path  d="
+M706 -19775
+L925 -21025
+L937 -21143
+L931 -21206
+L918 -21243
+L906 -21268
+L881 -21306
+L843 -21343
+L812 -21362
+L768 -21375
+L731 -21381
+L700 -21381
+L637 -21375
+L606 -21368
+L581 -21356
+L587 -21318
+L612 -21325
+L625 -21325
+L650 -21318
+L675 -21306
+L693 -21293
+L712 -21275
+L731 -21243
+L737 -21225
+L743 -21193
+L743 -21181
+L737 -21150
+L718 -21112
+L706 -21100
+L681 -21081
+L668 -21075
+L631 -21062
+L600 -21062
+L568 -21068
+L537 -21081
+L518 -21093
+L500 -21112
+L481 -21143
+L475 -21162
+L468 -21193
+L468 -21218
+L475 -21256
+L487 -21287
+L506 -21318
+L537 -21350
+L562 -21368
+L606 -21387
+L637 -21393
+L700 -21400
+L718 -21400
+L768 -21393
+L800 -21387
+L831 -21375
+L862 -21356
+L906 -21312
+L931 -21275
+L950 -21218
+L956 -21193
+L962 -21137
+L950 -21025
+L731 -19775
+L706 -19775
+Z" fill="currentColor"/>
+<path  d="
+M662 -20825
+L743 -20831
+L793 -20831
+L862 -20825
+L900 -20818
+L937 -20806
+L987 -20781
+"/>
+<path  d="
+M987 -20781
+L1031 -20737
+L1043 -20718
+L1062 -20687
+L1075 -20656
+L1081 -20637
+L1087 -20612
+L1093 -20568
+L1093 -20537
+L1087 -20500
+L1081 -20475
+L1068 -20443
+L1043 -20406
+L1025 -20387
+L1000 -20368
+L968 -20350
+L937 -20337
+L912 -20331
+L856 -20325
+L850 -20325
+L793 -20331
+L743 -20343
+L718 -20356
+L681 -20381
+L656 -20412
+L643 -20437
+L631 -20468
+L625 -20518
+L631 -20562
+L643 -20593
+L662 -20625
+L687 -20650
+L743 -20687
+L737 -20693
+L675 -20662
+L650 -20643
+L618 -20612
+L587 -20568
+L568 -20518
+L562 -20475
+L562 -20443
+L568 -20406
+L575 -20381
+L593 -20337
+L612 -20306
+L631 -20281
+L662 -20250
+L700 -20218
+L731 -20200
+L756 -20187
+L812 -20175
+L837 -20175
+L900 -20181
+L943 -20193
+L987 -20212
+L1031 -20237
+L1075 -20281
+L1106 -20325
+L1131 -20375
+L1143 -20418
+L1150 -20456
+L1150 -20493
+L1143 -20543
+L1137 -20575
+L1125 -20618
+L1106 -20656
+L1087 -20687
+L1062 -20718
+L1031 -20750
+L987 -20781
+Z" fill="currentColor"/>
+<path  d="
+M662 -20825
+L625 -20818
+L575 -20806
+L537 -20793
+L487 -20768
+L462 -20750
+L425 -20718
+L393 -20687
+L362 -20643
+L337 -20593
+L318 -20543
+L306 -20487
+L300 -20431
+L300 -20368
+L312 -20275
+L331 -20200
+L356 -20137
+L387 -20075
+L431 -20018
+L487 -19956
+L593 -19856
+L662 -19793
+L818 -19643
+L887 -19562
+L925 -19500
+L950 -19443
+L962 -19406
+L975 -19356
+L981 -19300
+L981 -19262
+L975 -19218
+L968 -19200
+L1006 -19175
+L1018 -19225
+L1025 -19262
+L1031 -19318
+L1031 -19331
+L1025 -19418
+L1018 -19456
+L1006 -19512
+L987 -19581
+L962 -19643
+L931 -19706
+L887 -19781
+L818 -19862
+L587 -20081
+L518 -20156
+L481 -20206
+L443 -20268
+L431 -20293
+L412 -20337
+L400 -20381
+L393 -20437
+L393 -20481
+L400 -20537
+L412 -20587
+L431 -20637
+L462 -20693
+L487 -20725
+L518 -20756
+L550 -20781
+L587 -20800
+L618 -20812
+L662 -20825
+Z" fill="currentColor"/>
+<path  d="
+M706 -19775
+L681 -19600
+L675 -19481
+L675 -19387
+L687 -19268
+L700 -19212
+L718 -19162
+L743 -19118
+L775 -19075
+L806 -19037
+L856 -18987
+L881 -18975
+L887 -18975
+L900 -18981
+L931 -19018
+L968 -19087
+L1006 -19175
+L968 -19200
+L956 -19168
+L937 -19143
+L918 -19137
+L912 -19137
+L887 -19143
+L881 -19150
+L862 -19162
+L837 -19187
+L793 -19250
+L756 -19325
+L737 -19375
+L718 -19462
+L712 -19531
+L712 -19575
+L718 -19668
+L731 -19775
+L706 -19775
+Z" fill="currentColor"/>
+<use transform="translate(2841,-20500)" xlink:href="#P00"/>
+<path  d="
+M3266 -20447
+L3266 -19275
+"/>
+<use transform="translate(6117,-20325)" xlink:href="#P00"/>
+<path  d="
+M6542 -20272
+L6542 -19100
+"/>
+<use transform="translate(11091,-20500)" xlink:href="#P00"/>
+<use transform="translate(20091,-20500)" xlink:href="#P00"/>
+<use transform="translate(24867,-20325)" xlink:href="#P00"/>
+<use transform="translate(15867,-20325)" xlink:href="#P00"/>
+<path  d="
+M18000 -24000
+L18000 -19450
+M18006 -24000
+L18006 -19450
+"/>
+<use transform="translate(15867,-23300)" xlink:href="#P00"/>
+<path  d="
+M9000 -24000
+L9000 -19450
+M9006 -24000
+L9006 -19450
+"/>
+<use transform="translate(11091,-23125)" xlink:href="#P00"/>
+ <g color="#3300ff" stroke="#3300ff" stroke-width="120">
+<path stroke-width="66.7667" d="
+M16006 -22731
+L16008 -20893
+"/>
+ </g>
+ <g color="#3300ff" stroke="#3300ff" stroke-width="120">
+<circle cx="25092.2" cy="-23300.0" r="525.0"/>
+ </g>
+ <g color="#3300ff" stroke="#3300ff" stroke-width="120">
+<path stroke-width="66.7667" d="
+M25006 -22731
+L25008 -20893
+"/>
+ </g>
+ <g color="#3300ff">
+<text transform="translate(25341,-22031) scale(1,-1)" fill="currentColor" stroke="none" font-size="853" style="font-family:Nimbus Roman No9 L;font-weight:bold">12</text>
+ </g>
+ <g color="#3300ff" stroke="#3300ff" stroke-width="120">
+<circle cx="11316.3" cy="-20500.0" r="525.0"/>
+ </g>
+ <g color="#3300ff" stroke="#3300ff" stroke-width="120">
+<circle cx="20316.3" cy="-20500.0" r="525.0"/>
+ </g>
+ <g color="#3300ff" stroke="#3300ff" stroke-width="120">
+<circle cx="25092.2" cy="-20325.0" r="525.0"/>
+ </g>
+ <g color="#3300ff" stroke="#3300ff">
+<circle cx="11316.3" cy="-23125.0" r="525.0"/>
+ </g>
+ <g color="#3300ff" stroke="#3300ff" stroke-width="120">
+<circle cx="11316.3" cy="-23125.0" r="525.0"/>
+ </g>
+ <g color="#3300ff" stroke="#3300ff" stroke-width="120">
+<path stroke-width="66.7667" d="
+M11413 -22556
+L11413 -21068
+"/>
+ </g>
+ <g color="#3300ff" stroke="#3300ff" stroke-width="120">
+<circle cx="20316.3" cy="-23125.0" r="525.0"/>
+ </g>
+ <g color="#3300ff" stroke="#3300ff" stroke-width="120">
+<circle cx="20316.3" cy="-23125.0" r="525.0"/>
+ </g>
+ <g color="#3300ff" stroke="#3300ff" stroke-width="120">
+<circle cx="16092.1" cy="-20325.0" r="525.0"/>
+ </g>
+ <g color="#3300ff" stroke="#3300ff" stroke-width="120">
+<path stroke-width="66.7667" d="
+M20413 -22556
+L20413 -21068
+"/>
+ </g>
+ <g color="#3300ff">
+<text transform="translate(10341,-22031) scale(1,-1)" fill="currentColor" stroke="none" font-size="853" style="font-family:Nimbus Roman No9 L;font-weight:bold">10</text>
+ </g>
+ <g color="#3300ff" stroke="#3300ff" stroke-width="120">
+<path stroke-width="66.7667" d="
+M16006 -22731
+L16008 -20893
+"/>
+ </g>
+ <g color="#3300ff">
+<text transform="translate(16341,-22031) scale(1,-1)" fill="currentColor" stroke="none" font-size="853" style="font-family:Nimbus Roman No9 L;font-weight:bold">12</text>
+ </g>
+ <g color="#3300ff">
+<text transform="translate(19341,-22031) scale(1,-1)" fill="currentColor" stroke="none" font-size="853" style="font-family:Nimbus Roman No9 L;font-weight:bold">10</text>
+ </g>
+ <g color="#3300ff" stroke="#3300ff" stroke-width="120">
+<circle cx="16092.1" cy="-23300.0" r="525.0"/>
+ </g>
+ <g color="#aa0000" stroke="#aa0000" stroke-width="150">
+<path stroke-width="66.7667" d="
+M11703 -23125
+L15706 -23212
+"/>
+ </g>
+ <g color="#aa0000" stroke="#aa0000" stroke-width="120">
+<circle cx="20316.3" cy="-23125.0" r="350.0"/>
+ </g>
+ <g color="#aa0000" stroke="#aa0000" stroke-width="150">
+<path stroke-width="66.7667" d="
+M20703 -23125
+L24706 -23212
+"/>
+ </g>
+ <g color="#aa0000">
+<text transform="translate(22341,-24131) scale(1,-1)" fill="currentColor" stroke="none" font-size="853" style="font-family:Nimbus Roman No9 L;font-weight:bold">-2</text>
+ </g>
+ <g color="#aa0000" stroke="#aa0000" stroke-width="120">
+<circle cx="25092.2" cy="-23300.0" r="350.0"/>
+ </g>
+ <g color="#aa0000" stroke="#aa0000" stroke-width="120">
+<circle cx="11316.3" cy="-20500.0" r="350.0"/>
+ </g>
+ <g color="#aa0000" stroke="#aa0000" stroke-width="120">
+<path stroke-width="66.7667" d="
+M11703 -20412
+L15706 -20368
+"/>
+ </g>
+ <g color="#aa0000">
+<text transform="translate(13491,-19887) scale(1,-1)" fill="currentColor" stroke="none" font-size="853" style="font-family:Nimbus Roman No9 L;font-weight:bold">2</text>
+ </g>
+ <g color="#aa0000" stroke="#aa0000" stroke-width="120">
+<circle cx="16092.1" cy="-20325.0" r="350.0"/>
+ </g>
+ <g color="#aa0000" stroke="#aa0000" stroke-width="120">
+<circle cx="11316.3" cy="-23125.0" r="350.0"/>
+ </g>
+ <g color="#aa0000">
+<text transform="translate(13341,-24131) scale(1,-1)" fill="currentColor" stroke="none" font-size="853" style="font-family:Nimbus Roman No9 L;font-weight:bold">-2</text>
+ </g>
+ <g color="#aa0000" stroke="#aa0000" stroke-width="120">
+<circle cx="16092.1" cy="-23300.0" r="350.0"/>
+ </g>
+</g>
+</svg>
+<?SCORE version="4"
+#SVG_SCALE: 1.43
+#define SVG t 1 1\n_99%svg%
+
+8  1   0.000  0.00  0.00 180.000
+14 1   0.000  2.00
+14 1   0.000  2.00  9.00
+3  1   2.000  0.00  1.00
+1  1  18.942  8.00 20.00   0.000 4
+1  1  40.781  7.00 20.00   0.000 1
+1  1 133.942  8.00  0.00   0.000 4
+1  1 165.781  7.00  0.00   0.000 1
+14 1 180.000  2.00
+8  2   0.000  0.00  0.00 180.000
+3  2   2.000
+1  2  18.942  5.00 10.00   0.000 4
+1  2  40.781  6.00 10.00   0.000 1
+1  2  73.942  5.00  0.00   0.000 4
+1  2 133.942  5.00  0.00   0.000 4
+1  2 165.781  6.00  0.00   0.000 1
+1  2 105.781  6.00  0.00   0.000 1
+14 1 120.000  2.00
+1  1 105.781  7.00  0.00   0.000 1
+14 1  60.000  2.00
+1  1  73.942  8.00  0.00   0.000 4
+
+
+SVG &lt;g color="#3300ff" stroke="#3300ff" stroke-width="120"&gt;
+4  1 106.707 10.25 20.75 106.720 0 0 0 3
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff" stroke="#3300ff" stroke-width="120"&gt;
+12 1 165.781  7.00  1.00   6.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff" stroke="#3300ff" stroke-width="120"&gt;
+4  1 166.707 10.25 20.75 166.720 0 0 0 3
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff"&gt;
+t  1 168.940 14.25  1.00   1.106
+_0112
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff" stroke="#3300ff" stroke-width="120"&gt;
+12 2  73.942  5.00  1.00   6.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff" stroke="#3300ff" stroke-width="120"&gt;
+12 2 133.942  5.00  1.00   6.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff" stroke="#3300ff" stroke-width="120"&gt;
+12 2 165.781  6.00  1.00   6.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff" stroke="#3300ff"&gt;
+12 1  73.942  8.00  1.00   6.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff" stroke="#3300ff" stroke-width="120"&gt;
+12 1  73.942  8.00  1.00   6.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff" stroke="#3300ff" stroke-width="120"&gt;
+4  1  76.091 11.25 19.75  76.090 0 0 0 3
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff" stroke="#3300ff" stroke-width="120"&gt;
+12 1 133.942  8.00  1.00   6.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff" stroke="#3300ff" stroke-width="120"&gt;
+12 1 133.942  8.00  1.00   6.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff" stroke="#3300ff" stroke-width="120"&gt;
+12 2 105.781  6.00  1.00   6.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff" stroke="#3300ff" stroke-width="120"&gt;
+4  1 136.091 11.25 19.75 136.090 0 0 0 3
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff"&gt;
+t  1  68.940 14.25  1.00   1.106
+_0110
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff" stroke="#3300ff" stroke-width="120"&gt;
+4  1 106.707 10.25 20.75 106.720 0 0 0 3
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff"&gt;
+t  1 108.940 14.25  1.00   1.106
+_0112
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff"&gt;
+t  1 128.940 14.25  1.00   1.106
+_0110
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#3300ff" stroke="#3300ff" stroke-width="120"&gt;
+12 1 105.781  7.00  1.00   6.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+
+# RED ITEMS
+
+SVG &lt;g color="#aa0000" stroke="#aa0000" stroke-width="150"&gt;
+4  1  78.026  8.00  7.50 104.710 0 0 0 3
+SVG &lt;\g&gt;
+
+#SVG &lt;g color="#aa0000" stroke="#aa0000" stroke-width="120"&gt;
+#4  2 137.833  5.75  6.00 164.510 1 0 0 3
+#SVG &lt;\g&gt;
+
+SVG &lt;g color="#aa0000" stroke="#aa0000" stroke-width="120"&gt;
+12 1 133.942  8.00  1.00   4.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#aa0000" stroke="#aa0000" stroke-width="150"&gt;
+4  1 138.026  8.00  7.50 164.710 0 0 0 3
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#aa0000"&gt;
+t  1 148.940  2.25  1.00   1.106
+_01-2
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#aa0000" stroke="#aa0000" stroke-width="120"&gt;
+12 1 165.781  7.00  1.00   4.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#aa0000" stroke="#aa0000" stroke-width="120"&gt;
+12 2  73.942  5.00  1.00   4.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#aa0000" stroke="#aa0000" stroke-width="120"&gt;
+4  2  78.026  5.50  5.75 104.710 0 0 0 3
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#aa0000"&gt;
+t  2  89.940  8.50  1.00   1.106
+_012
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#aa0000" stroke="#aa0000" stroke-width="120"&gt;
+12 2 105.781  6.00  1.00   4.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+
+#SVG &lt;g color="#aa0000" stroke="#aa0000" stroke-width="120"&gt;
+#12 2 133.942  5.00  1.00   4.000 0 3 0 0 0 0 0 0 1.5
+#SVG &lt;\g&gt;
+
+SVG &lt;g color="#aa0000" stroke="#aa0000" stroke-width="120"&gt;
+12 1  73.942  8.00  1.00   4.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+
+SVG &lt;g color="#aa0000"&gt;
+t  1  88.940  2.25  1.00   1.106
+_01-2
+SVG &lt;\g&gt;
+
+#SVG &lt;g color="#aa0000" stroke="#aa0000" stroke-width="120"&gt;
+#12 2 165.781  6.00  1.00   4.000 0 3 0 0 0 0 0 0 1.5
+#SVG &lt;\g&gt;
+
+
+SVG &lt;g color="#aa0000" stroke="#aa0000" stroke-width="120"&gt;
+12 1 105.781  7.00  1.00   4.000 0 3 0 0 0 0 0 0 1.5
+SVG &lt;\g&gt;
+?>
+

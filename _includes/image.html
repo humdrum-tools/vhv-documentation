@@ -33,7 +33,7 @@ Optional Parameters with default values:
 
 <figure>
 	<div class="image-container">{% if {{include.url}} %}<a class="no_icon" target="_blank" href="{{include.url}}">{% else %}<a class="no_icon" target="_blank" href="{{include.file}}">{% endif %}<img class="docimage
-		{% unless {{include.shadow}} %}
+		{% unless {{include.shadow}} == "false" %}
 			shadowed
 		{% endunless %}
 		" 
