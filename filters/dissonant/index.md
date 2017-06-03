@@ -509,7 +509,7 @@ Sometimes the preparation of a suspension is itself dissonant like in the exampl
 
 Occasionally a fake suspension is preceded by an anticipation as in the example above taken from the same Mouton Kyrie. In this case the fake suspension label takes the same case as that of the anticipation.
 
-### Dissonant third-quarter notes (Q) ###
+### Dissonant third-quarter notes (q) ###
 
 {% include verovio.html
 	source="d3q"
@@ -536,6 +536,10 @@ A dissonant third quarter, labeled `q` like the one shown above, is similar to a
 
 ### Unknown dissonances (Z, z) ###
 
+Dissonances that cannot be assigned to the above categories are given a `Z` label to 
+indicate that their function is unknown.  A capital `Z` means that the interval of the
+dissonance is a 2nd or 7th.  A lower-case `z` means that the dissonance is a 4th
+against the lowest sounding note in the sonority.
 
 
 ## URL filtering of repertories ##
