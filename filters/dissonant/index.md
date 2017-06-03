@@ -350,7 +350,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 !!!filter: dissonant
 </script>
 
-###  Suspensions (s, G, F, f, r, o) ###
+###  Suspensions (s, G, r, o) ###
 
 {% include verovio.html
 	source="sus"
@@ -388,6 +388,60 @@ A suspension consists of a voice that becomes dissonant either by sustaining or 
 In Renaissance music with a ternary tactus, the dissonant portion of a suspension usually lands on the second beat of the tactus. So in order to detect ternary suspensions, like the example above taken from Obrecht's four-voice motet Mille quingentis, the definition of a suspension that we use allows the dissonance to be metrically strong or weak. Consonant suspensions are ignored.
 
 {% include verovio.html
+	source="rsus"
+	scale="40"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/json" id="rsus">**kern	**kern
+*clefGv2	*clefG2
+*M4/2	*M4/2
+2e	2g
+2d	2.f
+1c	.
+.	4f
+.	2e
+=	=
+1d	2f
+.	2r
+2e	1cc
+2f	.
+==	==
+*-	*-
+!!!filter: dissonant
+</script>
+
+We detect two types of dissonant suspension ornaments both of which occur during what would normally be the dissonant phase of the suspension. The first consists of a simple rearticulation of the suspended note before it resolves down by step. The reartuclated note is generally a quarter note and is labeled with an `r`. While this figure, shown above, does occur in tonal music there are almost no occurences of this in the entire JRP database of scores. This demonstrates how dissonance analysis can be used to inform the study of style change over time.
+
+{% include verovio.html
+	source="osus"
+	scale="40"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/json" id="osus">**kern	**kern
+*clefGv2	*clefG2
+*M4/2	*M4/2
+2e	2g
+2d	2.f
+1c	.
+.	4d
+.	2e
+=	=
+1d	2f
+.	2r
+2e	1cc
+2f	.
+==	==
+*-	*-
+!!!filter: dissonant
+</script>
+
+The second type of suspension ornamentation is when the suspended note skips a third down before resolving up by step to the note that would be the standard resolution of the suspension. This is labeled with an `o`, as shown above.
+
+###  Fake Suspensions (F, f) ###
+
+{% include verovio.html
 	source="fsus"
 	scale="40"
 	pageWidth="1100"
@@ -404,15 +458,79 @@ In Renaissance music with a ternary tactus, the dissonant portion of a suspensio
 2C/	.	2e-i\	1g
 1D	.	[1d	.
 .	.	.	2f#i/
+=27	=27	=27	=27
+1GG	0G	2d\]	0g
+.	.	2.B-\	.
+1r	.	.	.
+.	.	4c\	.
+.	.	2d\	.
+==	==	==	==
+*-	*-	*-	*-
+!!!filter: dissonant
+</script>
+
+Sometimes the preparation of a suspension is itself dissonant like in the example above from the Kyrie of Mouton's Missa Da pacem. This is often refered to as a (*fake suspension*) though would more accurately be called a fake preparation. It is approached by step up or down and remains in place or is restruck to become the dissonant portion of a suspension. Since we know the suspension will generally resolve down by step, we use an uppercase `F` or lowercase `f` to convey whether the dissonance was approached by step up or down respectfully. Because this happens over a pedal, and an agent is also needed for the suspension, this is generally only found in three or more voices, though could happen in two voice if the pedal tone were rearticulated at the moment it serves as the agent of the suspension.
+
+{% include verovio.html
+	source="afsus"
+	scale="40"
+	pageWidth="1100"
+	tabsize="10"
+%}
+<script type="application/json" id="afsus">**kern	**kern	**kern	**kern
+*I'B	*I'T	*I'A	*I'S
+*clefF4	*clefGv2	*clefGv2	*clefG2
+*k[b-]	*k[b-]	*k[b-]	*k[b-]
+*M3/1	*M3/1	*M3/1	*M3/1
+=9	=9	=9	=9
+1C	0.c	1r	4a/
+.	.	.	4b-\
+.	.	.	2.cc\
+1E	.	1g	.
+.	.	.	4b-\
+.	.	.	1b-
+1F	.	2.f\	.
+.	.	.	2a/
+.	.	4e\	.
+=10	=10	=10	=10
+2.G\	0B-	4d\	1b-
+.	.	4c\	.
+.	.	2B-\	.
+4F\	.	.	.
+2D\	.	2F/	2r
+2.E-i\	.	2G/	2.g/
+.	1r	1B-	.
+4D\	.	.	4f/
+2BB-/	.	.	2d/
+==	==	==	==
+*-	*-	*-	*-
+!!!filter: dissonant
+</script>
+
+Occasionally a fake suspension is preceded by an anticipation as in the example above taken from the same Mouton Kyrie. In this case the fake suspension label takes the same case as that of the anticipation.
+
+### Dissonant third-quarter notes (Q) ###
+
+{% include verovio.html
+	source="d3q"
+	scale="60"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/json" id="d3q">**kern	**kern
+*clefG2	*clefG2
+*M4/2	*M4/2
+2f	1.a
+2e	.
+1d	.
+.	4g
+.	4f
 ==	==
 *-	*-
 !!!filter: dissonant
 </script>
-Sometimes the preparation of a suspension is itself dissonant like in the example above from the Kyrie of Mouton's Missa Da pacem. This is often refered to as a (*fake suspension*) though would more accurately be called a fake preparation. It is approached by step up or down and remains in place or is restruck to become the dissonant portion of a suspension. Since we know the suspension will generally resolve down by step, we use an uppercase `F` or lowercase `f` to convey whether the dissonance was approached by step up or down respectfully. Because this happens over a pedal, and an agent is also needed for the suspension, this is generally only found in three or more voices, though could happen in two voice if the pedal tone were rearticulated at the moment it serves as the agent of the suspension.
 
-Occasionally a fake suspension is preceded by an anticipation. In this case the fake suspension label takes the same case as that of the anticipation.
-
-### Dissonant third-quarter notes (Q) ###
+A dissonant third quarter, labeled `q` like the one shown above, is similar to a descending passing tone. It corresponds to a dissonance in the metric position of a weak minim that lasts only a quarter note. It is approached and left by step down and must be preceded by a note with a duration of at least a minim. 
 
 ### Chanson idiom (h) ###
 
