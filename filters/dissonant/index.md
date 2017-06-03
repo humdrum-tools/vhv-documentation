@@ -18,7 +18,6 @@ of non-harmonic notes in contrapuntal textures.  Each input `**kern`
 spine is expected to be monophonic and have no subspine branching.
 If there are chords in the music, the first note of the chord is
 used, and secondary subspines will be ignored.
-http://josquin.stanford.edu/work/?id=Jos2705
 
 Below is an example of the dissonant filter in action using an
 excerpt from Josquin's chanson <a href="http://josquin.stanford.edu/work/?id=Jos2705">Ce povre mendiant/Pauper sum ego</a>.  To 
