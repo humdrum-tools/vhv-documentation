@@ -638,7 +638,7 @@ Melin, William Eugene. “The Music of Johannes Tinctoris: A Comparative Study o
 
 Moll, Kevin. Counterpoint and Compositional Process in the Time of Dufay: Perspectives from German Musicology. Edited and translated by Kevin Moll. New York: Garland Publishing Inc., 1997.
 
-Morgan, Alexander. "[Renaissance Interval-Succession Theory: Treatises and Analysis](http://digitool.library.mcgill.ca/R/DPIVYXI71HL5ILGG61U4D2N5YR6UMUAASGK4S4JC42B2BFPGCD-00398?func=results-jump-full&set_entry=000001&set_number=001123&base=GEN01)". PhD diss., McGill University, 2017.
+Morgan, Alexander. "[Renaissance Interval-Succession Theory: Treatises and Analysis](http://digitool.library.mcgill.ca/R/DPIVYXI71HL5ILGG61U4D2N5YR6UMUAASGK4S4JC42B2BFPGCD-00398?func=results-jump-full&set_entry=000001&set_number=001123&base=GEN01)." PhD diss., McGill University, 2017.
 
 Morris, R. O. Contrapuntal Technique. Oxford: Oxford University Press, 1922.
 
@@ -660,7 +660,7 @@ Tinctoris, Johannes. Liber de arte contrapuncti. In Johannes Tinctoris Opera The
 
 ———. Liber de arte contrapuncti. Translated by Albert Seay. Rome: American Institute of Musicology, 1961. Originally written c. 1477.
 
-———. "[Liber de arte contrapuncti](http://earlymusictheory.org/Tinctoris/texts/deartecontrapuncti/). Translated by Jeffrey Dean. Last accessed November 16, 2015. Originally written 1477.
+———. [Liber de arte contrapuncti](http://earlymusictheory.org/Tinctoris/texts/deartecontrapuncti/). Translated by Jeffrey Dean. Last accessed November 16, 2015. Originally written 1477.
 
 Trachier, Olivier. Contrepoint du XVIe siècle. Paris: Durand, 1999.
 
