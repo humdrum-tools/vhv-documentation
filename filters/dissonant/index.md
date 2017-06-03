@@ -427,6 +427,11 @@ We detect two types of dissonant suspension ornaments both of which occur during
 1c	.
 .	4d
 .	2e
+=	=
+1d	2f
+.	2r
+2e	1cc
+2f	.
 ==	==
 *-	*-
 !!!filter: dissonant
