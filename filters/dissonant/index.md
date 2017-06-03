@@ -432,7 +432,7 @@ We detect two types of dissonant suspension ornaments both of which occur during
 !!!filter: dissonant
 </script>
 
-The second type of suspension ornamentation is when the suspended note skips a third down before resolving up by step to the note that would be the standard resolution of the suspension, as shown above.
+The second type of suspension ornamentation is when the suspended note skips a third down before resolving up by step to the note that would be the standard resolution of the suspension. This is labeled with an `o`, as shown above.
 
 ###  Fake Suspensions (F, f) ###
 
