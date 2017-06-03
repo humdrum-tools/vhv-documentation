@@ -18,13 +18,17 @@ of non-harmonic notes in contrapuntal textures.  Each input `**kern`
 spine is expected to be monophonic and have no subspine branching.
 If there are chords in the music, the first note of the chord is
 used, and secondary subspines will be ignored.
+http://josquin.stanford.edu/work/?id=Jos2705
 
-Below is an example of the dissonant filter in action.  To apply the filter to 
-a file, include the line `!!!filter: dissonant` anywhere in the file.  The label
-for each voice will be inserted in spines immediately to the left of each
-`**kern` spine.  In the following display the labels are shown above the notes
-to which they apply.  `P` means a rising passing tone and `p` means a lower
-passing tone.  See the complete list of label abbreviations further below.
+Below is an example of the dissonant filter in action using an
+excerpt from Josquin's chanson <a href="http://josquin.stanford.edu/work/?id=Jos2705">Ce povre mendiant/Pauper sum ego</a>.  To 
+apply the filter to a file, include the line `!!!filter: dissonant`
+anywhere in the file.  The label for each voice will be inserted
+in spines immediately to the left of each `**kern` spine.  In the
+following display the labels are shown above the notes to which
+they apply.  `P` means a rising passing tone and `p` means a lower
+passing tone.  See the complete list of label abbreviations further
+below.
 
 {% include verovio.html
 	source="josex"
@@ -383,7 +387,7 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 *-	*-
 !!!filter: dissonant
 </script>
-A suspension consists of a voice that becomes dissonant either by sustaining or restriking a note before resolving the dissonance down by step. This sustained voice was refered to as the (*patient*) by Artusi, and it gets the `s` label at the moment of the dissonance. Another voice strikes a note that is dissonant against the suspended note, and this voice gets a `G` label for (*agent*). It is common to have more than one agent per suspension.
+A suspension consists of a voice that becomes dissonant either by sustaining or restriking a note before resolving the dissonance down by step. This sustained voice was referred to as the (*patient*) by Artusi, and it gets the `s` label at the moment of the dissonance. Another voice strikes a note that is dissonant against the suspended note, and this voice gets a `G` label for (*agent*). It is common to have more than one agent per suspension.
 
 In Renaissance music with a ternary tactus, the dissonant portion of a suspension usually lands on the second beat of the tactus. So in order to detect ternary suspensions, like the example above taken from Obrecht's four-voice motet Mille quingentis, the definition of a suspension that we use allows the dissonance to be metrically strong or weak. Consonant suspensions are ignored.
 
@@ -411,7 +415,7 @@ In Renaissance music with a ternary tactus, the dissonant portion of a suspensio
 !!!filter: dissonant
 </script>
 
-We detect two types of dissonant suspension ornaments both of which occur during what would normally be the dissonant phase of the suspension. The first consists of a simple rearticulation of the suspended note before it resolves down by step. The reartuclated note is generally a quarter note and is labeled with an `r`. While this figure, shown above, does occur in tonal music there are almost no occurences of this in the entire JRP database of scores. This demonstrates how dissonance analysis can be used to inform the study of style change over time.
+We detect two types of dissonant suspension ornaments both of which occur during what would normally be the dissonant phase of the suspension. The first consists of a simple rearticulation of the suspended note before it resolves down by step. The reartuclated note is generally a quarter note and is labeled with an `r`. While this figure, shown above, does occur in tonal music there are almost no occurrences of this in the entire JRP database of scores. This demonstrates how dissonance analysis can be used to inform the study of style change over time.
 
 {% include verovio.html
 	source="osus"
@@ -469,7 +473,7 @@ The second type of suspension ornamentation is when the suspended note skips a t
 !!!filter: dissonant
 </script>
 
-Sometimes the preparation of a suspension is itself dissonant like in the example above from the Kyrie of Mouton's Missa Da pacem. This is often refered to as a (*fake suspension*) though would more accurately be called a fake preparation. It is approached by step up or down and remains in place or is restruck to become the dissonant portion of a suspension. Since we know the suspension will generally resolve down by step, we use an uppercase `F` or lowercase `f` to convey whether the dissonance was approached by step up or down respectfully. Because this happens over a pedal, and an agent is also needed for the suspension, this is generally only found in three or more voices, though could happen in two voice if the pedal tone were rearticulated at the moment it serves as the agent of the suspension.
+Sometimes the preparation of a suspension is itself dissonant like in the example above from the Kyrie of Mouton's Missa Da pacem. This is often referred to as a (*fake suspension*) though would more accurately be called a fake preparation. It is approached by step up or down and remains in place or is restruck to become the dissonant portion of a suspension. Since we know the suspension will generally resolve down by step, we use an uppercase `F` or lowercase `f` to convey whether the dissonance was approached by step up or down respectfully. Because this happens over a pedal, and an agent is also needed for the suspension, this is generally only found in three or more voices, though could happen in two voice if the pedal tone were rearticulated at the moment it serves as the agent of the suspension.
 
 {% include verovio.html
 	source="afsus"
@@ -565,7 +569,7 @@ For example the page:
 Contains a button labeled "Dissonant" on the bottom left side of the page.  Clicking on that button will load
 the score for the current page into VHV and do an online analysis of the dissonant labels.
 
-### Dissonance symmaries ###
+### Dissonance summaries ###
 
 These are more useful for the command-line version of the tool, but can be viewed in VHV by typing command-c when the option is used.
 
