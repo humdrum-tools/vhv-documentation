@@ -413,6 +413,27 @@ In Renaissance music with a ternary tactus, the dissonant portion of a suspensio
 
 We detect two types of dissonant suspension ornaments both of which occur during what would normally be the dissonant phase of the suspension. The first consists of a simple rearticulation of the suspended note before it resolves down by step. The reartuclated note is generally a quarter note and is labeled with an `r`. While this figure, shown above, does occur in tonal music there are almost no occurences of this in the entire JRP database of scores. This demonstrates how dissonance analysis can be used to inform the study of style change over time.
 
+{% include verovio.html
+	source="osus"
+	scale="40"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/json" id="osus">**kern	**kern
+*clefGv2	*clefG2
+*M4/2	*M4/2
+2e	2g
+2d	2.f
+1c	.
+.	4d
+.	2e
+==	==
+*-	*-
+!!!filter: dissonant
+</script>
+
+The second type of suspension ornamentation is when the suspended note skips a third down before resolving up by step to the note that would be the standard resolution of the suspension, as shown above.
+
 ###  Fake Suspensions (F, f) ###
 
 {% include verovio.html
