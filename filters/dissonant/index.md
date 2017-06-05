@@ -9,7 +9,7 @@ examplewidth: 1200
 vim: ft=html
 verovio: "true"
 keywords: "interface commands"
-summary: "The dissonant filter labels the function of non-harmonic tones in contrapuntal textures."
+summary: "The dissonant filter labels non-harmonic tones in contrapuntal textures."
 permalink: /filters/dissonant/index.html
 ---
 
@@ -183,7 +183,7 @@ Try editing the above Humdrum textual score to generate various types of dissona
 <tr><td> Z </td><td> unknown dissonance, 2nd or 7th interval</td>      <td> z </td ><td> unknown dissonance, 4th interval</td></tr>
 </table>
 
-The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a single case designated with an uppercase letter:
+The `-u` option (meaning *undifferentiated*) collapses up/down subcategorizations into a single case designated with an uppercase letter:
 
 <table class="dense onecol">
 <tr><th>Label</th><th> Meaning</th></tr>
@@ -303,8 +303,8 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 
 {% include verovio.html
 	source="camb_up"
-	scale="40"
-	pageWidth="1100"
+	scale="30"
+	pageWidth="1400"
 	tabsize="10"
 %}
 <script type="application/json" id="camb_up">**kern	**kern
@@ -386,14 +386,14 @@ The `-u` option (*undifferentiate*) collapses up/down subcategorizations into a 
 *-	*-
 !!!filter: dissonant
 </script>
-A suspension consists of a voice that becomes dissonant either by sustaining or restriking a note before resolving the dissonance down by step. This sustained voice was referred to as the (*patient*) by Artusi, and it gets the `s` label at the moment of the dissonance. Another voice strikes a note that is dissonant against the suspended note, and this voice gets a `G` label for (*agent*). It is common to have more than one agent per suspension.
+A suspension consists of a voice that becomes dissonant either by sustaining or restriking a note before resolving the dissonance down by step. This sustained voice was referred to as the *patient* by Artusi, and it gets the `s` label at the moment of the dissonance. Another voice strikes a note that is dissonant against the suspended note, and this voice gets a `G` label for *agent*. It is common to have more than one agent per suspension.
 
 In Renaissance music with a ternary tactus, the dissonant portion of a suspension usually lands on the second beat of the tactus. So in order to detect ternary suspensions, like the example above taken from Obrecht's four-voice motet Mille quingentis, the definition of a suspension that we use allows the dissonance to be metrically strong or weak. Consonant suspensions are ignored.
 
 {% include verovio.html
 	source="rsus"
-	scale="40"
-	pageWidth="1000"
+	scale="30"
+	pageWidth="1400"
 	tabsize="10"
 %}
 <script type="application/json" id="rsus">**kern	**kern
@@ -414,12 +414,21 @@ In Renaissance music with a ternary tactus, the dissonant portion of a suspensio
 !!!filter: dissonant
 </script>
 
-We detect two types of dissonant suspension ornaments both of which occur during what would normally be the dissonant phase of the suspension. The first consists of a simple rearticulation of the suspended note before it resolves down by step. The reartuclated note is generally a quarter note and is labeled with an `r`. While this figure, shown above, does occur in tonal music there are almost no occurrences of this in the entire JRP database of scores. This demonstrates how dissonance analysis can be used to inform the study of style change over time.
+Two types of dissonant suspension ornaments are detected by the
+dissonant tool, both of which occur during what would normally be
+the dissonant phase of the suspension. The first consists of a
+simple rearticulation of the suspended note before it resolves down
+by step. The reartuclated note is generally a quarter note and is
+labeled with an `r`. While this figure, shown above, does occur in
+tonal music there are almost no occurrences of this in the entire
+[JRP](http://josquin.stanford.edu) database of scores. This 
+demonstrates how dissonance analysis can be used to inform the 
+study of style change over time.
 
 {% include verovio.html
 	source="osus"
-	scale="40"
-	pageWidth="1000"
+	scale="30"
+	pageWidth="1400"
 	tabsize="10"
 %}
 <script type="application/json" id="osus">**kern	**kern
@@ -472,12 +481,24 @@ The second type of suspension ornamentation is when the suspended note skips a t
 !!!filter: dissonant
 </script>
 
-Sometimes the preparation of a suspension is itself dissonant like in the example above from the Kyrie of Mouton's Missa Da pacem. This is often referred to as a (*fake suspension*) though would more accurately be called a fake preparation. It is approached by step up or down and remains in place or is restruck to become the dissonant portion of a suspension. Since we know the suspension will generally resolve down by step, we use an uppercase `F` or lowercase `f` to convey whether the dissonance was approached by step up or down respectfully. Because this happens over a pedal, and an agent is also needed for the suspension, this is generally only found in three or more voices, though could happen in two voice if the pedal tone were rearticulated at the moment it serves as the agent of the suspension.
+Sometimes the preparation of a suspension is itself dissonant like
+in the example above from the [Kyrie in Mouton's Missa Da pacem](http://josquin.stanford.edu/work/?id=Mou1020a).
+This is often referred to as a *fake suspension* though would
+more accurately be called a fake preparation. It is approached by
+step up or down and remains in place or is restruck to become the
+dissonant portion of a suspension. Since we know the suspension
+will generally resolve down by step, we use an uppercase `F` or
+lowercase `f` to convey whether the dissonance was approached by
+step up or down respectfully. Because this happens over a pedal,
+and an agent is also needed for the suspension, this is generally
+only found in three or more voices, though could happen in two voice
+if the pedal tone were rearticulated at the moment it serves as the
+agent of the suspension.
 
 {% include verovio.html
 	source="afsus"
-	scale="40"
-	pageWidth="1100"
+	scale="30"
+	pageWidth="1400"
 	tabsize="10"
 %}
 <script type="application/json" id="afsus">**kern	**kern	**kern	**kern
@@ -486,28 +507,29 @@ Sometimes the preparation of a suspension is itself dissonant like in the exampl
 *k[b-]	*k[b-]	*k[b-]	*k[b-]
 *M3/1	*M3/1	*M3/1	*M3/1
 =9	=9	=9	=9
-1C	0.c	1r	4a/
-.	.	.	4b-\
-.	.	.	2.cc\
+1C	0.c	1r	4a
+.	.	.	4b-
+.	.	.	2.cc
 1E	.	1g	.
-.	.	.	4b-\
+.	.	.	4b-
 .	.	.	1b-
-1F	.	2.f\	.
-.	.	.	2a/
-.	.	4e\	.
+1F	.	2.f	.
+.	.	.	2a
+.	.	4e	.
 =10	=10	=10	=10
-2.G\	0B-	4d\	1b-
-.	.	4c\	.
-.	.	2B-\	.
-4F\	.	.	.
-2D\	.	2F/	2r
-2.E-i\	.	2G/	2.g/
+2.G	0B-	4d	1b-
+.	.	4c	.
+.	.	2B-	.
+4F	.	.	.
+2D	.	2F	2r
+2.E-i	.	2G	2.g
 .	1r	1B-	.
-4D\	.	.	4f/
-2BB-/	.	.	2d/
+4D	.	.	4f
+2BB-	.	.	2d
 ==	==	==	==
 *-	*-	*-	*-
 !!!filter: dissonant
+
 </script>
 
 Occasionally a fake suspension is preceded by an anticipation as in the example above taken from the same Mouton Kyrie. In this case the fake suspension label takes the same case as that of the anticipation.
@@ -557,6 +579,17 @@ To remove lyric text from analysis results, use the filter: `extractx -i kern | 
 [http://verovio.humdrum.org/?k=ey&file=tmp&filter=extract%20-ikern%7cdissonant](http://verovio.humdrum.org/?k=ey&file=tmp&filter=extract%20-ikern%7cdissonant)
 
 
+
+{% include image.html
+	file="textless.png"
+	alt="removing lyric text before displaying analysis."
+	max-width="90%"
+	url="http://verovio.humdrum.org/?k=ey&file=tmp&filter=extract%20-ikern%7cdissonant"
+	caption="<i>Dissonant</i> analysis after removing lyric text."
+%}
+
+
+
 ## JRP dissonant tool ##
 
 Work pages on the Josquin Research Project website have links to
@@ -566,7 +599,16 @@ For example the page:
 [http://josquin.stanford.edu/work/?id=Jos2801](http://josquin.stanford.edu/work/?id=Jos2801)
 
 Contains a button labeled "Dissonant" on the bottom left side of the page.  Clicking on that button will load
-the score for the current page into VHV and do an online analysis of the dissonant labels.
+the score for the current page into VHV and do an online analysis of the dissonant labels:
+
+
+{% include image.html
+	file="jrp-dissonant.png"
+	alt="dissonant button on JRP workpage."
+	max-width="60%"
+	url="http://josquin.stanford.edu/work/?id=Jos2801"
+	caption="<i>Dissonant</i> analysis button on JRP work pages."
+%}
 
 ### Dissonance summaries ###
 
