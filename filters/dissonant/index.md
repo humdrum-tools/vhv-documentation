@@ -333,8 +333,6 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 
 
 
-###  Incomplete neighbors (I, i, J, j) ###
-
 ###  Anticipations (A, a) ###
 
 {% include verovio.html
@@ -358,7 +356,7 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 !!!filter: dissonant
 </script>
 
-###  Suspensions (s, G, r, o) ###
+###  Suspensions (S, s, G, g) ###
 
 {% include verovio.html
 	source="sus"
@@ -366,34 +364,53 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 	pageWidth="1100"
 	tabsize="10"
 %}
-<script type="application/json" id="sus">**kern	**kern
-*I"T	*I"D
-*clefGv2	*clefG2
-*M3/1	*M3/1
-=36	=36
-1E	1e
-1F	1d
-[1G	2e
-.	[2g
-=37	=37
-1G]	2g]
-.	1e
-0F	.
-.	4d
-.	4c
-.	1d
-=38	=38
-0.E	1e
-.	2r
-.	1g
-.	2e
-==	==
-*-	*-
+<script type="application/json" id="sus">**kern	**kern	**kern	**kern
+*clefF4	*clefGv2	*clefGv2	*clefG2
+*k[]	*k[]	*k[]	*k[]
+*M3/1	*M3/1	*M3/1	*M3/1
+*met(O)	*met(O)	*met(O)	*met(O)
+=34-	=34-	=34-	=34-
+1AA	0.r	1e	2c/
+.	.	.	2cc\
+2BB/	.	2d\	2b\
+2C/	.	2c\	1a
+2D\	.	1B	.
+2E\	.	.	2g#i/
+=35	=35	=35	=35
+1AA	0.E	1A	1a
+1r	.	1B	1g
+1AA	.	[1c	2a/
+.	.	.	4g/
+.	.	.	4f/
+=36	=36	=36	=36
+1C	1E	1c]	1e
+1D	1F	1A	1d
+1GG	[1G	1B	2e/
+.	.	.	[2g/
+=37	=37	=37	=37
+1C	1G]	1c	2g/]
+.	.	.	1e
+0D	0F	0A	.
+.	.	.	4d/
+.	.	.	4c/
+.	.	.	1d
+=38	=38	=38	=38
+2GG/	0.E	2B\	1e
+2.AA/	.	2.c\	.
+.	.	.	2r
+4GG/	.	4B\	.
+2.C/	.	2.e\	1g
+4BB/	.	4d\	.
+2GG/	.	2B\	2e/
+=	=	=	=
+*-	*-	*-	*-
 !!!filter: dissonant
 </script>
-A suspension consists of a voice that becomes dissonant either by sustaining or restriking a note before resolving the dissonance down by step. This sustained voice was referred to as the *patient* by Artusi, and it gets the `s` label at the moment of the dissonance. Another voice strikes a note that is dissonant against the suspended note, and this voice gets a `G` label for *agent*. It is common to have more than one agent per suspension.
+A suspension consists of a voice that becomes dissonant either by sustaining or restriking a note before resolving the dissonance down by step. This sustained voice was referred to as the *patient* by Artusi, and it gets an `S` or `s` label at the moment of the dissonance. Another voice strikes a note that is dissonant against the suspended note, and this voice gets a `G` or `g` label for *agent*. It is common to have more than one agent per suspension such as in m. 37 above.
 
-In Renaissance music with a ternary tactus, the dissonant portion of a suspension usually lands on the second beat of the tactus. So in order to detect ternary suspensions, like the example above taken from Obrecht's four-voice motet Mille quingentis, the definition of a suspension that we use allows the dissonance to be metrically strong or weak. Consonant suspensions are ignored.
+The example above taken from Obrecht's motet [Mille quingentis](http://josquin.stanford.edu/work/?id=Obr2018) features a binary suspension and a ternary suspension. The first suspension (in m. 34) is binary because the dissonance phase of the suspension lasts a unit of time (in this case a minim) that groups in twos in the given mensuration. The second suspension above (in m. 37), its dissonant phase lasts a semibreve (when ornamentation is disregarded) so this suspension is ternary and receives uppercase `S` and `G` labels. If you prefer not to distinguish between binary and ternary suspensions, remember you can make use of the -u option and all suspensions and agents will be labeled with uppercase letters. Consonant suspensions are ignored.
+
+###  Suspension ornaments (r, o) ###
 
 {% include verovio.html
 	source="rsus"
