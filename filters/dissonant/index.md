@@ -176,11 +176,13 @@ Try editing the above Humdrum textual score to generate various types of dissona
 <tr><td> I </td><td> incomplete anterior upper neighbor</td>    <td> i </td>  <td> incomplete anterior lower neighbor</td>      </tr>
 <tr><td> J </td><td> incomplete posterior upper neighbor</td>   <td> j </td>  <td> incomplete posterior lower neighbor</td>     </tr>
 <tr><td> A </td><td> rising anticipation</td>                   <td> a </td>  <td> descending anticipation</td>                 </tr>
-<tr><td> s </td><td> suspension</td>                            <td> G </td>  <td> suspension agent</td>                        </tr>
+<tr><td> S </td><td> ternary suspension</td>                    <td> s </td>  <td> binary suspension</td>                       </tr>
+<tr><td> G </td><td> ternary suspension agent</td>              <td> g </td>  <td> binary suspension agent</td>                 </tr>
 <tr><td> F </td><td> fake suspension approached by step up</td> <td> f </td>  <td> fake suspension approached by step down</td> </tr>
 <tr><td> o </td><td> suspension ornament</td>                   <td> r </td>  <td> suspension repeated note</td>                </tr>
-<tr><td> h </td><td> chanson idiom</td>                         <td> Q </td>  <td> dissonant third quarter</td>                 </tr>
-<tr><td> Z </td><td> unknown dissonance, 2nd or 7th interval</td>      <td> z </td ><td> unknown dissonance, 4th interval</td></tr>
+<tr><td> h </td><td> chanson idiom</td>                         <td> q </td>  <td> dissonant 3rd quarter passing tone</td>      </tr>
+<tr><td> B </td><td> dissonant 3rd quarter upper neighbor</td>  <td> b </td>  <td> dissonant 3rd quarter lower neighbor</td>    </tr>
+<tr><td> Z </td><td> unknown dissonance, 2nd or 7th interval</td> <td> z </td ><td> unknown dissonance, 4th interval</td></tr>
 </table>
 
 The `-u` option (meaning *undifferentiated*) collapses up/down subcategorizations into a single case designated with an uppercase letter:
@@ -195,13 +197,16 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 <tr><td> I </td><td> incomplete anterior neighbor</td></tr>
 <tr><td> J </td><td> incomplete posterior neighbor</td></tr>
 <tr><td> A </td><td> anticipation</td></tr>
-<tr><td> Q </td><td> dissonant third quarter</td></tr>
-<tr><td> S </td><td> suspension</td></tr>
+<tr><td> S </td><td> ternary suspension</td></tr>
+<tr><td> S </td><td> binary suspension</td></tr>
+<tr><td> G </td><td> ternary suspension agent</td></tr>
+<tr><td> G </td><td> binary suspension agent</td></tr>
 <tr><td> F </td><td> fake suspension</td></tr>
-<tr><td> G </td><td> suspension agent</td></tr>
 <tr><td> O </td><td> suspension ornament</td></tr>
 <tr><td> R </td><td> suspension repeated note</td></tr>
 <tr><td> H </td><td> chanson idiom</td></tr>
+<tr><td> Q </td><td> dissonant third quarter passing tone</td></tr>
+<tr><td> B </td><td> dissonant third quarter neighbor</td></tr>
 <tr><td> Z </td><td> unknown dissonance</td></tr>
 </table>
 
@@ -534,15 +539,17 @@ agent of the suspension.
 
 Occasionally a fake suspension is preceded by an anticipation as in the example above taken from the same Mouton Kyrie. In this case the fake suspension label takes the same case as that of the anticipation.
 
-### Dissonant third-quarter notes (q) ###
+### Chanson idiom (h) ###
+
+### Dissonant third quarter passing tone (q) ###
 
 {% include verovio.html
-	source="d3q"
+	source="d3qp"
 	scale="60"
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/json" id="d3q">**kern	**kern
+<script type="application/json" id="d3qp">**kern	**kern
 *clefG2	*clefG2
 *M4/2	*M4/2
 2f	1.a
@@ -555,9 +562,34 @@ Occasionally a fake suspension is preceded by an anticipation as in the example 
 !!!filter: dissonant
 </script>
 
-A dissonant third quarter, labeled `q` like the one shown above, is similar to a descending passing tone. It corresponds to a dissonance in the metric position of a weak minim that lasts only a quarter note. It is approached and left by step down and must be preceded by a note with a duration of at least a minim. 
+A dissonant third quarter passing tone, labeled `q` like the one shown above, is similar to a descending passing tone. It corresponds to a dissonance in the metric position of a weak minim that lasts only a quarter note. It is approached and left by step down and must be preceded by a note with a duration of at least a minim. There is no ascending form of this dissonance type.
 
-### Chanson idiom (h) ###
+### Dissonant third quarter neighbor (B, b) ###
+
+{% include verovio.html
+	source="d3qn"
+	scale="60"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/json" id="d3qn">**kern	**kern
+*I'B	*I'A
+*clefF4	*clefGv2
+*k[b-]	*k[b-]
+*M3/1	*M3/1
+*met(C|3)	*met(C|3)
+=183-	=183-
+1C	1G
+1C	1.G
+1C	.
+.	4F/
+.	4G/
+=	=
+*-	*-
+!!!filter: dissonant
+</script>
+
+This dissonance is the neighbor-tone version of the dissonant third quarter passing tone. The example above is taken from the altus and bassus parts from the Credo of Josquin's Missa La belle se siet (NJE 13.3). The dissonance type consists of a neighbor tone in the metric position of a weak minim that lasts only a quarter note in duration. Although we detect both upper- and lower-neighbor varieties of this dissonance type, like regular neighbor tones, the dissonant third quarter lower neighbor is by far more common than the upper-neighbor version. The upper- and lower-neighbor versions of this dissonance type are labeled with a `B` and a `b` repsectfully.
 
 ### Unknown dissonances (Z, z) ###
 
