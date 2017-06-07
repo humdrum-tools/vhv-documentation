@@ -558,6 +558,35 @@ Occasionally a fake suspension is preceded by an anticipation as in the example 
 
 ### Chanson idiom (h) ###
 
+{% include verovio.html
+	source="chi"
+	scale="60"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/json" id="chi">**kern	**kern
+*clefG2	*clefG2
+*clefGv2	*clefGv2
+*k[]	*k[]
+*M2/1	*M2/1
+*met(C|)	*met(C|)
+=35-	=35-
+2d\	2B\
+1g	4A/
+.	4G/
+.	1A
+2f#i\	.
+=36	=36
+1g	1G
+1f	2r
+.	[2d\
+=	=
+*-	*-
+!!!filter: dissonant
+</script>
+
+A chanson idiom functions as an ornamented anticipation to the agent of a suspension. It usually occurs in the placement of a weak minim, and consists of a quarter note that is dissonant against the preparation to the suspension and is approached by step down. This dissonance is also left by step down to another quarter note that is then followed by the agent of the suspension a step up (on the same pitch as the chanson idiom). The example above is taken from the contra and tenor parts of the chanson attributed to Josquin [Cela sans plus](http://josquin.stanford.edu/work/?id=Jos2704).
+
 ### Dissonant third quarter passing tone (q) ###
 
 {% include verovio.html
