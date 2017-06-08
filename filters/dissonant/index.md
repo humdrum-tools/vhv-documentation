@@ -20,7 +20,7 @@ If there are chords in the music, the first note of the chord is
 used, and secondary subspines will be ignored.
 
 Below is an example of the dissonant filter in action using an
-excerpt from Josquin's chanson <a href="http://josquin.stanford.edu/work/?id=Jos2705">Ce povre mendiant/Pauper sum ego</a>.  To 
+excerpt from Josquin's chanson <a href="http://josquin.stanford.edu/work/?id=Jos2705">Ce povre mendiant/Pauper sum ego</a>.  To
 apply the filter to a file, include the line `!!!filter: dissonant`
 anywhere in the file.  The label for each voice will be inserted
 in spines immediately to the left of each `**kern` spine.  In the
@@ -38,7 +38,7 @@ below.
 	tabsize="10"
 %}
 
-<script type="application/json" id="josex">!!!filter: dissonant
+<script type="application/x-humdrum" id="josex">!!!filter: dissonant
 **kern	**kern	**kern
 *I"Bassus	*I"Tenor	*I"Discantus
 *I'B	*I'T	*I'D
@@ -141,13 +141,15 @@ below.
 !!!RDF**kern: i=editorial accidental
 </script>
 
-Try editing the above Humdrum textual score to generate various types of dissonances.
+Try editing the above Humdrum score to generate various types of dissonances.
+
+
 
 ## Dissonant function labels ##
 
 <style>
 
-.dense td { 
+.dense td {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	margin-top: 0;
@@ -211,15 +213,17 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 </table>
 
 
+
 ### Passing notes (P, p) ###
 
 {% include verovio.html
+	humdrum-visible="false"
 	source="passing"
 	scale="60"
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/json" id="passing">**kern	**kern
+<script type="application/x-humdrum" id="passing">**kern	**kern
 *M2/4	*M2/4
 4C	8cL
 .	8dJ
@@ -233,15 +237,18 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 !!!filter: dissonant
 </script>
 
+
+
 ### Neighboring notes (N, n) ###
 
 {% include verovio.html
+	humdrum-visible="false"
 	source="nei"
 	scale="60"
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/json" id="nei">**kern	**kern
+<script type="application/x-humdrum" id="nei">**kern	**kern
 *M2/4	*M2/4
 4C	8ccL
 .	8ddJ
@@ -255,15 +262,18 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 !!!filter: dissonant
 </script>
 
+
+
 ###  &Eacute;chapp&eacute;e notes (E, e) ###
 
 {% include verovio.html
+	humdrum-visible="false"
 	source="chap"
 	scale="60"
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/json" id="chap">**kern	**kern
+<script type="application/x-humdrum" id="chap">**kern	**kern
 *clefF4	*clefG2
 *M2/4	*M2/4
 4F	8aL
@@ -278,9 +288,12 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 !!!filter: dissonant
 </script>
 
+
+
 ###  Cambiatas notes (C, c, K, k) ###
 
 {% include verovio.html
+	humdrum-visible="false"
 	source="camb_dn"
 	scale="40"
 	pageWidth="1100"
@@ -288,7 +301,7 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 	spacingLinear="0.15"
 	spacingNonLinear="0.50"
 %}
-<script type="application/json" id="camb_dn">**kern	**kern
+<script type="application/x-humdrum" id="camb_dn">**kern	**kern
 *clefF4	*clefG2
 *M3/2	*M3/2
 2G	2.g
@@ -307,12 +320,13 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 </script>
 
 {% include verovio.html
+	humdrum-visible="false"
 	source="camb_up"
 	scale="30"
 	pageWidth="1400"
 	tabsize="10"
 %}
-<script type="application/json" id="camb_up">**kern	**kern
+<script type="application/x-humdrum" id="camb_up">**kern	**kern
 *k[b-]	*k[b-]
 *M4/2	*M4/2
 2B-	2.d
@@ -336,12 +350,13 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 ###  Anticipations (A, a) ###
 
 {% include verovio.html
+	humdrum-visible="false"
 	source="ant"
 	scale="60"
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/json" id="ant">**kern	**kern
+<script type="application/x-humdrum" id="ant">**kern	**kern
 *clefG2	*clefG2
 *M4/2	*M4/2
 4g	2ee
@@ -356,15 +371,19 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 !!!filter: dissonant
 </script>
 
+
+
 ###  Suspensions (S, s, G, g) ###
 
 {% include verovio.html
+	humdrum-visible="false"
 	source="sus"
 	scale="40"
 	pageWidth="1100"
 	tabsize="10"
+	url="http://verovio.humdrum.org/?k=ey&filter=dissonant&file=jrp:Obr2018"
 %}
-<script type="application/json" id="sus">**kern	**kern	**kern	**kern
+<script type="application/x-humdrum" id="sus">**kern	**kern	**kern	**kern
 *clefF4	*clefGv2	*clefGv2	*clefG2
 *k[]	*k[]	*k[]	*k[]
 *M3/1	*M3/1	*M3/1	*M3/1
@@ -406,19 +425,59 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 *-	*-	*-	*-
 !!!filter: dissonant
 </script>
-A suspension consists of a voice that becomes dissonant either by sustaining or restriking a note before resolving the dissonance down by step. This sustained voice was referred to as the *patient* by Artusi, and it gets an `S` or `s` label at the moment of the dissonance. Another voice strikes a note that is dissonant against the suspended note, and this voice gets a `G` or `g` label for *agent*. It is common to have more than one agent per suspension such as in m. 37 above.
 
-The example above taken from Obrecht's motet [Mille quingentis](http://josquin.stanford.edu/work/?id=Obr2018) features a binary suspension and a ternary suspension. The first suspension (in m. 34) is binary because the dissonance phase of the suspension lasts a unit of time (in this case a minim) that groups in twos in the given mensuration. The second suspension above (in m. 37), its dissonant phase lasts a semibreve (when ornamentation is disregarded) so this suspension is ternary and receives uppercase `S` and `G` labels. If you prefer not to distinguish between binary and ternary suspensions, remember you can make use of the -u option and all suspensions and agents will be labeled with uppercase letters. Consonant suspensions are ignored.
+A suspension consists of a voice that becomes dissonant either by
+sustaining or restriking a note before resolving the dissonance
+down by step. This sustained voice was referred to as the *patient*
+by Artusi, and it gets an `S` or `s` label at the moment of the
+dissonance. Another voice strikes a note that is dissonant against
+the suspended note, and this voice gets a `G` or `g` label for
+*agent*. It is common to have more than one agent per suspension
+such as in m. 37 above.
+
+The example above taken from Obrecht's motet [Mille
+quingentis](http://josquin.stanford.edu/work/?id=Obr2018) features
+a binary suspension and a ternary suspension. The first suspension
+(in m. 34) is binary because the dissonance phase of the suspension
+lasts a unit of time (in this case a minim) that groups in twos in
+the given mensuration. The second suspension above (in m. 37), its
+dissonant phase lasts a semibreve (when ornamentation is disregarded)
+so this suspension is ternary and receives uppercase `S` and `G`
+labels. If you prefer not to distinguish between binary and ternary
+suspensions, remember you can make use of the -u option and all
+suspensions and agents will be labeled with uppercase letters.
+Consonant suspensions are ignored.
+
+
 
 ###  Suspension ornaments (r, o) ###
 
+Two types of dissonant suspension ornaments are detected by the
+dissonant tool, both of which occur during what would normally be
+the dissonant phase of the suspension. 
+
+
+
+#### Rearticulated suspension ####
+
+The first type of ornamentation consists of a simple rearticulation
+of the suspended note before it resolves down by step. The reartuclated
+note is generally a semi-minim (quarter note) and is labeled in the
+analyses with an `r`. While this figuration (shown below) does occur
+in tonal music, there are almost no occurrences of this in the
+entire [JRP](http://josquin.stanford.edu) database of scores. This
+demonstrates how dissonance analysis can be used to inform the study
+of style change over time.
+
 {% include verovio.html
+	humdrum-visible="false"
 	source="rsus"
-	scale="30"
+	scale="50"
+	spacingLinear="0.1"
 	pageWidth="1400"
 	tabsize="10"
 %}
-<script type="application/json" id="rsus">**kern	**kern
+<script type="application/x-humdrum" id="rsus">**kern	**kern
 *clefGv2	*clefG2
 *M4/2	*M4/2
 2e	2g
@@ -436,24 +495,24 @@ The example above taken from Obrecht's motet [Mille quingentis](http://josquin.s
 !!!filter: dissonant
 </script>
 
-Two types of dissonant suspension ornaments are detected by the
-dissonant tool, both of which occur during what would normally be
-the dissonant phase of the suspension. The first consists of a
-simple rearticulation of the suspended note before it resolves down
-by step. The reartuclated note is generally a quarter note and is
-labeled with an `r`. While this figure, shown above, does occur in
-tonal music there are almost no occurrences of this in the entire
-[JRP](http://josquin.stanford.edu) database of scores. This 
-demonstrates how dissonance analysis can be used to inform the 
-study of style change over time.
+
+
+#### Third-ornamented suspension ####
+
+A second type of suspension ornamentation occurs when the suspended
+note skips a third down before resolving up by step to the note
+that would be the standard resolution of the suspension. This is
+labeled with an `o`, as shown below.
 
 {% include verovio.html
+	humdrum-visible="false"
 	source="osus"
-	scale="30"
+	scale="50"
 	pageWidth="1400"
+	spacingLinear="0.1"
 	tabsize="10"
 %}
-<script type="application/json" id="osus">**kern	**kern
+<script type="application/x-humdrum" id="osus">**kern	**kern
 *clefGv2	*clefG2
 *M4/2	*M4/2
 2e	2g
@@ -471,17 +530,20 @@ study of style change over time.
 !!!filter: dissonant
 </script>
 
-The second type of suspension ornamentation is when the suspended note skips a third down before resolving up by step to the note that would be the standard resolution of the suspension. This is labeled with an `o`, as shown above.
+
 
 ###  Fake Suspensions (F, f) ###
 
 {% include verovio.html
+	humdrum-visible="false"
 	source="fsus"
-	scale="40"
-	pageWidth="1100"
+	scale="50"
+	spacingLinear="1.75"
+	spacingNonLinear="0.8"
+	pageWidth="1400"
 	tabsize="10"
 %}
-<script type="application/json" id="fsus">**kern	**kern	**kern	**kern
+<script type="application/x-humdrum" id="fsus">**kern	**kern	**kern	**kern
 *I'B	*I'T	*I'A	*I'S
 *clefF4	*clefGv2	*clefGv2	*clefG2
 *k[b-]	*k[b-]	*k[b-]	*k[b-]
@@ -518,12 +580,15 @@ if the pedal tone were rearticulated at the moment it serves as the
 agent of the suspension.
 
 {% include verovio.html
+	humdrum-visible="false"
 	source="afsus"
-	scale="30"
+	scale="50"
+	spacingLinear="0.35"
+	spacingNonLinear="0.7"
 	pageWidth="1400"
 	tabsize="10"
 %}
-<script type="application/json" id="afsus">**kern	**kern	**kern	**kern
+<script type="application/x-humdrum" id="afsus">**kern	**kern	**kern	**kern
 *I'B	*I'T	*I'A	*I'S
 *clefF4	*clefGv2	*clefGv2	*clefG2
 *k[b-]	*k[b-]	*k[b-]	*k[b-]
@@ -554,17 +619,35 @@ agent of the suspension.
 
 </script>
 
-Occasionally a fake suspension is preceded by an anticipation as in the example above taken from the same Mouton Kyrie. In this case the fake suspension label takes the same case as that of the anticipation.
+Occasionally a fake suspension is preceded by an anticipation as
+in the example above taken from the same Mouton Kyrie. In this case
+the fake suspension label takes the same case as that of the
+anticipation.
+
+
 
 ### Chanson idiom (h) ###
 
+A chanson idiom functions as an ornamented anticipation to the agent
+of a suspension. It usually occurs in the placement of a weak minim,
+(half-note) and consists of a quarter note that is dissonant against
+the preparation to the suspension and is approached by step down.
+This dissonance is also left by step down to another quarter note
+that is then followed by the agent of the suspension a step up (on
+the same pitch as the chanson idiom). The example below is taken
+from the contra and tenor parts of the chanson attributed to Josquin
+[Cela sans plus](http://josquin.stanford.edu/work/?id=Jos2704).
+
 {% include verovio.html
+	humdrum-visible="false"
 	source="chi"
-	scale="60"
-	pageWidth="1000"
+	url="http://verovio.humdrum.org/?k=ey&filter=dissonant&file=jrp:Jos2704"
+	scale="50"
+	linearSpacing="0.1"
+	pageWidth="1400"
 	tabsize="10"
 %}
-<script type="application/json" id="chi">**kern	**kern
+<script type="application/x-humdrum" id="chi">**kern	**kern
 *clefG2	*clefG2
 *clefGv2	*clefGv2
 *k[]	*k[]
@@ -585,17 +668,18 @@ Occasionally a fake suspension is preceded by an anticipation as in the example 
 !!!filter: dissonant
 </script>
 
-A chanson idiom functions as an ornamented anticipation to the agent of a suspension. It usually occurs in the placement of a weak minim, and consists of a quarter note that is dissonant against the preparation to the suspension and is approached by step down. This dissonance is also left by step down to another quarter note that is then followed by the agent of the suspension a step up (on the same pitch as the chanson idiom). The example above is taken from the contra and tenor parts of the chanson attributed to Josquin [Cela sans plus](http://josquin.stanford.edu/work/?id=Jos2704).
+
 
 ### Dissonant third quarter passing tone (q) ###
 
 {% include verovio.html
+	humdrum-visible="false"
 	source="d3qp"
 	scale="60"
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/json" id="d3qp">**kern	**kern
+<script type="application/x-humdrum" id="d3qp">**kern	**kern
 *clefG2	*clefG2
 *M4/2	*M4/2
 2f	1.a
@@ -608,17 +692,23 @@ A chanson idiom functions as an ornamented anticipation to the agent of a suspen
 !!!filter: dissonant
 </script>
 
-A dissonant third quarter passing tone, labeled `q` like the one shown above, is similar to a descending passing tone. It corresponds to a dissonance in the metric position of a weak minim that lasts only a quarter note. It is approached and left by step down and must be preceded by a note with a duration of at least a minim. There is no ascending form of this dissonance type.
+A dissonant third quarter passing tone, labeled `q` like the one
+shown above, is similar to a descending passing tone. It corresponds
+to a dissonance in the metric position of a weak minim that lasts
+only a quarter note. It is approached and left by step down and
+must be preceded by a note with a duration of at least a minim.
+There is no ascending form of this dissonance type.
 
 ### Dissonant third quarter neighbor (B, b) ###
 
 {% include verovio.html
+	humdrum-visible="false"
 	source="d3qn"
 	scale="60"
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/json" id="d3qn">**kern	**kern
+<script type="application/x-humdrum" id="d3qn">**kern	**kern
 *I'B	*I'A
 *clefF4	*clefGv2
 *k[b-]	*k[b-]
@@ -635,27 +725,36 @@ A dissonant third quarter passing tone, labeled `q` like the one shown above, is
 !!!filter: dissonant
 </script>
 
-This dissonance is the neighbor-tone version of the dissonant third quarter passing tone. The example above is taken from the altus and bassus parts from the Credo of Josquin's Missa La belle se siet (NJE 13.3). The dissonance type consists of a neighbor tone in the metric position of a weak minim that lasts only a quarter note in duration. Although we detect both upper- and lower-neighbor varieties of this dissonance type, like regular neighbor tones, the dissonant third quarter lower neighbor is by far more common than the upper-neighbor version. The upper- and lower-neighbor versions of this dissonance type are labeled with a `B` and a `b` repsectfully.
+This dissonance is the neighbor-tone version of the dissonant third
+quarter passing tone. The example above is taken from the altus and
+bassus parts from the Credo of Josquin's Missa La belle se siet
+(NJE 13.3). The dissonance type consists of a neighbor tone in the
+metric position of a weak minim that lasts only a quarter note in
+duration. Although we detect both upper- and lower-neighbor varieties
+of this dissonance type, like regular neighbor tones, the dissonant
+third quarter lower neighbor is by far more common than the
+upper-neighbor version. The upper- and lower-neighbor versions of
+this dissonance type are labeled with a `B` and a `b` repsectfully.
 
 ### Unknown dissonances (Z, z) ###
 
-Dissonances that cannot be assigned to the above categories are given a `Z` label to 
-indicate that their function is unknown.  A capital `Z` means that the interval of the
-dissonance is a 2nd or 7th.  A lower-case `z` means that the dissonance is a 4th
-against the lowest sounding note in the sonority.
+Dissonances not assignable to one of the above categories are given
+a `Z` label to indicate their function is unknown.  A capital `Z`
+means that the interval of the dissonance is a 2nd or 7th.  A
+lower-case `z` means that the dissonance is a 4th against the lowest
+sounding note in the sonority.
 
 
 ## URL filtering of repertories ##
 
-The dissonant tool can be used with available repertories by adding the
+The dissonant tool can be used with available VHV repertories by adding the
 filter to the URL for the works, such as with the Tasso in Music Project:
 
-[http://verovio.humdrum.org/?k=ey&file=tmp&filter=dissonant](http://verovio.humdrum.org/?k=ey&file=tmp&filter=dissonant)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[http://verovio.humdrum.org/?k=ey&file=tmp&filter=dissonant](http://verovio.humdrum.org/?k=ey&file=tmp&filter=dissonant)
 
 To remove lyric text from analysis results, use the filter: `extractx -i kern | dissonant`:
 
-[http://verovio.humdrum.org/?k=ey&file=tmp&filter=extract%20-ikern%7cdissonant](http://verovio.humdrum.org/?k=ey&file=tmp&filter=extract%20-ikern%7cdissonant)
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[http://verovio.humdrum.org/?k=ey&file=tmp&filter=extract%20-ikern%7cdissonant](http://verovio.humdrum.org/?k=ey&file=tmp&filter=extract%20-ikern%7cdissonant)
 
 
 {% include image.html
@@ -663,20 +762,34 @@ To remove lyric text from analysis results, use the filter: `extractx -i kern | 
 	alt="removing lyric text before displaying analysis."
 	max-width="90%"
 	url="http://verovio.humdrum.org/?k=ey&file=tmp&filter=extract%20-ikern%7cdissonant"
-	caption="<i>Dissonant</i> analysis after removing lyric text."
+	caption="<i>Dissonant</i> analysis after removing lyric text (click for live demo)."
 %}
 
 
 
 ## JRP dissonant tool ##
 
+<style>
+
+.jrp-button {
+	background: #c86843;
+	color: white;
+	font-size: 90%;
+	display: inline-block;
+	border: none;
+	text-align: center;
+	padding: 1px 3px;
+}
+
+</style>
+
 Work pages on the Josquin Research Project website have links to
 VHV for the current work to view the dissonant labeling analysis.
 For example the page:
 
-[http://josquin.stanford.edu/work/?id=Jos2801](http://josquin.stanford.edu/work/?id=Jos2801)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[http://josquin.stanford.edu/work/?id=Jos2801](http://josquin.stanford.edu/work/?id=Jos2801)
 
-Contains a button labeled "Dissonant" on the bottom left side of the page.  Clicking on that button will load
+contains a button labeled <span class="jrp-button">Dissonant</span> on the bottom left side of the page.  Clicking on that button will load
 the score for the current page into VHV and do an online analysis of the dissonant labels:
 
 
