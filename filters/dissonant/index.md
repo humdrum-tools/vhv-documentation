@@ -376,8 +376,10 @@ As seen in the example above, anticipations are approached by step up, labeled w
 {% include verovio.html
 	humdrum-visible="false"
 	source="sus"
-	scale="40"
-	pageWidth="1100"
+	scale="35"
+	spacingLinear="0.1"
+	spacingNonLinear="0.5"
+	pageWidth="1500"
 	tabsize="10"
 	url="http://verovio.humdrum.org/?k=ey&filter=dissonant&file=jrp:Obr2018"
 %}
