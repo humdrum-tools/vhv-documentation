@@ -175,8 +175,6 @@ Try editing the above Humdrum score to generate various types of dissonances.
 <tr><td> E </td><td> upper &eacute;chapp&eacute;e</td>                        <td> e </td>  <td> lower &eacute;chapp&eacute;e</td>                          </tr>
 <tr><td> C </td><td> ascending short nota cambiata</td>         <td> c </td>  <td> descending short nota cambiata</td>          </tr>
 <tr><td> K </td><td> ascending long nota cambiata</td>          <td> k </td>  <td> descending long nota cambiata</td>           </tr>
-<tr><td> I </td><td> incomplete anterior upper neighbor</td>    <td> i </td>  <td> incomplete anterior lower neighbor</td>      </tr>
-<tr><td> J </td><td> incomplete posterior upper neighbor</td>   <td> j </td>  <td> incomplete posterior lower neighbor</td>     </tr>
 <tr><td> A </td><td> rising anticipation</td>                   <td> a </td>  <td> descending anticipation</td>                 </tr>
 <tr><td> S </td><td> ternary suspension</td>                    <td> s </td>  <td> binary suspension</td>                       </tr>
 <tr><td> G </td><td> ternary suspension agent</td>              <td> g </td>  <td> binary suspension agent</td>                 </tr>
@@ -196,8 +194,6 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 <tr><td> E </td><td> &eacute;chapp&eacute;e</td></tr>
 <tr><td> C </td><td> short nota cambiata</td></tr>
 <tr><td> K </td><td> long nota cambiata</td></tr>
-<tr><td> I </td><td> incomplete anterior neighbor</td></tr>
-<tr><td> J </td><td> incomplete posterior neighbor</td></tr>
 <tr><td> A </td><td> anticipation</td></tr>
 <tr><td> S </td><td> ternary suspension</td></tr>
 <tr><td> S </td><td> binary suspension</td></tr>
@@ -237,7 +233,7 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 !!!filter: dissonant
 </script>
 
-
+A passing tone is approached by step on and left by step in the same direction. The preceding note must be metrically stronger than the dissonant note, and the note the passing tone is dissonant against must begin before the passing tone and must sustain at least through the end of the passing tone. These are labeled with uppercase `P` and lowercase `p` for ascending and descending passing tones respectively.
 
 ### Neighboring notes (N, n) ###
 
@@ -262,7 +258,7 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 !!!filter: dissonant
 </script>
 
-
+Neighbor tones have the requirements as passing tones, except that instead of being approached and left by step in the same direction, neighbor tones are approached and left by step in opposite directions. `N` and `n` are used to label upper and lower neighbors respectively.
 
 ###  &Eacute;chapp&eacute;e notes (E, e) ###
 
@@ -288,7 +284,7 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 !!!filter: dissonant
 </script>
 
-
+An &eacute;chapp&eacute;e (also called an escape tone) is approached by step and left by leap in the opposite direction. The dissonant note must be metrically weaker than the note that preceded it and a note in another voice must start before the &Eacute;chapp&eacute;e and sustain at least until the end of the &Eacute;chapp&eacute;e.
 
 ###  Cambiatas notes (C, c, K, k) ###
 
@@ -318,6 +314,8 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 *-	*-
 !!!filter: dissonant
 </script>
+
+A nota cambiata is approaced by step and left by a leap of a third in the same direction. It must be metrically weaker than the note that preceded it. If after leaping a third, the melody moves a step in the opposite direction (thus filling in the note that was skipped over) the dissonance gets a `K` or `k` label for the long-form cambiata. If this change of direction does not occur then a `C` or `c` label is used. As with most other dissonance labels (with the exception of suspension and agent labels), a lowercase letter means it was approached by step down like in the example above, and an uppercase letter means the dissonance was approached by step up like in the example below.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -371,7 +369,7 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 !!!filter: dissonant
 </script>
 
-
+As seen in the example above, anticipations are approached by step up, labeled with `A`, or step down, labeled with `a`, and then repeated in place. An anticipation is metrically weaker than the notes before and after it.
 
 ###  Suspensions (S, s, G, g) ###
 
