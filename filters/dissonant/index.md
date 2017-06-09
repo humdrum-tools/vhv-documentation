@@ -625,6 +625,35 @@ the fake suspension label takes the same case as that of the
 anticipation.
 
 
+###  Suspensions Missing Agents (M, m) ###
+
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="msus"
+	scale="50"
+	spacingLinear="1.75"
+	spacingNonLinear="0.8"
+	pageWidth="1400"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="msus">**kern	**kern
+*clefGv2	*clefG2
+*k[]	*k[]
+*M2/1	*M2/1
+*met(C|)	*met(C|)
+=113-	=113-
+1r	1.g
+1G	.
+.	4a/
+.	4b\
+=114	=114
+1E	1cc
+[1A	1cc
+=	=
+*-	*-
+!!!filter: dissonant
+</script>
 
 ### Chanson idiom (h) ###
 
@@ -672,14 +701,17 @@ from the contra and tenor parts of the chanson attributed to Josquin
 
 ### Dissonant third quarter passing tone (q) ###
 
+A dissonant third quarter passing tone, a regular passing tone. It corresponds
+to a dissonance in the metric position of a weak minim that lasts only a quarter note. It is approached and left by step in the same direction and must be preceded by a note with a duration of at least a minim. If it descends, it gets the `q` label as in the following example.
+
 {% include verovio.html
 	humdrum-visible="false"
-	source="d3qp"
+	source="d3qpd"
 	scale="60"
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="d3qp">**kern	**kern
+<script type="application/x-humdrum" id="d3qpd">**kern	**kern
 *clefG2	*clefG2
 *M4/2	*M4/2
 2f	1.a
@@ -692,12 +724,35 @@ from the contra and tenor parts of the chanson attributed to Josquin
 !!!filter: dissonant
 </script>
 
-A dissonant third quarter passing tone, labeled `q` like the one
-shown above, is similar to a descending passing tone. It corresponds
-to a dissonance in the metric position of a weak minim that lasts
-only a quarter note. It is approached and left by step down and
-must be preceded by a note with a duration of at least a minim.
-There is no ascending form of this dissonance type.
+Though it is less common, when the same figure happens in its ascending form, it gets labeled with a `Q` as in the following example taken from the Superius and the Altus of the Credo in Josquin's [Missa De beata virgine](http://josquin.stanford.edu/work/?id=Jos0303).
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="d3qpu"
+	scale="50"
+	spacingLinear="1.75"
+	spacingNonLinear="0.8"
+	pageWidth="1400"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="d3qpu">**kern	**kern
+*clefGv2	*clefG2
+*k[]	*k[]
+*M2/1	*M2/1
+*met(C|)	*met(C|)
+=113-	=113-
+1r	1.g
+1G	.
+.	4a/
+.	4b\
+=114	=114
+1E	1cc
+[1A	1cc
+=	=
+*-	*-
+!!!filter: dissonant
+</script>
+
 
 ### Dissonant third quarter neighbor (B, b) ###
 
