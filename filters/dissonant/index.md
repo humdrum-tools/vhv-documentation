@@ -320,7 +320,7 @@ A nota cambiata is approaced by step and left by a leap of a third in the same d
 {% include verovio.html
 	humdrum-visible="false"
 	source="camb_up"
-	scale="30"
+	scale="40"
 	pageWidth="1400"
 	tabsize="10"
 %}
@@ -627,6 +627,7 @@ anticipation.
 
 ###  Suspensions Missing Agents (M, m) ###
 
+In some cases a suspension seems to be missing an attacked agent. This figure consists of a voice moving up or down by step, then sustaining over the following beat, and then resolving down by step all over a pedal tone. This dissonance is labeled `M` or `m` based on whether the dissonant note is approached by step up or step down respectively. The example below is taken from Obrecht's motet [Factor Orbis](http://josquin.stanford.edu/work/?id=Obr2010).
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -637,21 +638,26 @@ anticipation.
 	pageWidth="1400"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="msus">**kern	**kern
-*clefGv2	*clefG2
-*k[]	*k[]
-*M2/1	*M2/1
-*met(C|)	*met(C|)
-=113-	=113-
-1r	1.g
-1G	.
-.	4a/
-.	4b\
-=114	=114
-1E	1cc
-[1A	1cc
-=	=
-*-	*-
+<script type="application/x-humdrum" id="msus">**kern	**kern	**kern	**kern	**kern
+*clefF4	*clefGv2	*clefGv2	*clefGv2	*clefG2
+*k[]	*k[]	*k[]	*k[]	*k[]
+*M3/1	*M3/1	*M3/1	*M3/1	*M3/1
+*met(O)	*met(O)	*met(O)	*met(O)	*met(O)
+=59-	=59-	=59-	=59-	=59-
+1F	0.r	1A	1d	2a/]
+.	.	.	.	4g/
+.	.	.	.	4f/
+0E	.	0B	0e	2g/
+.	.	.	.	1a
+.	.	.	.	2g#i/
+=60	=60	=60	=60	=60
+1AA	0.r	1A	1e	1a
+2r	.	2r	2r	1r
+2AA/	.	2A/	2e\	.
+2AA/	.	2A/	2e\	1r
+2AA/	.	2A/	2e\	.
+=	=	=	=	=
+*-	*-	*-	*-	*-
 !!!filter: dissonant
 </script>
 
