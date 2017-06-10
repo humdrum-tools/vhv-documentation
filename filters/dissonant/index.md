@@ -1,8 +1,8 @@
 ---
 title: dissonant filter
-author: ["Craig Sapp", "Alex Morgan"]
+author: ["Alex Morgan", "Craig Sapp"]
 creation_date: 29 May 2017
-last_updated: 29 May 2017
+last_updated: 10 Jun 2017
 tags: [all, filters]
 sidebar: main_sidebar
 examplewidth: 1200
@@ -13,21 +13,21 @@ summary: "The dissonant filter labels non-harmonic tones in contrapuntal texture
 permalink: /filters/dissonant/index.html
 ---
 
-The dissonant filter automatically labels the function
-of non-harmonic notes in contrapuntal textures.  Each input `**kern`
-spine is expected to be monophonic and have no subspine branching.
-If there are chords in the music, the first note of the chord is
-used, and secondary subspines will be ignored.
+The dissonant filter automatically labels the function of non-harmonic
+notes in contrapuntal textures.  Each input `**kern` spine is
+expected to be monophonic and have no subspine branching.  If there
+are chords in the music, only the first note of the chord is used, and
+secondary subspines will be ignored.
 
 Below is an example of the dissonant filter in action using an
 excerpt from Josquin's chanson <a href="http://josquin.stanford.edu/work/?id=Jos2705">Ce povre mendiant/Pauper sum ego</a>.  To
 apply the filter to a file, include the line `!!!filter: dissonant`
-anywhere in the file.  The label for each voice will be inserted
-in spines immediately to the left of each `**kern` spine.  In the
-following display the labels are shown above the notes to which
-they apply.  `P` means a rising passing tone and `p` means a lower
-passing tone.  See the complete list of label abbreviations further
-below.
+anywhere in the file.  The dissonant function labels for each voice
+will be inserted in spines immediately to the right of each `**kern`
+spine.  In the following display the labels are shown above the
+notes to which they apply.  `P` means a rising passing tone and `p`
+means a lower passing tone.  See the complete list of label
+abbreviations further below.
 
 {% include verovio.html
 	source="josex"
@@ -141,11 +141,21 @@ below.
 !!!RDF**kern: i=editorial accidental
 </script>
 
-Try editing the above Humdrum score to generate various types of dissonances.
+Try editing the above Humdrum score to generate various types of
+dissonances.  Removing the first line (`!!!filter: dissonant`) will
+turn of the dissonance analysis, and adding `-u` to
+`!!!filter: dissonant -u` will merge subcategories into a single
+main category for the dissonant types.
 
 
 
 ## Dissonant function labels ##
+
+Dissonant notes are marked with single-letter label abbreviations
+in the notation as well as in the Humdrum score.  The first table
+below gives the detailed default label categories used in the
+dissonance analysis, while the second table gives more generalized
+categories that do not distinguish melodic directions.
 
 <style>
 
@@ -185,37 +195,44 @@ Try editing the above Humdrum score to generate various types of dissonances.
 <tr><td> Z </td><td> unknown dissonance, 2nd or 7th interval</td> <td> z </td ><td> unknown dissonance, 4th interval</td></tr>
 </table>
 
-The `-u` option (meaning *undifferentiated*) collapses up/down subcategorizations into a single case designated with an uppercase letter:
+The `-u` option (meaning *undifferentiated*) collapses up/down
+subcategorizations into a single label designated by an uppercase
+letter:
 
-<table class="dense onecol">
-<tr><th>Label</th><th> Meaning</th></tr>
-<tr><td> P </td><td> passing tone</td></tr>
-<tr><td> N </td><td> neighbor</td></tr>
-<tr><td> E </td><td> &eacute;chapp&eacute;e</td></tr>
-<tr><td> C </td><td> short nota cambiata</td></tr>
-<tr><td> K </td><td> long nota cambiata</td></tr>
-<tr><td> A </td><td> anticipation</td></tr>
-<tr><td> S </td><td> ternary suspension</td></tr>
-<tr><td> S </td><td> binary suspension</td></tr>
-<tr><td> G </td><td> ternary suspension agent</td></tr>
-<tr><td> G </td><td> binary suspension agent</td></tr>
-<tr><td> F </td><td> fake suspension</td></tr>
-<tr><td> O </td><td> suspension ornament</td></tr>
-<tr><td> R </td><td> suspension repeated note</td></tr>
-<tr><td> H </td><td> chanson idiom</td></tr>
-<tr><td> Q </td><td> dissonant third quarter passing tone</td></tr>
-<tr><td> B </td><td> dissonant third quarter neighbor</td></tr>
-<tr><td> Z </td><td> unknown dissonance</td></tr>
+<table class="dense twocol">
+<tr><th>Label</th><th> Meaning</th>                             <th>Label</th><th> Meaning</th>                                 </tr>
+<tr><td> P </td><td> passing tone</td>                          <td> F </td><td> fake suspension</td></tr>
+<tr><td> N </td><td> neighbor</td>                              <td> O </td><td> suspension ornament</td></tr>
+<tr><td> E </td><td> &eacute;chapp&eacute;e</td>                <td> R </td><td> suspension repeated note</td></tr>
+<tr><td> C </td><td> short nota cambiata</td>                   <td> H </td><td> chanson idiom</td></tr>
+<tr><td> K </td><td> long nota cambiata</td>                    <td> Q </td><td> dissonant third quarter passing tone</td></tr>
+<tr><td> A </td><td> anticipation</td>                          <td> B </td><td> dissonant third quarter neighbor</td></tr>
+<tr><td> S </td><td> suspension</td>                            <td> Z </td><td> unknown dissonance</td></tr>
+<tr><td> G </td><td> suspension agent</td>                      <td></td><td></td></tr>
+
 </table>
+
+Examples of each dissonant type are given below.  Note that the
+musical examples are [generated dynamically using verovio](/myvhv/static)
+within the page, and the *dissonant* tool labels notes as the
+webpage is loaded.
 
 
 
 ### Passing notes (P, p) ###
 
+A passing tone is approached by step and left by step in the
+same direction. The preceding note must be metrically stronger than
+the dissonant note, and the note the passing tone is dissonant
+against must begin before the passing tone and must sustain at least
+through the end of the passing tone. These are labeled with uppercase
+`P` and lowercase `p` for ascending and descending passing tones
+respectively.
+
 {% include verovio.html
 	humdrum-visible="false"
 	source="passing"
-	scale="60"
+	scale="50"
 	pageWidth="1000"
 	tabsize="10"
 %}
@@ -233,14 +250,19 @@ The `-u` option (meaning *undifferentiated*) collapses up/down subcategorization
 !!!filter: dissonant
 </script>
 
-A passing tone is approached by step on and left by step in the same direction. The preceding note must be metrically stronger than the dissonant note, and the note the passing tone is dissonant against must begin before the passing tone and must sustain at least through the end of the passing tone. These are labeled with uppercase `P` and lowercase `p` for ascending and descending passing tones respectively.
 
-### Neighboring notes (N, n) ###
+
+### Neighbor notes (N, n) ###
+
+Neighbor tones have similar requirements as passing tones, except 
+instead of being approached and left by step in the same direction,
+neighbor tones are approached and left by step in opposite directions.
+`N` and `n` are used to label upper and lower neighbors respectively.
 
 {% include verovio.html
 	humdrum-visible="false"
 	source="nei"
-	scale="60"
+	scale="50"
 	pageWidth="1000"
 	tabsize="10"
 %}
@@ -258,14 +280,20 @@ A passing tone is approached by step on and left by step in the same direction. 
 !!!filter: dissonant
 </script>
 
-Neighbor tones have the requirements as passing tones, except that instead of being approached and left by step in the same direction, neighbor tones are approached and left by step in opposite directions. `N` and `n` are used to label upper and lower neighbors respectively.
+
 
 ###  &Eacute;chapp&eacute;e notes (E, e) ###
+
+An &eacute;chapp&eacute;e (also called an *escape tone*) is approached
+by step and left by leap in the opposite direction. The dissonant
+note must be metrically weaker than the note that precedes it and
+a note in another voice must start before the &Eacute;chapp&eacute;e
+and sustain at least until the end of the &Eacute;chapp&eacute;e.
 
 {% include verovio.html
 	humdrum-visible="false"
 	source="chap"
-	scale="60"
+	scale="50"
 	pageWidth="1000"
 	tabsize="10"
 %}
@@ -284,15 +312,23 @@ Neighbor tones have the requirements as passing tones, except that instead of be
 !!!filter: dissonant
 </script>
 
-An &eacute;chapp&eacute;e (also called an escape tone) is approached by step and left by leap in the opposite direction. The dissonant note must be metrically weaker than the note that preceded it and a note in another voice must start before the &Eacute;chapp&eacute;e and sustain at least until the end of the &Eacute;chapp&eacute;e.
+
 
 ###  Cambiatas notes (C, c, K, k) ###
+
+A *nota cambiata* is approaced by step and left by a leap of a third
+in the same direction. It must be metrically weaker than the note
+that preceded it. If after leaping a third, the melody moves a step
+in the opposite direction (thus filling in the note that was skipped
+over) the dissonance gets a `K` or `k` label for the long-form
+cambiata. If this change of direction does not occur then a `C` or
+`c` label is used. 
 
 {% include verovio.html
 	humdrum-visible="false"
 	source="camb_dn"
-	scale="40"
-	pageWidth="1100"
+	scale="50"
+	pageWidth="1400"
 	tabsize="10"
 	spacingLinear="0.15"
 	spacingNonLinear="0.50"
@@ -315,14 +351,20 @@ An &eacute;chapp&eacute;e (also called an escape tone) is approached by step and
 !!!filter: dissonant
 </script>
 
-A nota cambiata is approaced by step and left by a leap of a third in the same direction. It must be metrically weaker than the note that preceded it. If after leaping a third, the melody moves a step in the opposite direction (thus filling in the note that was skipped over) the dissonance gets a `K` or `k` label for the long-form cambiata. If this change of direction does not occur then a `C` or `c` label is used. As with most other dissonance labels (with the exception of suspension and agent labels), a lowercase letter means it was approached by step down like in the example above, and an uppercase letter means the dissonance was approached by step up like in the example below.
+As with most other dissonance labels (with the
+exception of suspension and agent labels), a lowercase letter means
+it was approached by step down, as in the example above, and an
+uppercase letter means the dissonance was approached by step up,
+as in the example below.
 
 {% include verovio.html
 	humdrum-visible="false"
 	source="camb_up"
-	scale="30"
-	pageWidth="1400"
+	scale="50"
+	pageWidth="1300"
 	tabsize="10"
+	spacingLinear="0.10"
+	spacingNonLinear="0.45"
 %}
 <script type="application/x-humdrum" id="camb_up">**kern	**kern
 *k[b-]	*k[b-]
@@ -347,10 +389,16 @@ A nota cambiata is approaced by step and left by a leap of a third in the same d
 
 ###  Anticipations (A, a) ###
 
+As demonstrated in the example below, anticipations that are
+approached by a step up are labeled with `A`; otherwise, they are
+labeled with `a` when approached by a step down, and then repeated
+in place. An anticipation is metrically weaker than the notes before
+and after it.
+
 {% include verovio.html
 	humdrum-visible="false"
 	source="ant"
-	scale="60"
+	scale="50"
 	pageWidth="1000"
 	tabsize="10"
 %}
@@ -369,16 +417,23 @@ A nota cambiata is approaced by step and left by a leap of a third in the same d
 !!!filter: dissonant
 </script>
 
-As seen in the example above, anticipations are approached by step up, labeled with `A`, or step down, labeled with `a`, and then repeated in place. An anticipation is metrically weaker than the notes before and after it.
-
 ###  Suspensions (S, s, G, g) ###
+
+A suspension consists of a voice that becomes dissonant either by
+sustaining or restriking a note before resolving the dissonance
+down by step. This sustained voice was referred to as the *patient*
+by Artusi, and it gets an `S` or `s` label at the moment of the
+dissonance. Another voice strikes a note that is dissonant against
+the suspended note, and this voice gets a `G` or `g` label for
+*agent*. It is common to have more than one agent per suspension
+such as in m.&nbsp;37 in the example below.
 
 {% include verovio.html
 	humdrum-visible="false"
 	source="sus"
-	scale="35"
-	spacingLinear="0.1"
-	spacingNonLinear="0.5"
+	scale="40"
+	spacingLinear="0.05"
+	spacingNonLinear="0.30"
 	pageWidth="1500"
 	tabsize="10"
 	url="http://verovio.humdrum.org/?k=ey&filter=dissonant&file=jrp:Obr2018"
@@ -426,27 +481,19 @@ As seen in the example above, anticipations are approached by step up, labeled w
 !!!filter: dissonant
 </script>
 
-A suspension consists of a voice that becomes dissonant either by
-sustaining or restriking a note before resolving the dissonance
-down by step. This sustained voice was referred to as the *patient*
-by Artusi, and it gets an `S` or `s` label at the moment of the
-dissonance. Another voice strikes a note that is dissonant against
-the suspended note, and this voice gets a `G` or `g` label for
-*agent*. It is common to have more than one agent per suspension
-such as in m. 37 above.
-
-The example above taken from Obrecht's motet [Mille
-quingentis](http://josquin.stanford.edu/work/?id=Obr2018) features
-a binary suspension and a ternary suspension. The first suspension
-(in m. 34) is binary because the dissonance phase of the suspension
-lasts a unit of time (in this case a minim) that groups in twos in
-the given mensuration. The second suspension above (in m. 37), its
-dissonant phase lasts a semibreve (when ornamentation is disregarded)
+This example, taken from Obrecht's motet [Mille
+quingentis](http://josquin.stanford.edu/work/?id=Obr2018), features
+both a binary and a ternary suspension. The first suspension
+(in m.&nbsp;34) is binary, because the dissonance phase of the suspension
+lasts a unit of time (in this case a minim, or half note) that groups in twos in
+the given mensuration. The second suspension above (in m.&nbsp;37), its
+dissonant phase lasts a semibreve, or whole note, (when ornamentation is disregarded)
 so this suspension is ternary and receives uppercase `S` and `G`
 labels. If you prefer not to distinguish between binary and ternary
-suspensions, remember you can make use of the -u option and all
+suspensions, use the `-u` option and all
 suspensions and agents will be labeled with uppercase letters.
-Consonant suspensions are ignored.
+
+Consonant suspensions are ignored by the dissonant tool.
 
 
 
@@ -534,6 +581,20 @@ labeled with an `o`, as shown below.
 
 ###  Fake Suspensions (F, f) ###
 
+Sometimes the preparation of a suspension is itself dissonant like
+in the example above from the [Kyrie in Mouton's Missa Da pacem](http://josquin.stanford.edu/work/?id=Mou1020a).
+This is often referred to as a *fake suspension* though would
+more accurately be called a fake preparation. It is approached by
+step up or down and remains in place or is restruck to become the
+dissonant portion of a suspension. Since we know the suspension
+will generally resolve down by step, we use an uppercase `F` or
+lowercase `f` to convey whether the dissonance was approached by
+step up or down respectfully. Because this happens over a pedal,
+and an agent is also needed for the suspension, this is generally
+only found in three or more voices, though could happen in two voice
+if the pedal tone were rearticulated at the moment it serves as the
+agent of the suspension.
+
 {% include verovio.html
 	humdrum-visible="false"
 	source="fsus"
@@ -549,35 +610,26 @@ labeled with an `o`, as shown below.
 *k[b-]	*k[b-]	*k[b-]	*k[b-]
 *M2/1	*M2/1	*M2/1	*M2/1
 =26	=26	=26	=26
-2D\	0A	4d\]	2f/
-.	.	4c\	.
-2C/	.	2e-i\	1g
+2D	0A	4d]	2f
+.	.	4c	.
+2C	.	2e-i	1g
 1D	.	[1d	.
-.	.	.	2f#i/
+.	.	.	2f#i
 =27	=27	=27	=27
-1GG	0G	2d\]	0g
-.	.	2.B-\	.
+1GG	0G	2d]	0g
+.	.	2.B-	.
 1r	.	.	.
-.	.	4c\	.
-.	.	2d\	.
+.	.	4c	.
+.	.	2d	.
 ==	==	==	==
 *-	*-	*-	*-
 !!!filter: dissonant
 </script>
 
-Sometimes the preparation of a suspension is itself dissonant like
-in the example above from the [Kyrie in Mouton's Missa Da pacem](http://josquin.stanford.edu/work/?id=Mou1020a).
-This is often referred to as a *fake suspension* though would
-more accurately be called a fake preparation. It is approached by
-step up or down and remains in place or is restruck to become the
-dissonant portion of a suspension. Since we know the suspension
-will generally resolve down by step, we use an uppercase `F` or
-lowercase `f` to convey whether the dissonance was approached by
-step up or down respectfully. Because this happens over a pedal,
-and an agent is also needed for the suspension, this is generally
-only found in three or more voices, though could happen in two voice
-if the pedal tone were rearticulated at the moment it serves as the
-agent of the suspension.
+Occasionally a fake suspension is preceded by an anticipation as
+in the example below taken from the same Mouton Kyrie. In this case
+the fake suspension label takes the same case as that of the
+anticipation.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -619,11 +671,6 @@ agent of the suspension.
 
 </script>
 
-Occasionally a fake suspension is preceded by an anticipation as
-in the example above taken from the same Mouton Kyrie. In this case
-the fake suspension label takes the same case as that of the
-anticipation.
-
 
 
 ### Chanson idiom (h) ###
@@ -635,8 +682,9 @@ the preparation to the suspension and is approached by step down.
 This dissonance is also left by step down to another quarter note
 that is then followed by the agent of the suspension a step up (on
 the same pitch as the chanson idiom). The example below is taken
-from the contra and tenor parts of the chanson attributed to Josquin
-[Cela sans plus](http://josquin.stanford.edu/work/?id=Jos2704).
+from the contra and tenor parts of the chanson 
+[Cela sans plus](http://josquin.stanford.edu/work/?id=Jos2704)
+attributed to Josquin des Prez:
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -672,10 +720,17 @@ from the contra and tenor parts of the chanson attributed to Josquin
 
 ### Dissonant third quarter passing tone (q) ###
 
+A dissonant third quarter passing tone, labeled `q` in the example
+below, is similar to a descending passing tone. It corresponds
+to a dissonance in the metric position of a weak minim that lasts
+only a quarter note. It is approached and left by a step down and
+must be preceded by a note with a duration of at least a minim (half note). 
+There is no ascending form for this dissonance type.
+
 {% include verovio.html
 	humdrum-visible="false"
 	source="d3qp"
-	scale="60"
+	scale="50"
 	pageWidth="1000"
 	tabsize="10"
 %}
@@ -692,19 +747,27 @@ from the contra and tenor parts of the chanson attributed to Josquin
 !!!filter: dissonant
 </script>
 
-A dissonant third quarter passing tone, labeled `q` like the one
-shown above, is similar to a descending passing tone. It corresponds
-to a dissonance in the metric position of a weak minim that lasts
-only a quarter note. It is approached and left by step down and
-must be preceded by a note with a duration of at least a minim.
-There is no ascending form of this dissonance type.
+
 
 ### Dissonant third quarter neighbor (B, b) ###
+
+This dissonance is the neighbor-tone version of the dissonant third
+quarter passing tone. The example below is taken from the altus and
+bassus parts from the Credo of Josquin's [Missa La belle se
+siet](http://josquin.stanford.edu/work/?id=Jos1303c) (NJE&nbsp;13.3).
+
+The dissonance type consists of a neighbor tone in the
+metric position of a weak minim that lasts only a quarter note in
+duration. Although we detect both upper- and lower-neighbor varieties
+of this dissonance type, like regular neighbor tones, the dissonant
+third quarter lower neighbor is by far more common than the
+upper-neighbor version. The upper- and lower-neighbor versions of
+this dissonance type are labeled with a `B` and a `b` repsectfully.
 
 {% include verovio.html
 	humdrum-visible="false"
 	source="d3qn"
-	scale="60"
+	scale="50"
 	pageWidth="1000"
 	tabsize="10"
 %}
@@ -725,17 +788,6 @@ There is no ascending form of this dissonance type.
 !!!filter: dissonant
 </script>
 
-This dissonance is the neighbor-tone version of the dissonant third
-quarter passing tone. The example above is taken from the altus and
-bassus parts from the Credo of Josquin's Missa La belle se siet
-(NJE 13.3). The dissonance type consists of a neighbor tone in the
-metric position of a weak minim that lasts only a quarter note in
-duration. Although we detect both upper- and lower-neighbor varieties
-of this dissonance type, like regular neighbor tones, the dissonant
-third quarter lower neighbor is by far more common than the
-upper-neighbor version. The upper- and lower-neighbor versions of
-this dissonance type are labeled with a `B` and a `b` repsectfully.
-
 ### Unknown dissonances (Z, z) ###
 
 Dissonances not assignable to one of the above categories are given
@@ -752,9 +804,11 @@ filter to the URL for the works, such as with the Tasso in Music Project:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[http://verovio.humdrum.org/?k=ey&file=tmp&filter=dissonant](http://verovio.humdrum.org/?k=ey&file=tmp&filter=dissonant)
 
-To remove lyric text from analysis results, use the filter: `extractx -i kern | dissonant`:
+To remove lyric text from analysis results, use the filter: `extract -i kern | dissonant`:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[http://verovio.humdrum.org/?k=ey&file=tmp&filter=extract%20-ikern%7cdissonant](http://verovio.humdrum.org/?k=ey&file=tmp&filter=extract%20-ikern%7cdissonant)
+
+The filter `extract -i kern` extracts only `**kern` spines and filters out non-kern spines.
 
 
 {% include image.html
@@ -783,8 +837,8 @@ To remove lyric text from analysis results, use the filter: `extractx -i kern | 
 
 </style>
 
-Work pages on the Josquin Research Project website have links to
-VHV for the current work to view the dissonant labeling analysis.
+Work pages on the Josquin Research Project website have links 
+for the given work to view the dissonant labeling analysis in VHV.
 For example the page:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[http://josquin.stanford.edu/work/?id=Jos2801](http://josquin.stanford.edu/work/?id=Jos2801)
