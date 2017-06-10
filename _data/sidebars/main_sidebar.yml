@@ -58,6 +58,10 @@ entries:
       output: web, pdf
       url: /interface/musicxml
 
+    - title: Importing EsAC data
+      output: web, pdf
+      url: /interface/esac
+
     - title: Exporting MEI data
       output: web, pdf
       url: /interface/mei
