@@ -182,16 +182,18 @@ categories that do not distinguish melodic directions.
 <tr><th>Label</th><th> Meaning</th>                             <th>Label</th><th> Meaning</th>                                 </tr>
 <tr><td> P </td><td> rising passing tone</td>                   <td> p </td>  <td> downward passing tone</td>                   </tr>
 <tr><td> N </td><td> upper neighbor</td>                        <td> n </td>  <td> lower neighbor</td>                          </tr>
-<tr><td> E </td><td> upper &eacute;chapp&eacute;e</td>                        <td> e </td>  <td> lower &eacute;chapp&eacute;e</td>                          </tr>
+<tr><td> E </td><td> upper &eacute;chapp&eacute;e</td>          <td> e </td>  <td> lower &eacute;chapp&eacute;e</td>            </tr>
 <tr><td> C </td><td> ascending short nota cambiata</td>         <td> c </td>  <td> descending short nota cambiata</td>          </tr>
 <tr><td> K </td><td> ascending long nota cambiata</td>          <td> k </td>  <td> descending long nota cambiata</td>           </tr>
 <tr><td> A </td><td> rising anticipation</td>                   <td> a </td>  <td> descending anticipation</td>                 </tr>
 <tr><td> S </td><td> ternary suspension</td>                    <td> s </td>  <td> binary suspension</td>                       </tr>
 <tr><td> G </td><td> ternary suspension agent</td>              <td> g </td>  <td> binary suspension agent</td>                 </tr>
-<tr><td> F </td><td> fake suspension approached by step up</td> <td> f </td>  <td> fake suspension approached by step down</td> </tr>
+<tr><td> F </td><td> fake susp. approached by step up</td>      <td> f </td>  <td> fake susp. approached by step down</td>      </tr>
 <tr><td> o </td><td> suspension ornament</td>                   <td> r </td>  <td> suspension repeated note</td>                </tr>
+<tr><td> M </td><td> suspension missing agent approached by step up </td> <td> m </td>  <td> suspension missing agent approached by step down </td> </tr>
 <tr><td> h </td><td> chanson idiom</td>                         <td> q </td>  <td> dissonant 3rd quarter passing tone</td>      </tr>
 <tr><td> B </td><td> dissonant 3rd quarter upper neighbor</td>  <td> b </td>  <td> dissonant 3rd quarter lower neighbor</td>    </tr>
+<tr><td>   </td><td> (no ascending form of chanson idiom)</td>  <td> h </td>  <td> chanson idiom</td>                           </tr>
 <tr><td> Z </td><td> unknown dissonance, 2nd or 7th interval</td> <td> z </td ><td> unknown dissonance, 4th interval</td></tr>
 </table>
 
@@ -204,12 +206,11 @@ letter:
 <tr><td> P </td><td> passing tone</td>                          <td> F </td><td> fake suspension</td></tr>
 <tr><td> N </td><td> neighbor</td>                              <td> O </td><td> suspension ornament</td></tr>
 <tr><td> E </td><td> &eacute;chapp&eacute;e</td>                <td> R </td><td> suspension repeated note</td></tr>
-<tr><td> C </td><td> short nota cambiata</td>                   <td> H </td><td> chanson idiom</td></tr>
+<tr><td> C </td><td> short nota cambiata</td>                   <td> M </td><td> supension missing agent</td></tr>
 <tr><td> K </td><td> long nota cambiata</td>                    <td> Q </td><td> dissonant third quarter passing tone</td></tr>
-<tr><td> A </td><td> anticipation</td>                          <td> B </td><td> dissonant third quarter neighbor</td></tr>
-<tr><td> S </td><td> suspension</td>                            <td> Z </td><td> unknown dissonance</td></tr>
-<tr><td> G </td><td> suspension agent</td>                      <td></td><td></td></tr>
-
+<tr><td> A </td><td> anticipation</td>                          <td> B </td><td> dissonant third quarter neighbor tone</td></tr>
+<tr><td> S </td><td> suspension</td>                            <td> H </td><td> chanson idiom</td></tr>
+<tr><td> G </td><td> suspension agent</td>                      <td> Z </td><td> uknown dissonance</td></tr>
 </table>
 
 Examples of each dissonant type are given below.  Note that the
@@ -385,8 +386,6 @@ as in the example below.
 !!!filter: dissonant
 </script>
 
-
-
 ###  Anticipations (A, a) ###
 
 As demonstrated in the example below, anticipations that are
@@ -495,17 +494,13 @@ suspensions and agents will be labeled with uppercase letters.
 
 Consonant suspensions are ignored by the dissonant tool.
 
-
-
 ###  Suspension ornaments (r, o) ###
 
 Two types of dissonant suspension ornaments are detected by the
 dissonant tool, both of which occur during what would normally be
 the dissonant phase of the suspension. 
 
-
-
-#### Rearticulated suspension ####
+#### Rearticulated suspension (r) ####
 
 The first type of ornamentation consists of a simple rearticulation
 of the suspended note before it resolves down by step. The reartuclated
@@ -542,9 +537,7 @@ of style change over time.
 !!!filter: dissonant
 </script>
 
-
-
-#### Third-ornamented suspension ####
+#### Third-ornamented (o) suspension ####
 
 A second type of suspension ornamentation occurs when the suspended
 note skips a third down before resolving up by step to the note
@@ -576,8 +569,6 @@ labeled with an `o`, as shown below.
 *-	*-
 !!!filter: dissonant
 </script>
-
-
 
 ###  Fake Suspensions (F, f) ###
 
@@ -671,12 +662,53 @@ anticipation.
 
 </script>
 
+Occasionally a fake suspension is preceded by an anticipation as
+in the example above taken from the same Mouton Kyrie. In this case
+the fake suspension label takes the same case as that of the
+anticipation.
 
+
+
+###  Suspensions Missing Agents (M, m) ###
+
+In some cases a suspension seems to be missing an attacked agent. This figure consists of a voice moving up or down by step, then sustaining over the following beat, and then resolving down by step all over a pedal tone. This dissonance is labeled `M` or `m` based on whether the dissonant note is approached by step up or step down respectively. The example below is taken from Obrecht's motet [Factor Orbis](http://josquin.stanford.edu/work/?id=Obr2010).
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="msus"
+	scale="50"
+	spacingLinear="1.75"
+	spacingNonLinear="0.8"
+	pageWidth="1400"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="msus">**kern	**kern	**kern	**kern	**kern
+*clefF4	*clefGv2	*clefGv2	*clefGv2	*clefG2
+*k[]	*k[]	*k[]	*k[]	*k[]
+*M3/1	*M3/1	*M3/1	*M3/1	*M3/1
+*met(O)	*met(O)	*met(O)	*met(O)	*met(O)
+=59-	=59-	=59-	=59-	=59-
+1F	0.r	1A	1d	2a/]
+.	.	.	.	4g/
+.	.	.	.	4f/
+0E	.	0B	0e	2g/
+.	.	.	.	1a
+.	.	.	.	2g#i/
+=60	=60	=60	=60	=60
+1AA	0.r	1A	1e	1a
+2r	.	2r	2r	1r
+2AA/	.	2A/	2e\	.
+2AA/	.	2A/	2e\	1r
+2AA/	.	2A/	2e\	.
+=	=	=	=	=
+*-	*-	*-	*-	*-
+!!!filter: dissonant
+</script>
 
 ### Chanson idiom (h) ###
 
 A chanson idiom functions as an ornamented anticipation to the agent
-of a suspension. It usually occurs in the placement of a weak minim,
+of a suspension and is labeled with an `h`. It usually occurs in the placement of a weak minim,
 (half-note) and consists of a quarter note that is dissonant against
 the preparation to the suspension and is approached by step down.
 This dissonance is also left by step down to another quarter note
@@ -716,9 +748,10 @@ attributed to Josquin des Prez:
 !!!filter: dissonant
 </script>
 
+### Dissonant third quarter passing tone (Q, q) ###
 
-
-### Dissonant third quarter passing tone (q) ###
+A dissonant third quarter passing tone, a regular passing tone. It corresponds
+to a dissonance in the metric position of a weak minim that lasts only a quarter note. It is approached and left by step in the same direction and must be preceded by a note with a duration of at least a minim. If it descends, it gets the `q` label as in the following example.
 
 A dissonant third quarter passing tone, labeled `q` in the example
 below, is similar to a descending passing tone. It corresponds
@@ -729,12 +762,12 @@ There is no ascending form for this dissonance type.
 
 {% include verovio.html
 	humdrum-visible="false"
-	source="d3qp"
+	source="d3qpd"
 	scale="50"
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="d3qp">**kern	**kern
+<script type="application/x-humdrum" id="d3qpd">**kern	**kern
 *clefG2	*clefG2
 *M4/2	*M4/2
 2f	1.a
@@ -743,6 +776,39 @@ There is no ascending form for this dissonance type.
 .	4g
 .	4f
 ==	==
+*-	*-
+!!!filter: dissonant
+</script>
+
+Though it is less common, when the same figure happens in its
+ascending form, it gets labeled with a `Q` as in the following
+example taken from the Superius and the Altus of the Credo in
+Josquin's [Missa De beata
+virgine](http://josquin.stanford.edu/work/?id=Jos0303c).
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="d3qpu"
+	scale="50"
+	spacingLinear="1.75"
+	spacingNonLinear="0.8"
+	pageWidth="1400"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="d3qpu">**kern	**kern
+*clefGv2	*clefG2
+*k[]	*k[]
+*M2/1	*M2/1
+*met(C|)	*met(C|)
+=113-	=113-
+1r	1.g
+1G	.
+.	4a/
+.	4b\
+=114	=114
+1E	1cc
+[1A	1cc
+=	=
 *-	*-
 !!!filter: dissonant
 </script>
@@ -796,7 +862,6 @@ means that the interval of the dissonance is a 2nd or 7th.  A
 lower-case `z` means that the dissonance is a 4th against the lowest
 sounding note in the sonority.
 
-
 ## URL filtering of repertories ##
 
 The dissonant tool can be used with available VHV repertories by adding the
@@ -818,8 +883,6 @@ The filter `extract -i kern` extracts only `**kern` spines and filters out non-k
 	url="http://verovio.humdrum.org/?k=ey&file=tmp&filter=extract%20-ikern%7cdissonant"
 	caption="<i>Dissonant</i> analysis after removing lyric text (click for live demo)."
 %}
-
-
 
 ## JRP dissonant tool ##
 
