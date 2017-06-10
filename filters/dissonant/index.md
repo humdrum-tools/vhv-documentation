@@ -191,10 +191,10 @@ categories that do not distinguish melodic directions.
 <tr><td> F </td><td> fake susp. approached by step up</td>      <td> f </td>  <td> fake susp. approached by step down</td>      </tr>
 <tr><td> o </td><td> suspension ornament</td>                   <td> r </td>  <td> suspension repeated note</td>                </tr>
 <tr><td> M </td><td> suspension missing agent approached by step up </td> <td> m </td>  <td> suspension missing agent approached by step down </td> </tr>
-<tr><td> h </td><td> chanson idiom</td>                         <td> q </td>  <td> dissonant 3rd quarter passing tone</td>      </tr>
+<tr><td> Q </td><td> dissonant 3rd quarter rising passint tone</td>  <td> q </td>  <td> dissonant 3rd quarter falling passing tone</td>      </tr>
 <tr><td> B </td><td> dissonant 3rd quarter upper neighbor</td>  <td> b </td>  <td> dissonant 3rd quarter lower neighbor</td>    </tr>
 <tr><td>   </td><td> (no ascending form of chanson idiom)</td>  <td> h </td>  <td> chanson idiom</td>                           </tr>
-<tr><td> Z </td><td> unknown dissonance, 2nd or 7th interval</td> <td> z </td ><td> unknown dissonance, 4th interval</td></tr>
+<tr><td> Z </td><td> unclassified dissonance, 2nd or 7th interval</td> <td> z </td ><td> unclassified dissonance, 4th interval</td></tr>
 </table>
 
 The `-u` option (meaning *undifferentiated*) collapses up/down
@@ -246,7 +246,7 @@ respectively.
 4FF	8fL
 .	8eJ
 4GG	4d
-==	==
+=	=
 *-	*-
 !!!filter: dissonant
 </script>
@@ -276,7 +276,7 @@ neighbor tones are approached and left by step in opposite directions.
 4GG	8bL
 .	8aJ
 4EE	4b
-==	==
+=	=
 *-	*-
 !!!filter: dissonant
 </script>
@@ -308,7 +308,7 @@ and sustain at least until the end of the &Eacute;chapp&eacute;e.
 4F	8aL
 .	8bJ
 4G	4g
-==	==
+=	=
 *-	*-
 !!!filter: dissonant
 </script>
@@ -347,7 +347,7 @@ cambiata. If this change of direction does not occur then a `C` or
 .	4f
 2G	4d
 .	4e
-==	==
+=	=
 *-	*-
 !!!filter: dissonant
 </script>
@@ -381,7 +381,7 @@ as in the example below.
 .	4e
 2B-	2g
 2A	2f
-==	==
+=	=
 *-	*-
 !!!filter: dissonant
 </script>
@@ -411,7 +411,7 @@ and after it.
 .	4dd
 .	4ee
 2e	2ee
-==	==
+=	=
 *-	*-
 !!!filter: dissonant
 </script>
@@ -532,7 +532,7 @@ of style change over time.
 .	2r
 2e	1cc
 2f	.
-==	==
+=	=
 *-	*-
 !!!filter: dissonant
 </script>
@@ -565,7 +565,7 @@ labeled with an `o`, as shown below.
 .	2r
 2e	1cc
 2f	.
-==	==
+=	=
 *-	*-
 !!!filter: dissonant
 </script>
@@ -612,7 +612,7 @@ agent of the suspension.
 1r	.	.	.
 .	.	4c	.
 .	.	2d	.
-==	==	==	==
+=	=	=	=
 *-	*-	*-	*-
 !!!filter: dissonant
 </script>
@@ -656,7 +656,7 @@ anticipation.
 .	1r	1B-	.
 4D	.	.	4f
 2BB-	.	.	2d
-==	==	==	==
+=	=	=	=
 *-	*-	*-	*-
 !!!filter: dissonant
 
@@ -775,7 +775,7 @@ There is no ascending form for this dissonance type.
 1d	.
 .	4g
 .	4f
-==	==
+=	=
 *-	*-
 !!!filter: dissonant
 </script>
