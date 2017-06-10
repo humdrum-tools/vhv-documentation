@@ -684,39 +684,39 @@ In some cases a suspension seems to be missing an attacked agent. This figure co
 	tabsize="10"
 %}
 <script type="application/x-humdrum" id="msus">**kern	**kern	**kern	**kern	**kern
-*clefF4	*clefGv2	*clefGv2	*clefGv2	*clefG2
-*k[]	*k[]	*k[]	*k[]	*k[]
-*M3/1	*M3/1	*M3/1	*M3/1	*M3/1
-*met(O)	*met(O)	*met(O)	*met(O)	*met(O)
-=59-	=59-	=59-	=59-	=59-
-1F	0.r	1A	1d	2a/]
-.	.	.	.	4g/
-.	.	.	.	4f/
-0E	.	0B	0e	2g/
-.	.	.	.	1a
-.	.	.	.	2g#i/
-=60	=60	=60	=60	=60
-1AA	0.r	1A	1e	1a
-2r	.	2r	2r	1r
-2AA/	.	2A/	2e\	.
-2AA/	.	2A/	2e\	1r
-2AA/	.	2A/	2e\	.
-=	=	=	=	=
-*-	*-	*-	*-	*-
+*clefF4	*clefGv2	*clefGv2	*clefG2
+*k[]	*k[]	*k[]	*k[]
+*M3/1	*M3/1	*M3/1	*M3/1
+*met(O)	*met(O)	*met(O)	*met(O)
+=59-	=59-	=59-	=59-
+1F	1A	1d	2a/]
+.	.	.	4g/
+.	.	.	4f/
+0E	0B	0e	2g/
+.	.	.	1a
+.	.	.	2g#i/
+=60	=60	=60	=60
+1AA	1A	1e	1a
+2r	2r	2r	1r
+2AA/	2A/	2e\	.
+2AA/	2A/	2e\	1r
+2AA/	2A/	2e\	.
+=	=	=	=
+*-	*-	*-	*-
 !!!filter: dissonant
 </script>
 
 ### Chanson idiom (h) ###
 
 A chanson idiom functions as an ornamented anticipation to the agent
-of a suspension and is labeled with an `h`. It usually occurs in the placement of a weak minim,
-(half-note) and consists of a quarter note that is dissonant against
-the preparation to the suspension and is approached by step down.
-This dissonance is also left by step down to another quarter note
-that is then followed by the agent of the suspension a step up (on
-the same pitch as the chanson idiom). The example below is taken
-from the contra and tenor parts of the chanson 
-[Cela sans plus](http://josquin.stanford.edu/work/?id=Jos2704)
+of a suspension and is labeled with an `h`. It usually occurs in
+the placement of a weak minim, (half-note) and consists of a quarter
+note that is dissonant against the preparation to the suspension
+and is approached by step down.  This dissonance is also left by
+step down to another quarter note that is then followed by the agent
+of the suspension a step up (on the same pitch as the chanson idiom).
+The example below is taken from the contra and tenor parts of the
+chanson [Cela sans plus](http://josquin.stanford.edu/work/?id=Jos2704)
 attributed to Josquin des Prez:
 
 {% include verovio.html
@@ -751,15 +751,19 @@ attributed to Josquin des Prez:
 
 ### Dissonant third quarter passing tone (Q, q) ###
 
-A dissonant third quarter passing tone, a regular passing tone. It corresponds
-to a dissonance in the metric position of a weak minim that lasts only a quarter note. It is approached and left by step in the same direction and must be preceded by a note with a duration of at least a minim. If it descends, it gets the `q` label as in the following example.
+A dissonant third quarter passing tone, a regular passing tone. It
+corresponds to a dissonance in the metric position of a weak minim
+that lasts only a quarter note. It is approached and left by step
+in the same direction and must be preceded by a note with a duration
+of at least a minim (half-note). If it descends, it gets the `q`
+label as in the following example.
 
 A dissonant third quarter passing tone, labeled `q` in the example
-below, is similar to a descending passing tone. It corresponds
-to a dissonance in the metric position of a weak minim that lasts
-only a quarter note. It is approached and left by a step down and
-must be preceded by a note with a duration of at least a minim (half note). 
-There is no ascending form for this dissonance type.
+below, is similar to a descending passing tone. It corresponds to
+a dissonance in the metric position of a weak minim that lasts only
+a quarter note. It is approached and left by a step down and must
+be preceded by a note with a duration of at least a minim (half
+note).  There is no ascending form for this dissonance type.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -823,13 +827,13 @@ quarter passing tone. The example below is taken from the altus and
 bassus parts from the Credo of Josquin's [Missa La belle se
 siet](http://josquin.stanford.edu/work/?id=Jos1303c) (NJE&nbsp;13.3).
 
-The dissonance type consists of a neighbor tone in the
-metric position of a weak minim that lasts only a quarter note in
-duration. Although we detect both upper- and lower-neighbor varieties
-of this dissonance type, like regular neighbor tones, the dissonant
-third quarter lower neighbor is by far more common than the
-upper-neighbor version. The upper- and lower-neighbor versions of
-this dissonance type are labeled with a `B` and a `b` repsectfully.
+The dissonance type consists of a neighbor tone in the metric
+position of a weak minim (half-note) that lasts only a quarter note
+in duration. Although we detect both upper- and lower-neighbor
+varieties of this dissonance type, like regular neighbor tones, the
+dissonant third quarter lower neighbor is by far more common than
+the upper-neighbor version. The upper- and lower-neighbor versions
+of this dissonance type are labeled with a `B` and a `b` repsectfully.
 
 {% include verovio.html
 	humdrum-visible="false"
