@@ -210,7 +210,7 @@ letter:
 <tr><td> K </td><td> long nota cambiata</td>                    <td> Q </td><td> dissonant third quarter passing tone</td></tr>
 <tr><td> A </td><td> anticipation</td>                          <td> B </td><td> dissonant third quarter neighbor tone</td></tr>
 <tr><td> S </td><td> suspension</td>                            <td> H </td><td> chanson idiom</td></tr>
-<tr><td> G </td><td> suspension agent</td>                      <td> Z </td><td> uknown dissonance</td></tr>
+<tr><td> G </td><td> suspension agent</td>                      <td> Z </td><td> unclassified dissonance</td></tr>
 </table>
 
 Examples of each dissonant type are given below.  Note that the
