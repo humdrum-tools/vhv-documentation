@@ -3,7 +3,7 @@ title: EsAC data import
 author: Craig Stuart Sapp
 creation_date: 10 Jun 2017
 last_updated: 10 Jun 2017
-tags: [all, getting_started]
+tags: [all]
 keywords: interface esac
 summary: "EsAC files can be dragged/dropped onto the VHV page to automatically convert them into Humdrum data, or EsAC data can be pasted into the text editor to edit as EsAC data."
 sidebar: main_sidebar
