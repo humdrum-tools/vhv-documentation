@@ -416,6 +416,8 @@ and after it.
 !!!filter: dissonant
 </script>
 
+
+
 ###  Suspensions (S, s, G, g) ###
 
 A suspension consists of a voice that becomes dissonant either by
@@ -494,11 +496,15 @@ suspensions and agents will be labeled with uppercase letters.
 
 Consonant suspensions are ignored by the dissonant tool.
 
+
+
 ###  Suspension ornaments (r, o) ###
 
 Two types of dissonant suspension ornaments are detected by the
 dissonant tool, both of which occur during what would normally be
 the dissonant phase of the suspension. 
+
+
 
 #### Rearticulated suspension (r) ####
 
@@ -537,6 +543,8 @@ of style change over time.
 !!!filter: dissonant
 </script>
 
+
+
 #### Third-ornamented (o) suspension ####
 
 A second type of suspension ornamentation occurs when the suspended
@@ -569,6 +577,8 @@ labeled with an `o`, as shown below.
 *-	*-
 !!!filter: dissonant
 </script>
+
+
 
 ###  Fake Suspensions (F, f) ###
 
@@ -670,9 +680,15 @@ anticipation.
 
 
 
-###  Suspensions Missing Agents (M, m) ###
+###  Suspensions with missing agents (M, m) ###
 
-In some cases a suspension seems to be missing an attacked agent. This figure consists of a voice moving up or down by step, then sustaining over the following beat, and then resolving down by step all over a pedal tone. This dissonance is labeled `M` or `m` based on whether the dissonant note is approached by step up or step down respectively. The example below is taken from Obrecht's motet [Factor Orbis](http://josquin.stanford.edu/work/?id=Obr2010).
+In some cases a suspension seems to be missing an attacked agent.
+This figure consists of a voice moving up or down by step, then
+sustaining over the following beat, and then resolving down by step
+all over a pedal tone. This dissonance is labeled `M` or `m` based
+on whether the dissonant note is approached by step up or step down
+respectively. The example below is taken from Obrecht's motet [Factor
+Orbis](http://josquin.stanford.edu/work/?id=Obr2010).
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -683,7 +699,7 @@ In some cases a suspension seems to be missing an attacked agent. This figure co
 	pageWidth="1400"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="msus">**kern	**kern	**kern	**kern	**kern
+<script type="application/x-humdrum" id="msus">**kern	**kern	**kern	**kern
 *clefF4	*clefGv2	*clefGv2	*clefG2
 *k[]	*k[]	*k[]	*k[]
 *M3/1	*M3/1	*M3/1	*M3/1
@@ -705,6 +721,8 @@ In some cases a suspension seems to be missing an attacked agent. This figure co
 *-	*-	*-	*-
 !!!filter: dissonant
 </script>
+
+
 
 ### Chanson idiom (h) ###
 
@@ -748,6 +766,8 @@ attributed to Josquin des Prez:
 *-	*-
 !!!filter: dissonant
 </script>
+
+
 
 ### Dissonant third quarter passing tone (Q, q) ###
 
