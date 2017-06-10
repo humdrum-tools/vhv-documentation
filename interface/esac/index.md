@@ -72,4 +72,8 @@ Also, the contents of the text editor can be copy/pasted into another text edito
 %}
 
 
+### In-browser notation generation ###
+
+To see an example of generating music notation within a webpage from EsAC data,
+view [this page](/myvhv/static-esac).
 

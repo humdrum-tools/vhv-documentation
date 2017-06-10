@@ -80,7 +80,7 @@ function showMyEsac(sourceid, targetid, textid) {
 Notice the use of `!!!filter: autobeam` to beam eighth notes together.
 
 
-View the [source code](https://github.com/humdrum-tools/vhv-documentation/blob/gh-pages/myvhv/static-esac/index.md) 
+View the [source code](https://raw.githubusercontent.com/humdrum-tools/vhv-documentation/gh-pages/myvhv/static-esac/index.md)
 for this page to view the javascript used to create the notation.  The main
 difference from [Humdrum data display](/myvhv/static) is that the input format
 is set to `"esac"`.
