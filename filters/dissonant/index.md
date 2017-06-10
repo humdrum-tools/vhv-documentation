@@ -769,7 +769,7 @@ There is no ascending form for this dissonance type.
 %}
 <script type="application/x-humdrum" id="d3qpd">**kern	**kern
 *clefG2	*clefG2
-*M4/2	*M4/2
+*M2/1	*M2/1
 2f	1.a
 2e	.
 1d	.
