@@ -573,7 +573,8 @@ labeled with an `o`, as shown below.
 ###  Fake Suspensions (F, f) ###
 
 Sometimes the preparation of a suspension is itself dissonant like
-in the example above from the [Kyrie in Mouton's Missa Da pacem](http://josquin.stanford.edu/work/?id=Mou1020a).
+in the example below from the Kyrie in Mouton's 
+[Missa Da pacem](http://josquin.stanford.edu/work/?id=Mou1020a).
 This is often referred to as a *fake suspension* though would
 more accurately be called a fake preparation. It is approached by
 step up or down and remains in place or is restruck to become the
