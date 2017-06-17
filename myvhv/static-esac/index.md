@@ -12,6 +12,23 @@ summary: "Simple use of the verovio javascript toolkit to display EsAC data as g
 permalink: /myvhv/static-esac/index.html
 ---
 
+<style>
+
+/* Analytic phrase markers */
+
+.phraseStart { fill: green; }
+.phraseStart [stroke] { stroke: green; }
+
+.phraseStop { color: blue; }
+.phraseStop [stroke] { stroke: blue; }
+
+.phraseStart.phraseStop { color: orange; }
+.phraseStart.phraseStop [stroke] { stroke: orange; }
+
+</style>
+
+
+
 The following music notation is generated from the EsAC data below.
 
 <div id="notation"></div>
@@ -85,6 +102,28 @@ for this page to view the javascript used to create the notation.  The main
 difference from [Humdrum data display](/myvhv/static) is that the input format
 is set to `"esac"`.
 
+
+## Analytic phrase markers ##
+
+In this example the starting note of a phrase is highlighted in green and the ending
+note is highlighted in blue.  This is done with the following CSS code:
+
+
+```CSS
+.phraseStart { fill: green; }
+.phraseStart [stroke] { stroke: green; }
+
+.phraseStop { color: blue; }
+.phraseStop [stroke] { stroke: blue; }
+
+.phraseStart.phraseStop { color: orange; }
+.phraseStart.phraseStop [stroke] { stroke: orange; }
+```
+
+Phrases are implicitly encoded in EsAC data by linebreaks.  The first note
+on a line is the start of the phrase, and the last note on a line is the
+end of the phrase.  These notes are labeled in the SVG with the classes
+`phraseStart` and `phraseStop` respectively.
 
 
 

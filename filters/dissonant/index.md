@@ -14,7 +14,10 @@ permalink: /filters/dissonant/index.html
 ---
 
 The dissonant filter automatically labels the function of non-harmonic
-notes in contrapuntal textures.  Each input `**kern` spine is
+notes in contrapuntal textures.  All harmonic seconds and sevenths are considered
+dissonant as well as fourths above the lowest sounding voice.
+
+Each input `**kern` spine is
 expected to be monophonic and have no subspine branching.  If there
 are chords in the music, only the first note of the chord is used, and
 secondary subspines will be ignored.
@@ -208,7 +211,7 @@ letter:
 <tr><td> E </td><td> &eacute;chapp&eacute;e</td>                <td> R </td><td> suspension repeated note</td></tr>
 <tr><td> C </td><td> short nota cambiata</td>                   <td> M </td><td> supension missing agent</td></tr>
 <tr><td> K </td><td> long nota cambiata</td>                    <td> Q </td><td> dissonant third quarter passing tone</td></tr>
-<tr><td> A </td><td> anticipation</td>                          <td> B </td><td> dissonant third quarter neighbor tone</td></tr>
+<tr><td> A </td><td> anticipation</td>                          <td> B </td><td> dissonant 3rd quarter neighbor</td></tr>
 <tr><td> S </td><td> suspension</td>                            <td> H </td><td> chanson idiom</td></tr>
 <tr><td> G </td><td> suspension agent</td>                      <td> Z </td><td> unclassified dissonance</td></tr>
 </table>
@@ -769,7 +772,7 @@ attributed to Josquin des Prez:
 
 
 
-### Dissonant third quarter passing tone (Q, q) ###
+### Dissonant 3rd quarter passing tone (Q, q) ###
 
 A dissonant third quarter passing tone, a regular passing tone. It
 corresponds to a dissonance in the metric position of a weak minim
