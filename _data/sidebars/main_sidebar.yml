@@ -66,6 +66,10 @@ entries:
       output: web, pdf
       url: /interface/mei
 
+    - title: Syntax highlighting
+      output: web, pdf
+      url: /interface/edit_modes
+
 ###########################################################################
 
   - title: Commands
@@ -181,6 +185,10 @@ entries:
     - title: extract
       output: web, pdf
       url: /filters/extract
+
+    - title: imitation
+      output: web, pdf
+      url: /filters/imitation
 
     - title: myank
       output: web, pdf
