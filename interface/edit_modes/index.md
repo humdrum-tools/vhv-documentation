@@ -204,4 +204,12 @@ in blue.  Usually this is a syntax error that should be fixed.
 </td></tr></table>
 
 
+## Syntax files ##
+
+Here are the Humdrum syntax parsing/highlighting files for the ace editor:
+
+* [mode-humdrum.js](https://github.com/humdrum-tools/verovio-humdrum-viewer/blob/gh-pages/scripts/ace/mode-humdrum.js): syntax parsing file
+* [theme-humdrum-light.js](https://github.com/humdrum-tools/verovio-humdrum-viewer/blob/gh-pages/scripts/ace/theme-humdrum-light.js) light-colored highlighting theme
+* [theme-humdrum-dark.js](https://github.com/humdrum-tools/verovio-humdrum-viewer/blob/gh-pages/scripts/ace/theme-humdrum-dark.js) dark-colored highlighting theme
+
 

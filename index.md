@@ -78,10 +78,14 @@ ul.brief li {
 
 <dl>
 <dt>Craig Stuart Sapp</dt>
-<dd>System architecture</dd>
+<dd>System and documentation architecture</dd>
 <dt>Alex Morgan</dt>
 <dd>
 <ul class="brief"> <li> dissonance labeling algorithms in the <i><a href="/filters/dissonant">dissonant</a></i> filter</li> <li> cadential suspension definitions in the <i><a href="/filters/cint">cint</a></i> filter </li> </ul>
+</dd>
+<dt>Piotr Szyngiera</dt>
+<dd>
+<ul class="brief"> <li> <a href="/interface/edit_modes">Humdrum syntax highlighting</a> </li> </ul>
 </dd>
 </dl>
 
