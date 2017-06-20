@@ -13,7 +13,7 @@ permalink: /repertory/bach-chorales/index.html
 ---
 
 The URL
-[http://verovio.humdrum.org/?file=chorales](http://verovio.humdrum.org/?file=chorales)
+[http://verovio.humdrum.org/?file=chorales](http://verovio.humdrum.org/?k=e&file=chorales)
 lists a set of 371 four-part chorales that were collected after
 J.S. Bach's death by his son C.P.E. Bach (and finished by Kirnberger,
 a student of J.S. Bach, after C.P.E. Bach's death).  The chorales
