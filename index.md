@@ -85,6 +85,7 @@ ul.brief li {
 </dd>
 <dt>Piotr Szyngiera</dt>
 <dd>
+<ul class="brief"> <li> Humdrum syntax validation for the ace editor</li> </ul>
 <ul class="brief"> <li> <a href="/interface/edit_modes">Humdrum syntax highlighting</a> </li> </ul>
 </dd>
 </dl>

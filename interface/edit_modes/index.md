@@ -54,9 +54,10 @@ When editing Humdrum files, their contents will be colored by syntactic function
 <tr><td>
 <table style="width:100%; padding:0; margin:0;" class="light colorlist">
 <tr><th><div>example</div></th><th>meaning</th></tr>
-<tr><td><div style="color:red">**kern</div></td><td>Exclusive&nbsp;interpretations</td></tr>
-<tr><td><div style="color:magenta">*^</div></td><td>Spine manipulators</td></tr>
-<tr><td><div style="color:darkviolet">*M4/4</div></td><td>Tandem interpretations</td></tr>
+<tr><td><div style="color:red">**kern</div></td><td>exclusive&nbsp;interpretations</td></tr>
+<tr><td><div style="color:magenta">*^</div></td><td>spine manipulators</td></tr>
+<tr><td><div style="color:darkviolet">*M4/4</div></td><td>tandem interpretations</td></tr>
+<tr><td><div style="color:darkviolet; background: rgba(75,0,130,0.3)">*&gt;A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></td><td>section labels</td></tr>
 <tr><td><div style="color:green">!!!OTL:</div></td><td>reference records</td></tr>
 <tr><td><div style="color:blue">!! comment</div></td><td>global comments</td></tr>
 <tr><td><div style="color:#2fc584">!bass</div></td><td>local comments</td></tr>
@@ -65,6 +66,8 @@ When editing Humdrum files, their contents will be colored by syntactic function
 <table style="width:100%; padding:0; margin:0;" class="light colorlist">
 <tr><th><div>example</div></th><th>meaning</th></tr>
 <tr><td><div style="color:orange">!LO:N:vis=0</div></td><td>layout commands</td></tr>
+<tr><td><div style="color:limegreen">!!!filter:&nbsp;autobeam</div></td><td>filters</td></tr>
+<tr><td><div style="color:olive">!!!Xfilter:&nbsp;autobeam</div></td><td>used filters</td></tr>
 <tr><td><div style="color:gray; background:rgba(0, 0, 0, 0.06);">=2</div></td><td>barlines</td></tr>
 <tr><td><div style="color:gray">.</div></td><td>null tokens</td></tr>
 <tr><td><div style="color:black">4E</div></td><td>data tokens</td></tr>
@@ -108,9 +111,10 @@ table.colorlist tr td, table.colorlist td {
 <tr><td>
 <table style="width:100%; padding:0; margin:0;" class="colorlist dark">
 <tr><th><div>example</div></th><th>meaning</th></tr>
-<tr><td><div style="color:red">**kern</div></td><td>Exclusive&nbsp;interpretations</td></tr>
-<tr><td><div style="color:magenta">*^</div></td><td>Spine manipulators</td></tr>
-<tr><td><div style="color:darkviolet">*M4/4</div></td><td>Tandem interpretations</td></tr>
+<tr><td><div style="color:red">**kern</div></td><td>exclusive&nbsp;interpretations</td></tr>
+<tr><td><div style="color:magenta">*^</div></td><td>spine manipulators</td></tr>
+<tr><td><div style="color:darkviolet">*M4/4</div></td><td>tandem interpretations</td></tr>
+<tr><td><div style="color:darkviolet; background: rgba(255,200,255,0.6)">*&gt;A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></td><td>section labels</td></tr>
 <tr><td><div style="color:green">!!!OTL:</div></td><td>reference records</td></tr>
 <tr><td><div style="color:lightblue">!! comment</div></td><td>global comments</td></tr>
 <tr><td><div style="color:#2fc584">!bass</div></td><td>local comments</td></tr>
@@ -119,6 +123,8 @@ table.colorlist tr td, table.colorlist td {
 <table style="width:100%; padding:0; margin:0;" class="colorlist dark">
 <tr><th><div>example</div></th><th>meaning</th></tr>
 <tr><td><div style="color:orange">!LO:N:vis=0</div></td><td>layout commands</td></tr>
+<tr><td><div style="color:chartreuse">!!!filter:&nbsp;autobeam</div></td><td>filters</td></tr>
+<tr><td><div style="color:olive">!!!Xfilter:&nbsp;autobeam</div></td><td>used filters</td></tr>
 <tr><td><div style="color:gray; background:#1f454e;">=2</div></td><td>barlines</td></tr>
 <tr><td><div style="color:gray">.</div></td><td>null tokens</td></tr>
 <tr><td><div style="color:white">4E</div></td><td>data tokens</td></tr>
