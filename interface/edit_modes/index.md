@@ -71,7 +71,7 @@ When editing Humdrum files, their contents will be colored by syntactic function
 <tr><td><div style="color:gray; background:rgba(0, 0, 0, 0.06);">=2</div></td><td>barlines</td></tr>
 <tr><td><div style="color:gray">.</div></td><td>null tokens</td></tr>
 <tr><td><div style="color:black">4E</div></td><td>data tokens</td></tr>
-<tr><td><div style="background:#EEf3D5">4f</div></td><td>active cursor line</td></tr>
+<tr><td><div style="background:#EEf3D5">  </div></td><td>active cursor line</td></tr>
 </table>
 </td></tr>
 </table>
@@ -128,7 +128,7 @@ table.colorlist tr td, table.colorlist td {
 <tr><td><div style="color:gray; background:#1f454e;">=2</div></td><td>barlines</td></tr>
 <tr><td><div style="color:gray">.</div></td><td>null tokens</td></tr>
 <tr><td><div style="color:white">4E</div></td><td>data tokens</td></tr>
-<tr><td><div style="color:white; background:#194a40">4f</div></td><td>active cursor line</td></tr>
+<tr><td><div style="color:white; background:#194a40">  </div></td><td>active cursor line</td></tr>
 </table>
 </td></tr>
 </table>
