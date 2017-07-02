@@ -894,16 +894,31 @@ If a dissonance does not correspond to any identifiable categories (and would no
 	tabsize="10"
 %}
 <script type="application/x-humdrum" id="para">**kern	**kern
-*I'B	*I'A
-*clefF4	*clefGv2
-*k[b-]	*k[b-]
-*M3/1	*M3/1
-*met(C|3)	*met(C|3)
-*-	*-
+**kern	**kern	**kern
+*clefGv2	*clefGv2	*clefG2
+*k[]	*k[]	*k[]
+*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)
+=20-	=20-	=20-
+1G	1.g	2ee\
+.	.	2.dd\
+1B	.	.
+.	.	4cc\
+.	2f\	4b\
+.	.	4a/
+=21	=21	=21
+2c\	2e\	2g/
+4B\	4d\	1cc
+4A/	4c\	.
+1G	1d	.
+.	.	2b\
+=22	=22	=22
+1r	[0c	0cc
+[1g	.	.
+=	=	=
+*-	*-	*-
 !!!filter: dissonant
 </script>
-
-
 
 
 ### Unknown dissonances (Z, z) ###
