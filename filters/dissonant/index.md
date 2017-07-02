@@ -884,7 +884,7 @@ of this dissonance type are labeled with a `B` and a `b` repsectfully.
 
 ### Parallel accompaniment (L, l) ###
 
-If a dissonance does not correspond to any identifiable categories (and would normally receive a `Z` label), and moves in parallel motion by another voice that is an idenfiable dissonance, this parallel accompaniment is given an `L` if it is approached by step up, or an `l` if it is approached by step down. This type of dissonance often occurs in tandem with a chanson idiom such as in the example below taken from XXXX. While the voices are still analyzed in a pairwise fashion, since this dissonance type requires a second voice to be in an identifiable dissonance condition with a third voice, this type is only identified in pieces with three or more voices such as in the following example from Lannoy's [Cela sans plus](http://verovio.humdrum.org/?k=ey&filter=dissonant&file=jrp:Jos2704).
+If a dissonance does not correspond to any identifiable categories (and would normally receive a `Z` label), and moves in parallel motion by another voice that is an idenfiable dissonance, this parallel accompaniment is given an `L` if it is approached by step up, or an `l` if it is approached by step down. This type of dissonance often occurs in tandem with a chanson idiom such as in the example below taken from Lannoy's [Cela sans plus](http://verovio.humdrum.org/?k=ey&filter=dissonant&file=jrp:Jos2704). While the voices are still analyzed in a pairwise fashion, since this dissonance type requires a second voice to be in an identifiable dissonance condition with a third voice, this type is only identified in pieces with three or more voices.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -913,8 +913,8 @@ If a dissonance does not correspond to any identifiable categories (and would no
 1G	1d	.
 .	.	2b\
 =22	=22	=22
-1r	[0c	0cc
-[1g	.	.
+1r	0c	0cc
+1g	.	.
 =	=	=
 *-	*-	*-
 !!!filter: dissonant
@@ -939,11 +939,11 @@ When a note is only dissonant against known dissonance types, it receives a `Y` 
 *M2/1	*M2/1	*M2/1	*M2/1	*M2/1	*M2/1
 *met(C|)	*met(C|)	*met(C|)	*met(C|)	*met(C|)	*met(C|)
 =29-	=29-	=29-	=29-	=29-	=29-
-1D	0F	1.d	4A/]	1A	2f/]
+1D	0F	1.d	4A/	1A	2f/
 .	.	.	4G/	.	.
 .	.	.	4F/	.	4g/
 .	.	.	4E/	.	4a/
-1BB-	.	.	1D	1r	[1b-
+1BB-	.	.	1D	1r	1b-
 .	.	2d\	.	.	.
 =	=	=	=	=	=
 *-	*-	*-	*-	*-	*-
