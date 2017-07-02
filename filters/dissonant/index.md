@@ -921,6 +921,36 @@ If a dissonance does not correspond to any identifiable categories (and would no
 </script>
 
 
+### Only against known dissonance (Y, y) ###
+
+When a note is only dissonant against known dissonance types, it receives a `Y` or `y` label depending on whether it was approached from below or from above respectively. This sort of scenario often occurs in thicker textures, such as in the example below with both a `Y` and a `y` taken from the Sanctus of the [Missa Pro defunctus](http://josquin.stanford.edu/work/?id=Jos0404) attributed to Josquin.
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="only"
+	scale="50"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="only">**kern	**kern
+**kern	**kern	**kern	**kern	**kern	**kern
+*clefF4	*clefGv2	*clefGv2	*clefGv2	*clefGv2	*clefG2
+*k[b-]	*k[b-]	*k[b-]	*k[b-]	*k[b-]	*k[b-]
+*M2/1	*M2/1	*M2/1	*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)	*met(C|)	*met(C|)	*met(C|)
+=29-	=29-	=29-	=29-	=29-	=29-
+1D	0F	1.d	4A/]	1A	2f/]
+.	.	.	4G/	.	.
+.	.	.	4F/	.	4g/
+.	.	.	4E/	.	4a/
+1BB-	.	.	1D	1r	[1b-
+.	.	2d\	.	.	.
+=	=	=	=	=	=
+*-	*-	*-	*-	*-	*-
+!!!filter: dissonant
+</script>
+
+
 ### Unknown dissonances (Z, z) ###
 
 Dissonances not assignable to one of the above categories are given
