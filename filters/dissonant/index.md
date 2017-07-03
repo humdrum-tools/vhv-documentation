@@ -901,7 +901,7 @@ in pieces with three or more voices.
 	humdrum-visible="false"
 	source="para"
 	scale="50"
-	pageWidth="1000"
+	pageWidth="1300"
 	tabsize="10"
 %}
 <script type="application/x-humdrum" id="para">**kern	**kern	**kern
