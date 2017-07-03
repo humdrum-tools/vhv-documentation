@@ -884,7 +884,18 @@ of this dissonance type are labeled with a `B` and a `b` repsectfully.
 
 ### Parallel accompaniment (L, l) ###
 
-If a dissonance does not correspond to any identifiable categories (and would normally receive a `Z` label), and moves in parallel motion by another voice that is an idenfiable dissonance, this parallel accompaniment is given an `L` if it is approached by step up, or an `l` if it is approached by step down. This type of dissonance often occurs in tandem with a chanson idiom such as in the example below taken from Lannoy's [Cela sans plus](http://verovio.humdrum.org/?k=ey&filter=dissonant&file=jrp:Jos2704). While the voices are still analyzed in a pairwise fashion, since this dissonance type requires a second voice to be in an identifiable dissonance condition with a third voice, this type is only identified in pieces with three or more voices.
+If a dissonance does not correspond to any identifiable categories
+(and would normally receive a `Z` label), and moves in parallel
+motion by another voice that is an idenfiable dissonance, this
+parallel accompaniment is given an `L` if it is approached by step
+up, or an `l` if it is approached by step down. This type of
+dissonance often occurs in tandem with a chanson idiom such as in
+the example below taken from Lannoy's [Cela sans
+plus](http://verovio.humdrum.org/?k=ey&filter=dissonant&file=jrp:Jos2704).
+While the voices are still analyzed in a pairwise fashion, since
+this dissonance type requires a second voice to be in an identifiable
+dissonance condition with a third voice, this type is only identified
+in pieces with three or more voices.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -893,8 +904,7 @@ If a dissonance does not correspond to any identifiable categories (and would no
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="para">**kern	**kern
-**kern	**kern	**kern
+<script type="application/x-humdrum" id="para">**kern	**kern	**kern
 *clefGv2	*clefGv2	*clefG2
 *k[]	*k[]	*k[]
 *M2/1	*M2/1	*M2/1
@@ -917,13 +927,18 @@ If a dissonance does not correspond to any identifiable categories (and would no
 1g	.	.
 =	=	=
 *-	*-	*-
-!!!filter: dissonant
-</script>
+!!!filter: dissonant</script>
 
 
 ### Only against known dissonance (Y, y) ###
 
-When a note is only dissonant against known dissonance types, it receives a `Y` or `y` label depending on whether it was approached from below or from above respectively. This sort of scenario often occurs in thicker textures, such as in the example below with both a `Y` and a `y` taken from the Sanctus of the [Missa Pro defunctus](http://josquin.stanford.edu/work/?id=Jos0404) attributed to Josquin.
+When a note is only dissonant against known dissonance types, it
+receives a `Y` or `y` label depending on whether it was approached
+from below or from above respectively. This sort of scenario often
+occurs in thicker textures, such as in the example below with both
+a `Y` and a `y` taken from the Sanctus of the [Missa Pro
+defunctus](http://josquin.stanford.edu/work/?id=Jos0404) attributed
+to Josquin.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -932,23 +947,21 @@ When a note is only dissonant against known dissonance types, it receives a `Y` 
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="only">**kern	**kern
-**kern	**kern	**kern	**kern	**kern	**kern
+<script type="application/x-humdrum" id="only">**kern	**kern	**kern	**kern	**kern	**kern
 *clefF4	*clefGv2	*clefGv2	*clefGv2	*clefGv2	*clefG2
 *k[b-]	*k[b-]	*k[b-]	*k[b-]	*k[b-]	*k[b-]
 *M2/1	*M2/1	*M2/1	*M2/1	*M2/1	*M2/1
 *met(C|)	*met(C|)	*met(C|)	*met(C|)	*met(C|)	*met(C|)
 =29-	=29-	=29-	=29-	=29-	=29-
-1D	0F	1.d	4A/	1A	2f/
-.	.	.	4G/	.	.
-.	.	.	4F/	.	4g/
-.	.	.	4E/	.	4a/
+1D	0F	1.d	4A	1A	2f
+.	.	.	4G	.	.
+.	.	.	4F	.	4g
+.	.	.	4E	.	4a
 1BB-	.	.	1D	1r	1b-
-.	.	2d\	.	.	.
+.	.	2d	.	.	.
 =	=	=	=	=	=
 *-	*-	*-	*-	*-	*-
-!!!filter: dissonant
-</script>
+!!!filter: dissonant</script>
 
 
 ### Unknown dissonances (Z, z) ###
