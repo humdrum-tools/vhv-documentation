@@ -1109,6 +1109,8 @@ Morgan, Alexander. "[Renaissance Interval-Succession Theory: Treatises and Analy
 
 Morris, R. O. Contrapuntal Technique. Oxford: Oxford University Press, 1922.
 
+Patrick, P. H. & Strickler, K. (1978) "A Computer-Assisted Study of Dissonance in the Masses of Josquin Desprez." Computers and the Humanities. 12 (4), 341&ndash;364.
+
 Pontio, Pietro. Ragionamento di musica. Compiled by Suzanne Clercx. Kassel: Bärenreiter, 1959. Originally published Parma: 1588.
 
 ———. [Ragionamento di musica](http://www.ums3323.paris-sorbonne.fr/TREMIR/TReMiR_Pontio/R0_start.htm). Electronic version published by Dupraz, Christophe. Traités Musicaux Romans, 2013. Accessed August 14, 2016.
