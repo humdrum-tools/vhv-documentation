@@ -589,14 +589,14 @@ Sometimes the preparation of a suspension is itself dissonant like
 in the example below from the Kyrie in Mouton's 
 [Missa Da pacem](http://josquin.stanford.edu/work/?id=Mou1020a).
 This is often referred to as a *fake suspension* though would
-more accurately be called a fake preparation. It is approached by
+more accurately be called a fake preparation to an otherwise normal suspension. It is usually approached by
 step up or down and remains in place or is restruck to become the
 dissonant portion of a suspension. Since we know the suspension
-will generally resolve down by step, we use an uppercase `F` or
+will resolve down by step, we use an uppercase `F` or
 lowercase `f` to convey whether the dissonance was approached by
-step up or down respectfully. Because this happens over a pedal,
+leap or by step respectfully. Because this happens over a pedal,
 and an agent is also needed for the suspension, this is generally
-only found in three or more voices, though could happen in two voice
+only found in three or more voices, though could happen in two voices
 if the pedal tone were rearticulated at the moment it serves as the
 agent of the suspension.
 
