@@ -689,7 +689,7 @@ In some cases a suspension seems to be missing an attacked agent.
 This figure consists of a voice moving up or down by step, then
 sustaining over the following beat, and then resolving down by step
 all over a pedal tone. This dissonance is labeled `M` or `m` based
-on whether the dissonant note is approached by step up or step down
+on whether the dissonant note is approached by leap or by step
 respectively. The example below is taken from Obrecht's motet [Factor
 Orbis](http://josquin.stanford.edu/work/?id=Obr2010).
 
