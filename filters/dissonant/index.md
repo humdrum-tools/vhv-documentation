@@ -189,6 +189,8 @@ categories that do not distinguish melodic directions.
 <tr><td> C </td><td> ascending short nota cambiata</td>         <td> c </td>  <td> descending short nota cambiata</td>          </tr>
 <tr><td> K </td><td> ascending long nota cambiata</td>          <td> k </td>  <td> descending long nota cambiata</td>           </tr>
 <tr><td> A </td><td> rising anticipation</td>                   <td> a </td>  <td> descending anticipation</td>                 </tr>
+<tr><td> I </td><td> incomplete anterior upper neighbor</td>    <td> i </td>  <td> incomplete anterior lower neighbor</td>      </tr>
+<tr><td> J </td><td> incomplete posterior upper neighbor</td>   <td> j </td>  <td> incomplete posterior lower neighbor</td>     </tr>
 <tr><td> S </td><td> ternary suspension</td>                    <td> s </td>  <td> binary suspension</td>                       </tr>
 <tr><td> G </td><td> ternary suspension agent</td>              <td> g </td>  <td> binary suspension agent</td>                 </tr>
 <tr><td> F </td><td> fake susp. approached by step up</td>      <td> f </td>  <td> fake susp. approached by step down</td>      </tr>
@@ -196,6 +198,9 @@ categories that do not distinguish melodic directions.
 <tr><td> M </td><td> suspension missing agent approached by step up </td> <td> m </td>  <td> suspension missing agent approached by step down </td> </tr>
 <tr><td> Q </td><td> dissonant 3rd quarter rising passint tone</td>  <td> q </td>  <td> dissonant 3rd quarter falling passing tone</td>      </tr>
 <tr><td> B </td><td> dissonant 3rd quarter upper neighbor</td>  <td> b </td>  <td> dissonant 3rd quarter lower neighbor</td>    </tr>
+<tr><td> T </td><td> appoggiature approached from below</td>    <td> t </td>  <td> appoggiatura approached from above</td>      </tr>
+<tr><td> V </td><td> ascending accented passing tone</td>       <td> v </td>  <td> descending accented passing tone</td>        </tr>
+<tr><td> W </td><td> accented upper neighbor</td>               <td> w </td>  <td> accented lower neighbor</td>                 </tr>
 <tr><td>   </td><td> (no ascending form of chanson idiom)</td>  <td> h </td>  <td> chanson idiom</td>                           </tr>
 <tr><td> Z </td><td> unclassified dissonance, 2nd or 7th interval</td> <td> z </td ><td> unclassified dissonance, 4th interval</td></tr>
 </table>
@@ -207,13 +212,16 @@ letter:
 <table class="dense twocol">
 <tr><th>Label</th><th> Meaning</th>                             <th>Label</th><th> Meaning</th>                                 </tr>
 <tr><td> P </td><td> passing tone</td>                          <td> F </td><td> fake suspension</td></tr>
-<tr><td> N </td><td> neighbor</td>                              <td> O </td><td> suspension ornament</td></tr>
+<tr><td> N </td><td> neighbor tone</td>                         <td> O </td><td> suspension ornament</td></tr>
 <tr><td> E </td><td> &eacute;chapp&eacute;e</td>                <td> R </td><td> suspension repeated note</td></tr>
 <tr><td> C </td><td> short nota cambiata</td>                   <td> M </td><td> supension missing agent</td></tr>
 <tr><td> K </td><td> long nota cambiata</td>                    <td> Q </td><td> dissonant third quarter passing tone</td></tr>
 <tr><td> A </td><td> anticipation</td>                          <td> B </td><td> dissonant 3rd quarter neighbor</td></tr>
-<tr><td> S </td><td> suspension</td>                            <td> H </td><td> chanson idiom</td></tr>
-<tr><td> G </td><td> suspension agent</td>                      <td> Z </td><td> unclassified dissonance</td></tr>
+<tr><td> T </td><td> appoggiatura</td>                          <td> V </td><td> accented passing tone</td></tr>
+<tr><td> I </td><td> incomplete anterior neighbor</td>          <td> W </td><td> accented neighbor tone</td></tr>
+<tr><td> J </td><td> incomplete posterior neighbor</td>         <td> H </td><td> chanson idiom</td></tr>
+<tr><td> S </td><td> suspension</td>                            <td> Z </td><td> unclassified dissonance</td></tr>
+<tr><td> G </td><td> suspension agent</td>                      <td>   </td><td>  </td></tr>
 </table>
 
 Examples of each dissonant type are given below.  Note that the
