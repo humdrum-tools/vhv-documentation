@@ -189,8 +189,8 @@ categories that do not distinguish melodic directions.
 <tr><td> C </td><td> ascending short nota cambiata</td>         <td> c </td>  <td> descending short nota cambiata</td>          </tr>
 <tr><td> K </td><td> ascending long nota cambiata</td>          <td> k </td>  <td> descending long nota cambiata</td>           </tr>
 <tr><td> A </td><td> rising anticipation</td>                   <td> a </td>  <td> descending anticipation</td>                 </tr>
-<tr><td> I </td><td> incomplete anterior upper neighbor</td>    <td> i </td>  <td> incomplete anterior lower neighbor</td>      </tr>
-<tr><td> J </td><td> incomplete posterior upper neighbor</td>   <td> j </td>  <td> incomplete posterior lower neighbor</td>     </tr>
+<tr><td> I </td><td> reverse ascending nota cambiata</td>       <td> i </td>  <td> reverse descending nota cambiata</td>        </tr>
+<tr><td> J </td><td> reverse upper &eacute;chapp&eacute;e</td>  <td> j </td>  <td> reverse lower &eacute;chapp&eacute;e</td>    </tr>
 <tr><td> S </td><td> ternary suspension</td>                    <td> s </td>  <td> binary suspension</td>                       </tr>
 <tr><td> G </td><td> ternary suspension agent</td>              <td> g </td>  <td> binary suspension agent</td>                 </tr>
 <tr><td> F </td><td> fake susp. approached by step up</td>      <td> f </td>  <td> fake susp. approached by step down</td>      </tr>
@@ -397,6 +397,8 @@ as in the example below.
 !!!filter: dissonant
 </script>
 
+
+
 ###  Anticipations (A, a) ###
 
 As demonstrated in the example below, anticipations that are
@@ -413,6 +415,62 @@ and after it.
 	tabsize="10"
 %}
 <script type="application/x-humdrum" id="ant">**kern	**kern
+*clefG2	*clefG2
+*M4/2	*M4/2
+4g	2ee
+4f	.
+1f	4dd
+.	4cc
+.	4dd
+.	4ee
+2e	2ee
+=	=
+*-	*-
+!!!filter: dissonant
+</script>
+
+
+
+###  Reverse nota cambiatas (I, i) ###
+
+A "reverse" nota cambiata is a weak dissonance approached by leap and resolved down by step in the same direction.  It is labeled with an `I` or an `i` for its ascending and descending versions respectively. These are relatively rare in the Renaissance. This example from XXXX includes an incomplete anterior lower neighbor, labeled with an `i`.
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="rnc"
+	scale="50"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="rnc">**kern	**kern
+*clefG2	*clefG2
+*M4/2	*M4/2
+4g	2ee
+4f	.
+1f	4dd
+.	4cc
+.	4dd
+.	4ee
+2e	2ee
+=	=
+*-	*-
+!!!filter: dissonant
+</script>
+
+
+
+###  Reverse &eacute;chapp&eacute;es (J, j) ###
+
+The "reverse" &eacute;chapp&eacute;e is a weak dissonance that is approached by leap and then resolved by step in the opposite direction. It is labeled `J` when that initial leap is up, and `j` when it is down, similar to neighbor tones.
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="reve"
+	scale="50"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="reve">**kern	**kern
 *clefG2	*clefG2
 *M4/2	*M4/2
 4g	2ee
