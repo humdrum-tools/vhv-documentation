@@ -948,6 +948,109 @@ of this dissonance type are labeled with a `B` and a `b` repsectfully.
 !!!filter: dissonant
 </script>
 
+
+
+### Accented passing tones (V, v) ###
+
+Accented passing tones are metrically strong with respect to the notes before and after them, and last no longer than the following note. They are approached and left by step in the same direction and labeled `V` when those steps are up, and `v` when those steps are down. They will get detected even if they are decorated with an anticipation immediately before. This dissonance definition could correspond to dissonant third quarter passing tones, and also the chanson idiom dissonance type. An accented passing tone will only get labeled as such if it does not meet the stricter requirements for any other dissonance type.
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="accp"
+	scale="50"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="accp">**kern	**kern
+*I'B	*I'A
+*clefF4	*clefGv2
+*k[b-]	*k[b-]
+*M3/1	*M3/1
+*met(C|3)	*met(C|3)
+=183-	=183-
+1C	1G
+1C	1.G
+1C	.
+.	4F/
+.	4G/
+=	=
+*-	*-
+!!!filter: dissonant
+</script>
+
+
+
+### Accented neighbor tones (W/ w) ###
+
+Accented neighbor tones are metrically strong with respect to the notes before and after them, and last no longer than the following note. They are approached and left by step in opposite directions and labeled `W` when approached by step up, and `w` when approached by step down. They will get detected even if they are decorated with an anticipation immediately before. This dissonance definition also matches that of dissonant third quarter neighbor tones, and potentially the `L` and `Y` types. An accented neighbor tone will only get labeled as such if it does not meet the stricter requirements for any other dissonance type.
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="accn"
+	scale="50"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="accn">**kern	**kern
+*I'B	*I'A
+*clefF4	*clefGv2
+*k[b-]	*k[b-]
+*M3/1	*M3/1
+*met(C|3)	*met(C|3)
+=183-	=183-
+1C	1G
+1C	1.G
+1C	.
+.	4F/
+.	4G/
+=	=
+*-	*-
+!!!filter: dissonant
+</script>
+
+
+
+### Dissonant third quarter neighbor (B, b) ###
+
+This dissonance is the neighbor-tone version of the dissonant third
+quarter passing tone. The example below is taken from the altus and
+bassus parts from the Credo of Josquin's [Missa La belle se
+siet](http://josquin.stanford.edu/work/?id=Jos1303c) (NJE&nbsp;13.3).
+
+The dissonance type consists of a neighbor tone in the metric
+position of a weak minim (half-note) that lasts only a quarter note
+in duration. Although we detect both upper- and lower-neighbor
+varieties of this dissonance type, like regular neighbor tones, the
+dissonant third quarter lower neighbor is by far more common than
+the upper-neighbor version. The upper- and lower-neighbor versions
+of this dissonance type are labeled with a `B` and a `b` repsectfully.
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="d3qn"
+	scale="50"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="d3qn">**kern	**kern
+*I'B	*I'A
+*clefF4	*clefGv2
+*k[b-]	*k[b-]
+*M3/1	*M3/1
+*met(C|3)	*met(C|3)
+=183-	=183-
+1C	1G
+1C	1.G
+1C	.
+.	4F/
+.	4G/
+=	=
+*-	*-
+!!!filter: dissonant
+</script>
+
+
+
 ### Parallel accompaniment (L, l) ###
 
 If a dissonance does not correspond to any identifiable categories
