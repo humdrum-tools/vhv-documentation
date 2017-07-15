@@ -941,8 +941,8 @@ of this dissonance type are labeled with a `B` and a `b` repsectfully.
 1C	1G
 1C	1.G
 1C	.
-.	4F/
-.	4G/
+.	4F
+.	4G
 =	=
 *-	*-
 !!!filter: dissonant
@@ -971,8 +971,8 @@ An appoggiatura is a dissonance that is relatively accented with respect to the 
 1C	1G
 1C	1.G
 1C	.
-.	4F/
-.	4G/
+.	4F
+.	4G
 =	=
 *-	*-
 !!!filter: dissonant
@@ -1001,8 +1001,8 @@ Accented passing tones are metrically strong with respect to the notes before an
 1C	1G
 1C	1.G
 1C	.
-.	4F/
-.	4G/
+.	4F
+.	4G
 =	=
 *-	*-
 !!!filter: dissonant
@@ -1010,7 +1010,7 @@ Accented passing tones are metrically strong with respect to the notes before an
 
 
 
-### Accented neighbor tones (W/ w) ###
+### Accented neighbor tones (W, w) ###
 
 Accented neighbor tones are metrically strong with respect to the notes before and after them, and last no longer than the following note. They are approached and left by step in opposite directions and labeled `W` when approached by step up, and `w` when approached by step down. They will get detected even if they are decorated with an anticipation immediately before. This dissonance definition also matches that of dissonant third quarter neighbor tones, and potentially the `L` and `Y` types. An accented neighbor tone will only get labeled as such if it does not meet the stricter requirements for any other dissonance type.
 
@@ -1068,18 +1068,18 @@ in pieces with three or more voices.
 *M2/1	*M2/1	*M2/1
 *met(C|)	*met(C|)	*met(C|)
 =20-	=20-	=20-
-1G	1.g	2ee\
-.	.	2.dd\
+1G	1.g	2ee
+.	.	2.dd
 1B	.	.
-.	.	4cc\
-.	2f\	4b\
-.	.	4a/
+.	.	4cc
+.	2f	4b
+.	.	4a
 =21	=21	=21
-2c\	2e\	2g/
-4B\	4d\	1cc
-4A/	4c\	.
+2c	2e	2g
+4B	4d	1cc
+4A	4c	.
 1G	1d	.
-.	.	2b\
+.	.	2b
 =22	=22	=22
 1r	0c	0cc
 1g	.	.
