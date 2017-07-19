@@ -1,6 +1,6 @@
 ---
 title: dissonant filter
-author: ["Alex Morgan", "Craig Sapp"]
+author: ["Alexander Morgan", "Craig Sapp"]
 creation_date: 29 May 2017
 last_updated: 10 Jun 2017
 tags: [all, filters]
@@ -201,7 +201,7 @@ categories that do not distinguish melodic directions.
 <tr><td> T </td><td> appoggiature approached from below</td>    <td> t </td>  <td> appoggiatura approached from above</td>      </tr>
 <tr><td> V </td><td> ascending accented passing tone</td>       <td> v </td>  <td> descending accented passing tone</td>        </tr>
 <tr><td> W </td><td> accented upper neighbor</td>               <td> w </td>  <td> accented lower neighbor</td>                 </tr>
-<tr><td>   </td><td> (no ascending form of chanson idiom)</td>  <td> h </td>  <td> chanson idiom</td>                           </tr>
+<tr><td> x </td><td> resolution against suspension dissonance</td>  <td> h </td>  <td> chanson idiom</td>                       </tr>
 <tr><td> Z </td><td> unclassified dissonance, 2nd or 7th interval</td> <td> z </td ><td> unclassified dissonance, 4th interval</td></tr>
 </table>
 
@@ -220,8 +220,8 @@ letter:
 <tr><td> T </td><td> appoggiatura</td>                          <td> V </td><td> accented passing tone</td></tr>
 <tr><td> I </td><td> incomplete anterior neighbor</td>          <td> W </td><td> accented neighbor tone</td></tr>
 <tr><td> J </td><td> incomplete posterior neighbor</td>         <td> H </td><td> chanson idiom</td></tr>
-<tr><td> S </td><td> suspension</td>                            <td> Z </td><td> unclassified dissonance</td></tr>
-<tr><td> G </td><td> suspension agent</td>                      <td>   </td><td>  </td></tr>
+<tr><td> S </td><td> suspension</td>                            <td> X </td><td> resolution against suspension dissonance</td></tr>
+<tr><td> G </td><td> suspension agent</td>                      <td> Z </td><td> unclassified dissonance</td></tr>
 </table>
 
 Examples of each dissonant type are given below.  Note that the
@@ -1037,6 +1037,54 @@ Accented neighbor tones are metrically strong with respect to the notes before a
 *-	*-
 !!!filter: dissonant
 </script>
+
+
+
+### Resolution against suspension dissonance (X, x) ###
+
+When a voice sounds the note of resolution of a suspension in a descending line against the dissonant portion of the suspension in another voice, it is labeled with an `x`. There is no ascending form of this dissonance so an uppercase `X` is only used if the -u setting is invoked. This dissonance necessarily only occurs when three or more voices are present, because in addition to the dissonance itself, two other voices must form a suspension. It often occurs in even thicker textures though, such the excerpt below taken from the motet [Victime paschali laudes](http://josquin.stanford.edu/work/?id=Jos2207) by Brunet.
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="resx"
+	scale="50"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="resx">**kern	**kern	**kern	**kern	**kern	**kern
+*staff6	*staff5	*staff4	*staff3	*staff2	*staff1
+*Ivox	*Ivox	*Ivox	*Ivox	*Ivox	*Ivox
+*I"Bassus2	*I"Bassus1	*I"Tenor	*I"Altus2	*I"Altus1	*I"Superius
+*I'B2	*I'B1	*I'T	*I'A2	*I'A1	*I'S
+*clefF4	*clefF4	*clefGv2	*clefGv2	*clefGv2	*clefG2
+*k[b-]	*k[b-]	*k[b-]	*k[b-]	*k[b-]	*k[b-]
+*M2/1	*M2/1	*M2/1	*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)	*met(C|)	*met(C|)	*met(C|)
+=188	=188	=188	=188	=188	=188
+2D\	1D	2r	2.f\	1A	2f/
+2.F\	.	2d\	.	.	4d/
+.	.	.	4e\	.	4e/
+.	2r	2A/	4d\	2.d\	4f/
+4E\	.	.	4c\	.	4g/
+2D\	2D\	[2d\	2f\	.	[2a/
+.	.	.	.	4c\	.
+=189	=189	=189	=189	=189	=189
+2G\	1E	4d\]	2g\	2B-\	4a/]
+.	.	4B-\	.	.	4g/
+2C/	.	2c\	2e\	2G/	1g
+2.F\	1D	1d	4f\	1A	.
+.	.	.	4e\	.	.
+.	.	.	4d\	.	2f#i/
+4E\	.	.	4c\	.	.
+=190	=190	=190	=190	=190	=190
+2D\	2GG/	0d	1B-	[0Gl	[0gl
+2.G\	1G	.	.	.	.
+.	.	.	2r	.	.
+4F\	.	.	.	.	.
+4E-i\	2F\	.	2B-\	.	.
+4D\	.	.	.	.	.
+*-	*-	*-	*-	*-	*-
+!!!filter: dissonant</script>
 
 
 
