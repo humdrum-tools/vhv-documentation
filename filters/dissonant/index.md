@@ -185,6 +185,7 @@ categories that do not distinguish melodic directions.
 <tr><th>Label</th><th> Meaning</th>                             <th>Label</th><th> Meaning</th>                                 </tr>
 <tr><td> P </td><td> rising passing tone</td>                   <td> p </td>  <td> downward passing tone</td>                   </tr>
 <tr><td> N </td><td> upper neighbor</td>                        <td> n </td>  <td> lower neighbor</td>                          </tr>
+<tr><td> D </td><td> double neighbor upper then lower</td>      <td> d </td>  <td> double neighbor lower then upper</td>        </tr>
 <tr><td> E </td><td> upper &eacute;chapp&eacute;e</td>          <td> e </td>  <td> lower &eacute;chapp&eacute;e</td>            </tr>
 <tr><td> C </td><td> ascending short nota cambiata</td>         <td> c </td>  <td> descending short nota cambiata</td>          </tr>
 <tr><td> K </td><td> ascending long nota cambiata</td>          <td> k </td>  <td> descending long nota cambiata</td>           </tr>
@@ -194,14 +195,14 @@ categories that do not distinguish melodic directions.
 <tr><td> S </td><td> ternary suspension</td>                    <td> s </td>  <td> binary suspension</td>                       </tr>
 <tr><td> G </td><td> ternary suspension agent</td>              <td> g </td>  <td> binary suspension agent</td>                 </tr>
 <tr><td> F </td><td> fake susp. approached by step up</td>      <td> f </td>  <td> fake susp. approached by step down</td>      </tr>
-<tr><td> o </td><td> suspension ornament</td>                   <td> r </td>  <td> suspension repeated note</td>                </tr>
+<tr><td> x </td><td> resolution against suspension dissonance</td><td> r </td>  <td> suspension repeated note</td>              </tr>
 <tr><td> M </td><td> suspension missing agent approached by step up </td> <td> m </td>  <td> suspension missing agent approached by step down </td> </tr>
 <tr><td> Q </td><td> dissonant 3rd quarter rising passint tone</td>  <td> q </td>  <td> dissonant 3rd quarter falling passing tone</td>      </tr>
 <tr><td> B </td><td> dissonant 3rd quarter upper neighbor</td>  <td> b </td>  <td> dissonant 3rd quarter lower neighbor</td>    </tr>
 <tr><td> T </td><td> appoggiature approached from below</td>    <td> t </td>  <td> appoggiatura approached from above</td>      </tr>
 <tr><td> V </td><td> ascending accented passing tone</td>       <td> v </td>  <td> descending accented passing tone</td>        </tr>
 <tr><td> W </td><td> accented upper neighbor</td>               <td> w </td>  <td> accented lower neighbor</td>                 </tr>
-<tr><td> x </td><td> resolution against suspension dissonance</td>  <td> h </td>  <td> chanson idiom</td>                       </tr>
+<tr><td>   </td><td> (no ascending form of chanson idiom)</td>  <td> h </td>  <td> chanson idiom</td>                       </tr>
 <tr><td> Z </td><td> unclassified dissonance, 2nd or 7th interval</td> <td> z </td ><td> unclassified dissonance, 4th interval</td></tr>
 </table>
 
@@ -212,7 +213,7 @@ letter:
 <table class="dense twocol">
 <tr><th>Label</th><th> Meaning</th>                             <th>Label</th><th> Meaning</th>                                 </tr>
 <tr><td> P </td><td> passing tone</td>                          <td> F </td><td> fake suspension</td></tr>
-<tr><td> N </td><td> neighbor tone</td>                         <td> O </td><td> suspension ornament</td></tr>
+<tr><td> N </td><td> neighbor tone</td>                         <td> D </td><td> double neighbor</td></tr>
 <tr><td> E </td><td> &eacute;chapp&eacute;e</td>                <td> R </td><td> suspension repeated note</td></tr>
 <tr><td> C </td><td> short nota cambiata</td>                   <td> M </td><td> supension missing agent</td></tr>
 <tr><td> K </td><td> long nota cambiata</td>                    <td> Q </td><td> dissonant third quarter passing tone</td></tr>
@@ -289,6 +290,55 @@ neighbor tones are approached and left by step in opposite directions.
 4EE	4b
 =	=
 *-	*-
+!!!filter: dissonant
+</script>
+
+
+
+### Double neighbors (D, d) ###
+
+In a double neighbor figure, a primary note is ornamented by both an upper and lower neighbor before returning to the primary note. Both dissonant notes are given the same label based on which type of dissonant neighbor comes first, `D` if the figure begins with an upper neighbor, and `d` if it begins with a lower neighbor. While the first dissonance must be relatively weak metrically compared to the primary note, the second of the two double neighbors can be accented, such as in this excerpt from the chanson attributed to Josquin [Mala se nea](http://josquin.stanford.edu/work/?id=Jos2915).
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="dbln"
+	scale="50"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="dbln">
+**kern	**kern
+*Ivox	*Ivox
+*I"Bassus	*I"Superius
+*I'B	*I'S
+*clefF4		*clefG2
+*k[b-]	*k[b-]
+*M2/1	*M2/1
+*met(C|)	*met(C|)
+=50	=50
+1C	2g/
+.	.
+.	2g/
+.	.
+[1FF	2a/
+.	2b-\
+=51	=51
+0FF]	2.cc\
+.	.
+.	4b-\
+.	4a/
+.	4g/
+.	4b-\
+.	4a/
+=52	=52
+2BB-/	0b-
+4BB-/	.
+4BB-/	.
+2BB-/	.
+.	.
+2BB-/	.
+==	==
+*_	*_
 !!!filter: dissonant
 </script>
 
