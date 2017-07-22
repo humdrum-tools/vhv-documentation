@@ -306,12 +306,11 @@ In a double neighbor figure, a primary note is ornamented by both an upper and l
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="dbln">
-**kern	**kern
+<script type="application/x-humdrum" id="dbln">**kern	**kern
 *Ivox	*Ivox
 *I"Bassus	*I"Superius
 *I'B	*I'S
-*clefF4		*clefG2
+*clefF4	*clefG2
 *k[b-]	*k[b-]
 *M2/1	*M2/1
 *met(C|)	*met(C|)
