@@ -1113,14 +1113,6 @@ When a voice sounds the note of resolution of a suspension in a descending line 
 *k[b-]	*k[b-]	*k[b-]	*k[b-]	*k[b-]	*k[b-]
 *M2/1	*M2/1	*M2/1	*M2/1	*M2/1	*M2/1
 *met(C|)	*met(C|)	*met(C|)	*met(C|)	*met(C|)	*met(C|)
-=188	=188	=188	=188	=188	=188
-2D\	1D	2r	2.f\	1A	2f/
-2.F\	.	2d\	.	.	4d/
-.	.	.	4e\	.	4e/
-.	2r	2A/	4d\	2.d\	4f/
-4E\	.	.	4c\	.	4g/
-2D\	2D\	[2d\	2f\	.	[2a/
-.	.	.	.	4c\	.
 =189	=189	=189	=189	=189	=189
 2G\	1E	4d\]	2g\	2B-\	4a/]
 .	.	4B-\	.	.	4g/
