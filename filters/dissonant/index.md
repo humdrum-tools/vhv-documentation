@@ -619,17 +619,9 @@ Consonant suspensions are ignored by the dissonant tool.
 
 
 
-###  Suspension ornaments (r, o) ###
+### Rearticulated suspension (r) ###
 
-Two types of dissonant suspension ornaments are detected by the
-dissonant tool, both of which occur during what would normally be
-the dissonant phase of the suspension. 
-
-
-
-#### Rearticulated suspension (r) ####
-
-The first type of ornamentation consists of a simple rearticulation
+The most common type of suspension ornamentation in the Renaissance is to leap down a third from the suspened dissonance before resolving both dissonances with a step up. This type of ornament falls under the larger category of reverse &eacute;chapp&eacute;es (see above). Another type of ornamentation consists of a simple rearticulation
 of the suspended note before it resolves down by step. The reartuclated
 note is generally a semi-minim (quarter note) and is labeled in the
 analyses with an `r`. While this figuration (shown below) does occur
@@ -653,41 +645,6 @@ of style change over time.
 2d	2.f
 1c	.
 .	4f
-.	2e
-=	=
-1d	2f
-.	2r
-2e	1cc
-2f	.
-=	=
-*-	*-
-!!!filter: dissonant
-</script>
-
-
-
-#### Third-ornamented (o) suspension ####
-
-A second type of suspension ornamentation occurs when the suspended
-note skips a third down before resolving up by step to the note
-that would be the standard resolution of the suspension. This is
-labeled with an `o`, as shown below.
-
-{% include verovio.html
-	humdrum-visible="false"
-	source="osus"
-	scale="50"
-	pageWidth="1400"
-	spacingLinear="0.1"
-	tabsize="10"
-%}
-<script type="application/x-humdrum" id="osus">**kern	**kern
-*clefGv2	*clefG2
-*M4/2	*M4/2
-2e	2g
-2d	2.f
-1c	.
-.	4d
 .	2e
 =	=
 1d	2f
