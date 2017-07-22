@@ -483,7 +483,7 @@ and after it.
 
 ###  Reverse nota cambiatas (I, i) ###
 
-A "reverse" nota cambiata is a weak dissonance approached by leap and resolved down by step in the same direction.  It is labeled with an `I` or an `i` for its ascending and descending versions respectively. These are relatively rare in the Renaissance. This example from XXXX includes an incomplete anterior lower neighbor, labeled with an `i`.
+A "reverse" nota cambiata is a weak dissonance approached by leap and resolved down by step in the same direction.  It is labeled with an `I` or an `i` for its ascending and descending versions respectively. These are relatively rare in the Renaissance. This example from the Gloria Ockeghem's [Missa Fors seulement](http://josquin.stanford.edu/work/?id=Ock1007) includes an incomplete anterior lower neighbor, labeled with an `i`.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -492,18 +492,21 @@ A "reverse" nota cambiata is a weak dissonance approached by leap and resolved d
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="rnc">**kern	**kern
-*clefG2	*clefG2
-*M4/2	*M4/2
-4g	2ee
-4f	.
-1f	4dd
-.	4cc
-.	4dd
-.	4ee
-2e	2ee
-=	=
-*-	*-
+<script type="application/x-humdrum" id="rnc">**kern  **kern
+*clefF4 *clefGv2
+*k[]    *k[]
+*M3/1   *M3/1
+*met(O) *met(O)
+=8-     =8-
+2.D\    1A
+4BB/    .
+1AA     1A
+.       .
+1F      1A
+.       .
+.       .
+=       =
+*-      *-
 !!!filter: dissonant
 </script>
 
