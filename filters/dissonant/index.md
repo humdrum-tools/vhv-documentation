@@ -1055,7 +1055,7 @@ When a voice sounds the note of resolution of a suspension in a descending line 
 	humdrum-visible="false"
 	source="resx"
 	scale="50"
-	pageWidth="1000"
+	pageWidth="1200"
 	tabsize="10"
 %}
 <script type="application/x-humdrum" id="resx">**kern	**kern	**kern	**kern	**kern	**kern
