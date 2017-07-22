@@ -199,7 +199,7 @@ categories that do not distinguish melodic directions.
 <tr><td> M </td><td> suspension missing agent approached by step up </td> <td> m </td>  <td> suspension missing agent approached by step down </td> </tr>
 <tr><td> Q </td><td> dissonant 3rd quarter rising passint tone</td>  <td> q </td>  <td> dissonant 3rd quarter falling passing tone</td>      </tr>
 <tr><td> B </td><td> dissonant 3rd quarter upper neighbor</td>  <td> b </td>  <td> dissonant 3rd quarter lower neighbor</td>    </tr>
-<tr><td> T </td><td> appoggiature approached from below</td>    <td> t </td>  <td> appoggiatura approached from above</td>      </tr>
+<tr><td> T </td><td> appoggiatura approached from below</td>    <td> t </td>  <td> appoggiatura approached from above</td>      </tr>
 <tr><td> V </td><td> ascending accented passing tone</td>       <td> v </td>  <td> descending accented passing tone</td>        </tr>
 <tr><td> W </td><td> accented upper neighbor</td>               <td> w </td>  <td> accented lower neighbor</td>                 </tr>
 <tr><td>   </td><td> (no ascending form of chanson idiom)</td>  <td> h </td>  <td> chanson idiom</td>                       </tr>
