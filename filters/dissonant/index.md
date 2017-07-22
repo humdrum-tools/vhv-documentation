@@ -1054,7 +1054,7 @@ When a voice sounds the note of resolution of a suspension in a descending line 
 {% include verovio.html
 	humdrum-visible="false"
 	source="resx"
-	scale="40"
+	scale="35"
 	pageWidth="1200"
 	tabsize="10"
 %}
