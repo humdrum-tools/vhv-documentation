@@ -491,21 +491,21 @@ A "reverse" nota cambiata is a weak dissonance approached by leap and resolved d
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="rnc">**kern  **kern
-*clefF4 *clefGv2
-*k[]    *k[]
-*M3/1   *M3/1
-*met(O) *met(O)
-=8-     =8-
-2.D\    1A
-4BB/    .
-1AA     1A
-.       .
-1F      1A
-.       .
-.       .
-=       =
-*-      *-
+<script type="application/x-humdrum" id="rnc">**kern	**kern
+*clefF4	*clefGv2
+*k[]	*k[]
+*M3/1	*M3/1
+*met(O)	*met(O)
+=8-	=8-
+2.D\	1A
+4BB/	.
+1AA	1A
+.	.
+1F	1A
+.	.
+.	.
+=	=
+*-	*-
 !!!filter: dissonant
 </script>
 
