@@ -706,10 +706,8 @@ agent of the suspension.
 !!!filter: dissonant
 </script>
 
-Occasionally a fake suspension is preceded by an anticipation as
-in the example below taken from the same Mouton Kyrie. In this case
-the fake suspension label takes the same case as that of the
-anticipation.
+Occasionally a fake suspension is preceded by an anticipation and these are detected as well, such as
+in the example below taken from the same Mouton Kyrie.
 
 {% include verovio.html
 	humdrum-visible="false"
