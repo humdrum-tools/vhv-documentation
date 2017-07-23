@@ -989,7 +989,7 @@ An appoggiatura is a dissonance that is relatively accented with respect to the 
 
 ### Accented passing tones (V, v) ###
 
-Accented passing tones are metrically strong with respect to the notes before and after them, and last no longer than the following note. They are approached and left by step in the same direction and labeled `V` when those steps are up, and `v` when those steps are down. They will get detected even if they are decorated with an anticipation immediately before. This dissonance definition could correspond to dissonant third quarter passing tones, and also the chanson idiom dissonance type. An accented passing tone will only get labeled as such if it does not meet the stricter requirements for any other dissonance type.
+Accented passing tones are metrically strong with respect to the notes before and after them, and last no longer than the following note. They are approached and left by step in the same direction and labeled `V` when those steps are up, and `v` when those steps are down. They will get detected even if they are decorated with an anticipation immediately before. This dissonance definition could correspond to dissonant third quarter passing tones, and also the chanson idiom dissonance type. An accented passing tone will only get labeled as such if it does not meet the stricter requirements for any other dissonance type. In the Gloria of [Missa Cum iocunditate](http://josquin.stanford.edu/work/?id=Jos0304) attributed to Josquin, accented passing tones are found in certain contrapuntal dispositions where a primary motive is set against itself in multiple voices, such as in the excerpt below.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -998,20 +998,22 @@ Accented passing tones are metrically strong with respect to the notes before an
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="accp">**kern	**kern
-*I'B	*I'A
-*clefF4	*clefGv2
-*k[b-]	*k[b-]
-*M3/1	*M3/1
-*met(C|3)	*met(C|3)
-=183-	=183-
-1C	1G
-1C	1.G
-1C	.
-.	4F
-.	4G
-=	=
-*-	*-
+<script type="application/x-humdrum" id="accp">**kern	**kern	**kern	**kern
+*staff4	*staff3	*staff2	*staff1
+*Ivox	*Ivox	*Ivox	*Ivox
+*I"Bassus	*I"Tenor	*I"Altus	*I"Superius
+*clefF4	*clefGv2	*clefGv2	*clefG2
+*k[]	*k[]	*k[]	*k[]
+*M2/1	*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)	*met(C|)
+=138	=138	=138	=138
+2r	0r	0A	2c/
+1D	.	.	2.A/
+.	.	.	4B/
+2D\	.	.	4c/
+.	.	.	4d/
+=	=	=	=
+*-	*-	*-	*-
 !!!filter: dissonant
 </script>
 
