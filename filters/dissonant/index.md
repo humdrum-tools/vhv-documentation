@@ -1056,14 +1056,13 @@ When a voice sounds the note of resolution of a suspension in a descending line 
 {% include verovio.html
 	humdrum-visible="false"
 	source="resx"
-	scale="50"
-	pageWidth="1000"
+	scale="35"
+	pageWidth="1150"
 	tabsize="10"
 %}
 <script type="application/x-humdrum" id="resx">**kern	**kern	**kern	**kern	**kern	**kern
 *staff6	*staff5	*staff4	*staff3	*staff2	*staff1
 *Ivox	*Ivox	*Ivox	*Ivox	*Ivox	*Ivox
-*I"Bassus2	*I"Bassus1	*I"Tenor	*I"Altus2	*I"Altus1	*I"Superius
 *I'B2	*I'B1	*I'T	*I'A2	*I'A1	*I'S
 *clefF4	*clefF4	*clefGv2	*clefGv2	*clefGv2	*clefG2
 *k[b-]	*k[b-]	*k[b-]	*k[b-]	*k[b-]	*k[b-]
