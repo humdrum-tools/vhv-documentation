@@ -537,8 +537,8 @@ The "reverse" &eacute;chapp&eacute;e is a weak dissonance that is approached by 
 .	.	.	4e/
 1r	2r	1A	2e/
 .	[2c\	.	[2a/
-=	=
-*-	*-
+=	=	=	=
+*-	*-	*-	*-
 !!!filter: dissonant
 </script>
 
