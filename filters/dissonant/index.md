@@ -964,7 +964,7 @@ of this dissonance type are labeled with a `B` and a `b` repsectfully.
 
 ### Appoggiaturas (T, t) ###
 
-An appoggiatura is a dissonance that is relatively accented with respect to the notes before and after it. It is approached by leap and resolved down by step. It is labeled with a `T` when the leap is up and `t` when the leap is down.
+An appoggiatura is a dissonance that is relatively accented with respect to the notes before and after it. It is approached by leap and resolved down by step. It is labeled with a `T` when the leap is up and `t` when the leap is down. This label is only assigned if the requirements are met and the note would otherwise be unexplainable. This excerpt from the Sanctus of Josquin's [Missa Hercules dux Ferrarie](http://josquin.stanford.edu/work/?id=Jos1101) features an appoggiatura approached from below.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -974,22 +974,25 @@ An appoggiatura is a dissonance that is relatively accented with respect to the 
 	tabsize="10"
 %}
 <script type="application/x-humdrum" id="appgg">**kern	**kern
-*I'B	*I'A
-*clefF4	*clefGv2
-*k[b-]	*k[b-]
-*M3/1	*M3/1
-*met(C|3)	*met(C|3)
-=183-	=183-
-1C	1G
-1C	1.G
-1C	.
-.	4F
-.	4G
+*I"T	*I"A
+*clefGv2	*clefGv2
+*k[]	*k[]
+*M2/1	*M2/1
+*met(C|)	*met(C|)
+=89||	=89||
+0D	2.d\
+.	4e\
+.	2f\
+.	2d\
+=90	=90
+0C	2f\
+.	1e
+.	4d\
+.	4c\
 =	=
 *-	*-
 !!!filter: dissonant
 </script>
-
 
 
 ### Accented passing tones (V, v) ###
@@ -1184,7 +1187,34 @@ Dissonances not assignable to one of the above categories are given
 a `Z` label to indicate their function is unknown.  A capital `Z`
 means that the interval of the dissonance is a 2nd or 7th.  A
 lower-case `z` means that the dissonance is a 4th against the lowest
-sounding note in the sonority.
+sounding note in the sonority. In the example below taken from the Sanctus of Josquin's [Missa Hercules dux Ferrarie](http://josquin.stanford.edu/work/?id=Jos1101) what appears at first to be a suspension in the Altus is not resolved properly, resulting in the Bassus and Superius voices receiving `Z` and `z` labels respectively.
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="Zandz"
+	scale="50"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="Zandz">**kern	**kern	**kern	**kern
+*I"B	*I"T	*I"A	*I"S
+*clefF4	*clefGv2	*clefGv2	*clefG2
+*k[]	*k[]	*k[]	*k[]
+*M2/1	*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)	*met(C|)
+=64	=64	=64	=64
+2C/	1E	4B-\]	2e/
+.	.	4A/	.
+2AA/	.	2.A/	2c/
+1BB-i	1D	.	2d/
+.	.	4D/	.
+.	.	2d\	[2f/
+=	=	=	=
+*-	*-	*-	*-
+!!!filter: dissonant
+</script>
+
+
 
 ## URL filtering of repertories ##
 
