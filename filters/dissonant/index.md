@@ -989,6 +989,11 @@ An appoggiatura is a dissonance that is relatively accented with respect to the 
 .	1e
 .	4d\
 .	4c\
+=91	=91
+0D	2B\
+.	2A/
+.	2B\
+.	[2A/
 =	=
 *-	*-
 !!!filter: dissonant
@@ -997,7 +1002,7 @@ An appoggiatura is a dissonance that is relatively accented with respect to the 
 
 ### Accented passing tones (V, v) ###
 
-Accented passing tones are metrically strong with respect to the notes before and after them, and last no longer than the following note. They are approached and left by step in the same direction and labeled `V` when those steps are up, and `v` when those steps are down. They will get detected even if they are decorated with an anticipation immediately before. This dissonance definition could correspond to dissonant third quarter passing tones, and also the chanson idiom dissonance type. An accented passing tone will only get labeled as such if it does not meet the stricter requirements for any other dissonance type. In the Gloria of [Missa Cum iocunditate](http://josquin.stanford.edu/work/?id=Jos0304) attributed to Josquin, accented passing tones are found in certain contrapuntal dispositions where a primary motive is set against itself in multiple voices, such as in the excerpt below.
+Accented passing tones are metrically strong with respect to the notes before and after them, and last no longer than the following note. They are approached and left by step in the same direction and labeled `V` when those steps are up, and `v` when those steps are down. They will get detected even if they are decorated with an anticipation immediately before. This dissonance definition could correspond to dissonant third quarter passing tones, and also the chanson idiom dissonance type. An accented passing tone will only get labeled as such if it does not meet the stricter requirements for any other dissonance type. In the Sanctus of [Missa Cum iocunditate](http://josquin.stanford.edu/work/?id=Jos0304) attributed to Josquin, accented passing tones are found in certain contrapuntal dispositions where a primary motive is set against itself in multiple voices, such as in the excerpt below.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -1020,6 +1025,13 @@ Accented passing tones are metrically strong with respect to the notes before an
 .	.	.	4B/
 2D\	.	.	4c/
 .	.	.	4d/
+=139	=139	=139	=139
+2C/	0r	2r	2e/
+2.AA/	.	1c	2f/
+.	.	.	2.e/
+4BB/	.	.	.
+4C/	.	2c\	.
+4D\	.	.	4f/
 =	=	=	=
 *-	*-	*-	*-
 !!!filter: dissonant
