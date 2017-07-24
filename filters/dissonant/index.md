@@ -1031,8 +1031,8 @@ Accented neighbor tones are metrically strong with respect to the notes before a
 {% include verovio.html
 	humdrum-visible="false"
 	source="accn"
-	scale="45"
-	pageWidth="1250"
+	scale="35"
+	pageWidth="1000"
 	tabsize="10"
 %}
 <script type="application/x-humdrum" id="accn">**kern	**kern	**kern	**kern
