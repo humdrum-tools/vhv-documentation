@@ -1031,12 +1031,12 @@ Accented neighbor tones are metrically strong with respect to the notes before a
 {% include verovio.html
 	humdrum-visible="false"
 	source="accn"
-	scale="50"
-	pageWidth="1000"
+	scale="45"
+	pageWidth="1250"
 	tabsize="10"
 %}
 <script type="application/x-humdrum" id="accn">**kern	**kern	**kern	**kern
-*I"Bassus	*I"Tenor	*I"Altus	*I"Superius
+*I"B	*I"T	*I"A	*I"S
 *clefF4	*clefGv2	*clefGv2	*clefG2
 *k[b-]	*k[b-]	*k[b-]	*k[b-]
 *M2/1	*M2/1	*M2/1	*M2/1
