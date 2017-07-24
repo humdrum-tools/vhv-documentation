@@ -1007,14 +1007,12 @@ Accented passing tones are metrically strong with respect to the notes before an
 {% include verovio.html
 	humdrum-visible="false"
 	source="accp"
-	scale="50"
+	scale="40"
 	pageWidth="1000"
 	tabsize="10"
 %}
 <script type="application/x-humdrum" id="accp">**kern	**kern	**kern	**kern
-*staff4	*staff3	*staff2	*staff1
-*Ivox	*Ivox	*Ivox	*Ivox
-*I"Bassus	*I"Tenor	*I"Altus	*I"Superius
+*I"B	*I"T	*I"A	*I"S
 *clefF4	*clefGv2	*clefGv2	*clefG2
 *k[]	*k[]	*k[]	*k[]
 *M2/1	*M2/1	*M2/1	*M2/1
