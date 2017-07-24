@@ -1209,6 +1209,14 @@ sounding note in the sonority. In the example below taken from the Sanctus of Jo
 1BB-i	1D	.	2d/
 .	.	4D/	.
 .	.	2d\	[2f/
+=65	=65	=65	=65
+1AA	0r	2.c\	4f/]
+.	.	.	4e/
+.	.	.	2a/
+.	.	4A/	.
+1r	.	4c\	2g/
+.	.	4B\	.
+.	.	[2e\	2cc\
 =	=	=	=
 *-	*-	*-	*-
 !!!filter: dissonant
