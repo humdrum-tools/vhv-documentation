@@ -513,7 +513,7 @@ A "reverse" nota cambiata is a weak dissonance approached by leap and resolved d
 
 ###  Reverse &eacute;chapp&eacute;es (J, j) ###
 
-The "reverse" &eacute;chapp&eacute;e is a weak dissonance that is approached by leap and then resolved by step in the opposite direction. It is labeled `J` when that initial leap is up, and `j` when it is down, similar to neighbor tones.
+The "reverse" &eacute;chapp&eacute;e is a weak dissonance that is approached by leap and then resolved by step in the opposite direction. It is labeled `J` when that initial leap is up, and `j` when it is down, similar to neighbor tones. This often occurs as an ornament of a suspension. While only dissonant suspensions are labeled, consonant suspensions also receive this same type of ornamentation. The example below taken from the Sanctus of the [Missa Sub tuum presidium](http://josquin.stanford.edu/work/?id=Jos0405) contains two parallel reverse &eacute;chapp&eacute;es, one decorating a consonant suspension in the Altus, and the other ornamenting a consonant suspension (unlabeled) in the Superius.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -522,16 +522,21 @@ The "reverse" &eacute;chapp&eacute;e is a weak dissonance that is approached by 
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="reve">**kern	**kern
-*clefG2	*clefG2
-*M4/2	*M4/2
-4g	2ee
-4f	.
-1f	4dd
-.	4cc
-.	4dd
-.	4ee
-2e	2ee
+<script type="application/x-humdrum" id="reve">**kern	**kern	**kern	**kern
+*I"Bassus	*I"Tenor	*I"Altus	*I"Superius
+*clefF4	*clefGv2	*clefGv2	*clefG2
+*k[]	*k[]	*k[]	*k[]
+*M3/1	*M3/1	*M3/1	*M3/1
+*met(O)	*met(O)	*met(O)	*met(O)
+=166	=166	=166	=166
+1AA	1A	2c\	2r
+.	.	2.A/	2.cc\
+1r	1E	.	.
+.	.	4F/	4a/
+.	.	2G/	4b\
+.	.	.	4e/
+1r	2r	1A	2e/
+.	[2c\	.	[2a/
 =	=
 *-	*-
 !!!filter: dissonant
