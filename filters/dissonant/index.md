@@ -1032,7 +1032,7 @@ Accented neighbor tones are metrically strong with respect to the notes before a
 	humdrum-visible="false"
 	source="accn"
 	scale="35"
-	pageWidth="1000"
+	pageWidth="1250"
 	tabsize="10"
 %}
 <script type="application/x-humdrum" id="accn">**kern	**kern	**kern	**kern
