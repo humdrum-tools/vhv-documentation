@@ -1026,7 +1026,7 @@ Accented passing tones are metrically strong with respect to the notes before an
 
 ### Accented neighbor tones (W, w) ###
 
-Accented neighbor tones are metrically strong with respect to the notes before and after them, and last no longer than the following note. They are approached and left by step in opposite directions and labeled `W` when approached by step up, and `w` when approached by step down. They will get detected even if they are decorated with an anticipation immediately before. This dissonance definition also matches that of dissonant third quarter neighbor tones, and potentially the `L` and `Y` types. An accented neighbor tone will only get labeled as such if it does not meet the stricter requirements for any other dissonance type.
+Accented neighbor tones are metrically strong with respect to the notes before and after them, and last no longer than the following note. They are approached and left by step in opposite directions and labeled `W` when approached by step up, and `w` when approached by step down. They will get detected even if they are decorated with an anticipation immediately before. This dissonance definition also matches that of dissonant third quarter neighbor tones, and potentially the `L` and `Y` types. An accented neighbor tone will only get labeled as such if it does not meet the stricter requirements for any other dissonance type. The excerpt below taken from the motet [Benedicite, omnia opera](http://josquin.stanford.edu/work/?id=Jos1402) attributed to Josquin contains an accented upper neighbor in the Altus.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -1035,20 +1035,24 @@ Accented neighbor tones are metrically strong with respect to the notes before a
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="accn">**kern	**kern
-*I'B	*I'A
-*clefF4	*clefGv2
-*k[b-]	*k[b-]
-*M3/1	*M3/1
-*met(C|3)	*met(C|3)
-=183-	=183-
-1C	1G
-1C	1.G
-1C	.
-.	4F/
-.	4G/
-=	=
-*-	*-
+<script type="application/x-humdrum" id="accn">**kern	**kern	**kern	**kern
+*I"Bassus	*I"Tenor	*I"Altus	*I"Superius
+*clefF4	*clefGv2	*clefGv2	*clefG2
+*k[b-]	*k[b-]	*k[b-]	*k[b-]
+*M2/1	*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)	*met(C|)
+=78	=78	=78	=78
+1G	2d\	2r	2b-\
+.	2d\	1g	2b-\
+1C	[1c	.	[1cc
+.	.	2e\	.
+=79	=79	=79	=79
+2r	1c]	2f\	1cc]
+1c	.	2e\	.
+.	2r	1c	1r
+2A\	[2c\	.	.
+=	=	=	=
+*-	*-	*-	*-
 !!!filter: dissonant
 </script>
 
