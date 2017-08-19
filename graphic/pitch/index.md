@@ -2,7 +2,7 @@
 title: Pitch
 author: Craig Stuart Sapp
 creation_date: 7 Mar 2017
-last_updated: 7 Mar 2017
+last_updated: 19 Aug 2017
 tags: [all, graphic_editing, RDF]
 sidebar: main_sidebar
 keywords: graphic editing pitch
@@ -24,7 +24,7 @@ permalink: /graphic/pitch/index.html
 
 ## Stepwise transposition ##
 
-Notes can be transposed to a different staffline or space by
+Notes can be transposed to a different staff-line or space by
 clicking on a note and then using the
 <span class="keypress">up</span> and <span class="keypress">down</span>
 arrow keys to move it vertically.  Below is a demonstration
@@ -226,7 +226,7 @@ a forced display signifier (`X`) with the <span class="keypress">x</span>
 key is not necessary.
 
 {% include note.html
-	content="Perhaps editorial accidentals should be allowed to be suppressed, as they currently cannot."
+	content="Perhaps editorial accidentals should be allowed to be suppressed, but they currently cannot."
 %}
 
 {% include warning.html
@@ -237,5 +237,33 @@ key is not necessary.
 	content="A small accidental above a note is the common style for editorial accidentals in editions of Renaissance music (typically to indicate an unwritten *musica ficta* accidental).  Other rendering styles for editorial accidentals are not (yet) available."
 %}
 
+### Styling editorial accidentals ###
+
+By default editorial accidentals are displayed as small accidentals 
+above the note.  This is the most common editorial accidental style
+for Renaissance music.  For music that includes basso continuo numbers or
+chords, editorial accidentals are typically displayed within brackets
+or occasionally parentheses. 
+
+Adding the string `bracket` or `brack` somewhere
+on the editorial accidental RDF line will move the 
+editorial accidentals in front of the notes and place brackets
+around them:
+
+{% include image.html
+	file="editac-styles.png"
+	alt="selecting an editorial accidental style"
+	max-width="85%"
+	caption="Examples of how to select editorial accidental styles."
+%}
+
+Any user signifier can be used for editorial accidentals, but the last
+RDF line in a file is given priority for adding/removing editorial state
+of accidentals when using the `i` graphical editing command.
+
+
+{% include note.html
+	content="Selecting an editorial accidental style cannot be done graphically, and instead must be added to the RDF line."
+%}
 
 
