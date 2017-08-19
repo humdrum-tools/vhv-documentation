@@ -70,6 +70,10 @@ entries:
       output: web, pdf
       url: /interface/edit_modes
 
+    - title: Syntax validation
+      output: web, pdf
+      url: /interface/validation
+
 ###########################################################################
 
   - title: Commands
