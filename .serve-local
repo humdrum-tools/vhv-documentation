@@ -1,0 +1,26 @@
+#!/bin/bash
+
+bundle exec jekyll serve --watch --config _config.yml,_config-local.yml
+
+# This version of serve will use only local css/javascript
+# resources.  The local resources are found in:
+#
+# style/local:
+#	Lato
+#	jquery.dataTables.css
+#
+#
+# js/local:
+# 	anchor.min.js
+# 	bootstrap.min.js
+# 	jquery.cookie.min.js
+# 	jquery.dataTables.js
+# 	jquery.min.js
+# 	verovio-toolkit.js
+#
+# To use this script, nag Craig to add a script to download the
+# above resources to your computer.
+#
+
+
+
