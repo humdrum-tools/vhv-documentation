@@ -11,8 +11,8 @@ site_title: "VHV documentation"
 
 
 # Sets the website to use local javascript/css only.
-local: "true"
-#local: "false"
+#local: "true"
+local: "false"
 
 company_name: "Craig Stuart Sapp"
 # this appears in the footer

@@ -1202,8 +1202,8 @@ sounding note in the sonority. In the example below taken from the Sanctus of Jo
 {% include verovio.html
 	humdrum-visible="false"
 	source="Zandz"
-	scale="50"
-	pageWidth="1000"
+	scale="35"
+	pageWidth="1400"
 	tabsize="10"
 %}
 <script type="application/x-humdrum" id="Zandz">**kern	**kern	**kern	**kern
@@ -1213,20 +1213,20 @@ sounding note in the sonority. In the example below taken from the Sanctus of Jo
 *M2/1	*M2/1	*M2/1	*M2/1
 *met(C|)	*met(C|)	*met(C|)	*met(C|)
 =64	=64	=64	=64
-2C/	1E	4B-\]	2e/
-.	.	4A/	.
-2AA/	.	2.A/	2c/
-1BB-i	1D	.	2d/
-.	.	4D/	.
-.	.	2d\	[2f/
+2C	1E	4B-]	2e
+.	.	4A	.
+2AA	.	2.A	2c
+1BB-i	1D	.	2d
+.	.	4D	.
+.	.	2d	[2f
 =65	=65	=65	=65
-1AA	0r	2.c\	4f/]
-.	.	.	4e/
-.	.	.	2a/
-.	.	4A/	.
-1r	.	4c\	2g/
-.	.	4B\	.
-.	.	[2e\	2cc\
+1AA	0r	2.c	4f]
+.	.	.	4e
+.	.	.	2a
+.	.	4A	.
+1r	.	4c	2g
+.	.	4B	.
+.	.	[2e	2cc
 =	=	=	=
 *-	*-	*-	*-
 !!!filter: dissonant
