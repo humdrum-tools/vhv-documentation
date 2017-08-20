@@ -1,6 +1,6 @@
 ---
 title: dissonant filter
-author: ["Alex Morgan", "Craig Sapp"]
+author: ["Alexander Morgan", "Craig Sapp"]
 creation_date: 29 May 2017
 last_updated: 10 Jun 2017
 tags: [all, filters]
@@ -185,6 +185,7 @@ categories that do not distinguish melodic directions.
 <tr><th>Label</th><th> Meaning</th>                             <th>Label</th><th> Meaning</th>                                 </tr>
 <tr><td> P </td><td> rising passing tone</td>                   <td> p </td>  <td> downward passing tone</td>                   </tr>
 <tr><td> N </td><td> upper neighbor</td>                        <td> n </td>  <td> lower neighbor</td>                          </tr>
+<tr><td> D </td><td> double neighbor upper then lower</td>      <td> d </td>  <td> double neighbor lower then upper</td>        </tr>
 <tr><td> E </td><td> upper &eacute;chapp&eacute;e</td>          <td> e </td>  <td> lower &eacute;chapp&eacute;e</td>            </tr>
 <tr><td> C </td><td> ascending short nota cambiata</td>         <td> c </td>  <td> descending short nota cambiata</td>          </tr>
 <tr><td> K </td><td> ascending long nota cambiata</td>          <td> k </td>  <td> descending long nota cambiata</td>           </tr>
@@ -194,14 +195,14 @@ categories that do not distinguish melodic directions.
 <tr><td> S </td><td> ternary suspension</td>                    <td> s </td>  <td> binary suspension</td>                       </tr>
 <tr><td> G </td><td> ternary suspension agent</td>              <td> g </td>  <td> binary suspension agent</td>                 </tr>
 <tr><td> F </td><td> fake susp. approached by step up</td>      <td> f </td>  <td> fake susp. approached by step down</td>      </tr>
-<tr><td> o </td><td> suspension ornament</td>                   <td> r </td>  <td> suspension repeated note</td>                </tr>
+<tr><td> x </td><td> resolution against suspension dissonance</td><td> r </td>  <td> suspension repeated note</td>              </tr>
 <tr><td> M </td><td> suspension missing agent approached by step up </td> <td> m </td>  <td> suspension missing agent approached by step down </td> </tr>
 <tr><td> Q </td><td> dissonant 3rd quarter rising passint tone</td>  <td> q </td>  <td> dissonant 3rd quarter falling passing tone</td>      </tr>
 <tr><td> B </td><td> dissonant 3rd quarter upper neighbor</td>  <td> b </td>  <td> dissonant 3rd quarter lower neighbor</td>    </tr>
-<tr><td> T </td><td> appoggiature approached from below</td>    <td> t </td>  <td> appoggiatura approached from above</td>      </tr>
+<tr><td> T </td><td> appoggiatura approached from below</td>    <td> t </td>  <td> appoggiatura approached from above</td>      </tr>
 <tr><td> V </td><td> ascending accented passing tone</td>       <td> v </td>  <td> descending accented passing tone</td>        </tr>
 <tr><td> W </td><td> accented upper neighbor</td>               <td> w </td>  <td> accented lower neighbor</td>                 </tr>
-<tr><td>   </td><td> (no ascending form of chanson idiom)</td>  <td> h </td>  <td> chanson idiom</td>                           </tr>
+<tr><td>   </td><td> (no ascending form of chanson idiom)</td>  <td> h </td>  <td> chanson idiom</td>                       </tr>
 <tr><td> Z </td><td> unclassified dissonance, 2nd or 7th interval</td> <td> z </td ><td> unclassified dissonance, 4th interval</td></tr>
 </table>
 
@@ -212,7 +213,7 @@ letter:
 <table class="dense twocol">
 <tr><th>Label</th><th> Meaning</th>                             <th>Label</th><th> Meaning</th>                                 </tr>
 <tr><td> P </td><td> passing tone</td>                          <td> F </td><td> fake suspension</td></tr>
-<tr><td> N </td><td> neighbor tone</td>                         <td> O </td><td> suspension ornament</td></tr>
+<tr><td> N </td><td> neighbor tone</td>                         <td> D </td><td> double neighbor</td></tr>
 <tr><td> E </td><td> &eacute;chapp&eacute;e</td>                <td> R </td><td> suspension repeated note</td></tr>
 <tr><td> C </td><td> short nota cambiata</td>                   <td> M </td><td> supension missing agent</td></tr>
 <tr><td> K </td><td> long nota cambiata</td>                    <td> Q </td><td> dissonant third quarter passing tone</td></tr>
@@ -220,8 +221,8 @@ letter:
 <tr><td> T </td><td> appoggiatura</td>                          <td> V </td><td> accented passing tone</td></tr>
 <tr><td> I </td><td> incomplete anterior neighbor</td>          <td> W </td><td> accented neighbor tone</td></tr>
 <tr><td> J </td><td> incomplete posterior neighbor</td>         <td> H </td><td> chanson idiom</td></tr>
-<tr><td> S </td><td> suspension</td>                            <td> Z </td><td> unclassified dissonance</td></tr>
-<tr><td> G </td><td> suspension agent</td>                      <td>   </td><td>  </td></tr>
+<tr><td> S </td><td> suspension</td>                            <td> X </td><td> resolution against suspension dissonance</td></tr>
+<tr><td> G </td><td> suspension agent</td>                      <td> Z </td><td> unclassified dissonance</td></tr>
 </table>
 
 Examples of each dissonant type are given below.  Note that the
@@ -289,6 +290,54 @@ neighbor tones are approached and left by step in opposite directions.
 4EE	4b
 =	=
 *-	*-
+!!!filter: dissonant
+</script>
+
+
+
+### Double neighbors (D, d) ###
+
+In a double neighbor figure, a primary note is ornamented by both an upper and lower neighbor before returning to the primary note. Both dissonant notes are given the same label based on which type of dissonant neighbor comes first, `D` if the figure begins with an upper neighbor, and `d` if it begins with a lower neighbor. While the first dissonance must be relatively weak metrically compared to the primary note, the second of the two double neighbors can be accented, such as in this excerpt from the chanson attributed to Josquin [Mala se nea](http://josquin.stanford.edu/work/?id=Jos2915).
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="dbln"
+	scale="50"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="dbln">**kern	**kern
+*Ivox	*Ivox
+*I"Bassus	*I"Superius
+*I'B	*I'S
+*clefF4	*clefG2
+*k[b-]	*k[b-]
+*M2/1	*M2/1
+*met(C|)	*met(C|)
+=50	=50
+1C	2g/
+.	.
+.	2g/
+.	.
+[1FF	2a/
+.	2b-\
+=51	=51
+0FF]	2.cc\
+.	.
+.	4b-\
+.	4a/
+.	4g/
+.	4b-\
+.	4a/
+=52	=52
+2BB-/	0b-
+4BB-/	.
+4BB-/	.
+2BB-/	.
+.	.
+2BB-/	.
+==	==
+*_	*_
 !!!filter: dissonant
 </script>
 
@@ -433,7 +482,7 @@ and after it.
 
 ###  Reverse nota cambiatas (I, i) ###
 
-A "reverse" nota cambiata is a weak dissonance approached by leap and resolved down by step in the same direction.  It is labeled with an `I` or an `i` for its ascending and descending versions respectively. These are relatively rare in the Renaissance. This example from XXXX includes an incomplete anterior lower neighbor, labeled with an `i`.
+A "reverse" nota cambiata is a weak dissonance approached by leap and resolved down by step in the same direction.  It is labeled with an `I` or an `i` for its ascending and descending versions respectively. These are relatively rare in the Renaissance. This example from the Gloria Ockeghem's [Missa Fors seulement](http://josquin.stanford.edu/work/?id=Ock1007) includes an incomplete anterior lower neighbor, labeled with an `i`.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -443,15 +492,18 @@ A "reverse" nota cambiata is a weak dissonance approached by leap and resolved d
 	tabsize="10"
 %}
 <script type="application/x-humdrum" id="rnc">**kern	**kern
-*clefG2	*clefG2
-*M4/2	*M4/2
-4g	2ee
-4f	.
-1f	4dd
-.	4cc
-.	4dd
-.	4ee
-2e	2ee
+*clefF4	*clefGv2
+*k[]	*k[]
+*M3/1	*M3/1
+*met(O)	*met(O)
+=8-	=8-
+2.D\	1A
+4BB/	.
+1AA	1A
+.	.
+1F	1A
+.	.
+.	.
 =	=
 *-	*-
 !!!filter: dissonant
@@ -461,7 +513,7 @@ A "reverse" nota cambiata is a weak dissonance approached by leap and resolved d
 
 ###  Reverse &eacute;chapp&eacute;es (J, j) ###
 
-The "reverse" &eacute;chapp&eacute;e is a weak dissonance that is approached by leap and then resolved by step in the opposite direction. It is labeled `J` when that initial leap is up, and `j` when it is down, similar to neighbor tones.
+The "reverse" &eacute;chapp&eacute;e is a weak dissonance that is approached by leap and then resolved by step in the opposite direction. It is labeled `J` when that initial leap is up, and `j` when it is down, similar to neighbor tones. This often occurs as an ornament of a suspension. While only dissonant suspensions are labeled, consonant suspensions also receive this same type of ornamentation. The example below taken from the Sanctus of the [Missa Sub tuum presidium](http://josquin.stanford.edu/work/?id=Jos0405) contains two parallel reverse &eacute;chapp&eacute;es, one decorating a consonant suspension in the Altus, and the other ornamenting a consonant suspension (unlabeled) in the Superius.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -470,18 +522,23 @@ The "reverse" &eacute;chapp&eacute;e is a weak dissonance that is approached by 
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="reve">**kern	**kern
-*clefG2	*clefG2
-*M4/2	*M4/2
-4g	2ee
-4f	.
-1f	4dd
-.	4cc
-.	4dd
-.	4ee
-2e	2ee
-=	=
-*-	*-
+<script type="application/x-humdrum" id="reve">**kern	**kern	**kern	**kern
+*I"Bassus	*I"Tenor	*I"Altus	*I"Superius
+*clefF4	*clefGv2	*clefGv2	*clefG2
+*k[]	*k[]	*k[]	*k[]
+*M3/1	*M3/1	*M3/1	*M3/1
+*met(O)	*met(O)	*met(O)	*met(O)
+=166	=166	=166	=166
+1AA	1A	2c\	2r
+.	.	2.A/	2.cc\
+1r	1E	.	.
+.	.	4F/	4a/
+.	.	2G/	4b\
+.	.	.	4e/
+1r	2r	1A	2e/
+.	[2c\	.	[2a/
+=	=	=	=
+*-	*-	*-	*-
 !!!filter: dissonant
 </script>
 
@@ -567,17 +624,9 @@ Consonant suspensions are ignored by the dissonant tool.
 
 
 
-###  Suspension ornaments (r, o) ###
+### Rearticulated suspension (r) ###
 
-Two types of dissonant suspension ornaments are detected by the
-dissonant tool, both of which occur during what would normally be
-the dissonant phase of the suspension. 
-
-
-
-#### Rearticulated suspension (r) ####
-
-The first type of ornamentation consists of a simple rearticulation
+The most common type of suspension ornamentation in the Renaissance is to leap down a third from the suspened dissonance before resolving both dissonances with a step up. This type of ornament falls under the larger category of reverse &eacute;chapp&eacute;es (see above). Another type of ornamentation consists of a simple rearticulation
 of the suspended note before it resolves down by step. The reartuclated
 note is generally a semi-minim (quarter note) and is labeled in the
 analyses with an `r`. While this figuration (shown below) does occur
@@ -601,41 +650,6 @@ of style change over time.
 2d	2.f
 1c	.
 .	4f
-.	2e
-=	=
-1d	2f
-.	2r
-2e	1cc
-2f	.
-=	=
-*-	*-
-!!!filter: dissonant
-</script>
-
-
-
-#### Third-ornamented (o) suspension ####
-
-A second type of suspension ornamentation occurs when the suspended
-note skips a third down before resolving up by step to the note
-that would be the standard resolution of the suspension. This is
-labeled with an `o`, as shown below.
-
-{% include verovio.html
-	humdrum-visible="false"
-	source="osus"
-	scale="50"
-	pageWidth="1400"
-	spacingLinear="0.1"
-	tabsize="10"
-%}
-<script type="application/x-humdrum" id="osus">**kern	**kern
-*clefGv2	*clefG2
-*M4/2	*M4/2
-2e	2g
-2d	2.f
-1c	.
-.	4d
 .	2e
 =	=
 1d	2f
@@ -697,10 +711,8 @@ agent of the suspension.
 !!!filter: dissonant
 </script>
 
-Occasionally a fake suspension is preceded by an anticipation as
-in the example below taken from the same Mouton Kyrie. In this case
-the fake suspension label takes the same case as that of the
-anticipation.
+Occasionally a fake suspension is preceded by an anticipation and these are detected as well, such as
+in the example below taken from the same Mouton Kyrie.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -952,7 +964,7 @@ of this dissonance type are labeled with a `B` and a `b` repsectfully.
 
 ### Appoggiaturas (T, t) ###
 
-An appoggiatura is a dissonance that is relatively accented with respect to the notes before and after it. It is approached by leap and resolved down by step. It is labeled with a `T` when the leap is up and `t` when the leap is down.
+An appoggiatura is a dissonance that is relatively accented with respect to the notes before and after it. It is approached by leap and resolved down by step. It is labeled with a `T` when the leap is up and `t` when the leap is down. This label is only assigned if the requirements are met and the note would otherwise be unexplainable. This excerpt from the Sanctus of Josquin's [Missa Hercules dux Ferrarie](http://josquin.stanford.edu/work/?id=Jos1101) features an appoggiatura approached from below.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -962,49 +974,64 @@ An appoggiatura is a dissonance that is relatively accented with respect to the 
 	tabsize="10"
 %}
 <script type="application/x-humdrum" id="appgg">**kern	**kern
-*I'B	*I'A
-*clefF4	*clefGv2
-*k[b-]	*k[b-]
-*M3/1	*M3/1
-*met(C|3)	*met(C|3)
-=183-	=183-
-1C	1G
-1C	1.G
-1C	.
-.	4F
-.	4G
+*I"T	*I"A
+*clefGv2	*clefGv2
+*k[]	*k[]
+*M2/1	*M2/1
+*met(C|)	*met(C|)
+=89||	=89||
+0D	2.d\
+.	4e\
+.	2f\
+.	2d\
+=90	=90
+0C	2f\
+.	1e
+.	4d\
+.	4c\
+=91	=91
+0D	2B\
+.	2A/
+.	2B\
+.	[2A/
 =	=
 *-	*-
 !!!filter: dissonant
 </script>
 
 
-
 ### Accented passing tones (V, v) ###
 
-Accented passing tones are metrically strong with respect to the notes before and after them, and last no longer than the following note. They are approached and left by step in the same direction and labeled `V` when those steps are up, and `v` when those steps are down. They will get detected even if they are decorated with an anticipation immediately before. This dissonance definition could correspond to dissonant third quarter passing tones, and also the chanson idiom dissonance type. An accented passing tone will only get labeled as such if it does not meet the stricter requirements for any other dissonance type.
+Accented passing tones are metrically strong with respect to the notes before and after them, and last no longer than the following note. They are approached and left by step in the same direction and labeled `V` when those steps are up, and `v` when those steps are down. They will get detected even if they are decorated with an anticipation immediately before. This dissonance definition could correspond to dissonant third quarter passing tones, and also the chanson idiom dissonance type. An accented passing tone will only get labeled as such if it does not meet the stricter requirements for any other dissonance type. In the Sanctus of [Missa Cum iocunditate](http://josquin.stanford.edu/work/?id=Jos0304) attributed to Josquin, accented passing tones are found in certain contrapuntal dispositions where a primary motive is set against itself in multiple voices, such as in the excerpt below.
 
 {% include verovio.html
 	humdrum-visible="false"
 	source="accp"
-	scale="50"
+	scale="40"
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="accp">**kern	**kern
-*I'B	*I'A
-*clefF4	*clefGv2
-*k[b-]	*k[b-]
-*M3/1	*M3/1
-*met(C|3)	*met(C|3)
-=183-	=183-
-1C	1G
-1C	1.G
-1C	.
-.	4F
-.	4G
-=	=
-*-	*-
+<script type="application/x-humdrum" id="accp">**kern	**kern	**kern	**kern
+*I"B	*I"T	*I"A	*I"S
+*clefF4	*clefGv2	*clefGv2	*clefG2
+*k[]	*k[]	*k[]	*k[]
+*M2/1	*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)	*met(C|)
+=138	=138	=138	=138
+2r	0r	0A	2c/
+1D	.	.	2.A/
+.	.	.	4B/
+2D\	.	.	4c/
+.	.	.	4d/
+=139	=139	=139	=139
+2C/	0r	2r	2e/
+2.AA/	.	1c	2f/
+.	.	.	2.e/
+4BB/	.	.	.
+4C/	.	2c\	.
+4D\	.	.	4f/
+=	=	=	=
+*-	*-	*-	*-
 !!!filter: dissonant
 </script>
 
@@ -1012,31 +1039,73 @@ Accented passing tones are metrically strong with respect to the notes before an
 
 ### Accented neighbor tones (W, w) ###
 
-Accented neighbor tones are metrically strong with respect to the notes before and after them, and last no longer than the following note. They are approached and left by step in opposite directions and labeled `W` when approached by step up, and `w` when approached by step down. They will get detected even if they are decorated with an anticipation immediately before. This dissonance definition also matches that of dissonant third quarter neighbor tones, and potentially the `L` and `Y` types. An accented neighbor tone will only get labeled as such if it does not meet the stricter requirements for any other dissonance type.
+Accented neighbor tones are metrically strong with respect to the notes before and after them, and last no longer than the following note. They are approached and left by step in opposite directions and labeled `W` when approached by step up, and `w` when approached by step down. They will get detected even if they are decorated with an anticipation immediately before. This dissonance definition also matches that of dissonant third quarter neighbor tones, and potentially the `L` and `Y` types. An accented neighbor tone will only get labeled as such if it does not meet the stricter requirements for any other dissonance type. The excerpt below taken from the motet [Benedicite, omnia opera](http://josquin.stanford.edu/work/?id=Jos1402) attributed to Josquin contains an accented upper neighbor in the Altus.
 
 {% include verovio.html
 	humdrum-visible="false"
 	source="accn"
-	scale="50"
-	pageWidth="1000"
+	scale="35"
+	pageWidth="1250"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="accn">**kern	**kern
-*I'B	*I'A
-*clefF4	*clefGv2
-*k[b-]	*k[b-]
-*M3/1	*M3/1
-*met(C|3)	*met(C|3)
-=183-	=183-
-1C	1G
-1C	1.G
-1C	.
-.	4F/
-.	4G/
-=	=
-*-	*-
+<script type="application/x-humdrum" id="accn">**kern	**kern	**kern	**kern
+*clefF4	*clefGv2	*clefGv2	*clefG2
+*k[b-]	*k[b-]	*k[b-]	*k[b-]
+*M2/1	*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)	*met(C|)
+=78	=78	=78	=78
+1G	2d\	2r	2b-\
+.	2d\	1g	2b-\
+1C	[1c	.	[1cc
+.	.	2e\	.
+=79	=79	=79	=79
+2r	1c]	2f\	1cc]
+1c	.	2e\	.
+.	2r	1c	1r
+2A\	[2c\	.	.
+=	=	=	=
+*-	*-	*-	*-
 !!!filter: dissonant
 </script>
+
+
+
+### Resolution against suspension dissonance (X, x) ###
+
+When a voice sounds the note of resolution of a suspension in a descending line against the dissonant portion of the suspension in another voice, it is labeled with an `x`. There is no ascending form of this dissonance so an uppercase `X` is only used if the -u setting is invoked. This dissonance necessarily only occurs when three or more voices are present, because in addition to the dissonance itself, two other voices must form a suspension. It often occurs in even thicker textures though, such the excerpt below taken from the motet [Victime paschali laudes](http://josquin.stanford.edu/work/?id=Jos2207) by Brunet.
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="resx"
+	scale="35"
+	pageWidth="1150"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="resx">**kern	**kern	**kern	**kern	**kern	**kern
+*staff6	*staff5	*staff4	*staff3	*staff2	*staff1
+*Ivox	*Ivox	*Ivox	*Ivox	*Ivox	*Ivox
+*I'B2	*I'B1	*I'T	*I'A2	*I'A1	*I'S
+*clefF4	*clefF4	*clefGv2	*clefGv2	*clefGv2	*clefG2
+*k[b-]	*k[b-]	*k[b-]	*k[b-]	*k[b-]	*k[b-]
+*M2/1	*M2/1	*M2/1	*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)	*met(C|)	*met(C|)	*met(C|)
+=189	=189	=189	=189	=189	=189
+2G\	1E	4d\]	2g\	2B-\	4a/]
+.	.	4B-\	.	.	4g/
+2C/	.	2c\	2e\	2G/	1g
+2.F\	1D	1d	4f\	1A	.
+.	.	.	4e\	.	.
+.	.	.	4d\	.	2f#i/
+4E\	.	.	4c\	.	.
+=190	=190	=190	=190	=190	=190
+2D\	2GG/	0d	1B-	[0Gl	[0gl
+2.G\	1G	.	.	.	.
+.	.	.	2r	.	.
+4F\	.	.	.	.	.
+4E-i\	2F\	.	2B-\	.	.
+4D\	.	.	.	.	.
+*-	*-	*-	*-	*-	*-
+!!!filter: dissonant</script>
 
 
 
@@ -1128,7 +1197,42 @@ Dissonances not assignable to one of the above categories are given
 a `Z` label to indicate their function is unknown.  A capital `Z`
 means that the interval of the dissonance is a 2nd or 7th.  A
 lower-case `z` means that the dissonance is a 4th against the lowest
-sounding note in the sonority.
+sounding note in the sonority. In the example below taken from the Sanctus of Josquin's [Missa Hercules dux Ferrarie](http://josquin.stanford.edu/work/?id=Jos1101) what appears at first to be a suspension in the Altus is not resolved properly, resulting in the Bassus and Superius voices receiving `Z` and `z` labels respectively.
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="Zandz"
+	scale="50"
+	pageWidth="1000"
+	tabsize="10"
+%}
+<script type="application/x-humdrum" id="Zandz">**kern	**kern	**kern	**kern
+*I"B	*I"T	*I"A	*I"S
+*clefF4	*clefGv2	*clefGv2	*clefG2
+*k[]	*k[]	*k[]	*k[]
+*M2/1	*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)	*met(C|)
+=64	=64	=64	=64
+2C/	1E	4B-\]	2e/
+.	.	4A/	.
+2AA/	.	2.A/	2c/
+1BB-i	1D	.	2d/
+.	.	4D/	.
+.	.	2d\	[2f/
+=65	=65	=65	=65
+1AA	0r	2.c\	4f/]
+.	.	.	4e/
+.	.	.	2a/
+.	.	4A/	.
+1r	.	4c\	2g/
+.	.	4B\	.
+.	.	[2e\	2cc\
+=	=	=	=
+*-	*-	*-	*-
+!!!filter: dissonant
+</script>
+
+
 
 ## URL filtering of repertories ##
 
