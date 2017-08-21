@@ -264,6 +264,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Local documentation
+      output: web, pdf
+      url: /maintenance/local
+
     - title: Create a new page
       output: web, pdf
       url: /maintenance/newpage
