@@ -176,6 +176,7 @@ VHV will display the bar number at each system break, excluding a label for
 measure&nbsp;1:
 
 {% include verovio.html
+	humdrum-min-height="525px"
 	source="bar1"
 	scale="55"
 	pageWidth="1000"
@@ -199,13 +200,13 @@ measure&nbsp;1:
 1b
 =8
 1cc
-=8
+=9
 1dd
-=8
+=10
 1ee
-=8
+=11
 1ff
-=8
+=12
 1gg
 =
 *-
@@ -247,6 +248,47 @@ one in the piece/movement.
 
 Humdrum can represent more barline styles, but the above types are currently
 supported in verovio.
+
+
+### Pick-up measures ###
+
+Typically the initial barline should be labeled in the Humdrum encoding 
+eventhough it is not printed.  Either `=1` or `=1-` should be used at the
+start of the first measure (with `-` meaning an invisible barline).  Labeling
+the first bar is necessary if you need to extract it by measure number.
+
+Pickup beats do not have a barline at their start.  If a measure does not
+match the duration of the time signature at the start of the music, it will be
+automatically interpreted as a pick-up measure and automatically assigned
+a measure number of 0 for use with the `myank` filter.
+
+Here is example music with a pick-up beat, and a typical ending which drops
+a beat:
+
+{% include verovio.html
+	humdrum-min-height="275px"
+	source="bar3"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="bar3">
+**kern
+*clefG2
+4G
+=1
+4c
+4c
+4c
+4e
+=2
+4g
+4e
+4e
+==
+*-
+</script>
+
+
 
 ## Time signatures ##
 
@@ -554,10 +596,51 @@ even though the music modulates to C-sharp minor.
 
 ## Rhythm ##
 
+Rhythms in `**kern` data are given in terms of the number of divisions the 
+duration of the note will divide a whole note.  Whole notes are `1` since there
+is one whole note in a whole note.  Half notes are `2` since there are two in
+a whole note.  Quarter notes are `4` since there are four in a whole note.
+
+An exception to the numeric system for rhythms is used for some notes
+longer than a whole note. Breves are represented by `0`, longs are represented
+by `00` and maximas by `000`.
+
+{% include verovio.html
+	humdrum-min-height="275px"
+	evenNoteSpacing="1"
+	source="rhy1"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="rhy1">
+**kern
+000b
+00b
+0b
+1b
+2b
+4b
+8b
+16b
+32b
+64b
+128b
+256b
+==
+*-
+</script>
+
+shortest note value that verovio can display is a 256ht note, but shorter ones
+can be represented in `**kern` data.
+
 
 ### Augmentation dots ###
 
 ### Ties ###
+
+### Tuplets ###
+
+### Extended **recip representation ###
 
 ## Rests ##
 
@@ -600,11 +683,189 @@ or longer).
 
 ## Articulations and ornaments ##
 
-## Dynamics ##
+Here is a sampler of note articulations:
+
+{% include verovio.html
+	humdrum-min-height="250px"
+	source="artic1"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="artic1">
+**kern
+4ff'
+4ff^
+4ff`
+4ff~
+4ff'~
+4ff'^
+4ff^^
+4ff;
+=
+*-
+</script>
+
+Articulations can be place on the opposite side of their automatically placement
+by adding RDF entries to force the articulation above or below the notehead:
+
+{% include verovio.html
+	humdrum-min-height="275px"
+	source="artic2"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="artic2">
+**kern
+4f'>
+4ff^<
+4f`>
+4ff~<
+4f'~>
+4ff'^<
+4f^^>
+4ff;<
+=
+*-
+!!!RDF**kern: < = below
+!!!RDF**kern: > = above
+</script>
+
+
 
 ## Lyrics ##
 
+## Dynamics ##
+
+Dynamics are added to the staff as a separate spine to the right of a `**kern`
+spine to which the dynamics should be associated with.
+
+{% include verovio.html
+	humdrum-min-height="350px"
+	source="dynam1"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="dynam1">
+**kern	**dynam
+*clefG2	*
+*M5/4	*
+=1	=1
+4c	p
+4d	<
+4e	(
+4f	(
+.	[
+=2	=2
+2g	f
+.	>
+4f	)
+4d	)
+=	=
+1c	]
+==	==
+*-	*-
+</script>
+
+When lyrics are present, dynamics will automatically be placed above the staff:
+
+{% include verovio.html
+	humdrum-min-height="350px"
+	source="dynam2"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="dynam2">
+**kern	**dynam	**text
+*clefG2	*	*
+*M5/4	*	*
+=1	=1	=1
+4c	p	The
+4d	<	ru-
+4e	(	-ler
+4f	(	of
+.	[	.
+=2	=2	=2
+2g	f	the
+.	>	.
+4f	)	realm
+4d	)	was
+=	=	=
+1c	]	seen
+==	==	==
+*-	*-	*-
+</script>
+
+
+Note that the order of the `**dynam` and `**text` spines does not matter.
+
+
 ## Multiple voices on a staff ##
+
+Spine split manipulators (`*^`) and spine merge manipulators (`*v`) are used
+to add or remove voices/layers on a staff.  Note that the highest part 
+on the staff will typically be left most (opposite of the staff ordering 
+from lowest to highest).
+
+{% include verovio.html
+	humdrum-min-height="275px"
+	source="multi1"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="multi1">
+**kern
+*M4/4
+*^
+2..gg	4b
+.	4a
+.	4g
+.	4f
+8ff	.
+*v	*v
+=
+*-
+</script>
+
+Notes sounding together in the different voices are placed on the same line, and
+if the other voice is sustaining, a `.` character is used as a placeholder for
+that voice (the dot is called a *null token* in Humdrum terminology).
+
+### Partial voices/layers ###
+
+Voices/layers which do not continue throughout the measure can be encoded
+in two equivalent manners: (1) splitting and merging the spine as needed in 
+the measure, or (2) adding invisible rests to fill in the voice/layer for the
+entire measure.  For method #1, note that the spine merging cannot occur until 
+the end of both sounding notes in each layer.
+
+{% include verovio.html
+	humdrum-min-height="360px"
+	source="multi2"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="multi2">
+**kern
+*M4/4
+=1
+*^
+2cc	4a
+.	4g
+*v	*v
+4f
+4e
+=2
+*^
+2cc	4a
+.	4g
+2ryy	4f
+.	4e
+*v	*v
+=
+*-
+</script>
+
+
 
 ## Multiple staves ##
 
