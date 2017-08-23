@@ -592,6 +592,27 @@ on its own if the key changes but the key signature does not.
 Note that the music in the last measure does not have a key signature change
 even though the music modulates to C-sharp minor.
 
+## Chords ##
+
+Chords are created by adding multiple notes to a token, separated by
+a single space character.  Rhythms and articulations of each note should
+be duplicated, but not slurs, fermatas or beams.
+
+{% include verovio.html
+	source="chord1"
+	scale="55"
+	pageWidth="500"
+%}
+<script type="application/x-humdrum" id="chord1">
+**kern
+*clefG2
+4c 4e 4g
+4e' 4g' 4cc'
+4g^ 4cc^ 4ee^
+1c 1e 1g 1cc;
+*-
+</script>
+
 
 
 ## Rhythm ##
@@ -630,15 +651,153 @@ by `00` and maximas by `000`.
 *-
 </script>
 
-shortest note value that verovio can display is a 256ht note, but shorter ones
+shortest note value that verovio can display is a 256th note, but shorter ones
 can be represented in `**kern` data.
 
 
 ### Augmentation dots ###
 
+Augmentation dots are represented by period characters (`.`).  The first one
+adds 1/2 the duration of the plain note, 
+the next adds an additional 1/4 of the plain note, and so on.
+
+{% include verovio.html
+	humdrum-min-height="275px"
+	evenNoteSpacing="1"
+	source="dots1"
+	scale="55"
+	pageWidth="1000"
+%}
+<script type="application/x-humdrum" id="dots1">
+**kern
+4.b
+4..b
+4...b
+4....b
+4.....b
+=-
+4.......b
+4........b
+4.........b
+4..........b
+4...........b
+==
+*-
+</script>
+
+
 ### Ties ###
 
+Ties are indicated by attaching `[` to the starting note of a tie,
+and `]` on the ending note.  For intermediate notes in a tied group,
+the underscore charcter `_` indicates a previous tie ends on the note
+at the same time that a tie starts to the next note.
+
+{% include verovio.html
+	humdrum-min-height="275px"
+	evenNoteSpacing="1"
+	source="tie1"
+	scale="55"
+	pageWidth="1000"
+%}
+<script type="application/x-humdrum" id="tie1">
+**kern
+[4c
+=1
+4c.]
+[8d
+=2
+2d_
+=3
+4d] [4a
+4a_
+=4
+2a]
+==
+*-
+</script>
+
+
+## Beaming ##
+
+Beams work in a similar manner to ties.  The `L` character
+indicates the start of a beam, and the `J` character indcates
+the end of a beam.
+
+{% include verovio.html
+	humdrum-min-height="275px"
+	evenNoteSpacing="1"
+	source="beam1"
+	scale="55"
+	pageWidth="1000"
+%}
+<script type="application/x-humdrum" id="tie1">
+**kern
+*M3/4
+8cL
+8dJ
+8eL
+8fJ
+8gL
+8aJ
+=
+*M6/8
+8cL
+8dJ
+8eL
+8fJ
+8gL
+8aJ
+==
+*-
+</script>
+
+
+
+
+
+
+
 ### Tuplets ###
+
+Tuplets are no different from regular rhythmic values since they
+describe how many notes of that duration sum together to create a 
+whole-note duration.  Triplet eighth notes are represented with
+the number `12` because 12 of them equal a whole-note duration.
+quintuplet sixteen notes are represented as `20` since 20 of the
+equal a whole-note duration.
+
+{% include verovio.html
+	humdrum-min-height="275px"
+	evenNoteSpacing="1"
+	source="tuplet1"
+	scale="55"
+	pageWidth="1000"
+%}
+<script type="application/x-humdrum" id="tuplet1">
+**kern
+*M2/4
+4g
+20a
+20b
+20.a
+40g
+20a
+=
+12.f
+24g
+12a
+4g
+=
+6b
+6a
+6g
+=
+2e
+==
+!!!filter: autobeam
+</script>
+
 
 ### Extended **recip representation ###
 
@@ -676,10 +835,6 @@ or longer).
 
 
 ## Slurs ##
-
-## Chords ##
-
-## Beaming ##
 
 ## Articulations and ornaments ##
 
