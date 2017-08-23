@@ -13,6 +13,7 @@
 		tabsize			default none (browser default)
 		humdrum-min-height: the minimum height of the humdrum text box
 		humdrum-max-width: the maximum width of the humdrum text box
+		humdrum-min-width: the maximum width of the humdrum text box
 		humdrum-visible: "false" will hide the humdrum text.
 		callback: callback when notation changes
 
@@ -66,6 +67,9 @@ window.addEventListener("DOMContentLoaded", function () {
 	{% if {{include.humdrum-max-width}} != "" %}
 		max-width: {{include.humdrum-max-width}};
 	{% endif %}
+	{% if {{include.humdrum-min-width}} != "" %}
+		min-width: {{include.humdrum-min-width}};
+	{% endif %}
 }
 </style>
 
@@ -74,7 +78,11 @@ window.addEventListener("DOMContentLoaded", function () {
 <tr valign="top">
 
 {% unless {{include.humdrum-visible}} == "false" %}
-	<td>
+	<td
+		{% if {{include.humdrum-min-width}} != "" %}
+			style="min-width: {{include.humdrum-min-width}};"
+		{% endif %}
+	>
 	<div>
 	<pre style="display:none;" class="humdrum" contenteditable="true" id="{{include.source}}-humdrum"></pre>
 	</div>
@@ -124,7 +132,8 @@ window.addEventListener("DOMContentLoaded", function() {
 		humType:          1,
 		scale:            scale,
 		spacingStaff:     spacingStaff,
-		spacingSystem:    spacingSystem
+		spacingSystem:    spacingSystem,
+		evenNoteSpacing:  evenNoteSpacing
 	};
 
 	var id = "{{include.source}}";

@@ -212,6 +212,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Getting started
+      output: web, pdf
+      url: /humdrum/getting_started
+
     - title: Figured bass
       output: web, pdf
       url: /humdrum/figured_bass
@@ -257,6 +261,10 @@ entries:
     - title: SVG note data
       output: web, pdf
       url: /myvhv/svg_notes
+
+    - title: Running VHV locally
+      output: web, pdf
+      url: /myvhv/local
 
 ###########################################################################
 
