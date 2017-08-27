@@ -163,7 +163,7 @@ Here is an example of adding realization hints in a basso continuo part:
 =	=	=
 *v	*v	*
 *-	*-
-!!!RDF**kern: N = no stem, cue size
+!!!RDF**kern: N = no stem, cue size, color=#bbbbbb
 !!!URL: https://en.wikipedia.org/wiki/File:Figured_bass.png
 </script>
 

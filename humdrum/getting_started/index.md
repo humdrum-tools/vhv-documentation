@@ -1180,7 +1180,7 @@ which follow the auxiliary notes of the ornaments.
 Lyrics are added to a staff by placing one or more `**text` spines after a `**kern` spine.
 
 {% include verovio.html
-	humdrum-min-height="250px"
+	humdrum-min-height="350px"
 	source="text1"
 	scale="55"
 	pageWidth="1200"
@@ -1215,37 +1215,6 @@ Lyrics are added to a staff by placing one or more `**text` spines after a `**ke
 4a	seh',	da!	hell	Fee	weh.	Knix,	Bett!
 8r	.	.	.	.	.	.	.
 =5	=5	=5	=5	=5	=5	=5	=5
-8a	dich,	Dr&uuml;ck-	gl&auml;nz-	fes-	Hal-	dr&uuml;ckt	Bricht
-8a	mei-	-te	-ten	-selst	-te	dir	doch
-8dd	-ne	mein	in	du	mit	ein	die
-=6	=6	=6	=6	=6	=6	=6	=6
-8.cc	s&uuml;-	treu-	Lie-	Herz	Herz	jun-	Nacht
-16b-	-sse	-er	-bes-	und	und	-ger	schon
-8b-	Lust,	Arm,	-pracht	Sinn,	Mund	Fant	ein,
-=7	=7	=7	=7	=7	=7	=7	=7
-8g	klopft	Hol-	mir	Gr&uuml;b-	treu	z&auml;rt-	kann
-8g	die	-de,	aus	-chen	an	-lich	ja
-8cc	em-	dich	der	in	dem	die	nicht
-=8	=8	=8	=8	=8	=8	=8	=8
-8.b-	-p&ouml;r-	lie-	Wim-	Wang'	Lie-	Schwa-	bei
-16a	-te	-be-	-pern	und	-bes-	-nen-	dir
-8a	Brust,	warm!	Nacht,	Kinn,	-bund,	-hand,	sein,
-=9	=9	=9	=9	=9	=9	=9	=9
-8f	wird	Sch&auml;tz-	tra-	Ro-	sa-	a-	wenn
-8e	mir	-chen,	-fen	-sen-	-ge	-ber	ich
-8f	so	ach	wie	-glut,	mir	nur	auch
-=10	=10	=10	=10	=10	=10	=10	=10
-8.ee	wohl	w&auml;rst	bli-	Li-	nie	ern-	Fl&uuml;-
-16dd	und	du	-tzes-	-lien-	A-	-sten	-gel
-8dd	weh,	da!	-schnell,	schnee,	de!	Blicks	h&auml;tt'!
-=11	=11	=11	=11	=11	=11	=11	=11
-8cc	wenn	w&auml;rst	Aeug-	rei-	Schei-	mach'	Geh'
-8g	ich	du	-lein	-zen-	-den	ihm	nur
-8a	dich	mir	so	-de	thut	den	zu
-=12	=12	=12	=12	=12	=12	=12	=12
-4f	seh'!	nah'!	hell.	Fee!	weh.	Knix!	Bett!
-8r	.	.	.	.	.	.	.
-==	==	==	==	==	==	==	==
 *-	*-	*-	*-	*-	*-	*-	*-
 !!!SMS: Deutscher Liederschatz, Band 1, Ludwig Erk, ed.
 </script>
