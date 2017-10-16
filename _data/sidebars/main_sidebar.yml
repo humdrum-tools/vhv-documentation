@@ -116,6 +116,10 @@ entries:
       output: web, pdf
       url: /commands/alt-p
 
+    - title: <span class="keypress">alt-t</span>&colon; Download PDF
+      output: web, pdf
+      url: /commands/alt-t
+
     - title: <span class="keypress">alt-v</span>&colon; Vim editing
       output: web, pdf
       url: /commands/alt-v
