@@ -20,7 +20,7 @@ in landscape mode; otherwise, the PDF will be in portrait orientation.
 
 Files will be downloaded wherever your browser saves downloaded files.  Here
 is a demonstration of typing <span class="keypress">alt-t</span> to save
-a file, and then opening the downloaded PDF in another tab in the web browser.
+a file and then opening the downloaded PDF in another tab in the web browser.
 
 {% include image.html
 	file="save-pdf.gif"
