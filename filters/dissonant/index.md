@@ -197,12 +197,13 @@ categories that do not distinguish melodic directions.
 <tr><td> F </td><td> fake susp. approached by step up</td>      <td> f </td>  <td> fake susp. approached by step down</td>      </tr>
 <tr><td> x </td><td> resolution against suspension dissonance</td><td> r </td>  <td> suspension repeated note</td>              </tr>
 <tr><td> M </td><td> suspension missing agent approached by step up </td> <td> m </td>  <td> suspension missing agent approached by step down </td> </tr>
+<tr><td> o </td><td> purely ornamental suspension</td>          <td> h </td>  <td> chanson idiom</td>                           </tr>
 <tr><td> Q </td><td> dissonant 3rd quarter rising passint tone</td>  <td> q </td>  <td> dissonant 3rd quarter falling passing tone</td>      </tr>
 <tr><td> B </td><td> dissonant 3rd quarter upper neighbor</td>  <td> b </td>  <td> dissonant 3rd quarter lower neighbor</td>    </tr>
 <tr><td> T </td><td> appoggiatura approached from below</td>    <td> t </td>  <td> appoggiatura approached from above</td>      </tr>
 <tr><td> V </td><td> ascending accented passing tone</td>       <td> v </td>  <td> descending accented passing tone</td>        </tr>
 <tr><td> W </td><td> accented upper neighbor</td>               <td> w </td>  <td> accented lower neighbor</td>                 </tr>
-<tr><td>   </td><td> (no ascending form of chanson idiom)</td>  <td> h </td>  <td> chanson idiom</td>                       </tr>
+<tr><td> Y </td><td> only dissonant against known dissonance asc.</td> <td> y </td>  <td> only dissonant against known dissonance desc.</td> </tr>
 <tr><td> Z </td><td> unclassified dissonance, 2nd or 7th interval</td> <td> z </td ><td> unclassified dissonance, 4th interval</td></tr>
 </table>
 
@@ -221,8 +222,9 @@ letter:
 <tr><td> T </td><td> appoggiatura</td>                          <td> V </td><td> accented passing tone</td></tr>
 <tr><td> I </td><td> incomplete anterior neighbor</td>          <td> W </td><td> accented neighbor tone</td></tr>
 <tr><td> J </td><td> incomplete posterior neighbor</td>         <td> H </td><td> chanson idiom</td></tr>
-<tr><td> S </td><td> suspension</td>                            <td> X </td><td> resolution against suspension dissonance</td></tr>
-<tr><td> G </td><td> suspension agent</td>                      <td> Z </td><td> unclassified dissonance</td></tr>
+<tr><td> S </td><td> binary or ternary suspension</td>          <td> X </td><td> resolution against suspension dissonance</td></tr>
+<tr><td> G </td><td> binary or ternary suspension agent</td>    <td> Y </td><td> only dissonant against known dissonance</td></tr>
+<tr><td> O </td><td> purely ornamental suspension</td>          <td> Z </td><td> unclassified dissonance</td></tr>
 </table>
 
 Examples of each dissonant type are given below.  Note that the
