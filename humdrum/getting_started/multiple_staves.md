@@ -1,33 +1,16 @@
-## Multiple staves ##
+---
+title: multiple staves encoding tutorial
+author: Craig Stuart Sapp
+keywords: humdrum encoding tutorial multiple staves
+creation_date: 20 Aug 2017
+last_updated: 25 Jan 2018
+tags: [all, humdrum, getting_started]
+verovio: "true"
+vim: ts=3 ft=javascript
+summary: A tutorial on how to encode multiple staves in **kern data.
+sidebar: main_sidebar
+permalink: /humdrum/getting_started/multiple_staves.html
+---
 
-Each `**kern` spine in the data will produce a staff in the graphical notation.
-The lowest staff is the left-most spine in the data, and the highest staff
-in the notation is the right-most spine.
+{% include_relative multiple_staves.txt %}
 
-
-{% include verovio.html
-	humdrum-min-height="360px"
-	source="staves1"
-	scale="55"
-	pageWidth="1400"
-%}
-<script type="application/x-humdrum" id="staves1">
-**kern	**kern
-*M4/4	*M4/4
-=1	=1
-*	*^
-1E	2cc	4a
-.	.	4g
-*	*v	*v
-.	4f
-.	4e
-=2	=2
-*	*^
-1E	2cc	4a
-.	.	4g
-.	2ryy	4f
-.	.	4e
-*	*v	*v
-=	=
-*-	*-
-</script>

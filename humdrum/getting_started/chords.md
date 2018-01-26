@@ -1,21 +1,16 @@
-## Chords ##
+---
+title: chord encoding tutorial
+author: Craig Stuart Sapp
+keywords: humdrum encoding tutorial chord
+creation_date: 20 Aug 2017
+last_updated: 25 Jan 2018
+tags: [all, humdrum, getting_started]
+verovio: "true"
+vim: ts=3 ft=javascript
+summary: A tutorial on how to encode chords in **kern data.
+sidebar: main_sidebar
+permalink: /humdrum/getting_started/chords.html
+---
 
-Chords are created by adding multiple notes to a token, separated by
-a single space character.  Rhythms and articulations of each note should
-be duplicated, but not slurs, fermatas or beams.
-
-{% include verovio.html
-	source="chord1"
-	scale="55"
-	pageWidth="500"
-%}
-<script type="application/x-humdrum" id="chord1">
-**kern
-*clefG2
-4c 4e 4g
-4e' 4g' 4cc'
-4g^ 4cc^ 4ee^
-1c 1e 1g 1cc;
-*-
-</script>
+{% include_relative chords.txt %}
 

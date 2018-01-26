@@ -1,64 +1,16 @@
-## Time signatures ##
+---
+title: time signatures encoding tutorial
+author: Craig Stuart Sapp
+keywords: humdrum encoding tutorial time signatures
+creation_date: 20 Aug 2017
+last_updated: 25 Jan 2018
+tags: [all, humdrum, getting_started]
+verovio: "true"
+vim: ts=3 ft=javascript
+summary: A tutorial on how to encode time signatures in **kern data.
+sidebar: main_sidebar
+permalink: /humdrum/getting_started/time_signatures.html
+---
 
-Time signatures are interpretations in the form `*MX/Y` where `X` is the top
-number of the signature and `Y` is the bottom number of the signature:
+{% include_relative time_signatures.txt %}
 
-{% include verovio.html
-	humdrum-min-height="310px"
-	source="time1"
-	scale="55"
-	pageWidth="1400"
-%}
-<script type="application/x-humdrum" id="time1">
-**kern
-*clefG2
-*M4/4
-*met(c)
-=1
-4c
-4d
-4e
-4f
-=2
-*M3/2
-2g
-2f
-2d
-=
-*-
-</script>
-
-
-### Meter symbols ###
-
-Cut-time and Common-time symbols can be displayed by including an interpretation
-in the form `*met(X)`, where `X` is `c|` for cut-time, or `c` for common time:
-
-{% include verovio.html
-	humdrum-min-height="310px"
-	source="meter1"
-	scale="55"
-	pageWidth="900"
-%}
-<script type="application/x-humdrum" id="meter1">
-**kern
-*clefG2
-*M4/4
-*met(c)
-=1
-4c
-4d
-4e
-4f
-=2
-*M2/2
-*met(c|)
-2g
-2a
-=
-*-
-</script>
-
-The time signature equivalent of the meter symbol should still be encoded, 
-typically immediately before the meter symbol.  Try deleting the meter symbol
-lines from the above example and see what happens.

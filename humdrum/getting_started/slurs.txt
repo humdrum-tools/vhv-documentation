@@ -1,0 +1,91 @@
+## Slurs ##
+
+Slurs are indicated by adding `(` to a token for the slur start, and `)` for a slur end.
+
+{% include verovio.html
+	humdrum-min-height="275px"
+	source="slur1"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="slur1">
+**kern
+*M4/4
+=1
+(4c
+4d
+4e
+4f
+=2
+4g
+4f
+4e
+4c)
+==
+*-
+</script>
+
+### Nested slurs ###
+
+Slurs can be nested by opening another slur while another one is active. 
+The first slur closing will affect the closest slur opening to it.
+
+{% include verovio.html
+	humdrum-min-height="300px"
+	source="slur2"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="slur2">
+**kern
+*M4/4
+=1
+(4c
+(>4d
+(4e
+(>4f
+=2
+4g)
+4f)
+4e)
+4c)
+==
+*-
+!!!RDF**kern: > = above
+</script>
+
+Notice the direction RDF character which can be used to force
+the direction of a slur.
+
+### Crossing slurs ###
+
+Slurs can cross each other by prefixing an ampersand (`&`) in front
+of a slur marker which crosses another slur.  For more than one
+crossing slur at a time, additional `&` characters can be added to the
+slur prefix.
+
+{% include verovio.html
+	humdrum-min-height="300px"
+	source="slur3"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="slur3">
+**kern
+*M4/4
+=1
+(4c
+&(>4d
+4e)
+(4f&)
+=2
+&(4g
+&&(4f
+4e)
+4c&)
+=3
+1d&&)
+==
+*-
+!!!RDF**kern: > = above
+</script>

@@ -4,3 +4,4 @@ _site
 *.bak
 js/local
 style/local
+Gemfile.lock

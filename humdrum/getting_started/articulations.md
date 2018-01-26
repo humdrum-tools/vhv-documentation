@@ -1,78 +1,16 @@
-## Articulations and ornaments ##
+---
+title: articulations encoding tutorial
+author: Craig Stuart Sapp
+keywords: humdrum encoding tutorial articulations
+creation_date: 20 Aug 2017
+last_updated: 25 Jan 2018
+tags: [all, humdrum, getting_started]
+verovio: "true"
+vim: ts=3 ft=javascript
+summary: A tutorial on how to encode articulations in **kern data.
+sidebar: main_sidebar
+permalink: /humdrum/getting_started/articulations.html
+---
 
-Here is a sampler of note articulations:
+{% include_relative articulations.txt %}
 
-{% include verovio.html
-	humdrum-min-height="250px"
-	source="artic1"
-	scale="55"
-	pageWidth="1400"
-%}
-<script type="application/x-humdrum" id="artic1">
-**kern
-4ff'
-4ff^
-4ff`
-4ff~
-4ff'~
-4ff'^
-4ff^^
-4ff;
-=
-*-
-</script>
-
-Articulations can be place on the opposite side of their automatic location
-by adding RDF entries to force the articulation above or below the notehead:
-
-{% include verovio.html
-	humdrum-min-height="275px"
-	source="artic2"
-	scale="55"
-	pageWidth="1400"
-%}
-<script type="application/x-humdrum" id="artic2">
-**kern
-4f'>
-4ff^<
-4f`>
-4ff~<
-4f'~>
-4ff'^<
-4f^^>
-4ff;<
-=
-*-
-!!!RDF**kern: < = below
-!!!RDF**kern: > = above
-</script>
-
-
-Here is a sampler of ornaments.  Upper-case ornaments indicate
-whole-tone auxiliary notes, and lower-case ornaments indicate
-semi-tone auxiliary notes.  If the auxiliary notes require accidentals
-in the graphical music notation, then will be added automatically, as
-well as cautionary accidentals that may be needed on primary notes
-which follow the auxiliary notes of the ornaments.
-
-{% include verovio.html
-	humdrum-min-height="250px"
-	source="orn1"
-	scale="55"
-	pageWidth="1400"
-%}
-<script type="application/x-humdrum" id="orn1">
-**kern
-*M4/4
-=1
-2ct
-2dT
-=2
-2fW
-2gw
-=
-2fm
-2gM
-==
-*-
-</script>

@@ -1,52 +1,16 @@
-## Cross-staff notes ##
+---
+title: cross staff note encoding tutorial
+author: Craig Stuart Sapp
+keywords: humdrum encoding tutorial cross staff
+creation_date: 20 Aug 2017
+last_updated: 25 Jan 2018
+tags: [all, humdrum, getting_started]
+verovio: "true"
+vim: ts=3 ft=javascript
+summary: A tutorial on how to encode cross staff notes in **kern data.
+sidebar: main_sidebar
+permalink: /humdrum/getting_started/cross_staff.html
+---
 
-Notes can be stored in one `**kern` spines, but appear in another staff by
-applying an orientation RDF marker immediately after a note's pitch.
+{% include_relative cross_staff.txt %}
 
-{% include verovio.html
-	humdrum-min-height="360px"
-	source="cross1"
-	scale="55"
-	pageWidth="1000"
-%}
-<script type="application/x-humdrum" id="cross1">
-**kern	**kern
-*clefF4	*clefG2
-*M4/4	*M4/4
-=1	=1
-1CC	16e
-.	16d
-.	16c
-.	16B<
-.	16G<
-.	16F<
-.	16E<
-.	16D<
-.	16C<
-.	16BB<
-.	16C<
-.	16E<
-.	16G<
-.	16c<
-.	16e
-.	16g
-=2	=2
-16C	2cc/
-16D	.
-16E	.
-16F	.
-16G	.
-16A	.
-16B	.
-16c>	.
-16d>	2dd/
-16e>	.
-16f>	.
-16g>	.
-4f>\	.
-=	=
-*-	*-
-!!!filter: autobeam
-!!!RDF**kern: < = below
-!!!RDF**kern: > = above
-</script>

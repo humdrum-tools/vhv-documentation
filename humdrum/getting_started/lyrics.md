@@ -1,43 +1,16 @@
-## Lyrics ##
+---
+title: lyrics encoding tutorial
+author: Craig Stuart Sapp
+keywords: humdrum encoding tutorial lyrics
+creation_date: 20 Aug 2017
+last_updated: 25 Jan 2018
+tags: [all, humdrum, getting_started]
+verovio: "true"
+vim: ts=3 ft=javascript
+summary: A tutorial on how to encode lyrics in **kern data.
+sidebar: main_sidebar
+permalink: /humdrum/getting_started/lyrics.html
+---
 
-Lyrics are added to a staff by placing one or more `**text` spines after a `**kern` spine.
+{% include_relative lyrics.txt %}
 
-{% include verovio.html
-	humdrum-min-height="350px"
-	source="text1"
-	scale="55"
-	pageWidth="1200"
-%}
-<script type="application/x-humdrum" id="text1">
-!!!OTL@@DE: Liebes-A-B-C
-!!!COM: Pohlenz, August
-!!!CDT: 1790/07/03/-1843/03/09/
-!!!ODT: 1827
-!!!OMD: Allegretto
-!!!LYR: Gerhard, Wilhelm
-!!!LDT: 1826
-!!!OCL: Erk, Ludwig
-!!!GCO: Deutscher Liederschatz, Band 1
-**kern	**text	**text	**text	**text	**text	**text	**text
-*clefG2	*	*	*	*	*	*	*
-*k[b-]	*	*	*	*	*	*	*
-*F:	*	*	*	*	*	*	*
-*M3/8	*	*	*	*	*	*	*
-=1	=1	=1	=1	=1	=1	=1	=1
-8f	A	E	I	M	Q	U	Yp-
-8e	B	F	K	N	R	V	-si-
-8f	C	G	und	O	S	W	-lon
-=2	=2	=2	=2	=2	=2	=2	=2
-4g	D,	H,	L,	P,	T,	X,	Z,
-8r	.	.	.	.	.	.	.
-=3	=3	=3	=3	=3	=3	=3	=3
-8g	wenn	w&auml;rst	Aeug-	gleich	Schei-	mach'	nun
-8f	ich	du	-lein	ei-	-den	ei-	geh'
-8g	dich	doch	so	-ner	thut	-nen	zu
-=4	=4	=4	=4	=4	=4	=4	=4
-4a	seh',	da!	hell	Fee	weh.	Knix,	Bett!
-8r	.	.	.	.	.	.	.
-=5	=5	=5	=5	=5	=5	=5	=5
-*-	*-	*-	*-	*-	*-	*-	*-
-!!!SMS: Deutscher Liederschatz, Band 1, Ludwig Erk, ed.
-</script>

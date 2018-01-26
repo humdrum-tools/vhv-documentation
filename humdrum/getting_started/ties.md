@@ -1,30 +1,16 @@
-## Ties ##
+---
+title: ties encoding tutorial
+author: Craig Stuart Sapp
+keywords: humdrum encoding tutorial ties
+creation_date: 20 Aug 2017
+last_updated: 25 Jan 2018
+tags: [all, humdrum, getting_started]
+verovio: "true"
+vim: ts=3 ft=javascript
+summary: A tutorial on how to encode ties in **kern data.
+sidebar: main_sidebar
+permalink: /humdrum/getting_started/ties.html
+---
 
-Ties are indicated by attaching `[` to the starting note of a tie,
-and `]` on the ending note.  For intermediate notes in a tied group,
-the underscore character `_` indicates a previous tie ends on the note
-at the same time that a tie starts to the next note.
+{% include_relative ties.txt %}
 
-{% include verovio.html
-	humdrum-min-height="275px"
-	evenNoteSpacing="1"
-	source="tie1"
-	scale="55"
-	pageWidth="1000"
-%}
-<script type="application/x-humdrum" id="tie1">
-**kern
-[4c
-=1
-4c.]
-[8d
-=2
-2d_
-=3
-4d] [4a
-4a_
-=4
-2a]
-==
-*-
-</script>

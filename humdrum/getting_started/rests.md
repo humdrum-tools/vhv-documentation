@@ -1,31 +1,16 @@
-## Rests ##
+---
+title: rests encoding tutorial
+author: Craig Stuart Sapp
+keywords: humdrum encoding tutorial rests
+creation_date: 20 Aug 2017
+last_updated: 25 Jan 2018
+tags: [all, humdrum, getting_started]
+verovio: "true"
+vim: ts=3 ft=javascript
+summary: A tutorial on how to encode rests in **kern data.
+sidebar: main_sidebar
+permalink: /humdrum/getting_started/rests.html
+---
 
-Rests are represent by the character `r` in `**kern` data.
-Whole-measure rests are given their actual duration, and if the
-duration of the rest matches the time signature, then the rest will
-be displayed as a centered whole-measure rest regardless of its actual
-duration (or as a breve-measure rest if the duration of the measure
-is a breve or longer).
+{% include_relative rests.txt %}
 
-{% include verovio.html
-	humdrum-min-height="275px"
-	source="rest1"
-	scale="55"
-	pageWidth="1400"
-%}
-<script type="application/x-humdrum" id="rest1">
-**kern
-*clefG2
-*M5/4
-=1
-4r
-2.r
-32r
-8r
-16r
-32r
-=2
-4%5r
-==
-*-
-</script>

@@ -1,86 +1,16 @@
-## Tuplets ##
+---
+title: tuplets encoding tutorial
+author: Craig Stuart Sapp
+keywords: humdrum encoding tutorial tuplets
+creation_date: 20 Aug 2017
+last_updated: 25 Jan 2018
+tags: [all, humdrum, getting_started]
+verovio: "true"
+vim: ts=3 ft=javascript
+summary: A tutorial on how to encode tuplets in **kern data.
+sidebar: main_sidebar
+permalink: /humdrum/getting_started/tuplets.html
+---
 
-Tuplets are no different from regular rhythmic values since they
-describe how many notes of that duration sum together to create a 
-whole-note duration.  Triplet eighth notes are represented with
-the number `12` because twelve of them equal a whole-note duration.
-quintuplet sixteen notes are represented as `20` since 20 of the
-equal a whole-note duration.
+{% include_relative tuplets.txt %}
 
-{% include verovio.html
-	humdrum-min-height="400px"
-	evenNoteSpacing="1"
-	source="tuplet1"
-	scale="55"
-	pageWidth="1000"
-%}
-<script type="application/x-humdrum" id="tuplet1">
-**kern
-*M2/4
-4g
-20a
-20b
-20.a
-40g
-20a
-=
-12.f
-24g
-12a
-4g
-=
-6b
-6a
-6g
-=
-2e
-==
-!!!filter: autobeam
-</script>
-
-
-### Extended Rhythm representation ###
-
-Note durations that do not divide the duration of a whole note into an integer 
-number of equal pieces (when also accounting for augmentation dots), must be encoded in an 
-extended `**recip` representation.  This system is understood by VHV and
-[Humdrum Extras](http://extras.humdrum.org), but not in the classical
-Humdrum Toolkit (see [rscale](http://extras.humdrum.org/man/rscale) for
-using extended rhythms with the Humdrum Toolkit).
-
-Example extended rhythms include triplet whole notes.  3/2 of a
-triplet whole note fill the duration of a regular whole note, so
-it is represented by the string `3%2`.  Another way of conceptualizing
-this is to flip the numbers in the rhythm string, noting that a triplet
-whole note is 2/3rds of a whole note:
-
-{% include verovio.html
-	humdrum-min-height="275px"
-	evenNoteSpacing="1"
-	source="ext1"
-	scale="55"
-	pageWidth="1000"
-%}
-<script type="application/x-humdrum" id="ext1">
-**kern
-*M2/1
-=1
-3%2d
-3%2e
-3%2f
-=2
-3%2.g
-3f
-3%2d
-=3
-1%2e
-==
-*-
-</script>
-
-Notice the `1%2` rhythm in the last measure.  This represent a
-double whole note, since 1/2 of the double whole note is equivalent
-to a whole note.  `0` is equivalent to `1%2`, `00` is equivalent
-to `1%4` (a long) and `000` is equivalent to `1%8` (a maxima).  It
-is probably best to use the zero-system for breves, maximas and
-longs, reserving extended rhythms for more complicated cases.
