@@ -49,4 +49,5 @@ you will have to reload the webpage to restart verovio again.]
 {% include_relative multiple_staves.txt %}
 {% include_relative cross_staff.txt %}
 {% include_relative text_directions.txt %}
+{% include_relative transposing.txt %}
 

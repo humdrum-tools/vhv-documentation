@@ -1,0 +1,38 @@
+## Transposing parts ##
+
+Transposing scores are always encoded in sounding pitch in Humdrum
+data, and instructions for transposing to written pitch are encoded
+at the start of the part.  In the following example, the second
+spine encodes a B-flat clarinet part, with the transposition
+interpretation `*ITrd1c2` meaning that the written part is a diatonic
+step up, equivalent to 2 semi-tone up.
+
+{% include verovio.html
+	humdrum-min-height="340px"
+	source="transpose1"
+	tabsize="10"
+	scale="55"
+	pageWidth="1000"
+%}
+<script type="application/x-humdrum" id="transpose1">
+**kern	**kern
+*I"Cello	*I"Clar. in Bb
+*	*ITrd1c2
+*clefF4	*clefG2
+*M4/4	*M4/4
+*k[]	*k[]
+=1	=1
+4C	4c
+4D	4d
+4E	4e
+4F	4f
+=2	=2
+4G	4g
+4A	4a
+4B	4b
+4c	4cc
+==	==
+*-	*-
+</script>
+
+

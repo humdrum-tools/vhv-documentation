@@ -246,6 +246,7 @@ changing the Humdrum text to:
 
 Here is the resulting notation, created on this page from 
 the above data:
+<br/><br/>
 
 <div id="myhumdrum"></div>
 
