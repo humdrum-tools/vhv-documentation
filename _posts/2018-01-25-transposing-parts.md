@@ -9,7 +9,7 @@ sidebar: main_sidebar
 tags: [all, news]
 ---
 
-Transpoing parts have been implemented in VHV, and transposing
+Transposing parts have been implemented in VHV, and transposing
 scores can be converted from MusicXML files that are drag-and-dropped
 onto the VHV homepage.  [More information...](/humdrum/transposing)
 

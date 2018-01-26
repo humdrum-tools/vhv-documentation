@@ -1,0 +1,70 @@
+
+## Pitch ##
+
+Here is a short music example of notes, each containing a rhythm
+and then a pitch:
+
+{% include verovio.html
+	source="pitch1"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="pitch1">
+**kern
+4c
+4d
+4e
+4f
+*-
+</script>
+
+`4` represents a quarter note, and `c`, `d`, `e` and `f` represent
+the first four pitches of the fourth octave (middle-C octave).  The
+musical example is interactive and changes whenever you type
+text into the box to the left, so try adding pitches for G, A and B
+in the same octave to the notation like this:  
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="pitch2"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="pitch2">
+**kern
+4c
+4d
+4e
+4f
+4g
+4a
+4b
+*-
+</script>
+
+
+Experiment with the numbers to generate other
+rhythms, such as half notes and eighth notes:
+
+{% include verovio.html
+	humdrum-visible="false"
+	source="pitch3"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="pitch3">
+**kern
+8c
+2d
+8e
+8f
+4g
+4a
+2b
+*-
+</script>
+
+Note the order of rhythm and then pitch in the encoded notes.  The
+order can be reversed, but the canonical order is rhythm first,
+then pitch.  Try reversing the order of a note such as `4c` to `c4`
+and see that happens to the note in the graphical notation.

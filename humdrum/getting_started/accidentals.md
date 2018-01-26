@@ -1,0 +1,143 @@
+## Accidentals ##
+
+Accidentals must always be indicated along with the diatonic pitch name unless
+the pitch is natural.  Accidentals up to double-sharp/flat can be displayed in
+VHV (no triple sharps/flats or higher can be rendered with verovio, although 
+they can be represented in `**kern` data):
+
+
+{% include verovio.html
+	source="acc1"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="acc1">
+**kern
+*clefG2
+4c--
+4d-
+4en
+4f#
+4g##
+*-
+</script>
+
+VHV will automatically calculate which accidentals should be visible
+in the graphic notation. In the following example, the key signature
+contains an F-sharp, so in the first measure no sharps are displayed
+on the F's.  The second measure contains an F-natural since there
+is no chromatic alteration of the F, so a natural is shown to cancel
+out the key signatures F-sharp.  And at the end of the second
+measure, the second F has a sharp alteration which must be shown; 
+otherwise, it would appear to be an F-natural.
+
+{% include verovio.html
+	humdrum-min-height="300px"
+	source="acc2"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="acc2">
+**kern
+*clefG2
+*k[f#]
+=1
+4g
+4f#
+4e
+4f#
+=
+4g
+4f
+4e
+4f#
+==
+*-
+</script>
+
+Try removing the key signature, and see what happens to the accidentals displayed
+in the example.
+
+### Cautionary accidentals ###
+
+When accidentals are not required according to the algorithm for calculating
+visual accidentals, but the accidentals are desired in order to add clarity
+for a performer, the accidental of a note can be forced to display by
+adding `X` after the accidental.
+
+
+{% include verovio.html
+	humdrum-min-height="300px"
+	source="acc3"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="acc3">
+**kern
+*k[f#]
+*clefG2
+=1
+4g
+4f
+4e
+4f
+=
+4g
+4f#X
+4e
+4f#
+==
+*-
+</script>
+
+In the first measure, two F-naturals are given, with only the first
+F-natural displaying its natural alteration.  In the second measure,
+the first F has a sharp, but this sharp would not normally be
+displayed since it is within the key signature, and the barline
+canceled out the F-natural of the previous measure.  To avoid
+confusion, the first F-sharp in the second measure should have a
+cautionary sharp added to the note as is shown in the above example.
+
+Natural signs do not require `X`, as they are always displayed when
+given, but when they are used to indicate a cautionary accidental,
+it would be good to include the `X`.
+
+### Editorial accidentals ###
+
+Editorial accidentals can be indicated by adding an RDF reference record
+for a user-signifier (character) used to mark the editorial accidentals
+in the data.  Typically the character `i` is used to mark editorial
+accidentals in [Josquin Research Project](http://josquin.stanford.edu) 
+Humdrum encodings:
+
+{% include verovio.html
+	humdrum-min-height="210px"
+	humdrum-min-width="400px"
+	source="acc4"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="acc4">
+**kern
+*clefG2
+=1
+4g
+4f#i
+4e
+4f
+==
+*-
+!!!RDF**kern: i = editorial accidental
+</script>
+
+The RDF reference record can be placed on any line of the file but
+typically is placed at the end of the data.  Notice that editorial accidentals
+may affect the visual display of accidentals after the current
+pitch.  Try making the natural sign on the last note in the above
+example an editorial accidental as well.
+
+Also note that the style of the editorial accidental can be controlled
+from the RDF entry.  Add the string `brack` or `bracket` to the RDF description
+so that the editorial accidentals are displayed as regular accidentals enclosed
+in brackets.  Also try adding `paren` or `parentheses` to the RDF line to 
+display the editorial accidental in parentheses.
