@@ -25,7 +25,7 @@ a file and then opening the downloaded PDF in another tab in the web browser.
 {% include image.html
 	file="save-pdf.gif"
 	alt="save currently viewed notation."
-	caption="Saving currently viewed nontation to a PDF and then viewing PDF."
+	caption="Saving currently viewed notation to a PDF and then opening PDF."
 %}
 
 ## Saving the entire score to a PDF file

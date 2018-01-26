@@ -240,6 +240,10 @@ entries:
       output: web, pdf
       url: /humdrum/tuplet_styling
 
+    - title: Transposing parts
+      output: web, pdf
+      url: /humdrum/transposing
+
 ###########################################################################
 
   - title: myVHV

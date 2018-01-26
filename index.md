@@ -78,7 +78,7 @@ ul.brief li {
 
 <dl>
 <dt>Craig Stuart Sapp</dt>
-<dd>System and documentation architecture</dd>
+<dd>Creator</dd>
 <dt>Alex Morgan</dt>
 <dd>
 <ul class="brief"> <li> dissonance labeling algorithms in the <i><a href="/filters/dissonant">dissonant</a></i> filter</li> <li> cadential suspension definitions in the <i><a href="/filters/cint">cint</a></i> filter </li> </ul>
@@ -102,6 +102,23 @@ for graphical notation should be submitted to
 Most VHV documentation pages have editing buttons that can be used to
 fix typos or add content, if you have a <a
 href="https://github.com">Github</a> account.
+
+### Major software components ###
+
+<dl>
+
+<dt> <a href="http://www.verovio.org">verovio</a></dt>
+<dd> Music notation rendering in C++</dd>
+
+<dt> <a href="http://humlib.humdrum.org">humlib</a></dt>
+<dd> Musical data conversion and analysis tools in C++</dd>
+
+<dt> <a href="https://ace.c9.io">ace editor</a></dt>
+<dd> JavaScript text editor</dd>
+
+</dl>
+
+
 
 ## Institutional/Project Supporters ##
 
