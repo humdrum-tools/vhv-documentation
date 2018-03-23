@@ -244,6 +244,10 @@ entries:
       output: web, pdf
       url: /humdrum/transposing
 
+    - title: Fingering
+      output: web, pdf
+      url: /humdrum/fingering
+
 ###########################################################################
 
   - title: myVHV

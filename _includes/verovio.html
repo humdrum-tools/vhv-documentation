@@ -27,6 +27,8 @@
 		font             default "Leipzig"
 		inputFormat      default "auto"
 		page             default 1
+		# header           default 0
+		# footer           default 0
 		pageHeight       default 60000
 		pageWidth        default 1350
 		scale            default 40
@@ -121,6 +123,8 @@ window.addEventListener("DOMContentLoaded", function() {
 	var spacingNonLinear = parseFloat("{{include.spacingNonLinear}}") || 0.6;
 	var spacingSystem    = parseInt("{{include.spacingSystem}}") || 3;
 	var spacingStaff     = parseInt("{{include.spacingStaff}}") || 6;
+	// var noheader         = !(parseInt("{{include.header}}") || 0);
+	// var nofooter         = !(parseInt("{{include.footer}}") || 0);
 
 	var options = {
 		adjustPageHeight: adjustPageHeight,
@@ -131,6 +135,8 @@ window.addEventListener("DOMContentLoaded", function() {
 		pageWidth:        pageWidth,
 		humType:          1,
 		scale:            scale,
+//		noHeader:         noheader,
+//		noFooter:         noFooter,
 		spacingStaff:     spacingStaff,
 		spacingSystem:    spacingSystem,
 		evenNoteSpacing:  evenNoteSpacing
