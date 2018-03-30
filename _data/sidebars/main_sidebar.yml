@@ -220,6 +220,10 @@ entries:
       output: web, pdf
       url: /humdrum/getting_started
 
+    - title: Cue-sized notes
+      output: web, pdf
+      url: /humdrum/cues
+
     - title: Figured bass
       output: web, pdf
       url: /humdrum/figured_bass
