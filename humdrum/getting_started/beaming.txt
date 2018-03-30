@@ -97,9 +97,10 @@ furthest from the noteheads):
 *-
 </script>
 
-Beams cannot currently be drawn across barlines.  If the beam
-beginnings/endings do not balance each other out within a measure, none
-of the notes in the measure will be beamed.
+
+{% include note.html
+	content="Beams cannot currently be drawn across barlines.  If the beam beginnings/endings do not balance each other out within a measure, none of the notes in the measure will be beamed as demonstrated in the following example (try fixing the beams in that measure)."
+%}
 
 {% include verovio.html
 	humdrum-min-height="425px"

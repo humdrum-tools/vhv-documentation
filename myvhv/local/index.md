@@ -78,6 +78,11 @@ If the `serve` script fails to run, then most likely you need to type the comman
 bundle install
 ```
 
+
+{% include warning.html
+	content="Recently the nokogiri component which should be installed with the above command does not work properly, so try also running the command 'gem install nokogiri -v 1.6.8.1 -- --use-system-libraries=true --with-xml2-include=\"$(xcrun --show-sdk-path)\"/usr/include/libxml2' if there is a problem."
+%}
+
 {% include image.html
 	file="local.png"
 	alt="VHV running on local webserver."

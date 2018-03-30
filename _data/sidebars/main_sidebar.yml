@@ -224,6 +224,10 @@ entries:
       output: web, pdf
       url: /humdrum/figured_bass
 
+    - title: Fingering
+      output: web, pdf
+      url: /humdrum/fingering
+
     - title: Invisible rests
       output: web, pdf
       url: /humdrum/invisible_rests
@@ -236,17 +240,17 @@ entries:
       output: web, pdf
       url: /humdrum/pedal_marks
 
-    - title: Tuplet styling
+    - title: Trills
       output: web, pdf
-      url: /humdrum/tuplet_styling
+      url: /humdrum/trills
 
     - title: Transposing parts
       output: web, pdf
       url: /humdrum/transposing
 
-    - title: Fingering
+    - title: Tuplet styling
       output: web, pdf
-      url: /humdrum/fingering
+      url: /humdrum/tuplet_styling
 
 ###########################################################################
 
