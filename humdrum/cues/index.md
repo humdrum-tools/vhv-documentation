@@ -12,8 +12,11 @@ sidebar: main_sidebar
 permalink: /humdrum/cues/index.html
 ---
 
-Cue-sized notes can be encoded in two ways within `**kern` spines.  Individual
-notes can be marked as cue-sized by using an `RDF` record:
+Cue-sized notes are smaller than regular notes, similar to grace
+notes; however, unlike grace notes, cue-sized notes possess non-zero
+score durations.  Cue-sized notes can be encoded in two ways within
+`**kern` spines.  For occasional cue-sized notes, an RDF record can
+be added to mark individual notes as being cue-sized:
 
 
 {% include verovio.html
@@ -26,7 +29,7 @@ notes can be marked as cue-sized by using an `RDF` record:
 4e
 *^
 4g	8gN\L
-.	8aN\J
+.	8aNJ
 *v	*v
 4b
 =
@@ -35,10 +38,8 @@ notes can be marked as cue-sized by using an `RDF` record:
 </script>
 
 
-The second method of indicating cue notes is more suitable when 
-several notes within a layer should be in cue size.  In this case
-place the `*cue` interpretation before the first note, and `*Xcue`
-after the last note:
+For generating a longer sequence of cue-sized notes, a second method using `*cue` 
+and `*Xcue` tandem interpretations can be used to turn on/off cue-size:
 
 {% include verovio.html
 	source="cue2"
@@ -81,5 +82,55 @@ after the last note:
 </script>
 
 
+The `*cue` and `*Xcue` markers only apply to a specific subspine of music, so one 
+subspine can be cue sized while another is not.  This is useful for adding 
+cues to orchestra parts.
+
+
+{% include verovio.html
+	source="cue3"
+	humdrum-min-height="710px"
+	scale="55"
+%}
+<script type="application/json" id="cue3">
+**kern
+*M4/4
+=1
+*^
+*	*cue
+!	!LO:TX:b:t=vlas.
+1r	4e
+.	4f
+.	4e
+.	4c
+*	*Xcue
+=2	=2
+*cue	*
+!LO:TX:a:t=vlns.	!
+4ee	1r
+4ff	.
+4ee	.
+4cc	.
+*Xcue	*
+=3	=3
+*cue	*
+8ffL	2r
+8eeJ	.
+8ddL	.
+8ccJ	.
+!	!LO:TX:a:B:t=solo
+2ryy	16ffLL
+.	16ee
+.	16dd
+.	16ccJJ
+.	16bLL
+.	16a
+.	16g
+.	16fJJ
+*Xcue	*
+*v	*v
+=
+*-
+</script>
 
 
