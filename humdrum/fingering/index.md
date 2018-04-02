@@ -22,7 +22,6 @@ Fingerings can be encoded in Humdrum `**fing` spines:
 	tabsize="10"
 	pageWidth="860"
 %}
-
 <script type="application/json" id="fingering">
 !!!OTL: C major scale
 **kern	**fing
@@ -92,8 +91,62 @@ J.S. Bach cello suite no. 1 in G major, BWV 1007, Menuet II.  The `**fing` and
 
 </script>
 
+
+## Chords ##
+
+Fingerings for chord notes are separated by spaces.
+
+
+{% include verovio.html
+	source="chord"
+	humdrum-min-height="260px"
+	scale="55"
+	tabsize="10"
+	pageWidth="860"
+%}
+<script type="application/json" id="chord">
+**kern	**fing
+*clefG2	*
+*M4/4	*
+=1	=1
+4c 4e	1 3
+4d 4f	2 4
+4e 4g	3 5
+=2	=2
+4c 4e 4g	1 3 5
+4d 4f 4a	1 3 5
+4e 4g 4b	1 3 5
+==	==
+*-	*-
+</script>
+
+
+Fingerings in chords should be sorted from low to high pitches for
+right-hand notes in piano music, while left-hand note fingerings should
+be sorted from high to low pitches.
+
+{% include verovio.html
+	source="chord2"
+	humdrum-min-height="180px"
+	scale="55"
+	tabsize="10"
+	pageWidth="860"
+%}
+<script type="application/json" id="chord2">
+**kern	**fing
+*clefG2	*
+*M4/4	*
+=1	=1
+4c 4e 4g	1 3 5
+4g 4e 4c	1 3 5
+4e 4g 4c	1 3 5
+==	==
+*-	*-
+</script>
+
+
 {% include warning.html
-	content="Currently fingerings can only be shown above the staff, and chord fingerings will not be displayed properly."
+	content="Left-hand fingering not yet implemented."
 %}
 
 
