@@ -19,6 +19,7 @@ exclusive interpretation.
 {% include verovio.html
 	source="mens"
 	pageWidth="950"
+	evenNoteSpacing="1"
 	scale="60"
 	tabsize="12"
 	humdrum-min-height="200px"
@@ -116,6 +117,7 @@ Note rhythms are represented by letters:
 {% include verovio.html
 	source="rhythms"
 	pageWidth="1100"
+	evenNoteSpacing="1"
 	scale="60"
 	tabsize="12"
 	humdrum-min-height="280px"
