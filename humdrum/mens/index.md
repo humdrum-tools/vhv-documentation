@@ -249,8 +249,8 @@ Ligatures are indicated with angle brackets:
 *clefC3
 *met(C|)
 Sic
-<sif
-sie>
+&lt;sif
+sie&gt;
 Mid
 Mic
 siB
