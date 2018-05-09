@@ -153,6 +153,9 @@ The `p` and `i` rhythmic qualifiers are not required unless you are creating
 a polyphonic score.  In that case the exact duration of the notes are required
 to align the parts.
 
+
+### Dots ###
+
 Dots representing either augmentation dots or dots of division are encoded
 as the character `:`.  This dot does not directly affect the duration of
 notes, instead use `p` to perfect notes.  In the future this dot character could
@@ -228,6 +231,32 @@ Cut-C mensuration.  Here is a table of some of the possible mensurations:
 
 </table>
 
+## Ligatures ##
+
+Ligatures are indicated with angle brackets:
+
+{% include verovio.html
+	source="ligature"
+	pageWidth="950"
+	evenNoteSpacing="1"
+	scale="60"
+	tabsize="12"
+	humdrum-min-height="250px"
+%}
+
+<script type="application/json" id="ligature">
+**mens
+*clefC3
+*met(C|)
+Sic
+<sif
+sie>
+Mid
+Mic
+siB
+Sic
+*-
+</script>
 
 
 ## Barlines ##
