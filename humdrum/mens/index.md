@@ -244,7 +244,7 @@ Ligatures are indicated with angle brackets:
 	humdrum-min-height="250px"
 %}
 
-<script type="application/json" id="ligature">
+<script type="application/x-humdrum" id="ligature">
 **mens
 *clefC3
 *met(C|)
@@ -257,6 +257,8 @@ siB
 Sic
 *-
 </script>
+
+Currently ligatures can only be shown in *recta* style.
 
 
 ## Barlines ##
