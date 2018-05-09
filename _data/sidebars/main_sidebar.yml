@@ -256,6 +256,10 @@ entries:
       output: web, pdf
       url: /humdrum/tuplet_styling
 
+    - title: White menural notation
+      output: web, pdf
+      url: /humdrum/mens
+
 ###########################################################################
 
   - title: myVHV
