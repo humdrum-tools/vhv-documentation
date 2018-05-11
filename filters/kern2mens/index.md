@@ -830,6 +830,10 @@ Polyphonic works can also be converted:
 See the [while mensural notation](/humdrum/mens) documentation page for more information
 about the `**mens` representation.
 
+Some things to work on: Merge breve rests into long rests, and long rests into maxima
+rests.  This currently has to be done by hand after conversion to `**mens`.
+
+
 
 
 
