@@ -75,6 +75,8 @@ sid
 *-
 </script>
 
+Also see the [kern2mens filter](/filters/kern2mens) to conver `**kern`
+data into `**mens` data.
 
 ## Pitch ##
 

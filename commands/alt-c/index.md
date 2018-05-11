@@ -11,7 +11,7 @@ permalink: /commands/alt-c/index.html
 ---
 
 Pressing <span class="keypress">alt-c</span> will apply any embedded
-filters (or [URL filters](/filters/url)) to Humdrum data in the
+[filters](/filters/) (or [URL filters](/filters/url)) to Humdrum data in the
 text editor, and then replace the contents of the text editor with the
 filtered data.
 

@@ -11,7 +11,7 @@ summary:
 permalink: /filters/kern2mens/index.html
 ---
 
-The _kern2mens_ filter can be used to convert `**kern` data (modern western
+The _kern2mens_ [filter](/filters/) can be used to convert `**kern` data (modern western
 music notation) into `**mens` (white mensural notation).
 
 Here is an example use of kern2mens to convert modern notation into
@@ -107,11 +107,17 @@ white mensural notation:
 
 
 Try removing the first data line starting with `!!!filter:` to see the
-original modern notation.
+original modern notation.  Also trying copy-and-pasting the above
+data into the [VHV](http://verovio.humdrum.org/?k=e) text editor.
 
-With [VHV](http://verovio.humdrum.org), you can view the converted `**mens`
-data by typing `alt-c` to compile the filter.  For the above example, this will
-produce data that looks like this:
+See the [while mensural notation](/humdrum/mens) documentation page for
+more information about the `**mens` representation.
+
+
+In [VHV](http://verovio.humdrum.org) (but not on this page), you can
+view the converted `**mens` data by typing [alt-c](/commands/alt-c)
+to compile the filter.  For the above example, this will produce data
+that looks like the following example:
 
 {% include verovio.html
 	source="example1b"
@@ -194,20 +200,20 @@ SiF
 </script>
 
 
-The converted data may not be completely syntactically correct and
-may require further edition &mdash; such as removing perfection
-dots in circle mensurations (this will be improved in the future).  The
-kern2mens filter is still in development mode, so expect bugs.
-For example, the first E4 (top line) should be flat, and the second
-one should have an editorial flat above it.
 
-A future development will allow specifying an "original clef" in the modern notation
-which will be used in the `**mens` data.  Such a clef would be like a regular
-`**kern` clef, but with an `o` prefixed to "clef", such as `*oclefC3` for an alto
-clef.  Currently the `-c` option can be used to change the clef between the
-`**kern` and `**mens` notation display.  Here is the same music as above, but
-setting the `**mens` clef to C3 from the filter line:
+{% include note.html
+	content=" The converted data may not be completely syntactically correct and may require further editing &mdash; such as removing perfection dots in circle mensurations (this will be improved in the future).  The kern2mens filter is still in development mode, so expect bugs.  For example, the first E4 (top line) should be flat, and the second one should have an editorial flat above it."
+%}
 
+## Setting the clef ##
+
+A future development will allow specifying an "original clef" in
+the modern notation which will be used in the `**mens` data.  Such a
+clef would be like a regular `**kern` clef, but with an `o` prefixed
+to "clef", such as `*oclefC3` for an alto clef.  Currently the `-c`
+option can be used to change the clef between the `**kern` and `**mens`
+notation display.  Here is the same music as above, but setting the
+`**mens` clef to C3 from the filter line:
 
 
 {% include verovio.html
@@ -298,17 +304,24 @@ setting the `**mens` clef to C3 from the filter line:
 *-
 </script>
 
+Similar to `*oclef`, there will be an implementation of "original
+mensuration" signs, such as `*omet(C|)`.  This mensuration sign would
+be used in preference over the time signature or a plain `*met(c|)`
+meter signature when converting into `**mens` data.
+
+## Barlines ##
+
 Barlines are still needed in the converted data so that verovio can break
-the music onto mulple lines.  Notice that tied notes are merged into single
+the music onto multiple lines.  Notice that tied notes are merged into single
 notes in the conversion.  Any barlines that split a note will be removed,
 but the rest will be left for layout purposes.  You can remove the barlines
 by adding the `-M` option, but this is currently only useful for short
 single-line examples. 
 
-If you want to remove bar numbers from the measures,
-add the `-N` option to the filter. If you want to keep the barlines, then
-add the `-I` option. Here is an example of using the `-N` and `-I` options
-at the same time:
+If you want to remove bar numbers from the measures, add the `-N` option
+to the filter. If you want to see the remaining barlines, then add the
+`-I` option. Here is an example of using the `-N` and `-I` options at
+the same time:
 
 {% include verovio.html
 	source="example2b"
@@ -398,17 +411,18 @@ at the same time:
 *-
 </script>
 
-Notice that some of the barlines have been remove to avoid tied notes in the converted
-`**mens` data.
+Notice that some of the barlines have been remove to avoid tied notes
+in the converted `**mens` data.
 
-
+## Text ##
 
 Text underlay (i.e., lyrics) can be given as a `**text` spine to the right
-of the `**kern` and resulting `**mens` spine:
+of the `**kern` spine and the resulting `**mens` spine:
 
 {% include verovio.html
 	source="example-text"
 	scale="40"
+	tabsize="12"
 	humdrum-min-width="250"
 	pageWidth="1200"
 %}
@@ -640,9 +654,14 @@ of the `**kern` and resulting `**mens` spine:
 *-	*-
 </script>
 
+## Creating PDFs ##
 
-In [VHV](http://verovio.humdrum.org), you can adjust the window size to fit
-the music, and then type `alt-t` to download a one-page PDF file of the 
+In [VHV](http://verovio.humdrum.org), you can adjust the window size
+to fit the music and then type [alt-t](/commands/alt-t) to download a
+one-page PDF file of the
+
+
+
 visible music:
 
 
@@ -651,13 +670,20 @@ visible music:
 	caption="Adjust the windows size to have the music complete fit in view."
 %}
 
-Here is the [resulting PDF file](score.pdf), and the PDF file viewed in a PDF viewer:
+Here is the [resulting PDF file](score.pdf), and below is shown the PDF
+file viewed in a PDF viewer:
 
 {% include image.html
 	file="score.png"
 	caption="Downloaded one-page PDF file in a PDF viewer."
 %}
 
+
+For longer scores, type [alt-shift-T](/commands/alt-t) to generate a
+multi-page PDF score formatted for letter-sized paper.
+
+
+## Converting polyphonic scores ##
 
 
 Polyphonic works can also be converted:
@@ -672,7 +698,6 @@ Polyphonic works can also be converted:
 %}
 
 <script type="application/x-humdrum" id="example-poly">
-
 !!!filter: kern2mens -N
 **kern	**kern	**kern	**kern
 *Ivox	*Ivox	*Ivox	*Ivox
@@ -819,19 +844,236 @@ Polyphonic works can also be converted:
 0GGl	0Gl	0dl	0gl
 ==	==	==	==
 *-	*-	*-	*-
+</script>
+
+{% include warning.html
+	content="There is currently a bug with polyphonic works that contain text."
+%}
 
 
+### Extracting parts from a polyphonic score ###
+
+Use the [extract filter](/filters/extract) to select a part from 
+a `**kern` score before converting it into mensural notation.  
+The following example uses two filters in series:
+
+```
+!!!filter: extract -k 2
+!!!filter: kern2mens -N
+```
+
+The first filter extracts the second kern spine from the left, which
+is the tenor part, and then converts that part into mensural
+notation.  The two filters can also be merged into a single line
+by placing a pipe character between them:
+
+```
+!!!filter: extract -k 2 | kern2mens -N
+```
+
+
+{% include verovio.html
+	source="example-poly2"
+	scale="60"
+	humdrum-min-width="650"
+	tabsize="12"
+	pageWidth="1100"
+%}
+
+<script type="application/x-humdrum" id="example-poly2">
+!!!filter: extract -k 2
+!!!filter: kern2mens -N
+**kern	**kern	**kern	**kern
+*Ivox	*Ivox	*Ivox	*Ivox
+*I"Bassus	*I"Tenor	*I"Altus	*I"Discantus
+*I'B	*I'T	*I'A	*I'D
+*staff4	*staff3	*staff2	*staff1
+*clefF4	*clefC4	*clefC3	*clefC1
+*k[]	*k[]	*k[]	*k[]
+*M2/1	*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)	*met(C|)
+=1-	=1-	=1-	=1-
+0r	0r	1r	1d
+.	.	1G	2d
+.	.	.	2d
+=2	=2	=2	=2
+0r	0r	2G	1g
+.	.	2G	.
+.	.	1c	2g
+.	.	.	[2a
+=3	=3	=3	=3
+0r	0D	2d	4a]
+.	.	.	4g
+.	.	4c	4f
+.	.	4B	4e
+.	.	1A	2.f
+.	.	.	4e
+=4	=4	=4	=4
+0GG	1D	2.G	1g
+.	.	4A	.
+.	1D	4B	2d
+.	.	4c	.
+.	.	2d	[2g
+=5	=5	=5	=5
+1GG	0G	2e	2g]
+.	.	1c	4f
+.	.	.	4e
+1GG	.	.	1d
+.	.	2B	.
+=6	=6	=6	=6
+0C	1r	1.c	1c
+.	1G	.	1cc
+.	.	4B	.
+.	.	4A	.
+=7	=7	=7	=7
+1r	1B	2G	2.dd
+.	.	1g	.
+.	.	.	4cc
+1C	1c	.	4b
+.	.	.	4a
+.	.	[2e	[2a
+=8	=8	=8	=8
+1E	1B	2e]	2a]
+.	.	2e	2g
+1F	1A	2.c	2a
+.	.	.	[2cc
+.	.	4d	.
+=9	=9	=9	=9
+1E	0r	4e	4cc]
+.	.	4f	4b
+.	.	1g	2g
+1D	.	.	1a
+.	.	2f#i	.
+=10	=10	=10	=10
+0r	1B	1g	1d
+.	1c	2g	1r
+.	.	[2e	.
+=11	=11	=11	=11
+1E	1B	2e]	1g
+.	.	2e	.
+1F	1A	2c	2a
+.	.	[2d	2a
+=12	=12	=12	=12
+1E	1B	2d]	1g
+.	.	2G	.
+1D	1r	1A	1f
+=13	=13	=13	=13
+1E	1G	1G	2r
+.	.	.	2g
+1r	1A	[1c	2f
+.	.	.	[2e
+=14	=14	=14	=14
+1C	1G	1c]	2e]
+.	.	.	2g
+1D	1r	2A	2f
+.	.	2B	2d
+=15	=15	=15	=15
+1C	1E	1c	2g
+.	.	.	4f
+.	.	.	4e
+1r	2F	2r	1d
+.	2G	2d	.
+=16	=16	=16	=16
+1AA	1A	2e	1c
+.	.	2c	.
+2BB	2r	2d	2f
+2C	2G	4c	[2e
+.	.	4B	.
+=17	=17	=17	=17
+1D	1F	1A	2e]
+.	.	.	1d
+2r	1E	1G	.
+2C	.	.	[2g
+=18	=18	=18	=18
+1BB	1D	2r	4g]
+.	.	.	4f
+.	.	1G	4e
+.	.	.	4d
+1AA	1r	.	1c
+.	.	2F#i	.
+=19	=19	=19	=19
+1GG	1d	0G	1r
+1r	2d	.	1dd
+.	2d	.	.
+=20	=20	=20	=20
+1G	1B	2r	2dd
+.	.	1d	2dd
+2G	1G	.	1b
+2G	.	[2B	.
+=21	=21	=21	=21
+1E	1r	2B]	2g
+.	.	1e	2.cc
+1C	[1c	.	.
+.	.	.	4b
+.	.	[2e	4a
+.	.	.	4g
+=22	=22	=22	=22
+1r	2c]	2e]	2a
+.	2B	2d	2g
+[1F	2A	[1c	2a
+.	2G	.	[2cc
+=23	=23	=23	=23
+2F]	0A	1c]	4cc]
+.	.	.	4b
+2E	.	.	4a
+.	.	.	4g
+2D	.	2d	2f
+2C	.	2e	2g
+=24	=24	=24	=24
+0D	2D	0d	2f
+.	2B	.	1g
+.	1A	.	.
+.	.	.	2f#i
+=25	=25	=25	=25
+0GGl	0Gl	0dl	0gl
+==	==	==	==
+*-	*-	*-	*-
 </script>
 
 
-[But there is currently a bug with polyphonic works that contain text]
 
 
-See the [while mensural notation](/humdrum/mens) documentation page for more information
-about the `**mens` representation.
+## Converting via URL ##
 
-Some things to work on: Merge breve rests into long rests, and long rests into maxima
-rests.  This currently has to be done by hand after conversion to `**mens`.
+The _kern2mens_ filter can be added to the VHV URL so that it will run 
+automatically on data placed in the text editor.  This will also allow for
+direct conversion to mensural notation from a MusicXML file 
+dragged-and-dropped onto the page:
+
+[verovio.humdrum.org/?filter=kern2mens](http://verovio.humdrum.org/?filter=kern2mens&k=e)
+
+To add spaces to the URL, use `%20` as a replacement for the space.  For example, here is the URL for the filter `kern2mens -N`:
+
+[verovio.humdrum.org/?filter=kern2mens%20-N](http://verovio.humdrum.org/?filter=kern2mens%20-N&k=e)
+
+
+Click on one of the above lines, and then try drag-and-dropping a
+MusicXML score onto the page.  This will automatically convert the
+MusicXML data into Humdrum data, and then the URL filter will convert the
+`**kern` data into `**mens` data.  To see the final `**mens` data, type
+[alt-c](/commands/alt-c) to compile the filter and display the result
+in the text editor.
+
+
+## To do ##
+
+Some things to work on: Merge breve rests into long rests, and long
+rests into maxima rests.  This currently has to be done by hand after
+conversion to `**mens`.  
+
+As mentioned above, accidentals and
+editorial accidentals still need work.  
+
+Also, suppressing notational
+dots in perfect mensurations needs address (currently has to be done
+by hand).  
+
+Other features such as colored notation and alterations
+are not address, and ligatures have to be notated by hand after
+converting into `**mens` data.
+
+The rscale filter should be implemented to allow unreducing modern
+notation.
 
 
 
