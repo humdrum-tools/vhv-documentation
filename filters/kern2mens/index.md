@@ -641,6 +641,25 @@ of the `**kern` and resulting `**mens` spine:
 </script>
 
 
+In [VHV](http://verovio.humdrum.org), you can adjust the window size to fit
+the music, and then type `alt-t` to download a one-page PDF file of the 
+visible music:
+
+
+{% include image.html
+	file="vhvview.png"
+	caption="Adjust the windows size to have the music complete fit in view."
+%}
+
+Here is the [resulting PDF file](score.pdf), and the PDF file viewed in a PDF viewer:
+
+{% include image.html
+	file="score.png"
+	caption="Downloaded one-page PDF file in a PDF viewer."
+%}
+
+
+
 Polyphonic works can also be converted:
 
 
