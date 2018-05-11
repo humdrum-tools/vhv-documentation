@@ -194,6 +194,10 @@ entries:
       output: web, pdf
       url: /filters/extract
 
+    - title: kern2mens
+      output: web, pdf
+      url: /filters/kern2mens
+
     - title: imitation
       output: web, pdf
       url: /filters/imitation
