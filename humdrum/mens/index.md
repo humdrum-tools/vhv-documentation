@@ -75,7 +75,7 @@ sid
 *-
 </script>
 
-Also see the [kern2mens filter](/filters/kern2mens) to conver `**kern`
+Also see the [kern2mens filter](/filters/kern2mens) to convert `**kern`
 data into `**mens` data.
 
 ## Pitch ##
@@ -146,7 +146,7 @@ ur	uc
 ### Perfection ###
 
 The letter `p` appended to the basic rhythmic value means that the note/rest
-is *perfected*.  In modern notation this is equivalent to adding an augmentatin
+is *perfected*.  In modern notation this is equivalent to adding an augmentation
 dot after a note, such as a dotted half note.  The letter `i` indicates
 an *imperfect* rhythm.  In modern notation all notes are imperfect unless there
 is an augmentation dot after it to make it perfect.
