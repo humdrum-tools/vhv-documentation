@@ -80,6 +80,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: <span class="keypress">alt-a</span>&colon; Toggle CSV/TSV
+      output: web, pdf
+      url: /commands/alt-a
+
     - title: <span class="keypress">alt-b</span>&colon; Toggle logo
       output: web, pdf
       url: /commands/alt-b
