@@ -243,13 +243,14 @@ triple-flats will not work in the system.
 
 ## `**mxhm` transposition ##
 
-Chord symbols imported from MusicXML are stored in a `**mxhm` spine.
+Chord symbols imported from MusicXML are stored in an `**mxhm` spine.
 These symbols are understood by the transpose tool and will be transposed
 along with any `**kern` spines in the data.
 
 Below is an example work containing an `**mxhm` data spine.  The original
 key is C major, but the transpose tool is changing the key of the piece
-to D major.  Try transposing the music to other keys by changing the `d` on the first line of the data to another tonic pitch.
+to D major.  Try transposing the music to other keys by changing the
+`d` on the first line of the text box below to another tonic pitch.
 
 
 {% include verovio.html
