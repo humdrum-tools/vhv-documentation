@@ -230,8 +230,24 @@ Cut-C mensuration.  Here is a table of some of the possible mensurations:
 	<td> <tt>*met(C|r)</tt>  </td>  <td> <img style="height:20px" src="c-pipe-reverse.svg"> </td>
 </tr>
 
-
 </table>
+
+Try out the above mensruation signs in this example:
+
+{% include verovio.html
+	source="mensuration"
+	pageWidth="950"
+	evenNoteSpacing="1"
+	scale="100"
+%}
+
+<script type="application/x-humdrum" id="mensuration">
+**mens
+*met(C)
+Lr
+*-
+</script>
+
 
 ## Ligatures ##
 
