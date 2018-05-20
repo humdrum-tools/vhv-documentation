@@ -12,27 +12,43 @@
 			"keyList":
 			[
 				{
+					"keys": "<span class='keypress'>left</span>",
+					"description": "move to previous melodic note"
+				},
+				{
+					"keys": "<span class='keypress'>right</span>",
+					"description": "move to next melodic note"
+				},
+				{
 					"keys": "<span class='keypress'>up</span>",
-					"description": "transpose up a step"
+					"description": "move to next harmonic note above current one in score"
 				},
 				{
 					"keys": "<span class='keypress'>down</span>",
-					"description": "transpose down a step"
+					"description": "move to next harmonic note below current one in score"
 				},
 				{
 					"keys": "<span class='keypress'>shift-up</span>",
-					"description": "transpose up an octave"
+					"description": "transpose up a step"
 				},
 				{
 					"keys": "<span class='keypress'>shift-down</span>",
+					"description": "transpose down a step"
+				},
+				{
+					"keys": "<span class='keypress'>control-up</span>",
+					"description": "transpose up an octave"
+				},
+				{
+					"keys": "<span class='keypress'>control-down</span>",
 					"description": "transpose down an octave"
 				},
 				{
-					"keys": "<span class='keypress'>3+up</span>",
+					"keys": "<span class='keypress'>3+shift-up</span>",
 					"description": "transpose up a third"
 				},
 				{
-					"keys": "<span class='keypress'>5+down</span>",
+					"keys": "<span class='keypress'>5+shift-down</span>",
 					"description": "transpose down a fifth"
 				}
 			]	

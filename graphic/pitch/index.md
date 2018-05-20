@@ -2,7 +2,7 @@
 title: Pitch
 author: Craig Stuart Sapp
 creation_date: 7 Mar 2017
-last_updated: 19 Aug 2017
+last_updated: 19 May 2018
 tags: [all, graphic_editing, RDF]
 sidebar: main_sidebar
 keywords: graphic editing pitch
@@ -21,12 +21,41 @@ permalink: /graphic/pitch/index.html
 {% include keypresses/pitchkeys.json %}
 </script>
 
+## Graphical notation navigation ##
+
+After selecting a note or rest in the graphical notation, you can move to
+other notes in the score melodically or harmonically.  Use the
+<span class="keypress">left</span> key to move the previous melodic note,
+<span class="keypress">right</span> key to move the next melodic note,
+<span class="keypress">up</span> key to move the next higher harmonic note in the score, and
+<span class="keypress">down</span> key to move the next lower harmonic note in the score,
+
+Below is a demonstration of the arrow keys in action.  Notice that
+harmonic navigation wraps around, so that attempting to go up beyond
+the top note in the score will wrap the cursor to the bottom harmonic
+note at that point in the score.
+
+
+{% include image.html
+	file="navigation.gif"
+	alt="navigating notes in a score with arrow keys"
+	max-width="75%"
+	caption="Navigating notes/rests in a score with arrow keys."
+%}
+
+Also note that there must be a note
+or rest at the same timestamp on a staff or layer; otherwise that staff
+or layer will be skipped. Also note that the cursor in the text editor
+to the left is updated to match the currently selected note/rest. And finally
+note that moving melodically of of a page will cause the next/previous page to be
+loaded.
+
 
 ## Stepwise transposition ##
 
 Notes can be transposed to a different staff-line or space by
 clicking on a note and then using the
-<span class="keypress">up</span> and <span class="keypress">down</span>
+<span class="keypress">shift-up</span> and <span class="keypress">shift-down</span>
 arrow keys to move it vertically.  Below is a demonstration
 where the D5 pitch is moved down by step to D4:
 
@@ -34,7 +63,7 @@ where the D5 pitch is moved down by step to D4:
 	file="transpose-note.gif"
 	alt="graphically transposing a note"
 	max-width="75%"
-	caption="Stepwise graphic transposition of a note with <span class='keypress'>down</span>."
+	caption="Stepwise graphic transposition of a note with <span class='keypress'>shift-down</span>."
 %}
 
 Notice that as the note moves down in the notation
@@ -45,7 +74,7 @@ automatically to match the new pitch of the note in the notation.
 
 If you need to transpose a note by more than a step at a time, a faster
 transposition method prefixes the
-<span class="keypress">up</span> or <span class="keypress">down</span> keystroke
+<span class="keypress">shift-up</span> or <span class="keypress">shift-down</span> keystroke
 with a digit from <span class="keypress">3</span> through
 <span class="keypress">9</span> to transpose up or down by that diatonic
 interval:
@@ -54,7 +83,7 @@ interval:
 	file="transpose-thirds.gif"
 	alt="graphically transposing a note by thirds"
 	max-width="75%"
-	caption="Transposing a note up by thirds with <span class='keypress'>3+up</span>."
+	caption="Transposing a note up by thirds with <span class='keypress'>3+shift-up</span>."
 %}
 
 {% include note.html
@@ -64,15 +93,15 @@ interval:
 ## Transposing by octave ##
 
 The keystrokes
-<span class="keypress">shift-up</span>/<span class="keypress">shift-down</span>
+<span class="keypress">control-up</span>/<span class="keypress">control-down</span>
 can be used as a shortcut to transpose a note by an octave.  This is equivalent
-to <span class="keypress">8+up</span>/<span class="keypress">8+down</span>.
+to <span class="keypress">8+shift-up</span>/<span class="keypress">8+shift-down</span>.
 
 {% include image.html
 	file="transpose-octave.gif"
 	alt="graphically transposing a note by octaves"
 	max-width="75%"
-	caption="Transposing a note up/down by octave with <span class='keypress'>shift+up</span>/<span class='keypress'>shift+down</span>."
+	caption="Transposing a note up/down by octave with <span class='keypress'>control-up</span>/<span class='keypress'>control-down</span>."
 %}
 
 
@@ -239,14 +268,14 @@ key is not necessary.
 
 ### Styling editorial accidentals ###
 
-By default editorial accidentals are displayed as small accidentals 
+By default editorial accidentals are displayed as small accidentals
 above the note.  This is the most common editorial accidental style
 for Renaissance music.  For music that includes basso continuo numbers or
 chords, editorial accidentals are typically displayed within brackets
-or occasionally parentheses. 
+or occasionally parentheses.
 
 Adding the string `bracket` or `brack` somewhere
-on the editorial accidental RDF line will move the 
+on the editorial accidental RDF line will move the
 editorial accidentals in front of the notes and place brackets
 around them:
 
