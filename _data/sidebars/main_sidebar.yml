@@ -92,6 +92,10 @@ entries:
       output: web, pdf
       url: /commands/alt-c
 
+    - title: <span class="keypress">alt-D</span>&colon; Add null data line
+      output: web, pdf
+      url: /commands/alt-shift-d
+
     - title: <span class="keypress">alt-e</span>&colon; Erase music
       output: web, pdf
       url: /commands/alt-e
@@ -100,13 +104,21 @@ entries:
       output: web, pdf
       url: /commands/alt-f
 
+    - title: <span class="keypress">alt-g</span>&colon; View SVG code
+      output: web, pdf
+      url: /commands/alt-g
+
+    - title: <span class="keypress">alt-I</span>&colon; Add interpretation
+      output: web, pdf
+      url: /commands/alt-shift-i
+
     - title: <span class="keypress">alt-l</span>&colon; Layer coloring
       output: web, pdf
       url: /commands/alt-l
 
-    - title: <span class="keypress">alt-g</span>&colon; View SVG code
+    - title: <span class="keypress">alt-L</span>&colon; Add local comment
       output: web, pdf
-      url: /commands/alt-g
+      url: /commands/alt-shift-l
 
     - title: <span class="keypress">alt-m</span>&colon; MEI data
       output: web, pdf
