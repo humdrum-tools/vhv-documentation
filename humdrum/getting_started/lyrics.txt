@@ -6,7 +6,7 @@ Lyrics are added to a staff by placing one or more `**text` spines after a `**ke
 	humdrum-min-height="350px"
 	source="text1"
 	scale="55"
-	pageWidth="1200"
+	pageWidth="1100"
 %}
 <script type="application/x-humdrum" id="text1">
 !!!OTL@@DE: Liebes-A-B-C

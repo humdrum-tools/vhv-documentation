@@ -30,19 +30,28 @@ dynamically into music notation:
 {% include image.html
 	file="twinkle.gif"
 	alt="Entering data into the text editor"
-	caption="Notation is generated as data is typed into the text editor."
+	caption="Notation is generated as Humdrum data is typed into the text editor."
 %}
+
+See the [Humdrum encoding tutorial](/humdrum/getting_started/) for
+instructions on how to type musical data directly in the text editor.  Musical 
+data can also be loaded by drag-and-drop of Humdrum, MusicXML or MEI 
+files onto the webpage.  MusicXML and MEI files will be converted
+automatically into Humdrum data in the text editor.  To edit MusicXML or
+MEI files without conversion into Humdrum data first, then copy-and-paste
+the data rather than drag-and-drop of the file.  See documentation for
+[MusicXML import](/interface/musicxml/) and [MEI import](/interface/mei/)
+for more information.
 
 The current note being edited in the text editor is highlighted
 in red in the notation view.  Don't forget to end a spine with data
 termination token `*-`; otherwise, the Humdrum file will not be
-valid.  The VHV interface adds one automatically so that you can
-see the music while entering data.
-
+valid, although the VHV interface adds one automatically so that you
+can see the music while entering data.
 
 You can click and drag the divider between the text and notation regions
 as demonstrated in the following animation.  There is also a keyboard shortcut 
-for hiding/showing the text editor by typing <kbd>alt</kbd>+<kbd>y</kbd>.
+for hiding/showing the text editor by typing <span class="keypress">alt-y</span>.
 
 {% include image.html
 	file="slidewindow.gif"

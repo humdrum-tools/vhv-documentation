@@ -1,5 +1,5 @@
 ---
-title:  "Transposing chords"
+title:  "Transposing chord symbols"
 author: Craig Stuart Sapp
 creation_date: 17 May 2018
 last_updated: 17 May 2018
