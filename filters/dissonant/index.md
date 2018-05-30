@@ -41,7 +41,8 @@ abbreviations further below.
 	tabsize="10"
 %}
 
-<script type="application/x-humdrum" id="josex">!!!filter: dissonant
+<script type="application/x-humdrum" id="josex">
+!!!filter: dissonant
 **kern	**kern	**kern
 *I"Bassus	*I"Tenor	*I"Discantus
 *I'B	*I'T	*I'D
@@ -151,6 +152,16 @@ turn of the dissonance analysis, and adding `-u` to
 main category for the dissonant types.
 
 
+Another interesting variation is to use the following filter:
+
+```
+!!!filter: dissonant --colorize | extract -i kern
+```
+
+The `--colorize` option will color dissonances based on metric
+position: red for semibreve and higher levels, green for the minim level,
+and blue for the semi-minim level.  The following extract tool removes the
+text labels.
 
 ## Dissonant function labels ##
 
@@ -251,7 +262,8 @@ respectively.
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="passing">**kern	**kern
+<script type="application/x-humdrum" id="passing">
+**kern	**kern
 *M2/4	*M2/4
 4C	8cL
 .	8dJ
@@ -269,7 +281,7 @@ respectively.
 
 ### Neighbor notes (N, n) ###
 
-Neighbor tones have similar requirements as passing tones, except 
+Neighbor tones have similar requirements as passing tones, except
 instead of being approached and left by step in the same direction,
 neighbor tones are approached and left by step in opposite directions.
 `N` and `n` are used to label upper and lower neighbors respectively.
@@ -281,7 +293,8 @@ neighbor tones are approached and left by step in opposite directions.
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="nei">**kern	**kern
+<script type="application/x-humdrum" id="nei">
+**kern	**kern
 *M2/4	*M2/4
 4C	8ccL
 .	8ddJ
@@ -305,39 +318,39 @@ In a double neighbor figure, a primary note is ornamented by both an upper and l
 	humdrum-visible="false"
 	source="dbln"
 	scale="50"
-	pageWidth="1000"
+	pageWidth="1400"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="dbln">**kern	**kern
+<script type="application/x-humdrum" id="dbln">
+**kern	**kern
 *Ivox	*Ivox
-*I"Bassus	*I"Superius
 *I'B	*I'S
 *clefF4	*clefG2
 *k[b-]	*k[b-]
 *M2/1	*M2/1
 *met(C|)	*met(C|)
 =50	=50
-1C	2g/
+1C	2g
 .	.
-.	2g/
+.	2g
 .	.
-[1FF	2a/
-.	2b-\
+[1FF	2a
+.	2b-
 =51	=51
-0FF]	2.cc\
+0FF]	2.cc
 .	.
-.	4b-\
-.	4a/
-.	4g/
-.	4b-\
+.	4b-
+.	4a
+.	4g
+.	4b-
 .	4a/
 =52	=52
-2BB-/	0b-
-4BB-/	.
-4BB-/	.
-2BB-/	.
+2BB-	0b-
+4BB-	.
+4BB-	.
+2BB-	.
 .	.
-2BB-/	.
+2BB-	.
 ==	==
 *_	*_
 !!!filter: dissonant
@@ -360,7 +373,8 @@ and sustain at least until the end of the &Eacute;chapp&eacute;e.
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="chap">**kern	**kern
+<script type="application/x-humdrum" id="chap">
+**kern	**kern
 *clefF4	*clefG2
 *M2/4	*M2/4
 4F	8aL
@@ -385,7 +399,7 @@ that preceded it. If after leaping a third, the melody moves a step
 in the opposite direction (thus filling in the note that was skipped
 over) the dissonance gets a `K` or `k` label for the long-form
 cambiata. If this change of direction does not occur then a `C` or
-`c` label is used. 
+`c` label is used.
 
 {% include verovio.html
 	humdrum-visible="false"
@@ -396,7 +410,8 @@ cambiata. If this change of direction does not occur then a `C` or
 	spacingLinear="0.15"
 	spacingNonLinear="0.50"
 %}
-<script type="application/x-humdrum" id="camb_dn">**kern	**kern
+<script type="application/x-humdrum" id="camb_dn">
+**kern	**kern
 *clefF4	*clefG2
 *M3/2	*M3/2
 2G	2.g
@@ -429,7 +444,8 @@ as in the example below.
 	spacingLinear="0.10"
 	spacingNonLinear="0.45"
 %}
-<script type="application/x-humdrum" id="camb_up">**kern	**kern
+<script type="application/x-humdrum" id="camb_up">
+**kern	**kern
 *k[b-]	*k[b-]
 *M4/2	*M4/2
 2B-	2.d
@@ -465,7 +481,8 @@ and after it.
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="ant">**kern	**kern
+<script type="application/x-humdrum" id="ant">
+**kern	**kern
 *clefG2	*clefG2
 *M4/2	*M4/2
 4g	2ee
@@ -493,14 +510,15 @@ A "reverse" nota cambiata is a weak dissonance approached by leap and resolved d
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="rnc">**kern	**kern
+<script type="application/x-humdrum" id="rnc">
+**kern	**kern
 *clefF4	*clefGv2
 *k[]	*k[]
 *M3/1	*M3/1
 *met(O)	*met(O)
 =8-	=8-
-2.D\	1A
-4BB/	.
+2.D	1A
+4BB	.
 1AA	1A
 .	.
 1F	1A
@@ -524,21 +542,22 @@ The "reverse" &eacute;chapp&eacute;e is a weak dissonance that is approached by 
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="reve">**kern	**kern	**kern	**kern
+<script type="application/x-humdrum" id="reve">
+**kern	**kern	**kern	**kern
 *I"Bassus	*I"Tenor	*I"Altus	*I"Superius
 *clefF4	*clefGv2	*clefGv2	*clefG2
 *k[]	*k[]	*k[]	*k[]
 *M3/1	*M3/1	*M3/1	*M3/1
 *met(O)	*met(O)	*met(O)	*met(O)
 =166	=166	=166	=166
-1AA	1A	2c\	2r
-.	.	2.A/	2.cc\
+1AA	1A	2c	2r
+.	.	2.A	2.cc
 1r	1E	.	.
-.	.	4F/	4a/
-.	.	2G/	4b\
-.	.	.	4e/
-1r	2r	1A	2e/
-.	[2c\	.	[2a/
+.	.	4F	4a
+.	.	2G/	4b
+.	.	.	4e
+1r	2r	1A	2e
+.	[2c	.	[2a
 =	=	=	=
 *-	*-	*-	*-
 !!!filter: dissonant
@@ -560,51 +579,52 @@ such as in m.&nbsp;37 in the example below.
 {% include verovio.html
 	humdrum-visible="false"
 	source="sus"
-	scale="40"
+	scale="50"
 	spacingLinear="0.05"
 	spacingNonLinear="0.30"
-	pageWidth="1500"
+	pageWidth="1400"
 	tabsize="10"
 	url="http://verovio.humdrum.org/?k=ey&filter=dissonant&file=jrp:Obr2018"
 %}
-<script type="application/x-humdrum" id="sus">**kern	**kern	**kern	**kern
+<script type="application/x-humdrum" id="sus">
+**kern	**kern	**kern	**kern
 *clefF4	*clefGv2	*clefGv2	*clefG2
 *k[]	*k[]	*k[]	*k[]
 *M3/1	*M3/1	*M3/1	*M3/1
 *met(O)	*met(O)	*met(O)	*met(O)
 =34-	=34-	=34-	=34-
-1AA	0.r	1e	2c/
-.	.	.	2cc\
-2BB/	.	2d\	2b\
-2C/	.	2c\	1a
-2D\	.	1B	.
-2E\	.	.	2g#i/
+1AA	0.r	1e	2c
+.	.	.	2cc
+2BB	.	2d	2b
+2C	.	2c	1a
+2D	.	1B	.
+2E	.	.	2g#i
 =35	=35	=35	=35
 1AA	0.E	1A	1a
 1r	.	1B	1g
-1AA	.	[1c	2a/
-.	.	.	4g/
-.	.	.	4f/
+1AA	.	[1c	2a
+.	.	.	4g
+.	.	.	4f
 =36	=36	=36	=36
 1C	1E	1c]	1e
 1D	1F	1A	1d
-1GG	[1G	1B	2e/
-.	.	.	[2g/
+1GG	[1G	1B	2e
+.	.	.	[2g
 =37	=37	=37	=37
-1C	1G]	1c	2g/]
+1C	1G]	1c	2g]
 .	.	.	1e
 0D	0F	0A	.
-.	.	.	4d/
-.	.	.	4c/
+.	.	.	4d
+.	.	.	4c
 .	.	.	1d
 =38	=38	=38	=38
-2GG/	0.E	2B\	1e
-2.AA/	.	2.c\	.
+2GG	0.E	2B	1e
+2.AA	.	2.c	.
 .	.	.	2r
-4GG/	.	4B\	.
-2.C/	.	2.e\	1g
-4BB/	.	4d\	.
-2GG/	.	2B\	2e/
+4GG	.	4B	.
+2.C	.	2.e	1g
+4BB	.	4d	.
+2GG	.	2B	2e
 =	=	=	=
 *-	*-	*-	*-
 !!!filter: dissonant
@@ -645,7 +665,8 @@ of style change over time.
 	pageWidth="1400"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="rsus">**kern	**kern
+<script type="application/x-humdrum" id="rsus">
+**kern	**kern
 *clefGv2	*clefG2
 *M4/2	*M4/2
 2e	2g
@@ -668,7 +689,7 @@ of style change over time.
 ###  Fake Suspensions (F, f) ###
 
 Sometimes the preparation of a suspension is itself dissonant like
-in the example below from the Kyrie in Mouton's 
+in the example below from the Kyrie in Mouton's
 [Missa Da pacem](http://josquin.stanford.edu/work/?id=Mou1020a).
 This is often referred to as a *fake suspension* though would
 more accurately be called a fake preparation to an otherwise normal suspension. It is usually approached by
@@ -691,7 +712,8 @@ agent of the suspension.
 	pageWidth="1400"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="fsus">**kern	**kern	**kern	**kern
+<script type="application/x-humdrum" id="fsus">
+**kern	**kern	**kern	**kern
 *I'B	*I'T	*I'A	*I'S
 *clefF4	*clefGv2	*clefGv2	*clefG2
 *k[b-]	*k[b-]	*k[b-]	*k[b-]
@@ -725,7 +747,8 @@ in the example below taken from the same Mouton Kyrie.
 	pageWidth="1400"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="afsus">**kern	**kern	**kern	**kern
+<script type="application/x-humdrum" id="afsus">
+**kern	**kern	**kern	**kern
 *I'B	*I'T	*I'A	*I'S
 *clefF4	*clefGv2	*clefGv2	*clefG2
 *k[b-]	*k[b-]	*k[b-]	*k[b-]
@@ -753,7 +776,6 @@ in the example below taken from the same Mouton Kyrie.
 =	=	=	=
 *-	*-	*-	*-
 !!!filter: dissonant
-
 </script>
 
 Occasionally a fake suspension is preceded by an anticipation as
@@ -782,24 +804,25 @@ Orbis](http://josquin.stanford.edu/work/?id=Obr2010).
 	pageWidth="1400"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="msus">**kern	**kern	**kern	**kern
+<script type="application/x-humdrum" id="msus">
+**kern	**kern	**kern	**kern
 *clefF4	*clefGv2	*clefGv2	*clefG2
 *k[]	*k[]	*k[]	*k[]
 *M3/1	*M3/1	*M3/1	*M3/1
 *met(O)	*met(O)	*met(O)	*met(O)
 =59-	=59-	=59-	=59-
-1F	1A	1d	2a/]
-.	.	.	4g/
-.	.	.	4f/
-0E	0B	0e	2g/
+1F	1A	1d	2a]
+.	.	.	4g
+.	.	.	4f
+0E	0B	0e	2g
 .	.	.	1a
-.	.	.	2g#i/
+.	.	.	2g#i
 =60	=60	=60	=60
 1AA	1A	1e	1a
 2r	2r	2r	1r
-2AA/	2A/	2e\	.
-2AA/	2A/	2e\	1r
-2AA/	2A/	2e\	.
+2AA	2A	2e	.
+2AA	2A	2e	1r
+2AA	2A	2e	.
 =	=	=	=
 *-	*-	*-	*-
 !!!filter: dissonant
@@ -829,22 +852,23 @@ attributed to Josquin des Prez:
 	pageWidth="1400"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="chi">**kern	**kern
+<script type="application/x-humdrum" id="chi">
+**kern	**kern
 *clefG2	*clefG2
 *clefGv2	*clefGv2
 *k[]	*k[]
 *M2/1	*M2/1
 *met(C|)	*met(C|)
 =35-	=35-
-2d\	2B\
-1g	4A/
-.	4G/
+2d	2B
+1g	4A
+.	4G
 .	1A
-2f#i\	.
+2f#i	.
 =36	=36
 1g	1G
 1f	2r
-.	[2d\
+.	[2d
 =	=
 *-	*-
 !!!filter: dissonant
@@ -875,7 +899,8 @@ note).  There is no ascending form for this dissonance type.
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="d3qpd">**kern	**kern
+<script type="application/x-humdrum" id="d3qpd">
+**kern	**kern
 *clefG2	*clefG2
 *M2/1	*M2/1
 2f	1.a
@@ -903,7 +928,8 @@ virgine](http://josquin.stanford.edu/work/?id=Jos0303c).
 	pageWidth="1400"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="d3qpu">**kern	**kern
+<script type="application/x-humdrum" id="d3qpu">
+**kern	**kern
 *clefGv2	*clefG2
 *k[]	*k[]
 *M2/1	*M2/1
@@ -911,8 +937,8 @@ virgine](http://josquin.stanford.edu/work/?id=Jos0303c).
 =113-	=113-
 1r	1.g
 1G	.
-.	4a/
-.	4b\
+.	4a
+.	4b
 =114	=114
 1E	1cc
 [1A	1cc
@@ -920,7 +946,6 @@ virgine](http://josquin.stanford.edu/work/?id=Jos0303c).
 *-	*-
 !!!filter: dissonant
 </script>
-
 
 
 ### Dissonant third quarter neighbor (B, b) ###
@@ -945,7 +970,8 @@ of this dissonance type are labeled with a `B` and a `b` repsectfully.
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="d3qn">**kern	**kern
+<script type="application/x-humdrum" id="d3qn">
+**kern	**kern
 *I'B	*I'A
 *clefF4	*clefGv2
 *k[b-]	*k[b-]
@@ -972,34 +998,36 @@ An appoggiatura is a dissonance that is relatively accented with respect to the 
 	humdrum-visible="false"
 	source="appgg"
 	scale="50"
-	pageWidth="1000"
+	pageWidth="1200"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="appgg">**kern	**kern
+<script type="application/x-humdrum" id="appgg">
+**kern	**kern
 *I"T	*I"A
 *clefGv2	*clefGv2
 *k[]	*k[]
 *M2/1	*M2/1
 *met(C|)	*met(C|)
 =89||	=89||
-0D	2.d\
-.	4e\
-.	2f\
-.	2d\
+0D	2.d
+.	4e
+.	2f
+.	2d
 =90	=90
-0C	2f\
+0C	2f
 .	1e
-.	4d\
-.	4c\
+.	4d
+.	4c
 =91	=91
-0D	2B\
-.	2A/
-.	2B\
-.	[2A/
+0D	2B
+.	2A
+.	2B
+.	[2A
 =	=
 *-	*-
 !!!filter: dissonant
 </script>
+
 
 
 ### Accented passing tones (V, v) ###
@@ -1009,29 +1037,30 @@ Accented passing tones are metrically strong with respect to the notes before an
 {% include verovio.html
 	humdrum-visible="false"
 	source="accp"
-	scale="40"
-	pageWidth="1000"
+	scale="50"
+	pageWidth="1400"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="accp">**kern	**kern	**kern	**kern
+<script type="application/x-humdrum" id="accp">
+**kern	**kern	**kern	**kern
 *I"B	*I"T	*I"A	*I"S
 *clefF4	*clefGv2	*clefGv2	*clefG2
 *k[]	*k[]	*k[]	*k[]
 *M2/1	*M2/1	*M2/1	*M2/1
 *met(C|)	*met(C|)	*met(C|)	*met(C|)
 =138	=138	=138	=138
-2r	0r	0A	2c/
-1D	.	.	2.A/
-.	.	.	4B/
-2D\	.	.	4c/
-.	.	.	4d/
+2r	0r	0A	2c
+1D	.	.	2.A
+.	.	.	4B
+2D	.	.	4c
+.	.	.	4d
 =139	=139	=139	=139
-2C/	0r	2r	2e/
-2.AA/	.	1c	2f/
-.	.	.	2.e/
-4BB/	.	.	.
-4C/	.	2c\	.
-4D\	.	.	4f/
+2C	0r	2r	2e
+2.AA	.	1c	2f
+.	.	.	2.e
+4BB	.	.	.
+4C	.	2c	.
+4D	.	.	4f
 =	=	=	=
 *-	*-	*-	*-
 !!!filter: dissonant
@@ -1046,25 +1075,26 @@ Accented neighbor tones are metrically strong with respect to the notes before a
 {% include verovio.html
 	humdrum-visible="false"
 	source="accn"
-	scale="35"
+	scale="50"
 	pageWidth="1250"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="accn">**kern	**kern	**kern	**kern
+<script type="application/x-humdrum" id="accn">
+**kern	**kern	**kern	**kern
 *clefF4	*clefGv2	*clefGv2	*clefG2
 *k[b-]	*k[b-]	*k[b-]	*k[b-]
 *M2/1	*M2/1	*M2/1	*M2/1
 *met(C|)	*met(C|)	*met(C|)	*met(C|)
 =78	=78	=78	=78
-1G	2d\	2r	2b-\
-.	2d\	1g	2b-\
+1G	2d	2r	2b-
+.	2d	1g	2b-
 1C	[1c	.	[1cc
-.	.	2e\	.
+.	.	2e	.
 =79	=79	=79	=79
-2r	1c]	2f\	1cc]
-1c	.	2e\	.
+2r	1c]	2f	1cc]
+1c	.	2e	.
 .	2r	1c	1r
-2A\	[2c\	.	.
+2A	[2c	.	.
 =	=	=	=
 *-	*-	*-	*-
 !!!filter: dissonant
@@ -1079,11 +1109,12 @@ When a voice sounds the note of resolution of a suspension in a descending line 
 {% include verovio.html
 	humdrum-visible="false"
 	source="resx"
-	scale="35"
+	scale="50"
 	pageWidth="1150"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="resx">**kern	**kern	**kern	**kern	**kern	**kern
+<script type="application/x-humdrum" id="resx">
+**kern	**kern	**kern	**kern	**kern	**kern
 *staff6	*staff5	*staff4	*staff3	*staff2	*staff1
 *Ivox	*Ivox	*Ivox	*Ivox	*Ivox	*Ivox
 *I'B2	*I'B1	*I'T	*I'A2	*I'A1	*I'S
@@ -1092,22 +1123,23 @@ When a voice sounds the note of resolution of a suspension in a descending line 
 *M2/1	*M2/1	*M2/1	*M2/1	*M2/1	*M2/1
 *met(C|)	*met(C|)	*met(C|)	*met(C|)	*met(C|)	*met(C|)
 =189	=189	=189	=189	=189	=189
-2G\	1E	4d\]	2g\	2B-\	4a/]
-.	.	4B-\	.	.	4g/
-2C/	.	2c\	2e\	2G/	1g
-2.F\	1D	1d	4f\	1A	.
-.	.	.	4e\	.	.
-.	.	.	4d\	.	2f#i/
-4E\	.	.	4c\	.	.
+2G	1E	4d]	2g	2B-	4a]
+.	.	4B-	.	.	4g
+2C	.	2c	2e	2G	1g
+2.F	1D	1d	4f	1A	.
+.	.	.	4e	.	.
+.	.	.	4d	.	2f#i
+4E	.	.	4c	.	.
 =190	=190	=190	=190	=190	=190
-2D\	2GG/	0d	1B-	[0Gl	[0gl
-2.G\	1G	.	.	.	.
+2D	2GG	0d	1B-	[0Gl	[0gl
+2.G	1G	.	.	.	.
 .	.	.	2r	.	.
-4F\	.	.	.	.	.
-4E-i\	2F\	.	2B-\	.	.
-4D\	.	.	.	.	.
+4F	.	.	.	.	.
+4E-i	2F	.	2B-	.	.
+4D	.	.	.	.	.
 *-	*-	*-	*-	*-	*-
-!!!filter: dissonant</script>
+!!!filter: dissonant
+</script>
 
 
 
@@ -1133,7 +1165,8 @@ in pieces with three or more voices.
 	pageWidth="1300"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="para">**kern	**kern	**kern
+<script type="application/x-humdrum" id="para">
+**kern	**kern	**kern
 *clefGv2	*clefGv2	*clefG2
 *k[]	*k[]	*k[]
 *M2/1	*M2/1	*M2/1
@@ -1156,7 +1189,9 @@ in pieces with three or more voices.
 1g	.	.
 =	=	=
 *-	*-	*-
-!!!filter: dissonant</script>
+!!!filter: dissonant
+</script>
+
 
 
 ### Only against known dissonance (Y, y) ###
@@ -1176,7 +1211,8 @@ to Josquin.
 	pageWidth="1000"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="only">**kern	**kern	**kern	**kern	**kern	**kern
+<script type="application/x-humdrum" id="only">
+**kern	**kern	**kern	**kern	**kern	**kern
 *clefF4	*clefGv2	*clefGv2	*clefGv2	*clefGv2	*clefG2
 *k[b-]	*k[b-]	*k[b-]	*k[b-]	*k[b-]	*k[b-]
 *M2/1	*M2/1	*M2/1	*M2/1	*M2/1	*M2/1
@@ -1190,7 +1226,9 @@ to Josquin.
 .	.	2d	.	.	.
 =	=	=	=	=	=
 *-	*-	*-	*-	*-	*-
-!!!filter: dissonant</script>
+!!!filter: dissonant
+</script>
+
 
 
 ### Unknown dissonances (Z, z) ###
@@ -1204,11 +1242,12 @@ sounding note in the sonority. In the example below taken from the Sanctus of Jo
 {% include verovio.html
 	humdrum-visible="false"
 	source="Zandz"
-	scale="35"
-	pageWidth="1400"
+	scale="50"
+	pageWidth="1600"
 	tabsize="10"
 %}
-<script type="application/x-humdrum" id="Zandz">**kern	**kern	**kern	**kern
+<script type="application/x-humdrum" id="Zandz">
+**kern	**kern	**kern	**kern
 *I"B	*I"T	*I"A	*I"S
 *clefF4	*clefGv2	*clefGv2	*clefG2
 *k[]	*k[]	*k[]	*k[]
@@ -1274,7 +1313,7 @@ The filter `extract -i kern` extracts only `**kern` spines and filters out non-k
 
 </style>
 
-Work pages on the Josquin Research Project website have links 
+Work pages on the Josquin Research Project website have links
 for the given work to view the dissonant labeling analysis in VHV.
 For example the page:
 
@@ -1400,3 +1439,6 @@ Trachier, Olivier. Contrepoint du XVIe siècle. Paris: Durand, 1999.
 Vicentino, Nicola. Ancient music adapted to modern practice (L’antica musica ridotta alla moderna prattica). Translated by Maria Rika Maniates and edited by Claude Palisca. New Haven, Yale University Press 1996. Originally published 1555.
 
 Zarlino, Gioseffo. Art of Counterpoint. Translated by Guy Marco and Claude Palisca, edited by Claude Palisca. New Haven and London: Yale University Press, 1968. Originally published: 1558.
+
+
+

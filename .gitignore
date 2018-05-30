@@ -5,3 +5,4 @@ _site
 js/local
 style/local
 Gemfile.lock
+.jekyll-metadata
