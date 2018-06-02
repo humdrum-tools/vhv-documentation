@@ -50,8 +50,11 @@ Repertories
 : A description of online musical repertories available for display in VHV.
 
 Humdrum encoding
-: Topics about Humdrum encoding, mostly advanced topics related to VHV for now
-(otherwise see the [Humdrum documentation](http://www.humdrum.org)).
+: Topics about representing musical features in the Humdrum syntax,
+mostly advanced topics related to VHV features.  See the [getting
+started](/humdrum/getting_started) page for an interactive tutorial on
+encoding music in the Humdrum format.  More complete documentation can
+be found at [Humdrum documentation website](http://www.humdrum.org).
 
 myVHV
 : Instructions and demos for using [Verovio](http://www.verovio.org) and 

@@ -63,7 +63,7 @@ one in the piece/movement.
 1d
 =3||
 1e
-=4!!
+=4
 1f
 =5!|:
 1g

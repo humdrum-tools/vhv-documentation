@@ -1,6 +1,6 @@
 ## Transposing parts ##
 
-Transposing scores are always encoded in sounding pitch in Humdrum
+Transposing scores are always encoded at sounding pitch in Humdrum
 data, and instructions for transposing to written pitch are encoded
 at the start of the part.  In the following example, the second
 spine encodes a B-flat clarinet part, with the transposition

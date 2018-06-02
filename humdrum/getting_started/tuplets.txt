@@ -4,7 +4,7 @@ Tuplets are no different from regular rhythmic values since they
 describe how many notes of that duration sum together to create a 
 whole-note duration.  Triplet eighth notes are represented with
 the number `12` because twelve of them equal a whole-note duration.
-quintuplet sixteen notes are represented as `20` since 20 of the
+quintuplet sixteenth notes are represented as `20` since 20 of the
 equal a whole-note duration.
 
 {% include verovio.html
@@ -80,7 +80,8 @@ whole note is 2/3rds of a whole note:
 
 Notice the `1%2` rhythm in the last measure.  This represent a
 double whole note, since 1/2 of the double whole note is equivalent
-to a whole note.  `0` is equivalent to `1%2`, `00` is equivalent
+to a whole note.  `0` is a special code equivalent to `1%2`, `00` is equivalent
 to `1%4` (a long) and `000` is equivalent to `1%8` (a maxima).  It
 is probably best to use the zero-system for breves, maximas and
-longs, reserving extended rhythms for more complicated cases.
+longs, reserving extended rhythms for readability and use 
+`%`-based descriptions more complicated rhythmic cases.

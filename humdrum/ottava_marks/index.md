@@ -23,33 +23,32 @@ with the tandem interpretation `*8va` and ending it with the interpretation
 	scale="55"
 	pageWidth="1000"
 %}
-
 <script type="application/json" id="paganini15a">
 **kern
 *clefG2
 *k[f#]
 =20
-(32GLLL
+(32GL
 32g)
 32a'
-32b'JJJ
-32ccLLL
+32b'J
+32ccL
 32dd
 32ee
-32ff#JJJ
-32ggLLL
+32ff#J
+32ggL
 32dd
 32bb
-32ggJJJ
+32ggJ
 *8va
-32dddLLL
+32dddL
 32bb
 32ggg
-32dddJJJ
-32bbbLLL
+32dddJ
+32bbbL
 32ggg
 32dddd
-32bbbJJJ
+32bbbJ
 16gggg
 *X8va
 16G
@@ -75,26 +74,26 @@ notation like this:
 *clefG2
 *k[f#]
 =20
-(32GLLL
+(32GL
 32g)
 32a'
-32b'JJJ
-32ccLLL
+32b'J
+32ccL
 32dd
 32ee
-32ff#JJJ
-32ggLLL
+32ff#J
+32ggL
 32dd
 32bb
-32ggJJJ
-32dddLLL
+32ggJ
+32dddL
 32bb
 32ggg
-32dddJJJ
-32bbbLLL
+32dddJ
+32bbbL
 32ggg
 32dddd
-32bbbJJJ
+32bbbJ
 16gggg
 16G
 =
@@ -109,8 +108,61 @@ notation like this:
 <br/>
 <br/>
 {% include warning.html
-	content="If you do not close the ottava mark with \"*X8va\", the notes will currently be transposed, but the mark will not be visible."
+	content="If you do not close the ottava mark with \"*X8va\", the notes will be transposed, but the mark will not be visible."
 %}
 
+
+# Ottava bassa
+
+{% include verovio.html
+	source="bassa"
+	humdrum-min-height="200px"
+	scale="55"
+	pageWidth="1000"
+%}
+<script type="application/json" id="bassa">
+**kern
+*clefF4
+4C
+*8ba
+4FF
+4EE
+4DD
+4AAA
+4GG
+*X8ba
+4C
+=
+*-
+</script>
+
+# Quindicesima
+
+Two octaves up/down can also be encoded with quindicesima marks (with a perfect 15th being 
+the interval of two octaves).
+
+
+{% include verovio.html
+	source="quin"
+	humdrum-min-height="220px"
+	humdrum-min-width="200px"
+	scale="55"
+	pageWidth="1000"
+%}
+<script type="application/json" id="quin">
+
+**kern	**kern
+*clefF4	*clefG2
+4CCC	4ccc
+*8ba	*8va
+4CCC	4ccc
+*X8ba	*X8va
+*15ba	*15ma
+4CCC	4ccc
+*X15ba	*X15ma
+=	=
+*-	*-
+
+</script>
 
 

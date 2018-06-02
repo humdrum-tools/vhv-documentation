@@ -3,6 +3,7 @@ title: Invisible rests
 author: Craig Stuart Sapp
 keywords: humdrum invisible rests
 last_updated: 4 Mar 2017
+verovio: "true"
 tags: [all, humdrum, RDF]
 summary: "Description of invisible rests and how to display them for proof-reading."
 sidebar: main_sidebar
@@ -56,7 +57,7 @@ use any of these RDF lines:
 
 ```
 !!!RDF**kern: show invisible rests color=chartreuse
-!!!RDF**kern: show recip spaces color=royalblue
+!!!RDF**kern: show recip spaces color=hotpink
 !!!RDF**kern: show implicit spaces color=blueviolet
 ```
 
@@ -69,5 +70,34 @@ durations of the measure.
 
 These three colorizations can be used with the `show spaces` RDF, and each will
 supersede the global invisible rests color for their type of rest.
+
+
+{% include verovio.html
+	humdrum-min-height="300px"
+	humdrum-min-width="500px"
+	source="category"
+	tabsize="8"
+	scale="75"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="category">
+**kern
+=1
+*^
+2cc	4
+.	4e
+4ryy	4d
+*v	*v
+4c
+==
+*-
+!!!RDF**kern: show invisible rests color=chartreuse
+!!!RDF**kern: show recip spaces color=hotpink
+!!!RDF**kern: show implicit spaces color=blueviolet
+</script>
+
+Try removing the RDF records and notice that the rests disappear from the notation.
+
+
 
 

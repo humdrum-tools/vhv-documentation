@@ -64,7 +64,7 @@ When accidentals are not required according to the algorithm for
 calculating visual accidentals, but the accidentals are desired in
 order to add clarity for a performer, the accidental of a note can
 be forced to be displayed (whether it would be required or not) by
-adding `X` after the accidental.
+adding `X` after the accidental.  
 
 
 {% include verovio.html
@@ -101,7 +101,11 @@ cautionary sharp added to the note as is shown in the above example.
 
 Natural signs do not require `X`, as they are always displayed when
 given, but when they are used to indicate a cautionary accidental,
-it would be good to include the `X`.
+the `X` is necessary.  The `X` can also be used in diplomatic
+encodings to indicate a visual accidental in the source manuscript. Also,
+to force or indicate that an accidental is implied in a diplomatic
+score, use `y` immediately after the accidental to force it to be 
+hidden.
 
 ### Editorial accidentals ###
 

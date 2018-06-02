@@ -168,3 +168,12 @@ based on the prevailing time signature:
 *-
 !!!filter: autobeam
 </script>
+
+Try copy-and-pasting the above content into
+[VHV](http://verovio.humdrum.org), and then press <span
+class="keystroke">alt-c</span> to compile the filter.  This will run
+the Humdrum data through the filter and then display the results back in
+the text editor.  Otherwise, the data is filtered before being converted
+into notation.
+
+
