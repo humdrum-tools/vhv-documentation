@@ -1,0 +1,50 @@
+{
+	"tableColumns":
+	[
+		{ "data": "keys",   "title": "Key(s)" },
+		{ "data": "description", "title": "Action"}
+	],
+	"categoryList": 
+	[
+		{
+			"categoryName": "breaking beams",
+			"keyList":
+			[
+ 				{
+					"keys": "<span class='keypress'>shift-L</span>",
+					"description": "Break beam before current note"
+				},
+	
+				{
+					"keys": "<span class='keypress'>shift-J</span>",
+					"description": "Break beam after current note"
+				},
+			]
+		},
+		{
+			"categoryName": "editing beams",
+			"keyList":
+			[
+				{
+					"keys": "<span class='keypress'>a</span>",
+					"description": "force beam above notes"
+				},
+			
+				{
+					"keys": "<span class='keypress'>b</span>",
+					"description": "force beam below notes"
+				},
+			
+				{
+					"keys": "<span class='keypress'>c</span>",
+					"description": "clear forced beam direction"
+				},
+
+				{
+					"keys": "<span class='keypress'>escape</span>",
+					"description": "deselect the beam"
+				}
+			]	
+		}
+	]
+}

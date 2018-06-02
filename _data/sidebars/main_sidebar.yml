@@ -1,4 +1,4 @@
-# The sidebar code loops through sections 
+ The sidebar code loops through sections 
 # here and provides the appropriate formatting.
 
 
@@ -171,6 +171,10 @@ entries:
     - title: Slurs
       output: web, pdf
       url: /graphic/slurs
+
+    - title: Beams
+      output: web, pdf
+      url: /graphic/beams
 
     - title: Marks
       output: web, pdf
