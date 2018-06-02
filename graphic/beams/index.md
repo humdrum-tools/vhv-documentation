@@ -28,10 +28,24 @@ When editing a note/chord/rest inside of a beam, type
 <span class="keypress">shift-L</span> to split the beam between the 
 current note and the previous note.
 
+{% include image.html
+	file="lcommand.gif"
+	alt="breaking beams with the L command."
+	max-width="75%"
+	caption="Breaking beams with the `L` command."
+%}
+
 ## <span class="keypress">J</span>: Splitting beam after current note ##
 
 When editing a note/chord/rest inside of a beam, type 
 <span class="keypress">shift-J</span> to split the beam between the 
 current note and the next note.
+
+{% include image.html
+	file="jcommand.gif"
+	alt="breaking beams with the J command."
+	max-width="75%"
+	caption="Breaking beams with the `J` command."
+%}
 
 
