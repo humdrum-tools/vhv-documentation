@@ -83,6 +83,31 @@
 				</nobr>
 			{% endif %} 
 
+			{% unless page.url contains "/news-" %}
+				{% if page.translator %}
+					<nobr>
+					{% if page.translator.first %}
+						<span>Page translators:</span>
+						{% for aname in page.translator %}
+							{{aname}}
+							{% unless forloop.last %},{% endunless %}
+						{% endfor %}
+						<br/>
+					{% else %}
+							<span>Page translator:</span> {{page.translator}}<br/>
+					{% endif %}
+					</nobr>
+				{% endif %} 
+			{% endunless %}
+
+			{% unless page.url contains "/news-" %}
+				{% if page.translation_date %}
+					<nobr>
+						<span>Translation date:</span> {{page.translation_date}}<br/>
+					</nobr>
+				{% endif %} 
+			{% endunless %}
+
 			<nobr>
 				<span>Site last generated:</span> {{ site.time | date: "%-d %b %Y"  }} <br />
 			</nobr>
