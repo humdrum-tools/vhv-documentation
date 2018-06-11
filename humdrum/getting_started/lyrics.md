@@ -1,6 +1,7 @@
 ---
 title: lyrics encoding tutorial
 lang: en
+ref: humdrum-getting_started-lyrics
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial lyrics
 creation_date: 20 Aug 2017

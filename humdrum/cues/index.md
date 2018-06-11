@@ -1,6 +1,7 @@
 ---
 title: Cue-sized notes
 lang: en
+ref: humdrum-cues
 author: Craig Stuart Sapp
 keywords: humdrum cue
 creation_date: 27 Mar 2018

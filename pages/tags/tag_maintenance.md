@@ -1,6 +1,7 @@
 ---
 title: "Maintenance pages index"
 lang: en
+ref: tag_maintenance
 tagName: maintenance
 search: exclude
 permalink: tag_maintenance.html

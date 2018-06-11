@@ -1,6 +1,7 @@
 ---
 title: beam encoding tutorial
 lang: en
+ref: humdrum-getting_started-beaming
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial beaming
 creation_date: 20 Aug 2017

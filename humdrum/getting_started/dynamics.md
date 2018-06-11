@@ -1,6 +1,7 @@
 ---
 title: dynamics encoding tutorial
 lang: en
+ref: humdrum-getting_started-dynamics
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial dynamics
 creation_date: 20 Aug 2017

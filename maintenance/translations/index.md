@@ -2,6 +2,7 @@
 search: exclude
 title: Creating page translations
 lang: en
+ref: maintenance-translations
 author: Craig Stuart Sapp
 creation_date: 11 Jun 2018
 last_updated: 11 Jun 2018

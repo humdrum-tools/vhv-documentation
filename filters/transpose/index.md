@@ -1,5 +1,7 @@
 ---
 transpose: transpose filter
+lang: en
+ref: filters-transpose
 author: Craig Stuart Sapp
 creation_date: 23 Apr 2017
 last_updated: 23 Apr 2017

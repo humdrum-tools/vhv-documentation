@@ -1,6 +1,7 @@
 ---
 title: ties encoding tutorial
 lang: en
+ref: humdrum-getting_started-ties
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial ties
 creation_date: 20 Aug 2017

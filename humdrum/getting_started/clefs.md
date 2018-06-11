@@ -1,6 +1,7 @@
 ---
 title: clef encoding tutorial
 lang: en
+ref: humdrum-getting_started-clefs
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial clefs
 creation_date: 20 Aug 2017

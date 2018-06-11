@@ -1,6 +1,7 @@
 ---
 title: <span class='keypress'>alt-u</span>
 lang: en
+ref: commands-alt-u
 author: Craig Stuart Sapp
 creation_date: 12 May 2018
 last_updated: 12 May 2018

@@ -1,6 +1,7 @@
 ---
 title: Figured bass
 lang: en
+ref: humdrum-figured_bass
 author: Craig Stuart Sapp
 keywords: humdrum figured bass
 creation_date: 9 May 2017

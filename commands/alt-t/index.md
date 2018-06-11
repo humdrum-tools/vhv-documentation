@@ -1,6 +1,7 @@
 ---
 title: <span class='keypress'>alt-t</span>/<span class='keypress'>alt-T</span>
 lang: en
+ref: commands-alt-t
 author: Craig Stuart Sapp
 creation_date: 16 Oct 2017
 last_updated: 16 Oct 2017

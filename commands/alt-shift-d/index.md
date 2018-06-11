@@ -1,6 +1,7 @@
 ---
 title: <span class='keypress'>alt-shift-d</span>
 lang: en
+ref: commands-alt-shift-d
 author: Craig Stuart Sapp
 creation_date: 20 May 2018
 last_updated: 20 May 2018

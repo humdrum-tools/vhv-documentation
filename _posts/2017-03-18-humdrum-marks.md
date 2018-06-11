@@ -1,6 +1,7 @@
 ---
 title:  "Ottavas, pedaling and tuplet styling"
 lang: en
+ref: news-humdrum-features
 author: Craig Stuart Sapp
 creation_date: 18 Mar 2017
 last_updated: 18 Mar 2017

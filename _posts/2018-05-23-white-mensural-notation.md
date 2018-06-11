@@ -1,6 +1,7 @@
 ---
 title:  "White mensural notation"
 lang: en
+ref: news-white-mensural-notation
 author: Craig Stuart Sapp
 creation_date: 23 May 2018
 last_updated: 23 May 2018

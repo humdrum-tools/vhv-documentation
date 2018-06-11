@@ -1,6 +1,7 @@
 ---
 title: Edit modes and syntax highlighting
 lang: en
+ref: interface-edit_modes
 author: Craig Stuart Sapp
 creation_date: 19 Jun 2017
 last_updated: 19 Jun 2017

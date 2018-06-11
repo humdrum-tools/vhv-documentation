@@ -1,6 +1,7 @@
 ---
 title:  "Graphical editing"
 lang: en
+ref: news-graphical
 author: Craig Stuart Sapp
 creation_date: 5 Mar 2017
 last_updated: 5 Mar 2017

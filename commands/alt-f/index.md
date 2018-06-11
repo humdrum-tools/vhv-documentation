@@ -1,6 +1,7 @@
 ---
 title: <span class='keypress'>alt-f</span>
 lang: en
+ref: commands-alt-f
 author: Craig Stuart Sapp
 creation_date: 5 Mar 2017
 last_updated: 5 Mar 2017

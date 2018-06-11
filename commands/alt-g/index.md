@@ -1,6 +1,7 @@
 ---
 title: <span class='keypress'>alt-g</span>
 lang: en
+ref: commands-alt-g
 author: Craig Stuart Sapp
 creation_date: 23 Apr 2017
 last_updated: 23 Apr 2017

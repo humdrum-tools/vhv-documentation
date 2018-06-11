@@ -1,6 +1,7 @@
 ---
 title:  "Coloring beams in SVG with gradient filters"
 lang: en
+ref: news-colored-beams
 author: Craig Stuart Sapp
 creation_date: 22 Apr 2017
 last_updated: 22 Apr 2017

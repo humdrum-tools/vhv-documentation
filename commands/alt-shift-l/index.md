@@ -1,6 +1,7 @@
 ---
 title: <span class='keypress'>alt-shift-l</span>
 lang: en
+ref: commands-alt-shift-l
 author: Craig Stuart Sapp
 creation_date: 20 May 2018
 last_updated: 20 May 2018

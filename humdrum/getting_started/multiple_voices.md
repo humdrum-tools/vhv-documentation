@@ -1,6 +1,7 @@
 ---
 title: multiple voices encoding tutorial
 lang: en
+ref: humdrum-getting_started-multiple_voices
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial multiple voices
 creation_date: 20 Aug 2017

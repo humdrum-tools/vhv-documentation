@@ -1,6 +1,7 @@
 ---
 title:  "Fingering"
 lang: en
+ref: news-fingering
 author: Craig Stuart Sapp
 creation_date: 23 Mar 2018
 last_updated: 20 May 2018

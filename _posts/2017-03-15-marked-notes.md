@@ -1,6 +1,7 @@
 ---
 title:  "Marking notes"
 lang: en
+ref: news-marked_notes
 author: Craig Stuart Sapp
 creation_date: 15 Mar 2017
 last_updated: 15 Mar 2017

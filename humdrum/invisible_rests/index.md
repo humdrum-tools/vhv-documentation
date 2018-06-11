@@ -1,6 +1,7 @@
 ---
 title: Invisible rests
 lang: en
+ref: humdrum-invisible_rests
 author: Craig Stuart Sapp
 keywords: humdrum invisible rests
 last_updated: 4 Mar 2017

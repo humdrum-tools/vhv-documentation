@@ -1,6 +1,7 @@
 ---
 title:  "Beam editing"
 lang: en
+ref: news-editing-beams
 author: Craig Stuart Sapp
 creation_date: 30 May 2018
 last_updated: 30 May 2018

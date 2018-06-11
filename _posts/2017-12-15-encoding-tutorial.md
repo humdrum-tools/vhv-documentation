@@ -1,6 +1,7 @@
 ---
 title:  "Encoding tutorial"
 lang: en
+ref: news-encoding-tutorial
 author: Craig Stuart Sapp
 creation_date: 15 Dec 2017
 last_updated: 15 Dec 2017

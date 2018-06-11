@@ -2,6 +2,7 @@
 search: exclude
 title: Creating a new tag
 lang: en
+ref: maintenance-newtag
 author: Craig Stuart Sapp
 creation_date: 14 Mar 2017
 last_updated: 14 Mar 2017

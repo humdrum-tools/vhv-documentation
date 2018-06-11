@@ -1,6 +1,7 @@
 ---
 title: multiple staves encoding tutorial
 lang: en
+ref: humdrum-getting_started-multiple_staves
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial multiple staves
 creation_date: 20 Aug 2017

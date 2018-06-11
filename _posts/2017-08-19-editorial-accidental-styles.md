@@ -1,6 +1,7 @@
 ---
 title:  "Editorial accidental styles"
 lang: en
+ref: editorial-accidental-style
 author: Craig Stuart Sapp
 creation_date: 19 Aug 2017
 last_updated: 19 Aug 2017

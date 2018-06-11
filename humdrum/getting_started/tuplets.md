@@ -1,6 +1,7 @@
 ---
 title: tuplets encoding tutorial
 lang: en
+ref: humdrum-getting_started-tuplets
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial tuplets
 creation_date: 20 Aug 2017

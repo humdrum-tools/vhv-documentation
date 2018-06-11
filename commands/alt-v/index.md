@@ -1,6 +1,7 @@
 ---
 title: <span class='keypress'>alt-v</span>
 lang: en
+ref: commands-alt-v
 author: Craig Stuart Sapp
 creation_date: 3 Mar 2017
 last_updated: 5 Mar 2017

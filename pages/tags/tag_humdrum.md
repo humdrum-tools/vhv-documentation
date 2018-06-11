@@ -1,6 +1,7 @@
 ---
 title: "Humdrum pages index"
 lang: en
+ref: tag_humdrum
 tagName: humdrum
 search: exclude
 permalink: tag_humdrum.html

@@ -1,6 +1,7 @@
 ---
 title: Tuplet styling
 lang: en
+ref: humdrum-tuplet_styling
 author: Craig Stuart Sapp
 keywords: humdrum tuplet styling
 creation_date: 18 Mar 2017

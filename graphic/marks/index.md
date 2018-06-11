@@ -1,6 +1,7 @@
 ---
 title: Marking notes with <span class='keypress'>at</span>
 lang: en
+ref: graphic-marks
 author: Craig Stuart Sapp
 creation_date: 15 Mar 2017
 last_updated: 15 Mar 2017

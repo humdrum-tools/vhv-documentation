@@ -1,6 +1,7 @@
 ---
 title:  "Transposing chord symbols"
 lang: en
+ref: news-transposing-chords
 author: Craig Stuart Sapp
 creation_date: 17 May 2018
 last_updated: 17 May 2018

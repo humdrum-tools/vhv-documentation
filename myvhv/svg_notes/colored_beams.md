@@ -1,6 +1,7 @@
 ---
 title: Coloring beams
 lang: en
+ref: myvhv-svg_notes-colored_beams
 author: Craig Stuart Sapp
 vim: ts=3 ft=javascript
 creation_date: 22 Apr 2017

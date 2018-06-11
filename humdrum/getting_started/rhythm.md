@@ -1,6 +1,7 @@
 ---
 title: rhythm encoding tutorial
 lang: en
+ref: humdrum-getting_started-rhythm
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial rhythm
 creation_date: 20 Aug 2017

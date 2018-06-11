@@ -1,6 +1,7 @@
 ---
 title: White mensural notation
 lang: en
+ref: humdrum-mens
 author: Craig Stuart Sapp
 keywords: humdrum mensural notation
 creation_date: 8 May 2018

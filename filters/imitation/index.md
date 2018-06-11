@@ -1,6 +1,7 @@
 ---
 title: imitation filter
 lang: en
+ref: filters-imitation
 author: "Craig Sapp"
 creation_date: 18 Jun 2017
 last_updated: 18 Jun 2017

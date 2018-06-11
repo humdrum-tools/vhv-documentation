@@ -1,6 +1,7 @@
 ---
 title: <span class='keypress'>alt-l</span>
 lang: en
+ref: command-alt-l
 author: Craig Stuart Sapp
 creation_date: 3 Mar 2017
 last_updated: 3 Mar 2017

@@ -1,6 +1,7 @@
 ---
 title: pitch encoding tutorial
 lang: en
+ref: humdrum-getting_started-pitch
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial pitch
 creation_date: 20 Aug 2017

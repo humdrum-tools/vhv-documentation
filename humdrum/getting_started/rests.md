@@ -1,6 +1,7 @@
 ---
 title: rests encoding tutorial
 lang: en
+ref: humdrum-getting_started-rests
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial rests
 creation_date: 20 Aug 2017

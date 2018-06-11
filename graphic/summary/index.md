@@ -1,6 +1,7 @@
 ---
 title: Key command summary
 lang: en
+ref: graphic-summary
 author: Craig Stuart Sapp
 creation_date: 15 Mar 2017
 last_updated: 15 Mar 2017

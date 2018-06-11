@@ -1,6 +1,7 @@
 ---
 title:  "Viewing invisible rests"
 lang: en
+ref: news-invisible-rests
 author: Craig Stuart Sapp
 creation_date: 1 Mar 2017
 last_updated: 4 Mar 2017
