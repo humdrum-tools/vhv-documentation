@@ -1,5 +1,6 @@
 ---
 title: dissonant filter
+lang: en
 author: ["Alexander Morgan", "Craig Sapp"]
 creation_date: 29 May 2017
 last_updated: 10 Jun 2017

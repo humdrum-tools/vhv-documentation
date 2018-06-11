@@ -1,5 +1,6 @@
 ---
 title: Edit modes and syntax highlighting
+lang: en
 author: Craig Stuart Sapp
 creation_date: 19 Jun 2017
 last_updated: 19 Jun 2017

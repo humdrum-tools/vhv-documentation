@@ -1,5 +1,6 @@
 ---
 title: Transposing parts
+lang: en
 author: Craig Stuart Sapp
 keywords: humdrum transposing parts
 creation_date: 25 Jan 2018

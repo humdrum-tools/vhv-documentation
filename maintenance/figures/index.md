@@ -1,6 +1,7 @@
 ---
 search: exclude
 title: Creating and adding figures.
+lang: en
 author: Craig Stuart Sapp
 creation_date: 7 Mar 2017
 last_updated: 7 Mar 2017

@@ -1,6 +1,7 @@
 ---
 search: exclude
 title: Tables
+lang: en
 author: Craig Stuart Sapp
 creation_date: 12 Mar 2017
 last_updated: 12 Mar 2017

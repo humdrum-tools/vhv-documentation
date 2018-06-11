@@ -1,6 +1,7 @@
 ---
 search: exclude
 title: Running VHV locally
+lang: en
 author: Craig Stuart Sapp
 creation_date: 20 Aug 2017
 last_updated: 20 Aug 2017

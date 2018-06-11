@@ -1,5 +1,6 @@
 ---
 title: Humdrum music encoding tutorial
+lang: en
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial
 creation_date: 20 Aug 2017

@@ -1,5 +1,6 @@
 ---
 title: Creating static in-browser images from EsAC data
+lang: en
 author: Craig Stuart Sapp
 vim: ts=3
 creation_date: 10 Jun 2017

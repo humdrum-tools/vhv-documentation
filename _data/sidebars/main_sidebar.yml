@@ -344,6 +344,10 @@ entries:
       output: web, pdf
       url: /maintenance/tables
 
+    - title: Translations
+      output: web, pdf
+      url: /maintenance/translations
+
     - title: Create a new tag
       output: web, pdf
       url: /maintenance/newtag

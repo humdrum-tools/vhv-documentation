@@ -1,5 +1,6 @@
 ---
 title: Pedal marks
+lang: en
 author: Craig Stuart Sapp
 keywords: humdrum pedal marks
 creation_date: 18 Mar 2017

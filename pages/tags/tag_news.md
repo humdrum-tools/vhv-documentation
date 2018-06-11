@@ -1,5 +1,6 @@
 ---
 title: "News pages index"
+lang: en
 tagName: news
 search: exclude
 permalink: tag_news.html

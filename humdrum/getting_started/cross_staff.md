@@ -1,5 +1,6 @@
 ---
 title: cross staff note encoding tutorial
+lang: en
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial cross staff
 creation_date: 20 Aug 2017

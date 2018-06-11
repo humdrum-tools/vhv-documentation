@@ -1,5 +1,6 @@
 ---
 title: Creating dynamic in-browser images
+lang: en
 author: Craig Stuart Sapp
 vim: ts=3
 creation_date: 11 Mar 2017

@@ -1,5 +1,6 @@
 ---
 title: Syntax validation
+lang: en
 author: Craig Stuart Sapp
 creation_date: 19 Aug 2017
 last_updated: 19 Aug 2017

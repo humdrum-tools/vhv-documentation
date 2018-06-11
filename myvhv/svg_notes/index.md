@@ -1,5 +1,6 @@
 ---
 title: Embedded pitch and rhythm in SVG images
+lang: en
 author: Craig Stuart Sapp
 vim: ts=3 ft=javascript
 creation_date: 16 Mar 2017

@@ -1,5 +1,6 @@
 ---
 title: Fingering
+lang: en
 author: Craig Stuart Sapp
 keywords: humdrum fingering
 creation_date: 23 Mar 2018

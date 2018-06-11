@@ -1,5 +1,6 @@
 ---
 title: <span class='keypress'>alt-h</span>
+lang: en
 author: Craig Stuart Sapp
 creation_date: 27 Apr 2017
 last_updated: 27 Apr 2017

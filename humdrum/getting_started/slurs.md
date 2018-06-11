@@ -1,5 +1,6 @@
 ---
 title: slurs encoding tutorial
+lang: en
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial slurs
 creation_date: 20 Aug 2017

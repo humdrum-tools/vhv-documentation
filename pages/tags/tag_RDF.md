@@ -1,5 +1,6 @@
 ---
 title: "RDF pages index"
+lang: en
 tagName: RDF
 search: exclude
 permalink: tag_RDF.html

@@ -1,5 +1,6 @@
 ---
 title:  "VHV presentation at the Music Encoding Conference in Tours, France (May 2017)"
+lang: en
 author: Craig Stuart Sapp
 creation_date: 3 May 2017
 last_updated: 3 May 2017

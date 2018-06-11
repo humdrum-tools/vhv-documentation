@@ -1,5 +1,6 @@
 ---
 title: VHV online repertories
+lang: en
 author: Craig Stuart Sapp
 keywords: humdrum online repertories github
 creation_date: 10 May 2017

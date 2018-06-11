@@ -1,5 +1,6 @@
 ---
 title:  "Saving SVG images"
+lang: en
 author: Craig Stuart Sapp
 creation_date: 23 Apr 2017
 last_updated: 23 Apr 2017

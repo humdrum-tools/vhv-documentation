@@ -1,5 +1,6 @@
 ---
 title: key signatures encoding tutorial
+lang: en
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial key signatures
 creation_date: 20 Aug 2017

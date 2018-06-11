@@ -1,6 +1,7 @@
 ---
 search: exclude
 title: Local VHV documentation
+lang: en
 author: Craig Stuart Sapp
 creation_date: 20 Aug 2017
 last_updated: 20 Aug 2017

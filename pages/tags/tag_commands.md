@@ -1,5 +1,6 @@
 ---
 title: "Command pages index"
+lang: en
 tagName: commands
 search: exclude
 permalink: tag_commands.html

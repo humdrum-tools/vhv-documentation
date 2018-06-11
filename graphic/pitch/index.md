@@ -1,5 +1,6 @@
 ---
 title: Pitch
+lang: en
 author: Craig Stuart Sapp
 creation_date: 7 Mar 2017
 last_updated: 19 May 2018

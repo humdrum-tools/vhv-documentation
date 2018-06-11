@@ -1,5 +1,6 @@
 ---
 title: J.S. Bach chorales
+lang: en
 author: Craig Stuart Sapp
 keywords: humdrum Bach chorales
 creation_date: 18 Mar 2017

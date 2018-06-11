@@ -1,5 +1,6 @@
 ---
 title: articulations encoding tutorial
+lang: en
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial articulations
 creation_date: 20 Aug 2017

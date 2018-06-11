@@ -1,5 +1,6 @@
 ---
 title: octaves encoding tutorial
+lang: en
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial octaves
 creation_date: 20 Aug 2017

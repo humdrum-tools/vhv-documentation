@@ -1,5 +1,6 @@
 ---
 title: "Special layout pages index"
+lang: en
 tagName: special_layouts
 search: exclude
 permalink: tag_special_layouts.html

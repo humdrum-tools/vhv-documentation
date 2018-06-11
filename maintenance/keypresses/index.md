@@ -1,6 +1,7 @@
 ---
 search: exclude
 title: Keypress icons
+lang: en
 author: Craig Stuart Sapp
 creation_date: 11 Mar 2017
 last_updated: 11 Mar 2017

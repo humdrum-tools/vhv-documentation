@@ -1,5 +1,6 @@
 ---
 title: Trills
+lang: en
 author: Craig Stuart Sapp
 keywords: humdrum trill
 creation_date: 27 Mar 2018

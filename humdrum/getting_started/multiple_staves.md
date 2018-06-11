@@ -1,5 +1,6 @@
 ---
 title: multiple staves encoding tutorial
+lang: en
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial multiple staves
 creation_date: 20 Aug 2017

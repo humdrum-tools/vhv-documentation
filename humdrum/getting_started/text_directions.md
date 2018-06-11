@@ -1,5 +1,6 @@
 ---
 title: text directions encoding tutorial
+lang: en
 author: Craig Stuart Sapp
 keywords: humdrum encoding tutorial text directions
 creation_date: 20 Aug 2017
