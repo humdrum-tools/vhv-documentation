@@ -3,8 +3,10 @@ title: Fingering
 lang: en
 ref: humdrum-fingering
 author: Craig Stuart Sapp
+translator: 
 keywords: humdrum fingering
 creation_date: 23 Mar 2018
+translation_date: 
 last_updated: 23 Mar 2018
 tags: [all, humdrum ]
 verovio: "true"

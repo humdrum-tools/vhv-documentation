@@ -3,7 +3,9 @@ title: myVHV introduction
 lang: en
 ref: myvhv-introduction
 author: Craig Stuart Sapp
+translator: 
 creation_date: 10 Mar 2017
+translation_date: 
 last_updated: 10 Mar 2017
 sidebar: main_sidebar
 tags: [all]

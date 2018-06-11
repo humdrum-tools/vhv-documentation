@@ -4,7 +4,9 @@ title: Creating verovio figures
 lang: en
 ref: maintenance-verovio
 author: Craig Stuart Sapp
+translator: 
 creation_date: 10 Mar 2017
+translation_date: 
 last_updated: 10 Mar 2017
 tags: [all, maintenance]
 vim: ts=3 ft=javascript

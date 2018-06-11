@@ -3,7 +3,9 @@ title:  "Saving SVG images"
 lang: en
 ref: news-save-svg
 author: Craig Stuart Sapp
+translator: 
 creation_date: 23 Apr 2017
+translation_date: 
 last_updated: 23 Apr 2017
 categories: update
 permalink: news-save-svg.html

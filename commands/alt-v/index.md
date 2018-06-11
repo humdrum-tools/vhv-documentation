@@ -3,7 +3,9 @@ title: <span class='keypress'>alt-v</span>
 lang: en
 ref: commands-alt-v
 author: Craig Stuart Sapp
+translator: 
 creation_date: 3 Mar 2017
+translation_date: 
 last_updated: 5 Mar 2017
 tags: [all, commands]
 sidebar: main_sidebar

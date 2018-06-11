@@ -3,7 +3,9 @@ title: Load/Save Humdrum data
 lang: en
 ref: interface-humdrum
 author: Craig Stuart Sapp
+translator: 
 creation_date: 6 Mar 2017
+translation_date: 
 last_updated: 6 Mar 2017
 tags: [all, getting_started, humdrum]
 keywords: interface humdrum load save import export

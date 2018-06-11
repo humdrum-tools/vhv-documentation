@@ -4,7 +4,9 @@ title: Creating page translations
 lang: en
 ref: maintenance-translations
 author: Craig Stuart Sapp
+translator: 
 creation_date: 11 Jun 2018
+translation_date: 
 last_updated: 11 Jun 2018
 tags: [all, maintenance]
 sidebar: main_sidebar

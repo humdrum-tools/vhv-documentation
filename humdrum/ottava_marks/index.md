@@ -3,8 +3,10 @@ title: Ottava marks
 lang: en
 ref: humdrum-ottava_marks
 author: Craig Stuart Sapp
+translator: 
 keywords: humdrum ottava marks
 creation_date: 18 Mar 2017
+translation_date: 
 last_updated: 18 Mar 2017
 tags: [all, humdrum ]
 verovio: "true"

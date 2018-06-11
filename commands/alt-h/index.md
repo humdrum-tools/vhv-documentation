@@ -3,7 +3,9 @@ title: <span class='keypress'>alt-h</span>
 lang: en
 ref: commands-alt-h
 author: Craig Stuart Sapp
+translator: 
 creation_date: 27 Apr 2017
+translation_date: 
 last_updated: 27 Apr 2017
 tags: [all, commands]
 sidebar: main_sidebar

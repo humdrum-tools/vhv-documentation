@@ -3,7 +3,9 @@ title: dissonant filter
 lang: en
 ref: filters-dissonant
 author: ["Alexander Morgan", "Craig Sapp"]
+translator: 
 creation_date: 29 May 2017
+translation_date: 
 last_updated: 10 Jun 2017
 tags: [all, filters]
 sidebar: main_sidebar

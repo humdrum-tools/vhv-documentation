@@ -3,7 +3,9 @@ title:  "White mensural notation"
 lang: en
 ref: news-white-mensural-notation
 author: Craig Stuart Sapp
+translator: 
 creation_date: 23 May 2018
+translation_date: 
 last_updated: 23 May 2018
 categories: white mensural notation
 permalink: news-white-mensural-notation.html

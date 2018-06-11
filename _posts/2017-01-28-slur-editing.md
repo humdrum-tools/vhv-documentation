@@ -3,7 +3,9 @@ title:  "Graphic editing of slurs"
 lang: en
 ref: news-slur-editing
 author: Craig Stuart Sapp
+translator: 
 creation_date: 28 Jan 2017
+translation_date: 
 last_updated: 5 Mar 2017
 categories: update
 permalink: news-slurs-editing.html

@@ -3,7 +3,9 @@ title:  "Transposing parts"
 lang: en
 ref: news-transposing-parts
 author: Craig Stuart Sapp
+translator: 
 creation_date: 25 Jan 2018
+translation_date: 
 last_updated: 25 Jan 2018
 categories: transposing parts
 permalink: news-transposing-parts.html

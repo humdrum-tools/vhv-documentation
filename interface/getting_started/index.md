@@ -3,8 +3,10 @@ title: User Interface overview
 lang: en
 ref: interface-getting_started-2
 author: Craig Stuart Sapp
+translator: 
 keywords: interface commands documentation 
 creation_date: 3 Mar 2017
+translation_date: 
 last_updated: 3 Mar 2017
 tags: [all, getting_started]
 summary: "Description of the two sub-windows in the VHV interface."

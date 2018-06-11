@@ -3,7 +3,9 @@ title:  "VHV presentation at the Music Encoding Conference in Tours, France (May
 lang: en
 ref: news-invisible-rests
 author: Craig Stuart Sapp
+translator: 
 creation_date: 3 May 2017
+translation_date: 
 last_updated: 3 May 2017
 categories: presentations
 permalink: news-invisible-rests.html

@@ -3,7 +3,9 @@ title: <span class='keypress'>alt-g</span>
 lang: en
 ref: commands-alt-g
 author: Craig Stuart Sapp
+translator: 
 creation_date: 23 Apr 2017
+translation_date: 
 last_updated: 23 Apr 2017
 tags: [all, commands]
 sidebar: main_sidebar

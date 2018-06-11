@@ -3,8 +3,10 @@ title: Pedal marks
 lang: en
 ref: humdrum-pedal_marks
 author: Craig Stuart Sapp
+translator: 
 keywords: humdrum pedal marks
 creation_date: 18 Mar 2017
+translation_date: 
 last_updated: 18 Mar 2017
 tags: [all, humdrum ]
 verovio: "true"

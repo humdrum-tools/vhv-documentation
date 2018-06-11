@@ -3,7 +3,9 @@ title: Key command summary
 lang: en
 ref: graphic-summary
 author: Craig Stuart Sapp
+translator: 
 creation_date: 15 Mar 2017
+translation_date: 
 last_updated: 15 Mar 2017
 tags: [all, graphic_editing]
 sidebar: main_sidebar

@@ -3,8 +3,10 @@ title: White mensural notation
 lang: en
 ref: humdrum-mens
 author: Craig Stuart Sapp
+translator: 
 keywords: humdrum mensural notation
 creation_date: 8 May 2018
+translation_date: 
 last_updated: 8 May 2018
 tags: [all, humdrum ]
 verovio: "true"

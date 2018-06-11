@@ -3,7 +3,9 @@ title: <span class='keypress'>alt-l</span>
 lang: en
 ref: command-alt-l
 author: Craig Stuart Sapp
+translator: 
 creation_date: 3 Mar 2017
+translation_date: 
 last_updated: 3 Mar 2017
 tags: [all, commands]
 sidebar: main_sidebar

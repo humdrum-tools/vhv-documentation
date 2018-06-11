@@ -3,7 +3,9 @@ title:  "Autosave feature"
 lang: en
 ref: news-autosave-feature
 author: Craig Stuart Sapp
+translator: 
 creation_date: 1 Jun 2018
+translation_date: 
 last_updated: 1 Jun 2018
 categories: autosave
 permalink: news-autosave-feature.html

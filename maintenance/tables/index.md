@@ -4,7 +4,9 @@ title: Tables
 lang: en
 ref: maintenance-tables
 author: Craig Stuart Sapp
+translator: 
 creation_date: 12 Mar 2017
+translation_date: 
 last_updated: 12 Mar 2017
 tags: [all, maintenance]
 datatable: "true"

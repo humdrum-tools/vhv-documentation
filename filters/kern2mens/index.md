@@ -3,7 +3,9 @@ title: kern2mens filter
 lang: en
 ref: filters-kern2mens
 author: Craig Stuart Sapp
+translator: 
 creation_date: 10 May 2018
+translation_date: 
 last_updated: 10 May 2018
 tags: [all, filters]
 sidebar: main_sidebar

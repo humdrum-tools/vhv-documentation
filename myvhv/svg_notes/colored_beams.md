@@ -3,8 +3,10 @@ title: Coloring beams
 lang: en
 ref: myvhv-svg_notes-colored_beams
 author: Craig Stuart Sapp
+translator: 
 vim: ts=3 ft=javascript
 creation_date: 22 Apr 2017
+translation_date: 
 last_updated: 22 Apr 2017
 tags: [all]
 sidebar: main_sidebar

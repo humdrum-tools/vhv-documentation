@@ -3,7 +3,9 @@ title: <span class='keypress'>alt-u</span>
 lang: en
 ref: commands-alt-u
 author: Craig Stuart Sapp
+translator: 
 creation_date: 12 May 2018
+translation_date: 
 last_updated: 12 May 2018
 tags: [all, commands]
 sidebar: main_sidebar

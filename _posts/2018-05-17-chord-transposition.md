@@ -3,7 +3,9 @@ title:  "Transposing chord symbols"
 lang: en
 ref: news-transposing-chords
 author: Craig Stuart Sapp
+translator: 
 creation_date: 17 May 2018
+translation_date: 
 last_updated: 17 May 2018
 categories: transposing parts
 permalink: news-transposing-chords.html

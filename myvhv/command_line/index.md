@@ -3,7 +3,9 @@ title: Using verovio in a terminal
 lang: en
 ref: myvhv-command_line
 author: Craig Stuart Sapp
+translator: 
 creation_date: 10 Mar 2017
+translation_date: 
 last_updated: 10 Mar 2017
 sidebar: main_sidebar
 tags: [all]

@@ -3,7 +3,9 @@ title: <span class='keypress'>alt-p</span>
 lang: en
 ref: commands-alt-p
 author: Craig Stuart Sapp
+translator: 
 creation_date: 9 May 2017
+translation_date: 
 last_updated: 9 May 2017
 tags: [all, commands]
 sidebar: main_sidebar

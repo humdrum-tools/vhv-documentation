@@ -4,7 +4,9 @@ title: Local VHV documentation
 lang: en
 ref: maintenance-local
 author: Craig Stuart Sapp
+translator: 
 creation_date: 20 Aug 2017
+translation_date: 
 last_updated: 20 Aug 2017
 tags: [all, maintenance]
 sidebar: main_sidebar

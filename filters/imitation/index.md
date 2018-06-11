@@ -3,7 +3,9 @@ title: imitation filter
 lang: en
 ref: filters-imitation
 author: "Craig Sapp"
+translator: 
 creation_date: 18 Jun 2017
+translation_date: 
 last_updated: 18 Jun 2017
 tags: [all, filters]
 sidebar: main_sidebar

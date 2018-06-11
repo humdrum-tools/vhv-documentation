@@ -3,7 +3,9 @@ title:  "Beam editing"
 lang: en
 ref: news-editing-beams
 author: Craig Stuart Sapp
+translator: 
 creation_date: 30 May 2018
+translation_date: 
 last_updated: 30 May 2018
 categories: editing beams
 permalink: news-editing-beams.html

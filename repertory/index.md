@@ -3,8 +3,10 @@ title: VHV online repertories
 lang: en
 ref: repertory
 author: Craig Stuart Sapp
+translator: 
 keywords: humdrum online repertories github
 creation_date: 10 May 2017
+translation_date: 
 last_updated: 10 May 2017
 tags: [all, repertories]
 vim: ts=3 ft=javascript

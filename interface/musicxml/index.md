@@ -3,7 +3,9 @@ title: MusicXML import
 lang: en
 ref: interface-musicxml
 author: Craig Stuart Sapp
+translator: 
 creation_date: 6 Mar 2017
+translation_date: 
 last_updated: 6 Mar 2017
 tags: [all, getting_started]
 keywords: interface musicxml

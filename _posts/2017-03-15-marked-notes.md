@@ -3,7 +3,9 @@ title:  "Marking notes"
 lang: en
 ref: news-marked_notes
 author: Craig Stuart Sapp
+translator: 
 creation_date: 15 Mar 2017
+translation_date: 
 last_updated: 15 Mar 2017
 categories: update
 permalink: news-marked_notes.html

@@ -3,7 +3,9 @@ title:  "Graphical editing"
 lang: en
 ref: news-graphical
 author: Craig Stuart Sapp
+translator: 
 creation_date: 5 Mar 2017
+translation_date: 
 last_updated: 5 Mar 2017
 categories: update
 permalink: news-graphical.html
