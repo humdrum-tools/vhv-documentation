@@ -54,6 +54,10 @@ entries:
       output: web, pdf
       url: /interface/humdrum
 
+    - title: Load/Save to page buffers
+      output: web, pdf
+      url: /interface/buffers
+
     - title: Importing MusicXML data
       output: web, pdf
       url: /interface/musicxml
