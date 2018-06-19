@@ -1,7 +1,11 @@
 ---
 title: <span class='keypress'>alt-o</span>
+lang: en
+ref: commands-alt-o
 author: Craig Stuart Sapp
+translator: 
 creation_date: 15 Mar 2017
+translation_date: 
 last_updated: 15 Mar 2017
 tags: [all, commands]
 sidebar: main_sidebar

@@ -111,10 +111,10 @@ href="https://github.com">Github</a> account.
 <dl>
 
 <dt> <a href="http://www.verovio.org">verovio</a></dt>
-<dd> Music notation rendering in C++</dd>
+<dd> Music notation rendering in C++ (using MEI, with data imports from Humdrum and MusicXML and exports into SVG and MIDI)</dd>
 
 <dt> <a href="http://humlib.humdrum.org">humlib</a></dt>
-<dd> Musical data conversion and analysis tools in C++</dd>
+<dd> Musical data conversion and analysis tools in C++ (using Humdrum, with imports from MusicXML and MEI and exports into MEI and MIDI)</dd>
 
 <dt> <a href="https://ace.c9.io">ace editor</a></dt>
 <dd> JavaScript text editor</dd>

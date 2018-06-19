@@ -1,7 +1,11 @@
 ---
 title:  "Inserting null lines"
+lang: en
+ref: news-inserting-spined-lines
 author: Craig Stuart Sapp
+translator: 
 creation_date: 20 May 2018
+translation_date: 
 last_updated: 20 May 2018
 categories: layout commands null spines
 permalink: news-inserting-spined-lines.html

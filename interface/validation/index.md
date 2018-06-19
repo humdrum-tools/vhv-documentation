@@ -1,7 +1,11 @@
 ---
 title: Syntax validation
+lang: en
+ref: interface-validation
 author: Craig Stuart Sapp
+translator: 
 creation_date: 19 Aug 2017
+translation_date: 
 last_updated: 19 Aug 2017
 tags: [all, getting_started]
 keywords: interface syntax validation

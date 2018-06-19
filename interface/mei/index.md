@@ -1,7 +1,11 @@
 ---
 title: MEI export
+lang: en
+ref: interface-mei
 author: Craig Stuart Sapp
+translator: 
 creation_date: 9 Mar 2017
+translation_date: 
 last_updated: 9 Mar 2017
 tags: [all, getting_started]
 keywords: interface mei

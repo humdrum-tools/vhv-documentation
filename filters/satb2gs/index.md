@@ -1,7 +1,11 @@
 ---
 title: satb2gs filter
+lang: en
+ref: filters-satb2gs
 author: Craig Stuart Sapp
+translator: 
 creation_date: 23 Apr 2017
+translation_date: 
 last_updated: 23 Apr 2017
 tags: [all, filters]
 sidebar: main_sidebar

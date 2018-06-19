@@ -1,8 +1,12 @@
 ---
 title: Transposing parts
+lang: en
+ref: humdrum-transposing
 author: Craig Stuart Sapp
+translator: 
 keywords: humdrum transposing parts
 creation_date: 25 Jan 2018
+translation_date: 
 last_updated: 25 Jan 2018
 tags: [all, humdrum]
 verovio: "true"

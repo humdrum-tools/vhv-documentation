@@ -1,7 +1,11 @@
 ---
 title:  "Editorial accidental styles"
+lang: en
+ref: editorial-accidental-style
 author: Craig Stuart Sapp
+translator: 
 creation_date: 19 Aug 2017
+translation_date: 
 last_updated: 19 Aug 2017
 categories: accidental
 permalink: editorial-accidental-style.html

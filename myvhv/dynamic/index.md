@@ -1,8 +1,12 @@
 ---
 title: Creating dynamic in-browser images
+lang: en
+ref: myvhv-dynamic
 author: Craig Stuart Sapp
+translator: 
 vim: ts=3
 creation_date: 11 Mar 2017
+translation_date: 
 last_updated: 11 Mar 2017
 tags: [all]
 sidebar: main_sidebar

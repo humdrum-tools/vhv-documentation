@@ -1,7 +1,11 @@
 ---
 title: Slurs
+lang: en
+ref: graphic-slurs
 author: Craig Stuart Sapp
+translator: 
 creation_date: 5 Mar 2017
+translation_date: 
 last_updated: 7 Mar 2017
 tags: [all, graphic_editing, RDF]
 sidebar: main_sidebar

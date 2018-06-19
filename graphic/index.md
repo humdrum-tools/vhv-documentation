@@ -1,7 +1,11 @@
 ---
 title: Introduction to graphic editing commands
+lang: en
+ref: graphic
 author: Craig Stuart Sapp
+translator: 
 creation_date: 23 Apr 2017
+translation_date: 
 last_updated: 23 Apr 2017
 tags: [all, graphic_editing]
 sidebar: main_sidebar

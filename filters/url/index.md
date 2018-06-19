@@ -1,7 +1,11 @@
 ---
 title: URL filters
+lang: en
+ref: filters-url
 author: Craig Stuart Sapp
+translator: 
 creation_date: 8 May 2017
+translation_date: 
 last_updated: 8 May 2017
 tags: [all, filters]
 sidebar: main_sidebar

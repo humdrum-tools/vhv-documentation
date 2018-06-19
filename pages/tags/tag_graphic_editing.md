@@ -1,5 +1,7 @@
 ---
 title: "Graphical editing pages index"
+lang: en
+ref: tag_graphic_editing
 tagName: graphic_editing
 search: exclude
 permalink: tag_graphic_editing.html

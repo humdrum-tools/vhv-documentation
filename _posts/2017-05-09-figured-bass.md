@@ -1,7 +1,11 @@
 ---
 title:  "Figured bass for basso continuo parts"
+lang: en
+ref: news-figured-bass
 author: Craig Stuart Sapp
+translator: 
 creation_date: 9 May 2017
+translation_date: 
 last_updated: 9 May 2017
 categories: figured bass
 permalink: news-figured-bass.html

@@ -1,5 +1,7 @@
 ---
 title: "All pages index"
+lang: en
+ref: tag_all
 tagName: all
 search: exclude
 permalink: tag_all.html

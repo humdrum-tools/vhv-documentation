@@ -1,7 +1,11 @@
 ---
 title: EsAC data import
+lang: en
+ref: interface-esac
 author: Craig Stuart Sapp
+translator: 
 creation_date: 10 Jun 2017
+translation_date: 
 last_updated: 10 Jun 2017
 tags: [all]
 keywords: interface esac

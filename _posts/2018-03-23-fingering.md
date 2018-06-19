@@ -1,7 +1,11 @@
 ---
 title:  "Fingering"
+lang: en
+ref: news-fingering
 author: Craig Stuart Sapp
+translator: 
 creation_date: 23 Mar 2018
+translation_date: 
 last_updated: 20 May 2018
 categories: fingering
 permalink: news-fingering.html

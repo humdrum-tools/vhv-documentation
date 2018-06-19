@@ -1,7 +1,11 @@
 ---
 title: <span class='keypress'>alt-m</span>
+lang: en
+ref: commands-alt-m
 author: Craig Stuart Sapp
+translator: 
 creation_date: 5 Mar 2017
+translation_date: 
 last_updated: 5 Mar 2017
 tags: [all, commands]
 sidebar: main_sidebar

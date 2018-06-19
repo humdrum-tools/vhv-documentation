@@ -1,7 +1,11 @@
 ---
 title: Edit modes and syntax highlighting
+lang: en
+ref: interface-edit_modes
 author: Craig Stuart Sapp
+translator: 
 creation_date: 19 Jun 2017
+translation_date: 
 last_updated: 19 Jun 2017
 tags: [all, getting_started]
 keywords: interface color colorize coloring syntax highlighting

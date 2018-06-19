@@ -1,8 +1,12 @@
 ---
 title: User Interface overview
+lang: en
+ref: interface-getting_started-2
 author: Craig Stuart Sapp
+translator: 
 keywords: interface commands documentation 
 creation_date: 3 Mar 2017
+translation_date: 
 last_updated: 3 Mar 2017
 tags: [all, getting_started]
 summary: "Description of the two sub-windows in the VHV interface."
@@ -60,8 +64,14 @@ for hiding/showing the text editor by typing <span class="keypress">alt-y</span>
 %}
 
 
-See the [getting started index page](/tag_getting_started.html) and in particular a description of
-the [help menu](/interface/help_menu) for more basic information about VHV.  Also see the
-[Humdurm load/save page](/interface/humdrum) for more ways of loading Humdrum data into VHV other
-than typing it in by hand.
+See the [getting started index page](/tag_getting_started.html) and
+in particular a description of the [help menu](/interface/help_menu)
+for more basic information about VHV.  Also see the [Humdurm load/save
+page](/interface/humdrum) for more ways of loading Humdrum data
+into VHV other than typing it in by hand.  See the [introduction to
+humdrum](/humdrum/getting_started) page for a tutorial on how to encode
+music in the Humdrum syntax, although most often data import is done
+via drag-and-drop of [MusicXML](/interface/musicxml) files.
+
+
 

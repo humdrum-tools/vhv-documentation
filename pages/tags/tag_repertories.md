@@ -1,5 +1,7 @@
 ---
 title: "Repertory pages index"
+lang: en
+ref: tag_repertories
 tagName: repertories
 search: exclude
 permalink: tag_repertories.html

@@ -1,7 +1,11 @@
 ---
 title:  "Offline VHV"
+lang: en
+ref: news-offline-vhv
 author: Craig Stuart Sapp
+translator: 
 creation_date: 20 Aug 2017
+translation_date: 
 last_updated: 20 Aug 2017
 categories: offline website
 permalink: news-offline-vhv.html

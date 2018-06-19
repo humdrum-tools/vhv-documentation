@@ -1,8 +1,12 @@
 ---
 search: exclude
 title: Creating and adding figures.
+lang: en
+ref: maintenance-figures
 author: Craig Stuart Sapp
+translator: 
 creation_date: 7 Mar 2017
+translation_date: 
 last_updated: 7 Mar 2017
 tags: [all, maintenance]
 sidebar: main_sidebar

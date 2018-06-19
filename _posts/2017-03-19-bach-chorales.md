@@ -1,7 +1,11 @@
 ---
 title:  "J.S. Bach chorales repertory"
+lang: en
+ref: news-bach-chorales
 author: Craig Stuart Sapp
+translator: 
 creation_date: 19 Mar 2017
+translation_date: 
 last_updated: 19 Mar 2017
 categories: update
 permalink: news-bach-chorales.html

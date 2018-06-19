@@ -1,7 +1,11 @@
 ---
 title:  "Encoding tutorial"
+lang: en
+ref: news-encoding-tutorial
 author: Craig Stuart Sapp
+translator: 
 creation_date: 15 Dec 2017
+translation_date: 
 last_updated: 15 Dec 2017
 categories: encoding 
 permalink: news-encoding-tutorial.html
