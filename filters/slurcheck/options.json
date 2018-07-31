@@ -1,0 +1,40 @@
+{
+	"tableColumns":
+	[
+		{ "data": "option",   "title": "Option" },
+		{ "data": "description", "title": "Description"}
+	],
+	"categoryList": 
+	[
+		{
+			"categoryName": "main options",
+			"keyList":
+			[
+ 				{
+					"option": "<tt>-c</tt>",
+					"description": "Count number of unbalanced slur endpoints in file(s)"
+				},
+	
+				{
+					"option": "<tt>-l</tt>",
+					"description": "Display location(s) of unbalanced slur endpoints in file(s)"
+				}
+			]
+		},
+		{
+			"categoryName": "modifying options",
+			"keyList":
+			[
+				{
+					"option": "<tt>-Z</tt>",
+					"description": "Do not report information for files with zero unbalanced slurs."
+				},
+
+				{
+					"option": "<tt>-f</tt>",
+					"description": "Display the filename."
+				}
+			]	
+		}
+	]
+}

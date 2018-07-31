@@ -234,6 +234,10 @@ entries:
       output: web, pdf
       url: /filters/satb2gs
 
+    - title: slurcheck
+      output: web, pdf
+      url: /filters/slurcheck
+
     - title: transpose
       output: web, pdf
       url: /filters/transpose

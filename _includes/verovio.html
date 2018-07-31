@@ -26,7 +26,7 @@
 		evenNoteSpacing  default 0
 		font             default "Leipzig"
 		inputFormat      default "auto"
-		page             default 1
+		# page             default 1
 		# header           default 0
 		# footer           default 0
 		pageHeight       default 60000
@@ -64,13 +64,13 @@ window.addEventListener("DOMContentLoaded", function () {
 	-moz-tab-size: {{include.tabsize}};
 	-webkit-tab-size: {{include.tabsize}};
 	{% if {{include.humdrum-min-height}} != "" %}
-		min-height: {{include.humdrum-min-height}};
+		min-height: {{include.humdrum-min-height | remove: 'px' | append: 'px'}};
 	{% endif %}
 	{% if {{include.humdrum-max-width}} != "" %}
-		max-width: {{include.humdrum-max-width}};
+		max-width: {{include.humdrum-max-width | remove: 'px' | append: 'px'}};
 	{% endif %}
 	{% if {{include.humdrum-min-width}} != "" %}
-		min-width: {{include.humdrum-min-width}};
+		min-width: {{include.humdrum-min-width | remove: 'px' | append: 'px'}};
 	{% endif %}
 }
 </style>
@@ -118,7 +118,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	var scale            = parseFloat("{{include.scale}}") || 40;
 	var border           = parseInt("{{include.border}}") || 50;
 	var evenNoteSpacing  = parseInt("{{include.evenNoteSpacing}}") || 0;
-	var page             = parseInt("{{include.page}}") || 1;
+	//var page             = parseInt("{{include.page}}") || 1;
 	var spacingLinear    = parseFloat("{{include.spacingLinear}}") || 0.25;
 	var spacingNonLinear = parseFloat("{{include.spacingNonLinear}}") || 0.6;
 	var spacingSystem    = parseInt("{{include.spacingSystem}}") || 3;
@@ -130,7 +130,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		adjustPageHeight: adjustPageHeight,
 		font:             font,
 		inputFormat:      inputFormat,
-		page:             page,
+		//page:             page,
 		pageHeight:       pageHeight,
 		pageWidth:        pageWidth,
 		humType:          1,
