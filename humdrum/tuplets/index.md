@@ -1,20 +1,27 @@
 ---
-title: Tuplet styling
+title: Tuplets
 lang: en
-ref: humdrum-tuplet_styling
+ref: humdrum-tuplets
 author: Craig Stuart Sapp
-translator: 
+translator:
 keywords: humdrum tuplet styling
 creation_date: 18 Mar 2017
-translation_date: 
+translation_date:
 last_updated: 18 Mar 2017
 tags: [all, humdrum ]
 verovio: "true"
+math: "true"
 vim: ts=3 ft=javascript
-summary: Visual tuplet numbers can be turned on or off for a spine.
+summary:
 sidebar: main_sidebar
-permalink: /humdrum/tuplet_styling/index.html
+permalink: /humdrum/tuplets/index.html
 ---
+
+
+## Tuplet number display
+
+Visual tuplet numbers can be turned on or off in each spine using the
+`*tuplet` and `*Xtuplet` tandem interpretations.
 
 
 Music notation containing a lot of tuplets will often drop tuplet
@@ -167,14 +174,82 @@ the tandem interpretation `*tuplet`.
 !!!RDF**kern: > = above
 </script>
 
-Try moving or adding `*tuplet`/`*Xtuplet` interpretations in the above 
+Try moving or adding `*tuplet`/`*Xtuplet` interpretations in the above
 Humdrum data to see how this affects the music notation on the right.
 
-In the future, other parameters will probably be added to the styling 
-interpretation, such as whether or not to display the tuplet numbers 
+In the future, other parameters will probably be added to the styling
+interpretation, such as whether or not to display the tuplet numbers
 above or below stems/beams.
 
 {% include warning.html
 	content="A tuplet styling interpretation applies to an entire spine, and cannot be controlled independently within sub-spines."
 %}
+
+
+## Complex tuplets
+
+
+{% include verovio.html
+	source="complex"
+	scale="50"
+	pageWidth="900"
+	humdrum-min-width="200px"
+	humdrum-min-height="420px"
+	tabsize="10"
+%}
+
+<script type="application/json" id="complex">
+**kern	**kern
+*clefF4	*clefG2
+*M3/4	*M3/4
+*	*
+8BBL	44%3bbL
+.	44%3ccc
+8F	.
+.	44%3ddd
+.	44%3aa
+8d	.
+.	44%3bb
+.	44%3aa
+8B	.
+.	44%3gg
+.	44%3aa
+8f	.
+.	44%3ccc
+.	44%3bb
+8FJ	.
+.	44%3ggJ
+=	=
+*-	*-
+</script>
+
+
+
+Here is an equation:
+
+<span style="margin-right:auto">
+$$
+\begin{align}
+ \frac{3}{8}x  & =  8 \\[10pt]
+\mbox{divide by 3/8:} \quad \frac{\frac{3}{8}x}{\frac{3}{8}} & = \frac{8}{\frac{3}{8}} \\[10pt]
+\mbox{which is the same as multplying by 8/3:} \quad \frac{8}{3} \cdot \frac{3}{8}x & = \frac{8}{3} \cdot 8 \\[10pt]
+x & = \frac{64}{3} \\
+\end{align}
+$$
+</span>
+
+
+Here is another block equation:
+
+$$
+\begin{align}
+\frac{3}{8}x & = 9 \\[10pt]
+x = \frac{9 \cdot 8}{3} & = \frac{72}{3} = 24
+\end{align}
+$$
+
+
+Here is an inline equation \\( \sum x^n = 23456 \\).
+
+
 
