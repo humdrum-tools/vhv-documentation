@@ -201,5 +201,26 @@ humcat -s h://mozart/sonatas | slurcheck -Zc  | wc -l
 22
 ```
 
+## Future work
+
+Hanging slurs are occasionally indented.  Future work on the `slurcheck`
+tool will allow it to detect these sorts of cases and not mark them as
+potential encoding errors.
+
+The main purpose would be at repeat endings, where a slur from the
+main section of music goes into both the first and second endings.
+In this case the second ending will contain a hanging slur that goes
+to the beginning of the second ending.  For this situation a layout
+code will be intended for slurs that gives the duration of the hanging
+slur if the slur endpoint is automatically identified to be hanging.
+When using the `thru`/`thrux` tool to expand to the performance version
+of a score, the slur in the second ending would no longer be hanging,
+and the hanging slur layout command would be ignored for the slur.
+
+Another use of hanging slurs is in extract of measures from a complete
+score.  For manually generated musical extracts, the same layout command
+should be given to allow the hanging slur.  The `myank` tool should 
+also be made to handle such cases and automatically label hanging slurs.
+
 
 
