@@ -420,8 +420,10 @@ of the original notation looks like.
 Currently filters must always be syntactically correct as they are typed;
 otherwise, the verovio toolkit will exit on with an error and no longer
 work until you reload the page (this will eventually be fixed).  In the 
-meantime, you must ensure that the filter is never in an invalid state
-by using one of the two following methods.
+meantime, you should ensure that the filter is never in an invalid state
+by using one of the two following methods.  VHV will automatically restart
+verovio if it crashes due to a poorly formed filter, but sometimes there 
+may still be problems.
 
 ### delaying filter activation ###
 
