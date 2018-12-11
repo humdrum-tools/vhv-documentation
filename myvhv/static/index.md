@@ -317,7 +317,7 @@ text into an HTML file, and then view the page in a web browser.
 <html>
 <head>
 <title>SimpleViewer</title>
-<script src="http://verovio-script.humdrum.org/scripts/verovio-toolkit.js">
+<script src="https://verovio-script.humdrum.org/scripts/verovio-toolkit.js">
 </script>
 </head>
 <body>
@@ -381,10 +381,10 @@ This section gives a detailed description of how the webpage works.
 Line 4 loads the JavaScript toolkit version of verovio:
 
 ```javascript
-<script src="http://verovio-script.humdrum.org/scripts/verovio-toolkit.js"></script>
+<script src="https://verovio-script.humdrum.org/scripts/verovio-toolkit.js"></script>
 ```
 
-The script is loaded from `http://verovio-script.humdrum.org`, where
+The script is loaded from `https://verovio-script.humdrum.org`, where
 the most recent version of the Humdrum-aware verovio script is
 hosted.  Alternatively you can download that script and store it
 locally on your website, or compile directly from the [verovio

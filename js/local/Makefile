@@ -1,7 +1,7 @@
 
 WGET = `which wget`
 CURL = `which curl`
-SRC = http://verovio-script.humdrum.org/scripts/verovio-toolkit.js
+SRC = https://verovio-script.humdrum.org/scripts/verovio-toolkit.js
 BASE = verovio-toolkit.js
 
 

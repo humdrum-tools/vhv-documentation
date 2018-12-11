@@ -1,2 +1,2 @@
-http://verovio-script.humdrum.org/scripts/verovio-toolkit.js
+https://verovio-script.humdrum.org/scripts/verovio-toolkit.js
 http://cdn.datatables.net/1.10.13/js/jquery.dataTables.js
