@@ -11,11 +11,13 @@ summary:
 ---
 
 
-Verovio Humdrum Viewer is an online editor and interactive notation rendering interface 
-for Humdrum files, located at [http://verovio.humdrum.org](http://verovio.humdrum.org).
-See the [Getting started](/interface/getting_started) page for a tutorial on using
-the VHV interface, or browse through pages on the website by clicking on the headings
-in the sidebar menu to the left (or above), which is organized by topic:
+Verovio Humdrum Viewer is an online digital music editor and
+interactive notation rendering interface for Humdrum files, located at
+[http://verovio.humdrum.org](http://verovio.humdrum.org).  See the
+[Getting started](/interface/getting_started) page for a tutorial on
+using the VHV interface, or browse through pages on the website by
+clicking on the headings in the sidebar menu to the left (or above),
+which is organized by topic:
 
 <style>
 
@@ -98,7 +100,7 @@ ul.brief li {
 Non-programmers can participate by submitting <a
 href="https://github.com/humdrum-tools/verovio-humdrum-viewer/issues">bug
 reports and feature requests</a> for the VHV web interface.  Reports for <a
-href="/filters">filters</a> should preferrably be submitted to <a
+href="/filters">filters</a> should preferably be submitted to <a
 href="https://github.com/craigsapp/humlib/issues">humlib issues</a>, and reports
 for graphical notation should be submitted to 
 <a href="https://github.com/rism-ch/verovio/issues">verovio issues</a>.
@@ -148,7 +150,7 @@ href="https://github.com">Github</a> account.
 
 </div>
 
-## Projects using VHV ##
+## Projects utilizing VHV ##
 
 <div style="margin-left: 100px">
 
@@ -157,5 +159,46 @@ href="https://github.com">Github</a> account.
 
 
 </div>
+
+After preparing music in VHV, it should be suitable for use with
+music analysis and processing tools, such as <a target="_blank"
+href="https://github.com/humdrum-tools/humdrum-tools">Humdrum
+Tools</a>, and for easy display on webpages with the <a target="_blank"
+href="https://plugin.humdrum.org">Humdrum notation plugin</a>.
+
+For example, the Josquin Research Project (JRP) uses both the
+Humdrum notation plugin to display musical incipits on <a target="_blank"
+href="http://josquin.stanford.edu/work/?id=Jos2721">work pages</a> as well
+as a random sample of the JRP score database displayed on the <a target="_blank"
+href="http://josquin.stanford.edu">homepage</a>. In addition, some
+analysis tools are implemented online through VHV.  An example
+of this is the <a href="/filters/dissonant">dissonant</a>
+tool.  Work pages, such as <a target="_blank"
+href="http://josquin.stanford.edu/work/?id=Jos2721">this
+one</a> have an analysis tool button labeled "Dissonant"
+which links to VHV, loading the data from the website,
+and doing the dissonance analysis <a target="_blank"
+href="http://verovio.humdrum.org/?k=ey&filter=dissonant&file=jrp:Jos2721">within VHV</a>.
+
+Files from other websites can be automatically be loaded into VHV by
+giving a URL as the filename in the *file* CGI parameter.  For example,
+this link to VHV:
+
+<a target="_blank" href="https://verovio.humdrum.org/?file=https://raw.githubusercontent.com/craigsapp/beethoven-piano-sonatas/master/kern/sonata14-1.krn">https://verovio.humdrum.org/?file=https://raw.githubusercontent.com/craigsapp/beethoven-piano-sonatas/master/kern/sonata14-1.krn</a>
+
+Embeds this URL to the Humdrum data for the first movement of Beethoven's <i>Moonlight</i>
+sonata:
+
+<a target="_blank" href="https://raw.githubusercontent.com/craigsapp/beethoven-piano-sonatas/master/kern/sonata14-1.krn">https://raw.githubusercontent.com/craigsapp/beethoven-piano-sonatas/master/kern/sonata14-1.krn</a>
+
+This score is part of a Github repository of Beethoven piano sonatas:
+
+<a target="_blank" href="https://github.com/craigsapp/beethoven-piano-sonatas">https://github.com/craigsapp/beethoven-piano-sonatas</a>
+
+which is accessible from the bottom of the help menu in the VHV interface
+(the question mark icon on the top left corner of the VHV page).
+
+
+
 
 
