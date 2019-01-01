@@ -35,7 +35,7 @@ example for use as a static image in a paper/article or website.
 
 ## Converting notation into bitmap images ##
 
-May applications (such as MS Word) cannot load SVG image files, so
+Many applications (such as MS Word) cannot load SVG image files, so
 the SVG data must be converted into a bitmap in order to use the
 image in such programs.  There are two ways of generating bitmaps
 of VHV notation:  a simple method is to do a screen-shot.  How to
