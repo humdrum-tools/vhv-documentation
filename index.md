@@ -48,9 +48,6 @@ Filters
 Repertories
 : A description of online musical repertories available for display in VHV.
 
-Repertories
-: A description of online musical repertories available for display in VHV.
-
 Humdrum encoding
 : Topics about representing musical features in the Humdrum syntax,
 mostly advanced topics related to VHV features.  See the [getting
