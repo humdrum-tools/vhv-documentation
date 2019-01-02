@@ -45,7 +45,7 @@ loaded, allowing Humdrum Extras commands to be used easily within
 the web browser to transform the data before it is converted into notation.
 
 
-A simple, buy handy, filter to use is the `autobeam` tool.  Notice in the 
+A simple, but handy, filter to use is the `autobeam` tool.  Notice in the 
 following example that there are no explicit beams in the data (`L` for a
 beam start and `J` for a beam end).  Nevertheless, the notation is
 displaying beams.  Try to add more notes and/or remove the filter line
