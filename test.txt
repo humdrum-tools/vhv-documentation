@@ -1,1 +1,1 @@
-This is the Polish branch.
+This is actually the gh-pages branch version of the file.
