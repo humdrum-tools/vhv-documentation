@@ -16,7 +16,7 @@ tags: [all, news]
 Special meta-RDF codes have been added for data proof-reading in
 the encoding structure of Humdrum data when converting into MEI data.
 Invisible rests, called `<space>` in MEI data, can be displayed as colored 
-rests.  one RDF instruction will set the visibility and color of all types
+rests.  One RDF instruction will set the visibility and color of all types
 of rests, and three additional RDF instructions can control the 
 visibility and color of each category of `<space>` that the convert
 generates.
