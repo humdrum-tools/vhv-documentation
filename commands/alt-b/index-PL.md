@@ -1,53 +1,48 @@
 ---
 title: <span class='keypress'>alt-b</span>
-lang: en
+lang: pl
 ref: commands-alt-b
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik 
 creation_date: 9 May 2017
-translation_date: 
+translation_date: 1 Jan 2019
 last_updated: 9 May 2017
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: interface commands logo 
-summary: "The <span class='keypress'>alt-b</span> command toggles display of the Verovio Humdrum Viewer logo in the VHV header."
+keywords: polecenia interfejsu logo
+summary: "Skrót <span class='keypress'>alt-b</span> włącza/wyłacza wyświetlanie logo Verovio Humdrum Viewer w nagłówku."
 permalink: /commands/alt-b/index.html
 ---
 
-Pressing <span class="keypress">alt-b</span> will toggle the
-"Verovio Humdrum Viewer" logo in top left corner of the VHV interface:
+Skrót klawiaturowy <span class="keypress">alt-b</span> pozwala włączyć lub wyłączyć
+logo "Verovio Humdrum Viewer" w lewym górnym rogu interfejsu VHV:
 
 {% include image.html
 	file="altb.gif"
-	alt="toggling logo."
-	caption="Showing/hiding logo at top of VHV interface."
+	alt="włącz logo"
+	caption="Wyświetlania/ukrywanie logo w interfejsie VHV."
 %}
 
-This is useful for showing complete titles if they are long.
+Funkcja jest przydatna w przypadku konieczności wyświetlenie długiego tytułu utworu.
 
 
-## URL supression of logo ##
+## Ukrywanie logo za pomocą adresu URL ##
 
-The VHV logo can be suppressed when loading a URL, by adding `&k=b` 
-to the address:
+Logo VHV może zostać ukryte poprzez dodanie do adresu URL `&k=b`: 
 
 {% include image.html
 	file="altb-url.png"
-	alt="toggling logo from URL."
-	caption="Hiding the logo through the URL."
+	alt="ukrywanie logo z poziomu URLtoggling logo from URL."
+	caption="Ukrywanie logo za pomocą adresu URL."
 %}
 
 
-Use `?k=b` if there is no `?` already in the URL:
+Możesz użyć `?k=b` jeśli w adresie nie pojawia się już znak `?`:
 
 
 {% include image.html
 	file="altb-direct.png"
-	alt="toggling logo from URL."
-	caption="Hiding the logo through the URL without loading a repertory."
+	alt="ukrywanie logo z URL"
+	caption="Ukrywanie logo przez URL gdy nie jest ładowany zestaw kompozycji."
 %}
-
-
-
-
 
