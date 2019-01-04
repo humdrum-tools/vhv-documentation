@@ -1,47 +1,43 @@
 ---
 title: <span class='keypress'>alt-v</span>
-lang: en
+lang: pl
 ref: commands-alt-v
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik
 creation_date: 3 Mar 2017
-translation_date: 
+translation_date: 3 Jan 2019
 last_updated: 5 Mar 2017
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: interface commands editor vim
+keywords: polecenia interfejsu edytor vim
 summary: "The <span class='keypress'>alt-v</span> command toggles the vim editing mode."
 permalink: /commands/alt-v/index.html
 ---
 
-Pressing <span class="keypress">alt-v</span> will toggle between
-the [vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) and basic
-editing modes for the text editor. 
+Polecenie <span class="keypress">alt-v</span> przełącza edytor tekstowy
+pomiędzy trybem [vim](https://en.wikipedia.org/wiki/Vim_(text_editor))
+oraz podstawowym trybem edycji.
 
-VHV starts out with the basic editor, as indicated by the yellowish background
-to the text editor:
+VHV domyślnie rozpoczyna pracę w trybie prostego edytora tekstowego,
+co jest oznaczone za pomocą jasnożółtego tła:
 
 {% include image.html
 	file="basic-editing.png"
-	alt="basic editing mode"
+	alt="podstawowy tryb edytora"
 	url="http://verovio.humdrum.org/?file=chorales/chor012.krn"
-	caption="basic editing mode (indicated by the yellow color of the text editor)."
+	caption="Podstawowy tryb edytora tekstowego (oznaczony jasnożółtym tłem)."
 	caption-margin-top="-20px"
 %}
 
-Typing <span class="keypress">alt-v</span> will toggle the editor to and
-from vim mode.  When in vim mode, the text editor has a dark blue background:
+Polecenie <span class="keypress">alt-v</span> przełączy edytor do rybu vim,
+co zostanie oznaczone za pomocą zmiany koloru tła (na ciemnoniebieski):
 
 {% include image.html
 	file="vim-editing.png"
-	alt="vim editing mode"
-	caption="vim editing mode (indicated by the dark blue color of the text editor)."
+	alt="tryb edytora vim"
+	caption="Tryb edytora tekstowego vim (oznaczony za pomoą ciemnoniebieskiego tła)."
 	url="http://verovio.humdrum.org/?file=chorales/chor012.krn"
 	caption-margin-top="-20px"
 %}
 
-Typing <span class="keypress">alt-v</span> while in vim editing mode will return
-to basic editing mode.
-
-
-
+Ponowne naciśnięcie <span class="keypress">alt-v</span> przywróci edytor do trybu podstawowego.
