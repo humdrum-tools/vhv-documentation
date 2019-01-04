@@ -1,97 +1,81 @@
 ---
 title: <span class='keypress'>alt-c</span>
-lang: en
+lang: pl
 ref: commands-alt-c
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik 
 creation_date: 9 May 2017
-translation_date: 
+translation_date: 1 Jan 2019
 last_updated: 9 May 2017
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: interface commands compile filters
-summary: "The <span class='keypress'>alt-c</span> command compiles embedded filters."
+keywords: polecenia interfejsu kompilacja filtrów
+summary: "Skrót <span class='keypress'>alt-c</span> kompiluje osadzone filtry."
 permalink: /commands/alt-c/index.html
 ---
 
-Pressing <span class="keypress">alt-c</span> will apply any embedded
-[filters](/filters/) (or [URL filters](/filters/url)) to Humdrum data in the
-text editor, and then replace the contents of the text editor with the
-filtered data.
+Naciśnięcie kombinacji klawiszy <span class="keypress">alt-c</span> pozwala na zastosowanie
+osadzonych [filtrów](/filters/) (lub [URL filters](/filters/url)) do danych Humdrum w edytorze
+tekstowym oraz zastąpienie danych poprzez dane przefiltrowane.
 
+## Dodawanie pustej kolumny danych (spine) ##
 
-## Adding an empty spine ##
-
-To add a new spine to Humdrum data, use the 
-[extract filter](/filters/extract) and the 
-<span class="keypress">alt-c</span> command.  The following
-filter extracts all of the original spines, and adds a
-blank spine at the end of the data lines:
+Aby dodać pustą kolumnę do danych Humdrum
+użyj [filtra extract](/filters/extract) oraz komendy 
+<span class="keypress">alt-c</span>. Poniższy filtr
+ekstrahuje wszystkie istniejące kolumny (spines) oraz
+dodaje pustą kolumnę na końcu:
 
 ```
 !!!filter: extract -s 1-$,0
 ```
+Znak `$` oznacza ostatnią kolumnę w pliku zaś `0` oznacza pustą kolumnę.
 
-The `$` character symbolizes the last spine in the file, and `0` represents
-a blank line.
-
-
-Before the filter is compiled:
+Dane przed kompilacją filtra:
 
 {% include image.html
 	file="precompile.png"
-	alt="view before compiling a filter."
-	caption="Humdrum data before compiling a filter."
+	alt="widok przed kompilacją."
+	caption="Dane Humdrum przed kompilacją filtra."
 %}
 
 
-After pressing <span class="keypress">alt-c</span>:
+Po naciśnięciu skrótu <span class="keypress">alt-c</span>:
 
 {% include image.html
 	file="postcompile.png"
-	alt="view after compiling a filter."
-	caption="Humdrum data after compiling a filter."
+	alt="widok po kompilacji"
+	caption="Dane Humdrum po kompilacji filtra."
 %}
 
-The filter line is now changed to `!!!Xfilter:` which indicates 
-that the filter has been applied (and will not be applied again).
-This line can be deleted if no longer needed, or the `X` can be 
-deleted to re-apply the filter.
+Linia zawierająca filtr jest zamieniona po kompilacji na `!!!Xfilter:` 
+co oznacza, że filtr został zastosowany (i nie będzie użyty ponownie).
+Linia ta może zostać usunięta jeśli nie jest potrzebna - można też usunąć
+`X`, jeśli filtr ma zostać zastosowany ponownie. 
 
+## Przykład działania filtra do transpozycji ##
 
-## Transposing example ##
-
-Here is an example of [transposing](/filters/transpose)  Humdrum data:
+Poniżej znajduje się przykład ilustrujący działanie filtra [transpozycji](/filters/transpose):
 
 {% include image.html
 	file="transpose1.png"
-	alt="view before compiling a transpose filter."
-	caption="Humdrum data before compiling a transpose filter."
+	alt="widok przed skompilowaniem filtra transpozycji"
+	caption="Dane Humdrum przed skompilowaniem filtra transpozycji."
 %}
 
-Notice that the music is being displayed in E major, 
-but the data is in C major.  This is because the filter is applied to
-the Humdrum data in the text editor before it is converted
-into MEI data and then rendered into an SVG image.
+Zauważ, że zapis muzyczny wyświetlany jest w tonacji E-dur
+podczas gdy dane zapisane są w C-dur. Dzieje się tak ponieważ
+filtr jest zastosowany do danych Humdrum zanim zostaną one 
+przekonwertowane do formatu MEI oraz wyrenderowane do obrazu SVG.
 
-In order to view the same data that generates the notation, press the
-<span class="keypress">alt-c</span> command to compile the filter:
+Aby zobaczyć te same dane, na podstawie których generowany jest zapis muzyczny
+naciśnij skrót <span class="keypress">alt-c</span> aby skompilować filtr:
 
 {% include image.html
 	file="transpose2.png"
-	alt="view after compiling a transpose filter."
-	caption="Humdrum data after compiling a transpose filter."
+	alt="widok po kompilacji filtra tanspozycji"
+	caption="Dane Humdrum po skompilowaniu filtra transpozycji."
 %}
 
-Now the musical data in the text data matches the graphical notation
-of the music.
-
-
-
-
-
-
-
-
-
+Teraz dane w edytorze tekstowym odpowiadają partyturze w edytorze graficznym.
 
