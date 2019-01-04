@@ -1,41 +1,42 @@
 ---
 title: <span class='keypress'>alt-m</span>
-lang: en
+lang: pl
 ref: commands-alt-m
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik 
 creation_date: 5 Mar 2017
-translation_date: 
+translation_date: 1 Jan 2019
 last_updated: 5 Mar 2017
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: interface commands 
-summary: "The <span class='keypress'>alt-m</span> command displays the MEI data conversion in the text editor."
+keywords: polecenia interfejsu 
+summary: "Komenda <span class='keypress'>alt-m</span> wyświetla dane w formacie MEI w edytorze tekstowym"
 permalink: /commands/alt-m/index.html
 ---
 
-Pressing <span class="keypress">alt-m</span> will replace Humdrum
-data in the text editor with its conversion to MEI data.  The MEI
-data is usually generated behind the scenes in the process of
-converting Humdrum data into SVG images of music notation in VHV.
+Naciśnięcie kombinacji klawiszy <span class="keypress">alt-m</span> zastąpi widok danych Humdrum
+poprzez ich wersję w formacie MEI w edytorze tekstowym.
+Dane w formacie MEI są używane przez edytor w celu wyświetlenia
+partytury w formacie obrazu SVG. 
 
-While MEI data is being displayed in the text editor, it can be
-edited and any changes will be reflected in the graphical notation
-window.  In addition, clicking on objects in the notation will cause
-the text editor cursor to move to the parallel element in the MEI
-data; however, graphic editing commands will not work with the MEI
-data.
+Podczas gdy dane w formacie MEI są wyświetlane w edytorze tekstowym,
+mogą one być dowolnie edytowane, zaś wszystkie wprowadzone zmiany zostaną
+wyświetlone w edytorze graficznym (na wygenerowanej partyturze).
+Kliknięciena wybrany element partytury w edytorze graficznym spowoduje,
+że kursor w edytorze tekstowym zostanie przeniesiony do odpowiadającego
+mu miejsca w kodzie MEI. Należy pamiętać, że wprowadzanie zmian w edytorze
+graficznym nie pozwala na zmianę kodu MEI.
 
-You can return the original Humdrum data to the text editor by
-pressing <span class="keypress">alt-h</span>, but any changes made
-to the MEI data will be lost.  Here is an example of typing Humdrum
-data into the text editor, and then typing <span
-class="keypress">alt-m</span> to view the transcoded MEI data:
+Możesz wrócić do pierwotnego widoku kodu Humdrum w edytorze tekstowym
+naciskając kombinację klawiszy <span class="keypress">alt-h</span>. Pamiętaj
+jednak, że wszelkie zmiany w kodzie MEI zostaną utracone. Poniżej można zobaczyć
+jak wpisuje się do edytora kod Humdrum. Po naciśnięciu <span class="keypress">alt-m</span>
+wyświetlane są dane MEI:
 
 {% include image.html
 	file="mei-data.gif"
-	alt="viewing MEI data."
-	caption="Switching the text editor to MEI mode after typing some Humdrum data."
+	alt="wyświetlanie danych MEI"
+	caption="Przełączanie edytora tekstowego do trybu MEI po wprowadzeniu danych."
 %}
 
 
