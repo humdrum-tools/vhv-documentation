@@ -1,23 +1,19 @@
 ---
 title: <span class='keypress'>alt-shift-d</span>
-lang: en
+lang: pl
 ref: commands-alt-shift-d
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik
 creation_date: 20 May 2018
-translation_date: 
+translation_date: 2 Jan 2019
 last_updated: 20 May 2018
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands layers
-summary: "The <span class='keypress'>alt-shift-d</span> command adds an empty interpretation line above the current line in the text editor."
+summary: "Skrót <span class='keypress'>alt-shift-d</span> dodaje pustą linię kodu powyżej aktualnej linii w edytorze tekstowym."
 permalink: /commands/alt-shift-d/index.html
 ---
 
-Pressing <span class="keypress">alt-shift-d</span> will add an empty
-data line above the current line, provided that the current
-line contains spines (not a global comment, empty line, or exclusive
-interpretation line).  The added interpretation line will have the same
-number of spine fields as the current line.
-
-
+Naciśnięcie <span class ='keypress'>alt-shift-d</span> doda pusty wiersz danych powyżej bieżącej linii,
+pod warunkiem, że bieżąca linia zawiera dane (nie jest to komentarz globalny, linia pusta lub linia interpretacji
+wyłącznej). Dodana linia będzie miała taką samą liczbę kolumn (spines) jak bieżąca linia.
