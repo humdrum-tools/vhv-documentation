@@ -1,41 +1,37 @@
 ---
 title: <span class='keypress'>alt-f</span>
-lang: en
+lang: pl
 ref: commands-alt-f
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik 
 creation_date: 5 Mar 2017
-translation_date: 
+translation_date: 1 Jan 2019
 last_updated: 5 Mar 2017
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: interface commands freeze notation
-summary: "The <span class='keypress'>alt-f</span> command toggles freezing/unfreezing dynamic notation rendering."
+keywords: polecenia interfejsu blokowanie renderowania notacji
+summary: "Skrót <span class='keypress'>alt-f</span> blokuje/odblokowuje dynamiczne renderowanie notacji muzycznej."
 permalink: /commands/alt-f/index.html
 ---
 
-Pressing <span class="keypress">alt-f</span> will toggle between
-freezing/unfreezing dynamic notation rendering.  Normally any change
-in the text editor's content will trigger a re-rendering of the
-graphical notation.  For large files, this takes an increasingly
-longer and longer time with the current architecture.  In order to
-speed up data entry in the text editing window, the notation can
-be frozen with the <span class="keypress">alt-f</span> command.
+Naciśnięcie skrótu <span class="keypress">alt-f</span> zablokuje/odblokuje automatyczne
+renderowanie partytury. W normalnym trybie pracy wszelkie zmiany wprowadzone w edytorze tekstowym
+są automatycznie renderowane do partytury. W przypadku szczególnie dużych utworów proces ten
+może znacznie spowolnić działanie programu (przy aktualnej architekturze). Aby przyspieszyć
+edycję danych w edytorze tekstowym, notacja muzyczne może zostać "zamrożona" za pomocą
+skrótu klawiszowego <span class="keypress">alt-f</span>.
 
-While the notation generation is frozen, any changes made in the text
-editor will not trigger an update in the notation.  After changes have been
-made, pressing <span class="keypress">alt-f</span> will unfreeze the notation
-and it will be updated to match the current contents of the text editor.
+Podczas gdy renderowanie zostało zablokowane jakiekolwiek zmiany wprowadzone w edytorze
+tekstowym nie zostaną wyświetlone na partyturze. Po dokonaniu zmian w celu ich
+wizualizacji ponowne naciśnięcie <span class="keypress">alt-f</span> odblokuje 
+renderowanie a wszystkie wprowadzone zmiany zostaną wyświetlone na partyturze.
 
-When the notation is frozen, the background of the notation turns white.  Unfreezing
-the notation will return the background color to off-white:
+Kiedy notacja jest "zamrożona" tło partytury zmienia kolor na biały. Odblokowanie
+renderowania przywróci pierwotny kolor tła:
 
 {% include image.html
 	file="freeze-unfreeze.gif"
-	alt="freezing and unfreezing notation."
-	caption="Freezing and unfreezing notation while typing in the text editor."
+	alt="blokowanie i odblokowanie renderowania"
+	caption="Blokowanie i odblokowanie renderowania podczas wprowadzania zmian w edytorze tekstowym."
 %}
-
-
-
 
