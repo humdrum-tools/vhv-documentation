@@ -1,36 +1,31 @@
 ---
 title: <span class='keypress'>alt-shift-l</span>
-lang: en
+lang: pl
 ref: commands-alt-shift-l
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik
 creation_date: 20 May 2018
-translation_date: 
+translation_date: 3 Jan 2019
 last_updated: 20 May 2018
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: interface commands layers
-summary: "The <span class='keypress'>alt-shift-l</span> command adds an empty local comment line above the current line in the text editor."
+keywords: polecenia interfejsu komentarz lokalny
+summary: "Skrót <span class='keypress'>alt-shift-l</span> dodaje pustą linię komentarza lokalnego powyżej bieżącego wiersza danych."
 permalink: /commands/alt-shift-l/index.html
 ---
 
-Pressing <span class="keypress">alt-shift-l</span> will add an empty
-local comment line above the current line, provided that the current
-line contains spines (not a global comment, empty line, or exclusive
-interpretation line).  The added local comment line will have the same
-number of spine fields as the current line.
+Naciśnięcie <span class = "keypress"> alt-shift-l </ span> spowoduje dodanie
+pustej linii lokalnego komentarza nad bieżącym wierszem, pod warunkiem, że zawiera on dane
+(nie jest to komentarz globalny, linia pusta lub linia interpretacji wykluczającej).
+Dodana lokalna linia komentarza będzie miała taką samą liczbę kolumn, co bieżąca linia.
 
-After the empty local comment line has been added, layout commands
-can be added (or any other use you have for local comments).  Below
-is an example of adding some text in the score through a layout
-comment.
-
+Po dodaniu pustego wiersza lokalnego komentarza można dodać polecenia formatowania
+(lub użyć go do lokalnych komentarzy). Poniżej znajduje się przykład dodania tekstu w
+partyturze poprzez komentarz lokalny.
 
 {% include image.html
 	file="textlayout.gif"
-	alt="adding a layout command."
+	alt="dodawanie komentarza formatowania"
 	max-width="75%"
-	caption="Adding a layout command after pressing alt-shift-l."
+	caption="Dodawanie komentarza formatowania po naciśnięciu alt-shift-l."
 %}
-
-
