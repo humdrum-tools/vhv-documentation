@@ -1,35 +1,35 @@
 ---
 title: <span class='keypress'>alt-o</span>
-lang: en
+lang: pl
 ref: commands-alt-o
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik
 creation_date: 15 Mar 2017
-translation_date: 
+translation_date: 2 Jan 2019
 last_updated: 15 Mar 2017
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: interface commands original clef
-summary: The <span class='keypress'>alt-o</span> command toggles between 'original' and 'modern' clefs.
+keywords: polecenia interfejsu oryginalne klucze
+summary: Komenda <span class='keypress'>alt-o</span> przełącza widok pomiędzy kluczami współczesnymi i oryginalnymi.
 permalink: /commands/alt-o/index.html
 ---
 
-Pressing <span class="keypress">alt-o</span> toggles between
-display of modern and original clefs.  Here is an example of the feature
-in action:
+Naciśnięcie skrótu <span class="keypress">alt-o</span> przełącza widok pomiędzy
+oryginalnymi kluczami, w jakich został zapisany utwór i kluczami współczesnymi w transkrypcji.
+Poniższy przykład ilustryje działanie funkcji:
 
 {% include image.html
 	file="original-clefs.gif"
-	alt="show original/modern notation."
+	alt="wyświetlanie starych/nowych kluczy"
 	max-width="100%"
-	caption="Pressing <span class='keypress'>alt-o</span> will toggle between modern and original clefs."
+	caption="Efekt zastosowania skrótu <span class='keypress'>alt-o</span> przełącza widok pomiędzy starymi i współczesnymi kluczami."
 %}
 
-This command is useful for proof-reading against a document that
-uses different clefs than the final encoding will, and is also
-useful for generating clef-reading exercises.
+Ta funkcja programu jest przydatna w sytuacji, gdy oryginalne klucze,
+w jakich zapisano utwór różnią się od tych, które zastosowano w transkrypcji.
+Można ją też zastosować w celu ćwiczenia umiejętności czytania w różnych kluczach.
 
-The original clefs are encoded by adding "o" before "clef":
+Oryginalne klucze zapisywane są w kodzie Humdrum poprzez dodanie "o" do określenia "clef":
 <style>
 pre {
 	tab-size: 12;
@@ -44,20 +44,16 @@ pre {
 *clefF4	*clefGv2	*clefG2	*clefG2
 ```
 
-If there are no `oclef` encodings in the data, then 
-<span class="keypress">alt-o</span> obviously will not do anything.
+Jeśeli w transkrypcji (kodzie Humdrum) brak linii zawierającej zapisaną
+za pomocą `oclef` informację na temat kluczy, wciśnięcie <span class="keypress">alt-o</span>
+nie przyniesie żadnego efektu.
 
+Spróbuj zastosować <span class="keypress">alt-o</span> do
+chorałów [Bacha](http://verovio.humdrum.org/?file=chorales/chor074.krn), jak na powyższym przykładzie.
 
-Try using <span class="keypress">alt-o</span> on the
-[Bach chorale](http://verovio.humdrum.org/?file=chorales/chor074.krn) shown
-in the above figure.
+## Uwagi dotyczące wdrażania funkcji ##
 
-
-
-
-## Implementation notes ##
-
-When converting from Humdrum to MEI, the "original" clef line is converted into this MEI code that inserts the optional encodings for the original clefs:
+Kiedy dane są konwertowane z formatu Humdrum do MEI, oryginalne klucze są zapisywane w kodzie MEI jako opcjonalne:
 
 ```xml
 <app>
@@ -75,11 +71,10 @@ When converting from Humdrum to MEI, the "original" clef line is converted into 
 </app>
 ```
 
-The `<app>` element is used to provide alternate content in an MEI file. 
-In this case there are two choices, with `<lem>` meaning the default choice (don't add
-original clefs), and a `<rdg>` which is labeled `original-clef`.   The default in this
-case does nothing, which means that the clef assignments at the start of the file
-are not altered:
+Element `<app>` służy do zapewnienia alternatywnej zawartości w pliku MEI. W tym przypadku są
+dwie opcje: z `<lem>` oznaczającym domyślny wybór (nie dodawaj oryginalnych kluczy) oraz `<rdg>`,
+który jest oznaczony jako `original-clef`. Domyślnie w tym przypadku program nic nie robi, co oznacza,
+że przypisane na początku pliku klucze nie są zmieniane:
 
 ```xml
 <scoreDef>
@@ -92,9 +87,9 @@ are not altered:
 </scoreDef>
 ```
 
-In the verovio JavaScript toolkit, the option `appXPathQuery` can be given to the 
-toolkit to run an XPath command on `<app>` data in the MEI input file. To select
-the original clefs, the options are set to:
+W pakiecie narzędzi verovio JavaScript opcja "appXPathQuery" może zostać przekazana do zestawu narzędzi,
+aby uruchomić polecenie XPath na danych `<app>` w pliku wejściowym MEI. Aby wybrać oryginalne klucze,
+opcje są ustawione na:
 
 ```javascript
 var options = {
@@ -104,22 +99,18 @@ var options = {
       appXPathQuery: "./rdg[contains(@label, 'original-clef')]"
    };
 ```
+W tym przypadku zapytanie [XPath] (https://en.wikipedia.org/wiki/XPath) wyszukuje fragment zawierający
+etykietę atrybutu, która ma wartość `original-clef`.
 
-In this case the [XPath](https://en.wikipedia.org/wiki/XPath) query searches for the
-reading that contains an attribute label which has the value `original-clef`.
-
-The [command-line](/myvhv/command_line) equivalent to the above options would be:
+[Wiersz polecenia] (/myvhv/command_line) równoważny powyższym opcjom będzie wyglądał następująco:
 
 ```bash
 humcat h://chorales/chor074.krn | verovio - -o chor074.svg -f humdrum -w 2000 -h 2500 --app-xpath-query="./rdg[contains(@label, 'original-clef')]"
 ```
+Jest to podobne do zastosowania narzędzi [strophe](http://www.humdrum.org/Humdrum/commands/strophe.htm) lub [thru](http://www.humdrum.org/Humdrum/commands/thru.html)
+do danych Humdrum, chociaż system `*oclef` jest szczególnym przypadkiem, który nie wymaga używania *strophe* lub *thru*.
 
-This is similar to using [strophe](http://www.humdrum.org/Humdrum/commands/strophe.html) 
-and/or [thru](http://www.humdrum.org/Humdrum/commands/thru.html) in Humdrum data, 
-although the `*oclef` system is a special case that does not require 
-using *strophe* or *thru*.
-
-Here is the equivalent using *thru*:
+Oto równoważne działanie przy użyciu *thru*:
 
 ```
 **kern
@@ -139,19 +130,19 @@ Here is the equivalent using *thru*:
 ...
 ```
 
-Then to use modern clefs:
+Następnie, aby użyć współczesnych kluczy:
 
 ```bash
 thru chor074-thru.krn | verovio - -o chor074-modern.svg
 ```
 
-and original clefs:
+oraz oryginalnych kluczy:
 
 ```bash
 thru -v original-clefs chor074-thru.krn | verovio - -o chor074-original.svg
 ```
 
-Here is similar functionality using *strophe*:
+Poniżej podobna funkcjonalność z użyciem *strophe*:
 
 <style>
 pre {
@@ -179,17 +170,14 @@ pre {
 ...
 ```
 
-To unpack the modern version with strophe:
+Aby wyodrębnić współczesne klucze za pomocą *strophe*:
 
 ```bash
 strophe -x modern chor074-thru.krn | verovio - -o chor074-modern.svg
 ```
 
-To unpack the original-clef version with strophe:
+Aby wyodrębnić oryginalne klucze za pomocą *strophe*:
 
 ```bash
 strophe -x original chor074-thru.krn | verovio - -o chor074-original.svg
 ```
-
-
-
