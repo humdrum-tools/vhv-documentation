@@ -1,62 +1,57 @@
 ---
 title: <span class='keypress'>alt-p</span>
-lang: en
+lang: pl
 ref: commands-alt-p
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik 
 creation_date: 9 May 2017
-translation_date: 
+translation_date: 2 Jan 2019
 last_updated: 9 May 2017
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: interface commands erase clear
-summary: "The <span class='keypress'>alt-p</span> command displays the source print for the online digital score in the VHV editor."
+keywords: polecenia interfejsu edycja źródłowa
+summary: "Polecenie <span class='keypress'>alt-p</span> wyświetla edyxję źródłową w edytorze VHV."
 permalink: /commands/alt-p/index.html
 ---
 
-For most of the online VHV [repertories](/repertory), pressing 
-<span class="keypress">alt-p</span> will load a PDF
-of the source edition used to create the digital score.
-The PDF scan of the source edition is opened in a separate 
-window and can be used proof-reading of the digital score.
+Dla większej części [repertuaru](/repertory) dostępnego w VHV
+naciśnięcię skrótu <span class="keypress">alt-p</span> spowoduje
+wyświetlenie w nowym oknie pliku PDF zawierającego edycję źródłową,
+która może zostać użyta w celu wykonania korekty wydania cydfrowego.
 
-For example, going to this link:
+Przykładowo, kliknięcie w poniższy link:
 
 ```
 http://verovio.humdrum.org/?file=chopin/mazurkas/mazurka67-4.krn
 ```
 
-displays the following digital score:
+wyświetla poniższą partyturę cyfrową:
 
 {% include image.html
 	file="mazurka.png"
-	alt="digital score."
-	caption="Digital score and rendered notation."
+	alt="partytura cyfrowa"
+	caption="Zapis cyfrowy i wyrenderowana partytura."
 %}
 
-When pressing <span class="keypress">alt-p</span> on the
-above page, the following window will be opened with a
-PDF file of the source edition:
-
+Kiedy po otwarciu powyższej strony naciśnięty zostanie skrót
+<span class="keypress">alt-p</span> otworzy się okno z plikiem
+PDF wydania źródłowego: 
 
 {% include image.html
 	file="altp.png"
-	alt="PDF scan of source score."
-	caption="PDF of scanned version of source edition."
+	alt="Skan PDF wydania źródłowego"
+	caption="Plik PDF skanu edycji źródłowej."
 %}
 
-
-The VHV editor and source print windows can be resized 
-and arranged for proof-reading:
+Okna edytora VHV oraz wydania źródłowego mogą zostać przeskalowane,
+aby ułatwić porównanie i wykonanie korekty:
 
 {% include image.html
 	file="windows.png"
-	alt="digital score and print source."
+	alt="edycja cyfrowa i źródłowa"
 	maxwidth="100%"
-	caption="Digital score window about print source window."
+	caption="Okno wydania źródłowego i edycji cyfrowej."
 %}
-
-
 
 
 
