@@ -1,48 +1,43 @@
 ---
 title: <span class='keypress'>alt-t</span>/<span class='keypress'>alt-T</span>
-lang: en
+lang: pl
 ref: commands-alt-t
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik
 creation_date: 16 Oct 2017
-translation_date: 
+translation_date: 3 Jan 2019
 last_updated: 16 Oct 2017
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: interface commands 
-summary: "The <span class='keypress'>alt-t</span>/<span class='keypress'>alt-T</span> commands download PDF files of the current page or full score."
+keywords: polecenia interfejsu zapisywanie pliku pdf
+summary: "Skróty <span class='keypress'>alt-t</span>/<span class='keypress'>alt-T</span> spowodują zapisanie aktualnego widoku strony lub całej partytury do pliku w formacie PDF."
 permalink: /commands/alt-t/index.html
 ---
 
+## Zapisywania aktualnie widocznej strony
 
-## Saving the currently displayed page
+Naciśnięcie <span class = "keypress"> alt-t </ span> spowoduje pobranie pliku PDF zawierającego aktualnie
+wyświetlaną muzykę na stronę partytury. Jeśli zapis muzyczny jest szerszy niż wyższy, pobrany plik PDF będzie
+w formacie leżącym; w przeciwnym razie plik PDF będzie miał orientację pionową.
 
-Pressing <span class="keypress">alt-t</span> will download a PDF
-containing the currently displayed music in the VHV webpage.  If the
-graphical music is wider than it is high, the downloaded PDF will be 
-in landscape mode; otherwise, the PDF will be in portrait orientation.
-
-Files will be downloaded wherever your browser saves downloaded files.  Here
-is a demonstration of typing <span class="keypress">alt-t</span> to save
-a file and then opening the downloaded PDF in another tab in the web browser.
+Pliki będą zapisywane w miejscu, w którym przeglądarka domyślnie przeglądarka zapisuje pobrane pliki.
+Poniżej demonstracja działania polecenia <span class="keypress">alt-t</span> zapisującego plik pdf i otwarcia do w przeglądarce.
 
 {% include image.html
 	file="save-pdf.gif"
-	alt="save currently viewed notation."
-	caption="Saving currently viewed notation to a PDF and then opening PDF."
+	alt="zapisywanie aktualnego widoku do pdf"
+	caption="Zapisywanie aktualnego widoku strony partytury do pliku PDF."
 %}
 
-## Saving the entire score to a PDF file
+## Zapisywanie całej partytury do pliku PDF
 
 Pressing <span class="keypress">alt-shift-T</span> will download a PDF
-containing the entire score.  The layout in VHV will not be used but
+containing the entire score. The layout in VHV will not be used but
 rather the music will be typeset for letter-sized paper in portrait
 orientation:
 
 {% include image.html
 	file="save-full-pdf.gif"
-	alt="save currently viewed score."
-	caption="Saving currently viewed score to a multi-page PDF."
+	alt="zapisywanie całej partytury do pliku PDF"
+	caption="Zapisywanie całej partytury do pliku PDF."
 %}
-
-
