@@ -1,11 +1,11 @@
 ---
-title:  "Viewing invisible rests"
-lang: en
+title:  "Podgląd ukrytych pauz"
+lang: pl
 ref: news-invisible-rests
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik
 creation_date: 1 Mar 2017
-translation_date: 
+translation_date: 3 Jan 2019
 last_updated: 4 Mar 2017
 categories: update
 permalink: news-invisible-rests.html
@@ -13,19 +13,15 @@ sidebar: main_sidebar
 tags: [all, news]
 ---
 
-Special meta-RDF codes have been added for data proof-reading in
-the encoding structure of Humdrum data when converting into MEI data.
-Invisible rests, called `<space>` in MEI data, can be displayed as colored 
-rests.  One RDF instruction will set the visibility and color of all types
-of rests, and three additional RDF instructions can control the 
-visibility and color of each category of `<space>` that the convert
-generates.
+Specjalne kody meta-RDF zostały dodane w celu korekty danych danych
+w strukturze Humdrum podczas konwersji do danych MEI. Niewidoczne
+pauzy, zwane `<space>` w formacie MEI, mogą być wyświetlane jako kolorowe pauzy.
+spoczywają. Jedna instrukcja RDF pozwoli ustawić widoczność i kolor wszystkich
+typów pauz, a trzy dodatkowe instrukcje RDF pozwalają kontrolować widoczność i
+kolor każdej z kategorii `<space>`, która jest generowana podczas konwersji.
 
-See the documentation of [invisible rests](/humdrum/invisible_rests) for more
-information.
+Zobacz dokumentację dla [ukrytych pauz](/humdrum/invisible_rests) w celu
+uzyskania dodatkowych informacji.
 
-[Here is the
-commit](https://github.com/rism-ch/verovio/commit/ab44b7bfffb6869e372943c66c1a3ecd5975d534)
-to the verovio codebase which adds the feature (with examples at
-the bottom of the page)
-
+[Poprawka oprogramowania](https://github.com/rism-ch/verovio/commit/ab44b7bfffb6869e372943c66c1a3ecd5975d534)
+verovio, która wprowadza omawianą zmianę (wraz z przykładami na dole strony).
