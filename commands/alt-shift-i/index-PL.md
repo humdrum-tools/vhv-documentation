@@ -1,36 +1,30 @@
 ---
 title: <span class='keypress'>alt-shift-i</span>
-lang: en
+lang: pl
 ref: commands-alt-shift-i
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik
 creation_date: 20 May 2018
-translation_date: 
+translation_date: 2 Jan 2019
 last_updated: 20 May 2018
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: interface commands layers
-summary: "The <span class='keypress'>alt-shift-i</span> command adds an empty interpretation line above the current line in the text editor."
+keywords: polecenia interfejsu dodanie linii
+summary: "Skrót <span class='keypress'>alt-shift-i</span> dodaje pustą linię powyżej bieżącego wiersza w edytorze tekstowym."
 permalink: /commands/alt-shift-i/index.html
 ---
 
-Pressing <span class="keypress">alt-shift-i</span> will add an empty
-interpretation line above the current line, provided that the current
-line contains spines (not a global comment, empty line, or exclusive
-interpretation line).  The added interpretation line will have the same
-number of spine fields as the current line.
+Naciśnięcie <span class="keypress">alt-shift-i</span> spowoduje dodanie pustej linii danych powyżej bieżącej linii,
+pod warunkiem, że bieżący wiersz zawiera dane (nie jest to komentarz globalny, pusta linia). Dodana linia
+będzie miała taką samą liczbę kolumn jak bieżąca linia.
 
-After the empty interpretation line has been added, layout commands
-can be added (or any other use you have for local comments).  Below
-is an example of adding some text in the score through a layout
-comment.
-
+Po dodaniu pustego wiersza można dodać polecenia formatowania
+(lub dowolne inne, jak np. lokalne komentarze). Poniżej znajduje się przykład, na którym
+poprzez dodanie linii oraz fragmentu kodu, zmieniono klucz muzyczny:
 
 {% include image.html
 	file="clefchange.gif"
-	alt="adding a clef-change."
+	alt="zmiana klucza"
 	max-width="75%"
-	caption="Adding a clef change after pressing alt-shift-i."
+	caption="Zmiana klucza muzycznego po wciśnięciu alt-shift-i."
 %}
-
-
