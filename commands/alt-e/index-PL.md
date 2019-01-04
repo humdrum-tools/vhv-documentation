@@ -1,42 +1,37 @@
 ---
 title: <span class='keypress'>alt-e</span>
-lang: en
+lang: pl
 ref: commands-alt-e
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik 
 creation_date: 9 May 2017
-translation_date: 
+translation_date: 1 Jan 2019
 last_updated: 9 May 2017
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: interface commands erase clear
-summary: "The <span class='keypress'>alt-e</span> command erases the score text and notation."
+keywords: poleceni interfejsu kasowanie danych
+summary: "Skrót <span class='keypress'>alt-e</span> kasuje dane w edytorze tekstowym oraz zapis w edytorze graficznym."
 permalink: /commands/alt-e/index.html
 ---
 
-Pressing <span class="keypress">alt-e</span> will erase both the
-text and graphical forms of the a score from the VHV editor.  Pressing
-<span class="keypress">alt-e</span> when the editor is empty will restore
-the score in case it was erased by accident.
+Naciśnięcie skrótu <span class="keypress">alt-e</span> wykasuje dane zarówno w edytorze
+takstowym jak i graficznym. Skrót <span class="keypress">alt-e</span> zastosowany, gdy
+edytor jest pusty pozwoli na przywrócenie danych, jeśli zostały wyjasowane przypadkowo.
 
 {% include image.html
 	file="alte.gif"
-	alt="toggling erasing."
-	caption="Erasing a score from the VHV editor."
+	alt="kasowanie danych"
+	caption="Kasowanie partytury z edytora VHV."
 %}
 
-## URL suppression of demo score ##
+## Ukrywanie przykładowej partytury w edytorze VHV za pomocą adresu URL ##
 
-The demo score that shows when the VHV editor is first opened
-can be suppressed by adding `?k=e` to the VHV URL:
+Przykładowa partytura, która wyświetlana jest po uruchomieniu VHV
+moze zostać ukryta poprzez dodanie do adresu `?k=e:
 
 {% include image.html
 	file="alte-url.png"
-	alt="suppressing sample data from URL."
-	caption="Suppressing sample score via URL."
+	alt="ukrywanie przykładowej partytury"
+	caption="Ukrywanie przykładowej partytury przez URL."
 %}
-
-
-
-
 
