@@ -1,43 +1,38 @@
 ---
 title: <span class='keypress'>alt-l</span>
-lang: en
+lang: pl
 ref: command-alt-l
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik 
 creation_date: 3 Mar 2017
-translation_date: 
+translation_date: 2 Jan 2019
 last_updated: 3 Mar 2017
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: interface commands layers
-summary: "The <span class='keypress'>alt-l</span> command toggles coloring of secondary layers in the graphic notation."
+keywords: polecenia interfejsu warstwy
+summary: "Skrót <span class='keypress'>alt-l</span> włącza kolorowanie warstw (layers) partytury w edytorze graficznym."
 permalink: /commands/alt-l/index.html
 ---
 
-Pressing <span class="keypress">alt-l</span> will toggle colorization
-of secondary layers in the notation.  This feature can be useful
-for proof-reading music by highlighting unusual sub-spine/layer
-organization in the data that is not visible in the graphical
-notation, such as interchanged layers (cases where layers 1 and 2 should
-be interchanged).
-
+Naciśnięcie klawiszy <span class="keypress">alt-l</span> włączy kolorowanie 
+dodatkowych warstw w partyturze. Funkcja ta może być przydatna podczas
+wykonywania korekty składu nutowego, zwłaszcza w sytuacji, gdy warstwy (kolumny kodu)
+krzyżują się w partyturze.
 
 {% include image.html
 	file="colorlayers.png"
-	alt="Coloring second layer of notes green."
+	alt="kolorowanie warstw"
 	max-width="30%"
-	caption="Coloring second layer of notes green."
+	caption="Funkcja kolorowania dodatkowych warstw w partyturze."
 %}
 
+Poniżej umieszczono przykład ilustrujący działanie funkcji <span class="keypress">alt-l</span> w partyturze:
 
-Here is an example of using <span class="keypress">alt-l</span> on a real 
-piece of music:
-
-{% include image.html
+{% include image.html 
 	file="show-layers.gif"
-	alt="Coloring second layer of notes green."
+	alt="kolorowanie warstwy partytury"
 	max-width="100%"
-	caption="Showing different layers of music."
+	caption="Wyświetlanie warstw na partyturze."
 %}
 
 
