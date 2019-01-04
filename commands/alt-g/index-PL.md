@@ -1,129 +1,124 @@
 ---
 title: <span class='keypress'>alt-g</span>
-lang: en
+lang: pl
 ref: commands-alt-g
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik 
 creation_date: 23 Apr 2017
-translation_date: 
+translation_date: 1 Jan 2019
 last_updated: 23 Apr 2017
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: interface commands svg
-summary: The <span class='keypress'>alt-g</span> command displays SVG code for the graphical music seen in the notation editor. 
+keywords: polecenia interfejsu svg
+summary: Kombinacja klawiszy <span class='keypress'>alt-g</span> wyświetla kod SVG obrazu prezentowanego w edytorze graficznym.
 permalink: /commands/alt-g/index.html
 ---
 
-Pressing <span class="keypress">alt-g</span> will cause a new window
-to open up containing the SVG code for the currently visible page
-of music notation.  Here is an example of the feature in action:
+Naciśnięcie <span class="keypress">alt-g</span> spowoduje otwarcie nowego okna
+w którym wyświetlone są dane SVG dla aktualnego widoku strony
+notacji muzycznej. Poniżej przykład działania funkcji: 
 
 {% include image.html
 	file="show-svg.gif"
-	alt="show SVG code for graphic notation."
+	alt="Pokaż kod SVG notacji graficznej."
 	max-width="50%"
-	caption="Pressing <span class='keypress'>alt-g</span> will open up the SVG code for the current page of notation."
+	caption="Skrót <span class='keypress'>alt-g</span> otworzy okno z kodem SVG aktualnej strony notacji muzycznej."
 %}
 
+[Tutaj](sample.svg) zobaczysz obraz SVG przedstawiony na przukładzie powyżej
+po zapisaniu go d pliku.
+Kod SVG można skopiować/wkleić do edytora tekstowego i zapisać
+na dysku twardym. Takie działanie może być przydatne w celu zapisania
+fragmentu lub całości obrazu w celu użycia go jako statycznego 
+obrazu w artykule lub na stronie internetowej.
 
-[Here](sample.svg) is the SVG image extracted as in the above figure 
-after it has been saved to a file.
-The SVG code can then be copy/pasted into a text editor and saved
-to the hard disk.  This command is useful for extracting a musical
-example for use as a static image in a paper/article or website.
+## Konwertowanie notacji muzycznej do formatu obrazu bitmapowego ## 
 
-
-## Converting notation into bitmap images ##
-
-Many applications (such as MS Word) cannot load SVG image files, so
-the SVG data must be converted into a bitmap in order to use the
-image in such programs.  There are two ways of generating bitmaps
-of VHV notation:  a simple method is to do a screen-shot.  How to
-do this will be different in the various operating systems.  In
-MacOS, type <span class="keypress">command-shift-4</span> and then
-drawing a box around the notation you want to capture.  You may
-also want to type <span class="keypress">alt-f</span> first so that
-the background color of the notation is white.
+Wiele programów (jak np. MS Word) nie obsługuje formatu obrazu SVG,
+więc aby móc je wykorzystać w takich programach, należy je uprzednio
+przekonwertować do pożądanego formatu. Są dwie podstawowe metody zapisywania
+obrazu bitmapowego w VHV: najprosztą metodą jest wykonanie zrzutu
+ekranu. Sposób wykonania zrzutu ekranu zależy od systemu operacyjnego.
+W systemie MacOS naciśnij <span class="keypress">command-shift-4</span> a
+następnie narysuj zaznaczenie wokół obrazu, których chcesz zapisać.
+Możesz także użyć skrótu <span class="keypress">alt-f</span> aby uzyskać
+niałe tło dla zapisanego obrazu.
 
 {% include image.html
 	file="screenshot.gif"
-	alt="Capturing screenshot of notation"
+	alt="Tworzenie zrzutu ekranu notacji muzycznej"
 	max-width="100%"
-	caption="Taking a screenshot of the displayed notation."
+	caption="Tworzenie zrzutu ekranu fragmentu wyświetlanej notacji."
 %}
 
-A more refined method of extracting a bitmap for a full page can be done by saving the
-SVG image displayed by the <span class="keypress">alt-g</span>
-command and then opening in [GIMP](https://www.gimp.org).  Here is the SVG import
-dialog window when opening the SVG image in GIMP:
+Bardziej zaawansowaną metodą zachowania obrazu całej strony jest jej zapisanie
+za pomocą skrótu <span class="keypress">alt-g</span> a następnie otwarcie obrazu
+w programie [GIMP](https://www.gimp.org). Poniżej przedstawiono okno dialogowe
+importu obrazu SVG w programie GIMP:
 
 {% include image.html
 	file="svgopen.png"
-	alt="Loading SVG into GIMP"
+	alt="Importowanie SVG do programu GIMP"
 	max-width="50%"
-	caption="Options window when opening SVG in GIMP."
+	caption="Okno z opcjami podczas importu SVG w programie GIMP."
 %}
 
-Set the pixel width/height to a large number (such as about 2000 pixels wide)
-to generate a high-resolution bitmap from the SVG image.  Here is an example
-of the image loaded into GIMP:
+Aby uzyskać wysokiej rozdzielczości obraz z pliku SVG ustaw szerokość/wysokość obrazu
+na odpowiednio wysokim poziomie (np. 2000 pikseli szerokości). Poniżej przykład
+obrazu zamiportowanego do GIMPa:
 
 {% include image.html
 	file="ingimp.png"
-	alt="Loading SVG into GIMP"
+	alt="Ładowanie SVG do GIMP"
 	max-width="80%"
-	caption="Options window when opening SVG in GIMP."
+	caption="Okno z opcjami podczas otwierania SVG w programie GIMP."
 %}
 
-The checkered gray background indicates that the image is transparent.  This 
-is useful when displaying the bitmap on a colored background.  You can then save
-the image, or select-all/copy/paste it into another application such as MS Word:
+Szare tło szachownicy oznacza, że obraz jest przezroczysty. Jest to szzcególnie
+przydatne w przypadku umieszczania obrazka na kolorowym tle. Możesz zapisać
+obraz albo wybrać go i skopiować/wkleić to innego programu, jak mp. MS Word:
 
 {% include image.html
 	file="msword.png"
-	alt="From GIMP to MS Word"
+	alt="Eksport z GIMP do MS Word"
 	max-width="60%"
-	caption="Result of copy/pasting from GIMP to MS Word."
+	caption="Efekt kopiowania/wklejania obrazu z GIMP do MS Word."
 %}
 
 
-## Editing as a vector-graphics image ##
+## Edytowanie obrazu grafiki wektorowej ##
 
-If you want to preserve the vector-graphics format of the SVG image, but want
-to edit to make changes or additions (such as analysis markup with boxes or
-arrows, etc.), then use [Inkscape](https://inkscape.org/en), which is a free
-open-source vector-graphics editor.
+Jeśli chcesz zachować grafikę wektorową obrazu SVG a następnie móc
+go edytować lub wprowadzać zmiany (jak np. dodawanie strzałek lub innych
+oznaczeń przydatnych w analizie) użyj programu [Inkscape](https://inkscape.org/en),
+który jest darmowym, open-source'owym edytorem grafiki wektorowej. 
 
 {% include image.html
 	file="inkscape.png"
-	alt="in Inkscape"
+	alt="Inkscape"
 	max-width="80%"
-	caption="Loading extracted SVG into Inkscape and adding markup."
+	caption="Ładowanie SVG do programu Inkscape oraz dodawanie oznaczeń."
 %}
 
-From Inkscape, you can save to the [Enhanced Metafile format](https://en.wikipedia.org/wiki/Windows_Metafile) which is an old Microsoft vector-graphics format that can be
-loaded into MS Word.  Note in the following figure that transparencies and layering 
-of markup in Inkscape might not export well to the EMF format:
+Z programu Inkscape może zapisać [Enhanced Metafile format](https://en.wikipedia.org/wiki/Windows_Metafile),
+który jest starszym typem grafiki wektorowej Microsoft. Może on zostać wczytany do programu MS Word.
+Zauważ, że niektóre elementy (jak przezroczystość oraz znaczniki warstw) mogą nie zostać poprawnie
+wyeksportowane do formatu EMF: 
 
 {% include image.html
 	file="emfword.png"
-	alt="EMF loaded into Word"
+	alt="EMF załadowany do Word"
 	max-width="60%"
-	caption="Loading an EMF file into MS Word that was saved from Inkscape."
+	caption="Ładowanie pliku EMF do MS Word z pliku zapisanego w Inkscape."
 %}
 
-
-Here is an example of saving the edited image as an SVG again ([sample2.svg](sample2.svg))
- and then loading into a web browser:
+Poniżej umieszczono przykład edytwanego i zapisanego ponownie obrazu SVG ([sample2.svg](sample2.svg)),
+który następnie został użyty w przeglądarce internetowej: 
 
 {% include image.html
 	file="svgchrome.png"
-	alt="Inkscape image loaded into Chrome"
+	alt="Obraz z Inkscape załadowany do przeglądarki Chrome"
 	max-width="60%"
-	caption="Loading an SVG file into Google Chrome that was saved from Inkscape."
+	caption="Ładowanie zapisanego z Inkscape pliku SVG do przeglądarki Google Chrome."
 %}
-
-
-
-
 
