@@ -1,50 +1,46 @@
 ---
 title: <span class='keypress'>alt-u</span>
-lang: en
+lang: pl
 ref: commands-alt-u
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik
 creation_date: 12 May 2018
-translation_date: 
+translation_date: 3 Jan 2019
 last_updated: 12 May 2018
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: interface commands compile filters
-summary: "The <span class='keypress'>alt-u</span> command toggles between TSV and CSV form of Humdrum data."
+keywords: polecenia interfejsu widok pliku TSV a CSV
+summary: "Skrót <span class='keypress'>alt-u</span> zmienia widok pomiędzy wersją TSV a CSV pliku Humdrum."
 permalink: /commands/alt-u/index.html
 ---
 
-Pressing <span class="keypress">alt-u</span> will toggle between
-TSV and CSV versions of Humdrum data.  The standard form of Humdrum data
-is in TSV format:
+Komenda <span class="keypress">alt-u</span> zmienia widok pomiędzy
+wersją TSV a CSV pliku Humdrum. Domyślnie pliki Humdrum są wyświetlane
+jako TSV (z tabulatorami jako separatorami kolumn):
 
 {% include image.html
 	file="tsv.png"
-	alt="TSV view of Humdrum data"
-	caption="TSV view of Humdrum data."
+	alt="widok TSV danych Humdrum"
+	caption="Dane Humdrum w widoku TSV."
 %}
 
-
-After pressing <span class="keypress">alt-u</span>, the data will be
-displayed in CSV format:
+Po naciśnięciu <span class="keypress">alt-u</span>, dane zostaną
+wyświetlone w formacie CSV:
 
 {% include image.html
 	file="csv.png"
-	alt="CSV view of Humdrum data"
-	caption="CSV view of Humdrum data."
+	alt="widok CSV danych Humdrum"
+	caption="Dane Humdrum w widoku CSV."
 %}
 
-Pressing <span class="keypress">alt-u</span> again will revert the 
-Humdrum data to TSV form.
+Ponowne wciśnięcie kombinacji <span class="keypress">alt-u</span> przywróci
+widok danych w formacie TSV.
 
-The CSV form is useful for loading into software that has CSV import but 
-not TSV import.  Also, the CSV format is useful for cases where tab
-characters may get munged, such as in emails.
+Formularz CSV jest przydatny przy przenoszeniu danych do oprogramowania, które posiada
+opcję importu CSV, ale nie TSV. Ponadto format CSV jest przydatny w przypadkach, w których
+znak tabulatora może zostać zniekształcony, na przykład w wiadomościach e-mail.
 
-Notice that reference records (the green-colored text in the above figure)
-may contain tabs which are not converted into commas when converting into
-the CSV form.  This is because such tabs are not integral to the 
-Humdrum data structure.  Tabs in global comments will also not be altered
-for the same reason.
-
-
+Rekordy referencyjne (zielony tekst na powyższym rysunku) mogą zawierać tabulatory,
+które nie są konwertowane na przecinki podczas konwersji do formularza CSV.
+Dzieje się tak dlatego, że znaki te nie są integralną częścią struktury danych Humdrum.
+Tabulatory w komentarzach globalnych również nie zostaną zmienione z tego samego powodu.
