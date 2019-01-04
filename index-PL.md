@@ -1,7 +1,10 @@
 ---
 title: Verovio Humdrum Viewer 
+lang: pl
 author: Craig Stuart Sapp
+translator: Marcin Konik
 creation_date: 3 Mar 2017
+translation_date: 1 Jan 2019
 last_updated: 4 Mar 2017
 tags: [getting_started]
 sidebar: main_sidebar
@@ -10,14 +13,14 @@ permalink: index.html
 summary: 
 ---
 
-
-Verovio Humdrum Viewer is an online digital music editor and
-interactive notation rendering interface for Humdrum files, located at
-[http://verovio.humdrum.org](http://verovio.humdrum.org).  See the
-[Getting started](/interface/getting_started) page for a tutorial on
-using the VHV interface, or browse through pages on the website by
-clicking on the headings in the sidebar menu to the left (or above),
-which is organized by topic:
+Verovio Humdrum Viewer (VHV) to edytor muzyczny działający online w przeglądarce
+internetowej. VHV za pomocą swojego interfejsu pozwala na interaktywne renderowanie 
+partytury na podstawie pliku w formacie Humdrum znajdujacych się na stronie
+[http://verovio.humdrum.org](http://verovio.humdrum.org). Zobacz także
+stronę [Jak zacząć](/interface/getting_started) aby zapoznać się z samouczkami
+dotyczącymi używania interfejsu VHV, lub przewertuj strony dokumentacji
+za pomocą menu bocznego lub nawigacji na górze strony. Strony pomocy 
+zostały ułożonwe według tematów:
 
 <style>
 
@@ -33,40 +36,39 @@ dd {
 
 </style>
 
-User interface
-: A description of the VHV web interface and how to use it.
+Interfejs użytkownika
+: Opis interfejsu VHV oraz sposobów jego używania.
 
-Commands
-: A list of keyboard commands for interacting with the VHV interface.
+Komendy
+: Lista skrótów klawiaturowych pozwalających na interakcję z interfejsem VHV.
 
-Graphic editing
-: A description of editing commands for altering the music notation graphically.
+Edytowanie graficzne
+: Opis działań pozwalających na edytowanie notacji muzycznej w edytorze graficznym.
 
-Filters
-: Filters are embedded commands within data that modify the data.
+Filtry
+: Filtry, które po zastosowaniu modyfikują dane.
 
-Repertories
-: A description of online musical repertories available for display in VHV.
+Zasoby
+: Opis muzycznych zasobów dostępnych online, które mogą być użyte w VHV.
 
-Humdrum encoding
-: Topics about representing musical features in the Humdrum syntax,
-mostly advanced topics related to VHV features.  See the [getting
-started](/humdrum/getting_started) page for an interactive tutorial on
-encoding music in the Humdrum format.  More complete documentation can
-be found at [Humdrum documentation website](http://www.humdrum.org).
+Kodowanie Humdrum
+: Tematy związane z różnymi aspektami zapisu muzycznego w składni Humdrum,
+w większości bezpośrednio powiązane z możliwościami VHV. Zobacz stronę [Jak zacząć](/humdrum/getting_started) 
+aby zapoznać się z interaktywnym samouczkiem dotyczącym kodowania muzyki w formacie Humdrum.
+Bardziej szczególowa dokumentacja formatu znajduje się na stronie [Humdrum documentation](http://www.humdrum.org).
 
-myVHV
-: Instructions and demos for using [Verovio](http://www.verovio.org) and 
-[Humdrum](http://www.humdrum.org) for your own projects.
+mojeVHV
+: Instrukcje i przykładowe użycia programu [Verovio](http://www.verovio.org)
+i [Humdrum](http://www.humdrum.org) w Twoich własnych projektaach.
 
-Maintenance
-: Topics related to creating pages and maintaining this website.
+Utrzymanie
+: Tematy związane z tworzeniem i utrzymaniem tej strony. 
 
-Indexes
-: Lists of pages by tag category.
+Indeksy
+: Lista stron według kategorii tagów.
 
 
-## Participants ##
+## Współtwórcy ##
 
 <style>
 
@@ -80,49 +82,47 @@ ul.brief li {
 
 <dl>
 <dt>Craig Stuart Sapp</dt>
-<dd>Creator</dd>
+<dd>Twórca</dd>
 <dt>Alex Morgan</dt>
 <dd>
-<ul class="brief"> <li> dissonance labeling algorithms in the <i><a href="/filters/dissonant">dissonant</a></i> filter</li> <li> cadential suspension definitions in the <i><a href="/filters/cint">cint</a></i> filter </li> </ul>
+<ul class="brief"> <li> algorytmy do oznaczania dysonansów za pomocą filtra <i><a href="/filters/dissonant">dissonant</a></i> </li> <li> definicje zawieszeń kadencyjnych w filtrze <i><a href="/filters/cint">cint</a></i> </li> </ul>
 </dd>
 <dt>Piotr Szyngiera</dt>
 <dd>
 <ul class="brief">
-<li> Humdrum syntax validation for the ace editor</li>
-<li> <a href="/interface/edit_modes">Humdrum syntax highlighting</a> </li> 
+<li> walidacja poprawności składni Humdrum w edytorze ace</li>
+<li> <a href="/interface/edit_modes">Podświetlanie składni Humdrum</a> </li> 
 </ul>
 </dd>
 </dl>
 
-Non-programmers can participate by submitting <a
-href="https://github.com/humdrum-tools/verovio-humdrum-viewer/issues">bug
-reports and feature requests</a> for the VHV web interface.  Reports for <a
-href="/filters">filters</a> should preferably be submitted to <a
-href="https://github.com/craigsapp/humlib/issues">humlib issues</a>, and reports
-for graphical notation should be submitted to 
-<a href="https://github.com/rism-ch/verovio/issues">verovio issues</a>.
-Most VHV documentation pages have editing buttons that can be used to
-fix typos or add content, if you have a <a
-href="https://github.com">Github</a> account.
+Nie-programiści mogą uczestniczyć w projekcie poprzez zgłaszanie
+<a href="https://github.com/humdrum-tools/verovio-humdrum-viewer/issues">błędów
+oraz zapotrzebowania na nowe opcje</a> dla interfejsu VHV. Raport błędów dla
+<a href="/filters">filtrów</a> powinny być zgłaszane do <a
+href="https://github.com/craigsapp/humlib/issues">humlib</a>, a raporty
+błędów oraz poprawki do edytora graficznego do
+<a href="https://github.com/rism-ch/verovio/issues">verovio</a>.
+Większa część stron dokumentacji VHV posiada przyciski, które mogą
+być użyte w celu poprawiania literówek lub dodawania treści, przez osoby
+posiadająceo konto na <a href="https://github.com">Githubie</a>.
 
-### Major software components ###
+### Główne składniki oprogramowania ###
 
 <dl>
 
 <dt> <a href="http://www.verovio.org">verovio</a></dt>
-<dd> Music notation rendering in C++ (using MEI, with data imports from Humdrum and MusicXML and exports into SVG and MIDI)</dd>
+<dd> Oprogramowanie renderujące w C++ (z wykorzystaniem formatu MEI, pozwalające na import plików w formacie Humdrum oraz MusicXML z możliwościę eksportu do formatów SVG oraz MIDI)</dd>
 
 <dt> <a href="http://humlib.humdrum.org">humlib</a></dt>
-<dd> Musical data conversion and analysis tools in C++ (using Humdrum, with imports from MusicXML and MEI and exports into MEI and MIDI)</dd>
+<dd> Narzędzia C++ do konwertowania i analizy muzycznej (z wykorzystaniem Humdrum, z możliwością importu z formatów MusicXML oraz MEI oraz eksportu do MEI i MIDI)</dd>
 
-<dt> <a href="https://ace.c9.io">ace editor</a></dt>
-<dd> JavaScript text editor</dd>
+<dt> <a href="https://ace.c9.io">edytor ace</a></dt>
+<dd> Edytir tekstowy w JavaScript</dd>
 
 </dl>
 
-
-
-## Institutional/Project Supporters ##
+## Instytucjonalni partnerzy projektu ##
 
 <style>
 
@@ -147,7 +147,7 @@ href="https://github.com">Github</a> account.
 
 </div>
 
-## Projects utilizing VHV ##
+## Projektu korzystające z VHV ##
 
 <div style="margin-left: 100px">
 
@@ -157,45 +157,41 @@ href="https://github.com">Github</a> account.
 
 </div>
 
-After preparing music in VHV, it should be suitable for use with
-music analysis and processing tools, such as <a target="_blank"
+Po przygotowaniu składu nutowego w VHV może on zostać wykorzystany
+do przeprowadzenia analizy za pomocą narzędzi komputerowych, jak np. <a target="_blank"
 href="https://github.com/humdrum-tools/humdrum-tools">Humdrum
-Tools</a>, and for easy display on webpages with the <a target="_blank"
-href="https://plugin.humdrum.org">Humdrum notation plugin</a>.
+Tools</a>, oraz wyświetlania notacji muzycznej na stronach internetowych za pomocą <a target="_blank"
+href="https://plugin.humdrum.org">wtyczki Humdrum notatio</a>.
 
-For example, the Josquin Research Project (JRP) uses both the
-Humdrum notation plugin to display musical incipits on <a target="_blank"
-href="http://josquin.stanford.edu/work/?id=Jos2721">work pages</a> as well
-as a random sample of the JRP score database displayed on the <a target="_blank"
-href="http://josquin.stanford.edu">homepage</a>. In addition, some
-analysis tools are implemented online through VHV.  An example
-of this is the <a href="/filters/dissonant">dissonant</a>
-tool.  Work pages, such as <a target="_blank"
-href="http://josquin.stanford.edu/work/?id=Jos2721">this
-one</a> have an analysis tool button labeled "Dissonant"
-which links to VHV, loading the data from the website,
-and doing the dissonance analysis <a target="_blank"
-href="http://verovio.humdrum.org/?k=ey&filter=dissonant&file=jrp:Jos2721">within VHV</a>.
+Przykładowo, w projekcie Josquin Research Project (JRP) użyto zawrówno
+wtyczki Humdrum notation w celu wyświetlenia incypitów muzycznych na stronach <a target="_blank"
+href="http://josquin.stanford.edu/work/?id=Jos2721">poszczególnych kompozycji</a>, jak i
+w celu generowania przykładowych partytur z bazy JRP na tronie <a target="_blank"
+href="http://josquin.stanford.edu">głównej</a>. Ponadto, niektóre z narzędzi analitycznych
+zostały zaimplementowane online za pomocą VHV. Jednym z przykładów może być
+filtr <a href="/filters/dissonant">dissonant</a>, który automatycznie wyświetla dysonanse.
+Na stronach poszczególnych kompozycji <a target="_blank"
+href="http://josquin.stanford.edu/work/?id=Jos2721">jak np. ta</a> w projekcie JRP 
+znajdują się przyciski oznaczone jako "Dissonant", które przekierowują do VHV ładując wskazane dane
+do edytora oraz wykonując analizę dysonansów <a target="_blank"
+href="http://verovio.humdrum.org/?k=ey&filter=dissonant&file=jrp:Jos2721">za pomocą VHV</a>.
 
-Files from other websites can be automatically be loaded into VHV by
-giving a URL as the filename in the *file* CGI parameter.  For example,
-this link to VHV:
+Pliki znajdujące sie na innych stronach internetowych mogą zostać automatycznie załadowane do VHV
+poprzez wpisanie odpowiedniego adresu URL w parametrze CGI *file*. Na przykład 
+poniższy link do VHV:
 
 <a target="_blank" href="https://verovio.humdrum.org/?file=https://raw.githubusercontent.com/craigsapp/beethoven-piano-sonatas/master/kern/sonata14-1.krn">https://verovio.humdrum.org/?file=https://raw.githubusercontent.com/craigsapp/beethoven-piano-sonatas/master/kern/sonata14-1.krn</a>
 
-Embeds this URL to the Humdrum data for the first movement of Beethoven's <i>Moonlight</i>
-sonata:
+pozwala pobrać spod adresu URL dane Humdrum pierwszej części <i>Sonaty księżycowej</i> Beethovena:
 
 <a target="_blank" href="https://raw.githubusercontent.com/craigsapp/beethoven-piano-sonatas/master/kern/sonata14-1.krn">https://raw.githubusercontent.com/craigsapp/beethoven-piano-sonatas/master/kern/sonata14-1.krn</a>
 
-This score is part of a Github repository of Beethoven piano sonatas:
+Poniższa partytura stanowi część repozytorium Github zawierajacego sonaty Beethovena: 
 
 <a target="_blank" href="https://github.com/craigsapp/beethoven-piano-sonatas">https://github.com/craigsapp/beethoven-piano-sonatas</a>
 
-which is accessible from the bottom of the help menu in the VHV interface
-(the question mark icon on the top left corner of the VHV page).
-
-
+które są dostępne z pozimu menu pomocy w interfejsie VHV
+(znak pytajnika w prawym górnym rogu na stronie VHV). 
 
 
 
