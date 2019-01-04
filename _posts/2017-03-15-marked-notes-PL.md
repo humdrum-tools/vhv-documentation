@@ -1,11 +1,11 @@
 ---
-title:  "Marking notes"
-lang: en
+title:  "Oznaczanie nut"
+lang: pl
 ref: news-marked_notes
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik
 creation_date: 15 Mar 2017
-translation_date: 
+translation_date: 3 Jan 2019
 last_updated: 15 Mar 2017
 categories: update
 permalink: news-marked_notes.html
@@ -13,8 +13,6 @@ sidebar: main_sidebar
 tags: [all, news]
 ---
 
-Marking notes with user signifiers has been implemented in the VHV
-notation editor.  Multiple marks can be used, each using a different
-color.  See the description of [marks](/graphic/marks) for more
-details.
-
+Wyróżnianie nut za pomocą znaczników zostało zaimplementowane
+do edytora VHV. Można dodawać wiele znaczników wykorzystując różne kolory.
+Zobacz opis [znaczniki nut](/graphic/marks) w celu uzyskania dodatkowych informacji.
