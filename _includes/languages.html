@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	var langs = lang.split(/[^A-Za-z0-9]+/);
 	var current = getPageLanguage();
 	var filename = getFileName();
-	console.log("CURRENT PAGE", current);
+	//console.log("CURRENT PAGE", current);
 	var newlist = [];
 	var titles = {};
 	titles.PL = "inne języki";
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 		newlist.push(langs[i].toUpperCase());
 	}
-	console.log("NEWLANGS", newlist);
+	// console.log("NEWLANGS", newlist);
 	if (newlist.length < 1) {
 		// nothing to do, so skip
 		return;
@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
 //////////////////////////////
 //
 // getPageLanguage --
@@ -64,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function getPageLanguage() {
 	var path = window.location.pathname;
-console.log("PATHNAME", path);
 	var matches = path.match(/-([A-Z]{2})\.[^.]+$/);
 	var output = "EN";
 	if (matches) {
@@ -86,7 +86,6 @@ function getFileName() {
 		path = "index.html";
 	}
 	path = path.replace(/-[A-Z]{2}\.([^.]+)$/, ".$1");
-console.log("PATH", path);
 	return path;
 }
 
