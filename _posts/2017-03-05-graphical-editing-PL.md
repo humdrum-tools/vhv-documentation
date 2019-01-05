@@ -1,6 +1,6 @@
 ---
 title:  "Edycja graficzna"
-lang: pl
+lang: pl en
 ref: news-graphical
 author: Craig Stuart Sapp
 translator: Marcin Konik

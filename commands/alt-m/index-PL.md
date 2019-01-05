@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-m</span>
-lang: pl
+lang: pl en
 ref: commands-alt-m
 author: Craig Stuart Sapp
 translator: Marcin Konik 

@@ -1,6 +1,6 @@
 ---
 title:  "Podgląd ukrytych pauz"
-lang: pl
+lang: pl en
 ref: news-invisible-rests
 author: Craig Stuart Sapp
 translator: Marcin Konik

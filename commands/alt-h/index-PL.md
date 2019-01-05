@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-h</span>
-lang: pl
+lang: pl en
 ref: commands-alt-h
 author: Craig Stuart Sapp
 translator: Marcin Konik 

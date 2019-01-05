@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-o</span>
-lang: pl
+lang: pl en
 ref: commands-alt-o
 author: Craig Stuart Sapp
 translator: Marcin Konik

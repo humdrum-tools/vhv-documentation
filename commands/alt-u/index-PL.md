@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-u</span>
-lang: pl
+lang: pl en
 ref: commands-alt-u
 author: Craig Stuart Sapp
 translator: Marcin Konik

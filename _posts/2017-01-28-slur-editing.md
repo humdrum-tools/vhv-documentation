@@ -1,6 +1,6 @@
 ---
 title:  "Graphic editing of slurs"
-lang: en
+lang: en pl
 ref: news-slur-editing
 author: Craig Stuart Sapp
 translator: 

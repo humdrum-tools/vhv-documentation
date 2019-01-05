@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-e</span>
-lang: pl
+lang: pl en
 ref: commands-alt-e
 author: Craig Stuart Sapp
 translator: Marcin Konik 

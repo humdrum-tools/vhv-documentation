@@ -1,6 +1,6 @@
 ---
 title:  "Marking notes"
-lang: en
+lang: en pl
 ref: news-marked_notes
 author: Craig Stuart Sapp
 translator: 

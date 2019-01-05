@@ -1,6 +1,6 @@
 ---
 title:  "Oznaczanie nut"
-lang: pl
+lang: pl en
 ref: news-marked_notes
 author: Craig Stuart Sapp
 translator: Marcin Konik

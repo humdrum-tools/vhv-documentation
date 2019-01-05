@@ -1,6 +1,6 @@
 ---
 title:  "Viewing invisible rests"
-lang: en
+lang: en pl
 ref: news-invisible-rests
 author: Craig Stuart Sapp
 translator: 

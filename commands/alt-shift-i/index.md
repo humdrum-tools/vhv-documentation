@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-shift-i</span>
-lang: en
+lang: en pl
 ref: commands-alt-shift-i
 author: Craig Stuart Sapp
 translator: 

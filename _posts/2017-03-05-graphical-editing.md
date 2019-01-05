@@ -1,6 +1,6 @@
 ---
 title:  "Graphical editing"
-lang: en
+lang: en pl
 ref: news-graphical
 author: Craig Stuart Sapp
 translator: 

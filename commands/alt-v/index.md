@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-v</span>
-lang: en
+lang: en pl
 ref: commands-alt-v
 author: Craig Stuart Sapp
 translator: 
