@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu kompilacja filtrów
 summary: "Skrót <span class='keypress'>alt-c</span> kompiluje osadzone filtry."
-permalink: /commands/alt-c/index.html
+permalink: /commands/alt-c/index-PL.html
 ---
 
 Naciśnięcie kombinacji klawiszy <span class="keypress">alt-c</span> pozwala na zastosowanie

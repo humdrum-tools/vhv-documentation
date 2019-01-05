@@ -8,7 +8,7 @@ creation_date: 1 Mar 2017
 translation_date: 3 Jan 2019
 last_updated: 4 Mar 2017
 categories: update
-permalink: news-invisible-rests.html
+permalink: news-invisible-rests-PL.html
 sidebar: main_sidebar
 tags: [all, news]
 ---

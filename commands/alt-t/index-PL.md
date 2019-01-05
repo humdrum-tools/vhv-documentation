@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu zapisywanie pliku pdf
 summary: "Skróty <span class='keypress'>alt-t</span>/<span class='keypress'>alt-T</span> spowodują zapisanie aktualnego widoku strony lub całej partytury do pliku w formacie PDF."
-permalink: /commands/alt-t/index.html
+permalink: /commands/alt-t/index-PL.html
 ---
 
 ## Zapisywania aktualnie widocznej strony

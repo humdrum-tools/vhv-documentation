@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu svg
 summary: Skrót <span class='keypress'>alt-h</span> pozwala na ponowne wyświetlenie danych w formacie Humdrum po zastosowaniu skrótu <span class='keypress'>alt-m</span> wyświetlającego dane w formacie MEI.
-permalink: /commands/alt-h/index.html
+permalink: /commands/alt-h/index-PL.html
 ---
 
 Naciśnięcie skrótu <span class="keypress">alt-h</span> ponownie wyświetli dane w formacie Humdrum

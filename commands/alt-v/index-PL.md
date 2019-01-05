@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu edytor vim
 summary: "The <span class='keypress'>alt-v</span> command toggles the vim editing mode."
-permalink: /commands/alt-v/index.html
+permalink: /commands/alt-v/index-PL.html
 ---
 
 Polecenie <span class="keypress">alt-v</span> przełącza edytor tekstowy

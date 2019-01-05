@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu widok pliku TSV a CSV
 summary: "Skrót <span class='keypress'>alt-u</span> zmienia widok pomiędzy wersją TSV a CSV pliku Humdrum."
-permalink: /commands/alt-u/index.html
+permalink: /commands/alt-u/index-PL.html
 ---
 
 Komenda <span class="keypress">alt-u</span> zmienia widok pomiędzy

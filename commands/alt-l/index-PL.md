@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu warstwy
 summary: "Skrót <span class='keypress'>alt-l</span> włącza kolorowanie warstw (layers) partytury w edytorze graficznym."
-permalink: /commands/alt-l/index.html
+permalink: /commands/alt-l/index-PL.html
 ---
 
 Naciśnięcie klawiszy <span class="keypress">alt-l</span> włączy kolorowanie 

@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu dodanie linii
 summary: "Skrót <span class='keypress'>alt-shift-i</span> dodaje pustą linię powyżej bieżącego wiersza w edytorze tekstowym."
-permalink: /commands/alt-shift-i/index.html
+permalink: /commands/alt-shift-i/index-PL.html
 ---
 
 Naciśnięcie <span class="keypress">alt-shift-i</span> spowoduje dodanie pustej linii danych powyżej bieżącej linii,

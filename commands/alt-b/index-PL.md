@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu logo
 summary: "Skrót <span class='keypress'>alt-b</span> włącza/wyłacza wyświetlanie logo Verovio Humdrum Viewer w nagłówku."
-permalink: /commands/alt-b/index.html
+permalink: /commands/alt-b/index-PL.html
 ---
 
 Skrót klawiaturowy <span class="keypress">alt-b</span> pozwala włączyć lub wyłączyć

@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu oryginalne klucze
 summary: Komenda <span class='keypress'>alt-o</span> przełącza widok pomiędzy kluczami współczesnymi i oryginalnymi.
-permalink: /commands/alt-o/index.html
+permalink: /commands/alt-o/index-PL.html
 ---
 
 Naciśnięcie skrótu <span class="keypress">alt-o</span> przełącza widok pomiędzy

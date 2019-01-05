@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: poleceni interfejsu kasowanie danych
 summary: "Skrót <span class='keypress'>alt-e</span> kasuje dane w edytorze tekstowym oraz zapis w edytorze graficznym."
-permalink: /commands/alt-e/index.html
+permalink: /commands/alt-e/index-PL.html
 ---
 
 Naciśnięcie skrótu <span class="keypress">alt-e</span> wykasuje dane zarówno w edytorze

@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu 
 summary: "Komenda <span class='keypress'>alt-m</span> wyświetla dane w formacie MEI w edytorze tekstowym"
-permalink: /commands/alt-m/index.html
+permalink: /commands/alt-m/index-PL.html
 ---
 
 Naciśnięcie kombinacji klawiszy <span class="keypress">alt-m</span> zastąpi widok danych Humdrum

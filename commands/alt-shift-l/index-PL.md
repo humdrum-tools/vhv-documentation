@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu komentarz lokalny
 summary: "Skrót <span class='keypress'>alt-shift-l</span> dodaje pustą linię komentarza lokalnego powyżej bieżącego wiersza danych."
-permalink: /commands/alt-shift-l/index.html
+permalink: /commands/alt-shift-l/index-PL.html
 ---
 
 Naciśnięcie <span class = "keypress"> alt-shift-l </ span> spowoduje dodanie

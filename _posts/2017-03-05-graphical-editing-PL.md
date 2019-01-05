@@ -8,7 +8,7 @@ creation_date: 5 Mar 2017
 translation_date: 3 Jan 2019
 last_updated: 5 Mar 2017
 categories: update
-permalink: news-graphical.html
+permalink: news-graphical-PL.html
 sidebar: main_sidebar
 tags: [all, news]
 ---

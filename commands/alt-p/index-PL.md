@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu edycja źródłowa
 summary: "Polecenie <span class='keypress'>alt-p</span> wyświetla edyxję źródłową w edytorze VHV."
-permalink: /commands/alt-p/index.html
+permalink: /commands/alt-p/index-PL.html
 ---
 
 Dla większej części [repertuaru](/repertory) dostępnego w VHV

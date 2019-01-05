@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu blokowanie renderowania notacji
 summary: "Skrót <span class='keypress'>alt-f</span> blokuje/odblokowuje dynamiczne renderowanie notacji muzycznej."
-permalink: /commands/alt-f/index.html
+permalink: /commands/alt-f/index-PL.html
 ---
 
 Naciśnięcie skrótu <span class="keypress">alt-f</span> zablokuje/odblokuje automatyczne

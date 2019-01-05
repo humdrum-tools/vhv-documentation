@@ -8,7 +8,7 @@ creation_date: 15 Mar 2017
 translation_date: 3 Jan 2019
 last_updated: 15 Mar 2017
 categories: update
-permalink: news-marked_notes.html
+permalink: news-marked_notes-PL.html
 sidebar: main_sidebar
 tags: [all, news]
 ---

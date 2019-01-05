@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu svg
 summary: Kombinacja klawiszy <span class='keypress'>alt-g</span> wyświetla kod SVG obrazu prezentowanego w edytorze graficznym.
-permalink: /commands/alt-g/index.html
+permalink: /commands/alt-g/index-PL.html
 ---
 
 Naciśnięcie <span class="keypress">alt-g</span> spowoduje otwarcie nowego okna

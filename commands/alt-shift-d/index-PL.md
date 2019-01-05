@@ -11,7 +11,7 @@ tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands layers
 summary: "Skrót <span class='keypress'>alt-shift-d</span> dodaje pustą linię kodu powyżej aktualnej linii w edytorze tekstowym."
-permalink: /commands/alt-shift-d/index.html
+permalink: /commands/alt-shift-d/index-PL.html
 ---
 
 Naciśnięcie <span class ='keypress'>alt-shift-d</span> doda pusty wiersz danych powyżej bieżącej linii,
