@@ -1768,3 +1768,15 @@ table.keytable tr td:last-child {
 }
 
 
+#languages {
+	color: orange;
+	position: fixed;
+	left: 20px;
+	top: 65px;
+}
+
+#languages a {
+	color: yellow;
+}
+
+

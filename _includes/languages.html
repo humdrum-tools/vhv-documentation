@@ -1,0 +1,95 @@
+
+<script>
+// vim: ts=3
+
+
+document.addEventListener("DOMContentLoaded", function () {
+	var lang = "{{page.lang}}".trim();
+	var langs = lang.split(/[^A-Za-z0-9]+/);
+	var current = getPageLanguage();
+	var filename = getFileName();
+	console.log("CURRENT PAGE", current);
+	var newlist = [];
+	var titles = {};
+	titles.PL = "inne języki";
+	titles.EN = "other langauges";
+	var i;
+	for (i=0; i<langs.length; i++) {
+		if (langs[i].toUpperCase() === current.toUpperCase()) {
+			// don't link to same langauge as page
+			continue;
+		}
+		newlist.push(langs[i].toUpperCase());
+	}
+	console.log("NEWLANGS", newlist);
+	if (newlist.length < 1) {
+		// nothing to do, so skip
+		return;
+	}
+	var output = "";
+	if (titles[current]) {
+		output += titles[current];
+	} else {
+		output += titles.EN;
+	}
+	output += ": ";
+
+	var matches = filename.match(/(.*)\.([^.]*)$/);
+	var filebase = matches[1];
+	var extension = matches[2];
+	var newname;
+
+	for (i=0; i<newlist.length; i++) {
+		if (newlist[i] === "EN") {
+			output += ' <a href="' + filename + '">EN</a>';
+		} else {
+			newname = filebase + "-" + newlist[i] + "." + extension;
+			output += ' <a href="' + newname + '">' + newlist[i] + '</a>';
+		}
+		if (i < newlist.length - 1) {
+			output += "  | ";
+		}
+	}
+	var element = document.querySelector("#languages");
+	if (element) {
+		element.innerHTML = output;
+	}
+});
+
+
+//////////////////////////////
+//
+// getPageLanguage --
+//
+
+function getPageLanguage() {
+	var path = window.location.pathname;
+console.log("PATHNAME", path);
+	var matches = path.match(/-([A-Z]{2})\.[^.]+$/);
+	var output = "EN";
+	if (matches) {
+		output = matches[1].toUpperCase();
+	}
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// getFileName --
+//
+
+function getFileName() {
+	var path = window.location.pathname.replace(/.*\//, "");
+	if (!path) {
+		path = "index.html";
+	}
+	path = path.replace(/-[A-Z]{2}\.([^.]+)$/, ".$1");
+console.log("PATH", path);
+	return path;
+}
+
+</script>
+
+
