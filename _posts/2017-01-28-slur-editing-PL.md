@@ -1,5 +1,5 @@
 ---
-title:  "Graphic editing of slurs"
+title:  "Graficzne edytowanie łuków"
 lang: pl en
 ref: news-slur-editing
 author: Craig Stuart Sapp
