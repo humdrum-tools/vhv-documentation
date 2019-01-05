@@ -147,7 +147,7 @@ posiadająceo konto na <a href="https://github.com">Githubie</a>.
 
 </div>
 
-## Projektu korzystające z VHV ##
+## Projekty korzystające z VHV ##
 
 <div style="margin-left: 100px">
 
