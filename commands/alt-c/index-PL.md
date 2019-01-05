@@ -10,12 +10,12 @@ last_updated: 9 May 2017
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu kompilacja filtrów
-summary: "Skrót <span class='keypress'>alt-c</span> kompiluje osadzone filtry."
+summary: "Skrót <span class='keypress'>alt-c</span> kompiluje zastosowane filtry."
 permalink: /commands/alt-c/index-PL.html
 ---
 
 Naciśnięcie kombinacji klawiszy <span class="keypress">alt-c</span> pozwala na zastosowanie
-osadzonych [filtrów](/filters/) (lub [URL filters](/filters/url)) do danych Humdrum w edytorze
+[filtrów](/filters/) (lub [URL filters](/filters/url)) zastosowanych do danych Humdrum w edytorze
 tekstowym oraz zastąpienie danych poprzez dane przefiltrowane.
 
 ## Dodawanie pustej kolumny danych (spine) ##
@@ -38,7 +38,6 @@ Dane przed kompilacją filtra:
 	alt="widok przed kompilacją."
 	caption="Dane Humdrum przed kompilacją filtra."
 %}
-
 
 Po naciśnięciu skrótu <span class="keypress">alt-c</span>:
 

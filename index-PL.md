@@ -18,9 +18,9 @@ internetowej. VHV za pomocą swojego interfejsu pozwala na interaktywne renderow
 partytury na podstawie pliku w formacie Humdrum znajdujacych się na stronie
 [http://verovio.humdrum.org](http://verovio.humdrum.org). Zobacz także
 stronę [Jak zacząć](/interface/getting_started) aby zapoznać się z samouczkami
-dotyczącymi używania interfejsu VHV, lub przewertuj strony dokumentacji
+dotyczącymi używania interfejsu VHV, lub przeglądnij strony dokumentacji
 za pomocą menu bocznego lub nawigacji na górze strony. Strony pomocy 
-zostały ułożonwe według tematów:
+zostały ułożone według tematów:
 
 <style>
 
@@ -55,7 +55,7 @@ Kodowanie Humdrum
 : Tematy związane z różnymi aspektami zapisu muzycznego w składni Humdrum,
 w większości bezpośrednio powiązane z możliwościami VHV. Zobacz stronę [Jak zacząć](/humdrum/getting_started) 
 aby zapoznać się z interaktywnym samouczkiem dotyczącym kodowania muzyki w formacie Humdrum.
-Bardziej szczególowa dokumentacja formatu znajduje się na stronie [Humdrum documentation](http://www.humdrum.org).
+Bardziej szczegółowa dokumentacja formatu znajduje się na stronie [Humdrum documentation](http://www.humdrum.org).
 
 mojeVHV
 : Instrukcje i przykładowe użycia programu [Verovio](http://www.verovio.org)
@@ -98,7 +98,7 @@ ul.brief li {
 
 Nie-programiści mogą uczestniczyć w projekcie poprzez zgłaszanie
 <a href="https://github.com/humdrum-tools/verovio-humdrum-viewer/issues">błędów
-oraz zapotrzebowania na nowe opcje</a> dla interfejsu VHV. Raport błędów dla
+oraz zapotrzebowania na nowe opcje</a> dla interfejsu VHV. Raporty błędów dla
 <a href="/filters">filtrów</a> powinny być zgłaszane do <a
 href="https://github.com/craigsapp/humlib/issues">humlib</a>, a raporty
 błędów oraz poprawki do edytora graficznego do
@@ -118,7 +118,7 @@ posiadająceo konto na <a href="https://github.com">Githubie</a>.
 <dd> Narzędzia C++ do konwertowania i analizy muzycznej (z wykorzystaniem Humdrum, z możliwością importu z formatów MusicXML oraz MEI oraz eksportu do MEI i MIDI)</dd>
 
 <dt> <a href="https://ace.c9.io">edytor ace</a></dt>
-<dd> Edytir tekstowy w JavaScript</dd>
+<dd> Edytor tekstowy w JavaScript</dd>
 
 </dl>
 
@@ -163,10 +163,10 @@ href="https://github.com/humdrum-tools/humdrum-tools">Humdrum
 Tools</a>, oraz wyświetlania notacji muzycznej na stronach internetowych za pomocą <a target="_blank"
 href="https://plugin.humdrum.org">wtyczki Humdrum notatio</a>.
 
-Przykładowo, w projekcie Josquin Research Project (JRP) użyto zawrówno
-wtyczki Humdrum notation w celu wyświetlenia incypitów muzycznych na stronach <a target="_blank"
+Przykładowo, w projekcie Josquin Research Project (JRP) użyto zarówno
+wtyczki "Humdrum notation" w celu wyświetlenia incypitów muzycznych na stronach <a target="_blank"
 href="http://josquin.stanford.edu/work/?id=Jos2721">poszczególnych kompozycji</a>, jak i
-w celu generowania przykładowych partytur z bazy JRP na tronie <a target="_blank"
+w celu generowania przykładowych partytur z bazy JRP na stronie <a target="_blank"
 href="http://josquin.stanford.edu">głównej</a>. Ponadto, niektóre z narzędzi analitycznych
 zostały zaimplementowane online za pomocą VHV. Jednym z przykładów może być
 filtr <a href="/filters/dissonant">dissonant</a>, który automatycznie wyświetla dysonanse.

@@ -22,7 +22,7 @@ partytury w formacie obrazu SVG.
 Podczas gdy dane w formacie MEI są wyświetlane w edytorze tekstowym,
 mogą one być dowolnie edytowane, zaś wszystkie wprowadzone zmiany zostaną
 wyświetlone w edytorze graficznym (na wygenerowanej partyturze).
-Kliknięciena wybrany element partytury w edytorze graficznym spowoduje,
+Kliknięcie na wybrany element partytury w edytorze graficznym spowoduje,
 że kursor w edytorze tekstowym zostanie przeniesiony do odpowiadającego
 mu miejsca w kodzie MEI. Należy pamiętać, że wprowadzanie zmian w edytorze
 graficznym nie pozwala na zmianę kodu MEI.

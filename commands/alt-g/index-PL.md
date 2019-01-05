@@ -25,7 +25,7 @@ notacji muzycznej. Poniżej przykład działania funkcji:
 	caption="Skrót <span class='keypress'>alt-g</span> otworzy okno z kodem SVG aktualnej strony notacji muzycznej."
 %}
 
-[Tutaj](sample.svg) zobaczysz obraz SVG przedstawiony na przukładzie powyżej
+[Tutaj](sample.svg) zobaczysz obraz SVG przedstawiony na przykładzie powyżej
 po zapisaniu go d pliku.
 Kod SVG można skopiować/wkleić do edytora tekstowego i zapisać
 na dysku twardym. Takie działanie może być przydatne w celu zapisania
@@ -34,15 +34,15 @@ obrazu w artykule lub na stronie internetowej.
 
 ## Konwertowanie notacji muzycznej do formatu obrazu bitmapowego ## 
 
-Wiele programów (jak np. MS Word) nie obsługuje formatu obrazu SVG,
+Wiele programów (jak np. MS Word) nie obsługuje obrazów w formacie SVG,
 więc aby móc je wykorzystać w takich programach, należy je uprzednio
 przekonwertować do pożądanego formatu. Są dwie podstawowe metody zapisywania
-obrazu bitmapowego w VHV: najprosztą metodą jest wykonanie zrzutu
+obrazu bitmapowego w VHV: najprostszą metodą jest wykonanie zrzutu
 ekranu. Sposób wykonania zrzutu ekranu zależy od systemu operacyjnego.
 W systemie MacOS naciśnij <span class="keypress">command-shift-4</span> a
 następnie narysuj zaznaczenie wokół obrazu, których chcesz zapisać.
 Możesz także użyć skrótu <span class="keypress">alt-f</span> aby uzyskać
-niałe tło dla zapisanego obrazu.
+białe tło dla zapisanego obrazu.
 
 {% include image.html
 	file="screenshot.gif"
@@ -65,7 +65,7 @@ importu obrazu SVG w programie GIMP:
 
 Aby uzyskać wysokiej rozdzielczości obraz z pliku SVG ustaw szerokość/wysokość obrazu
 na odpowiednio wysokim poziomie (np. 2000 pikseli szerokości). Poniżej przykład
-obrazu zamiportowanego do GIMPa:
+obrazu zaimportowanego do GIMPa:
 
 {% include image.html
 	file="ingimp.png"
@@ -74,9 +74,9 @@ obrazu zamiportowanego do GIMPa:
 	caption="Okno z opcjami podczas otwierania SVG w programie GIMP."
 %}
 
-Szare tło szachownicy oznacza, że obraz jest przezroczysty. Jest to szzcególnie
+Szare tło szachownicy oznacza, że obraz jest przezroczysty. Jest to szczególnie
 przydatne w przypadku umieszczania obrazka na kolorowym tle. Możesz zapisać
-obraz albo wybrać go i skopiować/wkleić to innego programu, jak mp. MS Word:
+obraz albo wybrać go i skopiować/wkleić do innego programu, jak mp. MS Word:
 
 {% include image.html
 	file="msword.png"
@@ -112,7 +112,7 @@ wyeksportowane do formatu EMF:
 	caption="Ładowanie pliku EMF do MS Word z pliku zapisanego w Inkscape."
 %}
 
-Poniżej umieszczono przykład edytwanego i zapisanego ponownie obrazu SVG ([sample2.svg](sample2.svg)),
+Poniżej umieszczono przykład edytowanego i zapisanego ponownie obrazu SVG ([sample2.svg](sample2.svg)),
 który następnie został użyty w przeglądarce internetowej: 
 
 {% include image.html
