@@ -9,13 +9,13 @@ translation_date: 3 Jan 2019
 last_updated: 12 May 2018
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: polecenia interfejsu widok pliku TSV a CSV
-summary: "Skrót <span class='keypress'>alt-u</span> zmienia widok pomiędzy wersją TSV a CSV pliku Humdrum."
+keywords: polecenia interfejsu widok pliku TSV i CSV
+summary: "Skrót <span class='keypress'>alt-u</span> zmienia widok pomiędzy formatem TSV a CSV pliku Humdrum."
 permalink: /commands/alt-u/index-PL.html
 ---
 
 Komenda <span class="keypress">alt-u</span> zmienia widok pomiędzy
-wersją TSV a CSV pliku Humdrum. Domyślnie pliki Humdrum są wyświetlane
+formatem TSV a CSV pliku Humdrum. Domyślnie pliki Humdrum są wyświetlane
 jako TSV (z tabulatorami jako separatorami kolumn):
 
 {% include image.html
@@ -24,7 +24,7 @@ jako TSV (z tabulatorami jako separatorami kolumn):
 	caption="Dane Humdrum w widoku TSV."
 %}
 
-Po naciśnięciu <span class="keypress">alt-u</span>, dane zostaną
+Po naciśnięciu <span class="keypress">alt-u</span> dane zostaną
 wyświetlone w formacie CSV:
 
 {% include image.html
@@ -44,3 +44,4 @@ Rekordy referencyjne (zielony tekst na powyższym rysunku) mogą zawierać tabul
 które nie są konwertowane na przecinki podczas konwersji do formularza CSV.
 Dzieje się tak dlatego, że znaki te nie są integralną częścią struktury danych Humdrum.
 Tabulatory w komentarzach globalnych również nie zostaną zmienione z tego samego powodu.
+

@@ -20,8 +20,8 @@ pustej linii lokalnego komentarza nad bieżącym wierszem, pod warunkiem, że za
 Dodana lokalna linia komentarza będzie miała taką samą liczbę kolumn, co bieżąca linia.
 
 Po dodaniu pustego wiersza lokalnego komentarza można dodać polecenia formatowania
-(lub użyć go do lokalnych komentarzy). Poniżej znajduje się przykład dodania tekstu w
-partyturze poprzez komentarz lokalny.
+(lub użyć go do tworzenia lokalnych komentarzy). Poniżej znajduje się przykład 
+dodania tekstu w partyturze poprzez komentarz lokalny.
 
 {% include image.html
 	file="textlayout.gif"
@@ -29,3 +29,4 @@ partyturze poprzez komentarz lokalny.
 	max-width="75%"
 	caption="Dodawanie komentarza formatowania po naciśnięciu alt-shift-l."
 %}
+

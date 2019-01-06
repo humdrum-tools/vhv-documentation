@@ -10,7 +10,7 @@ last_updated: 5 Mar 2017
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu edytor vim
-summary: "The <span class='keypress'>alt-v</span> command toggles the vim editing mode."
+summary: "Komenda <span class='keypress'>alt-v</span> przełącza widok pomiędzy trybem podstawowym i trybem vim."
 permalink: /commands/alt-v/index-PL.html
 ---
 
@@ -29,7 +29,7 @@ co jest oznaczone za pomocą jasnożółtego tła:
 	caption-margin-top="-20px"
 %}
 
-Polecenie <span class="keypress">alt-v</span> przełączy edytor do rybu vim,
+Polecenie <span class="keypress">alt-v</span> przełączy edytor do trybu vim,
 co zostanie oznaczone za pomocą zmiany koloru tła (na ciemnoniebieski):
 
 {% include image.html

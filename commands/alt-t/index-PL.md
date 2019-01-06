@@ -17,11 +17,12 @@ permalink: /commands/alt-t/index-PL.html
 ## Zapisywania aktualnie widocznej strony
 
 Naciśnięcie <span class = "keypress"> alt-t </ span> spowoduje pobranie pliku PDF zawierającego aktualnie
-wyświetlaną muzykę na stronę partytury. Jeśli zapis muzyczny jest szerszy niż wyższy, pobrany plik PDF będzie
+wyświetlaną stronę partytury. Jeśli zapis muzyczny jest szerszy niż wyższy, pobrany plik PDF będzie
 w formacie leżącym; w przeciwnym razie plik PDF będzie miał orientację pionową.
 
-Pliki będą zapisywane w miejscu, w którym przeglądarka domyślnie przeglądarka zapisuje pobrane pliki.
-Poniżej demonstracja działania polecenia <span class="keypress">alt-t</span> zapisującego plik pdf i otwarcia do w przeglądarce.
+Pliki będą zapisywane w miejscu, w którym przeglądarka domyślnie zapisuje pobrane pliki.
+Poniżej demonstracja działania polecenia <span class="keypress">alt-t</span> zapisującego 
+plik pdf i otwarcia do w przeglądarce.
 
 {% include image.html
 	file="save-pdf.gif"
@@ -31,10 +32,10 @@ Poniżej demonstracja działania polecenia <span class="keypress">alt-t</span> z
 
 ## Zapisywanie całej partytury do pliku PDF
 
-Pressing <span class="keypress">alt-shift-T</span> will download a PDF
-containing the entire score. The layout in VHV will not be used but
-rather the music will be typeset for letter-sized paper in portrait
-orientation:
+Naciśnięcie <span class="keypress">alt-shift-T</span> pobierze plik PDF
+zawierajacy całą partyturę. Układ partytury z widku edytora graficznego
+nie zostanie w tym przypadku zachowany - nutuy zostaną wydrukowane w 
+orientacji pionowej:
 
 {% include image.html
 	file="save-full-pdf.gif"

@@ -20,11 +20,10 @@ logo "Verovio Humdrum Viewer" w lewym górnym rogu interfejsu VHV:
 {% include image.html
 	file="altb.gif"
 	alt="włącz logo"
-	caption="Wyświetlania/ukrywanie logo w interfejsie VHV."
+	caption="Wyświetlanie/ukrywanie logo w interfejsie VHV."
 %}
 
 Funkcja jest przydatna w przypadku konieczności wyświetlenie długiego tytułu utworu.
-
 
 ## Ukrywanie logo za pomocą adresu URL ##
 
@@ -36,9 +35,7 @@ Logo VHV może zostać ukryte poprzez dodanie do adresu URL `&k=b`:
 	caption="Ukrywanie logo za pomocą adresu URL."
 %}
 
-
 Możesz użyć `?k=b` jeśli w adresie nie pojawia się już znak `?`:
-
 
 {% include image.html
 	file="altb-direct.png"

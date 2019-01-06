@@ -9,14 +9,14 @@ translation_date: 1 Jan 2019
 last_updated: 9 May 2017
 tags: [all, commands]
 sidebar: main_sidebar
-keywords: poleceni interfejsu kasowanie danych
+keywords: polecenia interfejsu kasowanie danych
 summary: "Skrót <span class='keypress'>alt-e</span> kasuje dane w edytorze tekstowym oraz zapis w edytorze graficznym."
 permalink: /commands/alt-e/index-PL.html
 ---
 
 Naciśnięcie skrótu <span class="keypress">alt-e</span> wykasuje dane zarówno w edytorze
 takstowym jak i graficznym. Skrót <span class="keypress">alt-e</span> zastosowany, gdy
-edytor jest pusty pozwoli na przywrócenie danych, jeśli zostały wyjasowane przypadkowo.
+edytor jest pusty pozwoli na przywrócenie danych, jeśli zostały wykasowane przypadkowo.
 
 {% include image.html
 	file="alte.gif"

@@ -16,7 +16,7 @@ permalink: /commands/alt-o/index-PL.html
 
 Naciśnięcie skrótu <span class="keypress">alt-o</span> przełącza widok pomiędzy
 oryginalnymi kluczami, w jakich został zapisany utwór i kluczami współczesnymi w transkrypcji.
-Poniższy przykład ilustryje działanie funkcji:
+Poniższy przykład ilustruje działanie funkcji:
 
 {% include image.html
 	file="original-clefs.gif"
@@ -49,7 +49,7 @@ za pomocą `oclef` informację na temat kluczy, wciśnięcie <span class="keypre
 nie przyniesie żadnego efektu.
 
 Spróbuj zastosować <span class="keypress">alt-o</span> do
-chorałów [Bacha](http://verovio.humdrum.org/?file=chorales/chor074.krn), jak na powyższym przykładzie.
+[chorałów Bacha](http://verovio.humdrum.org/?file=chorales/chor074.krn), jak na powyższym przykładzie.
 
 ## Uwagi dotyczące wdrażania funkcji ##
 
