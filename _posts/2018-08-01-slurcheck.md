@@ -4,7 +4,7 @@ author: Craig Stuart Sapp
 creation_date: 1 Aug 2018
 last_updated: 1 Aug 2018
 categories: data entry
-permalink: news-buffer.html
+permalink: news-slurcheck.html
 sidebar: main_sidebar
 tags: [all, news]
 ---
