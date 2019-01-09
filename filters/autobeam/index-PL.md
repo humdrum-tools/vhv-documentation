@@ -1,24 +1,23 @@
 ---
 title: autobeam filter
-lang: en
+lang: pl en
 ref: filters-autobeam
 author: Craig Stuart Sapp
-translator: 
+translator: Marcin Konik 
 creation_date: 23 Apr 2017
-translation_date: 
+translation_date: 9 Jan 2019
 last_updated: 23 Apr 2017
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"
-keywords: interface commands 
+keywords: polecenia interfejsu 
 summary: 
 permalink: /filters/autobeam/index.html
 ---
 
-The autobeam filter can be used to automatically add beams to notes
-according to the prevailing meter.  Here is an example where the 
-autobeam filter is being applied to the music, which contains one
-measure of 3/4 music and another in 6/8.
+Filtr "autobeam" może zostać użyty w celu dodania belkowania nut
+na podstawie przyjętego metrum. Poniżej znajduje się przykład, na 
+którym pokazano działanie filtra do zapisu w metrum 3/4 oraz 6/8.
 
 {% include verovio.html
 	source="meterchange"
@@ -49,23 +48,12 @@ measure of 3/4 music and another in 6/8.
 *-
 </script>
 
-Try deleting the filter from the above Humdrum data and see what happens.
+Spróbuj usunąć filtr umieszczony powyżej danych Humdrum aby zobaczyć co się stanie.
 
-
-In the VHV editor, you can also type <span class="keypress">alt-c</span>
-to "compile" the filter, which will result in the beam markers being 
-added to the data in the editor.  (The <span class="keypress">alt-c</span>
-command will not work on this page, however).
-
-
-
-
-
-
-
-
-
-
+W edytorze VHV możesz także użyć skrótu <span class="keypress">alt-c</span>
+aby "skompilować" (zastosować) filtr. Spowoduje to, że oznaczenia belek
+zostaną zapisane w kodzie Humdrum. (Skrót <span class="keypress">alt-c</span> 
+zadziała w edytorze, jednak nie na powyższym przykładzie). 
 
 
 
