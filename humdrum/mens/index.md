@@ -28,7 +28,6 @@ exclusive interpretation.
 	tabsize="12"
 	humdrum-min-height="200px"
 %}
-
 <script type="application/json" id="mens">
 **mens
 *I"Contra
@@ -84,7 +83,283 @@ data into `**mens` data.
 
 ## Pitch ##
 
-`**mens` pitch adopts the pitch representation of `**kern` data.
+`**mens` pitch derives its pitch representation from `**kern`.  The letters a&ndash;g
+represent diatonic pitches, with duplicating of letters and change of case controlling
+the octave:
+
+{% include verovio.html
+	source="octave"
+	pageWidth="950"
+	evenNoteSpacing="1"
+	scale="60"
+	tabsize="12"
+	humdrum-min-height="200px"
+%}
+<script type="application/json" id="octave">
+**mens
+*clefF4
+*k[]
+*M2/1
+*met(C|)
+=1-
+SFF
+SF
+Sf
+=-
+*clefC3
+SF
+Sf
+Sff
+=||
+*-
+</script>
+
+
+### Accidentals ###
+
+Accidentals are also similar to `**kern` data:
+
+Symbol | Meaning
+-------|--------
+`-`    | flat sign
+`n`    | natural sign
+`#`    | sharp sign
+
+
+
+{% include verovio.html
+	source="accid"
+	pageWidth="950"
+	evenNoteSpacing="1"
+	scale="60"
+	tabsize="12"
+	humdrum-min-height="200px"
+%}
+<script type="application/json" id="accid">
+**mens
+*clefC3
+*k[]
+*M2/1
+*met(C|)
+=-
+Sc#
+Scn
+SB-
+SBn
+=||
+*-
+</script>
+
+The treatment of accidentals in `**mens` data is subtly different than in
+`**kern` data.  In `**mens` data, accidentals are treated as visual signs by default, 
+while in `**kern` data, they are treated as performance accidentals that may or
+may not be printed accidentals. 
+
+{% include verovio.html
+	source="accid2"
+	pageWidth="950"
+	evenNoteSpacing="1"
+	scale="60"
+	tabsize="12"
+	humdrum-min-height="200px"
+%}
+<script type="application/json" id="accid2">
+**mens
+*clefC3
+*k[]
+*M2/1
+*met(C|)
+=-
+Sc#
+Sc
+Sc#
+Sc#
+=||
+*-
+</script>
+
+Compare to an analogous encoding in `**kern` data, where the second note
+is also a C-natural, but modern conventions for displaying chromatic
+states of notes forces an automatic natural on the note.  And the last
+note has a suppressed sharp since the previous notes set the chromatic
+state for that diatonic pitch to a sharp.
+
+{% include verovio.html
+	source="accid3"
+	pageWidth="950"
+	evenNoteSpacing="1"
+	scale="60"
+	tabsize="12"
+	humdrum-min-height="200px"
+%}
+<script type="application/json" id="accid3">
+**kern
+*clefC3
+*k[]
+*M2/1
+*met(C|)
+=-
+0c#
+0c
+0c#
+0c#
+=||
+*-
+</script>
+
+### Editorial accidentals ###
+
+Editorial accidentals are used to clarify the performance accidentals to be
+applied to the music.  There are four levels of editorial accidentals, which are
+indicated by adding the following characters after an accidental:
+
+Accidental&nbsp;qualifier | Meaning
+--------------------------|--------
+`y`  | The accidental is strongly implied by the music notation.  This typically means that the accidental is derived from the key signature.  
+`yy` | The accidental is weakly implied by the music notation.  This is typically used to indicate the cancellation of a visual accidental.  Roughly equivalent to a cautionary accidental.
+`Y`  | A performance accidental.  The accidental is not directly implied by the music notation, but would be inferred by a performer, such as to create a leading tone before a cadence note.
+`YY` | A editorial intervention due to a suspected scribal error.  There is a suspected missing visual accidental on the note which is missing.
+
+
+Here is a typical use of the `y` qualifier to indicate that a B pitch
+in the music is flat event hough the note does not have a flat in front
+of it since the flat is from the key signature:
+
+{% include verovio.html
+	source="accid4"
+	pageWidth="950"
+	evenNoteSpacing="1"
+	scale="60"
+	tabsize="12"
+	humdrum-min-height="200px"
+%}
+<script type="application/json" id="accid4">
+**mens
+*clefC3
+*k[b-]
+*M2/1
+*met(C|)
+=-
+sF
+sG
+sA
+sB-y
+sc
+sd
+se
+sf
+=||
+*-
+</script>
+
+Such an accidental can be displayed as an editorial accidental above the note
+by placing `*acclev:y` somewhere before the note.  This means that the editorial
+accidental level starts at `y` (and also includes `yy`, `Y`, and `YY` levels
+as well).  By default, only the `YY` level of accidentals will be displayed
+as editorial accidentals.  To also suppress this level of accidental being
+displayed as editorial, use `*Xacclev`.
+
+{% include verovio.html
+	source="accid5"
+	pageWidth="950"
+	evenNoteSpacing="1"
+	scale="60"
+	tabsize="12"
+	humdrum-min-height="200px"
+%}
+<script type="application/json" id="accid5">
+**mens
+*clefC3
+*k[b-]
+*M2/1
+*met(C|)
+*acclev:y
+=-
+sF
+sG
+sA
+sB-y
+sc
+sd
+se
+sf
+=||
+*-
+</script>
+
+Mensuration key signatures only affect the pitches of a particular
+diatonic pitch, unlike modern keys signatures that apply to the diatonic
+pitch class.  An example use of the `yy` qualifier is to caution
+that a pitch should be natural when the key signature has a flat in another
+octave:
+
+{% include verovio.html
+	source="accid6"
+	pageWidth="950"
+	evenNoteSpacing="1"
+	scale="60"
+	tabsize="12"
+	humdrum-min-height="200px"
+%}
+<script type="application/json" id="accid6">
+**mens
+*clefF4
+*k[b-]
+*M2/1
+*met(C|)
+*acclev:yy
+=-
+sBB-y
+sC
+sD
+sE
+sF
+sG
+sA
+sBnyy
+=||
+*-
+</script>
+
+To view this cautionary accidental, either `*acclev:y` or `*acclev:yy` must be used.
+
+
+The `Y` level for accidentals is used to indicate an unwritten accidental that a
+performer would be expected to sing based on performance practice, such as creating
+a leading tone before a cadence:
+
+{% include verovio.html
+	source="accid7"
+	pageWidth="950"
+	evenNoteSpacing="1"
+	scale="60"
+	tabsize="12"
+	humdrum-min-height="200px"
+%}
+<script type="application/json" id="accid7">
+**mens
+*clefC3
+*k[b-]
+*M2/1
+*met(C|)
+=-
+Sd
+sc#Y
+Sd
+=
+*acclev:Y
+Sd
+sc#Y
+Sd
+=||
+*-
+</script>
+
+By default, these accidentals will be hidden in the rendering to graphical notation.
+Use `*acclev:Y` to display these accidentals as editorial ones, or use either of the
+more generous levels `*acclev:yy` or `*acclev:y` which will also show performance
+accidentals as visible editorial ones.
+
 
 ## Rhythm ##
 
@@ -128,7 +403,6 @@ Note rhythms are represented by letters:
 	tabsize="12"
 	humdrum-min-height="280px"
 %}
-
 <script type="application/json" id="rhythms">
 **mens	**mens
 *I"Rests	*I"Notes
@@ -143,7 +417,6 @@ Ur	Uc
 ur	uc
 =||	=||
 *-	*-
-
 </script>
 
 
@@ -236,7 +509,7 @@ Cut-C mensuration.  Here is a table of some of the possible mensurations:
 
 </table>
 
-Try out the above mensruation signs in this example:
+Try out the above mensuration signs in this example:
 
 {% include verovio.html
 	source="mensuration"
