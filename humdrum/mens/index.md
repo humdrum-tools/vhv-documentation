@@ -360,6 +360,98 @@ Use `*acclev:Y` to display these accidentals as editorial ones, or use either of
 more generous levels `*acclev:yy` or `*acclev:y` which will also show performance
 accidentals as visible editorial ones.
 
+## Note stems ##
+
+Note stems are similar to those in `**kern` data.  `/` means stem up and `\` means stem down:
+
+{% include verovio.html
+	source="stem1"
+	pageWidth="950"
+	evenNoteSpacing="1"
+	scale="60"
+	tabsize="12"
+	humdrum-min-height="200px"
+%}
+<script type="application/json" id="stem1">
+**mens
+*clefC3
+*met(C|)
+=-
+Mc/
+Mc\
+=||
+*-
+</script>
+
+### Automatic stem directions ###
+
+In general, up-stems are more common in mensural music, so the `*stem` interpretation
+can be used to set the stems in the music to a fixed direction.  `*stem:/` will force
+stems up on all subsequence notes, while `*stem:\` will force them down.  To allow
+automatic stem directions again, use `*stem:X`:
+
+{% include verovio.html
+	source="stem2"
+	pageWidth="800"
+	evenNoteSpacing="1"
+	scale="60"
+	tabsize="12"
+	humdrum-min-height="200px"
+%}
+<script type="application/json" id="stem2">
+**mens
+*clefC3
+=-
+!LO:TX:b:i:color=skyblue:t=automatic stems
+MF
+MG
+MA
+MB
+Mc
+Md
+Me
+Mf
+Mg
+=-
+*stem:/
+!LO:TX:b:i:color=skyblue:t=forced up
+MF
+MG
+MA
+MB
+Mc
+Md
+Me
+Mf
+Mg
+=-
+*stem:\
+!LO:TX:b:i:color=skyblue:t=forced down
+MF
+MG
+MA
+MB
+Mc
+Md
+Me
+Mf
+Mg
+=-
+*stem:X
+!LO:TX:b:i:color=skyblue:t=automatic again
+MF
+MG
+MA
+MB
+Mc
+Md
+Me
+Mf
+Mg
+=||
+*-
+</script>
+
 
 ## Rhythm ##
 
@@ -528,7 +620,9 @@ Lr
 
 ## Ligatures ##
 
-Ligatures are indicated with angle brackets:
+Ligatures are indicated with square brackets for recta ligatures, and angle brackets for obliqua ligatures.
+Verovio currently does not have obliqua ligatures implemented, and rhtyhmic stems are not implemented
+yet either.
 
 {% include verovio.html
 	source="ligature"
@@ -543,13 +637,15 @@ Ligatures are indicated with angle brackets:
 **mens
 *clefC3
 *met(C|)
-Sic
-&lt;sif
-sie&gt;
-Mid
-Mic
-siB
-Sic
+Sc
+[Sc
+Sd]
+Md/
+Mc
+sB
+[Sc
+Sd
+Se]
 *-
 </script>
 
@@ -560,7 +656,8 @@ Currently ligatures can only be shown in *recta* style.
 
 Barlines behave the same as in `**kern` data.  Currently barlines are required
 in the data in order to break lines of music across multiple systems.  Add a dash
-character (`-`) to the barline to make it invisible.
+character (`-`) to the barline to make it invisible.  Barlines should be placed
+at breve boundaries.
 
 
 ## Coloration ##
