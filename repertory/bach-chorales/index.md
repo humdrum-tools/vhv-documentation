@@ -3,10 +3,10 @@ title: J.S. Bach chorales
 lang: en
 ref: repertory-bach-chorales
 author: Craig Stuart Sapp
-translator: 
+translator:
 keywords: humdrum Bach chorales
 creation_date: 18 Mar 2017
-translation_date: 
+translation_date:
 last_updated: 18 Mar 2017
 verovio: "true"
 tags: [all, repertories]
@@ -36,7 +36,7 @@ fourth edition of the chorales by Breitkopf & Härtel: *371
 vierstimmige Choralgesänge von Johann Sebastian Bach*. 4th ed. by
 Alfred Dörffel. Breitkopf & Härtel, Leipzig [c. 1875]. 178 pp. Plate
 Number: V.A.10. Retypeset c. 1915 as Edition Breitkopf 10. Reprinted
-by Associated Music Publishers, Inc., New York [c. 1940].  
+by Associated Music Publishers, Inc., New York [c. 1940].
 
 Scans of the source edition for the first 50 chorales can be viewed
 by pressing <span class="keypress">alt-p</span> when viewing a
@@ -52,15 +52,15 @@ particular chorale:
 
 See this
 article: [The History of the Breitkopf Collection of J.S. Bach's
-Four-Part Chorales](http://www.bach-cantatas.com/Articles/Breitkopf-History.htm) 
+Four-Part Chorales](http://www.bach-cantatas.com/Articles/Breitkopf-History.htm)
 by Thomas Braatz for more information about the source edition of the
 Bach chorales.
 
 
 ## Original-clef feature ##
 
-The Bach-chorale repertory demonstrates how to encode 
-[original clefs](/commands/alt-o).  Type 
+The Bach-chorale repertory demonstrates how to encode
+[original clefs](/commands/alt-o).  Type
 <span class="keypress">alt-o</span> in VHV to switch between modern and original clefs
 when viewing the chorales:
 
@@ -131,7 +131,7 @@ Here is an example arrangement of the music that more closely matches the origin
 
 ## Grand-staff arrangement ##
 
-The Same Bach chorale data can be viewed in grand-staff layout by 
+The Same Bach chorale data can be viewed in grand-staff layout by
 using this link: [verovio.humdrum.org/?file=chorales&filter=satb2gs](http://verovio.humdrum.org/?file=chorales&filter=satb2gs).
 
 {% include image.html
@@ -145,8 +145,8 @@ using this link: [verovio.humdrum.org/?file=chorales&filter=satb2gs](http://vero
 
 ## Transposed chorales ##
 
-The Bach chorales can also be transposed all to the same tonic pitch 
-in grand-staff layout by 
+The Bach chorales can also be transposed all to the same tonic pitch
+in grand-staff layout by
 adding a transpose filter to the URL: [verovio.humdrum.org/?file=chorales&filter=satb2gs%7ctranspose%20-kc](http://verovio.humdrum.org/?file=chorales&filter=satb2gs%7ctranspose%20-kc).
 
 
@@ -171,7 +171,7 @@ E-flat
 F-sharp
 : [http://verovio.humdrum.org/?file=chorales/chor027.krn&filter=satb2gs%7ctranspose%20-kf%23](http://verovio.humdrum.org/?file=chorales/chor027.krn&filter=satb2gs%7ctranspose%20-kf%23)
 
-Humdrum data shown in the text editor is untransposed (showing the pre-filtered 
+Humdrum data shown in the text editor is untransposed (showing the pre-filtered
 data).  In the following screen shot, notice the music is in F major, but the
 notation is in F-sharp major:
 
@@ -194,11 +194,74 @@ To view the transposed score in the text editor, type
 
 ## Downloading and corrections ##
 
-This digital edition of the J.S. Bach chorales is [available on Github](https://github.com/craigsapp/bach-371-chorales) for download.  Corrections to the edition can 
+This digital edition of the J.S. Bach chorales is [available on Github](https://github.com/craigsapp/bach-371-chorales) for download.  Corrections to the edition can
 be submitted on Github, either as an [issue](https://github.com/craigsapp/bach-371-chorales/issues) (in prose), or preferrably as a [pull request](https://github.com/craigsapp/bach-371-chorales/pulls) (direct corrections to the data files).  The corrections should match the source edition scans (viewed by typing
 <span class='keypress'>alt-p</span> on the first 50 chorales, or an explanation
-should otherwise be submitted with the correction as to why the correction 
+should otherwise be submitted with the correction as to why the correction
 does not match the source scans.
+
+
+## Bach chorale website ##
+
+{% include image.html
+	file="chorales-website.jpg"
+	alt="J.S. Bach chorale website"
+	caption="Website using the Bach chorale digital scores"
+%}
+
+<a target="_blank" href="https://chorales.sapp.org">This
+website</a> demonstrates how to publish scores on the
+web after they are edited with Verovio Humdrum Viewer.
+Source code for the website can be viewed <a target="_blank"
+href="https://github.com/craigsapp/bach-370-chorales/tree/gh-pages">here</a>.
+The chorale website utilizes the <a target="_blank"
+href="https://plugin.humdrum.org">Humdrum notation plugin</a>
+to render notation for the chorales dynamically on the website
+in a manner similar to VHV.  Also check out the <a target="_blank"
+href="https://chorales.sapp.org/typesetter">Typesetter</a> page where you
+can adjust the layout for the choral (controlling the size, spacing,
+parts, measure range and transposition), and then either copy plugin code
+to insert the dynamic notation of a score on your webpage, or download an
+SVG to display on your webpage or insert into a paper edited in Microsoft
+Word, for example.
+
+{% include image.html
+	file="chor273-mm6-7.svg"
+	alt="Measures 6&ndash;7 of chorale no. 273"
+	caption="Measures 6&ndash;7 of chorale no. 273 generated on the typesetter page."
+%}
+
+
+The above SVG image can also be generated dynamcally in a webpage
+using the following code:
+
+```html
+<html>
+<head>
+<title>My Example</title>
+<script src="https://verovio-script.humdrum.org/scripts/verovio-toolkit.js"></script>
+<script src="https://plugin.humdrum.org/scripts/humdrum-notation-plugin.js"></script>
+<script>var vrvToolkit = new verovio.toolkit()</script>
+</head>
+<body>
+<div style="width:590px">
+
+<script>displayHumdrum({
+   source: "chor273-mm6-7",
+   scale: 60,
+   spacingNonLinear: 0.58,
+   filter: "myank -m 6-7 | satb2gs",
+   uri: "github://craigsapp/bach-370-chorales/kern/chor273.krn"
+})</script>
+<script id="chor273-mm6-7" type="text/x-humdrum"></script>
+
+</div>
+</body>
+</html>
+```
+
+Try copy-and-pasting the above HTML code into a file and open it in a 
+web browser to view the same notation as in the figure further above.
 
 
 
