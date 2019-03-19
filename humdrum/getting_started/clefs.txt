@@ -27,13 +27,18 @@ second line up from the bottom of the staff.  The bass clef is
 </script>
 
 Try moving the clefs to different staff lines by changing the number 
-after the clef shape.
+after the clef shape in the above example textbox.
 
-The vocal tenor clef is represented by `*clefGv2`, where the `v`
-means the music should be played an octave lower than the regular
-treble clef.  Try creating a vocal tenor clef in the above interactive
-example. The `v` operator also works on the other clefs (but these
-sorts of clefs are very rare).  Another rare clef is `*clefG^2`
-which is the opposite of `*clefGv2`, where the music is written
-an octave lower than actually sounding pitch for the normal form 
-of the clef.
+A vocal tenor clef is represented by `*clefGv2`, where the `v` means
+the music should be played an octave lower than the regular clef's
+sounding pitches.  Try creating a vocal tenor clef in the above
+interactive example. The `v` operator also works on the other clefs
+(but these sorts of clefs are very rare).  Another rare clef is
+`*clefG^2` which is the opposite of `*clefGv2`, where the music is
+written an octave lower than actually sounding pitch for the normal
+form of the clef.  You can also try to create exotic two-octave
+clefs by doubling the `^^` and `vv` markers.
+
+
+
+

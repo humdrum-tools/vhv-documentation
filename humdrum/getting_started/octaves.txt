@@ -10,6 +10,7 @@ the octave:
 	source="octave1"
 	scale="55"
 	pageWidth="1400"
+	humdrum-min-height="120px"
 %}
 <script type="application/x-humdrum" id="octave1">
 **kern
@@ -26,6 +27,7 @@ Lower octaves are indicated by successive repetitions of upper-case letters:
 	source="octave2"
 	scale="55"
 	pageWidth="1400"
+	humdrum-min-height="120px"
 %}
 <script type="application/x-humdrum" id="octave2">
 **kern
