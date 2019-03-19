@@ -268,6 +268,10 @@ entries:
       output: web, pdf
       url: /humdrum/invisible_rests
 
+    - title: Ligatures
+      output: web, pdf
+      url: /humdrum/ligatures
+
     - title: Ottava marks
       output: web, pdf
       url: /humdrum/ottava_marks
