@@ -29,8 +29,8 @@ ligature bracket in **kern data:
 {% include verovio.html
 	source="ligature2"
 	humdrum-min-height="400px"
-	spacingNonLinear="0.5"
-	spacingLinear="0.1"
+	spacingNonLinear="0.55"
+	spacingLinear="0.20"
 	scale="55"
 	url="https://digi.vatlib.it/view/MSS_Chig.C.VIII.234"
 %}
