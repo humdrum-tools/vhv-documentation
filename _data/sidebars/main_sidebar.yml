@@ -268,7 +268,7 @@ entries:
       output: web, pdf
       url: /humdrum/invisible_rests
 
-    - title: Ligatures
+    - title: Ligatures and coloration
       output: web, pdf
       url: /humdrum/ligatures
 
