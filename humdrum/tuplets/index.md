@@ -7,13 +7,13 @@ translator:
 keywords: humdrum tuplet styling
 creation_date: 18 Mar 2017
 translation_date: 
-last_updated: 18 Mar 2017
+last_updated: 21 Mar 2019
 tags: [all, humdrum ]
 verovio: "true"
 vim: ts=3 ft=javascript
 summary: Visual tuplet numbers can be turned on or off for a spine.
 sidebar: main_sidebar
-permalink: /humdrum/tuplet_styling/index.html
+permalink: /humdrum/tuplets/index.html
 ---
 
 
@@ -43,7 +43,6 @@ the tandem interpretation `*tuplet`.
 	pageWidth="1450"
 	tabsize="16"
 %}
-
 <script type="application/json" id="moonlight">
 **kern	**kern
 *clefF4	*clefG2
@@ -177,4 +176,51 @@ above or below stems/beams.
 {% include warning.html
 	content="A tuplet styling interpretation applies to an entire spine, and cannot be controlled independently within sub-spines."
 %}
+
+
+## Positioning tuplet numbers ##
+
+The tuplet number can be adjusted above or below the staff by using a layout
+command immediately preceding the note that is at the beginning of a 
+tuplet group.
+
+
+{% include verovio.html
+	source="tupplace"
+	scale="55"
+	pageWidth="800"
+	humdrum-min-height="350px"
+	tabsize="8"
+%}
+<script type="application/json" id="tupplace">
+**kern
+*M4/4
+=
+12fL
+12g
+12aJ
+!LO:TUP:b
+12fL
+12g
+12aJ
+12ffL
+12ee
+12ddJ
+!LO:TUP:a
+12ffL
+12ee
+12ddJ
+=
+*-
+</script>
+
+
+
+
+{% include warning.html
+	content="Tuplet number placement is not handled gracefully by subspine yet.  But in theory tuplet numbers should not be adjusted from their default positions in such cases."
+%}
+
+
+
 
