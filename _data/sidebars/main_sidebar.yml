@@ -302,6 +302,20 @@ entries:
 
 ###########################################################################
 
+  - title: Embedded options
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      output: web, pdf
+      url: /options
+
+    - title: Option list
+      output: web, pdf
+      url: /options/list
+
+###########################################################################
+
   - title: myVHV
     output: web, pdf
     folderitems:
