@@ -26,6 +26,9 @@ is a breve or longer).
 32r
 =2
 4%5r
+=3
+*M2/1
+0r
 ==
 *-
 </script>
