@@ -146,20 +146,6 @@ entries:
 
 ###########################################################################
 
-  - title: Repertories
-    output: web, pdf
-    folderitems:
-
-    - title: Introduction
-      output: web, pdf
-      url: /repertory
-
-    - title: Bach chorales
-      output: web, pdf
-      url: /repertory/bach-chorales
-
-###########################################################################
-
   - title: Graphic editing
     output: web, pdf
     folderitems:
@@ -190,61 +176,7 @@ entries:
 
 ###########################################################################
 
-  - title: Filters
-    output: web, pdf
-    folderitems:
-
-    - title: Introduction
-      output: web, pdf
-      url: /filters/index.html
-
-    - title: URL filters
-      output: web, pdf
-      url: /filters/url
-
-    - title: autobeam
-      output: web, pdf
-      url: /filters/autobeam
-
-    - title: cint
-      output: web, pdf
-      url: /filters/cint
-
-    - title: dissonant
-      output: web, pdf
-      url: /filters/dissonant
-
-    - title: extract
-      output: web, pdf
-      url: /filters/extract
-
-    - title: kern2mens
-      output: web, pdf
-      url: /filters/kern2mens
-
-    - title: imitation
-      output: web, pdf
-      url: /filters/imitation
-
-    - title: myank
-      output: web, pdf
-      url: /filters/myank
-
-    - title: satb2gs
-      output: web, pdf
-      url: /filters/satb2gs
-
-    - title: slurcheck
-      output: web, pdf
-      url: /filters/slurcheck
-
-    - title: transpose
-      output: web, pdf
-      url: /filters/transpose
-
-###########################################################################
-
-  - title: Humdrum encoding
+  - title: Music encoding
     output: web, pdf
     folderitems:
 
@@ -299,6 +231,74 @@ entries:
     - title: White menural notation
       output: web, pdf
       url: /humdrum/mens
+
+###########################################################################
+
+  - title: Repertories
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      output: web, pdf
+      url: /repertory
+
+    - title: Bach chorales
+      output: web, pdf
+      url: /repertory/bach-chorales
+
+###########################################################################
+
+  - title: Filters
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      output: web, pdf
+      url: /filters/index.html
+
+    - title: URL filters
+      output: web, pdf
+      url: /filters/url
+
+    - title: autobeam
+      output: web, pdf
+      url: /filters/autobeam
+
+    - title: cint
+      output: web, pdf
+      url: /filters/cint
+
+    - title: dissonant
+      output: web, pdf
+      url: /filters/dissonant
+
+    - title: extract
+      output: web, pdf
+      url: /filters/extract
+
+    - title: kern2mens
+      output: web, pdf
+      url: /filters/kern2mens
+
+    - title: imitation
+      output: web, pdf
+      url: /filters/imitation
+
+    - title: myank
+      output: web, pdf
+      url: /filters/myank
+
+    - title: satb2gs
+      output: web, pdf
+      url: /filters/satb2gs
+
+    - title: slurcheck
+      output: web, pdf
+      url: /filters/slurcheck
+
+    - title: transpose
+      output: web, pdf
+      url: /filters/transpose
 
 ###########################################################################
 
