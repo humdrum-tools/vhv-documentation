@@ -1,0 +1,2 @@
+How to add slashed figures:
+https://github.com/rism-ch/verovio/commit/1bb686552c4d6ce768c497d1070fb27ad7c15822
