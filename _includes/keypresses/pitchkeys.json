@@ -50,6 +50,10 @@
 				{
 					"keys": "<span class='keypress'>5+shift-down</span>",
 					"description": "transpose down a fifth"
+				},
+				{
+					"keys": "<span class='keypress'>esc</span>",
+					"description": "exit note editing"
 				}
 			]	
 		},
