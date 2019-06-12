@@ -39,6 +39,8 @@
 		spacingNonLinear default 0.6
 		spacingStaff     default 3
 		spacingSystem    default 6
+		lyricTopMinMargin default 2.0
+		minLastJustification default 0.80
 
 -->
 
@@ -127,12 +129,14 @@ window.addEventListener("DOMContentLoaded", function() {
 	var pageWidth        = parseInt("{{include.pageWidth}}") || 1350;
 	var scale            = parseFloat("{{include.scale}}") || 40;
 	var border           = parseInt("{{include.border}}") || 50;
+	var minLastJustification  = parseFloat("{{include.minLastJustification}}") || 0.80;
 	var evenNoteSpacing  = parseInt("{{include.evenNoteSpacing}}") || 0;
 	//var page             = parseInt("{{include.page}}") || 1;
 	var spacingLinear    = parseFloat("{{include.spacingLinear}}") || 0.25;
 	var spacingNonLinear = parseFloat("{{include.spacingNonLinear}}") || 0.6;
 	var spacingSystem    = parseInt("{{include.spacingSystem}}") || 3;
 	var spacingStaff     = parseInt("{{include.spacingStaff}}") || 6;
+	var lyricTopMinMargin = parseFloat("{{include.lyricTopMinMargin}}") || 2.0;
 	// var noheader         = !(parseInt("{{include.header}}") || 0);
 	// var nofooter         = !(parseInt("{{include.footer}}") || 0);
 
@@ -150,7 +154,9 @@ window.addEventListener("DOMContentLoaded", function() {
 		spacingStaff:     spacingStaff,
 		spacingSystem:    spacingSystem,
 		spacingNonLinear: spacingNonLinear,
+		minLastJustification: minLastJustification,
 		spacingLinear:    spacingLinear,
+		lyricTopMinMargin: lyricTopMinMargin,
 		evenNoteSpacing:  evenNoteSpacing
 	};
 
