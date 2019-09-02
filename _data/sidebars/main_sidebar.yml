@@ -234,6 +234,16 @@ entries:
 
 ###########################################################################
 
+  - title: Data types
+    output: web, pdf
+    folderitems:
+
+    - title: Overview
+      output: web, pdf
+      url: /datatypes/index.html
+
+###########################################################################
+
   - title: Repertories
     output: web, pdf
     folderitems:
