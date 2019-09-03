@@ -72,3 +72,19 @@ The imitation tool identifies repeated patterns betweeen voices.
 </script>
 
 
+# Imitation summary #
+
+Beneath the first note of each imitation pair, a
+text string gives four pieces of information
+about the imitation.  The four fields are separated
+by colons, and each value is prefixed by a letter:
+
+prefix | parameter meaning
+=======|=================
+n      | A unique enumeration ID for each imitation pairs within the score, starting at 1.
+c      | The count of the number of notes in each sequence of the imitation pair.
+d      | The duration to the other sequence in the imitation pair.  A positive value means that the imitation occurs after the given sequence, while a negative value means that the other imitation sequence comes before the current sequence.
+i      | The interval of the imitation in diatonic steps.  Positive values means that the imitation in the other location is high in pitch than the current sequence, while a negative value means that the paired sequence is at a lower pitch.
+
+
+
