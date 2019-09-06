@@ -242,6 +242,22 @@ entries:
       output: web, pdf
       url: /datatypes/index.html
 
+    - title: cdata
+      output: web, pdf
+      url: /datatypes/cdata/index.html
+
+    - title: color
+      output: web, pdf
+      url: /datatypes/color/index.html
+
+    - title: vdata
+      output: web, pdf
+      url: /datatypes/vdata/index.html
+
+    - title: vvdata
+      output: web, pdf
+      url: /datatypes/vvdata/index.html
+
 ###########################################################################
 
   - title: Repertories
