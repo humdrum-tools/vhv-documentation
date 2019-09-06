@@ -589,7 +589,7 @@ meter), with the first beat of a measure labeled as beat "1".
 *-	*-
 </script>
 
-The `-l` (lower-case L), can be used to enclude the length of the matched sequence:
+The `-l` (lower-case L), can be used to include the length of the matched sequence:
 
 {% include verovio.html
 	source="length"
