@@ -3,21 +3,21 @@ title: "**vdata"
 lang: en
 ref: data types
 author: Craig Stuart Sapp
-translator: 
+translator:
 creation_date: 6 Sep 2019
-translation_date: 
+translation_date:
 last_updated: 6 Sep 2019
 verovio: "true"
-tags: [all, graphic_editing]
+tags: [all, data_type]
 sidebar: main_sidebar
 keywords: data types
 summary: "**vdata: for general text display as lyric text in music notation."
 permalink: /datatypes/vdata/index.html
 ---
 
-The `**vdata` data type (exclusive interpretation) is used to display
-arbitrary textual data in music notation as if it were musical lyrics (which
-normally uses the `**text` data type.  Here is a basic example:
+The `**vdata` data type is used to display arbitrary textual data
+in music notation as if it were musical lyrics.  The name is short
+for "verse-like data".  Here is a basic example:
 
 
 {% include verovio.html
@@ -58,7 +58,7 @@ lyrics to rests and cannot display lyrics where there is no note
 
 The [`**text`](/datatypes/text) data format is used to encode lyrics in Humdrum syntax.  This represention
 maps spaces in the data contents to elision characters, while `**vdata` text preserves the space
-as a space in the rendered notation:
+in the rendered notation:
 
 {% include verovio.html
 	source="space"
@@ -110,10 +110,12 @@ to the staff created by the first `**kern` spine found to the left of the `**vda
 
 ## SVG labeling of data ##
 
-The true data type of the `**vdata` data can be given by adding a hyphen after `**vdata` and then
-the name of the actual data type.  This will cause the text to be labeled with a class name
-based on the data type, and this can be manipulated by CSS or other web technologies, such as to
-highlight different text data types in difference colors:
+The true data type of `**vdata` data can be given by adding a
+hyphen after `**vdata` and then the name of the actual data type.
+This will cause the text in the rendered SVG image of the notation
+to be labeled with a class name based on the data type, and this
+can then be manipulated by CSS, such as to highlight different
+text data types in difference colors:
 
 
 {% include verovio.html
@@ -138,11 +140,12 @@ highlight different text data types in difference colors:
 *-	*-	*-
 </script>
 
-If you inspect the SVG image of the notation, you will see that the text content
-includes class labels based on the data type given after the dash in the `**vdata` spines,
-such as this SVG code for displaying the number 3, where there is a `number` class
-added to the first line (`syl` is a classname added by verovio to indicate that the 
-graphic element is a text syllable):
+If you inspect the SVG image of the notation, you will see that the
+text content includes class labels based on the data type given
+after the dash in the `**vdata` spines, such as this SVG code for
+displaying the number 3, where there is a `number` class added to
+the first line. The other classname, `syl`, is a classname added
+by verovio to indicate that the graphic element is a text syllable:
 
 ```xml
 <g class="syl number" id="syl-L7F3">
