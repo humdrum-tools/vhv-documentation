@@ -33,7 +33,7 @@ table.exinterp td {
 }
 </style>
 
-Standard data types:
+Musical types:
 
 These data types are covered in the [Music encoding](/humdrum/getting_started) section
 of the documentation.
@@ -83,9 +83,20 @@ of the documentation.
 	</td>
 </tr>
 
+<tr>
+	<td>
+		<tt>**recip</tt>
+	</td>
+	<td>
+		This data type functions similarly to a `**kern` spine when parsing the
+		rhythm of Humdrum data, but the spine does not generate a musical staff
+		when the score is rendered to graphical notation.
+	</td>
+</tr>
+
 </table>
 
-Meta data types:
+Graphical data types:
 
 These data types are used to display other types of exclusive
 information data as chord or lyric text data in the music notation.
