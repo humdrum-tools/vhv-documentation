@@ -8,7 +8,7 @@ creation_date: 6 Sep 2019
 translation_date: 
 last_updated: 6 Sep 2019
 verovio: "true"
-tags: [all, graphic_editing]
+tags: [all, data_type]
 sidebar: main_sidebar
 keywords: data types
 summary: "**color: for coloring notes"
@@ -124,8 +124,120 @@ spine controlling the color of notes on two staves:
 </script>
 
 
+## Coloring by tandem interpretation ##
+
+It is also possible to color notes with tandem interpretations:
 
 
+{% include verovio.html
+	source="tandem"
+	humdrum-min-height="425"
+	humdrum-min-width="250"
+	scale="55"
+	tabsize="12"
+	pageWidth="500"
+%}
+<script type="application/x-humdrum" id="tandem">
+**kern
+*M4/4
+=1
+*color:hotpink
+4c
+4g
+*color:chartreuse
+4d
+4f
+=2
+*color:black
+2c
+2g
+=3
+*color:#9900bb44
+4c
+4g
+*color:hsl(184,49%,61%)
+4r
+4c;
+==
+*-
+</script>
+
+
+## Coloring by CSS ##
+
+When downloading an SVG image created in VHV, you can apply CSS styling to the
+SVG to color notes with CSS on your own webpage:
+
+{% include verovio.html
+	source="example"
+	humdrum-min-height="275"
+	scale="55"
+	tabsize="12"
+	pageWidth="500"
+%}
+<script type="application/x-humdrum" id="example">
+**kern
+*M4/4
+=1
+4c
+4d
+4e
+4f
+=2
+4g
+4a
+4b
+4cc
+==
+*-
+</script>
+
+<style>
+	#example-svg g.note.pname-c { fill: red }
+	#example-svg g.note.pname-d { fill: orange }
+	#example-svg g.note.pname-e { fill: gold }
+	#example-svg g.note.pname-f { fill: green }
+	#example-svg g.note.pname-g { fill: lightblue }
+	#example-svg g.note.pname-a { fill: blue }
+	#example-svg g.note.pname-b { fill: violet }
+</style>
+
+Here are the CSS instructions for coloring the above music:
+
+```css
+#example-svg g.note.pname-c { fill: red }
+#example-svg g.note.pname-d { fill: orange }
+#example-svg g.note.pname-e { fill: gold }
+#example-svg g.note.pname-f { fill: green }
+#example-svg g.note.pname-g { fill: lightblue }
+#example-svg g.note.pname-a { fill: blue }
+#example-svg g.note.pname-b { fill: violet }
+```
+
+Each SVG note has pitch information embedded in the class attribute for the note:
+
+```xml
+<g class="note qon-0 qoff-1 pname-c acc-n oct-4 b40c-2 b12c-0 " id="note-L4F1">
+	<use xlink:href="#E0A4" x="1398" y="1620" height="720px" width="720px"></use>
+	<g class="stem" id="stem-0000001056906808">
+		<rect x="1606" y="990" height="608" width="18"></rect>
+	</g>
+	<g class="accid" id="accid-0000001520787168"></g>
+</g>
+```
+
+The class list `note qon-0 qoff-1 pname-c acc-n oct-4 b40c-2 b12c-0` contains various
+types of information about the note:
+
+Parameter | value | meaning
+==========|=======|========
+qon       | 0     | The start time of the note
+qoff      | 1     | The end time of the note
+pname     | c     | The pitchclass name of the note
+acc       | n     | The accidental quality of the note
+oct       | 4     | The octave of the note
+b40c      | 2     | The base-40 pitchclass of the note
+b12c      | 0     | The base-12 pitchclass of the note
 
 
 
