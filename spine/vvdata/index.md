@@ -12,7 +12,7 @@ sidebar: main_sidebar
 keywords: data types
 vim: ts=3 ft=javascript
 summary: "**vvdata: for general text display as multiple lyric text in music notation."
-permalink: /datatypes/vvdata/index.html
+permalink: /spine/vvdata/index.html
 ---
 
 The `**vvdata` data type (exclusive interpretation) is used to display

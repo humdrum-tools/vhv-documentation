@@ -12,7 +12,7 @@ tags: [all, data_type]
 sidebar: main_sidebar
 keywords: data types
 summary: "**vdata: for general text display as lyric text in music notation."
-permalink: /datatypes/vdata/index.html
+permalink: /spine/vdata/index.html
 ---
 
 The `**vdata` data type is used to display arbitrary textual data
@@ -52,11 +52,11 @@ for "verse-like data".  Here is a basic example:
 Notice that the letters `f`, `h` and `k` are missing, since the
 notation renderer, [verovio](https://www.verovio.org), cannot attach
 lyrics to rests and cannot display lyrics where there is no note
-(see the [`**cdata`](/datatypes/cdata) data type for doing that).
+(see the [`**cdata`](/spine/cdata) data type for doing that).
 
 ## Differences from **text ##
 
-The [`**text`](/datatypes/text) data format is used to encode lyrics in Humdrum syntax.  This represention
+The [`**text`](/spine/text) data format is used to encode lyrics in Humdrum syntax.  This represention
 maps spaces in the data contents to elision characters, while `**vdata` text preserves the space
 in the rendered notation:
 

@@ -12,7 +12,7 @@ tags: [all, data_type]
 sidebar: main_sidebar
 keywords: data types
 summary: "**color: for coloring notes"
-permalink: /datatypes/color/index.html
+permalink: /spine/color/index.html
 ---
 
 The `**color` data type is used to set the color of notes in the music notation.

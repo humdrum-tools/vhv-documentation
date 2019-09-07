@@ -12,7 +12,7 @@ sidebar: main_sidebar
 keywords: data types
 vim: ts=3 ft=javascript
 summary: "Data types understood by Verovio Humdrum Viewer."
-permalink: /datatypes/index.html
+permalink: /spine/index.html
 ---
 
 This section of the VHV documentation describes data types that are
@@ -102,7 +102,7 @@ SVG image.
 
 <tr>
 	<td>
-		<tt>**vdata</tt>
+		<tt><a href="/spine/vdata">**vdata</a></tt>
 	</td>
 	<td>
 		This data type is displayed like lyric text.  The main difference
@@ -117,7 +117,7 @@ SVG image.
 
 <tr>
 	<td>
-		<tt>**cdata</tt>
+		<tt><a href="/spine/cdata">**cdata</a></tt>
 	</td>
 	<td>
 		The <tt>**cdata</tt> data type is similar to <tt>**vdata</tt>, but it
@@ -128,7 +128,7 @@ SVG image.
 
 <tr>
 	<td>
-		<tt>**vvdata</tt>
+		<tt><a href="/spine/vvdata">**vvdata</a></tt>
 	</td>
 	<td>
 		The <tt>**vvdata</tt> data type is related to <tt>**vdata</tt>, but instead of
@@ -139,11 +139,20 @@ SVG image.
 
 <tr>
 	<td>
-		<tt>**ccdata</tt>
+		<tt><a href="/spine/ccdata">**ccdata</a></tt>
 	</td>
 	<td>
 		Probably does not exist yet, but will be similar to <tt>vvdata</tt> as a 
 		companion for the <tt>**cdata</tt> data type.
+	</td>
+</tr>
+
+<tr>
+	<td>
+		<tt><a href="/spine/color">**color</a></tt>
+	</td>
+	<td>
+		Used to color notes by staff or system.
 	</td>
 </tr>
 

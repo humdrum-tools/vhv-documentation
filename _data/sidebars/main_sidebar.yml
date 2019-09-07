@@ -240,23 +240,23 @@ entries:
 
     - title: Overview
       output: web, pdf
-      url: /datatypes/index.html
+      url: /spine/index.html
 
     - title: "**cdata"
       output: web, pdf
-      url: /datatypes/cdata/index.html
+      url: /spine/cdata/index.html
 
     - title: "**color"
       output: web, pdf
-      url: /datatypes/color/index.html
+      url: /spine/color/index.html
 
     - title: "**vdata"
       output: web, pdf
-      url: /datatypes/vdata/index.html
+      url: /spine/vdata/index.html
 
     - title: "**vvdata"
       output: web, pdf
-      url: /datatypes/vvdata/index.html
+      url: /spine/vvdata/index.html
 
 ###########################################################################
 
