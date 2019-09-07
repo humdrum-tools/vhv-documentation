@@ -242,19 +242,19 @@ entries:
       output: web, pdf
       url: /datatypes/index.html
 
-    - title: cdata
+    - title: "**cdata"
       output: web, pdf
       url: /datatypes/cdata/index.html
 
-    - title: color
+    - title: "**color"
       output: web, pdf
       url: /datatypes/color/index.html
 
-    - title: vdata
+    - title: "**vdata"
       output: web, pdf
       url: /datatypes/vdata/index.html
 
-    - title: vvdata
+    - title: "**vvdata"
       output: web, pdf
       url: /datatypes/vvdata/index.html
 

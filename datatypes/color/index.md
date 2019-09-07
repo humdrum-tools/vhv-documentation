@@ -1,5 +1,5 @@
 ---
-title: **color
+title: "**color"
 lang: en
 ref: data types
 author: Craig Stuart Sapp

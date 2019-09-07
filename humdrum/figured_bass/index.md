@@ -27,7 +27,7 @@ interpretation.  Here is an example encoding:
 	pageWidth="1000"
 %}
 
-<script type="application/json" id="follia">
+<script type="application/x-humdrum" id="follia">
 !!!COM: Corelli, Arcangelo
 !!!OTL: Follia in D minor, Op. 5, No. 12
 !!!OMD: Adagio
