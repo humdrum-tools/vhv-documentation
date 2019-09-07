@@ -1,5 +1,5 @@
 ---
-title: Description of data types understood by VHV.
+title: Spine types understood by VHV
 lang: en
 ref: data types
 author: Craig Stuart Sapp
@@ -7,7 +7,7 @@ translator:
 creation_date: 2 Sep 2019
 translation_date: 
 last_updated: 2 Sep 2019
-tags: [all, graphic_editing]
+tags: [all]
 sidebar: main_sidebar
 keywords: data types
 vim: ts=3 ft=javascript
