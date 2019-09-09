@@ -33,12 +33,22 @@ table.exinterp td {
 }
 </style>
 
-Musical types:
+Musical spine types:
 
 These data types are covered in the [Music encoding](/humdrum/getting_started) section
 of the documentation.
 
 <table class="exinterp">
+
+<tr>
+	<td>
+		<tt>**dynam</tt>
+	</td>
+	<td>
+		This is data type describes dynamics associated with one or more <tt>**kern</tt>
+		spine found to the left of this sort of spine.
+	</td>
+</tr>
 
 <tr>
 	<td>
@@ -48,16 +58,6 @@ of the documentation.
 		This is the "core" music representation data type, describing in particular
 		pitches and durations for notes, as well as other musical elements such as
 		ties, slurs and articulations.
-	</td>
-</tr>
-
-<tr>
-	<td>
-		<tt>**dynam</tt>
-	</td>
-	<td>
-		This is data type describes dynamics associated with one or more <tt>**kern</tt>
-		spine found to the left of this sort of spine.
 	</td>
 </tr>
 
