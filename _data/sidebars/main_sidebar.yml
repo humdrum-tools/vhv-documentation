@@ -290,6 +290,10 @@ entries:
       output: web, pdf
       url: /filter/autobeam
 
+    - title: chooser
+      output: web, pdf
+      url: /filter/chooser
+
     - title: cint
       output: web, pdf
       url: /filter/cint
@@ -301,6 +305,10 @@ entries:
     - title: extract
       output: web, pdf
       url: /filter/extract
+
+    - title: humdiff
+      output: web, pdf
+      url: /filter/humdiff
 
     - title: kern2mens
       output: web, pdf
