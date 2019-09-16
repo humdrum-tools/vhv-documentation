@@ -1,0 +1,115 @@
+---
+title: composite filter
+lang: en
+ref: filters-composite
+author: Craig Stuart Sapp
+translator: 
+creation_date: 15 Sep 2019
+translation_date: 
+last_updated: 15 Sep 2019
+tags: [all, filters]
+sidebar: main_sidebar
+verovio: "true"
+keywords: interface commands 
+summary: 
+permalink: /filter/composite/index.html
+---
+
+The composite filter can be used to extract the composite rhythm of a multi-voices score or multi-part score.
+
+Here is an example of a score with two parts:
+
+{% include verovio.html
+	source="twoparts"
+	scale="60"
+	pageWidth="1450"
+	humdrum-min-height="200px"
+	tabsize="16"
+%}
+<script type="text/x-humdrum" id="twoparts">
+**kern	**kern
+*M4/4	*M4/4
+4c	2c
+4d	.
+2e	4d
+.	4e
+=	=
+*-	*-
+</script>
+
+Each part has a different rhythm.  The `composite` filter collapses the note attacks of each part into
+a single rhythmic pattern.
+
+{% include verovio.html
+	source="composite"
+	scale="60"
+	pageWidth="1450"
+	humdrum-min-height="200px"
+	tabsize="16"
+%}
+<script type="text/x-humdrum" id="composite">
+!!!filter: composite
+**kern	**kern
+*M4/4	*M4/4
+4c	2c
+4d	.
+2e	4d
+.	4e
+=	=
+*-	*-
+</script>
+
+
+### Placing composite rhythm below system ###
+
+Use the `-p` option to place the composite rhythm staff below the existing musical system:
+
+{% include verovio.html
+	source="prepend"
+	scale="60"
+	pageWidth="1450"
+	humdrum-min-height="200px"
+	tabsize="16"
+%}
+<script type="text/x-humdrum" id="prepend">
+!!!filter: composite -p
+**kern	**kern
+*M4/4	*M4/4
+4c	2c
+4d	.
+2e	4d
+.	4e
+=	=
+*-	*-
+</script>
+
+
+### Placing composite rhythm above system ###
+
+Use the `-a` option to place the composite rhythm staff above the existing musical system:
+
+{% include verovio.html
+	source="append"
+	scale="60"
+	pageWidth="1450"
+	humdrum-min-height="200px"
+	tabsize="16"
+%}
+<script type="text/x-humdrum" id="append">
+!!!filter: composite -a
+**kern	**kern
+*M4/4	*M4/4
+4c	2c
+4d	.
+2e	4d
+.	4e
+=	=
+*-	*-
+</script>
+
+
+
+
+
+
+

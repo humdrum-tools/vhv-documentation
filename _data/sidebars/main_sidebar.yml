@@ -298,6 +298,10 @@ entries:
       output: web, pdf
       url: /filter/cint
 
+    - title: composite
+      output: web, pdf
+      url: /filter/composite
+
     - title: dissonant
       output: web, pdf
       url: /filter/dissonant
