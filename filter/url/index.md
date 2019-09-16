@@ -11,7 +11,7 @@ tags: [all, filters]
 sidebar: main_sidebar
 keywords: url filters
 summary: Filters can be applied via a VHV URL when loading online repertories.  The filter will be applied to all works/movements in the same repertory even when starting at a particular work/movement.
-permalink: /filters/url/index.html
+permalink: /filter/url/index.html
 ---
 
 Here is a plain URL for loading a J.S. Bach chorale:
@@ -34,7 +34,7 @@ http://verovio.humdrum.org/?file=chorales/chor025.krn
 Filters can be included in URLs by adding a parameter called `filter`
 followed by the filter command or a pipeline of filter commands.
 Here is an example of adding the string `&filter=` at the end of
-the URL, and then a filter, such as [myank](/filters/myank) to
+the URL, and then a filter, such as [myank](/filter/myank) to
 extract a range of measures from the full score:
 
 ```

@@ -12,7 +12,7 @@ sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
 summary: 
-permalink: /filters/extract/index.html
+permalink: /filter/extract/index.html
 ---
 
 The extract filter can be used to manipulate spine ordering as well as removing

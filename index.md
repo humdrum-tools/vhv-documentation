@@ -87,11 +87,11 @@ Filters
 : Filters are embedded commands within the musical data that modify the data.
 These are Humdrum data-processing tools that are part of
 [humlib](https://humlib.humdrum.org).  Most of the currently available
-tools are for data processing, such as [extract](/filters/extract),
-which is useful for extracting part; [transpose](/filters/transpose),
-which is useful for transposing scores, and [myank](/filters/myank),
+tools are for data processing, such as [extract](/filter/extract),
+which is useful for extracting part; [transpose](/filter/transpose),
+which is useful for transposing scores, and [myank](/filter/myank),
 which is useful for extracting measures from a full score.  The
-[dissonant](/filters/dissonant) filter is used to analyze the
+[dissonant](/filter/dissonant) filter is used to analyze the
 functions of dissonant notes in Renaissance-era music, and is used
 as a tool in the [Josquin Research Project](http://josquin.stanford.edu).
 
@@ -141,7 +141,7 @@ ul.brief li {
 <dd>Creator</dd>
 <dt>Alex Morgan</dt>
 <dd>
-<ul class="brief"> <li> dissonance labeling algorithms in the <i><a href="/filters/dissonant">dissonant</a></i> filter</li> <li> cadential suspension definitions in the <i><a href="/filters/cint">cint</a></i> filter </li> </ul>
+<ul class="brief"> <li> dissonance labeling algorithms in the <i><a href="/filter/dissonant">dissonant</a></i> filter</li> <li> cadential suspension definitions in the <i><a href="/filter/cint">cint</a></i> filter </li> </ul>
 </dd>
 <dt>Piotr Szyngiera</dt>
 <dd>
@@ -157,7 +157,7 @@ feature requests](
 https://github.com/humdrum-tools/verovio-humdrum-viewer/issues) for
 the VHV web interface.  If you place your own Humdrum file repertory
 onto Github, it can be added to the [repertory list](/repertory)
-and linked up to VHV.  Reports for <a href="/filters">filters</a>
+and linked up to VHV.  Reports for <a href="/filter">filters</a>
 should preferably be submitted to <a
 href="https://github.com/craigsapp/humlib/issues">humlib issues</a>,
 and reports for graphical notation should be submitted to <a
@@ -260,7 +260,7 @@ href="http://josquin.stanford.edu/work/?id=Jos2721">work pages</a> as well
 as a random sample of the JRP score database displayed on the <a target="_blank"
 href="http://josquin.stanford.edu">homepage</a>. In addition, some
 analysis tools are implemented online through VHV.  An example
-of this is the <a href="/filters/dissonant">dissonant</a>
+of this is the <a href="/filter/dissonant">dissonant</a>
 tool.  Work pages, such as <a target="_blank"
 href="http://josquin.stanford.edu/work/?id=Jos2721">this
 one</a> have an analysis tool button labeled "Dissonant"

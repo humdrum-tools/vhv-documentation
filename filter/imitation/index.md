@@ -14,7 +14,7 @@ vim: ft=html
 verovio: "true"
 keywords: "interface commands"
 summary: "The imitation filter identifies modal melodic repetition between voices."
-permalink: /filters/imitation/index.html
+permalink: /filter/imitation/index.html
 ---
 
 The imitation tool identifies repeated interval patterns between

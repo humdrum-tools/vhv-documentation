@@ -12,7 +12,7 @@ sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
 summary: 
-permalink: /filters/myank/index.html
+permalink: /filter/myank/index.html
 ---
 
 The myank filter can be used to extract measures from a full score.

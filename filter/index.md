@@ -12,7 +12,7 @@ sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
 summary: 
-permalink: /filters/index.html
+permalink: /filter/index.html
 ---
 
 

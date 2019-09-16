@@ -12,10 +12,10 @@ sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands
 summary:
-permalink: /filters/kern2mens/index.html
+permalink: /filter/kern2mens/index.html
 ---
 
-The _kern2mens_ [filter](/filters/) can be used to convert `**kern` data (modern western
+The _kern2mens_ [filter](/filter/) can be used to convert `**kern` data (modern western
 music notation) into `**mens` (white mensural notation).
 
 Here is an example use of kern2mens to convert modern notation into
@@ -857,7 +857,7 @@ Polyphonic works can also be converted:
 
 ### Extracting parts from a polyphonic score ###
 
-Use the [extract filter](/filters/extract) to select a part from 
+Use the [extract filter](/filter/extract) to select a part from 
 a `**kern` score before converting it into mensural notation.  
 The following example uses two filters in series:
 

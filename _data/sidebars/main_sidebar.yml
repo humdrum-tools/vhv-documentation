@@ -280,51 +280,51 @@ entries:
 
     - title: Introduction
       output: web, pdf
-      url: /filters/index.html
+      url: /filter/index.html
 
     - title: URL filters
       output: web, pdf
-      url: /filters/url
+      url: /filter/url
 
     - title: autobeam
       output: web, pdf
-      url: /filters/autobeam
+      url: /filter/autobeam
 
     - title: cint
       output: web, pdf
-      url: /filters/cint
+      url: /filter/cint
 
     - title: dissonant
       output: web, pdf
-      url: /filters/dissonant
+      url: /filter/dissonant
 
     - title: extract
       output: web, pdf
-      url: /filters/extract
+      url: /filter/extract
 
     - title: kern2mens
       output: web, pdf
-      url: /filters/kern2mens
+      url: /filter/kern2mens
 
     - title: imitation
       output: web, pdf
-      url: /filters/imitation
+      url: /filter/imitation
 
     - title: myank
       output: web, pdf
-      url: /filters/myank
+      url: /filter/myank
 
     - title: satb2gs
       output: web, pdf
-      url: /filters/satb2gs
+      url: /filter/satb2gs
 
     - title: slurcheck
       output: web, pdf
-      url: /filters/slurcheck
+      url: /filter/slurcheck
 
     - title: transpose
       output: web, pdf
-      url: /filters/transpose
+      url: /filter/transpose
 
 ###########################################################################
 

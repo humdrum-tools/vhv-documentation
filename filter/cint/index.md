@@ -12,7 +12,7 @@ sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
 summary: 
-permalink: /filters/cint/index.html
+permalink: /filter/cint/index.html
 ---
 
 The *cint* filter calculates and processes music based on counterpoint

@@ -14,7 +14,7 @@ datatable: "true"
 keywords: slur checking command
 summary: "The slurcheck filter can be used to automatically identify unbalanced slur
 markers in **kern data spines."
-permalink: /filters/slurcheck/index.html
+permalink: /filter/slurcheck/index.html
 ---
 
 

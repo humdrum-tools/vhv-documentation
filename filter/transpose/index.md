@@ -12,7 +12,7 @@ sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
 summary: 
-permalink: /filters/transpose/index.html
+permalink: /filter/transpose/index.html
 ---
 
 The transpose filter can be used transpose music by a specified

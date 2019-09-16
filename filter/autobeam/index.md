@@ -12,7 +12,7 @@ sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
 summary: 
-permalink: /filters/autobeam/index.html
+permalink: /filter/autobeam/index.html
 ---
 
 The autobeam filter can be used to automatically add beams to notes

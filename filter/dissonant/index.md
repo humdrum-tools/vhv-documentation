@@ -14,7 +14,7 @@ vim: ft=html
 verovio: "true"
 keywords: "interface commands"
 summary: "The dissonant filter labels non-harmonic tones in contrapuntal textures."
-permalink: /filters/dissonant/index.html
+permalink: /filter/dissonant/index.html
 ---
 
 The dissonant filter automatically labels the function of non-harmonic

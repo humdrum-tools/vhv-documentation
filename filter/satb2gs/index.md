@@ -12,7 +12,7 @@ sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
 summary: 
-permalink: /filters/satb2gs/index.html
+permalink: /filter/satb2gs/index.html
 ---
 
 The satb2gs filter can be used convert SATB arrangement of parts into

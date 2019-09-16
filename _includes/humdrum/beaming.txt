@@ -137,7 +137,7 @@ furthest from the noteheads):
 
 ### autobeam filtering ###
 
-The [autobeam filter](/filters/autobeam) can be used to beam notes together automatically, 
+The [autobeam filter](/filter/autobeam) can be used to beam notes together automatically, 
 based on the prevailing time signature:
 
 {% include verovio.html
