@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/chords.html
 ---
 
-{% include_relative chords.txt %}
+{% include humdrum/chords.txt %}
 

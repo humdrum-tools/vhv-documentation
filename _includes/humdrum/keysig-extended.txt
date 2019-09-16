@@ -1,0 +1,132 @@
+
+
+### Key signature cancellation ###
+
+When changing to a new key signature, there are two styles: either with cancellation
+of accidentals in the previous key signature when necessary, or by just displaying the
+new key signature without cancellations, which is more typical of modern notation.
+
+Regardless of which style, when moving to a key signature which has no sharps or flats, cancellation
+accidentals are required, otherwise the new key siganture is not visible in the music notation:
+
+{% include verovio.html
+	humdrum-min-height="350px"
+	source="cancelnatural"
+	scale="40"
+	pageWidth="1300"
+%}
+<script type="application/x-humdrum" id="cancelnatural">
+**kern
+*I"
+*clefG2
+*k[f#c#g#]
+*M4/4
+=1
+1a
+=2||
+*k[]
+1cc
+=3||
+*k[b-e-a-d-]
+1a-
+=4||
+*k[]
+1cc
+==
+*-
+</script>
+
+By default, cancellation signatures will not be used when switching between key signatures
+that contain accidentals:
+
+{% include verovio.html
+	humdrum-min-height="350px"
+	source="nocancel"
+	scale="40"
+	pageWidth="1300"
+%}
+<script type="application/x-humdrum" id="nocancel">
+**kern
+*I"
+*clefG2
+*k[f#c#g#]
+*M4/4
+=1
+1a
+=2||
+*k[b-e-a-]
+1cc
+=3||
+*k[f#c#g#d#a#]
+1b
+=4||
+*k[f#]
+1g
+==
+*-
+</script>
+
+By adding `*kcancel` to a `**kern` spine, cancellation accidentals will be added to the key signatures
+that follow in the spine:
+
+{% include verovio.html
+	humdrum-min-height="355px"
+	source="cancel"
+	scale="40"
+	pageWidth="1300"
+%}
+<script type="application/x-humdrum" id="cancel">
+**kern
+*I"
+*clefG2
+*kcancel
+*k[f#c#g#]
+*M4/4
+=1
+1a
+=2||
+*k[b-e-a-]
+1cc
+=3||
+*k[f#c#g#d#a#]
+1b
+=4||
+*k[f#]
+1g
+==
+*-
+</script>
+
+Adding the tandem interpretation `*Xkcancel` will revert to the default style of no cancellations:
+
+{% include verovio.html
+	humdrum-min-height="375px"
+	source="semicancel"
+	scale="40"
+	pageWidth="1300"
+%}
+<script type="application/x-humdrum" id="semicancel">
+**kern
+*I"
+*clefG2
+*kcancel
+*k[f#c#g#]
+*M4/4
+=1
+1a
+=2||
+*k[b-e-a-]
+1cc
+=3||
+*k[f#c#g#d#a#]
+*Xkcancel
+1b
+=4||
+*k[f#]
+1g
+==
+*-
+</script>
+
+
+

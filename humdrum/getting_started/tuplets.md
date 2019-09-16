@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/tuplets.html
 ---
 
-{% include_relative tuplets.txt %}
+{% include humdrum/tuplets.txt %}
 

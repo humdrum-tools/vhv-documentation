@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/time_signatures.html
 ---
 
-{% include_relative time_signatures.txt %}
+{% include humdrum/time_signatures.txt %}
 

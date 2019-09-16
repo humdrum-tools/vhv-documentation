@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/clefs.html
 ---
 
-{% include_relative clefs.txt %}
+{% include humdrum/clefs.txt %}
 

@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/rests.html
 ---
 
-{% include_relative rests.txt %}
+{% include humdrum/rests.txt %}
 

@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/rhythm.html
 ---
 
-{% include_relative rhythm.txt %}
+{% include humdrum/rhythm.txt %}
 

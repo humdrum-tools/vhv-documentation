@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/accidentals.html
 ---
 
-{% include_relative accidentals.txt %}
+{% include humdrum/accidentals.txt %}
 

@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/transposing.html
 ---
 
-{% include_relative transposing.txt %}
+{% include humdrum/transposing.txt %}
 

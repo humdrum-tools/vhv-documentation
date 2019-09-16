@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/barlines.html
 ---
 
-{% include_relative barlines.txt %}
+{% include humdrum/barlines.txt %}
 

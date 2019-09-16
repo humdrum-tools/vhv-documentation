@@ -1,20 +1,21 @@
 ---
-title: key signatures encoding tutorial
+title: Key signatures
 lang: en
-ref: humdrum-getting_started-key_signatures
+ref: humdrum-key_signatures
 author: Craig Stuart Sapp
 translator: 
 keywords: humdrum encoding tutorial key signatures
-creation_date: 20 Aug 2017
+creation_date: 15 Sep 2019
 translation_date: 
-last_updated: 25 Jan 2018
+last_updated: 15 Sep 2019
 tags: [all, humdrum, getting_started]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: A tutorial on how to encode key signatures in **kern data.
+summary: A description key signature encoding in **kern data.
 sidebar: main_sidebar
-permalink: /humdrum/getting_started/keysig.html
+permalink: /humdrum/keysig/index.html
 ---
 
 {% include humdrum/keysig.txt %}
 
+{% include humdrum/keysig-extended.txt %}

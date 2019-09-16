@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/ties.html
 ---
 
-{% include_relative ties.txt %}
+{% include humdrum/ties.txt %}
 

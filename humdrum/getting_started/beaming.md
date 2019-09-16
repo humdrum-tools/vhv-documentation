@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/beaming.html
 ---
 
-{% include_relative beaming.txt %}
+{% include humdrum/beaming.txt %}
 

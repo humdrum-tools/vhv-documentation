@@ -39,11 +39,6 @@ accidentals in their proper order:
 </script>
 
 
-Verovio cannot handle changing the order of the flats, and key
-signatures such as `*k[F#4F#5]` (showing F-sharps on the lower and
-upper octave in treble clef) cannot be displayed yet.
-
-
 ### Key designation ###
 
 The *key* of the music is different from the *key signature*.

@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/slurs.html
 ---
 
-{% include_relative slurs.txt %}
+{% include humdrum/slurs.txt %}
 
