@@ -17,7 +17,6 @@ accidentals are required, otherwise the new key siganture is not visible in the 
 %}
 <script type="application/x-humdrum" id="cancelnatural">
 **kern
-*I"
 *clefG2
 *k[f#c#g#]
 *M4/4
@@ -47,7 +46,6 @@ that contain accidentals:
 %}
 <script type="application/x-humdrum" id="nocancel">
 **kern
-*I"
 *clefG2
 *k[f#c#g#]
 *M4/4
@@ -77,7 +75,6 @@ that follow in the spine:
 %}
 <script type="application/x-humdrum" id="cancel">
 **kern
-*I"
 *clefG2
 *kcancel
 *k[f#c#g#]
@@ -107,7 +104,6 @@ Adding the tandem interpretation `*Xkcancel` will revert to the default style of
 %}
 <script type="application/x-humdrum" id="semicancel">
 **kern
-*I"
 *clefG2
 *kcancel
 *k[f#c#g#]
@@ -124,6 +120,67 @@ Adding the tandem interpretation `*Xkcancel` will revert to the default style of
 =4||
 *k[f#]
 1g
+==
+*-
+</script>
+
+
+### Editorial accidentals in key signature ###
+
+Place an `X` after an accidental in the key signature string to place
+the accident in square brackets:
+
+{% include verovio.html
+	humdrum-min-height="375px"
+	source="edit"
+	scale="55"
+	pageWidth="1300"
+%}
+<script type="application/x-humdrum" id="edit">
+**kern
+*clefG2
+*k[b-e-X]
+*M4/4
+=1
+4e-
+4f
+4g
+4a
+=
+4b-
+4cc
+4dd
+4ee-
+==
+*-
+</script>
+
+### Non-standard key signatures ###
+
+The ordering of the accidentals in the key-signature string control
+the order in the key signature.  Here is an example of such a case:
+
+{% include verovio.html
+	humdrum-min-height="325px"
+	source="weird"
+	scale="55"
+	pageWidth="1300"
+%}
+<script type="application/x-humdrum" id="weird">
+**kern
+*clefG2
+*k[f-g-a-b-c-d-e-]
+*M4/4
+=1
+4c-
+4d-
+4e-
+4f-
+=2
+4g-
+4a-
+4b-
+4cc-
 ==
 *-
 </script>
