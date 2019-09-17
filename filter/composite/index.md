@@ -108,8 +108,145 @@ Use the `-a` option to place the composite rhythm staff above the existing music
 </script>
 
 
+### Beaming ### 
+
+By default, the rhythms of the composite rhythm will not be beamed:
+
+{% include verovio.html
+	source="nobeam"
+	scale="60"
+	pageWidth="1450"
+	humdrum-min-height="200px"
+	tabsize="16"
+%}
+<script type="text/x-humdrum" id="nobeam">
+!!!filter: composite -p
+**kern	**kern
+*M4/4	*M4/4
+4c	2c
+16dL	.
+8d	.
+16dJ	.
+2e	8dL
+.	8dJ
+.	4e
+=	=
+*-	*-
+</script>
 
 
+Add the `-b` option to beam the notes according to the time signature:
+
+{% include verovio.html
+	source="beam"
+	scale="60"
+	pageWidth="1450"
+	humdrum-min-height="200px"
+	tabsize="16"
+%}
+<script type="text/x-humdrum" id="beam">
+!!!filter: composite -pb
+**kern	**kern
+*M4/4	*M4/4
+4c	2c
+16dL	.
+8d	.
+16dJ	.
+2e	8dL
+.	8dJ
+.	4e
+=	=
+*-	*-
+</script>
 
 
+### Grace notes ### 
+
+Grace notes are included in the composite rhythm analysis:
+
+{% include verovio.html
+	source="grace"
+	scale="60"
+	pageWidth="1450"
+	humdrum-min-height="300px"
+	tabsize="16"
+%}
+<script type="text/x-humdrum" id="grace">
+!!!filter: composite -pb
+**kern	**kern
+*M4/4	*M4/4
+.	16qdL
+.	16qdJ
+4c	2c
+16dL	.
+8d	.
+16dJ	.
+8qf	.
+2e	8dL
+.	8dJ
+.	4e
+=	=
+*-	*-
+</script>
+
+
+but grace notes can be removed from the composite rhythm analysis with the `-G` option:
+
+{% include verovio.html
+	source="nograce"
+	scale="60"
+	pageWidth="1450"
+	humdrum-min-height="300px"
+	tabsize="16"
+%}
+<script type="text/x-humdrum" id="nograce">
+!!!filter: composite -pbG
+**kern	**kern
+*M4/4	*M4/4
+.	16qdL
+.	16qdJ
+4c	2c
+16dL	.
+8d	.
+16dJ	.
+8qf	.
+2e	8dL
+.	8dJ
+.	4e
+=	=
+*-	*-
+</script>
+
+
+### Pitch of composite rhythm notes ###
+
+The `--pitch` option can set the pitch of the composite note.
+
+{% include verovio.html
+	source="pitch"
+	scale="60"
+	pageWidth="1450"
+	humdrum-min-height="325px"
+	humdrum-min-width="300px"
+	tabsize="16"
+%}
+<script type="text/x-humdrum" id="pitch">
+!!!filter: composite -pbG --pitch f#
+**kern	**kern
+*k[f#]	*k[f#]
+*M4/4	*M4/4
+=1	=1
+.	16qdL
+.	16qdJ
+4c	2c
+16dL	.
+8d	.
+16dJ	.
+8qf#	.
+2e	8dL
+.	8dJ
+.	4e
+=	=
+*-	*-
+</script>
 
