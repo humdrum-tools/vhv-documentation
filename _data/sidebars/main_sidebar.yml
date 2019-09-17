@@ -322,6 +322,10 @@ entries:
       output: web, pdf
       url: /filter/imitation
 
+    - title: melisma
+      output: web, pdf
+      url: /filter/melisma
+
     - title: myank
       output: web, pdf
       url: /filter/myank
