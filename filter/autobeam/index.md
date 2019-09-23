@@ -207,7 +207,7 @@ of the beat.
 </script>
 
 
-Note the filter `extract -s 1-$,1-$` which duplicates the original staff
+Note the filter `extract -s 1-$,1-$` which duplicates the original system
 of music. Then the `-k 1` option for autobeam applies beam breaking for syllable
 starts only to the first kern spine (the lowest staff in the system).
 
