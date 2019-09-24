@@ -171,3 +171,47 @@ where the beams on the top staff are removed:
 </script>
 
 
+### Splitting beams by lyrics ###
+
+The `-l` option can be used to break beams so that lyric syllables
+start at the beginning of beam groups.  In the following example, the
+top staff shows the original beaming, and the bottom staff show the 
+beaming after being processed with the `autobeam -l` filter.  This splits
+the second beat's beam into two groups: a single eighth note with `is` underneath,
+and the syllable `so-` starting a new beam group of two notes from the rest
+of the beat.
+
+{% include verovio.html
+	source="lyrics"
+	scale="60"
+	humdrum-min-height="365px"
+	spacingLinear="0.65"
+	pageWidth="1450"
+	tabsize="16"
+%}
+<script type="application/json" id="lyrics">
+**kern	**text
+*M4/4	*
+=1	=1
+8.cL	This_
+16dJ	.
+8fL	is
+16dL	so-
+16eJJ	.
+4d	-me
+4c	text.
+==	==
+*-	*-
+!!!filter: extract -s 1-$,1-$
+!!!filter: autobeam -l -k 1
+</script>
+
+
+Note the filter `extract -s 1-$,1-$` which duplicates the original system
+of music. Then the `-k 1` option for autobeam applies beam breaking for syllable
+starts only to the first kern spine (the lowest staff in the system).
+
+
+
+
+
