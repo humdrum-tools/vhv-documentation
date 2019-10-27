@@ -34,9 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 	output += ": ";
 
+	console.log("FILENAME", filename);
 	var matches = filename.match(/(.*)\.([^.]*)$/);
-	var filebase = matches[1];
-	var extension = matches[2];
+	var filebase = filename;
+	var extension = "";
+	if (matches) {
+		filebase = matches[1];
+		extension = matches[2];
+	}
 	var newname;
 
 	for (i=0; i<newlist.length; i++) {
