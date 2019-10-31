@@ -334,6 +334,10 @@ entries:
       output: web, pdf
       url: /filter/satb2gs
 
+    - title: shed
+      output: web, pdf
+      url: /filter/shed
+
     - title: slurcheck
       output: web, pdf
       url: /filter/slurcheck
