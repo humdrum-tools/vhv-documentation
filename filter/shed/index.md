@@ -61,7 +61,7 @@ Here is an example application of shed to remove articulations from \*\*kern dat
 *-
 </script>
 
-The shed filter requires an open, `-e` containing a 
+The shed filter requires an option, `-e`, containing a 
 regular-expression substitution string similar to sed.  The structure of
 the substitution is like this:
 
