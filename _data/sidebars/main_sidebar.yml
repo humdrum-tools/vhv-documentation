@@ -216,6 +216,10 @@ entries:
       output: web, pdf
       url: /humdrum/slurs
 
+    - title: Ties
+      output: web, pdf
+      url: /humdrum/ties
+
     - title: Tremolos
       output: web, pdf
       url: /humdrum/tremolos

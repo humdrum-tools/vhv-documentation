@@ -7,7 +7,7 @@ translator:
 keywords: humdrum encoding tutorial slurs
 creation_date: 20 Aug 2017
 translation_date: 
-last_updated: 25 Jan 2018
+last_updated: 7 Dec 2019
 tags: [all, humdrum, getting_started]
 verovio: "true"
 vim: ts=3 ft=javascript
@@ -210,7 +210,7 @@ and `n=2` for the second one.
 Slurs can be colored by giving an SVG color as a `color` layout parameter:
 
 {% include verovio.html
-	humdrum-min-height="405px"
+	humdrum-min-height="450px"
 	source="slurcolor"
 	scale="55"
 	pageWidth="1400"
@@ -225,7 +225,9 @@ Slurs can be colored by giving an SVG color as a `color` layout parameter:
 4e
 4f)
 =2
-!LO:S:dot:a:color=#00ff00
+!LO:S:dot
+!LO:S:a
+!LO:S:color=#00ff00
 (4c
 4d
 4e
@@ -238,6 +240,60 @@ Slurs can be colored by giving an SVG color as a `color` layout parameter:
 ==
 *-
 </script>
+
+
+## Phrase marks ##
+
+Phrase marks are similar to slurs but are used to mark analytic phrases
+in `**kern` data.  The default rendering style for phrasing is an open bracket:
+
+
+{% include verovio.html
+	humdrum-min-height="405px"
+	source="phrase"
+	scale="55"
+	pageWidth="1050"
+%}
+<script type="application/x-humdrum" id="phrase">
+**kern
+*M2/4
+*k[b-]
+*F:
+{8.r
+16ccL
+8.ccJ
+16cc
+=1
+4cc
+4dd
+=2
+8.g}L
+{16aJ
+8.b-L
+16ddJ
+=3
+4dd
+4cc
+=4
+8.a}L
+{16ccJ
+8.ccL
+16ffJ
+=5
+4ff
+8.eeL
+16ddJ
+=6
+4ee
+4dd
+=7
+4cc
+4r}
+==
+*-
+</script>
+
+
 
 
 
