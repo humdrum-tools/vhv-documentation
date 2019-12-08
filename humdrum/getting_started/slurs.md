@@ -294,6 +294,102 @@ in `**kern` data.  The default rendering style for phrasing is an open bracket:
 </script>
 
 
+### Phrase rendering styles ###
+
+Phrase marks can be rendered in a variety of styles and colors as illustrated
+below:
+
+
+{% include verovio.html
+	humdrum-min-height="405px"
+	source="phrasestyles"
+	scale="55"
+	pageWidth="1150"
+%}
+<script type="application/x-humdrum" id="phrasestyles">
+**kern
+=1
+!!LO:TX:b:t=bracket styles
+{4c
+4d
+4e
+4f}
+=2
+!LO:P:brack
+{4c
+4d
+4e
+4f}
+=3
+!LO:P:dot
+{4c
+4d
+4e
+4f}
+=4
+!LO:P:dash
+{4c
+4d
+4e
+4f}
+=5
+!LO:P:open
+{4c
+4d
+4e
+4f}
+=6||
+!!LO:TX:b:t=slur styles
+!LO:P:slur
+{4c
+4d
+4e
+4f}
+=7
+!LO:P:slur:dot
+{4c
+4d
+4e
+4f}
+=8
+!LO:P:slur:dash
+{4c
+4d
+4e
+4f}
+=9||
+!!LO:TX:b:t=coloring
+!LO:P:slur:dash:color=dodgerblue
+{4c
+!LO:P:dot:color=red
+{4d
+4e}
+4f}
+=10
+!LO:P:dash:color=dodgerblue
+{4c
+!LO:P:dot:color=red
+&{4d
+4e}
+4f&}
+=11||
+!!LO:TX:b:t=invisble
+{y4c
+4d
+4e
+4f}
+=12
+!LO:P:none
+{4c
+4d
+4e
+4f}
+==
+*-
+</script>
+
+
+
 
 
 
