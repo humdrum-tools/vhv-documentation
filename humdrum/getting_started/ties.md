@@ -7,13 +7,13 @@ translator:
 keywords: humdrum encoding tutorial ties
 creation_date: 20 Aug 2017
 translation_date: 
-last_updated: 25 Jan 2018
+last_updated: 7 Dec 2019
 tags: [all, humdrum, getting_started]
 verovio: "true"
 vim: ts=3 ft=javascript
 summary: How to encode ties in **kern data.
 sidebar: main_sidebar
-permalink: /humdrum/ties.html
+permalink: /humdrum/ties/index.html
 ---
 
 {% include humdrum/ties.txt %}
@@ -151,17 +151,17 @@ to display the tie as dotted or dashed lines.
 **kern
 *M4/4
 =1
-[4f
-4f]
+[4e
+4e]
 !LO:T:dash
-[4f
-4f]
+[4e
+4e]
 =2
-[4f
-4f]
+[4e
+4e]
 !LO:T:dot
-[4f
-4f]
+[4e
+4e]
 ==
 *-
 </script>

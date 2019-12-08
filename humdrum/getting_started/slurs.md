@@ -13,7 +13,7 @@ verovio: "true"
 vim: ts=3 ft=javascript
 summary: How to encode slurs in **kern data.
 sidebar: main_sidebar
-permalink: /humdrum/slurs.html
+permalink: /humdrum/slurs/index.html
 ---
 
 {% include humdrum/slurs.txt %}
@@ -137,7 +137,7 @@ to display the slur as dotted or dashed lines.
 
 
 {% include verovio.html
-	humdrum-min-height="275px"
+	humdrum-min-height="315px"
 	source="slurdashdot"
 	scale="55"
 	pageWidth="1400"
