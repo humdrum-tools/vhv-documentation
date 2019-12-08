@@ -171,7 +171,7 @@ To display the slur as a dotted line, add the parameter `dot`.
 Multiple slurs on notes or chords can be addressed individually
 within the layout parameter by adding the `n` parameter set to the
 number of the slur.  For example, if there are two slurs, then the
-first one can be referenced by adding `n=1` to the layout paramter,
+first one can be referenced by adding `n=1` to the layout parameter,
 and `n=2` for the second one.
 
 {% include verovio.html
@@ -373,7 +373,7 @@ below:
 4e}
 4f&}
 =11||
-!!LO:TX:b:t=invisble
+!!LO:TX:b:t=invisible
 {y4c
 4d
 4e
@@ -389,7 +389,123 @@ below:
 </script>
 
 
+### Default rendering style for phrases marks ###
 
+An RDF record can be used to set the default rendering style of phrase marks.
+
+
+{% include verovio.html
+	humdrum-min-height="405px"
+	source="phrasedefault"
+	scale="55"
+	pageWidth="1050"
+%}
+<script type="application/x-humdrum" id="phrasedefault">
+**kern
+*M2/4
+*k[b-]
+*F:
+{8.r
+16ccL
+8.ccJ
+16cc
+=1
+4cc
+4dd
+=2
+8.g}L
+{16aJ
+8.b-L
+16ddJ
+=3
+4dd
+4cc
+=4
+8.a}L
+{16ccJ
+8.ccL
+16ffJ
+=5
+4ff
+8.eeL
+16ddJ
+=6
+4ee
+4dd
+=7
+4cc
+4r}
+==
+*-
+!!!RDF**kern: { = phrase, brack color=orange
+</script>
+
+Various rendering styles:
+
+| style | result |
+|-------|--------|
+| `brack` | bracket |
+| `dot` | dotted bracket |
+| `dash` | dashed bracket |
+| `none` | no bracket |
+| `open` | open bracket (default) |
+| `slur` | slur |
+| `slur dot` | dotted slur |
+| `slur dash` | dashed slur |
+
+The default phrase style can also be given a color as in the above example.
+
+
+Here is an example of suppressing phrase marks by default, but giving a local
+style to the last phrase:
+
+
+{% include verovio.html
+	humdrum-min-height="405px"
+	source="phrasenone"
+	scale="55"
+	pageWidth="1050"
+%}
+<script type="application/x-humdrum" id="phrasenone">
+**kern
+*M2/4
+*k[b-]
+*F:
+{8.r
+16ccL
+8.ccJ
+16cc
+=1
+4cc
+4dd
+=2
+8.g}L
+{16aJ
+8.b-L
+16ddJ
+=3
+4dd
+4cc
+=4
+8.a}L
+!LO:P:dash:color=violet
+{16ccJ
+8.ccL
+16ffJ
+=5
+4ff
+8.eeL
+16ddJ
+=6
+4ee
+4dd
+=7
+4cc
+4r}
+==
+*-
+!!!RDF**kern: { = phrase, none
+</script>
 
 
 
