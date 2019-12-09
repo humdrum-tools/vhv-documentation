@@ -204,4 +204,67 @@ Ties can be colored by giving an SVG color as a `color` layout parameter:
 *-
 </script>
 
+## Disjunct tied notes ##
+
+Sometimes ties connect two notes that are not directly adjacent.  This
+usually occurs in the case of written out arpeggios.  In such cases, double
+the tie signifier to indicate that the ending note of the tie does not
+directly follow the starting note of the tie.
+
+
+{% include verovio.html
+	humdrum-min-height="175px"
+	source="tiedisjunct"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="tiedisjunct">
+**kern
+*M4/4
+[[16cL
+[[16e
+[[16g
+[16ccJ
+2.c]] 2.e]] 2.g]] 2.cc]
+=
+*-
+</script>
+
+Notice that the last sixteenth note is adjacent to the chord to
+which all of the notes are tied, so it has a regular tie
+signifier.
+
+
+## Cross-staff tied notes ##
+
+Cross-staff ties (in particular for piano music), can be created
+using an RDF record as in the following example:
+
+
+{% include verovio.html
+	humdrum-min-height="250px"
+	source="tielinked"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="tielinked">
+**kern	**kern
+*clefF4	*clefG2
+*M4/4	*M4/4
+=1	=1
+2F	4f
+.	N[4B<
+2BN]	4g
+.	4f
+=	=
+*-	*-
+!!!RDF**kern: N = linked
+!!!RDF**kern: < = below
+</script>
+
+The RDF record `N = linked` is used to create the link between the two
+tie endpoints in the data.  The link signifier must come immediately
+in front of the tie signifiers in the data.  And the matching tie can be
+either adjacent or disjunct on the other staff.
+
 
