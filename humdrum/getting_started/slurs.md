@@ -508,4 +508,37 @@ style to the last phrase:
 </script>
 
 
+## Cross-staff slurs ##
+
+Cross-staff slurs (in particular for piano music), can be created
+using an RDF record as in the following example:
+
+
+{% include verovio.html
+	humdrum-min-height="275px"
+	source="slurlinked"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="slurlinked">
+**kern	**kern
+*clefF4	*clefG2
+*M4/4	*M4/4
+=1	=1
+*^	*^
+N(4F	1FF	4cc/	2f\
+4c	.	4ee/	.
+2A\	.	2gg	4f
+.	.	.	4gN)
+*	*	*v	*v
+*v	*v	*
+=	=
+*-	*-
+!!!RDF**kern: N = linked
+</script>
+
+The RDF record `N = linked` is used to create the link between the two
+slur endpoints in the data.  The link signifier must come immediately
+in front of the tie signifiers in the data.
+
 
