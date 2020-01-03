@@ -162,7 +162,7 @@ option string.
 %}
 
 <script type="application/x-humdrum" id="swapartic">
-!!!filter: shed -e "s/'/ZZZ/g s/~/'/g s/ZZZ/~/g'
+!!!filter: shed -e "s/'/ZZZ/g s/~/'/g s/ZZZ/~/g'"
 **kern
 *M4/4
 =1
@@ -219,11 +219,14 @@ extra times:
 
 ## Substitution scope ##
 
-The main difference between sed and shed, is that shed contains additional
-substitution options to control which component of the Humdrum data is
-to be processed.  Here is a list of the additional operators that can be
-given for substitutions:
+The main difference between sed and shed, is that shed contains
+additional substitution options to control which component of the
+Humdrum data is to be processed.  The default behavior is to change
+only data tokens, ignoring other parts of Humdrum files, such as
+global comments and tandem interpretations.
 
+Here is a list of the additional operators that can be given for
+substitutions within other components of Humdrum files:
 
 Character | Meaning
 ==========|==========
@@ -232,13 +235,15 @@ X         | Only make substitutions in exclusive interpretations.
 L         | Only make substitutions in local comments.
 D         | Only make substitutions in data tokens.
 B         | Only make substitutions in barline tokens.
+R         | Only make substitutions in Reference records.
+K         | Only make substitutions in Reference record keys.
+V         | Only make substitutions in Reference record values.
 
-By default only data tokens will be processed.  If you specify
-another Humdrum component, such as `I` for tandem interpretations,
-the data tokens will no longer be processed.  If you still want
-data tokens to be processed along with another Humdrum component,
-explicitly add the `D` option, such as `ID` to process both tandem
-interpretations and data tokens.
+If you specify another Humdrum component, such as `I` for tandem
+interpretations, the data tokens will no longer be processed.  If
+you still want data tokens to be processed along with another Humdrum
+component, explicitly add the `D` option, such as `ID` to process
+both tandem interpretations and data tokens.
 
 
 ### Convert **kern into **recip ###
@@ -247,7 +252,7 @@ Here is an example use of shed to convert \*\*kern data into
 \*\*recip data:
 
 ```
-!!!filter: shed -e "s/[^\d.%_\][]//gk s/kern/recip/"
+!!!filter: shed -e "s/[^\d.%_\][]//gk s/kern/recip/X"
 ```
 
 ### Labels to colors ###
