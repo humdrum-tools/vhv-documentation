@@ -338,6 +338,10 @@ entries:
       output: web, pdf
       url: /filter/myank
 
+    - title: rid
+      output: web, pdf
+      url: /filter/rid
+
     - title: satb2gs
       output: web, pdf
       url: /filter/satb2gs
