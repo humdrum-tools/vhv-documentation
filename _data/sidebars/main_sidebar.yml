@@ -212,6 +212,10 @@ entries:
       output: web, pdf
       url: /humdrum/pedal_marks
 
+    - title: System
+      output: web, pdf
+      url: /humdrum/system
+
     - title: Tremolos
       output: web, pdf
       url: /humdrum/tremolos
