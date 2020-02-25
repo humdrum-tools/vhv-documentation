@@ -163,6 +163,46 @@ It is also possible to color notes with tandem interpretations:
 </script>
 
 
+## Coloring by RDF marker ##
+
+A simple method of coloring notes is to add an RDF note marker:
+
+{% include verovio.html
+	source="rdf"
+	humdrum-min-height="400"
+	humdrum-min-width="400"
+	scale="55"
+	tabsize="12"
+	pageWidth="500"
+%}
+<script type="application/x-humdrum" id="rdf">
+**kern
+*M4/4
+=1
+4c
+4g@
+4dN
+4fZ
+=2
+2cZ
+2g
+=3
+4cN
+4gN
+4r@
+4c;
+==
+*-
+!!!RDF**kern: @ = marked note
+!!!RDF**kern: N = marked note, color=chartreuse
+!!!RDF**kern: Z = marked note, color="#ccaa11"
+</script>
+
+The default color for a marked note is red.  Adding an SVG color on
+the RDF line will choose another highlighting color.
+
+
+
 ## Coloring by CSS ##
 
 When downloading an SVG image created in VHV, you can apply CSS styling to the

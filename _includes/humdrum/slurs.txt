@@ -65,7 +65,7 @@ crossing slur at a time, additional `&` characters can be added to the
 slur prefix.
 
 {% include verovio.html
-	humdrum-min-height="300px"
+	humdrum-min-height="310px"
 	source="slur3"
 	scale="55"
 	pageWidth="1400"

@@ -173,6 +173,10 @@ href="https://github.com">Github</a> account.
 
 <dl>
 
+<dt><a target="_blank" href="http://bit.ly/vhv-workshop-20191010">UBC October 2019 workshop</a></dt>
+<dd>Workshop on Verovio Humdrum Viewer at the University of British Columbia, 10 Oct 2019.
+</dd>
+
 <dt><a target="_blank" href="http://bit.ly/iaml-2019">IAML July 2019 workshop</a></dt>
 <dd>Workshop on Verovio Humdrum Viewer at the International Association of Music Libraries in Kraków, Poland, 18 July 2019.
 </dd>

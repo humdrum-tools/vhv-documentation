@@ -123,7 +123,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
 	// create the verovio options object:
 	var font             = "{{include.font}}" || "Leipzig";
-	var from             = "{{include.inputFormat}}" || "{{include.from}}" || "auto";
+	var from             = "{{include.inputFormat}}" || "{{include.from}}" || "{{include.format}}" || "auto";
 	var adjustPageHeight = parseInt("{{include.adjustPageHeight}}") || 1;
 	var pageHeight       = parseInt("{{include.pageHeight}}") || 60000;
 	var pageWidth        = parseInt("{{include.pageWidth}}") || 1350;
@@ -144,7 +144,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		adjustPageHeight: adjustPageHeight,
 		font:             font,
 		from:             from,
-		//page:             page,
+		//page:           page,
 		pageHeight:       pageHeight,
 		pageWidth:        pageWidth,
 		humType:          1,

@@ -44,10 +44,14 @@ See the [full description of key signatures](/humdrum/keysig/index.html) for mor
 {% include humdrum/chords.txt %}
 {% include humdrum/rhythm.txt %}
 {% include humdrum/ties.txt %}
+[More information about ties](/humdrum/ties)
+
 {% include humdrum/beaming.txt %}
 {% include humdrum/tuplets.txt %}
 {% include humdrum/rests.txt %}
 {% include humdrum/slurs.txt %}
+[More information about ties](/humdrum/ties)
+
 {% include humdrum/articulations.txt %}
 {% include humdrum/lyrics.txt %}
 {% include humdrum/dynamics.txt %}

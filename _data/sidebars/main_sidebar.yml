@@ -212,9 +212,17 @@ entries:
       output: web, pdf
       url: /humdrum/pedal_marks
 
+    - title: Slurs
+      output: web, pdf
+      url: /humdrum/slurs
+
     - title: System
       output: web, pdf
       url: /humdrum/system
+
+    - title: Ties
+      output: web, pdf
+      url: /humdrum/ties
 
     - title: Tremolos
       output: web, pdf
@@ -334,9 +342,17 @@ entries:
       output: web, pdf
       url: /filter/myank
 
+    - title: rid
+      output: web, pdf
+      url: /filter/rid
+
     - title: satb2gs
       output: web, pdf
       url: /filter/satb2gs
+
+    - title: shed
+      output: web, pdf
+      url: /filter/shed
 
     - title: slurcheck
       output: web, pdf
