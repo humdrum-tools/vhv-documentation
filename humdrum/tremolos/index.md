@@ -139,6 +139,7 @@ Tremolos also work with beamed chord notes
 *-
 </script>
 
+## Fingered tremolos ##
 
 The `*tremolo` interpretation can also reduce alternating notes into
 tremolos:
@@ -212,7 +213,63 @@ Two-note tremolos also work with chords:
 
 
 
+## Removing tremolos ##
+
+Tremolos can be removed from notation rendering by using the
+[shed](/filter/shed) filter:
 
 
+{% include verovio.html
+	source="remove1"
+	humdrum-min-width="310px"
+	humdrum-min-height="320px"
+	scale="75"
+%}
+<script type="application/json" id="remove1">
+**kern
+*M3/4
+*tremolo
+16eLL
+16g
+16e
+16gJJ
+16e 16g 16bLL
+16g 16b 16dd
+16e 16g 16b
+16g 16b 16ddJJ
+16eLL
+16g 16b 16dd
+16e
+16g 16b 16ddJJ
+=
+*-
+</script>
+
+{% include verovio.html
+	source="remove2"
+	humdrum-min-width="310px"
+	humdrum-min-height="320px"
+	scale="75"
+%}
+<script type="application/json" id="remove2">
+!!!filter: shed -e 's/^X?tremolo$//I'
+**kern
+*M3/4
+*tremolo
+16eLL
+16g
+16e
+16gJJ
+16e 16g 16bLL
+16g 16b 16dd
+16e 16g 16b
+16g 16b 16ddJJ
+16eLL
+16g 16b 16dd
+16e
+16g 16b 16ddJJ
+=
+*-
+</script>
 
 
