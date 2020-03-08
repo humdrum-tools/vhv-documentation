@@ -242,6 +242,76 @@ Examples of mixed-rhythm beat repetitions:
 </script>
 
 
+## Removing repetition symbols ##
+
+If you want to switch display styles from repetition symbols
+to fully written-out music, you can use the
+[shed](/filter/shed) filter to remove the `*rep` markers before
+printing:
+
+
+{% include verovio.html
+	source="remove"
+	humdrum-min-width="280px"
+	scale="75"
+%}
+<script type="application/json" id="remove">
+**kern
+*M4/4
+=1
+16cLL
+16e
+16g
+16eJJ
+*rep
+16cLL
+16e
+16g
+16eJJ
+*Xrep
+*rep
+16cLL
+16e
+16g
+16eJJ
+*Xrep
+=
+*-
+</script>
+
+{% include verovio.html
+	source="remove2"
+	humdrum-min-width="280px"
+	scale="75"
+%}
+<script type="application/json" id="remove2">
+!!!filter: shed -e 's/^X?rep$//I'
+**kern
+*M4/4
+=1
+16cLL
+16e
+16g
+16eJJ
+*rep
+16cLL
+16e
+16g
+16eJJ
+*Xrep
+*rep
+16cLL
+16e
+16g
+16eJJ
+*Xrep
+=
+*-
+</script>
+
+
+
+
 
 ## Error checking ##
 
