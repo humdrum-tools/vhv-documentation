@@ -29,6 +29,7 @@ be converted into a tremolo.
 <script type="application/json" id="tremolo">
 **kern
 *M3/4
+=1
 16eLL
 16e
 16e
@@ -42,6 +43,14 @@ be converted into a tremolo.
 16f
 16e
 16eJJ
+=2
+8fL
+8f
+8f
+8f
+8f
+8fJ
+*Xtremolo
 =
 *-
 </script>
