@@ -220,6 +220,10 @@ entries:
       output: web, pdf
       url: /humdrum/slurs
 
+    - title: System
+      output: web, pdf
+      url: /humdrum/system
+
     - title: Ties
       output: web, pdf
       url: /humdrum/ties
