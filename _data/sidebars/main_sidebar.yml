@@ -212,6 +212,10 @@ entries:
       output: web, pdf
       url: /humdrum/pedal_marks
 
+    - title: Repetition
+      output: web, pdf
+      url: /humdrum/repetition-symbols
+
     - title: Slurs
       output: web, pdf
       url: /humdrum/slurs
