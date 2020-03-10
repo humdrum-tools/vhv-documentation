@@ -259,7 +259,7 @@ Here is an example of removing the bracket as well as the barring:
 
 
 
-### Grand staff name ###
+## Grand staff name ##
 
 There are several methods for giving a label to the grand staff. The first method is
 to add `*part` markers in each spine followed by matching non-zero integers.
