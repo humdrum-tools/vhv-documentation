@@ -52,27 +52,6 @@ the left, and they will update as you type on the right):
 </script>
 
 
-### Grand staff name ###
-
-For the grand staff, there are two methods of giving a name; both involve adding `*part` markers 
-in each spine followed by matching non-zero integers.
-
-{% include verovio.html
-	source="piano"
-	humdrum-min-width="200"
-	tabsize="12"
-%}
-<script type="application/json" id="piano">
-**kern	**kern
-*part1	*part1
-*I"Piano	*
-*M4/4	*M4/4
-=	=
-1CC	1f
-=	=
-*-	*-
-</script>
-
 
 ## Staff abbreviations ##
 
@@ -277,5 +256,53 @@ Here is an example of removing the bracket as well as the barring:
 *-	*-	*-	*-
 !!!system-decoration: *
 </script>
+
+
+
+### Grand staff name ###
+
+There are several methods for giving a label to the grand staff. The first method is
+to add `*part` markers in each spine followed by matching non-zero integers.
+
+{% include verovio.html
+	source="piano"
+	humdrum-min-width="200"
+	tabsize="12"
+%}
+<script type="application/json" id="piano">
+**kern	**kern
+*part1	*part1
+*I"Piano	*
+*M4/4	*M4/4
+=	=
+1CC	1f
+=	=
+*-	*-
+</script>
+
+Another method is to use group labels, which start with `*I""`,
+rather than part labels, which start with `*I"`.  This also has to
+be in coordination with `*group` markers indicating the staves that
+should be grouped together:
+
+{% include verovio.html
+	source="piano2"
+	humdrum-min-width="200"
+	tabsize="12"
+%}
+<script type="application/json" id="piano2">
+**kern	**kern
+*group1	*group1
+*I""Piano	*
+*M4/4	*M4/4
+=	=
+1CC	1f
+=	=
+*-	*-
+</script>
+
+
+
+
 
 
