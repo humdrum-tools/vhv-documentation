@@ -302,7 +302,30 @@ should be grouped together:
 </script>
 
 
+## Instrument class grouping ##
 
+Instrument class tandem interpretations can be used in an equivalent manner to
+`*group#` interpretations.  Here is an example:
+
+{% include verovio.html
+	source="ic"
+	humdrum-min-width="600"
+	humdrum-max-height="250"
+	tabsize="12"
+%}
+<script type="application/json" id="ic">
+**kern	**kern	**kern	**kern	**kern	**kern	**kern	**kern	**kern
+*staff9	*staff8	*staff7	*staff6	*staff5	*staff4	*staff3	*staff2	*staff1
+*ICstr	*ICstr	*ICstr	*ICstr	*ICbras	*ICbras	*ICww	*ICww	*ICww	
+*I"Cello	*I"Viola	*I"Violin 2	*I"Violin 1	*I"Trombone	*I"Trumpet	*I"Bassoon	*I"Oboe	*I"Flute
+*IclefF4	*IclefC3	*IclefG2	*IclefG2	*IclefF4	*IclefG2	*IclefF4	*IclefG2	*IclefG2
+*M4/4	*M4/4	*M4/4	*M4/4	*M4/4	*M4/4	*M4/4	*M4/4	*M4/4
+=	=	=	=	=	=	=	=	=
+1CC	1c	1cc	1ccc	1C	1cc	1C	1cc	1ccc
+=	=	=	=	=	=	=	=	=
+*-	*-	*-	*-	*-	*-	*-	*-	*-
+!!!system-decoration: [(ww)][(bras)][(str)]
+</script>
 
 
 
