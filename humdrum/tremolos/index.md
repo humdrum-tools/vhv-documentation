@@ -222,9 +222,9 @@ Two-note tremolos also work with chords:
 
 
 
-## Removing tremolos ##
+## Disabling tremolos ##
 
-Tremolos can be removed from notation rendering by using the
+Tremolos can be disabled from notation rendering by using the
 [shed](/filter/shed) filter:
 
 
@@ -277,6 +277,181 @@ Tremolos can be removed from notation rendering by using the
 16g 16b 16dd
 16e
 16g 16b 16ddJJ
+=
+*-
+</script>
+
+
+## Tremolo filter ##
+
+The tremolo filter can be used to add tremolo notes to a Humdrum
+score that does not have expanded tremolos.  To expand a single
+note into a tremolo, add the duration of the tremolo surrounded by
+`@` markers after the note token(s):
+
+{% include verovio.html
+	source="tremolo1"
+	humdrum-min-width="310px"
+	humdrum-min-height="320px"
+	scale="75"
+%}
+<script type="application/json" id="tremolo1">
+!!!filter: tremolo
+**kern
+*clefG2
+*M4/4
+=1
+1c@16@
+=2
+2d@8@
+2e@32@
+=
+*-
+</script>
+
+Scores should not be stored in compressed tremolo format, as the
+`@` encoding is only intended to add tremolos to the score using
+the tremolo filter.  Here is the result of compiling the filter:
+
+{% include verovio.html
+	source="tremolo1b"
+	humdrum-min-width="310px"
+	humdrum-min-height="320px"
+	scale="75"
+%}
+<script type="application/json" id="tremolo1b">
+!!!Xfilter: tremolo
+**kern
+*clefG2
+*M4/4
+=1
+*tremolo
+16cLL
+16c
+16c
+16c
+16c
+16c
+16c
+16c
+16c
+16c
+16c
+16c
+16c
+16c
+16c
+16cJJ
+=2
+8dL
+8d
+8d
+8dJ
+32eLLL
+32e
+32e
+32e
+32e
+32e
+32e
+32e
+32e
+32e
+32e
+32e
+32e
+32e
+32e
+32eJJJ
+*Xtremolo
+=
+*-
+</script>
+
+
+Two-note tremolos are encoded in a similar manner.  Place the
+duration for the tremolo only on the first note of a two-note pair,
+surrounded with two `@@` characters rather than one.  Each note of
+the pair should posses one-half of the total duration of the tremolo.
+
+{% include verovio.html
+	source="tremolo2"
+	humdrum-min-width="310px"
+	humdrum-min-height="320px"
+	scale="75"
+%}
+<script type="application/json" id="tremolo2">
+!!!filter: tremolo
+**kern
+*clefG2
+*M4/4
+=1
+2c@@16@@
+2d
+=2
+4d@@8@@L
+4eJ
+4e@@32@@L
+4fJ
+=
+*-
+</script>
+
+
+
+The result of compiling the filter:
+
+{% include verovio.html
+	source="tremolo2b"
+	humdrum-min-width="310px"
+	humdrum-min-height="320px"
+	scale="75"
+%}
+<script type="application/json" id="tremolo2b">
+!!!Xfilter: tremolo
+**kern
+*clefG2
+*M4/4
+=1
+*tremolo
+16cLL
+16d
+16c
+16d
+16c
+16d
+16c
+16d
+16c
+16d
+16c
+16d
+16c
+16d
+16c
+16dJJ
+=2
+8dL
+8e
+8d
+8eJ
+32eLLL
+32f
+32e
+32f
+32e
+32f
+32e
+32f
+32e
+32f
+32e
+32f
+32e
+32f
+32e
+32fJJJ
+*Xtremolo
 =
 *-
 </script>
