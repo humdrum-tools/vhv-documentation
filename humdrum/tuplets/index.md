@@ -169,13 +169,73 @@ the tandem interpretation `*tuplet`.
 Try moving or adding `*tuplet`/`*Xtuplet` interpretations in the above 
 Humdrum data to see how this affects the music notation on the right.
 
-In the future, other parameters will probably be added to the styling 
-interpretation, such as whether or not to display the tuplet numbers 
-above or below stems/beams.
-
 {% include warning.html
 	content="A tuplet styling interpretation applies to an entire spine, and cannot be controlled independently within sub-spines."
 %}
+
+
+## Tuplet-styling with MusicXML import ##
+
+The `*tuplet`/`*Xtuplet` interpretations can be extracted from MusicXML data when converting into
+Humdrum data.  Attach any text expression starting with a `*` to a note or rest, and it will be inserted
+a tandem interpretation before the note.   Below is an example of editing music in MuseScore, where
+tuplet numbers are turned off and the on again:
+
+{% include image.html
+	file="musescore-tuplet.png"
+	alt="Adding tuplet interpretations in MuseScore"
+	max-width="100%"
+	caption="Adding text expressions to control tuplet number display style in MuseScore."
+%}
+
+This <a target='_blank' href='tuplet.musicxml'>MusicXML file</a> dragged-and-dropped into 
+[VHV](https://verovio.humdrum.org) will produce the following Humdrum data that preserves 
+embedded tandem interpretations controlling the tuplet number styling.
+
+{% include verovio.html
+	source="musescore-tuplet"
+	scale="45"
+	pageWidth="1200"
+	humdrum-min-height="500px"
+	tabsize="8"
+%}
+<script type="application/json" id="musescore-tuplet">
+**kern
+*clefG2
+*k[]
+*M4/4
+=1
+12ccL
+12dd
+12ccJ
+12ddL
+12cc
+12ddJ
+*Xtuplet
+12ddL
+12ee
+12ddJ
+12ccL
+12dd
+12ccJ
+=2
+12ddL
+12cc
+12ddJ
+*tuplet
+12ccL
+12dd
+12ccJ
+12ddL
+12cc
+12ddJ
+12ccL
+12ee
+12ddJ
+==
+*-
+</script>
+
 
 
 ## Positioning tuplet numbers ##
