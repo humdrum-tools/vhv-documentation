@@ -66,7 +66,7 @@ that start with an asterisk (`*`) into tandem interpretations in
 the Humdrum data.  Attach the text expression to the note which
 should follow immediately after the tandem interpretation.  Here
 is an example of embedding an `*Xtuplet` interpretation to disable
-display of tuplet numbers, and and later `*tuplet` to turn them
+display of tuplet numbers, and later `*tuplet` to turn them
 back on:
 
 
@@ -124,6 +124,35 @@ the embedded tandem interpretations controlling tuplet number styling.
 ==
 *-
 </script>
+
+### Hiding Humdrum markup text ###
+
+If you do not want to show the Humdrum markup text on PDF output from a music editor,
+you can make the text invisible in most editors.  Here is an example of how to make
+the text invisible in MuseScore: click on the text and open the inspector panel and then
+uncheck the _Visibility_ checkbox:
+
+{% include image.html
+	file="musescore-visibility.png"
+	alt="Making text invisible inMuseScore"
+	max-width="100%"
+	caption="Making text expressions invisivle in MuseScore."
+%}
+
+Here is the resulting PDF output from MuseScore, where the Humdrum markup is not visible:
+
+{% include image.html
+	file="musescore-pdf.png"
+	alt="Making text invisible inMuseScore"
+	max-width="100%"
+	caption="Making text expressions invisivle in MuseScore."
+%}
+
+In MuseScore, you can also hide the invisible text in the editor by unselecting
+the menu item  View&rarr;Show Invisible.
+
+
+### Another example ###
 
 
 Here is another example that embeds note-coloring markers in MuseScore:
