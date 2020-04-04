@@ -309,8 +309,8 @@ Instrument class tandem interpretations can be used in an equivalent manner to
 
 {% include verovio.html
 	source="ic"
-	humdrum-min-width="600"
-	humdrum-max-height="250"
+	humdrum-min-width="500"
+	humdrum-max-height="240"
 	tabsize="12"
 %}
 <script type="application/json" id="ic">
@@ -326,6 +326,38 @@ Instrument class tandem interpretations can be used in an equivalent manner to
 *-	*-	*-	*-	*-	*-	*-	*-	*-
 !!!system-decoration: [(ww)][(bras)][(str)]
 </script>
+
+## Undecorated grouping ##
+
+Here is an example of giving no decoration to a group by using angle brackets (`<>`) in the
+system decoration string:
+
+{% include verovio.html
+	source="nodeco"
+	humdrum-min-width="500"
+	humdrum-min-height="340"
+	tabsize="12"
+%}
+<script type="application/json" id="nodeco">
+**kern	**kern	**kern	**kern	**kern
+*	*	*	*group1	*group1
+*	*	*	*I""Tenori	*I""Tenori
+*part4	*part4	*part3	*part2	*part1
+*I"Organo	*I"Organo	*I"Basso	*	*
+*I'Org	*I'Org	*I'B	*I'T	*I'T
+*staff5	*staff4	*staff3	*staff2	*staff1
+*clefF4	*clefG2	*clefF4	*clefC4	*clefC4
+*k[b-]	*k[b-]	*k[b-]	*k[b-]	*k[b-]
+*M3/4	*M3/4	*M3/4	*M3/4	*M3/4
+=1	=1	=1	=1	=1
+2.FF	2.a 2.ff	4.F	4.A	4.f
+.	.	8F	8A	8f
+.	.	4F	4A	4f
+=	=	=	=	=
+*-	*-	*-	*-	*-
+!!!system-decoration: &lt;g1&gt;,p3,{(p4)}
+</script>
+
 
 
 
