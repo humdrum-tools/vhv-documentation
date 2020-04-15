@@ -8,26 +8,37 @@ in the notation is the right-most spine.
 {% include verovio.html
 	humdrum-min-height="360px"
 	source="staves1"
-	scale="55"
+	scale="50"
 	pageWidth="1400"
 %}
 <script type="application/x-humdrum" id="staves1">
+
 **kern	**kern
 *M4/4	*M4/4
 =1	=1
 *	*^
-1E	2cc	4a
+1E	1cc	4a
 .	.	4g
-*	*v	*v
-.	4f
-.	4e
+*	*	*^
+.	.	4f/	2c\
+.	.	4e/	.
+*	*v	*v	*v
 =2	=2
-*	*^
-1E	2cc	4a
-.	.	4g
-.	2ryy	4f
-.	.	4e
-*	*v	*v
+*^	*^
+*	*	*	*^
+1E	4r	4r	2gg	4d/
+.	2EE	2.ccc	.	4g
+.	.	.	2ryy	4f
+.	8FFL	.	.	4e
+.	8GGJ	.	.	.
+*	*	*v	*v	*v
+*v	*v	*
+=2	=2
+1AA;	1f;
 =	=
 *-	*-
+
 </script>
+
+
+
