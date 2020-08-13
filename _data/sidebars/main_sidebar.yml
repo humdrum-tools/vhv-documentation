@@ -358,6 +358,10 @@ entries:
       output: web, pdf
       url: /filter/shed
 
+    - title: sic
+      output: web, pdf
+      url: /filter/sic
+
     - title: slurcheck
       output: web, pdf
       url: /filter/slurcheck
