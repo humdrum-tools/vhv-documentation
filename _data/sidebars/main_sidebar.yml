@@ -50,6 +50,10 @@ entries:
       output: web, pdf
       url: /interface/help_menu
 
+    - title: Toolbar
+      output: web, pdf
+      url: /interface/toolbar
+
     - title: Load/Save Humdrum data
       output: web, pdf
       url: /interface/humdrum
