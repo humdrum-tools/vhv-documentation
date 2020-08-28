@@ -54,6 +54,10 @@ entries:
       output: web, pdf
       url: /interface/toolbar
 
+    - title: Searching
+      output: web, pdf
+      url: /interface/searching
+
     - title: Load/Save Humdrum data
       output: web, pdf
       url: /interface/humdrum
