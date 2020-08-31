@@ -1,0 +1,59 @@
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	transposition
+@FILTER:	transpose -k d
+@FILE:		mozart/sonatas/sonata01-1.krn
+@COMPILE:
+@DESCRIPTION:
+	Transpose music to the key of D (major or minor depending
+	on the starting mode).  A key designation must be present in
+	the file to use the -k option, such as *C: for C major.  A
+	transposition interval will be calculated from the old key
+	to the new key, moving in the direction of the nearest tonic.
+	For example when transposing from C major to G major, the music
+	will be transposed down a fourth instead of up a fifth.
+@@END: EXAMPLE
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	transposition
+@FILTER:	transpose -t m6
+@FILE:		mozart/sonatas/sonata01-1.krn
+@COMPILE:
+@DESCRIPTION:
+	Transpose music using a diatonic interval with chromatic
+	inflection. In this case "m6" means up a minor sixth.  "M" means
+	major, "P" perfect, "d" diminished, and "a" augmented.
+@@END: EXAMPLE
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	transposition
+@FILTER:	transpose -t -M3
+@FILE:		mozart/sonatas/sonata01-1.krn
+@COMPILE:
+@DESCRIPTION:
+	Transpose music down a major third.
+@@END: EXAMPLE
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	transposition
+@FILTER:	transpose -b 11
+@FILE:		mozart/sonatas/sonata01-1.krn
+@COMPILE:
+@DESCRIPTION:
+	Transpose music using a base-40 interval.  Major seconds are "5"
+	and minor seconds are "6", so a minor third is 5+6 = 11.  Other
+	common intervals are the perfect fifth (23) and the octave (40).
+@@END: EXAMPLE
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	transposition
+@FILTER:	transpose -b -23
+@FILE:		mozart/sonatas/sonata01-1.krn
+@COMPILE:
+@DESCRIPTION:
+	Transpose music using a base-40 interval downwards.
+@@END: EXAMPLE
+
+
+

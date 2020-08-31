@@ -306,6 +306,10 @@ entries:
       output: web, pdf
       url: /filter/index.html
 
+    - title: Examples
+      output: web, pdf
+      url: /filter/examples
+
     - title: URL filters
       output: web, pdf
       url: /filter/url
