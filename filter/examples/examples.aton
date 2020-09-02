@@ -1,5 +1,10 @@
 
 
+
+@ TRANSPOSITION @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
 @@BEGIN: EXAMPLE
 @CATEGORY:	transposition
 @FILTER:	transpose -k d
@@ -15,6 +20,30 @@
 	will be transposed down a fourth instead of up a fifth.
 @@END: EXAMPLE
 
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	transposition
+@FILTER:	transpose -k e-
+@FILE:		mozart/sonatas/sonata01-1.krn
+@COMPILE:
+@DESCRIPTION:
+	Transpose music to the key of E-flat.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	transposition
+@FILTER:	transpose -k f#
+@FILE:		mozart/sonatas/sonata01-1.krn
+@COMPILE:
+@DESCRIPTION:
+	Transpose music to the key of f-sharp.
+@@END: EXAMPLE
+
+
+
 @@BEGIN: EXAMPLE
 @CATEGORY:	transposition
 @FILTER:	transpose -t m6
@@ -26,6 +55,8 @@
 	major, "P" perfect, "d" diminished, and "a" augmented.
 @@END: EXAMPLE
 
+
+
 @@BEGIN: EXAMPLE
 @CATEGORY:	transposition
 @FILTER:	transpose -t -M3
@@ -34,6 +65,8 @@
 @DESCRIPTION:
 	Transpose music down a major third.
 @@END: EXAMPLE
+
+
 
 @@BEGIN: EXAMPLE
 @CATEGORY:	transposition
@@ -46,14 +79,324 @@
 	common intervals are the perfect fifth (23) and the octave (40).
 @@END: EXAMPLE
 
+
+
 @@BEGIN: EXAMPLE
 @CATEGORY:	transposition
 @FILTER:	transpose -b -23
 @FILE:		mozart/sonatas/sonata01-1.krn
 @COMPILE:
 @DESCRIPTION:
-	Transpose music using a base-40 interval downwards.
+	Transpose music down a perfect fifth, described as a base-40 interval.
 @@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	transposition
+@FILTER:	transpose -s 1 -t -d5
+@FILE:		mozart/sonatas/sonata01-1.krn
+@COMPILE:
+@DESCRIPTION:
+	Transpose only the first spine down a diminished fifth.  The rest
+	of the spines in the data will not be transposed.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	transposition
+@FILTER:	transpose -s 1,3 -t M2
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Transpose the first and third spines up a major second.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	transposition
+@FILTER:	transpose -s 2-$ -t P4
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Transpose all spines up a perfect fourth except for the first spine.
+@@END: EXAMPLE
+
+
+
+@ MUSICAL EXCERPTS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	excerpt
+@FILTER:	myank -m 1-4
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Extract the first four measures of the score.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	excerpt
+@FILTER:	myank -m 4-1
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Extract the first four measures of the score in reverse
+	sequence.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	excerpt
+@FILTER:	myank -d -m 1-4,9-12
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Extract the first four measures of the score, and the ninth
+	through twelfth measures as well.  Do not add spaces in the
+	measure list, but you can if you place the list in quotes.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	excerpt
+@FILTER:	myank -m 1,1,1,1
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Extract the first measures four times.
+@@END: EXAMPLE
+
+
+
+@ PART EXTRACTION @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	extract
+@FILTER:	extract -s 1
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Extract the first spine from a full score.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	extract
+@FILTER:	extract -s 1 | rid -d
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Extract the first spine from a full score, and then remove
+	lines of data that only contain null data tokens (.).  This
+	is sometimes necessary for proper display of an extracted
+	part.  Press the compile button in the VHV link for this
+	example and notice that the null token (period character)
+	on line 25 is removed if the rid filter is applied after
+	extracting the part.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	extract
+@FILTER:	extract -s 1,3
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Extract the first and third spine from a full score.  Do
+	not put spaces in the spine string, unless you enclose them
+	in quotes.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	extract
+@FILTER:	extract -s 1,$
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Extract the first and last spines in the score.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	extract
+@FILTER:	extract -s 2-$
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Extract all spines except the first.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	extract
+@FILTER:	extract -s 4-1
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Extract the spines from 4 to 1 in reverse order.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	extract
+@FILTER:	extract -i kern
+@FILE:		mozart/sonatas/sonata01-1.krn
+@COMPILE:
+@DESCRIPTION:
+	Extract all **kern spines, removing any non-kern spines,
+	such as **dynam (dynamics) in this example.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	extract
+@FILTER:	extract -k 1
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Extract the first kern spine.  This is similar to "-s 1",
+	but the kern spines are numbered sequentially, skipping
+	over non kern spines.  In effect, this is equivalent to
+	extracting by staff number, with the bottom staff being
+	k=1.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	extract
+@FILTER:	extract -k 3-$
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Extract the third kern spine and all other kern spines after
+	it.  This is the third spine from the bottom of the system
+	and all staves higher than it.
+@@END: EXAMPLE
+
+
+@ PIPELINES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	pipeline
+@FILTER:	myank -m 1-2 | transpose -t M3
+@FILE:		mozart/sonatas/sonata01-1.krn
+@COMPILE:
+@DESCRIPTION:
+	Extract the first two measures and then transpose them up
+	a major third.
+@@END: EXAMPLE
+
+
+
+@ CHORD @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	chord
+@FILTER:	chord -b -s 1 | chord -t -s 2
+@FILE:		mozart/sonatas/sonata02-1.krn
+@COMPILE:
+@DESCRIPTION:
+	Extract the top note on in the first spine (bottom staff),
+	and the top note in the second spine (top staff).
+@@END: EXAMPLE
+
+
+
+@ SEARCH @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	search
+@FILTER:	msearch -p gefg
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Search for the melodic pitch sequence G, E, F, then G.  This
+	searches for diatonic pitches with any chromatic alteration
+	allowed, so in the search results for this example, the
+	actual pitch sequence found is G-natural, E-natural, F-sharp,
+	then G-natural.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	search
+@FILTER:	msearch -p gefg | msearch -p dbag -m + --color limegreen
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Two separate patterns can be searched for independently in
+	sequence.  The first search will color matched notes red
+	by default, so the second search colors its matches green
+	so the two searches can be distinguished.  In addition,
+	each search will mark notes in the score with a character.
+	The default mark character is "@", but the letters "ijNZV+|"
+	can also be used (as well as "k" in certain cases).  These
+	letters may be used for other purposes in the score, so
+	check for "!!!RDF**kern:" lines in the score (typically at
+	the bottom of the data) to see what character may already
+	be in use.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	search
+@FILTER:	msearch -p gefg | msearch -p dbag -m + --color limegreen | satb2gs
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Do two separate searches, and then convert the layout for
+	the four-part chorale to grand staff display.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	search
+@FILTER:	msearch -i 2 
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Search for all stepwise rising motion.
+@@END: EXAMPLE
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	search
+@FILTER:	msearch -i 2  -r 88
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Search for all stepwise rising motion on eighth notes. (needs fixing)
+@@END: EXAMPLE
+
+
 
 
 

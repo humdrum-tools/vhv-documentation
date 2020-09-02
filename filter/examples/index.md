@@ -1,5 +1,5 @@
 ---
-title: VHV Filters
+title: VHV filters examples
 lang: en
 ref: filters
 author: Craig Stuart Sapp
@@ -24,12 +24,66 @@ permalink: /filter/examples/index.html
 {% include_relative listeners.html %}
 {% include_relative scripts-local.html %}
 
-## Filter Examples ## 
 
-Click on the filter to load the example into VHV.
+Click on the blue filter text to load the filter into VHV and
+apply to a sample piece of music.
 
 
 ## Transposition ##
 
+The [transposition](/filter/transposition) filter can be used to transpose
+the score in various ways that are illustrated below.
+
 <div data-category="transposition"></div>
+
+
+
+## Compound filters ##
+
+Here are examples of how to mix multiple filters together.  Each filter 
+is separated from the next with a pipe character (|).
+
+<div data-category="pipeline"></div>
+
+
+## Musical excerpts ##
+
+The [myank](/filter/myank) filter can be used to extract musical examples
+from longer scores.
+
+
+<div data-category="excerpt"></div>
+
+
+
+## Part extraction ##
+
+The [extract](/filter/extract) filter can be used to extract parts
+and other data spines from a full score.
+
+
+<div data-category="extract"></div>
+
+
+
+
+## Chords ##
+
+The [chord](/filter/chord) filter can be used to manipulate chords.
+
+
+<div data-category="chord"></div>
+
+
+
+## Searching ##
+
+The [msearch](/filter/chord) filter (meaning *music search*) can be used to search for
+musical patterns.
+
+<div data-category="search"></div>
+
+
+
+
 
