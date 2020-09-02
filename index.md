@@ -146,8 +146,9 @@ ul.brief li {
 <dt>Piotr Szyngiera</dt>
 <dd>
 <ul class="brief">
-<li> Humdrum syntax validation for the ace editor</li>
+<li> Humdrum syntax validation for the <a href="https://ace.c9.io">ace editor</a></li>
 <li> <a href="/interface/edit_modes">Humdrum syntax highlighting</a> </li> 
+<li> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers">Web Worker</a> interface to <a target="_blank" href="https://www.verovio.org">Verovio</a> </li> 
 </ul>
 </dd>
 </dl>

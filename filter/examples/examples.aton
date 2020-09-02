@@ -387,6 +387,8 @@
 	Search for all stepwise rising motion.
 @@END: EXAMPLE
 
+
+
 @@BEGIN: EXAMPLE
 @CATEGORY:	search
 @FILTER:	msearch -i 2  -r 88
@@ -394,6 +396,126 @@
 @COMPILE:
 @DESCRIPTION:
 	Search for all stepwise rising motion on eighth notes. (needs fixing)
+@@END: EXAMPLE
+
+
+
+@ COUNTERPOINT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	counterpoint
+@FILTER:	extract -s 3,4 | cint | shed -e 's/cint/cdata/X' 
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Display counterpoint modules for the soprano and alto parts
+	of the chorale.  You will need to type alt-w several times to
+	prevent the text from overlapping.  Each module consists of 
+	three numbers: the first one is the harmonic interval of the
+	first two notes of the each module.  The second number is the
+	melodic interval of the bass part, and the third number is the
+	harmonic interval of the last two notes of the module.  For example
+	the first module is "4 1 4", which means that there is a 
+	harmonic interval of a fourth, then the bottom note repeats
+	and another harmonic fourth is sounded at the end of the module.
+	Note that the fourth interval of the module, the melodic interval
+	in the soprano part, can be calculated from the other three
+	intervals, and in this case is a unison.  The shed filter is used
+	in this example to conver the **cint analysis into **cdata, since
+	cdata spines will be converted into visible text in the notation.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	counterpoint
+@FILTER:	cint  -xU  -o  --search "3xx .* 3xx"
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Highlight all parallel thirds where the notes attack together.
+	The -x option add attach state markers to each interval,
+	the -U option prevents including repeated thirds from
+	matching.  The search "3xx .* 3xx" is a regular expression,
+	where .* means any melodic motion (other than unisons which
+	are excluded by the -U option). The -o option makes parallel
+	tenths count as thirds.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	counterpoint
+@FILTER:	cint  -Uox  --search "5(sx|xs) .* 5"
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Find "soft" parallel fifths, where the first two notes of the 
+	parallel motion do not attack at the same time.
+@@END: EXAMPLE
+
+
+
+@ Regular Expression @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	regular_expressions
+@FILTER:	shed -ke "s/([A-G]+)[n#-]+[XY]?/$1/gi"
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Remove all accidentals (converting all notes to natural).
+	For the example piece which is in G major, this will create
+	music in G mixolydian.  The -k option is used to only alter
+	content in **kern spines.  The $1 variable in the replacement
+	string will be substituted with text in parentheses in the
+	search string.  The regular expression syntax used in filters
+	is the PERL-like form.  The "[XY]?" expression is not necessary
+	for this example data, but in general it is useful to include
+	the X qualifier for accidentals which forces them to display,
+	and the y qulalifier which forces them to be hidden.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	regular_expressions
+@FILTER:	shed -ke "s/[A-G]+[n#-]*[XY]?/c/gi"
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Convert all notes to middle C.  <a target="_blank"
+	href="https://www.youtube.com/watch?v=yNi0bukYRnA">Terry
+	Riley</a> would love this filter.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	regular_expressions
+@FILTER:	shed -ke "s/[A-G]+[n#-]*[XY]?/c/gi" | transpose -s 1 -b -80 | transpose -s 2 -t -P4 | transpose -s 4 -b 52 | shed -e "s/k\[.*\]/k[]/I"
+@FILE:		chorales/chor001.krn
+@COMPILE:
+@DESCRIPTION:
+	Convert all notes to middle C.  And then transpose each part to
+	a different note to create repeated C major chords.  The final shed command
+	converts all of the key signatures to no sharps/flats.
+@@END: EXAMPLE
+
+
+
+@@BEGIN: EXAMPLE
+@CATEGORY:	regular_expressions
+@FILTER:	shed -ke "s/ .*//"
+@FILE:		mozart/sonatas/sonata02-1.krn
+@COMPILE:
+@DESCRIPTION:
+	Similar to the filter "chord -f" filter, which remove all notes after the
+	first one in a chord token.  The first note can be any pitch in the chord,
+	so this is not the same as "chord -t" which would extract only the top note.
+	However, "chord -t" is equivalent to "chord -d | shed -ke 's/ .*//'".
 @@END: EXAMPLE
 
 

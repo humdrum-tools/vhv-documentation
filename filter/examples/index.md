@@ -78,11 +78,34 @@ The [chord](/filter/chord) filter can be used to manipulate chords.
 
 ## Searching ##
 
-The [msearch](/filter/chord) filter (meaning *music search*) can be used to search for
-musical patterns.
+The [msearch](/filter/chord) filter (meaning *music search*) can
+be used to search for musical patterns.
 
 <div data-category="search"></div>
 
+
+
+## Search and replace ##
+
+The [shed](/filter/shed) filter can be used to search and replace content
+in Humdrum data.  "Shed" stands for "Humdrum <a target="_blank" href="https://www.gnu.org/software/sed/manual/sed.html">sed</a>" (dyslexic, but easier to pronounce).
+
+
+<div data-category="regular_expressions"></div>
+
+
+
+## Counterpoint ##
+
+The [cint](/filter/cint) filter (meaning *composite intervals*) can
+be used to study counterpoint.  The cint program is an intersection
+of functionalities between the mint and hint programs of the Humdrum
+Toolkit, and it creates counterpoint modules that consist of four
+notes in two voices, which in turn generates two harmonic and two
+melodic intervals for each module.
+
+
+<div data-category="counterpoint"></div>
 
 
 
