@@ -1,5 +1,22 @@
+
 <link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+
+dt a {
+	font-family: Courier;
+	font-size: 2rem;
+}
+
+dt a[href^="http://"]:after, a[href^="https://"]:after {
+	content: none !important;
+}
+
+a, a:hover, a:link, a:active, a:visited {
+	text-decoration: none;
+}
 
 
 <style>
@@ -84,7 +101,7 @@ table.toolbar-info td:first-child span.keypress {
 	display: block;
 }
 
-p, table.toolbar-info td:nth-child(2) {
+dd, p, table.toolbar-info td:nth-child(2) {
 	text-align: justify;
 	text-justify: auto;
 	vertical-align: middle;
@@ -115,7 +132,7 @@ input:focus {
     outline-width: 0;
 }
 
-input#filter {
+input#filter, input#filter2 {
 	vertical-align: 35%;
 	width:          270px;
 	font-size:      15px;

@@ -6,7 +6,7 @@ author: Craig Stuart Sapp
 translator: 
 creation_date: 27 Aug 2020
 translation_date: 
-last_updated: 27 Aug 2020
+last_updated: 3 Sep 2020
 tags: [all, getting_started]
 keywords: interface search toolbar
 summary: "How to use the search toolbar."
@@ -26,6 +26,10 @@ right-hand corner of VHV:
 	caption="Search toolbar in VHV window, upper right corner."
 %}
 
+Alternativly use the keyboard shortcut <span class="keypress">4+alt-n</span> to
+jump to the search toolbar directly.
+
+
 
 ## Pitch searches ##
 
@@ -43,6 +47,7 @@ This search will cause the diatonic pitch class melodic sequence
 of C followed by D, followed by E to be highlighted.  Note that upper-case or lower-case
 letters are interchangeable.  Spaces are optional between notes, but spaces between notes
 and accidental are not allowed.
+
 
 
 ### Chromatic quality ###
@@ -70,6 +75,7 @@ diatonic interval numbers.
 
 | Interval   | Meaning               |
 | ---------- | --------------------- |
+| `1`        | repeated note         |
 | `2`        | up a step             |
 | `-2`       | up a step             |
 | `3`        | up a third            |
@@ -135,7 +141,7 @@ second.  In the third measure the interval is a falling seventh.
 
 
 
-## Displaying search toolbar from URL ##
+## Display search toolbar on VHV load from URL ##
 
 
 Add the parameter "toolbar=search" to the VHV URL to display the search

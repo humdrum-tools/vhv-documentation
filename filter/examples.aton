@@ -52,7 +52,7 @@
 @DESCRIPTION:
 	Transpose music using a diatonic interval with chromatic
 	inflection. In this case "m6" means up a minor sixth.  "M" means
-	major, "P" perfect, "d" diminished, and "a" augmented.
+	major, "P" perfect, "d" diminished, and "A" augmented.
 @@END: EXAMPLE
 
 

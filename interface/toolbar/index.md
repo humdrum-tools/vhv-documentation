@@ -6,7 +6,7 @@ author: Craig Stuart Sapp
 translator: 
 creation_date: 24 Aug 2020
 translation_date: 
-last_updated: 24 Aug 2020
+last_updated: 3 Sep 2020
 tags: [all, getting_started]
 keywords: interface toolbar
 summary: "A Description of the VHV toolbar."
@@ -16,8 +16,9 @@ permalink: /interface/toolbar/index.html
 
 {% include_relative style-local.html %}
 
-A toolbar for quick access of basic display, editing and data-processing
-functions is found in the upper right-hand corner of the VHV window:
+A toolbar for quick access to basic display, editing, searching and
+data-processing funcionality sits at the upper right-hand corner of
+the VHV window:
 
 {% include image.html
 	file="toolbar.png"
@@ -46,6 +47,7 @@ functions is found in the upper right-hand corner of the VHV window:
 	<div title="Make notation smaller" class='nav-icon fas fa-minus-square'></div>
 	<div title="Make notation larger" class='nav-icon fas fa-plus-square'></div>
 	<div title="Click to use embedded line breaks (if any)" class='nav-icon fas fa-align-center'></div>
+	<div title="About the toolbar" class='nav-icon fas fa-question-circle'></div>
 	<div title="Go to next toolbar menu (alt-n)" class='nav-icon fa fa-superpowers'></div>
 </div>
 
@@ -63,8 +65,8 @@ toolbar, with any associated keyboard shortcut given underneath the
 icon.  For keyboard shortcuts, note that <span class="keypress">alt</span>
 on Linux/Windows computers is usually called <span
 class="keypress">option</span> on MacOS computers.  In addition,
-<span class="keypress">control</span> for Linux/Windows users is
-instead <span class="keypress">command</span> in MacOS.
+<span class="keypress">control</span> for Linux/Windows is instead
+<span class="keypress">command</span> in MacOS.
 
 <br>
 
@@ -81,20 +83,22 @@ instead <span class="keypress">command</span> in MacOS.
 <td>
 
 	If a scan of the source edition is available, one or more
-	of these PDF-file icons appear on the left side of the main
-	toolbar.  The URL for the icon will either come automatically
-	from the repertory source, or may be stored within the data
-	on a reference-record line having the form <code
+	of these icons will appear to the left of the main toolbar.
+
+	The link for the icon may be stored within the data on a
+	reference-record line having the form <code
 	class="mine">!!!URL-pdf: <i>URL</i> <i>[description]</i></code>.
-	If a description is given after the URL, it will be used
-	as the tooltip for button.  Additional PDFs can be displayed,
-	such as adding "2" for a second PDF: <code
-	class="mine">!!!URL2-pdf:</code>.  The keyboard shortcut
-	to open any second source URL is <span
+
+	Additional PDF icons can be displayed, such as adding "2"
+	for a second PDF: <code class="mine">!!!URL2-pdf:</code>.
+
+	The keyboard shortcut to open any second source URL is <span
 	class="keypress">2+alt-p</span>.
 
 </td>
 </tr>
+
+
 
 <tr><td>
 <div class="toolbar">
@@ -104,22 +108,25 @@ instead <span class="keypress">command</span> in MacOS.
 	<span class="keypress">alt-y</span>
 </td>
 <td>
+	<span class="summary-icon">Toggle text-editor visibility.</span>
 
-	This button toggles text-editor visibility on the left side
-	of the VHV window.  By default the text editor is visible
-	when you open VHV in a web browser.  To start with it hidden,
-	add the URL parameter <code class="mine">k=y</code>.  You
-	can also suppress display of the splash music by adding the
-	letter <code class="mine">e</code> to the <code
-	class="mine">k</code>, parameter.  Here is a link to <a
-	target="_blank"
+	By default the text editor is initially visible.
+
+	To start with it hidden, add the URL parameter <code
+	class="mine">k=y</code>.
+
+	Here is a link to <a target="_blank"
 	href="https://verovio.humdrum.org?file=beethoven/sonatas/sonata14-1.krn&k=ey">
 	Beethoven's Moonlight sonata, movement 1</a> that demonstrates
-	this feature.  Also note that when the text editor is hidden,
-	toolbar icons related to the text editor are also hidden.
+	this feature (also adding "e" to suppress the splash music).
+
+	Also note that when the text editor is hidden, toolbar icons
+	related to the text editor will also be hidden.
 
 </td>
 </tr>
+
+
 
 <tr><td>
 <div class="toolbar">
@@ -129,12 +136,15 @@ instead <span class="keypress">command</span> in MacOS.
 </td>
 <td>
 
-	This button will erase the contents of the text editor.  If
-	you click on this by accident, clicking again on the button
-	will restore the contents that you erased.
+	<span class="summary-icon">Erase contents of text editor.</span>
+
+	If you click on this accidentally, click again to restore
+	the contents just erased.
 
 </td>
 </tr>
+
+
 
 <tr><td>
 <div class="toolbar">
@@ -144,12 +154,15 @@ instead <span class="keypress">command</span> in MacOS.
 </td>
 <td>
 
-	Undo the last change in the text editor.  This works for
-	both manual or automatic changes (such as filtering) made
-	to the text.
+	<span class="summary-icon">Undo last change in text editor.</span>
+
+	This works for both manual or automatic changes made to the
+	text (such as filtering).
 
 </td>
 </tr>
+
+
 
 <tr><td>
 <div class="toolbar">
@@ -158,14 +171,19 @@ instead <span class="keypress">command</span> in MacOS.
 </td>
 <td>
 
-	This button decreases the text editor's font size.  Also
-	see the music size buttons further to the right, which are
-	similar, but have a square shape.  You can also decrease the
-	font size of the text and music together from the web browser's
-	zoom controls (<span class="keypress">control-minus</span>).
+	<span class="summary-icon">Decrease text editor's font size.</span>
+
+	Also see the square sizing buttons further to the right,
+	which have a similar effect on the music notation.
+
+	You can also decrease the font size of the text and music
+	together from the web browser's zoom controls (<span
+	class="keypress">control-minus</span>).
 
 </td>
 </tr>
+
+
 
 <tr><td>
 <div class="toolbar">
@@ -174,15 +192,19 @@ instead <span class="keypress">command</span> in MacOS.
 </td>
 <td>
 
-	This button increases the text editor's font size.  Also
-	see the music size buttons further to the right, which are
-	similar, but have a square shape.  You can also increase
-	the font size of the text and music together from the web
-	browser's zoom controls (<span
+	<span class="summary-icon">Increase text editor's font size.</span>
+
+	Also see the square sizing buttons further to the right,
+	which have a similar effect on the music notation.
+
+	You can also increase the font size of the text and music
+	together from the web browser's zoom controls (<span
 	class="keypress">control-plus</span>).
 
 </td>
 </tr>
+
+
 
 <tr><td>
 <div class="toolbar">
@@ -192,13 +214,16 @@ instead <span class="keypress">command</span> in MacOS.
 </td>
 <td>
 
-	Decrease the text editor's tab size.  This narrows the width
-	of Humdrum spines so that more are visible; however, columns
-	wider than the tab size will become visually misaligned,
-	decreasing readability.
+	<span class="summary-icon">Decrease text editor's tab size.</span>
+
+	This narrows the width of Humdrum spines so that more are
+	visible; however, columns wider than the tab size will
+	become visually misaligned, decreasing readability.
 
 </td>
 </tr>
+
+
 
 <tr><td>
 <div class="toolbar">
@@ -208,13 +233,16 @@ instead <span class="keypress">command</span> in MacOS.
 </td>
 <td>
 
-	Increase the text editor's tab size.  This increases the width of Humdrum spines so that
-	spines are more likely to be vertically aligned properly;
-	however, fewer spines may be visible (but you can scroll in the text editor to view
-	content that is not visible).
+	<span class="summary-icon">Increase text editor's tab size.</span>
+
+	This increases the width of Humdrum spines so that spines
+	are more likely to be vertically aligned properly; however,
+	fewer spines may become visible (but you can scroll in the
+	text editor to view content that is not visible).
 
 </td>
 </tr>
+
 
 
 <tr><td>
@@ -224,16 +252,19 @@ instead <span class="keypress">command</span> in MacOS.
 </td>
 <td>
 
-	Collapse tabs so that there is only one tab between each
-	token on a data line.  In general data should be saved in
-	this format so that the files can be used with the Humdrum
-	Toolkit. <a target="_blank"
-	href="https://humlib.humdrum.org">Humlib</a> tools do not
-	care how many tabs separate each token, so the tab state
-	of the data will not matter when using filters in VHV.
+	<span class="summary-icon">Collapse Humdrum tabbing.</span>
+
+	This forces only one tab between each token on a data line.
+
+	In general data should be saved in this format so that the
+	files can be used with the original Humdrum Toolkit; however,
+	<a target="_blank" href="https://humlib.humdrum.org">Humlib</a>
+	tools do not care how many tabs separate each token.
 
 </td>
 </tr>
+
+
 
 <tr><td>
 <div class="toolbar">
@@ -242,13 +273,19 @@ instead <span class="keypress">command</span> in MacOS.
 </td>
 <td>
 
-	Add tabs after each spine to give a constant width to the spine through the
-	length of the file.  This adds an extra tab for each subspine less than the
-	maximum count for the spine.  When this button is clicked, all primary spines
-	are aligned in the same column, as well as all subspines.  This makes editing
-	Humdrum data for piano music much more easier since the melodic sequence
-	remains in a single column rather than jumping around based on spine splits
-	and merges in other spines to the left.
+	<span class="summary-icon">Expand Humdrum tabbing.</span>
+
+	This ensures that the data in each spine remains in the
+	same column.
+
+	For example if a spine contains a split at some point in
+	the data, regions of the spine before and after the split
+	will have an extra tab inserted so that the next spine's
+	data is vertically aligned in the same column.
+
+	This facilitates piano-music editing, since melodic sequences
+	remain in a single column rather than jumping around based
+	on spine splits and merges in other spines to the left.
 
 </td>
 </tr>
@@ -266,18 +303,20 @@ instead <span class="keypress">command</span> in MacOS.
 </td>
 <td>
 
-	Toggle dynamic notation generation.  When unlocked, any changes in the
-	text editor will be immediately rendered into music notation.  Locking the
-	notation is useful in the case of long scores that take a while to 
-	render.  In such cases, it may be useful to stop rendering the
-	notation temporarily so that edits can be done more quickly.  
-	When the notation is "frozen" the background color is white, and
-	while "unfrozen" the background is off-white.
+	<span class="summary-icon">Toggle dynamic notation generation.</span>
+
+	When unlocked, any changes in the text editor will be
+	rendered immediately into music notation.
+
+	Locking the notation is useful when editing long pieces
+	that take a while to render, allowing text edits to not
+	get bogged down by the music-rendering process.
+
+	When the notation is "frozen" the background color is white,
+	and when "unfrozen" the background is off-white.
 
 </td>
 </tr>
-
-
 
 
 
@@ -288,14 +327,19 @@ instead <span class="keypress">command</span> in MacOS.
 </td>
 <td>
 
-	This button decreases the music notation size.  Also
-	see the text size buttons further to the left, which are
-	similar, but have a circular shape.  You can also decrease the
-	size of the text and music together from the web browser's
-	zoom controls (<span class="keypress">control-plus</span>).
+	<span class="summary-icon">Decrease music notation size.</span>
+
+	Also see the circular sizing buttons further to the left,
+	which have a similar effect on the text editor's font size.
+
+	You can also decrease the size of the text and music together
+	from the web browser's zoom controls (<span
+	class="keypress">control-minus</span>).
 
 </td>
 </tr>
+
+
 
 <tr><td>
 <div class="toolbar">
@@ -304,14 +348,19 @@ instead <span class="keypress">command</span> in MacOS.
 </td>
 <td>
 
-	This button increases the music notation size.  Also
-	see the text size buttons further to the left, which are
-	similar, but have a circular shape.  You can also increase the
-	size of the text and music together from the web browser's
-	zoom controls (<span class="keypress">control-plus</span>).
+	<span class="summary-icon">Increase music notation size.</span>
+
+	Also see the circular sizing buttons further to the left,
+	which have a similar effect on the text editor's font size.
+
+	You can also increase the size of the text and music together
+	from the web browser's zoom controls (<span
+	class="keypress">control-plus</span>).
 
 </td>
 </tr>
+
+
 
 <tr><td>
 <div class="toolbar">
@@ -322,18 +371,41 @@ instead <span class="keypress">command</span> in MacOS.
 </div>
 </td>
 <td>
+	<span class="summary-icon">Line breaking method.</span>
 
-	Toggle between line breaks explicitly encoded in the data
-	or allow the line breaking of the music to be handled
-	automatically.  For data entry, encoded line breaks are
-	better, while displaying the music in an different aspect
-	ratio or size will require automatic line breaking.  When
-	this icon has uneven horizontal lines, the automatic mode
-	is set, and when all lines are equal in length, the embedded
-	line break mode is active.
+	Toggle between explicit line breaks and automatic line
+	breaking.
+
+	The uneven horizontal-line icon indicates automatic mode
+	is active, while even horizontal lines mean encoded breaks
+	are used.
+
+	If there are no encoded breaks, automatic mode will be used
+	in both states.
+
+	For data entry, encoded line breaks are better for visual
+	alignment with the source edition; however, displaying music
+	with an different aspect ratio or size may make automatic
+	line breaking more desirable.
 
 </td>
 </tr>
+
+
+
+<tr><td>
+<div class="toolbar">
+	<div title="About the toolbar" class='nav-icon fa fa-question-circle'></div>
+</div>
+</td>
+<td>
+
+	Show this documentation page.
+
+</td>
+</tr>
+
+
 
 <tr><td>
 <div class="toolbar">
@@ -344,12 +416,13 @@ instead <span class="keypress">command</span> in MacOS.
 </td>
 <td>
 
-	This last icon of all toolbars is the toolbar cycling button.
-	Click on this button to navigate to the next toolbar menu.
-	To go to a specific toolbar, type the number for that toolbar
-	before using the next-toolbar shortcut, such as <span
-	class="keypress">3+alt-n</span> to go to the third toolbar
-	(currently the buffer loading toolbar, which is described
+	<span class="summary-icon">Go to next toolbar.</span>
+	
+	To go to a specific toolbar directly, type the number for
+	that toolbar before using the next-toolbar shortcut.
+
+	For example <span class="keypress">3+alt-n</span> takes you
+	to the third toolbar (the buffer loading toolbar, described
 	below).
 
 </td>
@@ -380,12 +453,11 @@ instead <span class="keypress">command</span> in MacOS.
 
 <br>
 
-The buffer-saving toolbar is used to save the current contents of
-the text editor to one of nine buffers in the web browser.  These
-buffers can be reloaded into the text editor from the next toolbar
-menu (<span class="keypress">alt-n</span> moves you to the next
-toolbar, or click on the toolbar-cycle button to go to the loading
-toolbar).
+The save toolbar is used to save the current contents of the text
+editor to one of nine buffers in the web browser.  These buffers
+can be reloaded into the text editor from the next toolbar menu
+(<span class="keypress">alt-n</span> moves you to the next toolbar,
+or click on the toolbar-cycle button to go to the loading toolbar).
 
 When a buffer has contents, its corresponding save button will be
 highlighted in red.  This is demonstrated in the sample toolbar
@@ -458,13 +530,49 @@ of this buffer, type <span class="keypress">0+alt-shift-R</span>.
 Usually <span class="keypress">control-z</span> serves a similar
 function to undo changes to the text.
 
+## Search toolbar ##
+
+<div class="toolbar" id="toolbar-4">
+	<span id="search-results" style="vertical-align: 6%; font-style: italic" class="nav-icon">Search</span>
+	<span id="search-group">
+		<input id="search-pitch"    type="text" spellcheck="false" placeholder="pitch">
+		<input id="search-interval" type="text" spellcheck="false" placeholder="interval">
+		<input id="search-rhythm"   type="text" spellcheck="false" placeholder="rhythm">
+	</span>
+	<div title="Search help" class='nav-icon fas fa-question-circle'></div>
+	<span id="line-break-icon">
+		<div title="Go to next toolbar menu (alt-n)" class='nav-icon fa fa-superpowers'></div>
+	</span>
+</div>
+
+<br><br>
+See the [documentation page for searching](/interface/search).
+
+
+## Filter toolbar ##
+
+<div class="toolbar" id="toolbar-5">
+	<input id="filter"  type="text" spellcheck="false" placeholder="filter">
+	<div title="Apply filter" class='filter-icon nav-icon fa fa-filter'></div>
+	<div id="filter-compile" title="Compile filter (alt-c)" class='nav-icon fa fa-plus'></div>
+	<div title="About filters" class='nav-icon fas fa-question-circle'></div>
+	<span id="line-break-icon">
+		<div title="Go to next toolbar menu (alt-n)" class='nav-icon fa fa-superpowers'></div>
+	</span>
+</div>
+
+<br><br>
+See the [documentation page for filtering](/filter).
+
 
 ## Hiding the toolbar ##
 
 To hide the toolbar, type <span class="keypress">alt-shift-N</span>.
 Typing that shortcut again will cause the toolbar to reappear.  You
 can also show/hide the toolbar from the "View &rarr; Toggle toolbar
-visibility" menu entry.
+visibility" menu entry.  The shortcut <span
+class="keypress">alt-shift-E</span> will toggle display of both the
+menu and the toolbar.
 
 If you want to hide the toolbar when loading VHV, add the parameter
 <code class="mine">k=N</code> to the URL.  Here is a link to <a
