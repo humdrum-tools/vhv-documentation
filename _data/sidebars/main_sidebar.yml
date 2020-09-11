@@ -322,6 +322,10 @@ entries:
       output: web, pdf
       url: /filter/cint
 
+    - title: colortriads
+      output: web, pdf
+      url: /filter/colortriads
+
     - title: composite
       output: web, pdf
       url: /filter/composite
