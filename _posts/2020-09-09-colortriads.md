@@ -10,7 +10,7 @@ sidebar: main_sidebar
 tags: [all, news]
 ---
 
-The <a href="/filters/colortriads">colortriads</a> filter has been
+The <a href="/filter/colortriads">colortriads</a> filter has been
 added to VHV.  This filter colors triadic sonorities according
 to the root note of the triad.
 
