@@ -69,6 +69,14 @@ the VHV window:
 
 
 
+## Spreadsheet toolbar ##
+
+<br>
+
+{% include_relative spreadsheet-toolbar.md %}
+
+
+
 ## Hiding the toolbar ##
 
 To hide the toolbar, type <span class="keypress">alt-shift-N</span>.
