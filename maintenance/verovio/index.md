@@ -121,13 +121,13 @@ verovio: true
 At the top of the Markdown or HTML documentation page, such as [this
 one](https://raw.githubusercontent.com/humdrum-tools/vhv-documentation/gh-pages/maintenance/verovio/index.md).  This 
 will alos automatically include some [JavaScript support
-functions](https://github.com/humdrum-tools/vhv-documentation/blob/gh-pages/_includes/verovio_support_functions.html)
+functions](https://github.com/humdrum-tools/vhv-documentation/tree/master/_includes/verovio_support_functions.html)
 that are shared between multiple Humdrum+notation figures on the page.
 
 ## Verovio template options ##
 
 The verovio template inserts the contents of
-[verovio.html](https://github.com/humdrum-tools/vhv-documentation/blob/gh-pages/_includes/verovio.html)
+[verovio.html](https://github.com/humdrum-tools/vhv-documentation/tree/master/_includes/verovio.html)
 onto the page as it is converted into an HTML webpage, using the
 following parameter values to fill in values within the image
 template file.  The parameters are in the form:

@@ -678,7 +678,7 @@ function pearsonCorrelation(x, y, shift) {
 <br/>
 <br/>
 
-View the [Markdown source](https://github.com/humdrum-tools/vhv-documentation/blob/gh-pages/myvhv/svg_notes/key_analysis.include) 
+View the [Markdown source](https://github.com/humdrum-tools/vhv-documentation/tree/master/myvhv/svg_notes/key_analysis.include) 
 for this page to view the JavaScript code for the example.
 
 

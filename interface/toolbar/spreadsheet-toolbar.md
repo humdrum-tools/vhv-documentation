@@ -15,7 +15,7 @@
 The spreadsheet toolbar allows bidirectional communiction between
 VHV and Google Sheets.  This is particularly useful for editing
 orchesteral scores, since the instrument label line can be frozen
-at the top of the sheet while editing within the score.
+at the top of the sheet while editing further down in the score.
 
 <br><br>
 
@@ -64,7 +64,7 @@ at the top of the sheet while editing within the score.
 </td>
 <td>
 
-	<span class="summary-icon">Download to spreadsheet.</span>
+	<span class="summary-icon">Download from spreadsheet.</span>
 
 	The contents of the linked spreadsheet will replace the current contents
 	of the VHV text editor.

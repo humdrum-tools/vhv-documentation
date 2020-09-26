@@ -18,7 +18,7 @@ company_name: "Craig Stuart Sapp"
 # this appears in the footer
 
 
-github_editme_path: "humdrum-tools/vhv-documentation/blob/gh-pages"
+github_editme_path: "humdrum-tools/vhv-documentation/tree/master"
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 disqus_shortname: 

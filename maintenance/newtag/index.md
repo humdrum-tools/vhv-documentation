@@ -21,7 +21,7 @@ A *tag* is a topic subject which can be used to group related pages together.
 
 ## Allowed tags ##
 
-The file [_data/tags.yml](https://github.com/humdrum-tools/vhv-documentation/blob/gh-pages/_data/tags.yml) contains a list of allowed tags for the website. If you want to
+The file [_data/tags.yml](https://github.com/humdrum-tools/vhv-documentation/tree/master/_data/tags.yml) contains a list of allowed tags for the website. If you want to
 create a new tag, add it to this list.
 
 ## Using a tag ##
@@ -62,7 +62,7 @@ folder: tags
 ## Add tag index file to sidebar ##
 
 The tag index file should be linked to from the sidebar.  Edit the 
-[_data/sidebars/main_sidebar.yml](https://github.com/humdrum-tools/vhv-documentation/blob/gh-pages/_data/sidebars/main_sidebar.yml), and add an entry for the tag index in the `Indexes` section.
+[_data/sidebars/main_sidebar.yml](https://github.com/humdrum-tools/vhv-documentation/tree/master/_data/sidebars/main_sidebar.yml), and add an entry for the tag index in the `Indexes` section.
 
 The entry for the xxx tag would be:
 

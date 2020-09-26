@@ -218,8 +218,8 @@ in blue.  Usually this is a syntax error that should be fixed.
 
 Here are the Humdrum syntax parsing/highlighting files for the ace editor:
 
-* [mode-humdrum.js](https://github.com/humdrum-tools/verovio-humdrum-viewer/blob/gh-pages/scripts/ace/mode-humdrum.js): syntax parsing file
-* [theme-humdrum_light.js](https://github.com/humdrum-tools/verovio-humdrum-viewer/blob/gh-pages/scripts/ace/theme-humdrum_light.js) light-colored highlighting theme
-* [theme-humdrum_dark.js](https://github.com/humdrum-tools/verovio-humdrum-viewer/blob/gh-pages/scripts/ace/theme-humdrum_dark.js) dark-colored highlighting theme
+* [mode-humdrum.js](https://github.com/humdrum-tools/verovio-humdrum-viewer/tree/master/scripts/ace/mode-humdrum.js): syntax parsing file
+* [theme-humdrum_light.js](https://github.com/humdrum-tools/verovio-humdrum-viewer/tree/master/scripts/ace/theme-humdrum_light.js) light-colored highlighting theme
+* [theme-humdrum_dark.js](https://github.com/humdrum-tools/verovio-humdrum-viewer/tree/master/scripts/ace/theme-humdrum_dark.js) dark-colored highlighting theme
 
 

@@ -43,7 +43,7 @@ which in turn is the static-site generating system used for the
 documentation since it is incorporated seamlessly into [Github
 pages](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages).
 
-The template inserts the contents of [image.html](https://github.com/humdrum-tools/vhv-documentation/blob/gh-pages/_includes/image.html) onto the page as it is
+The template inserts the contents of [image.html](https://github.com/humdrum-tools/vhv-documentation/tree/master/_includes/image.html) onto the page as it is
 converted into an HTML webpage, using the following parameter values to
 fill in values within the image template file.  The parameters are in the
 form:
