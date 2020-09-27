@@ -25,7 +25,7 @@ freeze a header at the row showing the instrument names while you
 edit the music further below.
 
 
-The spreadsheet toolbar contains a text box and four icons:
+The spreadsheet toolbar contains a text box and five icons:
 
 <br>
 
