@@ -54,11 +54,11 @@ The spreadsheet toolbar contains a text box and four icons:
 </td>
 <td>
 
-	<span class="summary-icon">Spreadsheet script id.</span>
+	<span class="summary-icon">Spreadsheet script ID.</span>
 
-	See the [documentation page for spreadsheet interaction](spreadsheet) 
-	for how to create a script and get its ID to paste in this box to
-	connect to a particular spreadsheet.
+	See instructions below
+	for creating a spreadsheet and getting its script ID to paste into this box to
+	interact with the spreadsheet.
 
 </td>
 </tr>
@@ -73,8 +73,8 @@ The spreadsheet toolbar contains a text box and four icons:
 
 	<span class="summary-icon">Upload to spreadsheet.</span>
 
-	The contents of the text editor will replace the current contents
-	of the linked spreadsheet.
+	The contents of the VHV text editor will be uploaded to the linked
+	spreadsheet, replacing any current contents of the spreadsheet.
 
 </td>
 </tr>
@@ -90,8 +90,8 @@ The spreadsheet toolbar contains a text box and four icons:
 
 	<span class="summary-icon">Download from spreadsheet.</span>
 
-	The contents of the linked spreadsheet will replace the current contents
-	of the VHV text editor.
+	The contents of the linked spreadsheet will be downloaded and
+	replace the current contents of the VHV text editor.
 
 </td>
 </tr>
