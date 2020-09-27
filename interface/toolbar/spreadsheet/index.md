@@ -304,7 +304,20 @@ Copy the ID from the middle of the script:
 <input style="width:525px" type="text" value="AKfycbwPSnUPffm_A_voZXkYy0sks9sWLr9-ig_m2UOPes9DP1Sod3A">
 
 and paste it into the "Spreadsheet script ID" box on the spreadsheet
-toolbar in VHV.  You can use the above script ID for testing purposes,
+toolbar in VHV.  
+
+
+The ID of the linked spreadsheet can also be given in the same input
+box by adding a pipe character (|) after the script ID, followed
+by the spreadsheet ID:
+
+<input style="width:525px" type="text" value="AKfycbwPSnUPffm_A_voZXkYy0sks9sWLr9-ig_m2UOPes9DP1Sod3A|1FIaXR2VrHwrvB7BAr90K79dwzKHH3HRht5Xa5p1mjnw">
+
+This will enable an icon on the spreadsheet toolbar that opens up the
+linked spreadsheet (after you do your first upload or download).
+
+
+You can use the above script ID for testing purposes,
 which links to this <a target="_blank"
 href="http://bit.ly/humdrum-io-spreadsheet">publicly editable
 spreadsheet</a>.  But don't use this particular spreadsheet for
