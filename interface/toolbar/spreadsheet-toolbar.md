@@ -32,7 +32,7 @@ at the top of the sheet while editing further down in the score.
 
 	<span class="summary-icon">Spreadsheet script id.</span>
 
-	See the [documentation page for spreadsheet interaction](spreadsheet) 
+	See the <a target="spreadsheet">documentation page for spreadsheet interaction</a>
 	for how to create a script and get its ID to paste in this box to
 	connect to a particular spreadsheet.
 
