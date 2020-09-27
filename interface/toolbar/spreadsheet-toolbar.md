@@ -3,7 +3,8 @@
 <div class="toolbar" id="toolbar-6">
 	<input id="scriptid"  type="text" spellcheck="false" placeholder="Spreadsheet script ID">
 	<div title="Upload data to spreadsheet" onclick="uploadDataToSpreadsheet()" class='nav-icon fa fa-cloud-upload'></div>
-	<div title="Download data from spreadsheet" onclick="downloadDataFromSpreadsheet()" class='nav-icon fa fa-cloud-download'></div>
+	<div title="Download data from spreadsheet" class='nav-icon fa fa-cloud-download'></div>
+	<div title="open linked spreadsheet" class='nav-icon fa fa-file-text'></div>
 	<div title="About spreadsheets" onclick="showSpreadsheetHelp()" class='nav-icon fas fa-question-circle'></div>
 	<span id="line-break-icon" onclick="gotoNextToolbar(6, event)">
 		<div title="Go to next toolbar menu (alt-n)" class='nav-icon fa fa-superpowers'></div>
@@ -32,7 +33,7 @@ at the top of the sheet while editing further down in the score.
 
 	<span class="summary-icon">Spreadsheet script id.</span>
 
-	See the <a target="spreadsheet">documentation page for spreadsheet interaction</a>
+	See the <a target="spreadsheet" href="spreadsheet">documentation page for spreadsheet interaction</a>
 	for how to create a script and get its ID to paste in this box to
 	connect to a particular spreadsheet.
 
@@ -68,6 +69,26 @@ at the top of the sheet while editing further down in the score.
 
 	The contents of the linked spreadsheet will replace the current contents
 	of the VHV text editor.
+
+</td>
+</tr>
+
+
+
+<tr><td>
+<div class="toolbar">
+	<div title="Open linked spreadsheet" class='nav-icon fa fa-file-text'></div>
+</div>
+</td>
+<td>
+
+	<span class="summary-icon">Open linked spreadsheet.</span>
+
+	The spreadsheet ID can be appended to the script ID in the
+	input text box, seprating them with a pipe character (|)
+	or a space.  When a spreadsheet ID is present, this icon
+	will appear, and you can click on it to open the linked
+	spreadsheet in another tab.
 
 </td>
 </tr>

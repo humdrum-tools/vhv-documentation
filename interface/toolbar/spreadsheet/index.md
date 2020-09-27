@@ -33,10 +33,11 @@ The spreadsheet toolbar contains a text box and four icons:
 
 <div class="toolbar" id="toolbar-6">
 	<input id="macroid"  type="text" spellcheck="false" placeholder="Spreadsheet script ID">
-	<div title="Upload data to spreadsheet" onclick="uploadDataToSpreadsheet()" class='nav-icon fa fa-cloud-upload'></div>
-	<div title="Download data from spreadsheet" onclick="downloadDataFromSpreadsheet()" class='nav-icon fa fa-cloud-download'></div>
-	<div title="About spreadsheets" onclick="showSpreadsheetHelp()" class='nav-icon fas fa-question-circle'></div>
-	<span id="line-break-icon" onclick="gotoNextToolbar(6, event)">
+	<div title="Upload data to spreadsheet" class='nav-icon fa fa-cloud-upload'></div>
+	<div title="Download data from spreadsheet" class='nav-icon fa fa-cloud-download'></div>
+	<div title="open linked spreadsheet" class='nav-icon fa fa-file-text'></div>
+	<div title="About spreadsheets" class='nav-icon fas fa-question-circle'></div>
+	<span id="line-break-icon">
 		<div title="Go to next toolbar menu (alt-n)" class='nav-icon fa fa-superpowers'></div>
 	</span>
 </div>
@@ -92,6 +93,29 @@ The spreadsheet toolbar contains a text box and four icons:
 
 	The contents of the linked spreadsheet will be downloaded and
 	replace the current contents of the VHV text editor.
+
+</td>
+</tr>
+
+
+
+<tr><td>
+<div class="toolbar">
+	<div title="Open linked spreadsheet" class='nav-icon fa fa-file-text'></div>
+</div>
+</td>
+<td>
+
+	<span class="summary-icon">Open linked spreadsheet.</span>
+
+	The spreadsheet ID can be appended to the script ID in the
+	input text box, seprating them with a pipe character (|)
+	or a space.  When a spreadsheet ID is present, this icon
+	will appear, and you can click on it to open the linked
+	spreadsheet in another tab.  Once you add the spreadsheet ID
+	to the Spreadsheet script ID box, this icon will only appear
+	after you click on the upload or download button; however, it
+	will show up when reloading the VHV webpage after that.
 
 </td>
 </tr>
@@ -304,14 +328,19 @@ Copy the ID from the middle of the script:
 <input style="width:525px" type="text" value="AKfycbwPSnUPffm_A_voZXkYy0sks9sWLr9-ig_m2UOPes9DP1Sod3A">
 
 and paste it into the "Spreadsheet script ID" box on the spreadsheet
-toolbar in VHV.  
+toolbar in VHV.  The ID of the linked spreadsheet can also be given
+in the same input box by adding a pipe character (|) (or space)
+after the script ID, followed by the spreadsheet ID.  The URL for
+the spreadsheet will look something like this:
 
+https://docs.google.com/spreadsheets/d/1FIaXR2VrHwrvB7BAr90K79dwzKHH3HRht5Xa5p1mjnw/edit#gid=0
 
-The ID of the linked spreadsheet can also be given in the same input
-box by adding a pipe character (|) after the script ID, followed
-by the spreadsheet ID:
+Where the sheet ID is the string
+`1FIaXR2VrHwrvB7BAr90K79dwzKHH3HRht5Xa5p1mjnw`.
+Here is the final `scriptID|sheetID` string to copy into the spreadsheet
+script ID box for testing:
 
-<input style="width:525px" type="text" value="AKfycbwPSnUPffm_A_voZXkYy0sks9sWLr9-ig_m2UOPes9DP1Sod3A|1FIaXR2VrHwrvB7BAr90K79dwzKHH3HRht5Xa5p1mjnw">
+<input style="width:750px" type="text" value="AKfycbwPSnUPffm_A_voZXkYy0sks9sWLr9-ig_m2UOPes9DP1Sod3A|1FIaXR2VrHwrvB7BAr90K79dwzKHH3HRht5Xa5p1mjnw">
 
 This will enable an icon on the spreadsheet toolbar that opens up the
 linked spreadsheet (after you do your first upload or download).
