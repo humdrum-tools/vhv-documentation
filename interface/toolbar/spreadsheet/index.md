@@ -57,9 +57,11 @@ The spreadsheet toolbar contains a text box and five icons:
 
 	<span class="summary-icon">Spreadsheet script ID.</span>
 
-	See instructions below
-	for creating a spreadsheet and getting its script ID to paste into this box to
-	interact with the spreadsheet.
+	See instructions below for creating a spreadsheet and getting
+	its script ID to paste into this box to interact with the
+	spreadsheet.  The spreadsheet ID can be appended to the script
+	ID, which will cause a "open linked spreadsheet" icon to
+	appear in the toolbar.
 
 </td>
 </tr>
