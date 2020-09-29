@@ -211,12 +211,13 @@ A new tab will open, displaying the script editor:
 ### Step three: copy and save the script ###
 
 Copy the current Humdrum interaction script from <a target="_blank"
-href="http://bit.ly/humdrum-io-raw">this link</a> from a <a
-target="_blank" href="http://bit.ly/humdrum-io">Github gist</a>.
+href="http://bit.ly/humdrum-io">this link</a>.  You can click on
+the "raw" button at the upper right side of the script to open it
+in a new window and then select all and copy, then paste into the
+`Code.gs` tab in the script editor, replacing the original contents.
 This script will be updated over time, so you can recopy it every
 once in a while to get the script with more features and/or bug
-fixes (as well as new bugs).  Then replace the contents of `Code.gs`
-with the copied script:
+fixes (as well as new bugs).
 
 {% include image.html
 	file="script.png"
@@ -344,9 +345,11 @@ script ID box for testing:
 
 <input style="width:750px" type="text" value="AKfycbwPSnUPffm_A_voZXkYy0sks9sWLr9-ig_m2UOPes9DP1Sod3A|1FIaXR2VrHwrvB7BAr90K79dwzKHH3HRht5Xa5p1mjnw">
 
-This will enable an icon on the spreadsheet toolbar that opens up the
-linked spreadsheet (after you do your first upload or download).
-
+This will enable an icon on the spreadsheet toolbar that opens up
+the linked spreadsheet. The spreadsheet file icon will display after
+you do your first upload or download from VHV.  Once you have set
+up the script ID and sheet ID, VVH will remember it as long as you
+use the same browser.
 
 You can use the above script ID for testing purposes,
 which links to this <a target="_blank"
