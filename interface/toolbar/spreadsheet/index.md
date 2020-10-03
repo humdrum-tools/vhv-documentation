@@ -6,7 +6,7 @@ author: Craig Stuart Sapp
 translator: 
 creation_date: 20 Sep 2020
 translation_date: 
-last_updated: 26 Sep 2020
+last_updated: 2 Oct 2020
 tags: [all, getting_started]
 keywords: interface toolbar
 summary: "A Description of the spreadsheet toolbar."
@@ -14,6 +14,9 @@ sidebar: main_sidebar
 vim: ts=3
 permalink: /interface/toolbar/spreadsheet/index.html
 ---
+
+{% include_relative style-local.html %}
+{% include_relative scripts-local.html %}
 
 The spreadsheet toolbar is used for setting up interaction between
 VHV and Google Sheets.  This allows for doing more advanced editing
@@ -24,12 +27,9 @@ with orchestral scores is also easier in a spreadsheet, where you can
 freeze a header at the row showing the instrument names while you
 edit the music further below.
 
-
 The spreadsheet toolbar contains a text box and five icons:
 
 <br>
-
-{% include_relative style-local.html %}
 
 <div class="toolbar" id="toolbar-6">
 	<input id="macroid"  type="text" spellcheck="false" placeholder="Spreadsheet script ID">
@@ -210,14 +210,22 @@ A new tab will open, displaying the script editor:
 
 ### Step three: copy and save the script ###
 
+
+<br>
+<br>
+<button class="copy-button" onclick="copyToClipboard()">Copy script to clipboard</button>
+<br>
+<br>
+
 Copy the current Humdrum interaction script from <a target="_blank"
-href="http://bit.ly/humdrum-io">this link</a>.  You can click on
-the "raw" button at the upper right side of the script to open it
-in a new window and then select all and copy, then paste into the
-`Code.gs` tab in the script editor, replacing the original contents.
-This script will be updated over time, so you can recopy it every
-once in a while to get the script with more features and/or bug
-fixes (as well as new bugs).
+href="https://sheet.humdrum.org">this link</a>, or click on the
+copy button above this paragraph.  Then paste into the `Code.gs`
+tab in the script editor, replacing the original contents.  This
+script will be updated over time, so you can recopy it every once
+in a while to get the script with more features and/or bug fixes
+(as well as new bugs).
+
+
 
 {% include image.html
 	file="script.png"
@@ -674,10 +682,6 @@ If you add data lines or columns to the Humdrumd data and the colorization
 is no longer valid, select this menu item to recolorize the Humdrum data.
 This item is also useful to run after copy and pasting Humdrum data onto
 the spreadsheet.
-
-
-
-
 
 
 

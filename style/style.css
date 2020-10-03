@@ -10,6 +10,9 @@ svg:not(:root) {
   overflow: inherit; 
 }
 
+body.wait * {
+	cursor: wait;
+}
 
 body {
 	font-size:15px;

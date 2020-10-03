@@ -1,0 +1,39 @@
+
+
+<script>
+// vim: ts=3
+
+//////////////////////////////
+//
+// copyToClipboard --
+//
+//
+
+function copyToClipboard(url) {
+	if (!url) {
+		url = "https://sheet.humdrum.org/scripts/humdrum-sheet.js";
+	}
+	setTimeout(function() {
+		document.body.classList.add("wait");
+	}, 0);
+	var request = new XMLHttpRequest();
+	request.open('GET', url);
+	request.send();
+	request.addEventListener("load", function() {
+		setTimeout(function() {
+			document.body.classList.remove("wait");
+		}, 50);
+		var string = this.responseText;
+		console.log("Copying", string, "to clipboard");
+		var element = document.createElement("textarea");
+		element.value = string;
+		document.body.appendChild(element);
+		element.select();
+		document.execCommand("copy");
+		document.body.removeChild(element);
+	});
+
+};
+
+
+</script>
