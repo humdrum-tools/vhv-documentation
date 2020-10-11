@@ -684,5 +684,89 @@ This item is also useful to run after copy and pasting Humdrum data onto
 the spreadsheet.
 
 
+### Add above current line... ###
+
+{% include image.html
+	file="menu-line.png"
+	alt="Line insertion options."
+	max-width="50%"
+	caption="Line insertion options."
+%}
+
+Options that add null-token lines above the current line to fill
+in with content, such as layout parameters, a new sonority or interpretations
+such as clef changes.
+
+#### Interpretation line ####
+
+Add a empty interpretation above the current row (or top cell in the selection), which
+will add a new row with `*` above each non-empty column in the selected row.
+
+
+#### Local comment line ####
+
+Add an empty local comment line above the current row (`!`).
+
+
+#### Data line ####
+
+Add an null data line above the current row (`.`).
+
+
+### Show/hide columns... ###
+
+{% include image.html
+	file="menu-column.png"
+	alt="Column show/hide options."
+	max-width="50%"
+	caption="Column show/hide options."
+%}
+
+Options to selectivly show or hide data spines.  These options are
+useful to select a subset of spines for data entry.
+
+
+
+#### Hide non-kern spines ####
+
+Hide add data spines that are not `**kern`.  In other words hide
+lyrics, dynamics, text, harmony, etc., and only show the notes.  This is
+useful for cases where you want to edit/view notes.
+
+{% include image.html
+	file="kern-hide-before.png"
+	alt="Before hiding non-kern spines."
+	caption="Before hiding non-kern spines."
+%}
+
+{% include image.html
+	file="kern-hide-after.png"
+	alt="Before hiding non-kern spines."
+	caption="After hiding non-kern spines."
+%}
+
+
+
+#### Show only selected spines ####
+
+Select one or more columns to display, hiding other columns.
+Any rows can be used for the selection.  If the tabs are expanded, the
+selection will include all subspines even if they are not in the selection.
+
+
+
+#### Hide selected spines ####
+
+Select one or more columns to hide, showing other columns.
+Any rows can be used for the selection.  If the tabs are expanded, the
+selection will include all subspines even if they are not in the selection.
+
+
+
+#### Show all spines ####
+
+Unhide all columns of data on the spreadsheet.
+
+
 
 
