@@ -220,6 +220,10 @@ entries:
       output: web, pdf
       url: /humdrum/pedal_marks
 
+    - title: Percussion
+      output: web, pdf
+      url: /humdrum/percussion
+
     - title: Repetition
       output: web, pdf
       url: /humdrum/repetition-symbols
