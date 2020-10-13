@@ -472,36 +472,14 @@ reformat them as numbers from the Format &rarr; Number menu.
 
 ## Expanded-tab formatting ##
 
-If you are editing music that contains spine splits (`*^`)  and
-merges (`*v`), then it is useful to click on the expand-tab icon
-in the main toolbar to straighten out the spines into columns before
-transferring to a spreadsheet.
-
-Starting with single tabs between every token:
-
-{% include image.html
-	file="before-expanding.png"
-	alt="Before expanding."
-	caption="Before expanding tabs."
-%}
-
-Click on the expand-tabs button circled in red.  This will add extra
-tabs to ensure that spines remain in the same column throughout
-the data.  Spine splits will be added in columns to the right of
-the primary spine column, and extra tabs are added when the split
-spines are not present.
-
-{% include image.html
-	file="after-expanding.png"
-	alt="After expanding."
-	caption="After expanding tabs."
-%}
-
-When you are finished editing in the spreadsheet and download the
-data back into VHV, it is advisable to click on the collapse tabs
-icon to remove the spacing tabs; otherwise, the files cannot be
-parsed properly with the original Humdrum Toolkit commands (but
-either tab style can be used with filters in VHV).
+When uploading data to a spreadsheet, it will first be run through the
+`tabber` filter to straighten out spines into columns.  When the data
+is downloaded back to the text editor, the state of the current data
+in the text editor will be matched.  If the text editor contains
+data with expanded tabs, the downloaded data will be left expanded. 
+If the text editor contains data with compressed tabbing, the downloaded
+data will be run through the `tabber -r` filter to remove the alignment
+tabs before it is placed in the text editor.
 
 
 ## Freezing rows ##
