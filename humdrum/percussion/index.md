@@ -124,9 +124,11 @@ a problem:
 
 If notes are not pitched, but also not fully unpitched, the marker
 `RR` can be used to indicate that a note is partially pitched.  This
-is useful for instruments such as tom-toms where the drums are
-pitched from low to high.  In this case the general pitch-height is useable
-for analysis rather than the notated pitch.
+is useful for instruments such as <a target="_blank"
+href="https://www.youtube.com/watch?v=7otWy6LcaRA">rototoms</a>
+where the drums are pitched from low to high.  In this case the
+general pitch-height is useable for analysis rather than the notated
+pitch.
 
 
 {% include verovio.html
