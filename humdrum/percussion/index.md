@@ -124,7 +124,7 @@ a problem:
 
 If notes are not pitched, but also not fully unpitched, the marker
 `RR` can be used to indicate that a note is partially pitched.  This
-is useful for instruments such as <a target="_blank"
+is useful for instruments such as tom-toms or <a target="_blank"
 href="https://www.youtube.com/watch?v=7otWy6LcaRA">rototoms</a>
 where the drums are pitched from low to high.  In this case the
 general pitch-height is useable for analysis rather than the notated
@@ -550,6 +550,35 @@ data has rests that were originally unpitched notes:
 =	=
 *-	*-
 </script>
+
+
+## Percussion instrument codes ##
+
+Percussion instruments can be categorized as such with the `*ICidio`
+(idiophone) interpretation.  Specific insturments:
+
+| Code  | Name | MIDI key # |
+| ----- | ---- | ------ |
+| `*Ibdrum`  | bass drum (kit)     | 35    |
+| `*Icasts`  | castanets           |       |
+| `*Ipiatt`  | cymbals             |       |
+| `*Isdrum`  | snare drum (kit)    | 38    |
+| `*Icrshc`  | crash cymbal (kit)  | 49/57 |
+| `*Igong`   | gong                |       |
+| `*Imarac`  | maracas             | 70    |
+| `*Iridec`  | ride cymbal (kit)   | 51/59 |
+| `*Ispshc`  | splash cymbal (kit) | 55    |
+| `*Itabla`  | tabla               |       |
+| `*Itambn`  | tambourine          | 54    |
+| `*Itom`    | tom-tom drum        | 41/43/45/47/48/50 |
+| `*Itrngl`  | triangle            | 81/80 |
+
+
+
+
+
+
+
 
 
 
