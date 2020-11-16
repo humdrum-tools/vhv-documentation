@@ -1,0 +1,88 @@
+
+<script src="https://cdn.jsdelivr.net/npm/vega@4.4.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc12"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@3.29.1"></script>
+
+<div id="plotarea">PLOT GOES HERE</div>
+
+<script>
+var mydata =
+{
+	"$schema": 'https://vega.github.io/schema/vega-lite/v3.json',
+	"width": 600,
+	"title": 'Bach chorale melodic semitones',
+	"data": {
+	"values": 
+[
+{"category": '-2', "count": 17503},
+{"category": '2', "count": 15270},
+{"category": '0', "count": 11241},
+{"category": '-1', "count": 11157},
+{"category": '1', "count": 9924},
+{"category": '5', "count": 4340},
+{"category": '-4', "count": 2245},
+{"category": '-7', "count": 2144},
+{"category": '-3', "count": 2065},
+{"category": '-5', "count": 1589},
+{"category": '7', "count": 1086},
+{"category": '3', "count": 1038},
+{"category": '4', "count": 819},
+{"category": 'r', "count": 731},
+{"category": '12', "count": 609},
+{"category": '-12', "count": 461},
+{"category": '-6', "count": 268},
+{"category": '9', "count": 193},
+{"category": '8', "count": 183},
+{"category": '-8', "count": 116},
+{"category": '-9', "count": 68},
+{"category": '10', "count": 37},
+{"category": '6', "count": 34},
+{"category": '11', "count": 17},
+{"category": '-10', "count": 16},
+{"category": '14', "count": 9},
+{"category": '-14', "count": 7},
+{"category": '17', "count": 6},
+{"category": '-11', "count": 6},
+{"category": '13', "count": 5},
+{"category": '16', "count": 4},
+{"category": '19', "count": 4},
+{"category": '15', "count": 2},
+{"category": '24', "count": 1}
+]
+	},
+	"mark": 'bar',
+	"encoding": {
+		"x": {
+			"field": 'category', 
+			"title": 'semitones',
+			"type": 'ordinal',
+			"axis": {"labelAngle": -90 },
+			"sort": ["-14","-12","-11","-10","-9","-8","-7","-6","-5","-4","-3","-2","-1","0","r","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","19","24"]
+
+		},
+		"y": {
+			"field": 'count',
+			"title": 'count',
+			"type": 'quantitative'
+		},
+		"tooltip": {
+			"field": 'count',
+			"type": 'quantitative'
+		},
+		"color": {
+			"field": 'category',
+			"type": 'nominal',
+			"legend": null
+		}
+	}
+}
+;
+
+document.addEventListener("DOMContentLoaded", function () {
+	vegaEmbed('#plotarea', mydata);
+});
+
+</script>
+
+
+
