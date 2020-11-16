@@ -92,7 +92,7 @@ Next, you need to create a makefile for verovio with this command:
 
 ```bash
 cd tools
-cmake .
+cmake ../cmake
 ```
 
 ### Compiling the executable ###
