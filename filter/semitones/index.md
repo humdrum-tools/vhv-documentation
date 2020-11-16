@@ -16,8 +16,8 @@ permalink: /filter/semitones/index.html
 ---
 
 
-The semitones filter calculates melodic semitone intervals from 
-`**kern` spines.  The filter can also be used to highlight
+The semitones filter calculates melodic semitone intervals for 
+`**kern` spine notes.  The filter can also be used to highlight
 steps, leaps, repetitions, and interval directions in the 
 rendered notation.
 
@@ -31,7 +31,7 @@ rendered notation.
 | -j #   | Set the semitone value for the boundary between steps and leaps (default: 3). |
 | -l     | Highlight/count only leaps. |
 | -m     | Extract MIDI note numbers rather than semitones. |
-| -n     | Include interval count in output data. |
+| -n     | Include highlighted interval count in output data. |
 | -r     | Highlight/count repeated notes. |
 | -s     | Highlight/count steps. |
 | -u     | Highlight/count notes with upward interval. |
@@ -61,6 +61,7 @@ the notation.
 	source="example1"
 	scale="50"
 	humdrum-min-width="180"
+	spacingSystem="20"
 	pageWidth="900"
 %}
 <script type="application/x-humdrum" id="example1">
@@ -92,7 +93,8 @@ the notation.
 </script>
 
 Notice that the melodic semitone interval is shown on the first
-note of the interval.
+note of the interval.  Try editing the musical text on the left
+to watch the analysis change in the graphical notation on the right.
 
 
 ## Highlighting categories of intervals ##
@@ -107,7 +109,7 @@ The following options can be used to highlight groups of intervals:
 | -s     | Highlight only notes involved in stepwise motion. |
 | -l     | Highlight only notes involved in leaping motion. |
 
-Example:
+Examples of various highlighting options are given below.
 
 ### Highlight repeated notes ###
 
@@ -115,6 +117,7 @@ Adding the `-r` option will highlight notes that repeat.
 
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-repeat"
 	scale="50"
 	humdrum-min-width="180"
@@ -155,6 +158,7 @@ semitone intervals.
 
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-up"
 	scale="50"
 	humdrum-min-width="180"
@@ -195,6 +199,7 @@ semitone intervals.
 
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-down"
 	scale="50"
 	humdrum-min-width="180"
@@ -236,6 +241,7 @@ semitone intervals.
 
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-step"
 	scale="50"
 	humdrum-min-width="180"
@@ -276,6 +282,7 @@ Adding the `-l` option will highlight notes that create melodic leaps.
 
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-leap"
 	scale="50"
 	humdrum-min-width="180"
@@ -318,6 +325,7 @@ as a step.  To make the example clear, the `-1`, option is used below
 to highlight only the first note creating the intervals:
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-leap2"
 	scale="50"
 	humdrum-min-width="180"
@@ -368,6 +376,7 @@ intervals to highlight intervals that satisfy both requirements:
 Here is an example of highlighting only upward steps:
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-mix-step"
 	scale="50"
 	humdrum-min-width="180"
@@ -405,6 +414,7 @@ And downward leaps:
 
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-mix-leap"
 	scale="50"
 	humdrum-min-width="180"
@@ -440,13 +450,14 @@ And downward leaps:
 
 
 
-## Selecting highlighted note of interval ##
+## Highlighting only one interval note ##
 
 The `-1` option can be used to highlight only the first note
-of an interval pair, and `-2` highlights only the second note:
+of an interval pair:
 
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-first"
 	scale="50"
 	humdrum-min-width="180"
@@ -480,9 +491,10 @@ of an interval pair, and `-2` highlights only the second note:
 *-
 </script>
 
-Highlighting only the second note of the interval:
+and `-2` highlights only the second note of the interval:
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-second"
 	scale="50"
 	humdrum-min-width="180"
@@ -519,13 +531,17 @@ Highlighting only the second note of the interval:
 
 ## Highlight styling ##
 
-Multiple semitone analyses to highlight groups of intervals can be
+Various interval groups can be highlighted in 
+different colors by using the `--mark` and `--color` options.  Both
+must be specified to mark intervals with different colors.
+
 made, and the color of the groups can be controlled independently.
 Here is an example of using the default markers `@` and red color
 for the upward leaps, and then using a different marker to indicate
 a different color for downward leaps:
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-color"
 	scale="50"
 	humdrum-min-width="180"
@@ -533,7 +549,7 @@ a different color for downward leaps:
 %}
 <script type="application/x-humdrum" id="example-color">
 !!!filter: semitones -u -l -A -1
-!!!filter: semitones -dl1 --mark Z --color violet
+!!!filter: semitones -dl1 --mark Z --color dodgerblue
 **kern
 *M4/4
 =1
@@ -625,6 +641,7 @@ example where the interval after a fermata is suppressed:
 
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-nofermata"
 	scale="50"
 	humdrum-min-width="180"
@@ -660,6 +677,7 @@ The `-X` option reverse the exclusion, and only note tokens that
 contain the specified regular expression will be analyzed:
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-onlyfermata"
 	scale="50"
 	humdrum-min-width="180"
@@ -686,12 +704,61 @@ contain the specified regular expression will be analyzed:
 So this example only calculates the intervals that start on fermata notes.
 
 
+## VHV Examples ##
+
+Here is an example using the following filters to highlight
+each refined interval class:
+
+```
+!!!filter: semitones -ul2A
+!!!filter: semitones -dl2A --mark j --color hotpink
+!!!filter: semitones -us2A --mark V --color dodgerblue
+!!!filter: semitones -ds2A --mark Z --color blue
+!!!filter: semitones -r2A --mark + --color limegreen
+!!!filter: satb2gs
+```
+
+Try copy-and-pasting the above filter lines into VHV for the
+example [Bach chorale](http://verovio.humdrum.org/?file=chorales/chor001.krn) used below.
+
+The `-2` option is used to highlight only the second note of the interval
+notes.  This means that the color indicates the approach interval.  You
+can try changing this to `-1` to have the color indicate the departure
+interval.  The `-A` option is used to prevent multiple duplicate 
+output analysis spines to be generated.  This is optional, since the
+analysis spines are not displayed in the graphical notation.
+
+{% include note.html
+	content="Notice that each category must be given a unique mark since the coloring occurs via these marks.  If two group have the same group, then only one color can be used for both groups."
+%}
+
+
+{% include image.html
+	file="refinedcontour.png"
+	url="http://verovio.humdrum.org/?file=chorales/chor001.krn&filter=semitones%20-ul2A|semitones%20-dl2A%20--mark%20j%20--color%20hotpink|semitones%20-us2A%20--mark%20V%20--color%20dodgerblue|semitones%20-ds2A%20--mark%20Z%20--color%20blue|semitones%20-r2A%20--mark%20+%20--color%20limegreen|satb2gs"
+	alt="Highlighting step/leap categories"
+	caption="Highlighting step/leap categories using the semitones filter"
+	margin-bottom="-20px"
+%}
+
+Click on the image to load the score and the highlighting filters
+into VHV.  Then use the left/right arrow buttons at the top of the
+page to browse through other chorales with the highlighted intervals.
+
+Try adding `-x ';'` to each semitones filter to ignore intervals after
+fermatas.
+
+Try adding `-j 5` so that leaps are defined as forths or larger intervals.
+
+
+
 ## MIDI note numbers ##
 
 Adding the `-m` will extract MIDI note numbers rather than semitone
 intervals:
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-midi"
 	scale="50"
 	humdrum-min-width="180"
@@ -729,6 +796,7 @@ Here is an example of extracting both MIDI note numbers and semitone
 intervals:
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-midisemi"
 	scale="50"
 	humdrum-min-width="180"
@@ -763,12 +831,14 @@ intervals:
 *-
 </script>
 
+Notice that the MIDI note number plus the semitone interval below
+it gives the note number of the next note.
 
 ## Dealing with chords ##
 
 When chords are present in the input data, only the first note
 in the chord will be considered.  If you do not know the ordering
-of the notes in the chord, or you want to force the highest or lowest
+of notes in the chord, or you want to force the highest or lowest
 note in the chord to be used, use the *chord*  filter to sort the
 notes in the chord before analysis.
 
@@ -778,6 +848,7 @@ intervals between the single note and the chord changes in each
 measure due the chord-note ordering:
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-chord1"
 	scale="50"
 	humdrum-min-width="180"
@@ -809,6 +880,7 @@ measure due the chord-note ordering:
 Sorting the chord notes from high to low, using the `-d` (downward) option:
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-chord2"
 	scale="50"
 	humdrum-min-width="180"
@@ -843,6 +915,7 @@ Sorting the chord notes from high to low, using the `-d` (downward) option:
 Sorting the chord notes from low to high, using the `-u` (upward) option:
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-chord3"
 	scale="50"
 	humdrum-min-width="180"
@@ -876,10 +949,11 @@ Sorting the chord notes from low to high, using the `-u` (upward) option:
 If you do not want the chord-tone notes not used in the semitone
 analysis to be displayed, use the `-f` option (meaning "first") for
 the chord filter to keep only the first note of the chord.  To sort
-the notes before taking the first note, use `-h` to select the top (highest)
+notes before taking the first note, use `-t` to select the top (highest)
 note, or `-b` to select the bottom (lowest) note for each chord.
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-chord4"
 	scale="50"
 	humdrum-min-width="180"
@@ -910,6 +984,7 @@ note, or `-b` to select the bottom (lowest) note for each chord.
 </script>
 
 {% include verovio.html
+	spacingSystem="20"
 	source="example-chord5"
 	scale="50"
 	humdrum-min-width="180"
@@ -1025,7 +1100,7 @@ etc.
 ```
 
 
-### Calculate an interval histogram for Bach chorales ###
+### Interval histograms for Bach chorales ###
 
 Using the humlib tools *humcat*, *serialize*, *ridx*, and *sortcount*,
 as well as the unix tool *sort*:
@@ -1095,7 +1170,8 @@ Move the mouse over each bar to see the count for each interval.
 To avoid counting intervals after notes with fermatas:
 
 ```bash
-humcat -s h://chorales | semitones -Ix ';' | serialize | ridx -H | sortcount | sort -nrk2
+humcat -s h://chorales | semitones -Ix ';' | serialize \
+     | ridx -H | sortcount | sort -nrk2
 ```
 
 ```tsv
@@ -1133,7 +1209,8 @@ Counting only intervals between fermatas and the following notes/rests:
 
 
 ```bash
-humcat -s h://chorales | semitones -IX ';' | serialize | ridx -H | sortcount | sort -nrk2
+humcat -s h://chorales | semitones -IX ';' | serialize \
+     | ridx -H | sortcount | sort -nrk2
 ```
 
 ```tsv
@@ -1187,7 +1264,7 @@ humcat -s h://chorales | semitones -IX ';' | serialize \
 Repeated notes are most common after fermatas.
 
 
-### Most common interal sequences in Bach chorales ###
+### Interval sequences in Bach chorales ###
 
 Here is an example of how to identify the most common 5-interval sequences
 in the Bach choral repertory:
@@ -1235,6 +1312,7 @@ When joining, multiple subspines may share the same merged note:
 
 
 { include verovio.html
+	spacingSystem="20"
 	source="example-poly"
 	scale="50"
 	humdrum-min-width="180"
@@ -1259,6 +1337,134 @@ When joining, multiple subspines may share the same merged note:
 *-
 </script>
 {% endcomment %}
+
+
+## Counting highlighted intervals ##
+
+Add the `-n` option to count intervals that are highlighted.  This will
+add a line at the bottom of the data with the interval count followed
+by the options used to select steps, leaps, upward, downward, etc.
+
+For example, given the input data:
+
+```tsv
+**kern
+*M4/4
+=1
+4c
+4d
+4e
+4f
+=
+4c
+4e
+4g
+4cc
+=
+4cc
+4b
+4a
+4g
+=
+4cc
+4g
+4e
+4c
+=
+*-
+```
+
+The command/filter:
+
+```bash
+semitones -uln
+```
+
+will count the number of upwards leaps:
+
+```tsv
+**kern	**tti
+*M4/4	*M4/4
+=1	=1
+4c	2
+4d	2
+4e	1
+4f	-5
+=	=
+@4c	4
+@@4e	3
+@@4g	5
+@4cc	0
+=	=
+4cc	-1
+4b	-2
+4a	-2
+@4g	5
+=	=
+@4cc	-5
+4g	-3
+4e	-4
+4c	.
+=	=
+*-	*-
+!!!RDF**kern: @ = marked note
+!!semitone_count: 4 UP LEAP
+```
+
+The line
+
+```
+!!semitone_count: 4 UP LEAP
+```
+
+means that there were four upward leaps in the example.
+
+
+The `-M` option can be used to not mark any notes in the `**kern`
+spines, and `-A` can be used to not output the analysis spines. 
+These options will cause only the `semitone_count` line to be added
+to the input data:
+
+```bash
+semitones -ulnMA
+```
+
+```tsv
+**kern
+*M4/4
+=1
+4c
+4d
+4e
+4f
+=
+4c
+4e
+4g
+4cc
+=
+4cc
+4b
+4a
+4g
+=
+4cc
+4g
+4e
+4c
+=
+*-
+!!semitone_count: 4 UP LEAP
+```
+
+If you only want the interval count, then use the command:
+
+```bash
+semitones -uln input.krn | awk 'END {print $2}'
+```
+
+which in this case will return `4`.
+
 
 
 
