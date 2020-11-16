@@ -370,6 +370,10 @@ entries:
       output: web, pdf
       url: /filter/satb2gs
 
+    - title: semitones
+      output: web, pdf
+      url: /filter/semitones
+
     - title: shed
       output: web, pdf
       url: /filter/shed
