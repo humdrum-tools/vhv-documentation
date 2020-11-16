@@ -1,5 +1,5 @@
 ---
-title:  "semitons filter"
+title:  "semitones filter"
 lang: en
 author: Craig Stuart Sapp
 creation_date: 15 Nov 2020
