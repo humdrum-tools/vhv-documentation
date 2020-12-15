@@ -256,7 +256,7 @@ entries:
       output: web, pdf
       url: /humdrum/tuplets
 
-    - title: White menural notation
+    - title: Mensural notation
       output: web, pdf
       url: /humdrum/mens
 

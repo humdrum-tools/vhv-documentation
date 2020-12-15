@@ -1,5 +1,5 @@
 ---
-title: White mensural notation
+title: Mensural notation
 lang: en
 ref: humdrum-mens
 author: Craig Stuart Sapp
@@ -7,18 +7,17 @@ translator:
 keywords: humdrum mensural notation
 creation_date: 8 May 2018
 translation_date: 
-last_updated: 8 May 2018
+last_updated: 14 Dec 2020
 tags: [all, humdrum ]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: A description of how to encode music for white mensural notation.
+summary: A description of how to encode mensural music.
 sidebar: main_sidebar
 permalink: /humdrum/mens/index.html
 ---
 
-
-White mensural notation can be encoded in Humdrum using the `**mens`
-exclusive interpretation.
+Mensural music notation can be encoded in Humdrum using the `**mens`
+exclusive interpretation:
 
 {% include verovio.html
 	source="mens"
@@ -36,44 +35,44 @@ exclusive interpretation.
 *M2/1
 *met(C|)
 =1-
-sp:D
-siF
-miE
-miD
-Mp:F
-miG
+s:D
+sF
+mE
+mD
+M:F
+mG
 =3-
-MiA
-MiB-
-MiA
-sid
-mic
-miB
-sid
+MA
+MB-
+MA
+sd
+mc
+mB
+sd
 =5-
-Mir
-sic
-miB
-miA
+Mr
+sc
+mB
+mA
 =6-
-Mp:c
-mid
-sie
+M:c
+md
+se
 =7-
-sie
-Sie
-sp:e
-sic
-miB
-miA
+se
+Se
+s:e
+sc
+mB
+mA
 =10-
-Mp:B
-miA
-MiB
-Mic
+M:B
+mA
+MB
+Mc
 =11-
-siA
-sid
+sA
+sd
 =12-
 *-
 </script>
@@ -512,18 +511,6 @@ ur	uc
 </script>
 
 
-### Perfection ###
-
-The letter `p` appended to the basic rhythmic value means that the note/rest
-is *perfected*.  In modern notation this is equivalent to adding an augmentation
-dot after a note, such as a dotted half note.  The letter `i` indicates
-an *imperfect* rhythm.  In modern notation all notes are imperfect unless there
-is an augmentation dot after it to make it perfect.
-
-The `p` and `i` rhythmic qualifiers are not required unless you are creating
-a polyphonic score.  In that case the exact duration of the notes are required
-to align the parts.
-
 
 ### Dots ###
 
@@ -620,9 +607,8 @@ Lr
 
 ## Ligatures ##
 
-Ligatures are indicated with square brackets for recta ligatures, and angle brackets for obliqua ligatures.
-Verovio currently does not have obliqua ligatures implemented, and rhtyhmic stems are not implemented
-yet either.
+Ligatures are indicated with square brackets for recta ligatures,
+and angle brackets for obliqua ligatures. 
 
 {% include verovio.html
 	source="ligature"
@@ -645,11 +631,11 @@ Mc
 sB
 [Sc
 Sd
-Se]
+SA]
 *-
 </script>
 
-Currently ligatures can only be shown in *recta* style.
+[Need to prevent &lt; and &gt; for oblique ligatures from being interpreted as HTML brackets].
 
 
 ## Barlines ##
@@ -662,11 +648,83 @@ at breve boundaries.
 
 ## Coloration ##
 
-To be implemented/described
+Colored notes are marked indicated by adding `~` to each note that is colored.
 
+Example in white notation:
+
+{% include verovio.html
+	source="color-white"
+	pageWidth="950"
+	evenNoteSpacing="1"
+	scale="60"
+	tabsize="12"
+	humdrum-min-height="250px"
+%}
+
+<script type="application/x-humdrum" id="color-white">
+**mens
+*clefC3
+*met(C|)
+Sc
+S~B
+s~A
+s~B
+sc~
+s~G
+Sc
+*-
+</script>
+
+Example in black notation:
+
+{% include verovio.html
+	source="color-black"
+	pageWidth="950"
+	evenNoteSpacing="1"
+	scale="60"
+	tabsize="12"
+	humdrum-min-height="250px"
+%}
+
+<script type="application/x-humdrum" id="color-black">
+**mens
+*black
+*clefC3
+*met(C|)
+Sc
+S~B
+s~A
+s~B
+sc~
+s~G
+Sc
+*-
+</script>
+
+
+### Perfection ###
+
+The letter `p` appended to the basic rhythmic value means that the note/rest
+is *perfected*.  In modern notation this is equivalent to adding an augmentation
+dot after a note, such as a dotted half note.  The letter `i` indicates
+an *imperfect* rhythm.  In modern notation all notes are imperfect unless there
+is an augmentation dot after it to make it perfect.
+
+The `p` and `i` rhythmic qualifiers are not required unless you are creating
+a polyphonic score.  In that case the exact duration of the notes are required
+to align the parts.
 
 ## Alteration ##
 
 To be implemented/described
+
+## References ##
+
+<ul>
+
+<li>  <a target="_blank" href="https://revista.uclm.es/index.php/cuadernosdeinvestigacionmusical/article/view/1953">White Mensural Manual Encoding: from Humdrum to MEI</a>
+by David Rizo, Nieves Pascual and Craig Sapp, 2019.</li>
+
+</ul>
 
 
