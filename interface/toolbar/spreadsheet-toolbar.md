@@ -51,7 +51,9 @@ at the top of the sheet while editing further down in the score.
 	<span class="summary-icon">Upload to spreadsheet.</span>
 
 	The contents of the text editor will replace the current contents
-	of the linked spreadsheet.
+	of the linked spreadsheet.  Hold down the shift key when clicking on this
+	icon to bypass the tabber filter, which also permits uploading invalid
+	Humdrum data (which might be easier to fix in the spreadsheet).
 
 </td>
 </tr>
@@ -68,7 +70,9 @@ at the top of the sheet while editing further down in the score.
 	<span class="summary-icon">Download from spreadsheet.</span>
 
 	The contents of the linked spreadsheet will replace the current contents
-	of the VHV text editor.
+	of the VHV text editor.  Hold down the shift key when clicking on this
+	icon to bypass the tabber filter, which also permits downloading invalid
+	Humdrum data (which might beasier to fix in the text editor).
 
 </td>
 </tr>
