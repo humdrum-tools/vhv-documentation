@@ -17,17 +17,24 @@ permalink: /interface/musicxml/index.html
 
 ## Drag-and-drop MusicXML files ##
 
-The VHV interface can load MusicXML files by dragging and dropping them from the desktop
-onto the VHV page.  The following figure shows MusicXML data being exported from
-[MuseScore](http://www.musescore.org) to the desktop, and then dragging the file onto
-the browser to load the file in VHV:
+The VHV interface can load MusicXML files by dragging and dropping
+them from the desktop onto the VHV page.  The following figure shows
+MusicXML data being exported from [MuseScore](http://www.musescore.org)
+to the desktop, and then dragging the file onto the browser to load
+the file in VHV.
+
+There are two ways of loading a MusicXML file: regular drag-and-drop will
+load the MusicXML data directly into the text editor, while holding down the 
+<span class="keypress">shift</span> key while drag-and-dropping will 
+convert the MusicXML data into Humdrum data, which is then displayed
+in the text editor:
 
 
 {% include image.html
 	file="export-import-musicxml.gif"
 	alt="MusicXML import example"
 	max-width="100%"
-	caption="MusicXML file exported from MuseScore, then imported by drag/drop file into VHV."
+	caption="MusicXML file exported from MuseScore, then imported by shift+drag/dropping a file into VHV."
 %}
 
 Try downloading the [same MusicXML file](bwv1011-sarabande.xml) and loading it into VHV in a similar manner (usually save by right clicking on the link and then choose *save link as*).
@@ -56,6 +63,12 @@ and display in the text editor.
 {% include warning.html
 	content="The graphical notation editing commands cannot be used when MusicXML data is loaded into the text editor, since these commands operate on Humdrum data only."
 %}
+
+## Conversion of MusicXML data into Humdrum ##
+
+If MusicXML data is displayed in the text editor, you can use the
+Edit menu option "Convert to Humdrum" to convert the MusicXML data
+into Humdrum data, which replaces the MusicXML data in the text editor.
 
 
 ## Embedding tandem interpretations ##
