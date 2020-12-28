@@ -406,6 +406,16 @@ entries:
 
 ###########################################################################
 
+  - title: Other topics
+    output: web, pdf
+    folderitems:
+
+    - title: URL parameters
+      output: web, pdf
+      url: /topics/url-parameters
+
+###########################################################################
+
   - title: myVHV
     output: web, pdf
     folderitems:
