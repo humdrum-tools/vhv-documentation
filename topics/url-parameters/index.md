@@ -102,11 +102,11 @@ and `bEey` are equivalent.
 
 | Character | VHV&nbsp;shortcut | Meaning |
 | --------- | ------------ | ------- |
+| `B`       |  <a href="/commands/alt-B"><span class="keypress">alt-shift-B</span></a> | Hide the toolbar. |
 | `b`       |  <a href="/commands/alt-b"><span class="keypress">alt-b</span></a>       | Suppress the VHV logo at the top left of the VHV window. |
 | `d`       |  <a href="/commands/alt-d"><span class="keypress">alt-d</span></a>       | Hide the menu in the VHV header. |
 | `E`       |  <a href="/commands/alt-E"><span class="keypress">alt-shift-E</span></a> | Hide both the menu and the toolbar areas. |
 | `e`       |  <a href="/commands/alt-e"><span class="keypress">alt-e</span></a>       | "Erase": Suppress the splash music when opening VHV (or any previous content from your last visit).    | |
-| `N`       |  <a href="/commands/alt-N"><span class="keypress">alt-shift-N</span></a> | Hide the toolbar. |
 | `w`       |  <a href="/commands/alt-w"><span class="keypress">alt-w</span></a>       | Widen the spacing of the notation. Multiple `w` characters can be used to increase the spacing more.        |
 | `W`       |  <a href="/commands/alt-W"><span class="keypress">alt-shift-W</span></a> | Narrow the spacing of the notation.  Multiple `W` characters can be used to decrease the spacing more.       |
 | `y`       |  <a href="/commands/alt-y"><span class="keypress">alt-y</span></a>       | Hide the text editor. |
@@ -550,4 +550,8 @@ Compare to the same search without the filter:
 	</a>
 </div>
 
+
+## tb/Toolbar ##
+
+Set the visible toolbar.
 
