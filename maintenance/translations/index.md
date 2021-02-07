@@ -49,6 +49,29 @@ The `translator` and `translation_date` parameters are displayed on the
 bottom right of pages, along with the page author(s) and creating/last edited
 date.
 
+When a new translation is added, each translation page and the main page need
+to be updateded to include all of the languages.  So if there were translations
+to Polish, Spanish, and French available in addition to the original in English,
+then there will be four files:
+
+```
+index.md
+index-PL.md
+index-ES.md
+index.FR.md
+```
+
+And all files would have an entry in the liquid header:
+
+```
+lang: en es fr pl
+```
+
+The langauges can be listed in any order, but perhaps alphabetical by their
+language code is best.  This entry tells Jekyll that mutliple langauges are 
+available for the page, and this in turn will add a list of the langauges
+to the pages' headers on the website.
+
 ## Permalinks ##
 
 Webpage target locations are controlled by
@@ -67,6 +90,12 @@ So the Polish translation would be:
 
 ```
 permalink: /humdrum/getting_started/index-PL.html
+```
+
+The Spanish translation would be:
+
+```
+permalink: /humdrum/getting_started/index-ES.html
 ```
 
 And the French translation would be:
