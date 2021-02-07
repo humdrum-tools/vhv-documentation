@@ -32,26 +32,32 @@ and changing the text will update the notation as you type.
 [If the notation no longer updates when editing the Humdrum text,
 you will have to reload the webpage to restart verovio again.]
 
-{% include_relative pitch.txt %}
-{% include_relative clefs.txt %}
-{% include_relative octaves.txt %}
-{% include_relative barlines.txt %}
-{% include_relative time_signatures.txt %}
-{% include_relative accidentals.txt %}
-{% include_relative key_signatures.txt %}
-{% include_relative chords.txt %}
-{% include_relative rhythm.txt %}
-{% include_relative ties.txt %}
-{% include_relative beaming.txt %}
-{% include_relative tuplets.txt %}
-{% include_relative rests.txt %}
-{% include_relative slurs.txt %}
-{% include_relative articulations.txt %}
-{% include_relative lyrics.txt %}
-{% include_relative dynamics.txt %}
-{% include_relative multiple_voices.txt %}
-{% include_relative multiple_staves.txt %}
-{% include_relative cross_staff.txt %}
-{% include_relative text_directions.txt %}
-{% include_relative transposing.txt %}
+{% include humdrum/pitch.txt %}
+{% include humdrum/clefs.txt %}
+{% include humdrum/octaves.txt %}
+{% include humdrum/barlines.txt %}
+{% include humdrum/time_signatures.txt %}
+{% include humdrum/accidentals.txt %}
+{% include humdrum/keysig.txt %}
+See the [full description of key signatures](/humdrum/keysig/index.html) for more information.
+
+{% include humdrum/chords.txt %}
+{% include humdrum/rhythm.txt %}
+{% include humdrum/ties.txt %}
+[More information about ties](/humdrum/ties)
+
+{% include humdrum/beaming.txt %}
+{% include humdrum/tuplets.txt %}
+{% include humdrum/rests.txt %}
+{% include humdrum/slurs.txt %}
+[More information about ties](/humdrum/ties)
+
+{% include humdrum/articulations.txt %}
+{% include humdrum/lyrics.txt %}
+{% include humdrum/dynamics.txt %}
+{% include humdrum/multiple_voices.txt %}
+{% include humdrum/multiple_staves.txt %}
+{% include humdrum/cross_staff.txt %}
+{% include humdrum/text_directions.txt %}
+{% include humdrum/transposing.txt %}
 

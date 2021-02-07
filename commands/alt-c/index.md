@@ -15,7 +15,7 @@ permalink: /commands/alt-c/index.html
 ---
 
 Pressing <span class="keypress">alt-c</span> will apply any embedded
-[filters](/filters/) (or [URL filters](/filters/url)) to Humdrum data in the
+[filters](/filter/) (or [URL filters](/filter/url)) to Humdrum data in the
 text editor, and then replace the contents of the text editor with the
 filtered data.
 
@@ -23,7 +23,7 @@ filtered data.
 ## Adding an empty spine ##
 
 To add a new spine to Humdrum data, use the 
-[extract filter](/filters/extract) and the 
+[extract filter](/filter/extract) and the 
 <span class="keypress">alt-c</span> command.  The following
 filter extracts all of the original spines, and adds a
 blank spine at the end of the data lines:
@@ -61,7 +61,7 @@ deleted to re-apply the filter.
 
 ## Transposing example ##
 
-Here is an example of [transposing](/filters/transpose)  Humdrum data:
+Here is an example of [transposing](/filter/transpose)  Humdrum data:
 
 {% include image.html
 	file="transpose1.png"

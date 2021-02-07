@@ -23,8 +23,8 @@ is a bit compilicated, so this page still has to be written.
 In the meantime you can observe how it is setup in the Jekyll static-site
 generating system for use in the VHV documentation.  Start with the
 [source code](https://raw.githubusercontent.com/humdrum-tools/vhv-documentation/gh-pages/myvhv/dynamic/index.md) for this page.  Also see the 
-[source code](https://github.com/humdrum-tools/vhv-documentation/blob/gh-pages/_includes/verovio.html) for the verovio figure template, and the
-[source code](https://github.com/humdrum-tools/vhv-documentation/blob/gh-pages/_includes/verovio_support_functions.html) for the JavaScript support functions.
+[source code](https://github.com/humdrum-tools/vhv-documentation/tree/master/_includes/verovio.html) for the verovio figure template, and the
+[source code](https://github.com/humdrum-tools/vhv-documentation/tree/master/_includes/verovio_support_functions.html) for the JavaScript support functions.
 
 ## Example ##
 

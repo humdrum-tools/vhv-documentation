@@ -1,0 +1,124 @@
+## Barlines ##
+
+Barlines are indicated by a *token* starting with an equals sign.  A optional 
+number can immediately follow the equals sign, representing a measure number.
+VHV will display the bar number at each system break, excluding a label for 
+measure&nbsp;1:
+
+{% include verovio.html
+	humdrum-min-height="525px"
+	source="bar1"
+	scale="55"
+	pageWidth="1000"
+%}
+<script type="application/x-humdrum" id="bar1">
+**kern
+*clefG2
+=1
+1c
+=2
+1d
+=3
+1e
+=4
+1f
+=5
+1g
+=6
+1a
+=7
+1b
+=8
+1cc
+=9
+1dd
+=10
+1ee
+=11
+1ff
+=12
+1gg
+=
+*-
+</script>
+
+
+Following the measure number can be an optional styling for the barline. `-` means an
+invisible barline, `||` is a double thin barline, `|!:` is a left-repeat, 
+`:|!|:` is a left-right repeat.  A special style is `==`, representing a final
+barline.  This bar usually does not include a bar number, since it is the last
+one in the piece/movement.
+
+{% include verovio.html
+	source="bar2"
+	scale="55"
+	humdrum-min-height="340px"
+	pageWidth="900"
+%}
+<script type="application/x-humdrum" id="bar2">
+**kern
+*clefG2
+=1
+1c
+=2-
+1d
+=3||
+1e
+=4
+1f
+=5!|:
+1g
+=6:|!|:
+1a
+=7:|!
+1b
+==
+*-
+</script>
+
+
+Humdrum can represent more barline styles, but the above types are currently
+supported in verovio.
+
+
+### Pick-up measures ###
+
+Typically the initial barline should be labeled in the Humdrum
+encoding even though it is not printed.  Either `=1` or `=1-` should
+be used at the start of the first measure (with `-` meaning an
+invisible barline), but the starting barline will be automatically
+suppressed if it is a regular barline.  Labeling the first bar is
+necessary if you need to extract it by measure number with a tool
+such as [myank](/filter/myank).
+
+Pickup beats do not have a barline at their start.  If a measure
+does not match the duration of the time signature at the start of
+the music and the data does not start with a barline, it will be
+automatically interpreted as a pick-up measure and automatically
+assigned 0 as the measure number for use with the `myank` filter.
+
+Here is example music with a pick-up beat, and a typical ending that drops
+the duration of the pickup measure:
+
+{% include verovio.html
+	humdrum-min-height="275px"
+	source="bar3"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="bar3">
+**kern
+*clefG2
+4G
+=1
+4c
+4c
+4c
+4e
+=2
+4g
+4e
+4e
+==
+*-
+</script>

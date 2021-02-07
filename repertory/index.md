@@ -228,7 +228,7 @@ Here is a list of some of the available repertories:
 ## Filters for repertories ##
 
 
-Repertories can be [filtered](/filters) *en masse* by [adding a filter to the URL](/filters/url) of the repertory index 
+Repertories can be [filtered](/filter) *en masse* by [adding a filter to the URL](/filter/url) of the repertory index 
 or to a specific work/movement in the repertory.
 
 

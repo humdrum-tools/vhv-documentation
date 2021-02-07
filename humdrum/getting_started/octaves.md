@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/octaves.html
 ---
 
-{% include_relative octaves.txt %}
+{% include humdrum/octaves.txt %}
 

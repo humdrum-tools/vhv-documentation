@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/multiple_staves.html
 ---
 
-{% include_relative multiple_staves.txt %}
+{% include humdrum/multiple_staves.txt %}
 

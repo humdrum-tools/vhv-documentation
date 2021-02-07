@@ -50,6 +50,14 @@ entries:
       output: web, pdf
       url: /interface/help_menu
 
+    - title: Toolbar
+      output: web, pdf
+      url: /interface/toolbar
+
+    - title: Searching
+      output: web, pdf
+      url: /interface/searching
+
     - title: Load/Save Humdrum data
       output: web, pdf
       url: /interface/humdrum
@@ -146,20 +154,6 @@ entries:
 
 ###########################################################################
 
-  - title: Repertories
-    output: web, pdf
-    folderitems:
-
-    - title: Introduction
-      output: web, pdf
-      url: /repertory
-
-    - title: Bach chorales
-      output: web, pdf
-      url: /repertory/bach-chorales
-
-###########################################################################
-
   - title: Graphic editing
     output: web, pdf
     folderitems:
@@ -190,61 +184,7 @@ entries:
 
 ###########################################################################
 
-  - title: Filters
-    output: web, pdf
-    folderitems:
-
-    - title: Introduction
-      output: web, pdf
-      url: /filters/index.html
-
-    - title: URL filters
-      output: web, pdf
-      url: /filters/url
-
-    - title: autobeam
-      output: web, pdf
-      url: /filters/autobeam
-
-    - title: cint
-      output: web, pdf
-      url: /filters/cint
-
-    - title: dissonant
-      output: web, pdf
-      url: /filters/dissonant
-
-    - title: extract
-      output: web, pdf
-      url: /filters/extract
-
-    - title: kern2mens
-      output: web, pdf
-      url: /filters/kern2mens
-
-    - title: imitation
-      output: web, pdf
-      url: /filters/imitation
-
-    - title: myank
-      output: web, pdf
-      url: /filters/myank
-
-    - title: satb2gs
-      output: web, pdf
-      url: /filters/satb2gs
-
-    - title: slurcheck
-      output: web, pdf
-      url: /filters/slurcheck
-
-    - title: transpose
-      output: web, pdf
-      url: /filters/transpose
-
-###########################################################################
-
-  - title: Humdrum encoding
+  - title: Music encoding
     output: web, pdf
     folderitems:
 
@@ -268,6 +208,10 @@ entries:
       output: web, pdf
       url: /humdrum/invisible_rests
 
+    - title: Ligatures and coloration
+      output: web, pdf
+      url: /humdrum/ligatures
+
     - title: Ottava marks
       output: web, pdf
       url: /humdrum/ottava_marks
@@ -275,6 +219,30 @@ entries:
     - title: Pedal marks
       output: web, pdf
       url: /humdrum/pedal_marks
+
+    - title: Percussion
+      output: web, pdf
+      url: /humdrum/percussion
+
+    - title: Repetition
+      output: web, pdf
+      url: /humdrum/repetition-symbols
+
+    - title: Slurs
+      output: web, pdf
+      url: /humdrum/slurs
+
+    - title: System
+      output: web, pdf
+      url: /humdrum/system
+
+    - title: Ties
+      output: web, pdf
+      url: /humdrum/ties
+
+    - title: Tremolos
+      output: web, pdf
+      url: /humdrum/tremolos
 
     - title: Trills
       output: web, pdf
@@ -284,13 +252,167 @@ entries:
       output: web, pdf
       url: /humdrum/transposing
 
-    - title: Tuplet styling
+    - title: Tuplets
       output: web, pdf
-      url: /humdrum/tuplet_styling
+      url: /humdrum/tuplets
 
-    - title: White menural notation
+    - title: Mensural notation
       output: web, pdf
       url: /humdrum/mens
+
+###########################################################################
+
+  - title: Data types
+    output: web, pdf
+    folderitems:
+
+    - title: Overview
+      output: web, pdf
+      url: /spine/index.html
+
+    - title: "**cdata"
+      output: web, pdf
+      url: /spine/cdata/index.html
+
+    - title: "**color"
+      output: web, pdf
+      url: /spine/color/index.html
+
+    - title: "**vdata"
+      output: web, pdf
+      url: /spine/vdata/index.html
+
+    - title: "**vvdata"
+      output: web, pdf
+      url: /spine/vvdata/index.html
+
+###########################################################################
+
+  - title: Repertories
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      output: web, pdf
+      url: /repertory
+
+    - title: Bach chorales
+      output: web, pdf
+      url: /repertory/bach-chorales
+
+###########################################################################
+
+  - title: Filters
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      output: web, pdf
+      url: /filter/index.html
+
+    - title: URL filters
+      output: web, pdf
+      url: /filter/url
+
+    - title: autobeam
+      output: web, pdf
+      url: /filter/autobeam
+
+    - title: chooser
+      output: web, pdf
+      url: /filter/chooser
+
+    - title: cint
+      output: web, pdf
+      url: /filter/cint
+
+    - title: colortriads
+      output: web, pdf
+      url: /filter/colortriads
+
+    - title: composite
+      output: web, pdf
+      url: /filter/composite
+
+    - title: dissonant
+      output: web, pdf
+      url: /filter/dissonant
+
+    - title: extract
+      output: web, pdf
+      url: /filter/extract
+
+    - title: humdiff
+      output: web, pdf
+      url: /filter/humdiff
+
+    - title: kern2mens
+      output: web, pdf
+      url: /filter/kern2mens
+
+    - title: imitation
+      output: web, pdf
+      url: /filter/imitation
+
+    - title: melisma
+      output: web, pdf
+      url: /filter/melisma
+
+    - title: myank
+      output: web, pdf
+      url: /filter/myank
+
+    - title: rid
+      output: web, pdf
+      url: /filter/rid
+
+    - title: satb2gs
+      output: web, pdf
+      url: /filter/satb2gs
+
+    - title: semitones
+      output: web, pdf
+      url: /filter/semitones
+
+    - title: shed
+      output: web, pdf
+      url: /filter/shed
+
+    - title: sic
+      output: web, pdf
+      url: /filter/sic
+
+    - title: slurcheck
+      output: web, pdf
+      url: /filter/slurcheck
+
+    - title: transpose
+      output: web, pdf
+      url: /filter/transpose
+
+###########################################################################
+
+  - title: Embedded options
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      output: web, pdf
+      url: /options
+
+    - title: Option list
+      output: web, pdf
+      url: /options/list
+
+###########################################################################
+
+  - title: Other topics
+    output: web, pdf
+    folderitems:
+
+    - title: URL parameters
+      output: web, pdf
+      url: /topics/url-parameters
 
 ###########################################################################
 

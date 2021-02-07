@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/multiple_voices.html
 ---
 
-{% include_relative multiple_voices.txt %}
+{% include humdrum/multiple_voices.txt %}
 

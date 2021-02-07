@@ -10,7 +10,7 @@ tags: [all, news]
 ---
 
 
-A description of the `slurcheck` tool has been added [here](/filters/slurcheck).  The tool
+A description of the `slurcheck` tool has been added [here](/filter/slurcheck).  The tool
 can be used to check slurs for data-entry errors by highlighting hanging slurs (slurs without
 either a start or an ending).
 

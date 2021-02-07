@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/text_directions.html
 ---
 
-{% include_relative text_directions.txt %}
+{% include humdrum/text_directions.txt %}
 

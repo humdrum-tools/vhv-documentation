@@ -13,8 +13,8 @@ verovio: "true"
 vim: ts=3 ft=javascript
 summary: A tutorial on how to encode key signatures in **kern data.
 sidebar: main_sidebar
-permalink: /humdrum/getting_started/key_signatures.html
+permalink: /humdrum/getting_started/keysig.html
 ---
 
-{% include_relative key_signatures.txt %}
+{% include humdrum/keysig.txt %}
 

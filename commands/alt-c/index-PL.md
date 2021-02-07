@@ -15,13 +15,13 @@ permalink: /commands/alt-c/index-PL.html
 ---
 
 Naciśnięcie kombinacji klawiszy <span class="keypress">alt-c</span> pozwala na zastosowanie
-[filtrów](/filters/) (lub [URL filters](/filters/url)) zastosowanych do danych Humdrum w edytorze
+[filtrów](/filter/) (lub [URL filters](/filter/url)) zastosowanych do danych Humdrum w edytorze
 tekstowym oraz zastąpienie danych poprzez dane przefiltrowane.
 
 ## Dodawanie pustej kolumny danych (spine) ##
 
 Aby dodać pustą kolumnę do danych Humdrum
-użyj [filtra extract](/filters/extract) oraz komendy 
+użyj [filtra extract](/filter/extract) oraz komendy 
 <span class="keypress">alt-c</span>. Poniższy filtr
 ekstrahuje wszystkie istniejące kolumny (spines) oraz
 dodaje pustą kolumnę na końcu:
@@ -54,7 +54,7 @@ Linia ta może zostać usunięta jeśli nie jest potrzebna - można też usuną�
 
 ## Przykład działania filtra do transpozycji ##
 
-Poniżej znajduje się przykład ilustrujący działanie filtra [transpozycji](/filters/transpose):
+Poniżej znajduje się przykład ilustrujący działanie filtra [transpozycji](/filter/transpose):
 
 {% include image.html
 	file="transpose1.png"

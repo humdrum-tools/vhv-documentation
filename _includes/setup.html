@@ -140,6 +140,9 @@ function externalLinksToNewTab() {
 	var i;
 	for (i=0; i<links.length; i++) {
 		var text = links[i].getAttribute("href");
+		if (!text) {
+			continue;
+		}
 		if (text.match("//")) {
 			links[i].target = "_blank";
 		}

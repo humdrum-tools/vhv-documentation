@@ -85,7 +85,7 @@ ul.brief li {
 <dd>Twórca</dd>
 <dt>Alex Morgan</dt>
 <dd>
-<ul class="brief"> <li> algorytmy do oznaczania dysonansów za pomocą filtra <i><a href="/filters/dissonant">dissonant</a></i> </li> <li> definicje zawieszeń kadencyjnych w filtrze <i><a href="/filters/cint">cint</a></i> </li> </ul>
+<ul class="brief"> <li> algorytmy do oznaczania dysonansów za pomocą filtra <i><a href="/filter/dissonant">dissonant</a></i> </li> <li> definicje zawieszeń kadencyjnych w filtrze <i><a href="/filter/cint">cint</a></i> </li> </ul>
 </dd>
 <dt>Piotr Szyngiera</dt>
 <dd>
@@ -169,7 +169,7 @@ href="http://josquin.stanford.edu/work/?id=Jos2721">poszczególnych kompozycji</
 w celu generowania przykładowych partytur z bazy JRP na stronie <a target="_blank"
 href="http://josquin.stanford.edu">głównej</a>. Ponadto, niektóre z narzędzi analitycznych
 zostały zaimplementowane online za pomocą VHV. Jednym z przykładów może być
-filtr <a href="/filters/dissonant">dissonant</a>, który automatycznie wyświetla dysonanse.
+filtr <a href="/filter/dissonant">dissonant</a>, który automatycznie wyświetla dysonanse.
 Na stronach poszczególnych kompozycji <a target="_blank"
 href="http://josquin.stanford.edu/work/?id=Jos2721">jak np. ta</a> w projekcie JRP 
 znajdują się przyciski oznaczone jako "Dissonant", które przekierowują do VHV ładując wskazane dane

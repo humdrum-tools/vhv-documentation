@@ -105,13 +105,13 @@ summary
 
 datatable: true
 : Enable [datatables](..//tables/#datatables) on the page.  This variable is used in the
-[default.html layout file](https://github.com/humdrum-tools/vhv-documentation/blob/gh-pages/_layouts/default.html).
+[default.html layout file](https://github.com/humdrum-tools/vhv-documentation/tree/master/_layouts/default.html).
 
 
 verovio: true
 : Enable verovio javascript toolkit on the webpage for [interactive humdrum figures](../verovio).
 This variable is used in the
-[default.html layout file](https://github.com/humdrum-tools/vhv-documentation/blob/gh-pages/_layouts/default.html).
+[default.html layout file](https://github.com/humdrum-tools/vhv-documentation/tree/master/_layouts/default.html).
 
 permalink
 : the URL pathname for the compiled HTML page.  This should almost always be the same location and name as `index.md`, but renamed `index.html`.
@@ -124,7 +124,7 @@ permalink
 
 After content has been added to the page, you can add a link to the page
 on the main sidebar.  The sidebar is located in
-[_data/sidebars/main_sidebar.yml](https://github.com/humdrum-tools/vhv-documentation/blob/gh-pages/_data/sidebars/main_sidebar.yml)
+[_data/sidebars/main_sidebar.yml](https://github.com/humdrum-tools/vhv-documentation/tree/master/_data/sidebars/main_sidebar.yml)
 It should be obvious what to add when you see the file.
 
 

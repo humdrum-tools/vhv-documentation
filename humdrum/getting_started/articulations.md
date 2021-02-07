@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/articulations.html
 ---
 
-{% include_relative articulations.txt %}
+{% include humdrum/articulations.txt %}
 

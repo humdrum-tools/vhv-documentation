@@ -49,6 +49,29 @@ The `translator` and `translation_date` parameters are displayed on the
 bottom right of pages, along with the page author(s) and creating/last edited
 date.
 
+When a new translation is added, each translation page and the main page need
+to be updateded to include all of the languages.  So if there were translations
+to Polish, Spanish, and French available in addition to the original in English,
+then there will be four files:
+
+```
+index.md
+index-PL.md
+index-ES.md
+index.FR.md
+```
+
+And all files would have an entry in the liquid header:
+
+```
+lang: en es fr pl
+```
+
+The langauges can be listed in any order, but perhaps alphabetical by their
+language code is best.  This entry tells Jekyll that mutliple langauges are 
+available for the page, and this in turn will add a list of the langauges
+to the pages' headers on the website.
+
 ## Permalinks ##
 
 Webpage target locations are controlled by
@@ -69,12 +92,80 @@ So the Polish translation would be:
 permalink: /humdrum/getting_started/index-PL.html
 ```
 
+The Spanish translation would be:
+
+```
+permalink: /humdrum/getting_started/index-ES.html
+```
+
 And the French translation would be:
 
 ```
 permalink: /humdrum/getting_started/index-FR.html
 ```
 
+## Repository branches ##
+
+When creating translation pages for the website, it is best to work in a
+branch for that specific language so that changes for a specific langauge
+can be kept track of independently from the other language updates.
+
+To work on a local copy of the website files, first download the
+website repository (this only needs to be done once to copy the
+files from github):
+
+```bash
+git clone https://github.com/humdrum-tools/vhv-documentation
+```
+
+Then check out a specific langauge branch (which should be created first):
+
+```bash
+git checkout polish
+```
+
+You can type:
+
+```
+git branch
+```
+
+To see which branch you are currently editing in.
+
+It is a good idea to merge the master copy (current website) before you start
+working:
+
+```bash
+git checkout master   # go back to the master branch
+git pull              # copy any updates from the master branch
+git checkout polish   # go back to the polish language branch
+git merge master      # update the polish language branch with the latest copy of the website
+```
+
+Now you have an updated version of the website in the polish branch.  Then add 
+files or updates for translations as needed.  If you create a new file, then you
+will have to "add" it to the repository first:
+
+```bash
+git add index-PL.md
+```
+
+Before this, you can also type
+
+```bash
+git status
+```
+
+To see what new files should be addeded to the branch, and what
+files have been updated.  When the translation is ready to go onto
+the main website, merge the language branch with the master branch:
+
+```bash
+git commit -am "short note about the changes to the langauge branch"
+git checkout master
+git merge polish
+git push
+```
 
 
 ## References ##

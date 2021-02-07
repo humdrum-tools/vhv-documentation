@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/pitch.html
 ---
 
-{% include_relative pitch.txt %}
+{% include humdrum/pitch.txt %}
 

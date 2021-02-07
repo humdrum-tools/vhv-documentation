@@ -1,0 +1,92 @@
+
+
+<script>
+// vim: ts=3
+
+document.addEventListener("DOMContentLoaded", function() {
+	displayMimeUrl();
+	displayRawTextUrl();
+});
+
+
+
+//////////////////////////////
+//
+// displayMimeUrl --
+//
+
+function displayMimeUrl() {
+	var target = document.querySelector("#mime-url");
+	if (!target) {
+		console.log("NO TARGET #mime-url");
+		return;
+	}
+	var source = document.querySelector("#mime");
+	if (!source) {
+		console.log("NO SOURCE #mime");
+		return;
+	}
+	var counter = document.querySelector("#mime-counter");
+	if (!counter) {
+		console.log("NO COUNTER #mime-counter");
+		return;
+	}
+	var text = source.value;
+	var data = btoa(text).replace(/=/g, "");
+	if (data.length === 0) {
+		target.innerHTML = "[NONE]";
+		counter.innerHTML = "";
+	} else {
+		let url = "https://verovio.humdrum.org?t=";
+		url += data;
+		counter.innerHTML = "URL length: " + url.length;
+		let output = "<a target='_blank' href='" + url + "'>";
+		output += url + "</a>";
+		target.innerHTML = output;
+		
+	}
+}
+
+
+
+//////////////////////////////
+//
+// displayRawTextUrl --
+//
+
+function displayRawTextUrl() {
+console.log("GOT HER QQQ");
+	var target = document.querySelector("#raw-url");
+	if (!target) {
+		console.log("NO TARGET #raw-url");
+		return;
+	}
+	var source = document.querySelector("#raw");
+	if (!source) {
+		console.log("NO SOURCE #raw");
+		return;
+	}
+	var counter = document.querySelector("#raw-counter");
+	if (!counter) {
+		console.log("NO COUNTER #raw-counter");
+		return;
+	}
+	var text = source.value;
+	var data = encodeURIComponent(text);
+console.log("DATA LENGTH", data.length, data);
+	if (data.length === 0) {
+		target.innerHTML = "[NONE]";
+		counter.innerHTML = "";
+	} else {
+		let url = "https://verovio.humdrum.org?t=";
+		url += data;
+		counter.innerHTML = "URL length: " + url.length;
+		let output = "<a target='_blank' href='" + url + "'>";
+		output += url + "</a>";
+		target.innerHTML = output;
+		
+	}
+}
+
+
+</script>

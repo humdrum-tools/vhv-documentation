@@ -14,6 +14,24 @@ sidebar: main_sidebar
 permalink: /interface/mei/index.html
 ---
 
+## Drag-and-drop MEI files ##
+
+The VHV interface can load MEI files by dragging and dropping
+them from the desktop onto the VHV page.  If you also also
+press the <span class="keypress">shift</span> key while drag-and-dropping
+MEI data, it will first be converted into Humdrum data, and then the
+Humdrum data will be placed in the text editor.
+
+{% include note.html
+	content="The MEI-to-Humdrum conversion is not advances as the MusicXML-to-Humdrum converter, so more complex MEI data may not convert to Humdrum properly yet."
+%}
+
+## Conversion of MEI data into Humdrum ##
+
+If MEI data is displayed in the text editor, you can use the
+Edit menu option "Convert to Humdrum" to convert the MEI data
+into Humdrum data, which replaces the MEI data in the text editor.
+
 ## Viewing MEI data in the text editor ##
 
 VHV dynamically converts Humdrum data into MEI data in order to produce

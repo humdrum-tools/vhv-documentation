@@ -13,7 +13,7 @@ sidebar: main_sidebar
 tags: [all, news]
 ---
 
-The [transpose filter](/filters/transpose) is now aware of chord labels
-imported from MusicXML data into `**mxhm` spines.  [More information...](/filters/transpose/#mxhm-transposition)
+The [transpose filter](/filter/transpose) is now aware of chord labels
+imported from MusicXML data into `**mxhm` spines.  [More information...](/filter/transpose/#mxhm-transposition)
 
 

@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/cross_staff.html
 ---
 
-{% include_relative cross_staff.txt %}
+{% include humdrum/cross_staff.txt %}
 

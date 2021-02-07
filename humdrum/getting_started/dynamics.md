@@ -16,5 +16,5 @@ sidebar: main_sidebar
 permalink: /humdrum/getting_started/dynamics.html
 ---
 
-{% include_relative dynamics.txt %}
+{% include humdrum/dynamics.txt %}
 

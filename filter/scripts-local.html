@@ -1,0 +1,97 @@
+
+<script>
+// vim: ts=3 ft=javascript
+
+
+function prepareExamples() {
+	var aton = new ATON;
+	var edata = document.querySelector("#example-data");
+	if (!edata) {
+		console.log("ERROR: Cannot find example data");
+		return;
+	}
+	var data = edata.textContent;
+	var jdata = aton.parse(data).EXAMPLE;
+console.log("DATA", jdata);
+	
+	// var ecategories = document.querySelectorAll("div[data-category]");
+	var ecategories = document.querySelectorAll("div[data-category]");
+
+	for (var i=0; i<ecategories.length; i++) {
+		prepareCategory(ecategories[i], jdata);
+	}
+}
+
+
+//////////////////////////////
+//
+// prepareCategory --
+//
+
+function prepareCategory(target, data) {
+	var category = target.dataset.category;
+console.log("PREPARING CATEGORY:", category);
+	var clist = [];
+	var i;
+	for (i=0; i<data.length; i++) {
+		if (data[i].CATEGORY.match(category)) {
+			clist.push(data[i]);
+		}
+	}
+
+	var output = "";
+	output += "<dl>";
+	for (i=0; i<clist.length; i++) {
+		output += generateExample(clist[i]);
+	}
+	output += "<dl>";
+	target.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// generateExample --
+//
+
+function generateExample(entry) {
+	var output = "";
+
+	output += "<dt>";
+	var url = createUrl(entry);
+	output += "<a target='vhv' href='" + url + "'>";
+	output += entry.FILTER;
+	output += "</a>";
+	output += "</dt>\n";
+	output += "<dd>\n";
+	output += entry.DESCRIPTION;
+	output += "\n</dd>\n";
+
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// createUrl --
+//
+
+function createUrl(entry) {
+	var output = "";
+	output += "https://verovio.humdrum.org";
+	output += "?file=" + entry.FILE;
+	if (entry.FILTER) {
+		output += "&filter=" + encodeURIComponent(entry.FILTER);
+	}
+	// entry.COMPILER
+	return output;
+}
+
+
+</script>
+
+
+
+
