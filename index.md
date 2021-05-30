@@ -15,7 +15,7 @@ summary:
 
 Verovio Humdrum Viewer is an online digital music editor and
 interactive notation rendering interface for Humdrum files, located at
-[http://verovio.humdrum.org](http://verovio.humdrum.org).  See the
+[https://verovio.humdrum.org](https://verovio.humdrum.org).  See the
 [Getting started](/interface/getting_started) page for a tutorial on
 using the VHV interface, or browse through pages on this website by
 clicking on the headings in the sidebar menu to the left (or above),
@@ -68,7 +68,7 @@ particularly advanced topics related to VHV features.  See the
 [getting started](/humdrum/getting_started) page for an interactive
 tutorial on encoding music in the Humdrum format.  More complete
 documentation can be found at [Humdrum documentation
-website](http://www.humdrum.org).  The most common use of VHV is
+website](https://www.humdrum.org).  The most common use of VHV is
 to edit music imported via [MusicXML](/interface/musicxml) from a
 more full-featured graphical music editor, but Humdrum data can
 also be typed in manually.
@@ -93,7 +93,7 @@ which is useful for transposing scores, and [myank](/filter/myank),
 which is useful for extracting measures from a full score.  The
 [dissonant](/filter/dissonant) filter is used to analyze the
 functions of dissonant notes in Renaissance-era music, and is used
-as a tool in the [Josquin Research Project](http://josquin.stanford.edu).
+as a tool in the [Josquin Research Project](https://josquin.stanford.edu).
 
 
 Embedded options
@@ -109,8 +109,8 @@ narrow the spacing of the music.
 
 
 myVHV
-: Instructions and demos for using [Verovio](http://www.verovio.org)
-and [Humdrum](http://www.humdrum.org) for your own projects.  In
+: Instructions and demos for using [Verovio](https://www.verovio.org)
+and [Humdrum](https://www.humdrum.org) for your own projects.  In
 particular, after editing a Humdrum score in VHV, you can use the
 [Humdrum notation plugin](https://plugin.humdrum.org) to display
 the score on your own website.
@@ -204,10 +204,10 @@ Here are the three major software components used to create the VHV website:
 
 <dl>
 
-<dt> <a href="http://www.verovio.org">verovio</a></dt>
+<dt> <a href="https://www.verovio.org">verovio</a></dt>
 <dd> Music notation rendering in C++ (using MEI, with data imports from Humdrum and MusicXML and exports into SVG and MIDI)</dd>
 
-<dt> <a href="http://humlib.humdrum.org">humlib</a></dt>
+<dt> <a href="https://humlib.humdrum.org">humlib</a></dt>
 <dd> Musical data conversion and analysis tools in C++ (using Humdrum, with imports from MusicXML and MEI and exports into MEI and MIDI)</dd>
 
 <dt> <a href="https://ace.c9.io">ace editor</a></dt>
@@ -235,9 +235,9 @@ Here are the three major software components used to create the VHV website:
 
 <div style="margin-left: 100px">
 
-<a class="logo" href="http://www.packhum.org"><img class="logo shadow" style="width:300px"  src="/images/phi-logo.png"></a>
-<a class="logo" href="http://wiki.ccarh.org"><img class="logo shadow" style="width:300px" src="/images/ccarh-logo.png"></a>
-<a class="logo" href="http://en.chopin.nifc.pl"><img class="logo shadow" style="width:350px" src="/images/nifc-logo.png"></a>
+<a class="logo" href="https://www.packhum.org"><img class="logo shadow" style="width:300px"  src="/images/phi-logo.png"></a>
+<a class="logo" href="https://wiki.ccarh.org"><img class="logo shadow" style="width:300px" src="/images/ccarh-logo.png"></a>
+<a class="logo" href="https://en.chopin.nifc.pl"><img class="logo shadow" style="width:350px" src="/images/nifc-logo.png"></a>
 <a class="logo" href="https://simssa.ca/"><img class="logo shadow" style="width:250px" src="/images/simssa-logo.png"></a>
 
 </div>
@@ -246,8 +246,8 @@ Here are the three major software components used to create the VHV website:
 
 <div style="margin-left: 100px">
 
-<a class="logo" href="http://www.tassomusic.org"><img class="logo shadow" style="width:300px" src="/images/tmp-logo.png"></a>
-<a class="logo" href="http://josquin.stanford.edu"><img class="logo shadow" style="width:419px" src="/images/jrp-logo.png"></a>
+<a class="logo" href="https://www.tassomusic.org"><img class="logo shadow" style="width:300px" src="/images/tmp-logo.png"></a>
+<a class="logo" href="https://josquin.stanford.edu"><img class="logo shadow" style="width:419px" src="/images/jrp-logo.png"></a>
 
 </div>
 
@@ -261,17 +261,17 @@ href="https://plugin.humdrum.org">Humdrum notation plugin</a>.
 
 For example, the Josquin Research Project (JRP) uses both the
 Humdrum notation plugin to display musical incipits on <a target="_blank"
-href="http://josquin.stanford.edu/work/?id=Jos2721">work pages</a> as well
+href="https://josquin.stanford.edu/work/?id=Jos2721">work pages</a> as well
 as a random sample of the JRP score database displayed on the <a target="_blank"
-href="http://josquin.stanford.edu">homepage</a>. In addition, some
+href="https://josquin.stanford.edu">homepage</a>. In addition, some
 analysis tools are implemented online through VHV.  An example
 of this is the <a href="/filter/dissonant">dissonant</a>
 tool.  Work pages, such as <a target="_blank"
-href="http://josquin.stanford.edu/work/?id=Jos2721">this
+href="https://josquin.stanford.edu/work/?id=Jos2721">this
 one</a> have an analysis tool button labeled "Dissonant"
 which links to VHV, loading the data from the website,
 and doing the dissonance analysis <a target="_blank"
-href="http://verovio.humdrum.org/?k=ey&filter=dissonant&file=jrp:Jos2721">within VHV</a>.
+href="https://verovio.humdrum.org/?k=ey&filter=dissonant&file=jrp:Jos2721">within VHV</a>.
 
 Files from other websites can be automatically be loaded into VHV by
 giving a URL as the filename in the *file* CGI parameter.  For example,
