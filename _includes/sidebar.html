@@ -54,3 +54,72 @@
 
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+<script>
+
+// Monitor sidebar and remove affix class if it is longer than the window.
+
+OBSERVER = {};
+OBSERVER.observer = null;
+OBSERVER.target = null;
+OBSERVER.callback = null;
+OBSERVER.config = {
+	attributes: true,
+	childList: true,
+	subtree: true
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+	OBSERVER.target = document.querySelector("#mysidebar");
+	let config = {
+		attributes: true,
+		childList: true,
+		subtree: true
+	};
+	OBSERVER.callback = function(mutationList, observer) {
+		let bbox = OBSERVER.target.getBoundingClientRect();
+		let bottom = window.innerHeight;
+		if (bbox.bottom > bottom) {
+			if (OBSERVER.target.className.match(/affix/)) {
+				console.log("FIX HEIGHT");
+				observer.disconnect();
+				OBSERVER.target.classList.remove("affix");
+				OBSERVER.target.scrollIntoView();
+				observer.observe(OBSERVER.target, OBSERVER.config);
+			}
+		} else if (!OBSERVER.target.className.match(/affix/)) {
+			console.log("DONT FIX HEIGHT");
+			observer.disconnect();
+			OBSERVER.target.classList.add("affix");
+			observer.observe(OBSERVER.target, OBSERVER.config);
+		}
+	};
+
+	OBSERVER.observer = new MutationObserver(OBSERVER.callback);
+	OBSERVER.observer.observe(OBSERVER.target, OBSERVER.config);
+
+	window.addEventListener("resize", function () {
+		if (!OBSERVER.target) {
+			return;
+		}
+		let bbox = OBSERVER.target.getBoundingClientRect();
+		let bottom = window.innerHeight;
+
+		if (bbox.bottom > bottom) {
+			if (OBSERVER.target.className.match(/affix/)) {
+				OBSERVER.target.classList.remove("affix");
+				OBSERVER.target.scrollIntoView();
+			}
+		} else if (!OBSERVER.target.className.match(/affix/)) {
+			OBSERVER.target.classList.add("affix");
+		}
+	});
+
+
+});
+
+
+
+</script>

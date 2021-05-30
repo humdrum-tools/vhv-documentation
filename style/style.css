@@ -472,7 +472,7 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 ul#mysidebar {
-	margin-top: 60px;
+	margin-top: 0px;
 	border-radius:0px;
 	display: none;
 	visibility: hidden;
