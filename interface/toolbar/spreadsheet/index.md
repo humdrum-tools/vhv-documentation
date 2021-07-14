@@ -242,65 +242,82 @@ Then save the script, giving a name of your choice to the script project:
 %}
 
 
-### Step four: publish the script ###
+### Step four: deploy the script ###
 
-To use the script, it must be "published".  Go to the menu Publish 
-&rarr; Deploy as a web app...:
+To use the script, it must be "deployed".  Press the blue "Deploy" button
+and select "New development":
 
 
 {% include image.html
-	file="script-publish.png"
-	alt="Publish the script"
-	caption="Publish the script."
+	file="script-deploy.png"
+	alt="Deploy the script"
+	caption="Deploy the script."
 %}
 
 
-A sub-window will appear in which you should select "Anyone, even anonymous"
-in the section "Who has access to the app:".
+A sub-window will appear.  Click on the gear icon next to the "Select type" and choose "Web app":
+
+{% include image.html
+	file="script-deploy2.png"
+	alt="Script deployment type"
+	caption="Script deployment type."
+%}
+
+The following subwindow will appear.  Add a description of your choosing,
+change "Who has access" to "anyone", and then click on the blue "Deploy" button:
 
 
 {% include image.html
-	file="script-deployment-options.png"
-	alt="Script deployment options"
-	caption="Script deployment options."
-	max-width="50%"
+	file="script-deploy3.png"
+	alt="Script deployment"
+	caption="Script deployment."
 %}
 
 
 {% include warning.html
-	content="In the future, less permissive settings may be possible.  In the meantime, do not share the final script ID unless you want other people to use the same spreadsheet."
+	content="In the future, less permissive settings may be possible.  In the meantime, do not share the final script ID unless you want other people to use the same spreadsheet, such as for collaborative editing."
 %}
 
-Then click on the blue "Deploy" button.  The first time you publish a script,
-you will be asked for permission to do so:
+
+The first time you deploy, you will have to authorize the script:
 
 {% include image.html
-	file="script-permissions.png"
-	alt="Review script permissions"
-	caption="Review script permissions."
+	file="script-authorize.png"
+	alt="Script authorization"
+	caption="Script authorization."
+%}
+
+In the next window, choose that account that you use with Google Sheets:
+
+{% include image.html
+	file="script-authorize2.png"
+	alt="Select account for script authorization"
+	caption="Select account for script authorization."
+	max-width="50%"
+%}
+
+A warning window will appear.  Click on the Advanced link:
+
+{% include image.html
+	file="script-authorize3.png"
+	alt="Click on Advanced"
+	caption="Click on Advanced."
 	max-width="60%"
 %}
 
-Click on the "Review Permissions" button.  Then choose your account from the
-window that opens:
+Then click on the link "Go to Humdrum interaction (unsafe)" (or
+whatever you named the script). And then finally click on the "Allow"
+button to activate the script:
 
 {% include image.html
-	file="login.png"
-	alt="Log into your Google account"
-	caption="Log into your Google account."
+	file="script-authorize5.png"
+	alt="Click on Allow to finish authorization"
+	caption="Click on Allow to finish authorization."
 	max-width="60%"
 %}
 
-Then click on the blue "Allow" button that appears in the next window:
-
-{% include image.html
-	file="allow.png"
-	alt="Allow the script to run"
-	caption="Allow the script to run."
-	max-width="60%"
-%}
-
-A final deployment sub-window will appear like this one:
+A window such as the following will appear if the deployment 
+is successful:
 
 {% include image.html
 	file="deployment.png"
@@ -309,12 +326,7 @@ A final deployment sub-window will appear like this one:
 	max-width="60%"
 %}
 
-Take note of the link in the "Current web app URL:" box.  This link 
-is necessary to connect VHV to Google Sheets.
-
-{% include warning.html
-	content="If you change the script, you must republish the script to activate the updated script from the menu Publish &rarr; Deploy as web app.. again.  You will probably also have to update the \"Project version\" to a new version number in the deployment sub-window."
-%}
+Copy the Deployment ID and click on the blue "Done" button.
 
 If you want to edit the script to add your own functionalities
 (which you could post to the <a target="_blank"
@@ -328,54 +340,73 @@ language, integrated with Google Sheets API functionality.
 
 ## Linking VHV to Google Sheets ##
 
-After publishing the script, you now are ready to connect VHV to Google Sheets.
+After deploying the script, you now are ready to connect VHV to Google Sheets.
 
-The script deployment URL will be something like this:
+The script deployment ID will be something like this:
 
-https://script.google.com/macros/s/AKfycbwPSnUPffm_A_voZXkYy0sks9sWLr9-ig_m2UOPes9DP1Sod3A/exec
+```
+AKfycbxIXX29Z3qsWzhhrurmmoQ9MNcLfhS-z5gyejXLTIn2VcHXzMZ50Qha-VcoJLjzi5xm
+```
 
-Copy the ID from the middle of the script:
+Paste this deployment ID into the "Spreadsheet script ID" box on
+the spreadsheet toolbar in VHV.  Once the Deployment ID is pasted into the
+script ID box, the cloud upload/download buttons will work to copy
+data between the VHV and the Google Spreadsheet:
 
-<input style="width:525px" type="text" value="AKfycbwPSnUPffm_A_voZXkYy0sks9sWLr9-ig_m2UOPes9DP1Sod3A">
-
-and paste it into the "Spreadsheet script ID" box on the spreadsheet
-toolbar in VHV.  The ID of the linked spreadsheet can also be given
-in the same input box by adding a pipe character (|) (or space)
-after the script ID, followed by the spreadsheet ID.  The URL for
-the spreadsheet will look something like this:
-
-https://docs.google.com/spreadsheets/d/1FIaXR2VrHwrvB7BAr90K79dwzKHH3HRht5Xa5p1mjnw/edit#gid=0
-
-Where the sheet ID is the string
-`1FIaXR2VrHwrvB7BAr90K79dwzKHH3HRht5Xa5p1mjnw`.
-Here is the final `scriptID|sheetID` string to copy into the spreadsheet
-script ID box for testing:
-
-<input style="width:750px" type="text" value="AKfycbwPSnUPffm_A_voZXkYy0sks9sWLr9-ig_m2UOPes9DP1Sod3A|1FIaXR2VrHwrvB7BAr90K79dwzKHH3HRht5Xa5p1mjnw">
-
-This will enable an icon on the spreadsheet toolbar that opens up
-the linked spreadsheet. The spreadsheet file icon will display after
-you do your first upload or download from VHV.  Once you have set
-up the script ID and sheet ID, VVH will remember it as long as you
-use the same browser.
+{% include image.html
+	file="spreadsheet-buttons.png"
+	alt="Spreadsheet toolbar with Script ID added."
+	caption="Spreadsheet toolbar with Script ID added."
+	max-width="60%"
+%}
 
 You can use the above script ID for testing purposes,
 which links to this <a target="_blank"
-href="http://bit.ly/humdrum-io-spreadsheet">publicly editable
+href="http://bit.ly/humdrum-public-spreadsheet">publicly editable
 spreadsheet</a>.  But don't use this particular spreadsheet for
 actual work, since other people testing spreadsheet interaction can
 delete your data on it and/or copy your data on the spreadsheet to
 their own VHV editor.
-However, you could set up a collaborative editing spreadsheet with
-one or more people by sharing the spreadsheet with them as editors
-and giving them a copy of the spreadsheet script ID to use in their
-browser's copy of VHV.
+However, you can set up a collaborative editing spreadsheet with
+other people by sharing your script/spreadsheet IDs with them to
+copy into their VHV spreadsheet toolbar text box.
+
+## Adding spreadsheet URL to script toolbar ##
+
+For easy access to the spreadsheet you can optionally add a link to the
+spreadsheet to the toolbar.  To do this, not the URL of the spreadsheet
+(not the script), such as:
+
+```
+https://docs.google.com/spreadsheets/d/1_E31WEm8_u8dg0zgBTC2SJnKRm1OuJBCl_ameYv64m8/edit#gid=0
+```
+
+In this case the spreadsheet ID is `1_E31WEm8_u8dg0zgBTC2SJnKRm1OuJBCl_ameYv64m8`.
+
+Add this spreadsheet ID after the script ID in the text box on the spreadsheet toolbar, separating
+the two IDs with a pipe character (`|`):
+
+```
+AKfycbxIXX29Z3qsWzhhrurmmoQ9MNcLfhS-z5gyejXLTIn2VcHXzMZ50Qha-VcoJLjzi5xm|1_E31WEm8_u8dg0zgBTC2SJnKRm1OuJBCl_ameYv64m8
+```
+
+This will enable an icon on the spreadsheet toolbar that opens up
+the linked spreadsheet: 
 
 {% include image.html
-	file="spreadsheet-id-paste.png"
-	alt="Pasting spreadsheet script ID into VHV spreadsheet toolbar."
-	caption="Pasting spreadsheet script ID into VHV spreadsheet toolbar."
+	file="spreadsheet-url-icon.png"
+	alt="Spreadsheet toolbar with link to spreadsheet added."
+	caption="Spreadsheet toolbar with link to spreadsheet added."
+	max-width="60%"
 %}
+
+
+The spreadsheet icon will display after you do your first
+upload or download from VHV.  Once you have set up the script ID
+and sheet ID, VVH will remember it as long as you use the same
+browser.
+
+## Interacting with the spreadsheet ##
 
 You are now ready to transfer Humdrum data between VHV and Google Sheets.
 Click on the cloud-upload button immediately to the right of the 
@@ -452,7 +483,6 @@ spreadsheet.  This text will be downloaded into VHV if the barline
 token does not have a single quote added at the start of the cell.
 In cell A4, the cell text is `'=9||`, which prevents formula
 interpretation of the text.
-
 
 {% include image.html
 	file="formula.png"
