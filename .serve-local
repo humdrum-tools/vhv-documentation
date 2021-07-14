@@ -23,7 +23,7 @@
 #     ./.serve-local
 #
 # Then look for the address of the webserver, which should be:
-#     http://127.0.0.1:4000
+#     http://127.0.0.1:2002
 #
 
 bundle exec jekyll serve --watch --config _config.yml,_config-local.yml

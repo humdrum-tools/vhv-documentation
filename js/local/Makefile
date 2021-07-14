@@ -1,8 +1,8 @@
 
 WGET = `which wget`
 CURL = `which curl`
-SRC = https://verovio-script.humdrum.org/scripts/verovio-toolkit.js
-BASE = verovio-toolkit.js
+SRC = https://raw.githubusercontent.com/humdrum-tools/verovio-script/gh-pages/scripts/verovio-toolkit-wasm.js
+BASE = verovio-toolkit-wasm.js
 
 
 all:

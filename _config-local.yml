@@ -1,4 +1,14 @@
-# Sets the website to use local javascript/css only.
+# Sets the website to use local resources only.
+#
+# To run with local resources, first run the commands:
+#     cd js/local
+#     make
+# to download the most recent version of verovio-toolkit-wasm.js
+#
+
 local: "true"
-#local: "false"
+
+baseurl:
+
+port: 2002
 
