@@ -174,24 +174,33 @@ href="https://github.com">Github</a> account.
 
 <dl>
 
-<dt><a target="_blank" href="http://bit.ly/vhv-workshop-20191010">UBC October 2019 workshop</a></dt>
-<dd>Workshop on Verovio Humdrum Viewer at the University of British Columbia, 10 Oct 2019.
-</dd>
+<dt><a target="_blank" href="http://bit.ly/rds-editing">Polyrhythm
+project editing notes</a></dt> <dd>Notes for using VHV in preparing
+digital scores for the Polyrhyth Project, directed by Ève Poudrier
+at the University of British Columbia. (2020) </dd>
 
-<dt><a target="_blank" href="http://bit.ly/iaml-2019">IAML July 2019 workshop</a></dt>
-<dd>Workshop on Verovio Humdrum Viewer at the International Association of Music Libraries in Kraków, Poland, 18 July 2019.
-</dd>
+<dt><a target="_blank" href="http://bit.ly/vhv-workshop-20191010">UBC
+October 2019 workshop</a></dt> <dd>Workshop on Verovio Humdrum
+Viewer at the University of British Columbia, 10 Oct 2019.  </dd>
 
-<dt><a target="_blank" href="http://bit.ly/mec-2019-vhv">MEC May 2019 workshop</a></dt>
-<dd>Workshop on Verovio Humdrum Viewer and its applications at the Music Encoding Conference, Vienna, Austria, 29 May 2019.
-</dd>
+<dt><a target="_blank" href="http://bit.ly/iaml-2019">IAML July
+2019 workshop</a></dt> <dd>Workshop on Verovio Humdrum Viewer at
+the International Association of Music Libraries in Kraków, Poland,
+18 July 2019.  </dd>
 
-<dt><a target="_blank" href="http://bit.ly/simssa-xii-vhv">SIMSSA August 2017 presentation</a></dt>
-<dd>Keynote presentation on Verovio Humdrum Viewer at the SIMSSA XII workshop at McGill University, Montreal, Canada, 7 August 2017.</dd>
+<dt><a target="_blank" href="http://bit.ly/mec-2019-vhv">MEC May
+2019 workshop</a></dt> <dd>Workshop on Verovio Humdrum Viewer and
+its applications at the Music Encoding Conference, Vienna, Austria,
+29 May 2019.  </dd>
 
-<dt><a target="_blank" href="http://bit.ly/mec2017-vhv">MEC May 2017 presentation</a></dt>
-<dd>Introduction of Verovio Humdrum at the Music Encoding Conference 
-in Tours, France, May 2017.</dd>
+<dt><a target="_blank" href="http://bit.ly/simssa-xii-vhv">SIMSSA
+August 2017 presentation</a></dt> <dd>Keynote presentation on Verovio
+Humdrum Viewer at the SIMSSA XII workshop at McGill University,
+Montreal, Canada, 7 August 2017.</dd>
+
+<dt><a target="_blank" href="http://bit.ly/mec2017-vhv">MEC May
+2017 presentation</a></dt> <dd>Introduction of Verovio Humdrum at
+the Music Encoding Conference in Tours, France, May 2017.</dd>
 
 </dl>
 
