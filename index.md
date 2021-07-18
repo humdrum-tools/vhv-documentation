@@ -174,8 +174,6 @@ href="https://github.com">Github</a> account.
 
 <dl>
 
-http://bit.ly/mec2021-humdrum
-
 <dt><a target="_blank" href="http://bit.ly/mec2021-humdrum">MEC
 2021 Humdrum workshop</a></dt> <dd> Humdrum workshop at the 2021
 Music-Encoding Conference in Alicante Spain (19 July 2021). </dd>
