@@ -1,6 +1,6 @@
 ---
 title: Toolbar
-lang: en
+lang: en es
 ref: interface-toolbar
 author: Craig Stuart Sapp
 translator: 

@@ -1,6 +1,6 @@
 ---
 title: User Interface overview
-lang: en
+lang: en es
 ref: interface-getting_started-2
 author: Craig Stuart Sapp
 translator: 

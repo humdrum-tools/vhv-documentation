@@ -1,6 +1,6 @@
 ---
 title: Help menu
-lang: en
+lang: en es
 ref: interface-help_menu
 author: Craig Stuart Sapp
 translator: 

@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-shift-d</span>
-lang: en pl
+lang: en pl es
 ref: commands-alt-shift-d
 author: Craig Stuart Sapp
 translator: 
