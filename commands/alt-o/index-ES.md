@@ -3,33 +3,34 @@ title: <span class='keypress'>alt-o</span>
 lang: en pl es
 ref: commands-alt-o
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 creation_date: 15 Mar 2017
-translation_date: 
+translation_date: 5 Aug 2021
 last_updated: 15 Mar 2017
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands original clef
-summary: The <span class='keypress'>alt-o</span> command toggles between 'original' and 'modern' clefs.
-permalink: /commands/alt-o/index.html
+summary: El comando <span class='keypress'>alt-o</span> alterna entre las claves 'originales' y 'modernas'.
+permalink: /commands/alt-o/index-ES.html
 ---
 
-Pressing <span class="keypress">alt-o</span> toggles between
-display of modern and original clefs.  Here is an example of the feature
-in action:
+Al pulsar <span class="keypress">alt-o</span> se alterna entre
+visualización de claves modernas y originales.  Este es un ejemplo de la función
+en acción:
 
 {% include image.html
 	file="original-clefs.gif"
 	alt="show original/modern notation."
 	max-width="100%"
-	caption="Pressing <span class='keypress'>alt-o</span> will toggle between modern and original clefs."
+	caption="Al pulsar <span class='keypress'>alt-o</span> se alternará entre las claves modernas y las originales."
 %}
 
-This command is useful for proof-reading against a document that
-uses different clefs than the final encoding will, and is also
-useful for generating clef-reading exercises.
+Este comando es útil para la corrección de pruebas de un documento que
+que utiliza claves diferentes a las de la codificación final, y también es
+útil para generar ejercicios de lectura de claves.
 
-The original clefs are encoded by adding "o" before "clef":
+Las claves originales se codifican añadiendo "o" antes de "clave":
+
 <style>
 pre {
 	tab-size: 12;
@@ -44,20 +45,16 @@ pre {
 *clefF4	*clefGv2	*clefG2	*clefG2
 ```
 
-If there are no `oclef` encodings in the data, then 
-<span class="keypress">alt-o</span> obviously will not do anything.
+Si no hay codificaciones `oclef` en los datos, entonces 
+<span class="keypress">alt-o</span> obviamente no hará nada.
+
+Prueba a utilizar <span class="keypress">alt-o</span> en el
+[Bach chorale](http://verovio.humdrum.org/?file=chorales/chor074.krn) que se muestra
+en la figura anterior.
 
 
-Try using <span class="keypress">alt-o</span> on the
-[Bach chorale](http://verovio.humdrum.org/?file=chorales/chor074.krn) shown
-in the above figure.
-
-
-
-
-## Implementation notes ##
-
-When converting from Humdrum to MEI, the "original" clef line is converted into this MEI code that inserts the optional encodings for the original clefs:
+## Notas de implementación ##
+Al convertir de Humdrum a MEI, la línea de clave "original" se convierte en este código MEI que inserta las codificaciones opcionales para las claves originales:
 
 ```xml
 <app>
@@ -75,11 +72,10 @@ When converting from Humdrum to MEI, the "original" clef line is converted into 
 </app>
 ```
 
-The `<app>` element is used to provide alternate content in an MEI file. 
-In this case there are two choices, with `<lem>` meaning the default choice (don't add
-original clefs), and a `<rdg>` which is labeled `original-clef`.   The default in this
-case does nothing, which means that the clef assignments at the start of the file
-are not altered:
+El elemento `<app>` se utiliza para proporcionar contenido alternativo en un archivo MEI. 
+En este caso hay dos opciones, con `<lem>` que significa la opción por defecto (no añadir
+claves originales), y un `<rdg>` que lleva la etiqueta `original-clef`.   La opción por defecto en este caso no hace nada, lo que significa que las asignaciones de claves al principio del archivo
+no se modifican:
 
 ```xml
 <scoreDef>
@@ -91,10 +87,8 @@ are not altered:
    </staffGrp>
 </scoreDef>
 ```
-
-In the verovio JavaScript toolkit, the option `appXPathQuery` can be given to the 
-toolkit to run an XPath command on `<app>` data in the MEI input file. To select
-the original clefs, the options are set to:
+En el toolkit JavaScript de Verovio, se puede usar la opción `appXPathQuery`  
+para ejecutar un comando XPath sobre los datos de `<app>` en el archivo de entrada MEI. Para seleccionar las claves originales, las opciones se establecen en:
 
 ```javascript
 var options = {
@@ -104,22 +98,21 @@ var options = {
       appXPathQuery: "./rdg[contains(@label, 'original-clef')]"
    };
 ```
+En este caso la consulta [XPath](https://en.wikipedia.org/wiki/XPath) busca la
+lectura que contiene una etiqueta de atributo que tiene el valor `original-clef`.
 
-In this case the [XPath](https://en.wikipedia.org/wiki/XPath) query searches for the
-reading that contains an attribute label which has the value `original-clef`.
-
-The [command-line](/myvhv/command_line) equivalent to the above options would be:
+La [línea de comandos](/myvhv/command_line) equivalente a las opciones anteriores sería:
 
 ```bash
 humcat h://chorales/chor074.krn | verovio - -o chor074.svg -f humdrum -w 2000 -h 2500 --app-xpath-query="./rdg[contains(@label, 'original-clef')]"
 ```
 
-This is similar to using [strophe](http://www.humdrum.org/Humdrum/commands/strophe.html) 
-and/or [thru](http://www.humdrum.org/Humdrum/commands/thru.html) in Humdrum data, 
-although the `*oclef` system is a special case that does not require 
-using *strophe* or *thru*.
+Esto es similar al uso de [strophe](http://www.humdrum.org/Humdrum/commands/strophe.html) 
+y/o [thru](http://www.humdrum.org/Humdrum/commands/thru.html) en los datos de Humdrum, 
+aunque el sistema `*oclef` es un caso especial que no requiere 
+usar *strophe* o *thru*.
 
-Here is the equivalent using *thru*:
+Aquí está el equivalente usando *thru*:
 
 ```
 **kern
@@ -138,20 +131,19 @@ Here is the equivalent using *thru*:
 =1
 ...
 ```
+Entonces, para utilizar claves modernas:
 
-Then to use modern clefs:
 
 ```bash
 thru chor074-thru.krn | verovio - -o chor074-modern.svg
 ```
 
-and original clefs:
+y claves originales:
 
 ```bash
 thru -v original-clefs chor074-thru.krn | verovio - -o chor074-original.svg
 ```
-
-Here is similar functionality using *strophe*:
+Aquí hay una funcionalidad similar usando *strophe*:
 
 <style>
 pre {
@@ -178,14 +170,14 @@ pre {
 =1
 ...
 ```
-
-To unpack the modern version with strophe:
+Para desempaquetar la versión moderna con *strophe*:
 
 ```bash
 strophe -x modern chor074-thru.krn | verovio - -o chor074-modern.svg
 ```
 
-To unpack the original-clef version with strophe:
+Para desempaquetar la clave original con *strophe*:
+
 
 ```bash
 strophe -x original chor074-thru.krn | verovio - -o chor074-original.svg

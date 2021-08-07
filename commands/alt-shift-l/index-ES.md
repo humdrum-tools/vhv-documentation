@@ -3,15 +3,15 @@ title: <span class='keypress'>alt-shift-l</span>
 lang: en pl es
 ref: commands-alt-shift-l
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 creation_date: 20 May 2018
-translation_date: 
+translation_date: 5 Aug 2021
 last_updated: 20 May 2018
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands layers
 summary: "The <span class='keypress'>alt-shift-l</span> command adds an empty local comment line above the current line in the text editor."
-permalink: /commands/alt-shift-l/index.html
+permalink: /commands/alt-shift-l/index-ES.html
 ---
 
 Pressing <span class="keypress">alt-shift-l</span> will add an empty

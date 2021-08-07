@@ -11,7 +11,7 @@ tags: [all, getting_started]
 keywords: interface search toolbar
 summary: "How to use the search toolbar."
 sidebar: main_sidebar
-permalink: /interface/search/index.html
+permalink: /interface/search/index-ES.html
 ---
 
 {% include_relative style-local.html %}

@@ -1,6 +1,6 @@
 ---
 title: Filters
-lang: en
+lang: en es
 ref: filters
 author: Craig Stuart Sapp
 translator: 

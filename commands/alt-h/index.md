@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-h</span>
-lang: en pl
+lang: en pl es
 ref: commands-alt-h
 author: Craig Stuart Sapp
 translator: 
@@ -23,7 +23,7 @@ switching between Humdrum and MEI data:
 
 {% include image.html
 	file="hummei.gif"
-	alt="siwtch between Humdrum and MEI modes"
+	alt="switch between Humdrum and MEI modes"
 	max-width="80%"
 	caption="Switch between Humdrum and MEI data display."
 %}

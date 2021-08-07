@@ -11,7 +11,7 @@ tags: [all, getting_started]
 keywords: interface color colorize coloring syntax highlighting
 summary: "A Description of the two editing modes in VHV, and Humdrum syntax coloring."
 sidebar: main_sidebar
-permalink: /interface/edit_modes/index.html
+permalink: /interface/edit_modes/index-ES.html
 ---
 La edición de texto en [Verovio Humdrum Viewer](http://verovio.humdrum.org) utiliza el editor
 [ace](https://ace.c9.io/).  Hay dos modos en los que los
