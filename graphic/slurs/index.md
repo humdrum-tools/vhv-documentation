@@ -1,6 +1,6 @@
 ---
 title: Slurs
-lang: en
+lang: en es
 ref: graphic-slurs
 author: Craig Stuart Sapp
 translator: 

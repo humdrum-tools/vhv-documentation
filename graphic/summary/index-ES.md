@@ -1,22 +1,22 @@
 ---
-title: Key command summary
+title: Resumen de comandos clave
 lang: en es
 ref: graphic-summary
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 creation_date: 15 Mar 2017
-translation_date: 
+translation_date: 9 Aug 2021
 last_updated: 15 Mar 2017
 tags: [all, graphic_editing]
 sidebar: main_sidebar
 keywords: graphic editing 
 datatable: "true"
 vim: ts=3 ft=javascript
-summary: "Summary of graphic editing commands."
-permalink: /graphic/summary/index.html
+summary: "Resumen de los comandos de edición gráfica."
+permalink: /graphic/summary/index-ES.html
 ---
 
-## [Pitch](../pitch) ##
+## [Tono](../pitch) ##
 
 {% include keytable.html
 	contentId="pitchkeysummary"
@@ -25,7 +25,7 @@ permalink: /graphic/summary/index.html
 {% include keypresses/pitchkeys.json %}
 </script>
 
-## [Slurs](../slurs) ##
+## [Ligaduras de expresión](../slurs) ##
 
 {% include keytable.html
 	contentId="slurkeysummary"

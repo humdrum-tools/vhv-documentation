@@ -1,130 +1,105 @@
 ---
-title: Marking notes with <span class='keypress'>at</span>
+title: Marcar notas con <span class='keypress'>at</span>
 lang: en es
 ref: graphic-marks
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 creation_date: 15 Mar 2017
-translation_date: 
+translation_date: 9 Aug 2021
 last_updated: 15 Mar 2017
 tags: [all, commands, RDF]
 sidebar: main_sidebar
 keywords: interface commands 
-summary: The <span class='keypress'>at</span> command highlights notes in the notation editor and adds a mark signifier to the note's data token in the text editor.
-permalink: /graphic/marks/index.html
+summary: El comando <span class='keypress'>at</span> resalta las notas en el editor de notación y añade un significante de marca al token de datos de la nota en el editor de texto.
+permalink: /graphic/marks/index-ES.html
 ---
-
-Pressing <span class="keypress">@</span> while a note is selected
-will mark the note with a user-signifier based on the last marked-note RDF line in the 
-Humdrum data with a form such as:
+Al pulsar <span class="keypress">@</span> mientras una nota está seleccionada, se marcará la nota con un firmante de usuario basado en la última línea RDF de nota marcada en los datos de Humdrum con una forma como la siguiente:
 
 ```
 !!!RDF**kern: @ = marked note
 ```
-
-If there is no marked-note RDF definition in the Humdrum data, one will be 
-added automatically to the end of the data.  Here is an example of 
-marking notes in the notation, which adds `@` to the note tokens in the
-Humdrum data.
+Si no hay una definición RDF de nota marcada en los datos de Humdrum, se añadirá una automáticamente al final de los datos.  Este es un ejemplo de marcado de notas en la notación, que añade `@` a los tokens de nota en los datos de Humdrum.
 
 {% include image.html
 	file="mark-notes.gif"
-	alt="marking notes in graphic notation editor."
-	caption="Marking notes with <span class='keypress'>@</span> in the notation editor."
+	alt="marcar notas en el editor de notación gráfica."
+	caption="Marcar notas con <span class='keypress'>@</span> en el editor de notación."
 %}
 
 
-## Changing mark colors ##
+## Cambiar los colores de las marcas ##
 
-The default color for marked notes in VHV notation is red.  If you want
-to use another color, a color parameter can be added to the RDF:
+El color por defecto para las notas marcadas en notación VHV es el rojo.  Si se desea utilizar otro color, se puede añadir un parámetro de color al RDF:
 
 {% include image.html
 	file="magenta-turquoise.gif"
-	alt="marking notes in graphic notation editor in different colors."
-	caption="Changing the color of marked notes."
+	alt="marcar las notas en el editor de notación gráfica en diferentes colores."
+	caption="Cambiar el color de las notas marcadas."
 %}
+El valor del parámetro de color debe ir entre comillas si contiene espacios, pero en caso contrario las comillas son opcionales.  Los colores pueden ser [colores con nombre](https://www.w3schools.com/cssref/css_colors.asp) así como `transparent`, o cualquier [formato numérico reconocido por SVG](https://www.w3schools.com/cssref/css_colors_legal.asp): colores hexadecimales de 3/6 dígitos, colores RGB, colores RGBA, colores HSL o colores HSLA.  Ejemplos:
 
-The color parameter value should be enclosed in quotes if it contains
-spaces, but otherwise the quotes are optional.  Colors can be
-
-[named colors](https://www.w3schools.com/cssref/css_colors.asp) as well as
-`transparent`, or any [numeric format recognized by SVG](https://www.w3schools.com/cssref/css_colors_legal.asp): 3/6 digit hexadecimal colors, RGB colors,
-RGBA colors, HSL colors, or HSLA colors.  Examples:
 
 {% include image.html
 	file="hex-c03da2.png"
-	alt="example of hex color."
-	caption="Example of hex color \"#c03da2\"."
+	alt="ejemplo de color hexadecimal."
+	caption="Ejemplo de código hexadecimal \"#c03da2\"."
 %}
 
 
-The same color in `rgb` format:
+El mismo color en formato `rgb`:
 
 {% include image.html
 	file="rgb-192-61-162.png"
-	alt="example of hex color."
-	caption="Example of rgb color \"rgb(192,61,162)\"."
+	alt="ejemplo de color rgb."
+	caption="Ejemplo de color rgb \"rgb(192,61,162)\"."
 %}
 
 
-Adding 50% opacity to the same color in `rgba` format:
+Añadiendo un 50% de opacidad al mismo color en formato `rgba`:
 
 {% include image.html
 	file="rgb-192-61-162-05.png"
-	alt="example of hex color."
-	caption="Example of rgb color \"rgb(192,61,162,0.5)\"."
+	alt="ejemplo de color rgba."
+	caption="Ejemplo de color rgb \"rgba(192,61,162,0.5)\"."
 %}
 
-## Multiple marks ##
+## Varias marcas ##
 
-Any number of RDF marks can be given in the data.  The last marked-note RDF in
-the data will be the one that the <span class="keypress">at</span> 
-command uses when marking notes:
+Se puede dar cualquier número de marcas RDF en los datos.  El último RDF marcado en los datos será el que el comando <span class="keypress">at</span> utilice al marcar las notas:
 
 {% include image.html
 	file="second-mark.gif"
-	alt="example of two mark colors."
-	caption="Example second mark (<span style='color:coral;'>coral</span> colored notes)."
+	alt="ejemplo de dos colores de marca."
+	caption="Ejemplo de segunda marca (notas de color <span style='color:coral;'>coral</span>)."
 %}
 
-In this case there are two RDF marking lines:
+En este caso hay dos líneas de marcado RDF:
 
 ```
 !!!RDF**kern: @ = marked note color=turquoise
 !!!RDF**kern: N = marked note color=coral
 ```
-
-Since the last one uses `N` for the mark, typing
-<span class="keypress">at</span> will add the character `N` to 
-the marked note tokens rather than `@`.
+Dado que el último utiliza `N` para la marca, al escribir <span class="keypress">at</span> se añadirá el carácter `N` a los tokens de la nota marcada en lugar de `@`.
 
 
-## Meaning of the mark ##
+## Significado de la marca ##
 
-RDF records are free-form texts, so you can add your own text to the line which explains the meaning of the mark.
+Los registros RDF son textos de forma libre, por lo que puedes añadir su propio texto a la línea que explica el significado de la marca.
 
 
 ```
 !!!RDF**kern: @ = marked note color="orchid" strange note
 ```
 
-If you want a more formalized system, then use `meaning="..."`:
+Si desea un sistema más formalizado, utiliza `meaning="..."`:
 
 ```
 !!!RDF**kern: @ = marked note color="orchid" meaning="strange note"
 ```
+Este parámetro todavía no tiene ningún significado en el propio VHV, pero tal vez podría asignarse a un tooltip en la nota en el futuro.
 
-This parameter does not yet have any meaning in VHV itself yet, 
-but perhaps it could be mapped to a tooltip on the note in the future.
-
-
-## SVG class attribute ##
-
-In the SVG notation, marked notes are also labeled with the class
-`marked`.  This class tag can be used to change the color and styling
-of the notes with CSS if the SVG image is placed directly into an
-HTML document (rather than loaded with an `<image>` element):
+## Atributo de clase SVG ##
+En la notación SVG, las notas marcadas también se etiquetan con la clase `marcada`.  Esta etiqueta de clase puede utilizarse para cambiar el color y el estilo de las notas con CSS si la imagen SVG se coloca directamente en un documento HTML (en lugar de cargarse con un elemento `<image>`):
 
 <style>
 
@@ -318,10 +293,7 @@ svg .note.marked  use {
 </svg>
 </center>
 
-
-The above image was created by first marking the notes in VHV, then saving the SVG (SVG code made
-visible with <span class="keypress">alt-g</span>)  then inserted directly into the HTML page, using this
-CSS styling:
+La imagen de arriba fue creada marcando primero las notas en VHV, luego guardando el SVG (código SVG hecho visible con <span class="keypress">alt-g</span>) y luego insertado directamente en la página HTML, usando este estilo CSS:
 
 ```css
 <style>
@@ -332,7 +304,7 @@ CSS styling:
 ```
 
 
-And adding these filters to the top of the SVG:
+Y añadiendo estos filtros a la parte superior del SVG:
 
 ```xml
 <defs id="#myDefs">
@@ -352,13 +324,13 @@ And adding these filters to the top of the SVG:
 ```
 
 {% include note.html
-	content="In the future the \"marked\" class tag will be changeable in the RDF line by adding 'class=\"something\"'.  This will allow a separate class tag for each mark signifier."
+	content="En el futuro, la etiqueta de clase "marked" podrá cambiarse en la línea RDF añadiendo 'class="algo\"'.  Esto permitirá una etiqueta de clase distinta para cada significante de marca."
 %}
 
 
 
 {% include warning.html
-	content="If more than one mark is placed on a single note, only one color will currently be shown."
+	content="Si se coloca más de una marca en una misma nota, sólo se mostrará un color."
 %}
 
 
