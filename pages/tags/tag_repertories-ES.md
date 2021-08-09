@@ -1,5 +1,5 @@
 ---
-title: "Repertory pages index"
+title: "Índice de páginas del repertorio"
 lang: en es
 ref: tag_repertories
 tagName: repertories

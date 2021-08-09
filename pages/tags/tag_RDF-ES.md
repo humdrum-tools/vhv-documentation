@@ -1,10 +1,10 @@
 ---
-title: "All pages index"
+title: "Índice de páginas de RDF"
 lang: en es
-ref: tag_all
-tagName: all
+ref: tag_RDF
+tagName: RDF
 search: exclude
-permalink: tag_all.html
+permalink: tag_RDF.html
 sidebar: main_sidebar
 folder: tags
 ---

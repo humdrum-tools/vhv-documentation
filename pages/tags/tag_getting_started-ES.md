@@ -1,5 +1,5 @@
 ---
-title: "Getting started pages index"
+title: "Índice de páginas de cómo empezar"
 lang: en es
 ref: tag_getting_started
 tagName: getting_started

@@ -3,34 +3,26 @@ title: Embedded verovio options
 lang: en es
 ref: verovio options
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 creation_date: 20 Mar 2019
-translation_date: 
+translation_date: 9 Aug 2021
 last_updated: 20 Mar 2019
 tags: [all, options]
 sidebar: main_sidebar
 verovio: "true"
 keywords: embedded verovio options
 summary: 
-permalink: /options/index.html
+permalink: /options/index-ES.html
 ---
+Las opciones de verovio pueden ser incrustadas directamente en los datos de Humdrum.  Cuando los datos son procesados por Verovio, las opciones se utilizarán para controlar la representación de la notación musical.
 
-Verovio options can be embedded directly in Humdrum data.  When the data is 
-processed by verovio, the options will be used to control the rendering 
-of the music notation.
-
-The basic format for an embedded option is
+El formato básico de una opción incrustada es
 
 ```
 !!!verovio: spacingStaff 0
 ```
 
-The line starts with `!!!verovio:` followed by a camelCase verovio option name 
-(as used in the Javascript version of the verovio toolkit), followed by at least
-one space and then the value for that option.  Multiple options can be
-given in the file, with one option on each line.  In the above case, the
-spacing between staves is set to 0.  Compare the following example that uses the 
-default staff spacing:
+La línea comienza con `!!!verovio:` seguido de un nombre de opción verovio en camelCase (tal y como se utiliza en la versión Javascript de Verovio), seguido de al menos un espacio y a continuación el valor de esa opción.  Se pueden dar múltiples opciones en el archivo, con una opción en cada línea.  En el caso anterior, el espaciado entre pentagramas se establece en 0. Compara el siguiente ejemplo que utiliza el espaciado entre pentagramas por defecto:
 
 
 {% include verovio.html
@@ -69,7 +61,7 @@ default staff spacing:
 *-	*-	*-	*-
 </script>
 
-Adding an option to widen the spacing between staves:
+Añadir una opción para ampliar el espacio entre pentagramas:
 
 {% include verovio.html
 	source="spacing-wide"
@@ -109,34 +101,26 @@ Adding an option to widen the spacing between staves:
 *-	*-	*-	*-
 </script>
 
+Vea la [lista completa](/options/list) de las opciones de Verovio que se pueden incrustar junto con sus valores por defecto y los rangos permitidos para las opciones numéricas.
 
-See the [complete list](/options/list) of verovio options that can be
-embedded along with their default values and allow ranges for numeric options.
+Las opciones pueden aparecer en cualquier lugar del fichero.  Las opciones duplicadas dan prioridad a la última ocurrencia en el archivo.  En el caso de los grupos de parámetros de opciones, los grupos se procesarán en el orden en que aparecen en el archivo (probablemente).
 
+## Conjuntos de opciones ##
 
-The options can occur at any location in the file.  Duplicate options give 
-priority to the last occurence in the file.  For option parameter groups, the
-groups will be processed in the order in which they are listed in the 
-file (probably).
-
-## Option sets ##
-
-Multiple option sets can be embedded into a file.  For example, here are
-two option groups for staff spacing:
+Se pueden incrustar varios grupos de opciones en un archivo.  Por ejemplo, aquí hay dos grupos de opciones para el espaciado del personal:
 
 ```
 !!!verovio-compact: spacingStaff 0
 !!!verovio-spacious: spacingStaff 20
 ```
 
-To activate a particular option group, add a line such as the following to the file:
+Para activar un grupo de opciones concreto, añade una línea como la siguiente al archivo:
 
 ```
 !!!verovio-parameter-group: spacious
 ```
 
-This will cause the "spacious" option group to be used, while all other
-groups will be ignored:
+Esto hará que se utilice el grupo de opciones "espacioso", mientras que todos los demás grupos serán ignorados:
 
 
 {% include verovio.html
@@ -181,7 +165,7 @@ groups will be ignored:
 *-	*-	*-	*-
 </script>
 
-Now choosing the "compact" parameter group:
+Ahora eligiendo el grupo de parámetros "compacto":
 
 {% include verovio.html
 	source="spacing-group2"
@@ -225,11 +209,7 @@ Now choosing the "compact" parameter group:
 *-	*-	*-	*-
 </script>
 
-Note that embedded verovio parameters not belonging to a
-specific group will always be active.  To use such parameters
-as default values for a parameter, place them above any
-group equivalents.  If placed afterwards, the will supercede
-the group parameters.
+Ten en cuenta que los parámetros de Verovio incrustados que no pertenezcan a un grupo específico estarán siempre activos.  Para utilizar dichos parámetros como valores por defecto para un parámetro, colócalos por encima de cualquier equivalente de grupo.  Si se colocan después, sustituirán a los parámetros de grupo.
 
 
 {% include verovio.html
@@ -274,9 +254,7 @@ the group parameters.
 </script>
 
 
-Here is the proper use of the default parameters, allowing the group
-parameter set "spacious" to override it:
-
+Aquí está el uso correcto de los parámetros por defecto, permitiendo que el grupo de parámetros "espacioso" lo sobreescriba:
 
 {% include verovio.html
 	source="spacing-group4"

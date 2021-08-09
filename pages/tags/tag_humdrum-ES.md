@@ -1,5 +1,5 @@
 ---
-title: "Humdrum pages index"
+title: "Índice de páginas de Humdrum"
 lang: en es
 ref: tag_humdrum
 tagName: humdrum

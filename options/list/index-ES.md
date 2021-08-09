@@ -3,9 +3,9 @@ title: Embedded verovio options list
 lang: en es
 ref: verovio options
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 creation_date: 20 Mar 2019
-translation_date: 
+translation_date: 9 Aug 2021
 last_updated: 20 Mar 2019
 tags: [all, options]
 sidebar: main_sidebar
@@ -13,11 +13,10 @@ verovio: "true"
 keywords: embedded verovio options
 vim: ts=3
 summary: 
-permalink: /options/list/index.html
+permalink: /options/list/index-ES.html
 ---
 
-Here is a list of verovio options that can be [embedded](/options) in the
-Humdrum data.
+Aquí hay una lista de opciones de verovio que pueden ser [incrustadas](/options) en los datos de Humdrum.
 
 <div id="list"></div>
 

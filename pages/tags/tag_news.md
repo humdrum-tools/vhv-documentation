@@ -1,6 +1,6 @@
 ---
 title: "News pages index"
-lang: en
+lang: en es
 ref: tag_news
 tagName: news
 search: exclude

@@ -1,5 +1,5 @@
 ---
-title: "Maintenance pages index"
+title: "Índice de páginas de mantenimiento"
 lang: en es
 ref: tag_maintenance
 tagName: maintenance

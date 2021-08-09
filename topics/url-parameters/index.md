@@ -1,6 +1,6 @@
 ---
 title: URL parameters
-lang: en
+lang: en es
 ref: url-parameters
 author: Craig Stuart Sapp
 translator: 

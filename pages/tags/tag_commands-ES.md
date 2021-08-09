@@ -1,5 +1,5 @@
 ---
-title: "Command pages index"
+title: "Índice de páginas de comandos"
 lang: en es
 ref: tag_commands
 tagName: commands

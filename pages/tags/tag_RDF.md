@@ -1,6 +1,6 @@
 ---
 title: "RDF pages index"
-lang: en
+lang: en es
 ref: tag_RDF
 tagName: RDF
 search: exclude

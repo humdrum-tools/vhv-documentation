@@ -1,5 +1,5 @@
 ---
-title: "Special layout pages index"
+title: "Índice de páginas de diseño especial"
 lang: en es
 ref: tag_special_layouts
 tagName: special_layouts

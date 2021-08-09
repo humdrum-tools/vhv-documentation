@@ -1,10 +1,10 @@
 ---
-title: "All pages index"
+title: "Índice de páginas de noticias"
 lang: en es
-ref: tag_all
-tagName: all
+ref: tag_news
+tagName: news
 search: exclude
-permalink: tag_all.html
+permalink: tag_news.html
 sidebar: main_sidebar
 folder: tags
 ---

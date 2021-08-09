@@ -1,5 +1,5 @@
 ---
-title: "All pages index"
+title: "Índice de todas las páginas"
 lang: en es
 ref: tag_all
 tagName: all

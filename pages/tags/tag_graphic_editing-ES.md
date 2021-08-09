@@ -1,5 +1,5 @@
 ---
-title: "Graphical editing pages index"
+title: "Índice de páginas de edición gráfica"
 lang: en es
 ref: tag_graphic_editing
 tagName: graphic_editing
