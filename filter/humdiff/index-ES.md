@@ -12,19 +12,12 @@ sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
 summary: 
-permalink: /filter/humdiff/index.html
+permalink: /filter/humdiff/index-ES.html
 ---
 
-The humdiff filter automatically identifies and marks differences
-between two or more scores of the same music having the same duration.
-The filter is useful for data validation when encoding scores using <a
-target="_blank"
-href="https://en.wikipedia.org/wiki/Two_pass_verification">double
-data-entry method</a> as well as preparations of <a target="_blank"
-href="https://chaucer.fas.harvard.edu/types-editions#criticaledition">critical
-editions</a>.
+El filtro humdiff identifica y marca automáticamente las diferencias entre dos o más partituras de la misma música que tengan la misma duración. El filtro es útil para la validación de datos cuando se codifican partituras utilizando <a target="_blank" href="https://en.wikipedia.org/wiki/Two_pass_verification">método de doble entrada de datos</a>, así como para la preparación de <a target="_blank" href="https://chaucer.fas.harvard.edu/types-editions#criticaledition">ediciones críticas</a>.
 
-Here are two example scores with some differences:
+Aquí hay dos ejemplos de partituras con algunas diferencias:
 
 {% include verovio.html
 	source="score1"
@@ -74,10 +67,7 @@ Here are two example scores with some differences:
 *-
 </script>
 
-
-The humdiff filter identifies differences between the two scores
-and will highlight notes in the first score that are different from
-those in the second score:
+El filtro humdiff identifica las diferencias entre las dos partituras y resaltará las notas de la primera partitura que sean diferentes a las de la segunda:
 
 {% include verovio.html
 	source="humdiff1"
@@ -117,23 +107,12 @@ those in the second score:
 *-
 </script>
 
-Notice that the humdiff filter requires two (or more) data segments,
-and the filtering command must start with four `!!!!`, indicating
-that the filter applies to multiple data segments.
+Observa que el filtro humdiff requiere dos (o más) segmentos de datos, y el comando de filtrado debe comenzar con cuatro `!!!!`, indicando que el filtro se aplica a múltiples segmentos de datos.
 
+## Partitura de referencia ## 
+Por defecto, el filtro humdiff utilizará el primer segmento de datos como la partitura de referencia con la que se compararán todos los demás segmentos de datos.  La partitura de referencia se mostrará con notas resaltadas que muestran dónde otras partituras tienen notas diferentes.
 
-## Reference score ## 
-
-By default, the humdiff filter will use the first data segment as
-the reference score against which all of the other data segments
-will be compared.  The reference score will be displayed with 
-highlighted notes showing where other scores have different
-pitches.
-
-The `-r` option selects a different score in the Humdrum data stream
-to use as the reference when it does not occur first.  Here is an
-example of the same two scores being compared, but now the second
-score in the data stream is used as the reference score:
+La opción `-r` selecciona una partitura diferente en el flujo de datos de Humdrum para usarla como referencia cuando no aparece primero.  Aquí hay un ejemplo de las mismas dos partituras que se comparan, pero ahora la segunda partitura en el flujo de datos se utiliza como la partitura de referencia:
 
 {% include verovio.html
 	source="humdiffr2"
@@ -172,15 +151,9 @@ score in the data stream is used as the reference score:
 ==
 *-
 </script>
+Observa que las notas negras de la partitura gráfica resultante coinciden entre las dos versiones de la música.  Las notas resaltadas son diferentes y se muestran las de la edición de referencia.
 
-Notice that the black notes in the resulting graphical score match
-between the two versions of the music.  The highlighted notes are
-different, and those of the reference edition are displayed.
-
-
-An alternate method for selecting the reference score is to use the
-[chooser filter](/filter/chooser).  This filter rearranges
-the order of data segments within a stream of Humdrum data:
+Un método alternativo para seleccionar la partitura de referencia es utilizar el filtro [chooser](/filter/chooser).  Este filtro reordena el orden de los segmentos de datos dentro de un flujo de datos de Humdrum:
 
 {% include verovio.html
 	source="humdiffchooser"
@@ -222,16 +195,8 @@ the order of data segments within a stream of Humdrum data:
 </script>
 
 
-## Multiple score comparisons ##
-
-The humdiff filter can compare multiple scores to a reference score,
-provided that all scores have the same duration.  Any note in the
-reference score that differs from a comparison score will be
-highlighted.  Here is an example of three scores, with each having
-one difference with the reference score.  The first score is a
-C-major scale, the second one adds a sharp onto the F, and the third
-adds a flat on the A.  This causes the F and A in the original score
-to be highlighted:
+## Comparaciones de partituras múltiples ##
+El filtro humdiff puede comparar varias notas con una nota de referencia, siempre que todas las notas tengan la misma duración.  Cualquier nota en la partitura de referencia que difiera de la partitura de comparación será resaltada.  He aquí un ejemplo de tres partituras, cada una de las cuales tiene una diferencia con la partitura de referencia.  La primera partitura es una escala de Do mayor, la segunda añade un sostenido en el Fa, y la tercera añade un bemol en el La. Esto hace que se resalten el Fa y el La en la partitura original:
 
 {% include verovio.html
 	source="humdiffmultiple"
@@ -289,15 +254,10 @@ to be highlighted:
 ==
 *-
 </script>
+Prueba a cambiar la partitura de referencia en el ejemplo anterior, por ejemplo, añadiendo `-r 2` a la línea de filtro en el texto anterior.
 
-Try changing the reference score in the above example, such as adding `-r 2` 
-to the filter line in the above text.
-
-
-## Highlighting color ##
-
-The `-c` option can be used to set the highlighting color.  The color
-can be any SVG/HTML color name or hex color.
+## Color de resalte ##
+La opción `-c` se puede utilizar para establecer el color de resaltado.  El color puede ser cualquier nombre de color SVG/HTML o color hexadecimal.
 
 {% include verovio.html
 	source="humdiffcolor"
@@ -331,21 +291,18 @@ can be any SVG/HTML color name or hex color.
 *-
 </script>
 
-Try setting the color to `hotpink` and `#ff8800`.
+Prueba a poner el color en `hotpink` y `#ff8800`.
 
 
-## Chopin mazurka example ##
+## Ejemplo con una mazurca de Chopin ##
+He aquí un ejemplo que compara los dos últimos compases de la mazurca de Chopin en si menor, op 30/2, entre dos primeras ediciones diferentes:
 
-Here is an example comparing the last two measures of Chopin's
-mazurka in B minor, op 30/2, between two different first editions:
 <ol>
 <li> Breitkopf &amp; H&auml;rtel</li>
 <li> Maurice Schlesinger</li>
 </ol>
 
-In the first comparison, the B&amp;H score is the reference, with red notes
-indicating differences from the Schlesinger edition:
-
+En la primera comparación, la partitura B&amp;H es la referencia, con notas rojas que indican las diferencias con la edición de Schlesinger:
 
 {% include verovio.html
 	source="humdiffchopin"
@@ -409,9 +366,7 @@ indicating differences from the Schlesinger edition:
 ==	==	==
 *-	*-	*-
 </script>
-
-And in the following comparison, the Schlesinger edition is the
-reference, with green notes being different from the B&amp;H edition:
+Y en la siguiente comparación, la edición de Schlesinger es la referencia, siendo las notas verdes diferentes a las de la edición B&amp;H:
 
 {% include verovio.html
 	source="humdiffchopin2"

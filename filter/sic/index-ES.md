@@ -1,27 +1,22 @@
 ---
-title: sic filter
+title: filtro sic
 lang: en es
 ref: filters-sic
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 creation_date: 13 Aug 2020
-translation_date: 
+translation_date: 9 Aug 2021
 last_updated: 13 Aug 2020
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
 summary: 
-permalink: /filter/sic/index.html
+permalink: /filter/sic/index-ES.html
 ---
+El filtro sic se utiliza para controlar la visualización de errores y correcciones simples para las ediciones de origen.  Tanto el contenido musical original como el contenido corregido están codificados en la partitura, y el filtro sic controla qué versión se muestra.
 
-The sic filter is used to control display of simple errors and
-corrections for source editions.  Both the original musical content
-and the corrected content are encoded in the score, and the sic
-filter controls which version is displayed.
-
-Here is an example SIC encoding, where the original notation has a quarter-note
-F, but it was determined that a quarter-note G is correct:
+Aquí hay un ejemplo de codificación SIC, donde la notación original tiene un Fa negra, pero se determinó que un Sol negra es correcto:
 
 {% include verovio.html
 	source="sic1"
@@ -42,24 +37,15 @@ F, but it was determined that a quarter-note G is correct:
 *-
 </script>
 
-The lines:
+Las líneas:
 
 ```
 !LO:SIC:s=4g
 4f
 ```
+significa que la nota original en la edición de origen es una negra F4, pero se ha decidido que la nota correcta debería haber sido una negra G4.  El parámetro `s` significa el contenido de "sustitución" que debería reemplazar el contenido de la nota siguiente en la partitura.
 
-mean that the original note in the source edition is a quarter-note
-F4, but it has been decided that the correct note should have been
-a quarter-note G4.  The `s` parameter means the "substitution"
-contents that should replace the following note contents in the
-score.
-
-
-
-
-Alternatively, the correction can be displayed, and the SIC parameter can
-store what the original notation showed:
+Alternativamente, se puede mostrar la corrección, y el parámetro SIC puede almacenar lo que mostraba la notación original:
 
 {% include verovio.html
 	source="sic2"
@@ -80,14 +66,12 @@ store what the original notation showed:
 *-
 </script>
 
-In this case the `o` parameter means the "original" contents that was replaced
-with the correct contents in the score.
+En este caso el parámetro `o` significa el contenido "original" que fue reemplazado por el contenido correcto en la partitura.
 
 
-## Switching between original and corrected content ##
+## Cambio entre el contenido original y el corregido ##
 
-The sic filter can switch between the original and substitution contents.  To force
-the corrections to display, use `!!!filter: sic -s`:
+El filtro sic puede cambiar entre el contenido original y el de la sustitución.  Para forzar que se muestren las correcciones, utiliza `!!!filtro: sic -s`:
 
 {% include verovio.html
 	source="sic3"
@@ -110,15 +94,9 @@ the corrections to display, use `!!!filter: sic -s`:
 *-
 </script>
 
-In this example, the score encodes the original contents, but the
-sic filter will switch it for the substitution content, so instead
-of the `4f` being displayed in the notation, the `4g` is used
-instead.
+En este ejemplo, la partitura codifica el contenido original, pero el filtro sic lo cambiará por el contenido de sustitución, por lo que en lugar de mostrarse el `4f` en la notación, se utiliza el `4g`.
 
-Likewise, if you want to encode the correction in the score, the SIC parameter can
-store the original contents, and `!!!filter: sic -o` can be used to show the
-original contents that was corrected:
-
+Del mismo modo, si se quiere codificar la corrección en la partitura, el parámetro SIC puede almacenar el contenido original, y `!!!filtro: sic -o` se puede utilizar para mostrar el contenido original que fue corregido:
 
 {% include verovio.html
 	source="sic4"
@@ -142,8 +120,7 @@ original contents that was corrected:
 
 ## Displaying sic warnings in VHV ##
 
-If you want to visually mark that notes/rests have SIC layout parameters
-attached to them, add the `v` parameter (meaning "verbose"):
+Si quiere marcar visualmente que las notas/silencios tienen parámetros de diseño SIC adjuntos, añada el parámetro `v` (que significa "verboso"):
 
 {% include verovio.html
 	source="sicv"
@@ -164,8 +141,7 @@ attached to them, add the `v` parameter (meaning "verbose"):
 *-
 </script>
 
-In the VHV editor, the green "S" is converted into a green triangle icon:
-
+En el editor VHV, la "S" verde se convierte en un icono de triángulo verde:
 
 
 {% include image.html
@@ -175,14 +151,9 @@ In the VHV editor, the green "S" is converted into a green triangle icon:
 	caption="Verbose sic marker dipslay in VHV editor"
 %}
 
+Tanto la visualización original como la de sustitución mostrarán un triángulo verde cuando la visualización verbosa esté activa (depende de ti saber qué forma se está mostrando, por ejemplo forzando una vista concreta con el filtro sic).
 
-Both the original and substitution displays will show a green triangle when 
-verbose display is active (it is up to you to know which form is displaying, 
-such as by forcing a particular view with the sic filter).
-
-
-If you want to force display of the sic marker in the graphical 
-score, use `!!!filter: sic -v`:
+Si quieres forzar la visualización del marcador sic en la partitura gráfica, utilice ``filtro: sic -v`':
 
 
 {% include verovio.html
@@ -206,16 +177,11 @@ score, use `!!!filter: sic -v`:
 *-
 </script>
 
+En el futuro, se podría añadir otro parámetro (como `v=text`) para que el texto verde muestre el texto original/sustituido sobre la nota en lugar de una S mayúscula. Así, el ejemplo anterior mostraría `4g` como texto en lugar de `S`.
 
-In the future, another parameter may be added (such as `v=text`) to have
-green text show the original/substitution text above the note rather
-than a capital S.  So the above example would show `4g` as text instead of `S`.
+## SIC para articulaciones ##
 
-## SIC for articulations ##
-
-
-The SIC system is intended for simple corrections to notes/rests.  It can
-also be used to indicate obvious problems in articulations:
+El sistema SIC está pensado para correcciones sencillas de notas/silencios.  También puede utilizarse para indicar problemas evidentes en las articulaciones:
 
 
 {% include verovio.html
@@ -237,11 +203,7 @@ also be used to indicate obvious problems in articulations:
 *-
 </script>
 
-
-In this example, the original score has a staccato on the G, but
-this was determined to be an error.  Note that this is different
-from implied staccatos, which would be encoded with `y` markers after
-the staccatos:
+En este ejemplo, la partitura original tiene un staccato en el Sol, pero se determinó que era un error.  Tenga en cuenta que esto es diferente de los staccatos implícitos, que se codificarían con marcadores `y` después de los staccatos:
 
 
 {% include verovio.html
@@ -265,11 +227,8 @@ the staccatos:
 
 
 
-## SIC for chords ##
-
-The sic filter only replaces entire tokens, so if a single note in
-a chord needs fixing, the entire chord will still need to be added
-to the SIC `s` or `o` parameter:
+## SIC para acordes ##
+El filtro sic sólo sustituye tokens enteros, por lo que si hay que arreglar una sola nota de un acorde, habrá que añadir todo el acorde al parámetro SIC `s` o `o`:
 
 {% include verovio.html
 	source="chord"
@@ -289,7 +248,7 @@ to the SIC `s` or `o` parameter:
 *-
 </script>
 
-Then `!!!filter: sic -s` will produce:
+Así, `!!!filter: sic -s` producirá:
 
 {% include verovio.html
 	source="chord2"
@@ -313,7 +272,7 @@ Then `!!!filter: sic -s` will produce:
 
 ## SIC for ties ##
 
-Here is an example of using the SIC system for encoding a missing tie.
+He aquí un ejemplo de utilización del sistema SIC para codificar una ligadura de prolongación que falta.
 
 {% include verovio.html
 	source="tie"
@@ -341,7 +300,7 @@ Here is an example of using the SIC system for encoding a missing tie.
 *-
 </script>
 
-Then `!!!filter: sic -s` will produce:
+Entonces, `!!!filter: sic -s` producirá:
 
 
 {% include verovio.html
@@ -373,9 +332,9 @@ Then `!!!filter: sic -s` will produce:
 
 
 
-## SIC for slurs ##
+## SIC para ligaduras de expresión ##
 
-Here is an example of using the SIC system for encoding a missing tie.
+He aquí un ejemplo de utilización del sistema SIC para codificar una ligadura de expresión.
 
 {% include verovio.html
 	source="slur"
@@ -397,7 +356,7 @@ Here is an example of using the SIC system for encoding a missing tie.
 *-
 </script>
 
-Then `!!!filter: sic -s` will produce:
+De forma que `!!!filter: sic -s` produciirá:
 
 {% include verovio.html
 	source="slur2"

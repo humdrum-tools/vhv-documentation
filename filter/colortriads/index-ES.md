@@ -1,11 +1,11 @@
 ---
-title: colortriads filter
+title: filtro colortriads
 lang: en es
 ref: filters-colortriads
 author: Craig Stuart Sapp
-translator:
+translator: David Rizo
 creation_date: 10 Sep 2020
-translation_date:
+translation_date: 8 aug 2021
 last_updated: 10 Sep 2020
 tags: [all, filters]
 sidebar: main_sidebar

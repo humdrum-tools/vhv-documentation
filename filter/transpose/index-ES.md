@@ -1,28 +1,25 @@
 ---
-transpose: transpose filter
+transpose: filtro transpose
 lang: en es
 ref: filters-transpose
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 creation_date: 23 Apr 2017
-translation_date: 
+translation_date: 9 Aug 2021
 last_updated: 23 Apr 2017
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
 summary: 
-permalink: /filter/transpose/index.html
+permalink: /filter/transpose/index-ES.html
 ---
+El filtro de transposición puede utilizarse para transponer la música en un intervalo determinado o a una tonalidad específica.
 
-The transpose filter can be used transpose music by a specified
-interval or to a specific key.
 
-## Transposing by key ##
+## Transposición por tonalidad ##
+He aquí un ejemplo de transposición de una coral a cuatro voces de Sol mayor a La bemol mayor, utilizando la opción `-k` para cambiar la tonalidad:
 
-Here is an example of transposing a four-part chorale
-from G major to A-flat major, using the `-k` option to change
-the key:
 
 ```
 !!!filter: transpose -k a-
@@ -149,33 +146,26 @@ the key:
 *-	*-	*-	*-
 </script>
 
-Try changing `a-` to `a` on the first line of the example to transpose 
-to A major instead.
+Prueba a cambiar `a-` por `a` en la primera línea del ejemplo para transponer a La mayor.
 
-The transpose filter is identical to the Humdrum Extras command-line tool
-[transpose](http://extras.humdrum.org/man/transpose).  See its documentation for
-more examples of how to use the transpose filter.
+El filtro transpose es idéntico a la herramienta de línea de comandos de Humdrum Extras [transpose](http://extras.humdrum.org/man/transpose).  Consulta su documentación para ver más ejemplos de cómo utilizar el filtro de transposición.
 
-## Transposing by musical interval ##
+## Transposición por intervalo musical ##
+La opción `-k` requiere una interpretación de tonalidad presente en los datos, como `*C:` para Do mayor, o `*b-:` para Si bemol menor.  Si este no es el caso, aún puede transponer por un intervalo específico usando la opción `-t`.
 
-The `-k` option requires a key interpretation present in the data, such
-as `*C:` for C major, or `*b-:` for B-flat minor.  If this is not then case,
-then you can still transpose by a specific interval using the `-t` option.
+Transposición hacia abajo de una tercera mayor: `!!!filter: transpose -t -M3`
 
-Transposing down a major third: `!!!filter: transpose -t -M3`
+Transposición hacia abajo de una sexta menor: `!!!filter: transpose -t m6`
 
-Transposing down a minor sixth: `!!!filter: transpose -t m6`
+Transposición a una sexta menor: `!!!filter: transpose -t m6`
 
-Transposing down a perfect fourth: `!!!filter: transpose -t -P4`
+Transposición de una cuarta perfecta: `!!!filter: transpose -t -P4`
 
-Transposing up a diminished fifth: `!!!filter: transpose -t d5`
+Transposición a una quinta disminuida: `!!!filter: transpose -t d5`
 
-Transposing down an augmented unison, such as from E major to E-flat 
-major: `!!!filter: transpose -t -A1`
+Transposición hacia abajo de un unísono aumentado, como por ejemplo de Mi mayor a Mi bemol mayor:s `!!!filter: transpose -t -A1`
 
-Try various interval transpositions in the following example, which 
-starts out in the key of C major (but there is no key indication, so
-the `-k` option cannot be used).
+Prueba varias transposiciones de intervalos en el siguiente ejemplo, que comienza en la tonalidad de Do mayor (pero no hay indicación de tonalidad, por lo que no se puede utilizar la opción `-k`).
 
 {% include verovio.html
 	source="transpose"
@@ -201,24 +191,10 @@ the `-k` option cannot be used).
 *-
 </script>
 
-## Transposing by base-40 interval number ##
+## Transposición por número de intervalo de base-40 ##
+La representación de las alturas de nota en Base-40 permite valores enteros para varios intervalos.  Todos estos números de intervalo pueden calcularse a partir de dos datos: una segunda mayor es un 6 en el sistema, y una segunda menor es un 5. Por ejemplo, una quinta perfecta está compuesta por tres segundas mayores y una segunda menor, por lo que el intervalo de base-40 es 3 * 6 + 1 * 5 = 23.  Una octava tiene 5 segundas mayores y 2 segundas menores, lo que se traduce en 5 * 6 + 2 * 5 = 40 (de ahí el nombre del sistema).  Ten en cuenta que un unísono aumentado es la diferencia entre una segunda mayor y una menor, que es 1.
 
-The Base-40 representation for pitches allows for integer values for
-various intervals.  All of these interval numbers can be calculated
-from two pieces of information: A major second is a 6 in the system,
-and a minor second is a 5.  For example a perfect fifth is composed of
-three major seconds and one minor second, so the base-40 interval is 3 *
-6 + 1 * 5 = 23.  An octave is 5 major seconds and 2 minor seconds, which
-translates to 5 * 6 + 2 * 5 = 40 (hence the name of the system).  Note
-that an augmented unison is the difference between a major and minor second,
-which is 1.
-
-Try transposing the following example by base-40 interval, which is 
-given as an integer after the `-b` option flag in the transpose 
-filter. Also note that the base-40 system is limited to a range of
-double-flats to double-sharps, so intervals that transpose to/by 
-triple-flats will not work in the system.
-
+Prueba a transponer el siguiente ejemplo por el intervalo de base-40, que se da como un número entero después de la opción `-b` en el filtro transpose. Ten en cuenta también que el sistema de base-40 está limitado a un rango de doble bemol a doble sostenido, por lo que los intervalos que transponen a/por triple bemol no funcionarán en el sistema.
 {% include verovio.html
 	source="base40"
 	scale="40"
@@ -245,17 +221,10 @@ triple-flats will not work in the system.
 
 
 
-## `**mxhm` transposition ##
+## Transposición `**mxhm` ##
+Los símbolos de acordes importados de MusicXML se almacenan en una columna "mxhm". Estos símbolos son entendidos por la herramienta de transposición y serán transpuestos junto con cualquier columna `**kern` en los datos.
 
-Chord symbols imported from MusicXML are stored in an `**mxhm` spine.
-These symbols are understood by the transpose tool and will be transposed
-along with any `**kern` spines in the data.
-
-Below is an example work containing an `**mxhm` data spine.  The original
-key is C major, but the transpose tool is changing the key of the piece
-to D major.  Try transposing the music to other keys by changing the
-`d` on the first line of the text box below to another tonic pitch.
-
+A continuación se muestra una obra de ejemplo que contiene una columna de datos `**mxhm`.  La tonalidad original es Do mayor, pero la herramienta de transposición está cambiando la tonalidad de la pieza a Re mayor.  Prueba a transponer la música a otras tonalidades cambiando la `d` de la primera línea del cuadro de texto de abajo por otra tónica.
 
 {% include verovio.html
 	source="muss"

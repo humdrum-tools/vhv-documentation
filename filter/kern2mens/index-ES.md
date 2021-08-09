@@ -1,25 +1,23 @@
 ---
-title: kern2mens filter
+title: filtro kern2mens
 lang: en es
 ref: filters-kern2mens
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 creation_date: 10 May 2018
-translation_date: 
+translation_date: 8 Aug 2021
 last_updated: 10 May 2018
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands
 summary:
-permalink: /filter/kern2mens/index.html
+permalink: /filter/kern2mens/index-ES.html
 ---
+El [filtro](/filter/) _kern2mens_ puede utilizarse para convertir los datos `**kern` (notación musical occidental moderna) en `**mens` (notación mensural blanca).
 
-The _kern2mens_ [filter](/filter/) can be used to convert `**kern` data (modern western
-music notation) into `**mens` (white mensural notation).
-
-Here is an example use of kern2mens to convert modern notation into
-white mensural notation:
+He aquí un ejemplo de uso de kern2mens para convertir la notación moderna en notación mensural blanca:
+s
 
 {% include verovio.html
 	source="example1"
@@ -109,19 +107,12 @@ white mensural notation:
 *-
 </script>
 
+Prueba a eliminar la primera línea de datos que comienza con `!!!filter:`` para ver la notación moderna original.  Prueba también a copiar y pegar los datos anteriores en el editor de texto [VHV](http://verovio.humdrum.org/?k=e).
 
-Try removing the first data line starting with `!!!filter:` to see the
-original modern notation.  Also trying copy-and-pasting the above
-data into the [VHV](http://verovio.humdrum.org/?k=e) text editor.
+Consulta la página de documentación [while mensural notation](/humdrum/mens) para obtener más información sobre la representación `**mens`.
 
-See the [while mensural notation](/humdrum/mens) documentation page for
-more information about the `**mens` representation.
+En [VHV](http://verovio.humdrum.org) (pero no en esta página), puedes ver los datos convertidos de `**mens` escribiendo [alt-c](/commands/alt-c) para compilar el filtro.  Para el ejemplo anterior, esto producirá datos que se parecen al siguiente ejemplo:
 
-
-In [VHV](http://verovio.humdrum.org) (but not on this page), you can
-view the converted `**mens` data by typing [alt-c](/commands/alt-c)
-to compile the filter.  For the above example, this will produce data
-that looks like the following example:
 
 {% include verovio.html
 	source="example1b"
@@ -206,18 +197,11 @@ SiF
 
 
 {% include note.html
-	content=" The converted data may not be completely syntactically correct and may require further editing &mdash; such as removing perfection dots in circle mensurations (this will be improved in the future).  The kern2mens filter is still in development mode, so expect bugs.  For example, the first E4 (top line) should be flat, and the second one should have an editorial flat above it."
+	content=" Los datos convertidos pueden no ser completamente correctos desde el punto de vista sintáctico y pueden requerir una edición adicional &mdash; como la eliminación de puntos de perfección en las mediciones de círculos (esto se mejorará en el futuro).  El filtro kern2mens todavía está en modo de desarrollo, así que espera errores.  Por ejemplo, el primer E4 (línea superior) debería ser bemol, y el segundo debería tener un bemol editorial encima."
 %}
 
-## Setting the clef ##
-
-A future development will allow specifying an "original clef" in
-the modern notation which will be used in the `**mens` data.  Such a
-clef would be like a regular `**kern` clef, but with an `o` prefixed
-to "clef", such as `*oclefC3` for an alto clef.  Currently the `-c`
-option can be used to change the clef between the `**kern` and `**mens`
-notation display.  Here is the same music as above, but setting the
-`**mens` clef to C3 from the filter line:
+## Ajuste de la clave ##
+Un futuro desarrollo permitirá especificar una "clave original" en la notación moderna que se utilizará en los datos de `**mens`.  Dicha clave sería como una clave normal de `**kern`, pero con una `o` antepuesta a la "clave", como por ejemplo `*oclefC3` para una clave de contralto.  Actualmente, la opción `-c` puede utilizarse para cambiar la clave entre la visualización de la notación `**kern` y `**mens`.  Aquí está la misma música de arriba, pero poniendo la clave de "mens" en C3 desde la línea de filtro:
 
 
 {% include verovio.html
@@ -307,25 +291,12 @@ notation display.  Here is the same music as above, but setting the
 ==
 *-
 </script>
+De forma similar a `*oclef`, habrá una implementación de signos de "mensuración original", como `*omet(C|)`.  Este signo de mensuración se utilizará preferentemente sobre el signo de tiempo o un signo de mensuración simple "met(c|)" cuando se convierta en datos `**mens`.
 
-Similar to `*oclef`, there will be an implementation of "original
-mensuration" signs, such as `*omet(C|)`.  This mensuration sign would
-be used in preference over the time signature or a plain `*met(c|)`
-meter signature when converting into `**mens` data.
+## Barras de compás ##
+Las líneas de compás siguen siendo necesarias en los datos convertidos para que Verovio pueda dividir la música en varias líneas.  Fíjate en que las notas ligadas se fusionan en notas simples en la conversión.  Cualquier línea de compás que divida una nota será eliminada, pero el resto se dejará para propósitos de diseño.  Puedes eliminar las líneas de compás añadiendo la opción `-M`, pero actualmente sólo es útil para ejemplos cortos de una sola línea. 
 
-## Barlines ##
-
-Barlines are still needed in the converted data so that verovio can break
-the music onto multiple lines.  Notice that tied notes are merged into single
-notes in the conversion.  Any barlines that split a note will be removed,
-but the rest will be left for layout purposes.  You can remove the barlines
-by adding the `-M` option, but this is currently only useful for short
-single-line examples. 
-
-If you want to remove bar numbers from the measures, add the `-N` option
-to the filter. If you want to see the remaining barlines, then add the
-`-I` option. Here is an example of using the `-N` and `-I` options at
-the same time:
+Si quieres eliminar los números de compás de los compases, añade la opción `-N` al filtro. Si quieres ver las líneas de compás restantes, añade la opción `-I`. Este es un ejemplo de uso de las opciones `-N` y `-I` al mismo tiempo:
 
 {% include verovio.html
 	source="example2b"
@@ -415,13 +386,10 @@ the same time:
 *-
 </script>
 
-Notice that some of the barlines have been remove to avoid tied notes
-in the converted `**mens` data.
+Obsérvese que se han eliminado algunas líneas de compás para evitar las notas ligadas en los datos convertidos de `**mens`.
 
-## Text ##
-
-Text underlay (i.e., lyrics) can be given as a `**text` spine to the right
-of the `**kern` spine and the resulting `**mens` spine:
+## Texto ##
+El texto subyacente (es decir, la letra de la música) puede darse como una columna `**text` a la derecha de la columna  `**kern` y de la columna resultante `**mens`:
 
 {% include verovio.html
 	source="example-text"
@@ -658,39 +626,28 @@ of the `**kern` spine and the resulting `**mens` spine:
 *-	*-
 </script>
 
-## Creating PDFs ##
-
-In [VHV](http://verovio.humdrum.org), you can adjust the window size
-to fit the music and then type [alt-t](/commands/alt-t) to download a
-one-page PDF file of the
-
-
-
-visible music:
+## Creación de PDFs ##
+En [VHV](http://verovio.humdrum.org), puedes ajustar el tamaño de la ventana para que se ajuste a la música y, a continuación, escribir [alt-t](/commands/alt-t) para descargar un archivo PDF de una página con la música visible:
 
 
 {% include image.html
 	file="vhvview.png"
-	caption="Adjust the windows size to have the music complete fit in view."
+	caption="Ajusta el tamaño de las ventanas para que la música quede completamente a la vista."
 %}
 
-Here is the [resulting PDF file](score.pdf), and below is shown the PDF
-file viewed in a PDF viewer:
+Aquí está el [archivo PDF resultante](score.pdf), y abajo se muestra el archivo PDF visto en un visor de PDF:
 
 {% include image.html
 	file="score.png"
-	caption="Downloaded one-page PDF file in a PDF viewer."
+	caption="Descarga de un archivo PDF de una página en un visor de PDF."
 %}
 
+Para partituras más largas, escriba [alt-shift-T](/commands/alt-t) para generar una partitura PDF de varias páginas con formato para papel de tamaño carta.
 
-For longer scores, type [alt-shift-T](/commands/alt-t) to generate a
-multi-page PDF score formatted for letter-sized paper.
-
-
-## Converting polyphonic scores ##
+## Conversión de partituras polifónicas ##
 
 
-Polyphonic works can also be converted:
+También se pueden convertir obras polifónicas:
 
 
 {% include verovio.html
@@ -851,25 +808,18 @@ Polyphonic works can also be converted:
 </script>
 
 {% include warning.html
-	content="There is currently a bug with polyphonic works that contain text."
+	content="Actualmente existe un error con las obras polifónicas que contienen texto."
 %}
 
 
-### Extracting parts from a polyphonic score ###
-
-Use the [extract filter](/filter/extract) to select a part from 
-a `**kern` score before converting it into mensural notation.  
-The following example uses two filters in series:
+### Extracción de partes de una partitura polifónica ###
+Utiliza el [filtro extract](/filter/extract) para seleccionar una parte de una partitura `**kern` antes de convertirla en notación mensural.   El siguiente ejemplo utiliza dos filtros en serie:
 
 ```
 !!!filter: extract -k 2
 !!!filter: kern2mens -N
 ```
-
-The first filter extracts the second kern spine from the left, which
-is the tenor part, and then converts that part into mensural
-notation.  The two filters can also be merged into a single line
-by placing a pipe character between them:
+El primer filtro extrae la segunda columna de kern de la izquierda, que es la parte de tenor, y luego convierte esa parte en notación mensural.  Los dos filtros también pueden fusionarse en una sola línea colocando un carácter tubería entre ellos:
 
 ```
 !!!filter: extract -k 2 | kern2mens -N
@@ -1037,47 +987,28 @@ by placing a pipe character between them:
 
 
 
-## Converting via URL ##
-
-The _kern2mens_ filter can be added to the VHV URL so that it will run 
-automatically on data placed in the text editor.  This will also allow for
-direct conversion to mensural notation from a MusicXML file 
-dragged-and-dropped onto the page:
+## Conversión mediante URL ##
+El filtro _kern2mens_ puede añadirse a la URL de VHV para que se ejecute automáticamente sobre los datos colocados en el editor de texto.  Esto también permitirá la conversión directa a la notación mensural desde un archivo MusicXML arrastrado y soltado en la página:
 
 [verovio.humdrum.org/?filter=kern2mens](http://verovio.humdrum.org/?filter=kern2mens&k=e)
 
-To add spaces to the URL, use `%20` as a replacement for the space.  For example, here is the URL for the filter `kern2mens -N`:
+Para añadir espacios a la URL, utiliza `%20` en lugar del espacio.  Por ejemplo, esta es la URL del filtro `kern2mens -N`:
 
 [verovio.humdrum.org/?filter=kern2mens%20-N](http://verovio.humdrum.org/?filter=kern2mens%20-N&k=e)
 
-
-Click on one of the above lines, and then try drag-and-dropping a
-MusicXML score onto the page.  This will automatically convert the
-MusicXML data into Humdrum data, and then the URL filter will convert the
-`**kern` data into `**mens` data.  To see the final `**mens` data, type
-[alt-c](/commands/alt-c) to compile the filter and display the result
-in the text editor.
+Haz clic en una de las líneas anteriores, y luego intenta arrastrar y soltar una partitura MusicXML en la página.  Esto convertirá automáticamente los datos MusicXML en datos Humdrum, y luego el filtro URL convertirá los datos `**kern` en datos `**mens`.  Para ver los datos finales de `**mens`, escribe [alt-c](/commands/alt-c) para compilar el filtro y mostrar el resultado en el editor de texto.
 
 
-## To do ##
+## Tareaas pendientes ##
+Algunas cosas en las que trabajar: combinar los silencios de breve y longa, y los silencios de longa con los de máxima.  Actualmente esto tiene que hacerse a mano después de la conversión a `**mens`.  
 
-Some things to work on: Merge breve rests into long rests, and long
-rests into maxima rests.  This currently has to be done by hand after
-conversion to `**mens`.  
+Como se ha mencionado anteriormente, las alteraciones y las alteraciones editoriales aún necesitan ser trabajadas.  
 
-As mentioned above, accidentals and
-editorial accidentals still need work.  
+Además, hay que abordar la supresión de los puntillos en las mensuraciones perfectas (actualmente hay que hacerlo a mano).  
 
-Also, suppressing notational
-dots in perfect mensurations needs address (currently has to be done
-by hand).  
+Otras características, como la coloración y las alteraciones, no se abordan, y las ligaduras tienen que anotarse a mano después de convertirlas en datos de `**mens'.
 
-Other features such as colored notation and alterations
-are not address, and ligatures have to be notated by hand after
-converting into `**mens` data.
-
-The rscale filter should be implemented to allow unreducing modern
-notation.
+El filtro rscale debería implementarse para permitir la notación moderna no reducida.
 
 
 

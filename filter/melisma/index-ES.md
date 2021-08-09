@@ -1,24 +1,23 @@
 ---
-title: melisma filter
+title: filtro melisma
 lang: en es
 ref: filters-melisma
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 creation_date: 15 Sep 2019
-translation_date: 
+translation_date: 8 Aug 2021
 last_updated: 15 Sep 2019
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
 summary: 
-permalink: /filter/melisma/index.html
+permalink: /filter/melisma/index-ES.html
 ---
 
-The melisma filter can be used to analyze the relation between notes and syllables in music.
+El filtro de melisma puede utilizarse para analizar la relación entre notas y sílabas en la música.
 
-The default behavior of the filter is to highlight notes for all syllables that have two
-or more notes:
+El comportamiento por defecto del filtro es resaltar las notas de todas las sílabas que tienen dos o más notas:
 
 {% include verovio.html
 	source="basic"
@@ -51,12 +50,8 @@ or more notes:
 </script>
 
 
-### Set a minimum note count ##
-
-The `-m` option can be used to set the minimum number of notes
-that will be marked as a melisma.  The default value is 2 notes,
-this can be raised.  Here is an example which set the minimum to 3,
-causing the first two words to no longer be marked as melismas:
+### Establecer un número mínimo de notas ##
+La opción `-m` puede utilizarse para establecer el número mínimo de notas que se marcarán como melisma.  El valor por defecto es de 2 notas, este puede ser aumentado.  Aquí hay un ejemplo que establece el mínimo a 3, haciendo que las dos primeras palabras ya no se marquen como melismas:
 
 {% include verovio.html
 	source="three"
@@ -89,9 +84,8 @@ causing the first two words to no longer be marked as melismas:
 </script>
 
 
-### Display melisma counts ###
-
-The `-r` option can be used to replace the lyrics with the note counts for each syllable:
+### Mostrar los recuentos de melismas ###
+La opción `-r` se puede utilizar para sustituir la letra por el recuento de notas de cada sílaba:
 
 {% include verovio.html
 	source="replace"
@@ -123,7 +117,7 @@ The `-r` option can be used to replace the lyrics with the note counts for each 
 !!!filter: melisma -r
 </script>
 
-Re-run the melisma filter to highlight melisma notes:
+Vuelve a ejecutar el filtro de melisma para resaltar las notas de melisma:
 
 {% include verovio.html
 	source="rerun"
@@ -157,13 +151,13 @@ Re-run the melisma filter to highlight melisma notes:
 </script>
 
 
-### Command-line options ###
+### Opciones de la línea de comandos ###
 
-The `-a` option will calculate the average note-to-syllable ratio for identified melisma syllables.
+La opción `-a` calculará la relación media nota-sílaba para las sílabas de melisma identificadas.
 
-The `-p` option will calculate note-to-syllable ratios by part.
+La opción `-p` calculará las relaciones nota-sílaba por parte.
 
-The `-w` option will list words in the music that contain a melisma.
+La opción `-w` listará las palabras de la música que contengan un melisma.
 
 
 

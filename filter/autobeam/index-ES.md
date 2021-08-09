@@ -200,7 +200,7 @@ del tiempo.
 !!!filter: autobeam -l -k 1
 </script>
 
-Observe el filtro `extract -s 1-$,1-$` que duplica el sistema original
+Observa el filtro `extract -s 1-$,1-$` que duplica el sistema original
 de la música. Entonces la opción `-k 1` para el autobeam aplica la rotura del barrado para los inicios de sílaba sólo a la primera columna de kern (el pentagrama inferior del sistema).
 
 

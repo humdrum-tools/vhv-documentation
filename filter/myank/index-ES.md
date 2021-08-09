@@ -1,24 +1,23 @@
 ---
-title: myank filter
+title: filtro myank
 lang: en es
 ref: filters-myank
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 creation_date: 23 Apr 2017
-translation_date: 
+translation_date: 8 Aug 2021
 last_updated: 23 Apr 2017
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
 summary: 
-permalink: /filter/myank/index.html
+permalink: /filter/myank/index-ES.html
 ---
 
-The myank filter can be used to extract measures from a full score.
+El filtro myank puede utilizarse para extraer compases de una partitura completa.
 
-Here is an example of extracting measures 5 to the end of the piece in a 
-Bach chorale.
+He aquí un ejemplo de extracción de los compases 5 al final de la pieza en un coral de Bach.
 
 {% include verovio.html
 	source="chorale042"
@@ -84,10 +83,7 @@ Bach chorale.
 *-	*-	*-	*-
 </script>
 
-
-The myank filter is identical to the Humdrum Extras command-line tool
-[myank](http://extras.humdrum.org/man/myank).  See its documentation for
-more examples of how to use the myank filter.
+El filtro myank es idéntico a la herramienta de línea de comandos Humdrum Extras [myank](http://extras.humdrum.org/man/myank). Consulta su documentación para ver más ejemplos de cómo utilizar el filtro myank.
 
 
 

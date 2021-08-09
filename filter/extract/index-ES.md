@@ -1,24 +1,23 @@
 ---
-title: extract filter
+title: filtro extract
 lang: en es
 ref: filters-extract
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 creation_date: 23 Apr 2017
-translation_date: 
+translation_date: 8 Aug 2021
 last_updated: 23 Apr 2017
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
 summary: 
-permalink: /filter/extract/index.html
+permalink: /filter/extract/index-ES.html
 ---
+El filtro extract puede utilizarse para manipular el orden de las columnas (*spines*), así como para eliminar columnas o añadir columnas en blanco.
 
-The extract filter can be used to manipulate spine ordering as well as removing
-spines or adding blank spines.
+He aquí un ejemplo de extracción de las partes exteriores de un coral a 4 voces:
 
-Here is an example of extracting the outer parts of a 4-part chorale:
 
 {% include verovio.html
 	source="chorale"
@@ -184,10 +183,7 @@ Here is an example of extracting the outer parts of a 4-part chorale:
 *-	*-	*-	*-
 </script>
 
-
-The extract filter is identical to the Humdrum Extras command-line tool
-[extractx](http://extras.humdrum.org/man/extractx).  See its documentation for
-more examples of how to use the extract filter.
+El filtro extract es idéntico a la herramienta de línea de comandos Humdrum Extras [extractx](http://extras.humdrum.org/man/extractx).  Consulta su documentación para ver más ejemplos de cómo utilizar el filtro extract.
 
 
 

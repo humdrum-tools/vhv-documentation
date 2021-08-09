@@ -1,24 +1,22 @@
 ---
-title: satb2gs filter
+title: filtro satb2gs
 lang: en es
 ref: filters-satb2gs
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 creation_date: 23 Apr 2017
-translation_date: 
+translation_date: 8 Aug 2021
 last_updated: 23 Apr 2017
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
 summary: 
-permalink: /filter/satb2gs/index.html
+permalink: /filter/satb2gs/index-ES.html
 ---
+El filtro satb2gs se puede utilizar para convertir la disposición SATB de las partes en una disposición de un gran pentagrama.
 
-The satb2gs filter can be used convert SATB arrangement of parts into
-grand-staff layout.
-
-Here is an example of processing a four-part chorale:
+Este es un ejemplo de procesamiento de un coral a cuatro voces:
 
 {% include verovio.html
 	source="chorale"
@@ -161,10 +159,7 @@ Here is an example of processing a four-part chorale:
 *-	*-	*-	*-
 </script>
 
-
-The satb2gs filter is identical to the Humdrum Extras command-line tool
-[satb2gs](http://extras.humdrum.org/man/satb2gs).  See its documentation for
-more examples of how to use the satb2gs filter.
+El filtro satb2gs es idéntico a la herramienta de línea de comandos Humdrum Extras [satb2gs](http://extras.humdrum.org/man/satb2gs).  Consulta su documentación para ver más ejemplos de cómo utilizar el filtro satb2gs.
 
 
 

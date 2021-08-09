@@ -1,23 +1,23 @@
 ---
-title: composite filter
+title: filtro composite
 lang: en es
 ref: filters-composite
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 creation_date: 15 Sep 2019
-translation_date: 
+translation_date: 8 Aug 2021
 last_updated: 15 Sep 2019
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
 summary: 
-permalink: /filter/composite/index.html
+permalink: /filter/composite/index-es.html
 ---
+El filtro `composite` puede utilizarse para extraer el ritmo compuesto de una partitura de varias voces o de varios instrumentos.
 
-The composite filter can be used to extract the composite rhythm of a multi-voices score or multi-part score.
 
-Here is an example of a score with two parts:
+Este es un ejemplo de partitura con dos instrumentos:
 
 {% include verovio.html
 	source="twoparts"
@@ -36,9 +36,7 @@ Here is an example of a score with two parts:
 =	=
 *-	*-
 </script>
-
-Each part has a different rhythm.  The `composite` filter collapses the note attacks of each part into
-a single rhythmic pattern.
+Cada instrumento tiene un ritmo diferente.  El filtro `composite` colapsa los ataques de nota de cada parte en un único patrón rítmico.
 
 {% include verovio.html
 	source="composite"
@@ -60,9 +58,9 @@ a single rhythmic pattern.
 </script>
 
 
-### Placing composite rhythm below system ###
+### Colocación del ritmo compuesto por debajo del sistema ###
+Utiliza la opción `- p` para colocar el pentagrama rítmico compuesto debajo del sistema musical existente:
 
-Use the `-p` option to place the composite rhythm staff below the existing musical system:
 
 {% include verovio.html
 	source="prepend"
@@ -84,9 +82,10 @@ Use the `-p` option to place the composite rhythm staff below the existing music
 </script>
 
 
-### Placing composite rhythm above system ###
+### Colocación del ritmo compuesto por encima del sistema ###
 
-Use the `-a` option to place the composite rhythm staff above the existing musical system:
+Utiliza la opción `-a` para colocar el pentagrama rítmico compuesto sobre el sistema existente:
+
 
 {% include verovio.html
 	source="append"
@@ -108,9 +107,9 @@ Use the `-a` option to place the composite rhythm staff above the existing music
 </script>
 
 
-### Beaming ### 
+### Barrado de grupos de notas ### 
 
-By default, the rhythms of the composite rhythm will not be beamed:
+Por defecto, los ritmos del ritmo compuesto no serán barrados:
 
 {% include verovio.html
 	source="nobeam"
@@ -134,8 +133,7 @@ By default, the rhythms of the composite rhythm will not be beamed:
 *-	*-
 </script>
 
-
-Add the `-b` option to beam the notes according to the time signature:
+Añade la opción `-b` para agrupar las notas según el compás:
 
 {% include verovio.html
 	source="beam"
@@ -160,9 +158,8 @@ Add the `-b` option to beam the notes according to the time signature:
 </script>
 
 
-### Grace notes ### 
-
-Grace notes are included in the composite rhythm analysis:
+### Adornos ### 
+Los adornos se incluyen en el análisis del ritmo compuesto:
 
 {% include verovio.html
 	source="grace"
@@ -189,8 +186,8 @@ Grace notes are included in the composite rhythm analysis:
 *-	*-
 </script>
 
+pero los adornos pueden eliminarse del análisis del ritmo compuesto con la opción `-G`:
 
-but grace notes can be removed from the composite rhythm analysis with the `-G` option:
 
 {% include verovio.html
 	source="nograce"
@@ -218,9 +215,8 @@ but grace notes can be removed from the composite rhythm analysis with the `-G` 
 </script>
 
 
-### Pitch of composite rhythm notes ###
-
-The `--pitch` option can set the pitch of the composite note.
+### Tono de las notas rítmicas compuestas ###
+La opción `--pitch` puede establecer el tono de la nota compuesta.
 
 {% include verovio.html
 	source="pitch"

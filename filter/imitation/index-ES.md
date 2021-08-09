@@ -1,11 +1,11 @@
 ---
-title: imitation filter
+title: filtro imitation
 lang: en es
 ref: filters-imitation
 author: "Craig Sapp"
-translator: 
+translator: David Rizo
 creation_date: 18 Jun 2017
-translation_date: 
+translation_date: 8 Aug 2021
 last_updated: 18 Jun 2017
 tags: [all, filters]
 sidebar: main_sidebar
@@ -13,15 +13,10 @@ examplewidth: 1200
 vim: ft=html
 verovio: "true"
 keywords: "interface commands"
-summary: "The imitation filter identifies modal melodic repetition between voices."
-permalink: /filter/imitation/index.html
+summary: "El filtro imitation identifica la repetición melódica modal entre voces."
+permalink: /filter/imitation/index-ES.html
 ---
-
-The imitation tool identifies repeated interval patterns between
-voices.  The following example demonstrate the results from the
-tool for the opening two voices of the first fugue from J.S. Bach's
-Well-tempered Clavier, Book I (BWV 846).
-
+La herramienta de imitación identifica patrones de intervalos repetidos entre las voces.  El siguiente ejemplo muestra los resultados de la herramienta para las dos voces iniciales de la primera fuga del Clave bien temperado de J.S. Bach, Libro I (BWV 846).
 
 {% include verovio.html
 	source="wtc1f01m1t4"
@@ -96,33 +91,24 @@ Well-tempered Clavier, Book I (BWV 846).
 *-	*-
 </script>
 
-Try changing pitches in the textual music on the left to see how
-the matches change.
+Prueba a cambiar los tonos en la música textual de la izquierda para ver cómo cambian las coincidencias.
 
 
-## Imitation summary ##
+## Resumen ##
+Debajo de la primera nota de cada par de imitaciones, una cadena de texto ofrece cuatro datos sobre la imitación.  Los cuatro campos están separados por dos puntos, y cada valor va precedido de una letra:
 
-Beneath the first note of each imitation pair, a text string gives
-four pieces of information about the imitation.  The four fields
-are separated by colons, and each value is prefixed by a letter:
-
-prefix | parameter meaning
+prefijo | significado del parámetro
 =======|=================
-n      | A unique enumeration ID for each imitation pairs within the score, starting at 1.
-c      | The note *count* in each the imitation pairing.
-d      | The *distance* (duration) between the first note in each imitation pair.  A positive value means that the imitation occurs after the current sequence, while a negative value means that the other imitation sequence comes before the current sequence.
-i      | The imitation *interval* in diatonic steps.  Positive values means the imitation in the other location is higher in pitch than the current sequence, while a negative value means that the paired sequence is at a lower pitch.
+n      | Un ID de enumeración único para cada par de imitación dentro de la puntuación, empezando por 1.
+c      | El *contador* de cada nota cen ada uno de los emparejamientos de imitación. 
+d      | La *distancia* (duración) entre la primera nota de cada par de imitaciones.  Un valor positivo significa que la imitación ocurre después de la secuencia actual, mientras que un valor negativo significa que la otra secuencia de imitación viene antes de la secuencia actual. 
+i      | El *intervalo* de imitación en tonos diatónicos.  Los valores positivos significan que la imitación en la otra ubicación es más alta en tono que la secuencia actual, mientras que un valor negativo significa que la secuencia emparejada está en un tono más bajo. 
 
+Así, el texto bajo la primera nota del ejemplo anterior (`n1:c14:d6:i5`) significa que se trata del primer par, donde hay 14 notas compartidas (13 intervalos), la imitación está en la quinta, y la distancia entre los inicios de la secuencia es de 6 negras.
 
-So the text under the first note in the above example (`n1:c14:d6:i5`) means that
-this is the first pair, where there are 14 shared notes (13 intervals), the imitation
-is at the fifth, and the distance between the sequence starts is 6 quarter notes.
+## Supresión de información ##
 
-## Suppressing information ##
-
-There are several options to modify the display of the match information.  To completely suppress the 
-matching information, use the `-q` option (meaning "quiet"):
-
+Existen varias opciones para modificar la visualización de la información de coincidencia.  Para suprimir completamente la información de coincidencia, utilice la opción `-q` (que significa "silenciosa"):
 
 {% include verovio.html
 	source="quiet"
@@ -197,11 +183,8 @@ matching information, use the `-q` option (meaning "quiet"):
 *-	*-
 </script>
 
-
-The matches are still highlighted, but no textual information is added to the score.  You can also selectively 
-remove the `n`, `c`, `d` or `i` fields by adding the option `-N`, `-C`, `-D` or `-I` respectively.  Here is an example of 
-removing the count and distance and fields at the same time:
-
+Las coincidencias siguen resaltadas, pero no se añade información textual a la puntuación.  También puedes eliminar selectivamente los campos `n`, `c`, `d` o `i` añadiendo la opción `-N`, `-C`, `-D` o `-I` respectivamente.  Aquí hay un ejemplo de eliminación de los campos "count" y "distance" al mismo tiempo:
+s
 
 {% include verovio.html
 	source="nocd"
@@ -276,10 +259,8 @@ removing the count and distance and fields at the same time:
 *-	*-
 </script>
 
-
-Information can be suppressed from the second sequence in the match by using the `-f` option, meaning give only
-the information on the "first" sequence in the pair:
-
+Se puede suprimir la información de la segunda secuencia de la coincidencia utilizando la opción `-f`, lo que significa dar sólo la información de la "primera" secuencia del par:
+s
 
 {% include verovio.html
 	source="first"
@@ -354,10 +335,7 @@ the information on the "first" sequence in the pair:
 *-	*-
 </script>
 
-
-The options `--NN`, `--CC`, `--DD`, and `--II` can selectively suppress match fields from the 
-second match.  Here is an example showing only the `n` field on the second pair of a match:
-
+Las opciones `--NN`, `--CC`, `--DD` y `--II` pueden suprimir selectivamente los campos de la segunda coincidencia.  Este es un ejemplo que muestra sólo el campo `n` en el segundo par de una coincidencia:
 
 {% include verovio.html
 	source="nonly"
@@ -432,8 +410,7 @@ second match.  Here is an example showing only the `n` field on the second pair 
 *-	*-
 </script>
 
-
-The `-2` option is a shortcut for `--CC --DD --II`:
+La opción `-2` es un atajo para `--CC --DD --II`:
 
 
 {% include verovio.html
@@ -510,11 +487,8 @@ The `-2` option is a shortcut for `--CC --DD --II`:
 </script>
 
 
-## Adding information ##
-
-The `-m` option can be used to add measure numbers to the match information, and `-b` can add the
-beat information.  The beat information is actually in units of quarter notes (regardless of the
-meter), with the first beat of a measure labeled as beat "1".
+## Adición de información ##
+La opción `-m` puede utilizarse para añadir números de compás a la información de coincidencia, y `-b` puede añadir la información de tiempo.  La información del tiempo está en unidades de negra (independientemente del compás), con el primer tiempo de un compás etiquetado como tiempo "1".
 
 {% include verovio.html
 	source="measure"
@@ -588,9 +562,8 @@ meter), with the first beat of a measure labeled as beat "1".
 =	=
 *-	*-
 </script>
-
-The `-l` (lower-case L), can be used to include the length of the matched sequence:
-
+La `-l` (L minúscula), se puede utilizar para incluir la longitud de la secuencia coincidente:
+s
 {% include verovio.html
 	source="length"
 	spacingStaff="8"
@@ -664,18 +637,12 @@ The `-l` (lower-case L), can be used to include the length of the matched sequen
 *-	*-
 </script>
 
-
-The length is prefixed by the letter `L` in the information string.  In this case
-the length of both matches is 5.75 quarter notes.
+La longitud va precedida de la letra `L` en la cadena de información.  En este caso, la longitud de ambas coincidencias es de 5.75 negras.
 
 
 
-## Note count threshold ##
-
-The `-t` option is used to set a threshold number of notes that must be matched.  The default number of notes is 7.  In the
-example music, there are 14 notes that match between the two fugal entrances, so if the threshold is set to 15, this pair
-will not be identified:
-
+## Umbral de recuento de notas ##
+La opción `-t` se utiliza para establecer un umbral de número de notas que deben coincidir.  El número de notas por defecto es 7. En la música del ejemplo, hay 14 notas que coinciden entre las dos entradas fugadas, por lo que si el umbral se establece en 15, este par no se identificará:
 
 {% include verovio.html
 	source="threshold"
@@ -750,7 +717,7 @@ will not be identified:
 *-	*-
 </script>
 
-But setting the threshold to 14 will result in a match:
+Pero si se fija el umbral en 14 se obtendrá una coincidencia:
 
 
 {% include verovio.html
@@ -827,16 +794,8 @@ But setting the threshold to 14 will result in a match:
 </script>
 
 
-## Maximum distance between imitation ##
-
-The `-d` option can be used to limit the distance (duration) between
-matches.  This is useful for highlighting imitative entries while
-minimizing matching noise.  By default, any duration between matches
-is allowed.  To limit the search distance between matches specify
-the maximum duration between pairs in units of quarter notes.  Below
-is an example limiting the match distance to 4 quarter notes.  Since
-the distance between the fugal entrances is 6 quarter notes, so no
-match is identified:
+## Distancia máxima entre la imitación ##
+La opción `-d` puede utilizarse para limitar la distancia (duración) entre las coincidencias.  Esto es útil para resaltar las entradas imitativas y minimizar el ruido de las coincidencias.  Por defecto, se permite cualquier duración entre coincidencias.  Para limitar la distancia de búsqueda entre coincidencias, especifique la duración máxima entre pares en unidades de negra.  A continuación se muestra un ejemplo en el que se limita la distancia de coincidencia a 4 negras.  Como la distancia entre las entradas fugadas es de 6 negras, no se identifica ninguna coincidencia:
 
 
 {% include verovio.html
@@ -912,8 +871,7 @@ match is identified:
 *-	*-
 </script>
 
-
-Increasing the minimum distance to 6 quarter notes or more will catch the imitation:
+Si se aumenta la distancia mínima a 6 negras o más, se captará la imitación:
 
 {% include verovio.html
 	source="distance6"
@@ -988,11 +946,8 @@ Increasing the minimum distance to 6 quarter notes or more will catch the imitat
 *-	*-
 </script>
 
-## Imitation by pitch but not by rhythm ##
-
-The `-p` option will consider only pitches when searching for matches, ignoring 
-the durations of the notes.  Here is an example match between two sequences
-that have the same notes in sequence, but the rhythms are different:
+## Imitación por altura pero no por ritmo ##
+La opción `-p` sólo tendrá en cuenta las alturas de las notas al buscar coincidencias, ignorando sus duraciones.  Este es un ejemplo de coincidencia entre dos secuencias que tienen las mismas alturas en secuencia, pero los ritmos son diferentes:
 
 
 {% include verovio.html
@@ -1025,11 +980,8 @@ that have the same notes in sequence, but the rhythms are different:
 </script>
 
 
-## Matching inversions ##
-
-The `-v` option can be used to match inversions.  Here is an example where an upward and downward scale are 
-matched to each other:
-
+## Concordancia de inversiones ##
+La opción `-v` puede utilizarse para buscar coincidencias de inversiones.  Este es un ejemplo en el que una escala ascendente y otra descendente coinciden entre sí:
 
 {% include verovio.html
 	source="inversion"
@@ -1057,13 +1009,9 @@ matched to each other:
 =	=
 *-	*-
 </script>
+Observa que el número de enumeración lleva el prefijo `v` para indicar que la relación de imitación en una inversión.  El valor del intervalo indica el intervalo entre el primer par de notas de las dos secuencias.
 
-Notice that the enumeration number is prefixed by `v` to indicate that the imitation 
-relation in an inversion.  The interval value indicates the interval between the first
-pair of notes in the two sequences.
-
-Adding the `-a` option to the `-v` option will search for both regular matches as well
-as inversion matches at the same time.  Here is an example:
+Si se añade la opción `-a` a la opción `-v`, se buscarán tanto las coincidencias regulares como las coincidencias por inversión al mismo tiempo.  He aquí un ejemplo:
 
 {% include verovio.html
 	source="add"
@@ -1101,15 +1049,10 @@ as inversion matches at the same time.  Here is an example:
 *-	*-
 </script>
 
-Each type of search will be given a different color (but only one color can be
-displayed when the match types overlap).
+Cada tipo de búsqueda tendrá un color diferente (pero sólo se puede mostrar un color cuando los tipos de coincidencia se superponen).
 
-
-## Selecting or avoiding parallel motion ##
-
-The '-z' option can be used to select only imitation that starts at the same time.
-This is an alias for `-d 0`:
-
+## Seleccionar o evitar el movimiento paralelo ##
+La opción '-z' puede utilizarse para seleccionar sólo las imitaciones que se inician al mismo tiempo. Es un alias de `-d 0`:
 
 {% include verovio.html
 	source="parallel"
@@ -1164,11 +1107,8 @@ This is an alias for `-d 0`:
 *-	*-	*-	*-
 </script>
 
-
-
-The '-Z' option will do the opposite: remove any imitation pairs that start at the same time:
-
-
+La opción '-Z' hará lo contrario: eliminará cualquier par de imitación que comience al mismo tiempo:
+s
 {% include verovio.html
 	source="noparallel"
 	spacingStaff="8"

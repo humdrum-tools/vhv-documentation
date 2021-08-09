@@ -1,6 +1,6 @@
 ---
 title: slurcheck filter
-lang: en
+lang: en es
 ref: filters-slurcheck
 author: Craig Stuart Sapp
 translator:
