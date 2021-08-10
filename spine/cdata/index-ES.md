@@ -3,22 +3,20 @@ title: "**cdata"
 lang: en es
 ref: data types
 author: Craig Stuart Sapp
-translator:
+translator: David Rizo
 creation_date: 6 Sep 2019
-translation_date:
+translation_date: 10 Aug 2021
 last_updated: 7 Sep 2019
 vim: ft=text
 verovio: "true"
 tags: [all, data_type]
 sidebar: main_sidebar
 keywords: data types
-summary: "**cdata: for general text display as lyric text in music notation."
-permalink: /spine/cdata/index.html
+summary: "**cdata: para la visualización de texto general como letra de la música en la notación musicaln."
+permalink: /spine/cdata/index-ES.html
 ---
 
-The `**cdata` spine type is used to display arbitrary textual data
-in music notation as if it were chord labels.  The name is short
-for "chord-like data".  Here is a basic example:
+El tipo de columna `**cdata` se utiliza para mostrar datos textuales arbitrarios en notación musical como si fueran etiquetas de acordes.  El nombre es la abreviatura de "datos similares a los acordes” (o *chord-like data*).  He aquí un ejemplo básico:
 
 
 {% include verovio.html
@@ -45,11 +43,9 @@ for "chord-like data".  Here is a basic example:
 </script>
 
 
-## Differences from **vdata ##
+## Diferencias con **vdata ##
 
-A [`**vdata`](/spine/vdata) spine is used to display text in a similar manner, but it can
-only be displayed below the staff, and text cannot be associated with rests or a time positions
-that do not have notes. 
+Una columna [`**vdata`](/spine/vdata) se utiliza para mostrar texto de forma similar, pero sólo puede mostrarse debajo del pentagrama, y el texto no puede asociarse a los silencios o a las posiciones de tiempo que no tienen notas. 
 
 {% include verovio.html
 	source="both"
@@ -76,19 +72,13 @@ that do not have notes.
 </script>
 
 
-`**cdata` text cannot yet be shown below the staff, but it should be possible in the future.
+El texto `**cdata` aún no puede mostrarse debajo del pentagrama, pero debería ser posible en el futuro.
 
-## Refined positioning ##
+## Posicionamiento refinado ##
 
-`**cdata` text is positioned at a particular time.  Usually this time is inferred from the
-contents of `**kern` spines.  However if you need to position in a way that cannot be
-inferred, add a `**recip` spine to the data.  Each line of the `**recip` spine specifies
-the duration of the line.
+El texto de `**cdata` se posiciona en un momento determinado.  Normalmente este tiempo se infiere del contenido de las columnas `**kern`.  Sin embargo, si necesita posicionarse de una manera que no se puede inferir, añada una columna `**recip` a los datos.  Cada línea de la columna `**recip` especifica la duración de la línea.
 
-Blank `**kern` lines equally divide the duration of the previous
-line into equal parts so in the following example, the `**cdata`
-text `b`, `d`, `f`, and `h` are positioned half-way between the
-half note (so at the quarter note positions):
+Las líneas `**kern` en blanco dividen la duración de la línea anterior en partes iguales, por lo que en el siguiente ejemplo, los textos `**cdata` `b`, `d`, `f` y `h` se sitúan a mitad de camino entre las blancas (por tanto, en las posiciones de las negras):
 
 {% include verovio.html
 	source="half"
@@ -113,7 +103,7 @@ half note (so at the quarter note positions):
 *-	*-
 </script>
 
-An equivalent encoding using a `**recip` spine:
+Una codificación equivalente que utiliza una columna  `**recip`:
 
 {% include verovio.html
 	source="halfrecip"
@@ -138,9 +128,7 @@ An equivalent encoding using a `**recip` spine:
 *-	*-	*-
 </script>
 
-If you instead want to delay the text `b`, `d`, `f`, and `h` by an eight note, there needs
-to be three blank lines after every half note to force the empty lines to be assigned
-a duration of an eighth note:
+Si en cambio quieres retrasar el texto `b`, `d`, `f`, y `h` en una corchea, es necesario que haya tres líneas en blanco después de cada blanca para forzar que a las líneas vacías se les asigne una duración de una corchea:
 
 {% include verovio.html
 	source="eighth"
@@ -173,8 +161,7 @@ a duration of an eighth note:
 *-	*-
 </script>
 
-This is somewhat fragile, since removing the null data lines (with `rid -d`) would cause the spacing
-to revert to the original quarter-note level.  Here is the same result using a `**recip` spine:
+Esto es algo frágil, ya que eliminar las líneas de datos nulas (con `rid -d`) haría que el espaciado volviera al nivel original de una negra.  Aquí está el mismo resultado usando una columna `**recip`:
 
 {% include verovio.html
 	source="eighthrecip"
@@ -200,10 +187,9 @@ to revert to the original quarter-note level.  Here is the same result using a `
 </script>
 
 
-## Multiple lines of data ##
+## Múltiples líneas de datos ##
 
-Multiple lines of data can be given as separate `**cdata` spines.  The spines will be attached
-to the staff created by the first `**kern` spine found to the left of the `**cdata` spines:
+Se pueden dar múltiples líneas de datos como columnas separadas `**cdata`.  Las columnas se adjuntarán al pentagrama creado por la primera columna `**kern` que se encuentre a la izquierda de las columnas `**cdata`:
 
 {% include verovio.html
 	source="multiple"
@@ -226,14 +212,9 @@ to the staff created by the first `**kern` spine found to the left of the `**cda
 </script>
 
 
-## SVG labeling of data ##
+## Etiquetado de datos en SVG ##
 
-The true data type of `**cdata` data can be given by adding a
-hyphen after `**cdata` and then the name of the actual data type.
-This will cause the text in the rendered SVG image of the notation
-to be labeled with a class name based on the data type, and this
-can then be manipulated by CSS, such as to highlight different
-text data types in difference colors:
+El verdadero tipo de datos de `**cdata` se puede dar añadiendo un guión después de `**cdata` y luego el nombre del tipo de datos real. Esto hará que el texto en la imagen SVG renderizada de la notación se etiquete con un nombre de clase basado en el tipo de datos, y esto puede ser manipulado por CSS, como para resaltar diferentes tipos de datos de texto en colores diferentes:
 
 
 {% include verovio.html
@@ -258,12 +239,7 @@ text data types in difference colors:
 *-	*-	*-
 </script>
 
-If you inspect the SVG image of the notation, you will see that the
-text content includes class labels based on the data type given
-after the dash in the `**cdata` spines, such as this SVG code for
-displaying the number 3, where there is a `number` class added to
-the first line. The other classname, `syl`, is a classname added
-by verovio to indicate that the graphic element is a text syllable:
+Si inspeccionas la imagen SVG de la notación, verás que el contenido del texto incluye etiquetas de clase basadas en el tipo de datos que se da después del guión en las columnas `**cdata`, como este código SVG para mostrar el número 3, donde hay una clase `number` añadida a la primera línea. El otro nombre de clase, `syl`, es un nombre de clase añadido por verovio para indicar que el elemento gráfico es una sílaba de texto:
 
 ```xml
 <g class="harm number" id="harm-L7F3">
@@ -276,7 +252,7 @@ by verovio to indicate that the graphic element is a text syllable:
 ```
 
 
-The text coloring and font changes are done with the following CSS code:
+El coloreado del texto y los cambios de fuente se hacen con el siguiente código CSS:
 
 
 ```css
