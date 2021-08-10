@@ -3,17 +3,17 @@ title: myVHV introduction
 lang: en es
 ref: myvhv-introduction
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 creation_date: 10 Mar 2017
-translation_date: 
+translation_date: 10 Aug 2021s
 last_updated: 10 Mar 2017
 sidebar: main_sidebar
 tags: [all]
 verovio: "true"
 vim: ts=3 ft=html
 keywords: verovio humdrum
-summary: The myVHV section of the documentation demonstrates how VHV technology can be used on your own webpages.
-permalink: /myvhv/introduction/index.html
+summary: La sección myVHV de la documentación demuestra cómo se puede utilizar la tecnología VHV en tus propias páginas web.
+permalink: /myvhv/introduction/index-ESs.html
 ---
 
 <style>
@@ -23,67 +23,48 @@ pre#myhumdrum, pre#myhumdrum2 { background: white; }
 div #myhumdrum, div #myhumdrum2 { height: 420px; overflow: auto; white-space: pre; }
 </style>
 
-[Verovio Humdrum Viewer](http://verovio.humdrum.org) is a fairly
-complex frontend to the [verovio javascript
-toolkit](http://www.verovio.org), but simpler interactions
-with verovio are easy to implement.   Verovio is a music typesetting
-library [written in
-C++](https://github.com/rism-ch/verovio/tree/develop-humdrum) that
-converts Humdrum, MEI, MusicXML, or Plaine & Easie musical data
-into SVG notation images, either within a browser with the JavaScript 
-toolkit implementation or in an operating system on the
-command-line.
-This section of the VHV documentation gives examples
-of how to use verovio on your own webpages or to generate graphical
-music notation for various purposes.
+[Verovio Humdrum Viewer](http://verovio.humdrum.org) es un frontend bastante complejo para el [verovio javascript toolkit](http://www.verovio.org), pero las interacciones más simples con verovio son fáciles de implementar.   Verovio es una librería de renderización de partituras musicales [escrita en C++](https://github.com/rism-ch/verovio/tree/develop-humdrum) que convierte los datos musicales de Humdrum, MEI, MusicXML o Plaine & Easie en imágenes de notación SVG, ya sea dentro de un navegador con la implementación del kit de herramientas JavaScript o en un sistema operativo en la línea de comandos. Esta sección de la documentación de VHV da ejemplos de cómo utilizar Verovio en tus propias páginas web o para generar notación musical gráfica para diversos fines.
 
 
-## Command-line use ##
+## Uso de la línea de comandos ##
 
-Verovio can be compiled for use in a unix-style terminal shell.
-Here is the basic verovio command to generate 
-an SVG image from a Humdrum file:
+Verovio puede ser compilado para su uso en un shell de terminal de estilo unix. Este es el comando básico de Verovio para generar una imagen SVG a partir de un archivo Humdrum:
 
 ```bash
 verovio file.krn
 ```
-This will create a file called `file.svg` with the graphical
-music notation represented in the Humdrum file `file.krn`,
-using the default settings.
+Esto creará un archivo llamado `file.svg` con la notación musical gráfica representada en el archivo Humdrum `file.krn`, utilizando la configuración por defecto.
 
-### Static server-generated images ###
+### Imágenes estáticas generadas por el servidor ###
 
-There are several command-line options that can be used to
-control formatting of the generated SVG image.  For the following
-example SVG image, these options were used:
+Existen varias opciones de línea de comandos que pueden utilizarse para controlar el formato de la imagen SVG generada.  Para la siguiente imagen SVG de ejemplo, se utilizaron estas opciones:
 
 ```bash
 verovio input.krn --adjust-page-height -h 2000 -w 1550 --spacing-staff 3 --spacing-system 3 -s 30
 ```
 
 --adjust-page-height
-: shrink the height of the SVG image to  the height of the printed music (remove any blank space below the music).
+: reduce la altura de la imagen SVG a la altura de la música impresa (elimine cualquier espacio en blanco debajo de la música).
 
 -h 2000
-: set the height of the SVG page to 2000 pixels.
+: establecerla altura de la página SVG a 2000 píxeles.
 
 -w 1550
-: set the width of the SVG page to 1550 pixels.
+: establece la anchura de la página SVG en 1550 píxeles.
 
 --spacing-staff 3
-: pad the bottom of each staff with 3 diatonic steps of additional space.
+: añade a la parte inferior de cada pentagrama con 3 tonos diatónicos de espacio adicional.
 
 --spacing-system 3
-: pad the bottom of each system with 3 diatonic steps of additional space.
+: añade en la parte inferior de cada sistema con 3 tonos diatónicos de espacio adicional.
 
 -s 30
-: scale the music to 30% of full size.
+: escala la música al 30% del tamaño completo.
 
-Additional options can be found on the 
+Se pueden encontrar opciones adicionales en el 
 [verovio command-line page](http://www.verovio.org/command-line.xhtml).
 
-The resulting SVG image is shown on the right, with the input
-Humdrum data shown beside it:
+La imagen SVG resultante se muestra a la derecha, con los datos de entrada de Humdrum mostrados al lado:
 
 <center>
 <table style="border: none; background-color: transparent">
@@ -239,24 +220,16 @@ Humdrum data shown beside it:
 </center>
 
 
-See the [myVHV command-line page](../command_line) for more information
-about command-line use of verovio with Humdrum files.
+Consulta la página [myVHV command-line page](../command_line) para obtener más información sobre el uso de la línea de comandos de Verovio con archivos Humdrum.
 
 
-## JavaScript use ##
+## Uso de JavaScript ##
 
-In addition to being able to run the converter on the command-line,
-verovio is also available as a javascript toolkit that allows you
-to generate SVG images directly within a webpage.  
+Además de poder ejecutar el conversor en la línea de comandos, Verovio también está disponible como un conjunto de herramientas javascript que permite generar imágenes SVG directamente dentro de una página web.  
 
+### Imágenes estáticas generadas por el navegador ###
 
-
-
-### Static browser-generated images ###
-
-The following Humdrum data is used to create the music notation on
-the right without the need to store the notation in a separately
-loaded image file:
+Los siguientes datos de Humdrum se utilizan para crear la notación musical de la derecha sin necesidad de almacenar la notación en un archivo de imagen cargado por separado:
 
 <center>
 <table style="padding:0 !important; border: none; background-color: transparent;">
@@ -446,19 +419,12 @@ function showMyHumdrum() {
 
 </script>
 
-To learn how to generate static SVG images within a
-webpage, see [this page](../static).
+Para saber cómo generar imágenes SVG estáticas dentro de una página web, consulta [esta página](../static).
 
 
-### Dynamic browser-generated images ###
+### Imágenes dinámicas generadas por el navegador ###
 
-Using verovio to create static images on webpages is fine, but not
-much different from generating the images on the command-line
-and loading as an image from the web server.  Here is the same
-music as in the above example, but you can now edit the 
-Humdrum data and the notation to the right will be updated
-immediately by re-converting the changed Humdrum data
-into a new SVG image.
+Usar Verovio para crear imágenes estáticas en páginas web está bien, pero no es muy diferente de generar las imágenes en la línea de comandos y cargarlas como una imagen desde el servidor web.  Aquí está la misma música que en el ejemplo anterior, pero ahora puedes editar los datos de Humdrum y la notación de la derecha se actualizará inmediatamente reconvirtiendo los datos de Humdrum cambiados en una nueva imagen SVG.
 
 {% include verovio.html
 	source="dynamic_humdrum"
@@ -604,10 +570,7 @@ into a new SVG image.
 </script>
 
 
-Try changing the Humdrum data in the above example, such as removing
-the key signature, changing to tenor clef (`*clefC4`), or changing
-some pitches.  The SVG image on the right should update as you
-make changes.
+Prueba a cambiar los datos de Humdrum en el ejemplo anterior, por ejemplo, eliminando la armadura de clave, cambiando a clave de tenor (`*clefC4`), o cambiando algunas alturas de nota.  La imagen SVG de la derecha debería actualizarse a medida que realices los cambios.
 
 
 

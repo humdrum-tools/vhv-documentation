@@ -3,17 +3,17 @@ title: Creating static in-browser images from EsAC data
 lang: en es
 ref: myvhv-static-esac
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 vim: ts=3
 creation_date: 10 Jun 2017
-translation_date: 
+translation_date: 10 Aug 2021
 last_updated: 10 Jun 2017
 sidebar: main_sidebar
 tags: [all]
 verovio: "true"
 keywords: esac notation 
-summary: "Simple use of the verovio javascript toolkit to display EsAC data as graphical notation on a stand-alone webpage with a tiny bit of javascript."
-permalink: /myvhv/static-esac/index.html
+summary: "Uso sencillo del conjunto de herramientas verovio javascript para mostrar los datos de EsAC como notación gráfica en una página web independiente con un poco de javascript."
+permalink: /myvhv/static-esac/index-ES.html
 ---
 
 <style>
@@ -33,7 +33,7 @@ permalink: /myvhv/static-esac/index.html
 
 
 
-The following music notation is generated from the EsAC data below.
+La siguiente notación musical se genera a partir de los datos de EsAC que aparecen a continuación.
 
 <div id="notation"></div>
 <pre style="width:500px; margin:auto; margin-top:50px;" id="text"></pre>
@@ -98,19 +98,15 @@ function showMyEsac(sourceid, targetid, textid) {
 
 <br/>
 <br/>
-Notice the use of `!!!filter: autobeam` to beam eighth notes together.
+Fíjate en el uso de `!!!filter: autobeam` para unir las corcheas.
 
 
-View the [source code](https://raw.githubusercontent.com/humdrum-tools/vhv-documentation/gh-pages/myvhv/static-esac/index.md)
-for this page to view the javascript used to create the notation.  The main
-difference from [Humdrum data display](/myvhv/static) is that the input format
-is set to `"esac"`.
+Consulta el [código fuente](https://raw.githubusercontent.com/humdrum-tools/vhv-documentation/gh-pages/myvhv/static-esac/index.md) de esta página para ver el javascript utilizado para crear la notación.  La principal diferencia con respecto a [Humdrum data display](/myvhv/static) es que el formato de entrada se establece como `"esac"`.
 
 
-## Analytic phrase markers ##
+## Marcadores de frases analítica ##
 
-In this example the starting note of a phrase is highlighted in green and the ending
-note is highlighted in blue.  This is done with the following CSS code:
+En este ejemplo, la nota inicial de una frase se resalta en verde y la nota final en azul.  Esto se hace con el siguiente código CSS:
 
 
 ```CSS
@@ -124,10 +120,6 @@ note is highlighted in blue.  This is done with the following CSS code:
 .phraseStart.phraseStop [stroke] { stroke: orange; }
 ```
 
-Phrases are implicitly encoded in EsAC data by linebreaks.  The first note
-on a line is the start of the phrase, and the last note on a line is the
-end of the phrase.  These notes are labeled in the SVG with the classes
-`phraseStart` and `phraseStop` respectively.
-
+Las frases se codifican implícitamente en los datos de EsAC mediante saltos de línea.  La primera nota de una línea es el inicio de la frase, y la última nota de una línea es el final de la frase.  Estas notas se etiquetan en el SVG con las clases `phraseStart` y `phraseStop` respectivamente. 
 
 

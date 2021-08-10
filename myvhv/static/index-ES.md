@@ -1,19 +1,19 @@
 ---
-title: Creating static in-browser images
+title: Creación de imágenes estáticas en el navegador
 lang: en es
 ref: myvhv-static
 author: Craig Stuart Sapp
-translator: 
+translator: David Rizo
 vim: ts=3
 creation_date: 9 Mar 2017
-translation_date: 
+translation_date: 10 Aug 2021
 last_updated: 9 Mar 2017
 sidebar: main_sidebar
 tags: [all]
 verovio: "true"
 keywords: graphical editing pitch
-summary: "Simple use of the verovio javascript toolkit to display Humdrum data as graphical notation on a stand-alone webpage with a tiny bit of javascript."
-permalink: /myvhv/static/index.html
+summary: "Uso sencillo del toolkit javascript de Verovio para mostrar los datos de Humdrum como notación gráfica en una página web independiente con un poco de javascript."
+permalink: /myvhv/static/index-ES.html
 ---
 
 <style>
@@ -182,15 +182,9 @@ function generateCodeSpaces() {
 
 </script>
 
-## Example ##
+## Ejemplo ##
 
-The following box contains an indepndent webpage showing a musical
-example.  This notation was generated directly within the webpage
-rather than being loaded as a separate image file from the server.
-This is accomplished in the same manner as music notation is generated
-on the Verovio Humdrum Viewer website: Humdrum data is stored inside
-the webpage and is converted by the verovio javascript toolkit
-program into an SVG image.  
+El siguiente cuadro contiene una página web independiente que muestra un ejemplo musical.  Esta notación fue generada directamente dentro de la página web en lugar de ser cargada como un archivo de imagen separado desde el servidor. Esto se logra de la misma manera que se genera la notación musical en la página web de Verovio Humdrum Viewer: Los datos de Humdrum se almacenan dentro de la página web y son convertidos por el programa verovio javascript toolkit en una imagen SVG.  
 
 <center>
 <iframe width="350" height="250" src="http://www.humdrum.org/vhv-demos/simple/demo.html"></iframe>
@@ -198,11 +192,9 @@ program into an SVG image.
 <a href="http://www.humdrum.org/vhv-demos/simple/demo.html">view stand-alone demo page directly</a>
 </center>
 
-The HTML text for the page is shown in the next section along with
-a commentary of the JavaScript code used to do the conversion and
-place the SVG image on the page.
+El texto HTML de la página se muestra en la siguiente sección junto con un comentario del código JavaScript utilizado para hacer la conversión y colocar la imagen SVG en la página.
 
-Here is the Humdrum data which is stored inside of the sample page:
+Aquí están los datos de Humdrum que se almacenan dentro de la página de muestra:
 
 ```humdrum
 **kern	**kern
@@ -221,12 +213,7 @@ Here is the Humdrum data which is stored inside of the sample page:
 *-	*-
 ```
 
-If you need to change the graphic notation on the page, all you
-have to do is edit the Humdrum file text on the page, reload the
-page, and the music notation will automatically be updated.  As an
-exercise, copy the contents of the page further below and try
-changing the Humdrum text to:
-
+Si necesitas cambiar la notación gráfica de la página, todo lo que tienes que hacer es editar el texto del archivo Humdrum en la página, recargar la página, y la notación musical se actualizará automáticamente.  Como ejercicio, copia el contenido de la página más abajo e intente cambiar el texto de Humdrum a: 
 
 <div id="myid"></div>
 ```humdrum
@@ -248,16 +235,12 @@ changing the Humdrum text to:
 !!!RDF**kern: N = marked note color=green
 ```
 
-Here is the resulting notation, created on this page from 
-the above data:
+Aquí está la notación resultante, creada en esta página a partir de los datos anteriores:
 <br/><br/>
 
 <div id="myhumdrum"></div>
 
-Also you can even edit the Humdrum data immediately above the music
-to change colors or mark notes to change their color in this notation
-example
-(more about how this is done in the [next section](../dynamic)).
+También puedes incluso editar los datos de Humdrum inmediatamente por encima de la música para cambiar los colores o marcar las notas para cambiar su color en este ejemplo de notación (más sobre cómo se hace esto en la [siguiente sección](../dynamic)).
 
 <script>
 
@@ -308,10 +291,9 @@ function showMyHumdrum() {
 
 </script>
 
-## Source code ##
+## Código fuente ##
 
-To implement the static image example, copy and paste the following
-text into an HTML file, and then view the page in a web browser.
+Para implementar el ejemplo de la imagen estática, copia y pega el siguiente texto en un archivo HTML, y luego visualiza la página en un navegador web.
 
 ```html
 <html>
@@ -322,7 +304,7 @@ text into an HTML file, and then view the page in a web browser.
 </head>
 <body>
 
-Here is a short musical example:
+He aquí un breve ejemplo musical:
 
 <script id="input" type="text/humdrum"> 
 **kern	**kern
@@ -372,27 +354,21 @@ Here is a short musical example:
 </html>
 ```
 
-## Code commentary ##
+## Comentario del código ##
 
-This section gives a detailed description of how the webpage works.
+Esta sección ofrece una descripción detallada del funcionamiento de la página web.
 
-### Loading and initializing verovio ###
+### Carga e inicialización de Verovio ###
 
-Line 4 loads the JavaScript toolkit version of verovio:
+La línea 4 carga la versión del kit de herramientas de JavaScript de Verovio:
 
 ```javascript
 <script src="https://verovio-script.humdrum.org/scripts/verovio-toolkit.js"></script>
 ```
 
-The script is loaded from `https://verovio-script.humdrum.org`, where
-the most recent version of the Humdrum-aware verovio script is
-hosted.  Alternatively you can download that script and store it
-locally on your website, or compile directly from the [verovio
-source](https://github.com/rism-ch/verovio) (compile from the
-`develop-humdrum` branch for the latest Humdrum-aware version).
+El script se carga desde `https://verovio-script.humdrum.org`, donde está alojada la versión más reciente del script Verovio compatible con Humdrum.  También puedes descargar ese script y almacenarlo localmente en tu sitio web, o compilarlo directamente desde el [verovio source](https://github.com/rism-ch/verovio) (compila desde la rama `develop-humdrum` para la última versión compatible con Humdrum).
 
-Next, on line 31 the verovio toolkit interface is initialized and stored in 
-the `vrvToolkit` variable:
+A continuación, en la línea 31 se inicializa la interfaz del verovio toolkit y se almacena en la variable `vrvToolkit`:
 
 ```javascript
    var vrvToolkit = new verovio.toolkit();
@@ -400,10 +376,9 @@ the `vrvToolkit` variable:
 
 <div style="height:30px;"></div>
 
-### Humdrum data ###
+### Datos Humdrum ###
 
-The Humdrum file is stored on lines 11&ndash;26 in a script element
-having the ID `input`:
+El archivo Humdrum se almacena en las líneas 11&ndash;26 en un elemento de script que tiene el ID `input`:
 
 ```javascript
 <script id="input" type="text/humdrum"> 
@@ -424,59 +399,39 @@ having the ID `input`:
 </script>
 ```
 
-### Extracting Humdrum data from page ###
+### Extracción de datos de la página ###
 
-The ID for the script could be any text, as long as the ID
-matches the ID reference on line 32:
+El ID del script puede ser cualquier texto, siempre que el ID coincida con la referencia del ID en la línea 32:
 
 ```javascript
 	var Input = document.querySelector("#input");
 ```
 
-In this case the Humdurm data is hidden since it is stored
-in a `<script>` element, but any element, such as a `div` could
-be used to store the Humdrum data visibly on the page.
+En este caso los datos de Humdurm están ocultos ya que se almacenan en un elemento `<script>`, pero cualquier elemento, como un `div` podría utilizarse para almacenar los datos de Humdrum de forma visible en la página. 
 
-The Humdrum file contents is extracted from the storage element on line 37 
-using `textContent`:
+El contenido del archivo Humdrum se extrae del elemento de almacenamiento en la línea 37 utilizando `textContent`:
 
 ```javascript
 	var data = Input.textContent;
 ```
 
-### Options ###
+### Opciones ###
 
-Options for the verovio toolkit can be found on the page
-[verovio.org/command-line.xhtml](http://www.verovio.org/command-line.xhtml).
-These options are for the command line, so when using in JSON data
-for the JavaScript version of the verovio toolkit, change spaces
-into capitalization.  For example `--page-height` becomes `pageHeight`.
+Las opciones para el kit de herramientas de Verovio se pueden encontrar en la página [verovio.org/command-line.xhtml](http://www.verovio.org/command-line.xhtml). Estas opciones son para la línea de comandos, por lo que al utilizarlas en datos JSON para la versión JavaScript del kit de herramientas Verovio, cambia los espacios por las mayúsculas.  Por ejemplo `--page-height` se convierte en `pageHeight`.
 
-The `adjustPageHeight` can be used to keep all music in a single 
-image by setting the `pageHeight` to a very large value.  If 
-`adjustPageHeight` is enabled, verovio will shrink the SVG image to
-remove blank space at the bottom of the page.  Setting `adjustPageHeight`
-to `0` or not explicitly setting the option will produce a 
-fixed-height image, possibly with a blank region after the 
-music is finished.
+El `adjustPageHeight` se puede utilizar para mantener toda la música en una sola imagen estableciendo el `pageHeight` a un valor muy grande.  Si `adjustPageHeight` está activado, Verovio reducirá la imagen SVG para eliminar el espacio en blanco en la parte inferior de la página.  Si se establece `adjustPageHeight` a `0` o no se establece explícitamente la opción, se producirá una imagen de altura fija, posiblemente con una región en blanco después de que la música haya terminado.
 
-The [verovio](http://www.verovio.org) typesetting engine contains 
-three possible fonts to choose from: `Leipzig`, `Bravura` and `Granville`.
+El motor de grabado musical digital [Verovio](http://www.verovio.org) contiene tres fuentes posibles para elegir: `Leipzig`, `Bravura` y `Granville`.
 
-### Generating the SVG image ###
+### Generación de la imagen SVG ###
 
-Line 46 contains the code that converts the Humdrum data into an
-SVG image:
+La línea 46 contiene el código que convierte los datos de Humdrum en una imagen SVG:
 
 ```javascript
       var svg = vrvToolkit.renderData(data, options);
 ```
 
-The `vrvToolkit.renderData()` function takes two parameters: (1)
-the musical data, and (2) a javascript object containing the 
-rendering options. The output from renderData is an SVG image.  
-This image is then placed on the webpage at 
-line 47:
+La función `vrvToolkit.renderData()` toma dos parámetros: (1) los datos musicales, y (2) un objeto javascript que contiene las opciones de renderización. La salida de renderData es una imagen SVG.   Esta imagen se coloca en la página web en la línea 47:
 
 ```javascript
 		Output.innerHTML = svg;

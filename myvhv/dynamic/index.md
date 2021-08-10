@@ -1,6 +1,6 @@
 ---
 title: Creating dynamic in-browser images
-lang: en
+lang: en es
 ref: myvhv-dynamic
 author: Craig Stuart Sapp
 translator: 
@@ -16,7 +16,7 @@ summary: Dynamic use of the verovio javascript toolkit to update the notation di
 permalink: /myvhv/dynamic/index.html
 ---
 
-The page desribes how to generate dynamic notation from Humdrum data
+The page describes how to generate dynamic notation from Humdrum data
 that you edit on a web pages.  The setup for the Humdrum editing box
 is a bit compilicated, so this page still has to be written.
 
