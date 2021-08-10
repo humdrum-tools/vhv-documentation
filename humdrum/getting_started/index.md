@@ -1,6 +1,6 @@
 ---
 title: Humdrum music encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started
 author: Craig Stuart Sapp
 translator: 

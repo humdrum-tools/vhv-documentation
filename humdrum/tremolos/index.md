@@ -1,6 +1,6 @@
 ---
 title: Tremolos
-lang: en
+lang: en es
 ref: humdrum-tremolos
 author: Craig Stuart Sapp
 translator: 

@@ -28,11 +28,11 @@ Para utilizar la versión de línea de comandos de Verovio, primero debes descar
 Para descargarlo, utiliza [git](https://en.wikipedia.org/wiki/Git).  Puede ser necesario ser descargado primero.
 
 {% include note.html
-	content="Para MacOS, instala [Homebrew](http://brew.sh) que es un gestor de paquetes de Linux para MacOS.  Esto instalará Git al mismo tiempo que se instala Homebrew".
+	content="Para MacOS, instala [Homebrew](http://brew.sh) que es un gestor de paquetes de Linux para MacOS. Esto instalará Git al mismo tiempo que se instala Homebrew"
 %}
 
 {% include note.html
-	content="Para linux, git se puede instalar con un comando similar a `yum install git` o `apt-get install git` o `dnf install git`.  Cuál usar dependerá de tu versión de linux".
+	content="Para linux, git se puede instalar con un comando similar a `yum install git` o `apt-get install git` o `dnf install git`.  Cuál usar dependerá de tu versión de linux"
 %}
 
 Para comprobar si tienes git instalado en tu ordenador, escribe el comando
@@ -151,7 +151,7 @@ Esto creará un archivo llamado `file.svg` con la notación.  Aquí hay algunos 
 
 
 {% include note.html
-	content="En MacOS, intenta escribir “`open file.svg`" para ver la imagen en un navegador web (esto dependerá del programa que esté registrado para abrir las imágenes SVG cuando haga doble clic en ellas)."
+	content="En MacOS, intenta escribir `open file.svg` para ver la imagen en un navegador web (esto dependerá del programa que esté registrado para abrir las imágenes SVG cuando haga doble clic en ellas)."
 %}
 
 ### --adjust-page-height ###

@@ -1,6 +1,6 @@
 ---
 title: Fingering
-lang: en
+lang: en es
 ref: humdrum-fingering
 author: Craig Stuart Sapp
 translator: 

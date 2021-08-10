@@ -1,6 +1,6 @@
 ---
 title: multiple voices encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-multiple_voices
 author: Craig Stuart Sapp
 translator: 

@@ -1,6 +1,6 @@
 ---
 title: rhythm encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-rhythm
 author: Craig Stuart Sapp
 translator: 

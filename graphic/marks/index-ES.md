@@ -324,7 +324,7 @@ Y añadiendo estos filtros a la parte superior del SVG:
 ```
 
 {% include note.html
-	content="En el futuro, la etiqueta de clase "marked" podrá cambiarse en la línea RDF añadiendo 'class="algo\"'.  Esto permitirá una etiqueta de clase distinta para cada significante de marca."
+	content="En el futuro, la etiqueta de clase 'marked' podrá cambiarse en la línea RDF añadiendo 'class=\"algo\"'.  Esto permitirá una etiqueta de clase distinta para cada significante de marca."
 %}
 
 

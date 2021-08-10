@@ -5,7 +5,6 @@ ref: interface-validation
 author: Craig Stuart Sapp
 translator: Olga Francés Zoroa, Mauro Loch
 creation_date: 19 Aug 2017
-overview
 last_updated: 19 Aug 2017
 tags: [all, getting_started]
 keywords: interface syntax validation

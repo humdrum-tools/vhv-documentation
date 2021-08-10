@@ -1,6 +1,6 @@
 ---
 title: Figured bass
-lang: en
+lang: en es
 ref: humdrum-figured_bass
 author: Craig Stuart Sapp
 translator: Best Western

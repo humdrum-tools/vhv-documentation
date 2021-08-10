@@ -78,7 +78,7 @@ bundle install
 
 
 {% include warning.html
-	content="Recientemente el componente nokogiri que debería instalarse con el comando anterior no funciona correctamente, así que prueba a ejecutar también el comando 'gem install nokogiri -v 1.6.8.1 -- --use-system-libraries=true --with-xml2-include="$(xcrun --show-sdk-path)\"/usr/include/libxml2' si hay algún problema."
+	content="Recientemente el componente nokogiri que debería instalarse con el comando anterior no funciona correctamente, así que prueba a ejecutar también el comando 'gem install nokogiri -v 1.6.8.1 -- --use-system-libraries=true --with-xml2-include=\"$(xcrun --show-sdk-path)\"/usr/include/libxml2' si hay algún problema."
 %}
 
 {% include image.html

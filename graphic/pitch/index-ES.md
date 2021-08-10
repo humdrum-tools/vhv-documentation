@@ -107,7 +107,7 @@ A continuación se muestra una demostración de cómo cambiar las alteraciones e
 
 {% include image.html
 	file="visual-accidentals.gif"
-	alt="cálculos automáticos de las alteraciones impresas".
+	alt="cálculos automáticos de las alteraciones impresas"
 	caption="Demostración de cálculos sobre alteraciones impresas."
 %}
 

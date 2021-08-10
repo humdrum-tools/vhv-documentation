@@ -1,6 +1,6 @@
 ---
 title: key signatures encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-key_signatures
 author: Craig Stuart Sapp
 translator: 

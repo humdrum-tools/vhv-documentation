@@ -1,6 +1,6 @@
 ---
 title: Trills
-lang: en
+lang: en es
 ref: humdrum-trills
 author: Craig Stuart Sapp
 translator: 

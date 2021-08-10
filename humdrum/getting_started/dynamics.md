@@ -1,6 +1,6 @@
 ---
 title: dynamics encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-dynamics
 author: Craig Stuart Sapp
 translator: 
