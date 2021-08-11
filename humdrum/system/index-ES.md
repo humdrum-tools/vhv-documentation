@@ -1,5 +1,5 @@
 ---
-title: System decorating
+title: Corchetes y llaves de sistemas
 lang: en es
 ref: system decoration instrument names
 author: Craig Stuart Sapp
@@ -11,30 +11,19 @@ last_updated: 24 Feb 2020
 tags: [all, humdrum ]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: A description of system decoration and staff names.
+summary: Una descripción de la decoración del sistema y los nombres de los pentagramas
 sidebar: main_sidebar
 permalink: /humdrum/system/index-ES.html
 ---
 
-This page describes the visual aspects of scores involving braces, brackets, staff names and abbreviations,
-as well as group names and abbreviations.
+En esta página se describen los aspectos visuales de las partituras que incluyen llaves, corchetes, nombres de pentagramas y abreviaturas, así como nombres de grupos y abreviaturas.
 
 
-## Staff names ##
+## Nombres de pentagramas ##
 
-Staff names are given in tandem interpretations starting with the
-string `*I"`.  The staff names are related to <a target="_blank">instrument
-codes</a>, such as `*Icello` for the violon cello.  The staff names
-are a visual description off the instrument or other text displayed
-at the start of a movement, while instrument codes are for analysis
-purposes.  Giving a staff name will override the display of an
-automatically generated name from an instrument code at the start
-of the data (but automatic staff name generation from the instrument
-code is not implemented yet).
+Los nombres de los pentagramas se dan en interpretaciones tándem que comienzan con la cadena `*I"`.  Los nombres de pentagrama están relacionados con <a target="_blank">códigos de instrumento</a>, como `*Icello` para el violonchelo.  Los nombres de pentagrama son una descripción visual del instrumento u otro texto que se muestra al comienzo de un movimiento, mientras que los códigos de instrumento son para fines de análisis.  Dar un nombre de pentagrama anulará la visualización de un nombre generado automáticamente a partir de un código de instrumento al comienzo de los datos (pero la generación automática de nombres de pentagrama a partir del código de instrumento no está implementada todavía).
 
-Here is an example of a string quartet score, where each of the
-staff names are given (try changing the names in the text box on
-the left, and they will update as you type on the right):
+He aquí un ejemplo de partitura de cuarteto de cuerda, en la que se indican los nombres de cada pentagrama (pruebe a cambiar los nombres en el cuadro de texto de la izquierda, y se actualizarán a medida que escriba en el de la derecha):
 
 {% include verovio.html
 	source="quartet"
@@ -53,11 +42,9 @@ the left, and they will update as you type on the right):
 
 
 
-## Staff abbreviations ##
+## Abreviaturas de nombre de pentagrama ##
 
-After the first system in a movement, the will be no instrument names displayed on successive
-systems.  An optional staff abbreviation can be given by prefixing `*I'` before the abbreviation
-string for the staff.
+Después del primer sistema de un movimiento, no se mostrarán los nombres de los instrumentos en los sistemas sucesivos.  Se puede dar una abreviatura de pentagrama opcional anteponiendo `*I'` a la cadena de abreviatura del pentagrama.
 
 {% include verovio.html
 	source="quartet2"
@@ -92,11 +79,11 @@ string for the staff.
 </script>
 
 
-## System styling ##
+## Estilos de sistemas ##
 
-### Default styling ###
+### Estilos por defectos ###
 
-When the system contains only a single staff, no decoration is added to the system:
+Cuando el sistema contiene sólo un pentagrama, no se añade ninguna decoración al sistema:
 
 {% include verovio.html
 	source="single"
@@ -119,9 +106,7 @@ When the system contains only a single staff, no decoration is added to the syst
 </script>
 
 
-When the system contains two staves, a brace will automatically be added, and the
-staves will be barred together (although this should not be done if there are lyrics
-attached to the top staff).
+Cuando el sistema contenga dos pentagramas, se añadirá automáticamente una llave, y los pentagramas se barrarán juntos (aunque esto no debe hacerse si hay letras unidas al pentagrama superior).
 
 {% include verovio.html
 	source="double"
@@ -143,8 +128,7 @@ attached to the top staff).
 *-	*-
 </script>
 
-When there are three or more staves, a bracket will automatically be added, but the
-staves will not be barred together.
+Cuando haya tres o más pentagramas, se añadirá automáticamente un corchete, pero los pentagramas no se barrarán juntos.
 
 {% include verovio.html
 	source="triple"
@@ -166,15 +150,12 @@ staves will not be barred together.
 </script>
 
 
-## System decoration ##
+## Decoración del sistema ##
 
-To override the default brace/bracket and barring styles, a line starting with `!!!system-decoration:` can
-give a different style.  To use this system, it is expected that all parts contain staff enumerations,
-and these staff numbers are referenced in the system decoration string.
+Para anular los estilos de corchetes y barras por defecto, una línea que empiece por `!!!system-decoration:` puede dar un estilo diferente.  Para utilizar este sistema, se espera que todas las partes contengan enumeraciones de pentagramas, y que estos números de pentagramas estén referenciados en la cadena de decoración del sistema.
 
 
-Here is an example for a string quartet, where the system decoration connects the bars on
-all staves together:
+Este es un ejemplo para un cuarteto de cuerda, donde la decoración del sistema conecta los compases de todos los pentagramas:
 
 
 {% include verovio.html
@@ -194,10 +175,9 @@ all staves together:
 !!!system-decoration: [(s1,s2,s3,s4)]
 </script>
 
-### Staff wildcard ###
+### Comodín de pentagrama ###
 
-If you only need a single brace or bracket for the entire system, either barred or unbarred, then
-you can use `*` to represent all staves.
+Si sólo necesitas un único corchete o llave para todo el sistema, con o sin barras, puedes utilizar `*` para representar todos los pentagramas.
 
 {% include verovio.html
 	source="barquart2"
@@ -216,7 +196,7 @@ you can use `*` to represent all staves.
 !!!system-decoration: [(*)]
 </script>
 
-Here is an example of removing the bracket, but keeping the barring:
+Aquí está un ejemplo de la eliminación del soporte, pero manteniendo el barrado:
 
 {% include verovio.html
 	source="barquart3"
@@ -235,10 +215,9 @@ Here is an example of removing the bracket, but keeping the barring:
 !!!system-decoration: (*)
 </script>
 
-Notice that parentheses around staves (or the wildcard symbol) will
-case the staves to be barred together.
+Ten en cuenta que los paréntesis alrededor de los pentagramas (o el símbolo de comodín) harán que los pentagramas se barren juntos.
 
-Here is an example of removing the bracket as well as the barring:
+Aquí está un ejemplo de la eliminación del corchete, así como el barrado:
 
 {% include verovio.html
 	source="barquart4"
@@ -259,10 +238,9 @@ Here is an example of removing the bracket as well as the barring:
 
 
 
-## Grand staff name ##
+## Nombre de un gran pentagrama ##
 
-There are several methods for giving a label to the grand staff. The first method is
-to add `*part` markers in each spine followed by matching non-zero integers.
+Hay varios métodos para dar una etiqueta al gran pentagrama. El primer método consiste en añadir marcadores `*part` en cada columna, seguidos de enteros que coincidan con el cero.
 
 {% include verovio.html
 	source="piano"
@@ -280,10 +258,7 @@ to add `*part` markers in each spine followed by matching non-zero integers.
 *-	*-
 </script>
 
-Another method is to use group labels, which start with `*I""`,
-rather than part labels, which start with `*I"`.  This also has to
-be in coordination with `*group` markers indicating the staves that
-should be grouped together:
+Otro método es utilizar etiquetas de grupo, que empiezan por `*I""`, en lugar de etiquetas de parte, que empiezan por `*I"`.  Esto también tiene que estar coordinado con los marcadores `*group` que indican los pentagramas que deben agruparse:
 
 {% include verovio.html
 	source="piano2"
@@ -302,10 +277,9 @@ should be grouped together:
 </script>
 
 
-## Instrument class grouping ##
+## Agrupación de clases de instrumentos ##
 
-Instrument class tandem interpretations can be used in an equivalent manner to
-`*group#` interpretations.  Here is an example:
+Las interpretaciones tándem de clases de instrumentos pueden utilizarse de forma equivalente a las interpretaciones de `*grupo#`.  He aquí un ejemplo:
 
 {% include verovio.html
 	source="ic"
@@ -327,10 +301,9 @@ Instrument class tandem interpretations can be used in an equivalent manner to
 !!!system-decoration: [(ww)][(bras)][(str)]
 </script>
 
-## Undecorated grouping ##
+## Agrupación sin decoración ##
 
-Here is an example of giving no decoration to a group by using angle brackets (`<>`) in the
-system decoration string:
+Este es un ejemplo de cómo no dar decoración a un grupo utilizando paréntesis angulares (`<>`) en la cadena de decoración del sistema:
 
 {% include verovio.html
 	source="nodeco"

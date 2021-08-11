@@ -16,13 +16,10 @@ sidebar: main_sidebar
 permalink: /humdrum/repetition-symbols/index-ES.html
 ---
 
-Repetition are represented in `**kern` by placing the tandem interpretations
-`*rep` and `*Xrep` before and after the group of notes to repeat.  Depending
-on the type of replacement, the visual aspect of the repetition will be
-chosen based on the context in which it is found.
+Las repeticiones se representan en `**kern` colocando las interpretaciones tándem `*rep` y `*Xrep` antes y después del grupo de notas a repetir.  Según el tipo de sustitución, el aspecto visual de la repetición se elegirá en función del contexto en el que se encuentre.
 
 
-## Measure-level repetitions ##
+## Repeticiones a nivel de compás ##
 
 
 {% include verovio.html
@@ -64,7 +61,7 @@ chosen based on the context in which it is found.
 </script>
 
 
-## Half-measure repetitions ##
+## Repeticiones de medio compás ##
 
 {% include verovio.html
 	source="halfmeasure"
@@ -114,7 +111,7 @@ chosen based on the context in which it is found.
 
 
 
-## Beat repetitions ##
+## Repeticiones de tiempo ##
 
 {% include verovio.html
 	source="beat"
@@ -158,8 +155,7 @@ chosen based on the context in which it is found.
 </script>
 
 
-The number of slashes in a beat repetition symbol is determined by the 
-duration of the individual notes in the repetition:
+El número de barras en un símbolo de repetición de tiempo está determinado por la duración de las notas individuales en la repetición:
 
 
 {% include verovio.html
@@ -210,7 +206,7 @@ duration of the individual notes in the repetition:
 </script>
 
 
-Examples of mixed-rhythm beat repetitions:
+Ejemplos de repeticiones de ritmos mixtos:
 
 {% include verovio.html
 	source="mixed"
@@ -242,12 +238,9 @@ Examples of mixed-rhythm beat repetitions:
 </script>
 
 
-## Removing repetition symbols ##
+## Eliminar los símbolos de repetición ##
 
-If you want to switch display styles from repetition symbols
-to fully written-out music, you can use the
-[shed](/filter/shed) filter to remove the `*rep` markers before
-printing:
+Si deseas cambiar los estilos de visualización de los símbolos de repetición a la música completamente escrita, puedes utilizar el filtro [shed](/filter/shed) para eliminar los marcadores `*rep` antes de la impresión:
 
 
 {% include verovio.html
@@ -313,13 +306,9 @@ printing:
 
 
 
-## Error checking ##
+## Comprobación de errores ##
 
-Note that repetition symbols will not be checked for accuracy.
-The music inside of the repetition symbol markers should match
-the music preceding it that is being repeated; however, if this
-is not the case, the repetition symbol will still be generated.
-
+Ten en cuenta que no se comprobará la exactitud de los símbolos de repetición. La música dentro de los marcadores del símbolo de repetición debe coincidir con la música que le precede y que se está repitiendo; sin embargo, si no es el caso, el símbolo de repetición se generará igualmente. 
 
 {% include verovio.html
 	source="bad"

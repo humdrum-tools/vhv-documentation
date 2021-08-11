@@ -1,5 +1,5 @@
 ---
-title: Percussion
+title: Percusión
 lang: en es
 ref: humdrum-tuplet_styling
 author: Craig Stuart Sapp
@@ -11,18 +11,16 @@ last_updated: 11 Oct 2020
 tags: [all, humdrum ]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: Encoding methods for percussion parts.
+summary: Métodos de codificación de las partes de percusión.
 sidebar: main_sidebar
 permalink: /humdrum/percussion/index-ES.html
 ---
 
-Percussion parts are encoded in `**kern` spines, using a percussion
-clef and markers to indicate unpitched or semipitched notes, as
-well as interpretation or layout parameter control of notehead shapes.
+Las partes de percusión se codifican en las columnas `**kern`, utilizando una clave de percusión y marcadores para indicar las notas no afinadas o semiafinadas, así como el control de los parámetros de interpretación o disposición de las formas de las cabezas de las notas.
 
-## Percussion clef ##
+## Clave de percusión ##
 
-Use `*clefX` for a percussion clef, with `X` meaning unpitched.
+Utiliza `*clefX` para una clave de percusión, con `X` que significa sin tono.
 
 {% include verovio.html
 	source="xclef"
@@ -39,7 +37,7 @@ Use `*clefX` for a percussion clef, with `X` meaning unpitched.
 *-
 </script>
 
-If a number is given after `X`, the clef will be centered on that line.
+Si se da un número después de "X", la clave se centrará en esa línea.
 
 {% include verovio.html
 	source="xclef5"
@@ -60,11 +58,9 @@ If a number is given after `X`, the clef will be centered on that line.
 
 
 
-## Staff lines ##
+## Líneas de pentagrama ##
 
-To set the number of lines for a staff, add the interpretation
-`*stria` at the start of the spine before any data (notes/rests),
-adding the number of lines at the end of the interpretation. 
+Para fijar el número de líneas de un pentagrama, añade la interpretación `*stria` al principio de la columna antes de cualquier dato (notas/silencios), añadiendo el número de líneas al final de la interpretación. 
 
 {% include verovio.html
 	source="stria1"
@@ -87,18 +83,11 @@ adding the number of lines at the end of the interpretation.
 </script>
 
 
-## Unpitched notes ##
+## Notas no afinadas ##
 
-The placement of notes on the staff is controlled by assigning pitch
-names to the notes, and they will be positioned as if they were on
-a treble-clef staff.  If there is a single line on the staff, then
-that is treated as the bottom line of the treble clef, and the notes
-placed on this line have the "pitch" of `e`.
+La colocación de las notas en el pentagrama se controla asignando nombres de afinación a las notas, y se colocarán como si estuvieran en un pentagrama de clave de Sol.  Si hay una sola línea en el pentagrama, entonces se trata como la línea inferior de la clave de sol, y las notas colocadas en esta línea tienen la "afinación" de `e`.
 
-Percussion notes must include `R` to indicate that they are
-unpitched.  This is important for analysis purposes, so percussion-clef
-notes without an `R` qualification will be highlighted in red to indicate
-a problem:
+Las notas de percusión deben incluir la letra `R` para indicar que no están afinadas.  Esto es importante a efectos de análisis, por lo que las notas de percusión sin la calificación `R` se resaltarán en rojo para indicar un problema:
 
 {% include verovio.html
 	source="unpitched"
@@ -120,15 +109,9 @@ a problem:
 *-
 </script>
 
-## Partially pitched notes ##
+## Notas parcialmente afinadas ##
 
-If notes are not pitched, but also not fully unpitched, the marker
-`RR` can be used to indicate that a note is partially pitched.  This
-is useful for instruments such as tom-toms or <a target="_blank"
-href="https://www.youtube.com/watch?v=7otWy6LcaRA">rototoms</a>
-where the drums are pitched from low to high.  In this case the
-general pitch-height is useable for analysis rather than the notated
-pitch.
+Si las notas no están afinadas, pero tampoco totalmente desafinadas, se puede utilizar el marcador `RR` para indicar que una nota está parcialmente afinada.  Esto es útil para instrumentos como los tom-toms o <a target="_blank" href="https://www.youtube.com/watch?v=7otWy6LcaRA">rototoms</a> en los que los tambores están afinados de menor a mayor.  En este caso, se puede utilizar la altura de tono general para el análisis en lugar del tono anotado.
 
 
 {% include verovio.html
@@ -150,28 +133,25 @@ pitch.
 *-
 </script>
 
-## Notehead shapes ##
+## Formas de cabeza de nota ##
 
-Notehead shapes can be set either by layout parameters applied to
-individual notes, or a notehead shape interpretation that affects
-all notes after it in the music.  Available notehead shapes:
+Las formas de las cabezas de nota pueden establecerse mediante parámetros de diseño aplicados a notas individuales, o mediante una interpretación de la forma de la cabeza de nota que afecta a todas las notas que le siguen en la música.  Formas de cabeza de nota disponibles:
 
-| shape   | description |
+| forma   | descripción |
 | ------- | ----------- |
-| x       | notehead shaped like an "x" |
-| plus    | notehead shaped like a plus sign |
-| dia     | notehead shaped like a diamond |
-| slash   | slash chord notehead shape |
-| solid   | notehead shape of quarter notes and shorter |
-| open    | notehead shaped like a half note |
-| whole   | notehead shaped like a whole-note |
-| regular | regular notehead shape |
+| x       | cabeza de nota con forma de "x" |
+| plus    | cabeza de nota con forma de signo más |
+| dia     | cabeza de nota con forma de diamante |
+| slash   | forma de la cabeza de nota de barra de acorde |
+| solid   | forma de la cabeza de la nota de las negras y más cortas |
+| open    | cabeza de nota con forma de blanca |
+| whole   | cabeza de nota con forma de redonda |
+| regular | forma de cabeza de nota normals |
 
 
-### Layout parameter  method ###
+### Método del parámetro de disposición ###
 
-Add a note layout parameter immediately before the note with
-a "head" parameter set to the notehead shape:
+Añade un parámetro de diseño de nota inmediatamente antes de la nota con un parámetro "cabeza" ajustado a la forma de la cabeza de la nota:
 
 {% include verovio.html
 	source="shape1"
@@ -204,9 +184,9 @@ a "head" parameter set to the notehead shape:
 </script>
 
 
-### Interpretation method ###
+### Método de interpretación ###
 
-If the notehead shape does not change often, use the `*head` interpretation:
+Si la forma de la cabeza de la nota no cambia a menudo, utiliza la interpretación `*head`:
 
 {% include verovio.html
 	source="shape2"
@@ -235,9 +215,9 @@ If the notehead shape does not change often, use the `*head` interpretation:
 *-
 </script>
 
-## Rests ##
+## Silencios ##
 
-Rests will usually be centered on staff lines:
+Los silencios suelen estar centrados en las líneas del pentagrama:
 
 
 {% include verovio.html
@@ -261,12 +241,10 @@ Rests will usually be centered on staff lines:
 </script>
 
 
-Since rests are not pitched, there is no need to add `R` markers that
-are needed for unpitched sounding notes.
+Como los silencios no están afinados, no es necesario añadir los marcadores `R` que se necesitan para las notas que no suenan.
 
 
-To move rests vertically, add the treble-clef pitch for the desired position
-on the staff, where the lowest line of the percussion clef is `e`:
+Para desplazar los silencios verticalmente, añade el tono de la clave de sol correspondiente a la posición deseada en el pentagrama, donde la línea más baja de la clave de percusión es `e`:
 
 
 {% include verovio.html
@@ -290,9 +268,9 @@ on the staff, where the lowest line of the percussion clef is `e`:
 </script>
 
 
-## Transposition ##
+## Transposición ##
 
-Unlike pitched notes, unpitched notes will not be transposed by the transpose filter:
+A diferencia de las notas afinadas, las no afinadas no serán transpuestas por el filtro de transposición:
 
 
 {% include verovio.html
@@ -321,7 +299,7 @@ Unlike pitched notes, unpitched notes will not be transposed by the transpose fi
 *-	*-
 </script>
 
-Applying the filter `transpose -t m3` to transpose the music up a minor third:
+Aplicando el filtro `transpose -t m3` para transponer la música a una tercera menor:
 
 {% include verovio.html
 	source="transpose2"
@@ -350,7 +328,7 @@ Applying the filter `transpose -t m3` to transpose the music up a minor third:
 *-	*-
 </script>
 
-The final transposed data (compile filter with <span class="keypress">alt-c</span>):
+Los datos finales transpuestos (compila el filtro con <span class="keypress">alt-c</span>):
 
 {% include verovio.html
 	source="transpose3"
@@ -378,10 +356,7 @@ The final transposed data (compile filter with <span class="keypress">alt-c</spa
 *-	*-
 </script>
 
-If you need to transpose unpitched notes, then temporarily remove the `R` marker, 
-and then add it back after transposing the music.  Use the shed filter to
-convert `R` into an unused signifier, such as `Z` and then back again after
-transposition as an easy method to force unpitched notes to transpose.
+Si necesitas transponer notas no afinadas, elimina temporalmente el marcador `R` y vuelve a añadirlo después de transponer la música.  Utiliza el filtro shed para convertir `R` en un significante no utilizado, como `Z`, y volver a añadirlo después de la transposición como método fácil para forzar la transposición de las notas no afinadas. 
 
 {% include verovio.html
 	source="transpose4"
@@ -412,13 +387,7 @@ transposition as an easy method to force unpitched notes to transpose.
 *-	*-
 </script>
 
-The filter `-k -e 's/R/Z/g'` first changes all `R` characters into
-`Z` in `**kern` data (`-k` means only process `**kern` spines, and
-only data tokens will be processed by default).  Then the `transpose
--t m3` filter transposes all notes up a minor third in both pitched
-and previously unpitched notes.  And finally `shed -k -e 's/Z/R/g'`
-changes the `Z` characters back into `R` characters.  Here is the
-final data after unpitched note transposition:
+El filtro `-k -e 's/R/Z/g'` cambia primero todos los caracteres `R` en `Z` en los datos de `**kern` (`-k` significa que sólo se procesan las columnas de `**kern`, y por defecto sólo se procesan los tokens de datos).  A continuación, el filtro `transpose -t m3` transpone todas las notas hacia arriba una tercera menor tanto en las notas afinadas como en las no afinadas previamente.  Y por último, el filtro `shed -k -e 's/Z/R/g'` cambia los caracteres `Z` por `R` de nuevo.  Estos son los datos finales después de la transposición de las notas no afinadas:
 
 {% include verovio.html
 	source="transpose5"
@@ -447,13 +416,9 @@ final data after unpitched note transposition:
 </script>
 
 
-## Analysis considerations ##
+## Consideraciones sobre el análisis ##
 
-If you want to do rhythmic analysis with data containing unpitched
-notes, nothing special needs to be done to the music.  However, for
-pitch analysis with tools that are not aware of the `R` marker,
-first convert the `R` into `r` to make these notes appear as rests
-in the data.  This can be done easily with the shed filter:
+Si deseas realizar un análisis rítmico con datos que contengan notas no afinadas, no es necesario hacer nada especial a la música.  Sin embargo, para el análisis de la afinación con herramientas que no conocen el marcador `R`, primero hay que convertir la `R` en `r` para que estas notas aparezcan como silencios en los datos.  Esto se puede hacer fácilmente con el filtro shed:
 
 {% include verovio.html
 	source="analysis1"
@@ -482,7 +447,7 @@ in the data.  This can be done easily with the shed filter:
 </script>
 
 
-Add the filter `shed -ke 's/R/r/g'` to the data:
+Añade el filtro `shed -ke 's/R/r/g'` a los datos:
 
 {% include verovio.html
 	source="analysis2"
@@ -514,16 +479,9 @@ Add the filter `shed -ke 's/R/r/g'` to the data:
 </script>
 
 
-There is currently a bug in verovio that causes the notation to
-not show if there is a beam containing only rests, so the filter
-`shed -s1 -e 's/[JLKk]//g'` needs to be added if you want to see
-the rests (this is not otherwise necessary preparation for
-input to analysis tools, and should be fixed in verovio in the
-future).  The `-s1` option means to only apply the sed commands
-to the first spine.
+Actualmente hay un error en Verovio que hace que la notación no se muestre si hay un barrado de notas que sólo contiene silencios, por lo que hay que añadir el filtro `shed -s1 -e 's/[JLKk]//g'` si se quieren ver los silencios (por lo demás, esto no es una preparación necesaria para la entrada en las herramientas de análisis, y debería arreglarse en Verovio en el futuro).  La opción `-s1` significa aplicar los comandos sed sólo a la primera columna.
 
-And after compiling the filter (with <span class="keypress">alt-c</span>), the
-data has rests that were originally unpitched notes:
+Y después de compilar el filtro (con <span class="keypress">alt-c</span>), los datos tienen silencios que originalmente eran notas no afinadas:
 
 {% include verovio.html
 	source="analysis3"
@@ -552,26 +510,25 @@ data has rests that were originally unpitched notes:
 </script>
 
 
-## Percussion instrument codes ##
+## Códigos de los instrumentos de percusión ##
 
-Percussion instruments can be categorized as such with the `*ICidio`
-(idiophone) interpretation.  Specific insturments:
+Los instrumentos de percusión pueden clasificarse como tales con la interpretación `*ICidio` (idiófono).  Instrumentos específicos:
 
-| Code  | Name | MIDI key # |
+| Código  | Nombre | Nota MIDI # |
 | ----- | ---- | ------ |
-| `*Ibdrum`  | bass drum (kit)     | 35    |
-| `*Icasts`  | castanets           |       |
-| `*Ipiatt`  | cymbals             |       |
-| `*Isdrum`  | snare drum (kit)    | 38    |
-| `*Icrshc`  | crash cymbal (kit)  | 49/57 |
+| `*Ibdrum`  | bombo (kit)     | 35    |
+| `*Icasts`  | castañuelas           |       |
+| `*Ipiatt`  | platillos             |       |
+| `*Isdrum`  | tambor repicador (kit)    | 38    |
+| `*Icrshc`  | platillo crash (kit)  | 49/57 |
 | `*Igong`   | gong                |       |
 | `*Imarac`  | maracas             | 70    |
-| `*Iridec`  | ride cymbal (kit)   | 51/59 |
-| `*Ispshc`  | splash cymbal (kit) | 55    |
+| `*Iridec`  | platillos ride (kit)   | 51/59 |
+| `*Ispshc`  | platillo splash (kit) | 55    |
 | `*Itabla`  | tabla               |       |
-| `*Itambn`  | tambourine          | 54    |
-| `*Itom`    | tom-tom drum        | 41/43/45/47/48/50 |
-| `*Itrngl`  | triangle            | 81/80 |
+| `*Itambn`  | pandereta          | 54    |
+| `*Itom`    | tambor tom-tom        | 41/43/45/47/48/50 |
+| `*Itrngl`  | triángulo            | 81/80 |
 
 
 

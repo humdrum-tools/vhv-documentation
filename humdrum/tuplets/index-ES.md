@@ -1,5 +1,5 @@
 ---
-title: Tuplet styling
+title: Grupos de valoración especial
 lang: en es
 ref: humdrum-tuplet_styling
 author: Craig Stuart Sapp
@@ -11,31 +11,22 @@ last_updated: 21 Mar 2019
 tags: [all, humdrum ]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: Visual tuplet numbers can be turned on or off for a spine.
+summary: Los números visualizados de los grupos irregulares pueden activarse o desactivarse para una columna.
 sidebar: main_sidebar
 permalink: /humdrum/tuplets/index-ES.html
 ---
 
 
-Music notation containing a lot of tuplets will often drop tuplet
-numbers after the first few occurrences of tuplets when the
-rhythmic interpretation without the number remains clear.  Below
-is an example of omitted triplet numbers in the first movement of
-Beethoven's *moonlight* sonata.  Only the first measure contains
-visible tuplet numbers, and subsequent triplets are not marked:
+La notación musical que contiene muchos grupos artificiales suele omitir los números de los grupos después de las primeras ocurrencias de los mismos cuando la interpretación rítmica sin el número sigue siendo clara.  A continuación se muestra un ejemplo de números de tresillos omitidos en el primer movimiento de la sonata *Claro de Luna* de Beethoven.  Sólo el primer compás contiene números de tresillos visibles, y los siguientes no están marcados:
 
 {% include image.html
 	file="moonlight.gif"
 	alt="moonlight sonata mvmt 1, mm 1-8"
 	max-width="100%"
-	caption="Beethoven, Moonlight sonata, mvmt.1, mm. 1&ndash;8."
+	caption="Beethoven, Sonata Claro de Luna, mvmt.1, mm. 1&ndash;8."
 %}
 
-To turn off tuplet numbers in a Humdrum `**kern` spine, add the
-tandem interpretation `*Xtuplet` somewhere in front of the first
-note of a tuplet that should have a suppressed number.  To start
-displaying visual tuplet numbers again in the same spine, add
-the tandem interpretation `*tuplet`.
+Para desactivar los números de grupo irregular en una columna de Humdrum `**kern`, añade la interpretación tándem `*Xtuplet` en algún lugar delante de la primera nota del grupo que debería tener un número suprimido.  Para volver a mostrar los números de grupo irregular en la misma columna, añade la interpretación tándem `*tuplet`.
 
 {% include verovio.html
 	source="moonlight"
@@ -166,31 +157,25 @@ the tandem interpretation `*tuplet`.
 !!!RDF**kern: > = above
 </script>
 
-Try moving or adding `*tuplet`/`*Xtuplet` interpretations in the above 
-Humdrum data to see how this affects the music notation on the right.
+Prueba a mover o añadir las interpretaciones `*tuplet`/`*Xtuplet` en los datos anteriores de Humdrum para ver cómo afecta esto a la notación musical de la derecha.
 
 {% include warning.html
-	content="A tuplet styling interpretation applies to an entire spine, and cannot be controlled independently within sub-spines."
+	content="Una interpretación del estilo visual del grupo se aplica a toda una columna, y no puede controlarse de forma independiente dentro de las subcolumnas."
 %}
 
 
-## Tuplet-styling with MusicXML import ##
+## Estilo visual de grupos irregulares en la importación de MusicXML ##
 
-The `*tuplet`/`*Xtuplet` interpretations can be extracted from MusicXML data when converting into
-Humdrum data.  Attach any text expression starting with a `*` to a note or rest, and it will be inserted
-a tandem interpretation before the note.   Below is an example of editing music in MuseScore, where
-tuplet numbers are turned off and the on again:
+Las interpretaciones `*tuplet`/`*Xtuplet` se pueden extraer de los datos MusicXML al convertirlos en datos Humdrum.  Adjunta cualquier expresión de texto que empiece por `*` a una nota o a un silencio, y se insertará una interpretación tándem antes de la nota.   A continuación se muestra un ejemplo de edición de música en MuseScore, donde los números de grupo de valoración especial se desactivan y se activan de nuevo:
 
 {% include image.html
 	file="musescore-tuplet.png"
-	alt="Adding tuplet interpretations in MuseScore"
+	alt="Añadir interpretaciones de grupos irregulares en MuseScore"
 	max-width="100%"
-	caption="Adding text expressions to control tuplet number display style in MuseScore."
+	caption="Añadir expresiones de texto para controlar el estilo de visualización de los números de grupos irregulares en MuseScore."
 %}
 
-This <a target='_blank' href='tuplet.musicxml'>MusicXML file</a> dragged-and-dropped into 
-[VHV](https://verovio.humdrum.org) will produce the following Humdrum data that preserves 
-embedded tandem interpretations controlling the tuplet number styling.
+Este <a target='_blank' href='tuplet.musicxml'>archivo MusicXML</a> arrastrado y soltado en [VHV](https://verovio.humdrum.org) producirá los siguientes datos de Humdrum que conservan las interpretaciones tándem incrustadas que controlan el estilo del número del grupo irregular.
 
 {% include verovio.html
 	source="musescore-tuplet"
@@ -238,11 +223,9 @@ embedded tandem interpretations controlling the tuplet number styling.
 
 
 
-## Positioning tuplet numbers ##
+## Posicionamiento de los números de grupo irregular ##
 
-The tuplet number can be adjusted above or below the staff by using a layout
-command immediately preceding the note that is at the beginning of a 
-tuplet group.
+El número del grupo irregular puede ajustarse por encima o por debajo del pentagrama utilizando un comando de disposición inmediatamente anterior a la nota que está al principio de un grupo irregular.
 
 
 {% include verovio.html
@@ -278,7 +261,7 @@ tuplet group.
 
 
 {% include warning.html
-	content="Tuplet number placement is not handled gracefully by subspine yet.  But in theory tuplet numbers should not be adjusted from their default positions in such cases."
+	content="La colocación de los números de los grupos irregulares todavía no es manejada de manera fina por subcolumnas.  Pero, en teoría, los números de grupo irregular no deberían ajustarse desde sus posiciones por defecto en estos casos."
 %}
 
 

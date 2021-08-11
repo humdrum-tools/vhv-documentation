@@ -1,5 +1,5 @@
 ---
-title: Ottava marks
+title: Marcas de transposición de octava
 lang: en es
 ref: humdrum-ottava_marks
 author: Craig Stuart Sapp
@@ -11,15 +11,13 @@ last_updated: 18 Mar 2017
 tags: [all, humdrum ]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: A description of how to encode ottava marks in **kern spines.
+summary: "Una descripción de cómo codificar las marcas de la transposición de octava en las columnas de **kern"
 sidebar: main_sidebar
 permalink: /humdrum/ottava_marks/index-ES.html
 ---
 
 
-Ottava marks can be encoded in Humdrum `**kern` data by starting the mark
-with the tandem interpretation `*8va` and ending it with the interpretation
-`*X8va`:
+Las marcas de transposición de octava pueden codificarse en los datos de Humdrum `**kern` comenzando la marca con la interpretación tándem `*8va` y terminándola con la interpretación `*X8va`:
 
 {% include verovio.html
 	source="paganini15a"
@@ -60,11 +58,7 @@ with the tandem interpretation `*8va` and ending it with the interpretation
 *-
 </script>
 
-
-Notes under the ottava mark are encoded at *sounding pitch*,
-not an octave lower as seen in the printed music.  Try removing the
-`*8va`/`*X8va` tandem interpretations in the above example to display
-notation like this:
+Las notas bajo la marca de octava se codifican en la *afinación sonora*, no una octava más baja como se ve en la música impresa.  Intenta eliminar las interpretaciones tándem `*8va`/`*X8va` en el ejemplo anterior para mostrar una notación como ésta:
 
 {% include verovio.html
 	source="paganini15b"
@@ -112,7 +106,7 @@ notation like this:
 <br/>
 <br/>
 {% include warning.html
-	content="If you do not close the ottava mark with \"*X8va\", the notes will be transposed, but the mark will not be visible."
+	content="Si no cierra la marca de transposición de octava con \"*X8va\", las notas se transpondrán, pero la marca no será visible."
 %}
 
 
@@ -142,8 +136,7 @@ notation like this:
 
 # Quindicesima
 
-Two octaves up/down can also be encoded with quindicesima marks (with a perfect 15th being 
-the interval of two octaves).
+Dos octavas arriba/abajo también pueden codificarse con marcas de quindicesima (siendo una 15ª perfecta el intervalo de dos octavas).
 
 
 {% include verovio.html

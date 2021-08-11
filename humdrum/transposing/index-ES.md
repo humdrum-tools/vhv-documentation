@@ -1,5 +1,5 @@
 ---
-title: Transposing parts
+title: Instrumentos transpositores
 lang: en es
 ref: humdrum-transposing
 author: Craig Stuart Sapp
@@ -11,21 +11,13 @@ last_updated: 25 Jan 2018
 tags: [all, humdrum]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: A description of how to encode transposing parts in Humdrum scores.
+summary: Una descripción de cómo codificar los instrumentos transpositores en las partituras de Humdrum.
 sidebar: main_sidebar
 permalink: /humdrum/transposing/index-ES.html
 ---
 
 
-Humdrum scores are always written in sounding pitch.  If you want to be 
-able to display a transposing score, then add transposition information to each part that transposes.  A transposing interpretation start with the 
-string `*ITr` followed by diatonic/chromatic description of the interval
-needed to produce the written score.  For example a B-flat instrument needs 
-to be written up a major second from its sounding pitches.  This means going
-up one diatonic pitch name, or going up two chromatic semi-tones.  So the final
-transposing interpretation is `*ITrd1c2`.  For an instrument in F, the 
-transposition would be up 4 diatonic steps, equal to 7 semi-tones for an
-interpretation of `*ITrd4c7`.
+Las partituras siempre se escriben en tono sonoro.  Si quieres poder mostrar una partitura de un instrumento transpositor, entonces añade información de transposición a cada parte que transpongas.  Una interpretación transpositora comienza con la cadena `*ITr` seguida de la descripción diatónica/cromática del intervalo necesario para producir la partitura escrita.  Por ejemplo, un instrumento en Si bemol necesita ser escrito subiendo una segunda mayor desde su tono de concierto.  Esto significa subir un tono diatónico, o subir dos semitonos cromáticos.  Por tanto, la interpretación final de la transposición es `*ITrd1c2`.  Para un instrumento en Fa, la transposición sería subir 4 pasos diatónicos, lo que equivale a 7 semitonos para una interpretación de `*ITrd4c7`.
 
 {% include verovio.html
 	source="transpose"
@@ -117,31 +109,19 @@ interpretation of `*ITrd4c7`.
 *-	*-	*-
 </script>
 
-In the above example score, the second part simulates a French horn part
-in the key of F, but typically with a horn part, there is no key signature
-and it is omitted from the score (otherwise it should show one B-flat 
-in the key signature).
+En la partitura de ejemplo anterior, la segunda parte simula una parte de trompa en la tonalidad de Fa, pero típicamente con una parte de trompa, no hay signatura de la tonalidad y se omite en la partitura (de lo contrario debería mostrar un Si bemol en la armadura).
 
-When playing back a score containing transposing instruments in VHV, the MIDI 
-conversion will be a sounding score.
+Cuando se reproduce una partitura que contiene instrumentos transpositores en VHV, la conversión MIDI será una partitura sonora.
 
-## MusicXML import ##
+## Importación de MusicXML ##
 
-MusicXML files containing transposing parts will be handled properly when
-the files are converted into Humdrum data by drag-and-dropping the files
-onto the VHV webpage.  Notes are transposed from written pitch to
-sounding pitch during the conversion process.
+Los archivos MusicXML que contengan partes transpuestas se manejarán correctamente cuando los archivos se conviertan en datos de Humdrum arrastrando y soltando los archivos en la página web de VHV.  Las notas se transponen de la afinación escrita a la afinación sonora durante el proceso de conversión.
 
-Try downloading [this file](Transposing.xml), containing the example score 
-in MusicXML format, and then dragging it into the VHV editor.
+Intenta descargar [este archivo](Transposing.xml), que contiene la partitura de ejemplo en formato MusicXML, y luego arrástrala al editor VHV.
 
-## MEI export ##
+## Exportación de MEI ##
 
-When converting into MEI data, notes are stored in transposed form,
-and the header for each part contains the transposition information
-for converting to sounding pitch (so a B-flat instrument written part
-would be transposed down a diatonic step equal to two semi-tones down to 
-produce the sounding pitches).
+Al convertir en datos MEI, las notas se almacenan en forma transpuesta, y la cabecera de cada parte contiene la información de transposición para convertirla en tono sonoro (por lo que una parte escrita para un instrumento en Si bemol se transpondría un tono diatónico igual a dos semitonos hacia abajo para producir los tonos sonoros).
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Tremolos
+title: Trémolos
 lang: en es
 ref: humdrum-tremolos
 author: Craig Stuart Sapp
@@ -11,15 +11,12 @@ last_updated: 18 Mar 2018
 tags: [all, humdrum]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: A description of how to encode tremolos in **kern spines.
+summary: Una descripción de cómo codificar los trémolos en las columnas de **kern.
 sidebar: main_sidebar
 permalink: /humdrum/tremolos/index-ES.html
 ---
 
-Tremolos are represented in `**kern` by encoding the individual notes
-in the tremolo within a single beam group, and then adding a
-`*tremolo` tandem interpretation before the beamed notes that should
-be converted into a tremolo.
+Los trémolos se representan en `**kern` codificando las notas individuales del trémolo dentro de un grupo barrado, y añadiendo después una interpretación tándem `*tremolo` antes de las notas del barrado que deben convertirse en un trémolo.
 
 {% include verovio.html
 	source="tremolo"
@@ -55,7 +52,7 @@ be converted into a tremolo.
 *-
 </script>
 
-Use `*Xtremolo` to turn off tremolo conversion of beamed notes:
+Utiliza `*Xtremolo` para desactivar la conversión de trémolo de las notas barradas:
 
 {% include verovio.html
 	source="tremolooff"
@@ -85,9 +82,7 @@ Use `*Xtremolo` to turn off tremolo conversion of beamed notes:
 
 
 
-When `*tremolo` is active, only beamed groups that can convert into tremolos
-will be converted into tremolos.  Other patterns of beamed notes will remain
-unaffected.
+Cuando el "trémolo" está activo, sólo se convertirán en trémolos los grupos barrados que puedan convertirse en trémolos.  Los demás patrones de notas barradas no se verán afectados.
 
 
 {% include verovio.html
@@ -120,7 +115,7 @@ unaffected.
 </script>
 
 
-Tremolos also work with beamed chord notes
+Los trémolos también funcionan con las notas de acordes barradas
 
 
 {% include verovio.html
@@ -148,10 +143,9 @@ Tremolos also work with beamed chord notes
 *-
 </script>
 
-## Fingered tremolos ##
+## Trémolos de dos noas ##
 
-The `*tremolo` interpretation can also reduce alternating notes into
-tremolos:
+La interpretación del `*tremolo` también puede reducir las notas alternas a trémolos:
 
 {% include verovio.html
 	source="tremolo5"
@@ -193,7 +187,7 @@ tremolos:
 </script>
 
 
-Two-note tremolos also work with chords:
+Los trémolos de dos notas también funcionan con los acordes:
 
 {% include verovio.html
 	source="tremolo6"
@@ -222,10 +216,9 @@ Two-note tremolos also work with chords:
 
 
 
-## Disabling tremolos ##
+## Desactivación de los trémolos ##
 
-Tremolos can be disabled from notation rendering by using the
-[shed](/filter/shed) filter:
+Los trémolos pueden desactivarse de la representación de la notación utilizando el filtro [shed](/filter/shed):
 
 
 {% include verovio.html
@@ -282,12 +275,9 @@ Tremolos can be disabled from notation rendering by using the
 </script>
 
 
-## Tremolo filter ##
+## Filtro tremolo ##
 
-The tremolo filter can be used to add tremolo notes to a Humdrum
-score that does not have expanded tremolos.  To expand a single
-note into a tremolo, add the duration of the tremolo surrounded by
-`@` markers after the note token(s):
+El filtro tremolo puede utilizarse para añadir notas de trémolo a una partitura de Humdrum que no tenga trémolos expandidos.  Para expandir una sola nota en un trémolo, añade la duración del trémolo rodeada de marcadores `@` después de la(s) nota(s):
 
 {% include verovio.html
 	source="tremolo1"
@@ -309,10 +299,8 @@ note into a tremolo, add the duration of the tremolo surrounded by
 *-
 </script>
 
-Scores should not be stored in compressed tremolo format, as the
-`@` encoding is only intended to add tremolos to the score using
-the tremolo filter.  Here is the result of compiling the filter:
-
+Las partituras no deben almacenarse en formato de trémolo comprimido, ya que la codificación `@` sólo está pensada para añadir trémolos a la partitura utilizando el filtro de trémolo.  Este es el resultado de la compilación del filtro:
+s
 {% include verovio.html
 	source="tremolo1b"
 	humdrum-min-width="310px"
@@ -369,10 +357,7 @@ the tremolo filter.  Here is the result of compiling the filter:
 </script>
 
 
-Two-note tremolos are encoded in a similar manner.  Place the
-duration for the tremolo only on the first note of a two-note pair,
-surrounded with two `@@` characters rather than one.  Each note of
-the pair should posses one-half of the total duration of the tremolo.
+Los trémolos de dos notas se codifican de forma similar.  Coloca la duración del trémolo sólo en la primera nota de un par de dos notas, rodeada de dos caracteres `@@ en lugar de uno.  Cada nota del par debe poseer la mitad de la duración total del trémolo. 
 
 {% include verovio.html
 	source="tremolo2"
@@ -399,7 +384,7 @@ the pair should posses one-half of the total duration of the tremolo.
 
 
 
-The result of compiling the filter:
+El resultado de la compilación del filtro:
 
 {% include verovio.html
 	source="tremolo2b"

@@ -1,5 +1,5 @@
 ---
-title: Pedal marks
+title: Marcas de pedal
 lang: en es
 ref: humdrum-pedal_marks
 author: Craig Stuart Sapp
@@ -11,15 +11,13 @@ last_updated: 18 Mar 2017
 tags: [all, humdrum ]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: A description of how to encode pedal marks in **kern spines.
+summary: Descripción de la codificación de las marcas de pedal en las columnas `**kern`
 sidebar: main_sidebar
 permalink: /humdrum/pedal_marks/index-ES.html
 ---
 
 
-Sustain pedal marks can be encoded in Humdrum `**kern` data by using
-`*ped` to indicate a down-pedal mark and `*Xped` to indicate an
-up-pedal mark:
+Las marcas de pedal de sostenido pueden codificarse en los datos Humdrum `**kern` utilizando `*ped` para indicar una marca de inicio de pedal y `*Xped` para indicar una marca de fin de pedal:
 
 {% include verovio.html
 	source="pedal"
@@ -85,12 +83,9 @@ up-pedal mark:
 </script>
 
 
-Try adding or removing pedal up/down marks in the above Humdrum data to see how
-the notation on the right changes.
+Prueba a añadir o quitar marcas de pedal arriba/abajo en los datos de Humdrum anteriores para ver cómo cambia la notación de la derecha.
 
 
-Pedal marks can be added graphically in VHV by clicking on a note and 
-pressing <span class="keypress">alt-p</span> to add a down-pedal mark or
-<span class="keypress">alt-shift-P</span> to add an up-pedal mark.
+Las marcas de pedal pueden añadirse gráficamente en VHV haciendo clic en una nota y pulsando <span class="keypress">alt-p</span> para añadir una marca de inicio de pedal o <span class="keypress">alt-shift-P</span> para añadir una marca de fin de pedal.
 
 

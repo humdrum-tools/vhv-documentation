@@ -1,23 +1,22 @@
 ---
-title: Mensural notation
+title: Notación mensural
 lang: en es
 ref: humdrum-mens
 author: Craig Stuart Sapp
 translator: David Rizo
 keywords: humdrum mensural notation
 creation_date: 8 May 2018
-translation_date: 10 Aug 2021
+translation_date: 11 Aug 2021
 last_updated: 14 Dec 2020
 tags: [all, humdrum ]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: A description of how to encode mensural music.
+summary: Una descripción de cómo codificar la música mensural.
 sidebar: main_sidebar
 permalink: /humdrum/mens/index-ES.html
 ---
 
-Mensural music notation can be encoded in Humdrum using the `**mens`
-exclusive interpretation:
+La notación musical mensural puede ser codificada en Humdrum utilizando la interpretación exclusiva `**mens`:
 
 {% include verovio.html
 	source="mens"
@@ -77,14 +76,11 @@ sid
 *-
 </script>
 
-Also see the [kern2mens filter](/filter/kern2mens) to convert `**kern`
-data into `**mens` data.
+Véase también el [filtro kern2mens](/filter/kern2mens) para convertir los datos `**kern` en datos `**mens`.
 
-## Pitch ##
+## Altura / tono ##
 
-`**mens` pitch derives its pitch representation from `**kern`.  The letters a&ndash;g
-represent diatonic pitches, with duplicating of letters and change of case controlling
-the octave:
+La codificación de la altura de las notas en `**mens` deriva de la representación de la de `**kern`.  Las letras a&ndash;g representan tonos diatónicos, con duplicación de letras y cambio de mayúsculas y minúsculas que controlan la octava:
 
 {% include verovio.html
 	source="octave"
@@ -114,15 +110,15 @@ Sff
 </script>
 
 
-### Accidentals ###
+### Alteraciones ###
 
-Accidentals are also similar to `**kern` data:
+Las alteraciones también son similares a los datos de `**kern`:
 
-Symbol | Meaning
+Símbolo | Significado
 -------|--------
-`-`    | flat sign
-`n`    | natural sign
-`#`    | sharp sign
+`-`    | signo bemol
+`n`    | signo natural / becuadro
+`#`    | signo sostenido
 
 
 
@@ -149,10 +145,7 @@ SBn
 *-
 </script>
 
-The treatment of accidentals in `**mens` data is subtly different than in
-`**kern` data.  In `**mens` data, accidentals are treated as visual signs by default, 
-while in `**kern` data, they are treated as performance accidentals that may or
-may not be printed accidentals. 
+El tratamiento de las alteraciones en los datos de `**mens` es sutilmente diferente al de los datos de `**kern`.  En los datos de `**mens`, las alteraciones se tratan por defecto como signos visuales, mientras que en los datos de `**kern` se tratan como alteraciones de ejecución que pueden ser o no alteraciones impresas. 
 
 {% include verovio.html
 	source="accid2"
@@ -177,11 +170,7 @@ Sc#
 *-
 </script>
 
-Compare to an analogous encoding in `**kern` data, where the second note
-is also a C-natural, but modern conventions for displaying chromatic
-states of notes forces an automatic natural on the note.  And the last
-note has a suppressed sharp since the previous notes set the chromatic
-state for that diatonic pitch to a sharp.
+Compárese con una codificación análoga en los datos de `**kern`, donde la segunda nota es también un Do natural, pero las convenciones modernas para mostrar los estados cromáticos de las notas fuerzan un natural automático en la nota.  Y la última nota tiene un sostenido suprimido, ya que las notas anteriores establecen el estado cromático para ese tono diatónico en un sostenido.
 
 {% include verovio.html
 	source="accid3"
@@ -206,23 +195,19 @@ state for that diatonic pitch to a sharp.
 *-
 </script>
 
-### Editorial accidentals ###
+### Alteraciones editoriales ###
 
-Editorial accidentals are used to clarify the performance accidentals to be
-applied to the music.  There are four levels of editorial accidentals, which are
-indicated by adding the following characters after an accidental:
+Las alteraciones editoriales se utilizan para aclarar las alteraciones de interpretación que se aplicarán a la música.  Existen cuatro niveles de alteraciones editoriales, que se indican añadiendo los siguientes caracteres después de una alteración:
 
-Accidental&nbsp;qualifier | Meaning
+Calificador de la alteración | Significado
 --------------------------|--------
-`y`  | The accidental is strongly implied by the music notation.  This typically means that the accidental is derived from the key signature.  
-`yy` | The accidental is weakly implied by the music notation.  This is typically used to indicate the cancellation of a visual accidental.  Roughly equivalent to a cautionary accidental.
-`Y`  | A performance accidental.  The accidental is not directly implied by the music notation, but would be inferred by a performer, such as to create a leading tone before a cadence note.
-`YY` | A editorial intervention due to a suspected scribal error.  There is a suspected missing visual accidental on the note which is missing.
+`y`  | La alteración está fuertemente implícita en la notación musical.  Esto significa típicamente que el accidental se deriva de la armadura.  
+`yy` | La alteración está débilmente implícita en la notación musical.  Se suele utilizar para indicar la anulación de una alteración visual.  Equivale aproximadamente a un accidental de cortesía.
+`Y`  | Alteración de la interpretación.  La alteración no está directamente implícita en la notación musical, sino que sería deducida por un intérprete, por ejemplo para crear un tono principal (*leading tone*) antes de una nota de cadencia.
+`YY` | Intervención editorial debido a un presunto error de redacción.  Se sospecha que falta una alteración visual en la nota.
 
 
-Here is a typical use of the `y` qualifier to indicate that a B pitch
-in the music is flat event hough the note does not have a flat in front
-of it since the flat is from the key signature:
+Este es un uso típico del calificador `y` para indicar que una nota Si en la música es bemol aunque la nota no tenga un bemol delante ya que el bemol viene de la armadura:
 
 {% include verovio.html
 	source="accid4"
@@ -251,12 +236,7 @@ sf
 *-
 </script>
 
-Such an accidental can be displayed as an editorial accidental above the note
-by placing `*acclev:y` somewhere before the note.  This means that the editorial
-accidental level starts at `y` (and also includes `yy`, `Y`, and `YY` levels
-as well).  By default, only the `YY` level of accidentals will be displayed
-as editorial accidentals.  To also suppress this level of accidental being
-displayed as editorial, use `*Xacclev`.
+Tal alteración puede mostrarse como una alteración editorial sobre la nota colocando `*acclev:y` en algún lugar antes de la nota.  Esto significa que el nivel de alteración editorial comienza en `y` (y también incluye los niveles `yy`, `Y` y `YY`).  Por defecto, sólo el nivel de alteraciones `YY` se mostrará como alteraciones editoriales.  Para suprimir también este nivel de alteración que se muestra como editorial, utiliza `*Xacclev`.
 
 {% include verovio.html
 	source="accid5"
@@ -286,11 +266,7 @@ sf
 *-
 </script>
 
-Mensuration key signatures only affect the pitches of a particular
-diatonic pitch, unlike modern keys signatures that apply to the diatonic
-pitch class.  An example use of the `yy` qualifier is to caution
-that a pitch should be natural when the key signature has a flat in another
-octave:
+Las armaduras en mensural sólo afectan a las notas de un determinado tono diatónico, a diferencia de las armaduras modernas que se aplican a la clase de tono diatónico.  Un ejemplo de uso del calificador `yy` es para advertir que un tono debe ser natural cuando la armadura tiene un bemol en otra octava:
 
 {% include verovio.html
 	source="accid6"
@@ -320,12 +296,10 @@ sBnyy
 *-
 </script>
 
-To view this cautionary accidental, either `*acclev:y` or `*acclev:yy` must be used.
+Para ver esta alteración de cortesía o precaución, debe utilizarse `*acclev:y` o `*acclev:yy`.
 
 
-The `Y` level for accidentals is used to indicate an unwritten accidental that a
-performer would be expected to sing based on performance practice, such as creating
-a leading tone before a cadence:
+El nivel `Y` para las alteraciones se utiliza para indicar una alteración no escrita que se espera que un intérprete cante basándose en la práctica de la interpretación, como la creación de un tono principal (*leading tone*) antes de una cadencia:
 
 {% include verovio.html
 	source="accid7"
@@ -354,14 +328,11 @@ Sd
 *-
 </script>
 
-By default, these accidentals will be hidden in the rendering to graphical notation.
-Use `*acclev:Y` to display these accidentals as editorial ones, or use either of the
-more generous levels `*acclev:yy` or `*acclev:y` which will also show performance
-accidentals as visible editorial ones.
+Por defecto, estas alteraciones estarán ocultas en la representación de la notación gráfica. Utiliza `*acclev:Y` para mostrar estas alteraciones como editoriales, o utiliza cualquiera de los niveles más generosos `*acclev:yy` o `*acclev:y` que también mostrarán las alteraciones de interpretación como editoriales visibles.
 
-## Note stems ##
+## Plicas de las notas ##
 
-Note stems are similar to those in `**kern` data.  `/` means stem up and `\` means stem down:
+Las plicas son similares a las de los datos de `**kern`.  `/` significa plica hacia arriba y `\` significa plica hacia abajo:
 
 {% include verovio.html
 	source="stem1"
@@ -382,12 +353,9 @@ Mc\
 *-
 </script>
 
-### Automatic stem directions ###
+### Direcciones automáticas de la plica ###
 
-In general, up-stems are more common in mensural music, so the `*stem` interpretation
-can be used to set the stems in the music to a fixed direction.  `*stem:/` will force
-stems up on all subsequence notes, while `*stem:\` will force them down.  To allow
-automatic stem directions again, use `*stem:X`:
+En general, las plicas ascendentes son más comunes en la música mensural, por lo que la interpretación `*stem` puede utilizarse para establecer las plicas en la música en una dirección fija.  La interpretación `*stem:/` forzará las plicas hacia arriba en todas las notas subsiguientes, mientras que `*stem:\` las forzará hacia abajo.  Para volver a permitir la dirección automática de las plicas, utiliza `*stem:X`:
 
 {% include verovio.html
 	source="stem2"
@@ -452,9 +420,9 @@ Mg
 </script>
 
 
-## Rhythm ##
+## Ritmo ##
 
-Note rhythms are represented by letters:
+Los ritmos de las notas se representan con letras:
 
 <style>
 
@@ -477,12 +445,12 @@ Note rhythms are represented by letters:
 
 
 <table class="dense twocol">
-<tr><th>Character</th><th> Meaning</th>                             <th>Character</th><th> Meaning</th>  </tr>
-<tr><td> X </td><td> maxima (octuple whole note)</td>    <td>   </td>  <td> </td>            </tr>
-<tr><td> L </td><td> longa (quadruple whole note)</td>     <td>   </td>  <td> </td>            </tr>
-<tr><td> S </td><td> Breve (double whole note)</td>     <td> s </td>  <td> semi-breve (whole note) </td>  </tr>
-<tr><td> M </td><td> Minima (half note)</td>     <td> m </td>  <td> semi-minim  (quarter note) </td> </tr>
-<tr><td> U </td><td> Fusa (eighth note)</td>       <td> u </td>  <td> semi-fusa (sixteenth note) </td>   </tr>
+<tr><th>Carácter</th><th> Significaado</th>                             <th>Carácter</th><th> Significado</th>  </tr>
+<tr><td> X </td><td> maxima (redonda óctuple)</td>    <td>   </td>  <td> </td>            </tr>
+<tr><td> L </td><td> longa (redonda cuádruple)</td>     <td>   </td>  <td> </td>            </tr>
+<tr><td> S </td><td> Brevi(S) (doble redonda)</td>     <td> s </td>  <td> semi-brevi(s) (redonda) </td>  </tr>
+<tr><td> M </td><td> Minima (blanca)</td>     <td> m </td>  <td> semi-minim  (negra) </td> </tr>
+<tr><td> U </td><td> Fusa (corchea)</td>       <td> u </td>  <td> semi-fusa (semicorchea) </td>   </tr>
 </table>
 
 
@@ -512,24 +480,17 @@ ur	uc
 
 
 
-### Dots ###
+### Puntillos ###
 
-Dots representing either augmentation dots or dots of division are encoded
-as the character `:`.  This dot does not directly affect the duration of
-notes, instead use `p` to perfect notes.  In the future this dot character could
-be used to automatically determine if notes are perfect or imperfect,
-based on the prevailing mensuration and surrounding notes.
+Los puntillos que representan puntillos de prolongación o de separación. Este puntillos no afecta directamente a la duración de las notas, sino que se utiliza `p` para perfeccionar las notas.  En el futuro, este carácter de punto podría utilizarse para determinar automáticamente si las notas son perfectas o imperfectas, basándose en la medición predominante y en las notas circundantes.
 
-## Mensural signs ##
+## Signos de mensuración ##
 
-Mensural signs are indicated by the pattern `*met(X)` where `X` is the
-description of the mensuration sign given in the table below.  Common
-mensurations are `*met(O)` for circle mensuration, and `*met(C|)` for
-Cut-C mensuration.  Here is a table of some of the possible mensurations:
+Los signos de mensuración se indican con el patrón `*met(X)`, donde `X` es la descripción del signo de mensuración que figura en la tabla siguiente.  Las mensuraciones más comunes son `*met(O)` para la mensuración de círculos, y `*met(C|)` para la mensuración de Cut-C.  A continuación se muestra una tabla con algunas de las posibles mensuraciones:
 
 
 <table class="dense twocol">
-<tr><th>Mensuration</th><th> Graphical representation</th>                             <th>Mensuration</th><th> Graphical representation</th>  </tr>
+<tr><th>Mensuración</th><th> Representación gráfica</th>                             <th>Mensuración</th><th> Representación gráfica</th>  </tr>
 
 <tr>
 	<td> <tt>*met(C|)</tt> </td><td>  <img style="height:20px" src="c-pipe.svg"> </td>    
@@ -588,7 +549,7 @@ Cut-C mensuration.  Here is a table of some of the possible mensurations:
 
 </table>
 
-Try out the above mensuration signs in this example:
+Prueba los signos de mensuración anteriores en este ejemplo:
 
 {% include verovio.html
 	source="mensuration"
@@ -605,10 +566,9 @@ Lr
 </script>
 
 
-## Ligatures ##
+## Ligature ##
 
-Ligatures are indicated with square brackets for recta ligatures,
-and angle brackets for obliqua ligatures. 
+Las ligaduras se indican con corchetes para las ligaduras rectas, y con símbolos `<`y  `>` para las ligaduras oblicuas. 
 
 {% include verovio.html
 	source="ligature"
@@ -635,22 +595,19 @@ SA]
 *-
 </script>
 
-[Need to prevent &lt; and &gt; for oblique ligatures from being interpreted as HTML brackets].
+[Es necesario evitar &lt; y &gt; para que las ligaduras oblicuas no se interpreten como paréntesis HTML].
 
 
-## Barlines ##
+## Barras de compás ##
 
-Barlines behave the same as in `**kern` data.  Currently barlines are required
-in the data in order to break lines of music across multiple systems.  Add a dash
-character (`-`) to the barline to make it invisible.  Barlines should be placed
-at breve boundaries.
+Las líneas de compás se comportan igual que en los datos de `**kern`.  Actualmente, las líneas de compás son necesarias en los datos para romper los pentagramas visuales en varios sistemas.  Añade un carácter de guión (`-`) a la línea de barras para hacerla invisible.  Las líneas de compás deben colocarse en los límites de las breves.
 
 
-## Coloration ##
+## Coloración ##
 
-Colored notes are marked indicated by adding `~` to each note that is colored.
+Las notas coloreadas se indican añadiendo `~` a cada nota coloreada.
 
-Example in white notation:
+Ejemplo en notación blanca:
 
 {% include verovio.html
 	source="color-white"
@@ -675,7 +632,7 @@ Sc
 *-
 </script>
 
-Example in black notation:
+Ejemplo en notación negra:
 
 {% include verovio.html
 	source="color-black"
@@ -702,23 +659,17 @@ Sc
 </script>
 
 
-### Perfection ###
+### Perfección ###
 
-The letter `p` appended to the basic rhythmic value means that the note/rest
-is *perfected*.  In modern notation this is equivalent to adding an augmentation
-dot after a note, such as a dotted half note.  The letter `i` indicates
-an *imperfect* rhythm.  In modern notation all notes are imperfect unless there
-is an augmentation dot after it to make it perfect.
+La letra `p` añadida al valor rítmico básico significa que la nota/silencio es *perfecta*.  En la notación moderna, esto equivale a añadir un puntillo de prolongación después de una nota, como una blanca con puntillo.  La letra "i" indica un ritmo *imperfecto*.  En la notación moderna, todas las notas son imperfectas a menos que haya un puntillo de prolongación después de ellas para hacerlas perfectas.
 
-The `p` and `i` rhythmic qualifiers are not required unless you are creating
-a polyphonic score.  In that case the exact duration of the notes are required
-to align the parts.
+Los calificadores rítmicos `p` y `i` no son necesarios a menos que esté creando una partitura polifónica.  En ese caso se requiere la duración exacta de las notas para alinear las partes.
 
-## Alteration ##
+## Alteratio ##
 
-To be implemented/described
+Por implementar/describir
 
-## References ##
+## Referencias ##
 
 <ul>
 

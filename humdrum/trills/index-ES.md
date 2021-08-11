@@ -1,5 +1,5 @@
 ---
-title: Trills
+title: Trinos
 lang: en es
 ref: humdrum-trills
 author: Craig Stuart Sapp
@@ -11,13 +11,12 @@ last_updated: 27 Mar 2018
 tags: [all, humdrum]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: A description of how to encode trills in **kern spines.
+summary: Una descripción de cómo codificar los trinos en las columnas **kern.
 sidebar: main_sidebar
 permalink: /humdrum/trills/index-ES.html
 ---
 
-Trills are encoded in `**kern` spines using either `T` or `t` markers
-in note tokens:
+Los trinos se codifican en columnas `**kern` utilizando marcadores `T` o `t` en los tokens de las notas:
 
 {% include verovio.html
 	source="trill1"
@@ -36,14 +35,9 @@ in note tokens:
 *-
 </script>
 
-The interval used in the trill is indicated by the case of the letter:
-upper-case `T` indicates that the trill interval is a major second, while 
-a lower-case `t` indicates a minor second.
+El intervalo utilizado en el trino se indica con la letra: la `T` mayúscula indica que el intervalo del trino es una segunda mayor, mientras que la `t` minúscula indica una segunda menor.
 
-When the chromatic alteration of the auxiliary note of the trill 
-is not in the key signature or the current state for the given
-diatonic pitch, then an accidental for the auxiliary note is given
-above the trill mark:
+Cuando la alteración cromática de la nota auxiliar del trino no está en la armadura o en el estado actual para el tono diatónico dado, entonces se da una alteración para la nota auxiliar por encima de la marca de trino:
 
 {% include verovio.html
 	source="trill2"
@@ -63,14 +57,7 @@ above the trill mark:
 *-
 </script>
 
-Notice in the above example that any accidental on an auxiliary trill
-note will be canceled if a following primary note is on the same
-diatonic pitch but with a different chromatic alteration.  For example
-the minor second trill on middle C (the first note in the above example)
-is to a D-flat. Since the following note is a D-natural, a cancellation
-accidental is typically added to the note to avoid performing it as a 
-D-flat.  To hide the natural accidentals in the above example, add `ny` 
-to the notes to hide the natural signs:
+Observa en el ejemplo anterior que cualquier alteración en una nota auxiliar de trino se cancelará si una nota primaria siguiente está en el mismo tono diatónico pero con una alteración cromática diferente.  Por ejemplo, el segundo trino menor en Do bemol (la primera nota del ejemplo anterior) está en Re bemol. Dado que la nota siguiente es un Re natural, se suele añadir una alteración de cancelación a la nota para evitar interpretarla como un R bemol.  Para ocultar las alteraciones naturales en el ejemplo anterior, añade `ny` a las notas para ocultar los becuadros:
 
 {% include verovio.html
 	source="trill3"
@@ -90,14 +77,12 @@ to the notes to hide the natural signs:
 *-
 </script>
 
-The `n` character means that the note has a natural accidental, and the `y`
-character means that the natural should not be shown.
+El carácter `n` significa que la nota tiene una alteración natural, y el carácter `y` significa que el becuadro no debe mostrarse.
 
 
-## Line extensions ##
+## Extensiones de línea ##
 
-Duplicating the trill character in the token will cause an extension line 
-to be added to the trill.
+Si se duplica el carácter de trino en el token, se añadirá una línea de extensión al trino.
 
 {% include verovio.html
 	source="trill4"
@@ -119,10 +104,7 @@ to be added to the trill.
 </script>
 
 
-To continue the line extension over several notes, use two trill
-characters to start the trill with a line extension, and then use
-three trill characters on each note which should be under the same
-trill line extension.
+Para continuar la extensión de la línea a lo largo de varias notas, utiliza dos caracteres de trino para comenzar el trino con una extensión de línea, y luego utiliza tres caracteres de trino en cada nota que debe estar bajo la misma extensión de línea de trino.
 
 {% include verovio.html
 	source="trill5"
@@ -149,13 +131,9 @@ trill line extension.
 *-
 </script>
 
-Notes under the trill line do not have to all be tied, as demonstrated
-by the first G in measure three of the above example.  In addition,
-the following G-sharp is included under the trill extension line even though
-it is not the same pitch-class as the note that started the trill.
+Las notas bajo la línea de trino no tienen que estar todas ligadas, como lo demuestra el primer Sol en el compás tres del ejemplo anterior.  Además, el siguiente Sol sostenido se incluye bajo la línea de extensión del trino aunque no sea la misma clase de tono que la nota que inició el trino. 
 
-When trills are encoded in the second subspine, the trill marks and 
-lines will be placed below the staff automatically:
+Cuando se codifican los trinos en la segunda subcolumna, las marcas de trino y las líneas se colocan automáticamente debajo del pentagrama:
 
 
 {% include verovio.html

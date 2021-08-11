@@ -1,5 +1,5 @@
 ---
-title: Ligature and coloration brackets
+title: Ligature y corchetes de coloración
 lang: en es
 ref: humdrum-ligatures
 author: Craig Stuart Sapp
@@ -11,19 +11,14 @@ last_updated: 18 Mar 2018
 tags: [all, humdrum]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: A description of how to encode ligature brackets in **kern spines.
+summary: Una descripción de cómo codificar los corchetes de ligature en las columnas de **kern.
 sidebar: main_sidebar
 permalink: /humdrum/ligatures/index-ES.html
 ---
 
-Ligatures are are sequences of notes attached to each other
-in mensural music.  When notating the music in modern notation,
-typically a bracket will be placed over the separated notes to
-indicate that the group of notes were originally notated in a
-ligature.
+Las ligaduras son secuencias de notas unidas entre sí en la música mensural.  Cuando se escribe la música en notación moderna, normalmente se coloca un corchete sobre las notas separadas para indicar que el grupo de notas se anotó originalmente en una ligadura.
 
-Use `*lig` to start a ligature bracket, and `*Xlig` to end a
-ligature bracket in **kern data:
+Utilice `*lig` para iniciar un corchete de ligadura, y `*Xlig` para terminar un corchete de ligadura en los datos de **kern:
 
 
 {% include verovio.html
@@ -59,11 +54,9 @@ ligature bracket in **kern data:
 </script>
 
 
-## Coloration brackets ##
+## Corchetes de coloración ##
 
-Coloration brackets can be displayed by using `*col` and `*Xcol` to mark the beginning and
-ending of the coloration in an original mensuration notation of the score.  Below
-is a mensural notation excerpt of Ockeghem's Missa Ecce ancilla domini, tenor part:
+Los corchetes de coloración pueden mostrarse utilizando `*col` y `*Xcol` para marcar el comienzo y el final de la coloración en una notación mensural original de la partitura.  A continuación se muestra un extracto de notación mensural de la Missa Ecce ancilla domini de Ockeghem, parte de tenor:
 
 {% include image.html
 	file="chigcvii8234-tenor.jpg"
@@ -71,7 +64,7 @@ is a mensural notation excerpt of Ockeghem's Missa Ecce ancilla domini, tenor pa
 	caption="Ockeghem: Missa Ecce ancilla domini, Kyrie, Tenor part opening."
 %}
 
-The black notes are colored, so marked with open brackets in the modern notation equivalent below.
+Las notas negras están coloreadas, por lo que se marcan con corchetes abiertos en la notación moderna equivalente a continuación.
 
 
 {% include verovio.html
