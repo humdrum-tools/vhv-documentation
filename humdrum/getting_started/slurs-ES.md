@@ -1,5 +1,5 @@
 ---
-title: Encoding slurs in Humdrum
+title: Codificación de ligaduras de expresión en Humdrum
 lang: en es
 ref: humdrum-getting_started-slurs
 author: Craig Stuart Sapp
@@ -11,21 +11,107 @@ last_updated: 7 Dec 2019
 tags: [all, humdrum, getting_started]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: How to encode slurs in **kern data.
+summary: Cómo codificar las ligaduras de expresión en los datos de **kern.
 sidebar: main_sidebar
 permalink: /humdrum/slurs/index-ES.html
 ---
 
-{% include humdrum/slurs.txt %}
+<!--{% include humdrum/slurs.txt %}-->
+## Slurs ##
+
+Las ligaduras de expresión se indican añadiendo `(` a un token para el inicio de la ligadura, y `)` para el final de la misma.
+
+{% include verovio.html
+	humdrum-min-height="275px"
+	source="slur1"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="slur1">
+**kern
+*M4/4
+=1
+(4c
+4d
+4e
+4f
+=2
+4g
+4f
+4e
+4c)
+==
+*-
+</script>
+
+### Ligaduras anidadas ###
+
+Las ligaduras pueden anidarse abriendo otra ligadura mientras otra está activa.  La primera ligadura que se cierre afectará a la ligadura que se abra más cerca de ella.
+
+{% include verovio.html
+	humdrum-min-height="300px"
+	source="slur2"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="slur2">
+**kern
+*M4/4
+=1
+(4c
+(>4d
+(4e
+(>4f
+=2
+4g)
+4f)
+4e)
+4c)
+==
+*-
+!!!RDF**kern: > = above
+</script>
+
+Obsérvese el carácter RDF de dirección que puede utilizarse para forzar la dirección de una ligadura.
+
+### Cruce de ligaduras ###
+
+Las ligaduras pueden cruzarse entre sí anteponiendo un signo de ampersand (`&`) delante de un marcador de ligadura que se cruce con otra.  Si hay más de una ligadura que se cruza a la vez, se pueden añadir caracteres `&` adicionales al prefijo de la ligadura.
+
+{% include verovio.html
+	humdrum-min-height="310px"
+	source="slur3"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="slur3">
+**kern
+*M4/4
+=1
+(4c
+&(>4d
+4e)
+(4f&)
+=2
+&(4g
+&&(4f
+4e)
+4c&)
+=3
+1d&&)
+==
+*-
+!!!RDF**kern: > = above
+</script>
 
 
-## Slur orientation ##
+<!-- End include -->
 
-There are two ways to control the placement of slurs on the staff.  When
-a slur needs to be placed in an arbitrary position, use one of the following
-two systems.
+## Orientación de la ligadura ##
 
-### By layout parameters ###
+Hay dos maneras de controlar la colocación de las ligaduras en el pentagrama.  Cuando sea necesario colocar una ligadura en una posición arbitraria, utilice uno de los dos sistemas siguientes.
+
+### Mediante parámetros de disposición ###
 
 
 {% include verovio.html
@@ -53,15 +139,11 @@ two systems.
 *-
 </script>
 
-The `!LO:S:` layout prefix indicates that the layout parameter applies
-to the slur in the next data token in the spine.  To force the slur above
-the staff, add the parameter `a`, which is short for `a=true`.  To force the
-slur below the staff, add the parameter `b`.
+El prefijo de disposición `!LO:S:` indica que el parámetro de disposición se aplica a la ligadura en el siguiente dato de la columna.  Para forzar la ligadura por encima del pentagrama, añade el parámetro `a`, que es la abreviatura de `a=true`.  Para forzar la ligadura por debajo del pentagrama, añade el parámetro `b`.
 
-### By RDF records ###
+### Mediante registros RDF ###
 
-When slur orientations need to be adjusted often in a score, a more
-compact way of encoding them is to use an RDF record:
+Cuando las orientaciones de las ligaduras deben ajustarse con frecuencia en una partitura, una forma más compacta de codificarlas es utilizar un registro RDF:
 
 {% include verovio.html
 	humdrum-min-height="325px"
@@ -88,18 +170,11 @@ compact way of encoding them is to use an RDF record:
 !!!RDF**kern: > = above
 </script>
 
-In the above example, the `<` character is defined as a qualification
-on the slur to force it below the staff, and `>` is used to force
-the slur above the staff.  These characters must immediately follow
-the `(` character representing the slur start.  Other positions in
-the token will cause slur or beam to be oriented up or down, and
-placing the above/below signifiers after a note will move it to the
-next staff above or below the current one.
+En el ejemplo anterior, el carácter `<` se define como una propiedad en la ligadura para forzarla por debajo del pentagrama, y `>` se utiliza para forzar la ligadura por encima del pentagrama.  Estos caracteres deben seguir inmediatamente al carácter `(` que representa el inicio de la ligadura.  Otras posiciones en el token harán que la ligadura o el barrado se orienten hacia arriba o hacia abajo, y la colocación de los significantes arriba/abajo después de una nota la moverá al siguiente pentagrama por encima o por debajo del actual.
 
-### Slurs on chords ###
+### Ligaduras en los acordes ###
 
-When a chord possesses two slurs, the two slurs will be moved to opposite
-sides of the chord automatically:
+Cuando un acorde posee dos ligaduras, las dos ligaduras se desplazarán a lados opuestos del acorde automáticamente:
 
 {% include verovio.html
 	humdrum-min-height="325px"
@@ -126,14 +201,12 @@ sides of the chord automatically:
 *-
 </script>
 
-The position of the slur in the chord is not important: the slur is attached
-to the chord, not to any individual notes in the chord.
+La posición de la ligadura en el acorde no es importante: la ligadura está unida al acorde, no a ninguna nota individual del mismo.
 
 
-## Dashed and dotted slurs ##
+## Ligaduras de puntos y rayas ##
 
-Layout parameters can be prefixed to the starting token of a slur
-to display the slur as dotted or dashed lines.
+Los parámetros de disposición pueden anteponerse al token de inicio de una ligadura para mostrar la ligadura como líneas punteadas o discontinuas.
 
 
 {% include verovio.html
@@ -161,18 +234,11 @@ to display the slur as dotted or dashed lines.
 *-
 </script>
 
-The layout prefix `!LO:S:` means that the layout parameter applies
-to a slur in the next data token.  To display the slur as a dashed
-line, add the parameter `dash` which is equivalent to `dash=true`.
-To display the slur as a dotted line, add the parameter `dot`.
+El prefijo de diseño `!LO:S:` significa que el parámetro de disposición se aplica a una ligadura en el siguiente token de datos.   Para mostrar la ligadura como una línea discontinua, añade el parámetro `dash`, que equivale a `dash=true`. Para mostrar la ligadura como una línea punteada, añade el parámetro `dot`.
 
-### Multiple slurs ###
+### Múltiples ligaduras ###
 
-Multiple slurs on notes or chords can be addressed individually
-within the layout parameter by adding the `n` parameter set to the
-number of the slur.  For example, if there are two slurs, then the
-first one can be referenced by adding `n=1` to the layout parameter,
-and `n=2` for the second one.
+Las ligaduras múltiples sobre notas o acordes pueden ser abordadas individualmente dentro del parámetro de disposición añadiendo el parámetro `n` al número de la ligadura.  Por ejemplo, si hay dos ligaduras, se puede referenciar la primera añadiendo `n=1` al parámetro de disposición, y `n=2` para la segunda.
 
 {% include verovio.html
 	humdrum-min-height="415px"
@@ -205,9 +271,9 @@ and `n=2` for the second one.
 </script>
 
 
-## Coloring slurs ##
+## Coloreado de ligaduras ##
 
-Slurs can be colored by giving an SVG color as a `color` layout parameter:
+Las ligaduras se pueden colorear dando un color SVG como parámetro de diseño `color`:
 
 {% include verovio.html
 	humdrum-min-height="450px"
@@ -242,10 +308,9 @@ Slurs can be colored by giving an SVG color as a `color` layout parameter:
 </script>
 
 
-## Phrase marks ##
+## Marcas de frase ##
 
-Phrase marks are similar to slurs but are used to mark analytic phrases
-in `**kern` data.  The default rendering style for phrasing is an open bracket:
+Las marcas de frase son similares a las ligaduras, pero se utilizan para marcar frases analíticas en datos `**kern`.  El estilo de representación por defecto para las frases es un corchete abierto:
 
 
 {% include verovio.html
@@ -294,10 +359,9 @@ in `**kern` data.  The default rendering style for phrasing is an open bracket:
 </script>
 
 
-### Phrase rendering styles ###
+### Estilos de representación de frases ###
 
-Phrase marks can be rendered in a variety of styles and colors as illustrated
-below:
+Las marcas de frase pueden ser representadas en una variedad de estilos y colores como se ilustra a continuación:
 
 
 {% include verovio.html
@@ -389,9 +453,9 @@ below:
 </script>
 
 
-### Default rendering style for phrases marks ###
+### Estilo de representación por defecto para las marcas de frases ###
 
-An RDF record can be used to set the default rendering style of phrase marks.
+Se puede utilizar un registro RDF para establecer el estilo de representación por defecto de las marcas de frase.
 
 
 {% include verovio.html
@@ -440,24 +504,23 @@ An RDF record can be used to set the default rendering style of phrase marks.
 !!!RDF**kern: { = phrase, brack color=orange
 </script>
 
-Various rendering styles:
+Varios estilos de representación:
 
-| style | result |
+| estilo | resultado |
 |-------|--------|
-| `brack` | bracket |
-| `dot` | dotted bracket |
-| `dash` | dashed bracket |
-| `none` | no bracket |
-| `open` | open bracket (default) |
-| `slur` | slur |
-| `slur dot` | dotted slur |
-| `slur dash` | dashed slur |
+| `brack` | corchetes |
+| `dot` | corchetes punteados |
+| `dash` | corchetes con líneas discontinuas |
+| `none` | sin corchete |
+| `open` | corchete abierto (por derecto) |
+| `slur` | ligadura |
+| `slur dot` | ligadura punteada |
+| `slur dash` | ligadura con líneas discontinuas |
 
-The default phrase style can also be given a color as in the above example.
+Al estilo de frase por defecto también se le puede dar un color como en el ejemplo anterior.
 
 
-Here is an example of suppressing phrase marks by default, but giving a local
-style to the last phrase:
+He aquí un ejemplo de supresión de las marcas de frase por defecto, pero dando un estilo local a la última frase:
 
 
 {% include verovio.html
@@ -508,10 +571,10 @@ style to the last phrase:
 </script>
 
 
-## Cross-staff slurs ##
+## Cruce de ligaduras entre pentagramas ##
 
-Cross-staff slurs (in particular for piano music), can be created
-using an RDF record as in the following example:
+Las ligaduras que cruzan pentagramas pentagrama (en particular para la música de piano), pueden crearse
+utilizando un registro RDF como en el siguiente ejemplo:
 
 
 {% include verovio.html
@@ -537,8 +600,6 @@ N(4F	1FF	4cc/	2f\
 !!!RDF**kern: N = linked
 </script>
 
-The RDF record `N = linked` is used to create the link between the two
-slur endpoints in the data.  The link signifier must come immediately
-in front of the tie signifiers in the data.
+El registro RDF `N = linked` se utiliza para crear el enlace entre los dos extremos de la ligadura en los datos.  El significante de enlace debe ir inmediatamente delante de los significantes de enlace en los datos.
 
 

@@ -1,36 +1,24 @@
 ---
-title: Humdrum music encoding tutorial
+title: Tutorial de codificación musical en Humdrum
 lang: en es
 ref: humdrum-getting_started
 author: Craig Stuart Sapp
 translator: David Rizo
 keywords: humdrum encoding tutorial
 creation_date: 20 Aug 2017
-translation_date: 10 Aug 2021
+translation_date: 17 Aug 2021
 last_updated: 25 Jan 2018
 tags: [all, humdrum, getting_started]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: A tutorial on how to encode music in the Humdrum syntax for VHV.
+summary: Un tutorial sobre cómo codificar música en la sintaxis Humdrum para VHV.
 sidebar: main_sidebar
 permalink: /humdrum/getting_started/index-ES.html
 ---
 
-This tutorial covers the basics of representing graphic music
-notation in the Humdrum syntax.  Mostly this involves encoding music
-within the `**kern` data representation. For more advanced notational
-features, other data types are used, such as `**dynam` for dynamics
-and `**text` for lyrics.  Also see other pages in the *Humdrum
-encoding* section of the navigation menu for special encoding topics
-(to the left or above).
+Este tutorial cubre los fundamentos de la representación de la notación musical gráfica en la sintaxis Humdrum.  Principalmente se trata de codificar la música dentro de la representación de datos `**kern`. Para características notacionales más avanzadas, se utilizan otros tipos de datos, como `**dynam` para las dinámicas y `**text` para las letras.  Consulta también otras páginas en la sección *Codificación de Humdrum* del menú de navegación para ver temas especiales de codificación (a la izquierda o arriba).
 
-Each musical example in the tutorial below is interactive, so trying
-tweaking the examples to see what happens.  A text box containing
-the Humdrum data used to produce the notation is given on the left
-side of each notation example.  The text in these boxes is editable,
-and changing the text will update the notation as you type.
-[If the notation no longer updates when editing the Humdrum text,
-you will have to reload the webpage to restart verovio again.]
+Cada ejemplo musical en el tutorial de abajo es interactivo, así que intenta ajustar los ejemplos para ver qué sucede.  En la parte izquierda de cada ejemplo de notación hay un cuadro de texto que contiene los datos de Humdrum utilizados para producir la notación.  El texto en estos cuadros es editable, y al cambiar el texto se actualizará la notación mientras se escribe. [Si la notación ya no se actualiza al editar el texto de Humdrum, tendrás que recargar la página web para reiniciar Verovio de nuevo].
 
 {% include humdrum/pitch.txt %}
 {% include humdrum/clefs.txt %}
@@ -39,18 +27,18 @@ you will have to reload the webpage to restart verovio again.]
 {% include humdrum/time_signatures.txt %}
 {% include humdrum/accidentals.txt %}
 {% include humdrum/keysig.txt %}
-See the [full description of key signatures](/humdrum/keysig/index.html) for more information.
+Consulta la [descripción completa de las armaduras](/humdrum/keysig/index.html) para obtener más información.
 
 {% include humdrum/chords.txt %}
 {% include humdrum/rhythm.txt %}
 {% include humdrum/ties.txt %}
-[More information about ties](/humdrum/ties)
+[Más información sobre ligaduras de prolongación](/humdrum/ties)
 
 {% include humdrum/beaming.txt %}
 {% include humdrum/tuplets.txt %}
 {% include humdrum/rests.txt %}
 {% include humdrum/slurs.txt %}
-[More information about ties](/humdrum/ties)
+[Más información sobre ligaduras de prolongación](/humdrum/ties)
 
 {% include humdrum/articulations.txt %}
 {% include humdrum/lyrics.txt %}

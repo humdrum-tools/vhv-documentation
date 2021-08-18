@@ -1,31 +1,59 @@
 ---
-title: Encoding ties in Humdrum
+title: Codificación de ligaduras de prolongacióm en Humdrum
 lang: en es
 ref: humdrum-getting_started-ties
 author: Craig Stuart Sapp
 translator: David Rizo
 keywords: humdrum encoding tutorial ties
 creation_date: 20 Aug 2017
-translation_date: 10 Aug 2021
+translation_date: 18 Aug 2021
 last_updated: 7 Dec 2019
 tags: [all, humdrum, getting_started]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: How to encode ties in **kern data.
+summary: Cómo codificar ligaduras de prolongación en los datos de **kern.
 sidebar: main_sidebar
 permalink: /humdrum/ties/index-ES.html
 ---
 
-{% include humdrum/ties.txt %}
+<!--{% include humdrum/ties.txt %}-->
+## Ligaduras de prolongación ##
+
+Las ligaduras se indican adjuntando `[` a la nota inicial de una ligadura, y `]` a la nota final.  Para las notas intermedias de un grupo ligado, el carácter de subrayado `_` indica que una ligadura anterior termina en la nota al mismo tiempo que comienza una ligadura a la nota siguiente.
+
+{% include verovio.html
+	humdrum-min-height="300px"
+	evenNoteSpacing="1"
+	source="tie1"
+	scale="55"
+	pageWidth="675"
+%}
+<script type="application/x-humdrum" id="tie1">
+**kern
+*M2/4
+[4c
+=1
+4c.]
+[8d
+=2
+2d_
+=3
+4d] [4a
+4a_
+=4
+2a]
+==
+*-
+</script>
 
 
-## Tie orientation ##
+<!-- Fin include -->
 
-There are two ways to control the placement of ties on the staff.  When
-a tie needs to be placed in an arbitrary position, use one of the following
-two systems.
+## Orientación de las ligaduras ##
 
-### By layout parameters ###
+Hay dos maneras de controlar la colocación de las ligaduras en el pentagrama.  Cuando sea necesario colocar una ligadura en una posición arbitraria, utiliza uno de los dos sistemas siguientes.
+
+### Mediante parámetros de disposicióm ###
 
 
 {% include verovio.html
@@ -53,15 +81,11 @@ two systems.
 *-
 </script>
 
-The `!LO:T:` layout prefix indicates that the layout parameter applies
-to the tie in the next data token in the spine.  To force the tie above
-the staff, add the parameter `a`, which is short for `a=true`.  To force the
-tie below the staff, add the parameter `b`.
+El prefijo de disposición `!LO:T:` indica que el parámetro de disposición se aplica a la ligadura en el siguiente token de datos de la columna.  Para forzar la ligadura por encima del pentagrama, añade el parámetro `a`, que es la abreviatura de `a=true`.  Para forzar la ligadura por debajo del pentagrama, añade el parámetro `b`.
 
-### By RDF records ###
+### Mediante registros RDF ###
 
-When tie orientations need to be adjusted often in a score, a more
-compact way of encoding them is to use an RDF record:
+Cuando las orientaciones de las ligaduras deben ajustarse con frecuencia en una partitura, una forma más compacta de codificarlas es utilizar un registro RDF:
 
 {% include verovio.html
 	humdrum-min-height="325px"
@@ -88,21 +112,12 @@ compact way of encoding them is to use an RDF record:
 !!!RDF**kern: > = above
 </script>
 
-In the above example, the `<` character is defined as a qualification
-on the tie to force it below the staff, and `>` is used to force
-the tie above the staff.  These characters must immediately follow
-the `[` (or '_') character representing the tie start.  Other positions in
-the token will cause slur or beam to be oriented up or down, and
-placing the above/below signifiers after a note will move it to the
-next staff above or below the current one.
+En el ejemplo anterior, el carácter `<` se define como una propiedad de la ligadura para forzarla por debajo del pentagrama, y `>` se utiliza para mover la ligadura por encima del pentagrama.  Estos caracteres deben seguir inmediatamente al carácter `[` (o '_') que representa el inicio de la ligadura.  Otras posiciones en el token harán que la ligadura o el barrado se orienten hacia arriba o hacia abajo, y la colocación de los significantes arriba/abajo después de una nota la moverá al siguiente pentagrama por encima o por debajo del actual.
 
 
-### Ties on chords ###
+### Ligaduras en los acordes ###
 
-When a chord possesses two or more ties, they can be oriented above or below
-using either of the two methods described above.  For controlling the orientation
-using a layout command, add `n=1` to the layout parameter to modify only the 
-tie on the first note, `n=2` for the second note, and so on.
+Cuando un acorde posee dos o más ligaduras, pueden orientarse por encima o por debajo utilizando cualquiera de los dos métodos descritos anteriormente.  Para controlar la orientación utilizando un comando de disposición, añade `n=1` al parámetro de disposición para modificar sólo la ligadura de la primera nota, `n=2` para la segunda nota, y así sucesivamente.
 
 {% include verovio.html
 	humdrum-min-height="425px"
@@ -136,10 +151,9 @@ tie on the first note, `n=2` for the second note, and so on.
 </script>
 
 
-## Dashed and dotted ties ##
+## Ligaduras de puntos y rayas ##
 
-Layout parameters can be prefixed to the starting token of a tie
-to display the tie as dotted or dashed lines.
+Los parámetros de diseño pueden anteponerse al token de inicio de una ligadura para mostrarla como líneas punteadas o discontinuas.
 
 {% include verovio.html
 	humdrum-min-height="325px"
@@ -166,15 +180,12 @@ to display the tie as dotted or dashed lines.
 *-
 </script>
 
-The layout prefix `!LO:T:` means that the layout parameter applies
-to a tie in the next data token.  To display the tie as a dashed
-line, add the parameter `dash` which is equivalent to `dash=true`.
-To display the tie as a dotted line, add the parameter `dot`.
+El prefijo de diseño `!LO:T:` significa que el parámetro de diseño se aplica a una ligadura en el siguiente token de datos.  Para mostrar la ligaduraa como una línea discontinua, añade el parámetro `dash` que es equivalente a `dash=true`. Para mostrar la ligadura como una línea punteada, añade el parámetro `dot`.
 
 
-## Coloring ties ##
+## Coloreado de ligaduras ##
 
-Ties can be colored by giving an SVG color as a `color` layout parameter:
+Las ligaduras se pueden colorear dando un color SVG como parámetro de diseño `color`:
 
 {% include verovio.html
 	humdrum-min-height="375px"
@@ -204,12 +215,9 @@ Ties can be colored by giving an SVG color as a `color` layout parameter:
 *-
 </script>
 
-## Disjunct tied notes ##
+## Notas ligadas disjuntas ##
 
-Sometimes ties connect two notes that are not directly adjacent.  This
-usually occurs in the case of written out arpeggios.  In such cases, double
-the tie signifier to indicate that the ending note of the tie does not
-directly follow the starting note of the tie.
+A veces, las ligaduras conectan dos notas que no son directamente adyacentes.  Esto suele ocurrir en el caso de arpegios escritos.  En estos casos, duplica el significante de ligadura para indicar que la nota final de la ligadura no sigue directamente a la nota inicial de la misma.
 
 
 {% include verovio.html
@@ -230,15 +238,12 @@ directly follow the starting note of the tie.
 *-
 </script>
 
-Notice that the last sixteenth note is adjacent to the chord to
-which all of the notes are tied, so it has a regular tie
-signifier.
+Observa que la última semicorchea es adyacente al acorde al que están ligadas todas las notas, por lo que tiene un significante de ligadura regular.
 
 
-## Cross-staff tied notes ##
+## Notas ligadas entre pentagramas ##
 
-Cross-staff ties (in particular for piano music), can be created
-using an RDF record as in the following example:
+Las ligaduras que cruzan pentagramas (en particular para la música de piano), pueden crearse utilizando un registro RDF como en el siguiente ejemplo:
 
 
 {% include verovio.html
@@ -262,9 +267,6 @@ using an RDF record as in the following example:
 !!!RDF**kern: < = below
 </script>
 
-The RDF record `N = linked` is used to create the link between the two
-tie endpoints in the data.  The link signifier must come immediately
-in front of the tie signifiers in the data.  And the matching tie can be
-either adjacent or disjunct on the other staff.
+El registro RDF `N = linked` se utiliza para crear el enlace entre los dos puntos finales de la ligadura en los datos.  El significante del enlace debe ir inmediatamente delante de los significantes de la ligadura en los datos.  Y el vínculo correspondiente puede ser adyacente o disjunto en el otro pentagrama.
 
 
