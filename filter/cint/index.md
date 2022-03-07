@@ -1,6 +1,6 @@
 ---
 title: cint filter
-lang: en
+lang: en es
 ref: filters-cint
 author: Craig Stuart Sapp
 translator: 

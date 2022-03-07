@@ -1,6 +1,6 @@
 ---
 title: Marking notes with <span class='keypress'>at</span>
-lang: en
+lang: en es
 ref: graphic-marks
 author: Craig Stuart Sapp
 translator: 

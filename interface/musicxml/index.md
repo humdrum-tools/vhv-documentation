@@ -1,6 +1,6 @@
 ---
 title: MusicXML import
-lang: en
+lang: en es
 ref: interface-musicxml
 author: Craig Stuart Sapp
 translator: 

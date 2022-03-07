@@ -1,6 +1,6 @@
 ---
 title: Key signatures
-lang: en
+lang: en es
 ref: humdrum-key_signatures
 author: Craig Stuart Sapp
 translator: 

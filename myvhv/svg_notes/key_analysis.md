@@ -1,6 +1,6 @@
 ---
 title: Key analysis
-lang: en
+lang: en es
 ref: myvhv-svg_notes-key_analysis
 author: Craig Stuart Sapp
 translator: 

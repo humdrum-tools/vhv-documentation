@@ -1,6 +1,6 @@
 ---
 title: melisma filter
-lang: en
+lang: en es
 ref: filters-melisma
 author: Craig Stuart Sapp
 translator: 

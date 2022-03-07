@@ -1,6 +1,6 @@
 ---
 title: Encoding slurs in Humdrum
-lang: en
+lang: en es
 ref: humdrum-getting_started-slurs
 author: Craig Stuart Sapp
 translator: 

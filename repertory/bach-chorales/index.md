@@ -1,6 +1,6 @@
 ---
 title: J.S. Bach chorales
-lang: en
+lang: en es
 ref: repertory-bach-chorales
 author: Craig Stuart Sapp
 translator:

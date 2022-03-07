@@ -1,6 +1,6 @@
 ---
 title: sic filter
-lang: en
+lang: en es
 ref: filters-sic
 author: Craig Stuart Sapp
 translator: 

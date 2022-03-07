@@ -1,6 +1,6 @@
 ---
 title: humdiff filter
-lang: en
+lang: en es
 ref: filters-humdiff
 author: Craig Stuart Sapp
 translator: 

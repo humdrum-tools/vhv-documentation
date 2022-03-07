@@ -1,6 +1,6 @@
 ---
 title: lyrics encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-lyrics
 author: Craig Stuart Sapp
 translator: 

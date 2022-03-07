@@ -1,6 +1,6 @@
 ---
 title: Syntax validation
-lang: en
+lang: en es
 ref: interface-validation
 author: Craig Stuart Sapp
 translator: 

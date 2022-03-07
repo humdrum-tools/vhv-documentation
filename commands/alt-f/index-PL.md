@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-f</span>
-lang: pl en
+lang: pl en es
 ref: commands-alt-f
 author: Craig Stuart Sapp
 translator: Marcin Konik 

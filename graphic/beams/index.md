@@ -1,6 +1,6 @@
 ---
 title: Beams
-lang: en
+lang: en es
 ref: graphic-beams
 author: Craig Stuart Sapp
 translator: 

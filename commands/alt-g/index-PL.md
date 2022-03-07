@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-g</span>
-lang: pl en
+lang: pl en es
 ref: commands-alt-g
 author: Craig Stuart Sapp
 translator: Marcin Konik 

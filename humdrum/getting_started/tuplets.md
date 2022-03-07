@@ -1,6 +1,6 @@
 ---
 title: tuplets encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-tuplets
 author: Craig Stuart Sapp
 translator: 

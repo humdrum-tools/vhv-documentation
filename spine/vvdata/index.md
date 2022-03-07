@@ -1,6 +1,6 @@
 ---
 title: "**vvdata"
-lang: en
+lang: en es
 ref: data types
 author: Craig Stuart Sapp
 translator: 

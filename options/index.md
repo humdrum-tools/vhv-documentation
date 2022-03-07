@@ -1,6 +1,6 @@
 ---
 title: Embedded verovio options
-lang: en
+lang: en es
 ref: verovio options
 author: Craig Stuart Sapp
 translator: 

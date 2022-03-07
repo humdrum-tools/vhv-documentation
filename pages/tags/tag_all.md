@@ -1,6 +1,6 @@
 ---
 title: "All pages index"
-lang: en
+lang: en es
 ref: tag_all
 tagName: all
 search: exclude

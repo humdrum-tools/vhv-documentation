@@ -1,6 +1,6 @@
 ---
 title: Transposing parts
-lang: en
+lang: en es
 ref: humdrum-transposing
 author: Craig Stuart Sapp
 translator: 

@@ -1,6 +1,6 @@
 ---
 title: Verovio Humdrum Viewer 
-lang: en pl
+lang: en pl es
 author: Craig Stuart Sapp
 creation_date: 3 Mar 2017
 last_updated: 4 Mar 2017

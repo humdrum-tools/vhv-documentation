@@ -1,6 +1,6 @@
 ---
 title: Load/Save Humdrum data
-lang: en
+lang: en es
 ref: interface-humdrum
 author: Craig Stuart Sapp
 translator: 

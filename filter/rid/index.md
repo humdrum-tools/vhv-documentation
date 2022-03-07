@@ -1,6 +1,6 @@
 ---
 title: rid filter
-lang: en
+lang: en es
 ref: filters-rid
 author: Craig Stuart Sapp
 translator: 

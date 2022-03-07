@@ -1,6 +1,6 @@
 ---
 title: transposing encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-transposing
 author: Craig Stuart Sapp
 translator: 

@@ -1,6 +1,6 @@
 ---
 title: shed filter
-lang: en
+lang: en es
 ref: filters-shed
 author: Craig Stuart Sapp
 translator: 

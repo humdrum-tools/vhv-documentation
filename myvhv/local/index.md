@@ -1,7 +1,7 @@
 ---
 search: exclude
 title: Running VHV locally
-lang: en
+lang: en es
 ref: myvhv-local
 author: Craig Stuart Sapp
 translator: 

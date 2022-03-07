@@ -1,6 +1,6 @@
 ---
 title: myVHV introduction
-lang: en
+lang: en es
 ref: myvhv-introduction
 author: Craig Stuart Sapp
 translator: 

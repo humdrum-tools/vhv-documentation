@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-shift-l</span>
-lang: en pl
+lang: en pl es
 ref: commands-alt-shift-l
 author: Craig Stuart Sapp
 translator: 

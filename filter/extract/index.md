@@ -1,6 +1,6 @@
 ---
 title: extract filter
-lang: en
+lang: en es
 ref: filters-extract
 author: Craig Stuart Sapp
 translator: 

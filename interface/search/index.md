@@ -1,6 +1,6 @@
 ---
 title: Search toolbar
-lang: en
+lang: en es
 ref: interface-toolbar
 author: Craig Stuart Sapp
 translator: 
@@ -77,7 +77,7 @@ diatonic interval numbers.
 | ---------- | --------------------- |
 | `1`        | repeated note         |
 | `2`        | up a step             |
-| `-2`       | up a step             |
+| `-2`       | down a step           |
 | `3`        | up a third            |
 | `-3`       | down a third          |
 

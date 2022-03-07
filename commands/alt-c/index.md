@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-c</span>
-lang: en pl
+lang: en pl es
 ref: commands-alt-c
 author: Craig Stuart Sapp
 translator: 

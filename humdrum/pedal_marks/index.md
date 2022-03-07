@@ -1,6 +1,6 @@
 ---
 title: Pedal marks
-lang: en
+lang: en es
 ref: humdrum-pedal_marks
 author: Craig Stuart Sapp
 translator: 

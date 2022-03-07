@@ -1,6 +1,6 @@
 ---
 title: Key command summary
-lang: en
+lang: en es
 ref: graphic-summary
 author: Craig Stuart Sapp
 translator: 

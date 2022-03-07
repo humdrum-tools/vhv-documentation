@@ -1,6 +1,6 @@
 ---
 title: octaves encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-octaves
 author: Craig Stuart Sapp
 translator: 

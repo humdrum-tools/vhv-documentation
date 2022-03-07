@@ -1,6 +1,6 @@
 ---
 title: pitch encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-pitch
 author: Craig Stuart Sapp
 translator: 

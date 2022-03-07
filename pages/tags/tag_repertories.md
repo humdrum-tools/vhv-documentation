@@ -1,6 +1,6 @@
 ---
 title: "Repertory pages index"
-lang: en
+lang: en es
 ref: tag_repertories
 tagName: repertories
 search: exclude

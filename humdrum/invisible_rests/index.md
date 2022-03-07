@@ -1,6 +1,6 @@
 ---
 title: Invisible rests
-lang: en
+lang: en es
 ref: humdrum-invisible_rests
 author: Craig Stuart Sapp
 translator: 

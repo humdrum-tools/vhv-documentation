@@ -1,6 +1,6 @@
 ---
 title: rests encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-rests
 author: Craig Stuart Sapp
 translator: 

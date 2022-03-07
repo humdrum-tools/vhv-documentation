@@ -1,6 +1,6 @@
 ---
 title: Mensural notation
-lang: en
+lang: en es
 ref: humdrum-mens
 author: Craig Stuart Sapp
 translator: 

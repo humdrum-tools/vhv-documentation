@@ -1,6 +1,6 @@
 ---
 title: kern2mens filter
-lang: en
+lang: en es
 ref: filters-kern2mens
 author: Craig Stuart Sapp
 translator: 
