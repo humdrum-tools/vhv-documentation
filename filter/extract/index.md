@@ -15,6 +15,13 @@ summary:
 permalink: /filter/extract/index.html
 ---
 
+
+{% include display-option-info.html %}
+<script id="option-info" type="text/x-aton">
+{% include_relative options.aton %}
+</script>
+
+
 The extract filter can be used to manipulate spine ordering as well as removing
 spines or adding blank spines.
 
