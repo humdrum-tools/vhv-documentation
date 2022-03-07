@@ -1,6 +1,6 @@
 ---
 title: "Command pages index"
-lang: en
+lang: en es
 ref: tag_commands
 tagName: commands
 search: exclude

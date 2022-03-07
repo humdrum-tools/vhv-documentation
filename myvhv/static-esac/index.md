@@ -1,6 +1,6 @@
 ---
 title: Creating static in-browser images from EsAC data
-lang: en
+lang: en es
 ref: myvhv-static-esac
 author: Craig Stuart Sapp
 translator: 

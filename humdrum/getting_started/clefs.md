@@ -1,6 +1,6 @@
 ---
 title: clef encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-clefs
 author: Craig Stuart Sapp
 translator: 

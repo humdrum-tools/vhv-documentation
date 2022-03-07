@@ -1,6 +1,6 @@
 ---
 title: satb2gs filter
-lang: en
+lang: en es
 ref: filters-satb2gs
 author: Craig Stuart Sapp
 translator: 

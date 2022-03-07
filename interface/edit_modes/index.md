@@ -1,6 +1,6 @@
 ---
 title: Edit modes and syntax highlighting
-lang: en
+lang: en es
 ref: interface-edit_modes
 author: Craig Stuart Sapp
 translator: 

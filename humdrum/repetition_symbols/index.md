@@ -1,6 +1,6 @@
 ---
 title: Repetition symbols
-lang: en
+lang: en es
 ref: humdrum-repetition-symbols
 author: Craig Stuart Sapp
 translator: 

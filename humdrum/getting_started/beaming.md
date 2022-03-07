@@ -1,6 +1,6 @@
 ---
 title: beam encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-beaming
 author: Craig Stuart Sapp
 translator: 

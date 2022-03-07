@@ -1,6 +1,6 @@
 ---
 title: "Humdrum pages index"
-lang: en
+lang: en es
 ref: tag_humdrum
 tagName: humdrum
 search: exclude

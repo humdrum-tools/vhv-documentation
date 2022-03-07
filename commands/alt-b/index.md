@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-b</span>
-lang: en pl
+lang: en pl es
 ref: commands-alt-b
 author: Craig Stuart Sapp
 translator: 

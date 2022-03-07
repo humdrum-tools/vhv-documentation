@@ -1,6 +1,6 @@
 ---
 title: VHV online repertories
-lang: en
+lang: en es
 ref: repertory
 author: Craig Stuart Sapp
 translator: 

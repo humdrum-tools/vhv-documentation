@@ -1,6 +1,6 @@
 ---
 title: colortriads filter
-lang: en
+lang: en es
 ref: filters-colortriads
 author: Craig Stuart Sapp
 translator:

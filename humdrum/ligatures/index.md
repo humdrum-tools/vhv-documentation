@@ -1,6 +1,6 @@
 ---
 title: Ligature and coloration brackets
-lang: en
+lang: en es
 ref: humdrum-ligatures
 author: Craig Stuart Sapp
 translator: 

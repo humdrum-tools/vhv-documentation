@@ -1,6 +1,6 @@
 ---
 title: composite filter
-lang: en
+lang: en es
 ref: filters-composite
 author: Craig Stuart Sapp
 translator: 

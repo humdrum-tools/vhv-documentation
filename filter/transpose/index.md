@@ -1,6 +1,6 @@
 ---
 transpose: transpose filter
-lang: en
+lang: en es
 ref: filters-transpose
 author: Craig Stuart Sapp
 translator: 

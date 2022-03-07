@@ -1,6 +1,6 @@
 ---
 title: System decorating
-lang: en
+lang: en es
 ref: system decoration instrument names
 author: Craig Stuart Sapp
 translator: 

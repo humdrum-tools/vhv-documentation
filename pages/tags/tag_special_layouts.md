@@ -1,6 +1,6 @@
 ---
 title: "Special layout pages index"
-lang: en
+lang: en es
 ref: tag_special_layouts
 tagName: special_layouts
 search: exclude

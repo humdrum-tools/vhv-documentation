@@ -1,6 +1,6 @@
 ---
 title: "Maintenance pages index"
-lang: en
+lang: en es
 ref: tag_maintenance
 tagName: maintenance
 search: exclude

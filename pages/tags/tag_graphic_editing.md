@@ -1,6 +1,6 @@
 ---
 title: "Graphical editing pages index"
-lang: en
+lang: en es
 ref: tag_graphic_editing
 tagName: graphic_editing
 search: exclude

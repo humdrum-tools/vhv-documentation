@@ -1,6 +1,6 @@
 ---
 title: autobeam filter
-lang: en
+lang: en pl es
 ref: filters-autobeam
 author: Craig Stuart Sapp
 translator: 

@@ -1,6 +1,6 @@
 ---
 title: cross staff note encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-cross_staff
 author: Craig Stuart Sapp
 translator: 

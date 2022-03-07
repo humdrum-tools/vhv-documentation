@@ -1,6 +1,6 @@
 ---
 title: Cue-sized notes
-lang: en
+lang: en es
 ref: humdrum-cues
 author: Craig Stuart Sapp
 translator: 

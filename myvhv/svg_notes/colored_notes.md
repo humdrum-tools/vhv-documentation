@@ -1,6 +1,6 @@
 ---
 title: Embedded pitch and rhythm in SVG images
-lang: en
+lang: en es
 ref: myvhv-svg_notes-colored_notes
 author: Craig Stuart Sapp
 translator: 

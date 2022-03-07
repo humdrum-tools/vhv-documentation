@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-l</span>
-lang: pl en
+lang: pl en es
 ref: command-alt-l
 author: Craig Stuart Sapp
 translator: Marcin Konik 

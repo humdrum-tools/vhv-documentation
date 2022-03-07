@@ -1,6 +1,6 @@
 ---
 title: chord encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-chords
 author: Craig Stuart Sapp
 translator: 

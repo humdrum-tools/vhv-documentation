@@ -1,6 +1,6 @@
 ---
 title: Coloring beams
-lang: en
+lang: en es
 ref: myvhv-svg_notes-colored_beams
 author: Craig Stuart Sapp
 translator: 

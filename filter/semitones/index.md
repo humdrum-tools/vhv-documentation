@@ -1,6 +1,6 @@
 ---
 title: semitones filter
-lang: en
+lang: en es
 ref: filters-semitones
 author: Craig Stuart Sapp
 translator: 

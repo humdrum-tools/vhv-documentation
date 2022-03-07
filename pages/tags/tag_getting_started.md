@@ -1,6 +1,6 @@
 ---
 title: "Getting started pages index"
-lang: en
+lang: en es
 ref: tag_getting_started
 tagName: getting_started
 search: exclude

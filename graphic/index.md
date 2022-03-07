@@ -1,6 +1,6 @@
 ---
 title: Introduction to graphic editing commands
-lang: en
+lang: en es
 ref: graphic
 author: Craig Stuart Sapp
 translator: 

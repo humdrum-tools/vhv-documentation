@@ -1,6 +1,6 @@
 ---
 title: EsAC data import
-lang: en
+lang: en es
 ref: interface-esac
 author: Craig Stuart Sapp
 translator: 

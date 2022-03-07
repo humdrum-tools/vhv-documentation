@@ -1,6 +1,6 @@
 ---
 title: Tuplet styling
-lang: en
+lang: en es
 ref: humdrum-tuplet_styling
 author: Craig Stuart Sapp
 translator: 

@@ -1,6 +1,6 @@
 ---
 title: Encoding ties in Humdrum
-lang: en
+lang: en es
 ref: humdrum-getting_started-ties
 author: Craig Stuart Sapp
 translator: 

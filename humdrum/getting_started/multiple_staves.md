@@ -1,6 +1,6 @@
 ---
 title: multiple staves encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-multiple_staves
 author: Craig Stuart Sapp
 translator: 

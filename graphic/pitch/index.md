@@ -1,6 +1,6 @@
 ---
 title: Pitch
-lang: en
+lang: en es
 ref: graphic-pitch
 author: Craig Stuart Sapp
 translator: 

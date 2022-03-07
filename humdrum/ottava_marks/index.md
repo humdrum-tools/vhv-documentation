@@ -1,6 +1,6 @@
 ---
 title: Ottava marks
-lang: en
+lang: en es
 ref: humdrum-ottava_marks
 author: Craig Stuart Sapp
 translator: 

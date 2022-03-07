@@ -1,6 +1,6 @@
 ---
 title: barlines encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-barlines
 author: Craig Stuart Sapp
 translator: 

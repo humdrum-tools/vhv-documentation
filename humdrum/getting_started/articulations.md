@@ -1,6 +1,6 @@
 ---
 title: articulations encoding tutorial
-lang: en
+lang: en es
 ref: humdrum-getting_started-articulations
 author: Craig Stuart Sapp
 translator: 

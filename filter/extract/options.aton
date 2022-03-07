@@ -1,0 +1,117 @@
+@@BEGIN:	OPTIONS
+@TOOL:		extract
+
+@@BEGIN:	OPTION
+@DEFINITION:	x|P|F|S|exclude=s
+@SUMMARY:	Remove given spines from output.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	i=s
+@SUMMARY:	Exclusive interpretation list to extract from input.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	I=s
+@SUMMARY:	Exclusive interpretation exclusion list.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	f|p|s|field|path|spine=s
+@SUMMARY:	For extraction of particular spines.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	C|count=b
+@SUMMARY:	Print a count of the number of spines in file.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	c|cointerp=s:**kern
+@SUMMARY:	Exclusive interpretation for cospines.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	g|grep=s
+@SUMMARY:	Extract spines that match a given regex.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	r|reverse=b	
+@SUMMARY:	Reverse order of spines by **kern group.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	R=s:**kern
+@SUMMARY:	Reverse order of spine by exinterp group.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	t|trace=s
+@SUMMARY:	Use a trace file to extract data.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	e|expand=b
+@SUMMARY:	Expand spines with subspines.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	k|kern=s
+@SUMMARY:	Extract by kern spine group.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	E|expand-interp=s
+@SUMMARY:	Expand subspines limited to exinterp.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	m|model|method=s:d
+@SUMMARY:	Method for extracting secondary spines.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	M|cospine-model=s:d
+@SUMMARY:	Method for extracting cospines.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	Y|no-editoral-rests=b
+@SUMMARY:	Do not display yy marks on interpreted rests.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	n|name|b|blank=s:**blank
+@SUMMARY:	Name if exinterp added with 0.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	no-empty|no-empties=b
+@SUMMARY:	Suppress spines with only null data tokens.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	empty|empties=b
+@SUMMARY:	Only keep spines containing only null data tokens.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	spine-list=b
+@SUMMARY:	Show spine list and then exit.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	no-rest|no-rests=b
+@SUMMARY:	Remove **kern spines containing only rests (and their co-spines).
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	debug=b
+@SUMMARY:	Print debugging information.
+@@END: 		OPTION
+
+@@END:		OPTIONS
+
+
+

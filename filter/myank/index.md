@@ -1,6 +1,6 @@
 ---
 title: myank filter
-lang: en
+lang: en es
 ref: filters-myank
 author: Craig Stuart Sapp
 translator: 

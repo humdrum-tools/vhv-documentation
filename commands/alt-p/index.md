@@ -1,6 +1,6 @@
 ---
 title: <span class='keypress'>alt-p</span>
-lang: en pl
+lang: en pl es
 ref: commands-alt-p
 author: Craig Stuart Sapp
 translator: 

@@ -1,6 +1,6 @@
 ---
 title: Creating static in-browser images
-lang: en
+lang: en es
 ref: myvhv-static
 author: Craig Stuart Sapp
 translator: 
