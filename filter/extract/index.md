@@ -15,8 +15,10 @@ summary:
 permalink: /filter/extract/index.html
 ---
 
+<!--
+{ include display-option-info.html }
+-->
 
-{% include display-option-info.html %}
 <script id="option-info" type="text/x-aton">
 {% include_relative options.aton %}
 </script>

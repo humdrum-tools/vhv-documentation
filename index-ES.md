@@ -15,7 +15,7 @@ summary:
 
 ## Información general
 
-Verovio Humdrum Viewer es un editor digital de música en línea y una interfaz interactiva de representación de notación de ficheros Humdrum, situada en [http://verovio.humdrum.org](http://verovio.humdrum.org).  Ve a la página de[Inicio](/interface/getting_started) donde encontrarás un tutorial de cómo usar la interfaz de VHV o busca en las páginas de este sitio web pulsando en los títulos del menú de la barra lateral al lado izquierdo (o arriba) los cuales están organizados por temáticas: 
+Verovio Humdrum Viewer es un editor digital de música en línea y una interfaz interactiva de representación de notación de ficheros Humdrum, situada en [http://verovio.humdrum.org](http://verovio.humdrum.org).  Ve a la página de [Inicio](/interface/getting_started) donde encontrarás un tutorial de cómo usar la interfaz de VHV o busca en las páginas de este sitio web pulsando en los títulos del menú de la barra lateral al lado izquierdo (o arriba) los cuales están organizados por temáticas: 
 
 <style>
 
@@ -123,7 +123,7 @@ ul.brief li {
 
 <dd>
 
-<ul class="brief"> <li> algoritmos de etiquetado de disonacias en el filtro <i><a href="/filter/dissonant">disonante</a></i> </li> <li> definiciones de suspensión candencial en el filtro<i><a href="/filter/cint">cint</a></i>. </li> </ul>
+<ul class="brief"> <li> algoritmos de etiquetado de disonacias en el filtro <i><a href="/filter/dissonant">disonante</a></i> </li> <li> definiciones de suspensión candencial en el filtro <i><a href="/filter/cint">cint</a></i>. </li> </ul>
 
 </dd>
 
@@ -154,8 +154,7 @@ href="https://github.com/craigsapp/humlib/issues">humlib issues</a>,
 y los informes sobre notación gráfica deben enviarse a <a
 href="https://github.com/rism-ch/verovio/issues">verovio issues</a>
 (si tienes dudas sobre dónde enviar los informes, envíalos a la [lista de issues de VHV](https://github.com/humdrum-tools/verovio-humdrum-viewer/issues)).
-La mayoría de las páginas de este sitio web tienen botones de edición que pueden utilizarse para corregir errores tipográficos o añadir contenido, siempre que se tenga una cuenta de<a
-href="https://github.com">Github</a>.
+La mayoría de las páginas de este sitio web tienen botones de edición que pueden utilizarse para corregir errores tipográficos o añadir contenido, siempre que se tenga una cuenta de <a href="https://github.com">Github</a>.
 
 ## Presentaciones
 
@@ -261,6 +260,7 @@ Estos son los tres principales componentes de software utilizados para crear el 
 
 <a class="logo" href="http://www.tassomusic.org"><img class="logo shadow" style="width:300px" src="/images/tmp-logo.png"></a>
 <a class="logo" href="http://josquin.stanford.edu"><img class="logo shadow" style="width:419px" src="/images/jrp-logo.png"></a>
+<a class="logo" href="http://www.gaspar-van-weerbeke.sbg.ac.at/gaspar-online-edition"><img class="logo shadow" style="width:320px" src="/images/gaspar-online-edition.jpg"></a>
 
 </div>
 

@@ -261,6 +261,7 @@ Here are the three major software components used to create the VHV website:
 
 <a class="logo" href="https://www.tassomusic.org"><img class="logo shadow" style="width:300px" src="/images/tmp-logo.png"></a>
 <a class="logo" href="https://josquin.stanford.edu"><img class="logo shadow" style="width:419px" src="/images/jrp-logo.png"></a>
+<a class="logo" href="http://www.gaspar-van-weerbeke.sbg.ac.at/gaspar-online-edition"><img class="logo shadow" style="width:320px" src="/images/gaspar-online-edition.jpg"></a>
 
 </div>
 

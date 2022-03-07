@@ -14,11 +14,27 @@ keywords: interface commands
 summary: 
 permalink: /filter/cint/index-ES.html
 ---
-El filtro *cint* calcula y procesa la música basándose en los módulos de contrapunto.  Consulta la [documentación técnica completa de *cint](http://extras.humdrum.org/man/cint) en el sitio web de Humdrum Extras para conocer todas las opciones.
 
-Los módulos de contrapunto consisten en cuatro notas en dos voces simultáneas que forman un módulo de dos intervalos armónicos y dos melódicos. El nombre del filtro *cint* puede significar tanto *intervalos de contrapunto* como *intervalos melódicos/armónicos compuestos*, y funciona como una generalización de las herramientas [hint](http://www.humdrum.org/man/hint) (intervalos armónicos)y [mint](http://www.humdrum.org/man/mint) (intervalos melódicos) del Toolkit Humdrum original.
+El filtro *cint* calcula y procesa la música basándose en los módulos
+de contrapunto.  Consulta la [documentación técnica completa de
+*cint](http://extras.humdrum.org/man/cint) en el sitio web de Humdrum
+Extras para conocer todas las opciones.
 
-A continuación se muestra un ejemplo de módulo.  El primer compás del ejemplo siguiente representa un par de notas que suenan juntas en dos voces separadas.  Estas cuatro notas comprenden cuatro intervalos ilustrados en el segundo compás. las marcas rojas indican los intervalos melódicos, y las marcas azules indican los intervalos armónicos.  
+Los módulos de contrapunto consisten en cuatro notas en dos voces
+simultáneas que forman un módulo de dos intervalos armónicos y dos
+melódicos. El nombre del filtro *cint* puede significar tanto
+*intervalos de contrapunto* como *intervalos melódicos/armónicos
+compuestos*, y funciona como una generalización de las herramientas
+[hint](http://www.humdrum.org/man/hint) (intervalos armónicos)y
+[mint](http://www.humdrum.org/man/mint) (intervalos melódicos) del
+Toolkit Humdrum original.
+
+A continuación se muestra un ejemplo de módulo.  El primer compás
+del ejemplo siguiente representa un par de notas que suenan juntas
+en dos voces separadas.  Estas cuatro notas comprenden cuatro
+intervalos ilustrados en el segundo compás. las marcas rojas indican
+los intervalos melódicos, y las marcas azules indican los intervalos
+armónicos.
 
 {% include image.html
 	file="counterpoint-module.svg"
@@ -28,21 +44,40 @@ A continuación se muestra un ejemplo de módulo.  El primer compás del ejemplo
 %}
 
 
-Dados tres intervalos cualesquiera en el módulo, el cuarto puede calcularse automáticamente, por lo que el compás tres ilustra la descripción típica de un módulo que omite el intervalo melódico superior y se escribiría en línea como "10 -2 12", lo que significa que el módulo comienza con un intervalo armónico de una décima, luego la voz inferior baja un segundo y forma un intervalo armónico de una duodécima con la voz superior (que implícitamente tuvo que subir un paso para formar la duodécima).
+Dados tres intervalos cualesquiera en el módulo, el cuarto puede
+calcularse automáticamente, por lo que el compás tres ilustra la
+descripción típica de un módulo que omite el intervalo melódico
+superior y se escribiría en línea como "10 -2 12", lo que significa
+que el módulo comienza con un intervalo armónico de una décima,
+luego la voz inferior baja un segundo y forma un intervalo armónico
+de una duodécima con la voz superior (que implícitamente tuvo que
+subir un paso para formar la duodécima).
 
-El filtro cint puede describir intervalos en otras unidades como los doce tonos y la base-40, así como intervalos diatónicos cromáticamente alterados, y permitir la contracción de la octava de los intervalos armónicos y las configuraciones de ataque de notas.
+El filtro cint puede describir intervalos en otras unidades como
+los doce tonos y la base-40, así como intervalos diatónicos
+cromáticamente alterados, y permitir la contracción de la octava
+de los intervalos armónicos y las configuraciones de ataque de
+notas.
 
 
 ## Módulo de búsqueda ##
 
 ### Búsqueda de terceras/décimas paralelas ascendentes ###
-He aquí un ejemplo de búsqueda de terceras paralelas en la música contrapuntística.  El módulo contrapuntístico básico para las terceras paralelas que suben de paso es "3 2 3".  El filtro utilizado en el siguiente ejemplo es:
+
+He aquí un ejemplo de búsqueda de terceras paralelas en la música
+contrapuntística.  El módulo contrapuntístico básico para las
+terceras paralelas que suben de paso es "3 2 3".  El filtro utilizado
+en el siguiente ejemplo es:
 
 
 ```
 !!!filter: cint -O --search "3 2 3"
 ```
-La opción `-O` se utiliza para contraer intervalos compuestos, como una 10ª a una 3ª, eliminando las transposiciones de octava de los intervalos básicos.  Haz clic en los ejemplos siguientes para cargar los mismos datos y filtros en VHV.
+
+La opción `-O` se utiliza para contraer intervalos compuestos, como
+una 10ª a una 3ª, eliminando las transposiciones de octava de los
+intervalos básicos.  Haz clic en los ejemplos siguientes para cargar
+los mismos datos y filtros en VHV.
 
 {% include image.html
 	file="search3-2-3.png"
@@ -55,11 +90,16 @@ La opción `-O` se utiliza para contraer intervalos compuestos, como una 10ª a 
 
 
 ### Búsqueda de terceras paralelas con ataques de notas solamente. ###
-Añadir ataques de notas con la opción `-x` permitirá buscar intervalos armónicos basados en si las notas fueron atacadas (`x)` o sostenidas (`s`).  La búsqueda de terceras paralelas en las que las notas de ambas voces atacan juntas sería "3xx 2 3xx":
+
+Añadir ataques de notas con la opción `-x` permitirá buscar intervalos
+armónicos basados en si las notas fueron atacadas (`x)` o sostenidas
+(`s`).  La búsqueda de terceras paralelas en las que las notas de
+ambas voces atacan juntas sería "3xx 2 3xx":
 
 ```
 !!!filter: cint -x -O --search "3xx 2 3xx"
 ```
+
 o al fusionar opciones sin parámetros:
 
 ```
@@ -75,10 +115,17 @@ o al fusionar opciones sin parámetros:
 	caption="Búsqueda de terceras partes paralelas ascendentes con ataques de notas en un coral de Bach"
 %}
 
-Observa que las terceras paralelas en el compás 11 ya no están resaltadas ya que el movimiento de terceras paralelas se introdujo con una nota sostenida en una voz.
+Observa que las terceras paralelas en el compás 11 ya no están
+resaltadas ya que el movimiento de terceras paralelas se introdujo
+con una nota sostenida en una voz.
 
 ### Longitud del módulo ###
-Se pueden buscar cadenas de módulos más largas añadiendo la opción `-n #`, donde `#` es el número de módulos omitidos calculado para la búsqueda.  Por ejemplo, si se utiliza `-n 2` en el filtro cint sólo coincidirá con dos terceros movimientos paralelos sucesivos subiendo de paso tres pares de notas en cada voz:
+
+Se pueden buscar cadenas de módulos más largas añadiendo la opción
+`-n #`, donde `#` es el número de módulos omitidos calculado para
+la búsqueda.  Por ejemplo, si se utiliza `-n 2` en el filtro cint
+sólo coincidirá con dos terceros movimientos paralelos sucesivos
+subiendo de paso tres pares de notas en cada voz:
 
 ```
 !!!filter: cint -xO -n 2 --search "3xx 2 3xx 2 3xx"
@@ -96,11 +143,12 @@ Se pueden buscar cadenas de módulos más largas añadiendo la opción `-n #`, d
 Obsérvese que hay menos coincidencias, ya que se ignoran los módulos de movimientos paralelos individuales.
 
 {% include warning.html
-	content="La búsqueda de una secuencia de módulos más corta cuando se especifica una longitud mayor con la opción <nobr>-n</nobr> resaltará toda la secuencia más larga.  Utiliza anclas de expresiones regulares como \ "^3xx 2 3xx\" para buscar secuencias de módulos que comiencen con un movimiento escalonado de terceras paralelas hacia arriba seguido de cualquier otro módulo que comience con un intervalo de terceras armónicas cuando la secuencia de módulos sea 2 o superior; o \ "3xx 2 3xx$\" para secuencias de módulos que terminen con un movimiento escalonado de terceras paralelas hacia arriba. Para asegurarte de que estás buscando la secuencia de módulos de longitud correcta, utiliza tanto `^` como `$`, como por ejemplo \"^3xx 2 3xx$`; cuando se utiliza -n2, esta búsqueda no devolverá ninguna coincidencia, ya que se trata de una secuencia de módulos de longitud 1."
+	content="La búsqueda de una secuencia de módulos más corta cuando se especifica una longitud mayor con la opción -n resaltará toda la secuencia más larga.  Utiliza anclas de expresiones regulares como \"^3xx 2 3xx\" para buscar secuencias de módulos que comiencen con un movimiento escalonado de terceras paralelas hacia arriba seguido de cualquier otro módulo que comience con un intervalo de terceras armónicas cuando la secuencia de módulos sea 2 o superior; o \"3xx 2 3xx$\" para secuencias de módulos que terminen con un movimiento escalonado de terceras paralelas hacia arriba. Para asegurarte de que estás buscando la secuencia de módulos de longitud correcta, utiliza tanto `^` como `$`, como por ejemplo \"^3xx 2 3xx$`; cuando se utiliza -n2, esta búsqueda no devolverá ninguna coincidencia, ya que se trata de una secuencia de módulos de longitud 1."
 %}
 
 
 ### Tercios paralelos descendentes ###
+
 Utiliza `-2` como intervalo melódico cuando busque terceras paralelas descendentes:
 
 ```
@@ -119,6 +167,7 @@ Utiliza `-2` como intervalo melódico cuando busque terceras paralelas descenden
 
 
 ### Terceras paralelas sin dirección ###
+
 Utiliza `-?2` como intervalo melódico cuando busques terceras paralelas que suban o bajen un tono.
 
 
