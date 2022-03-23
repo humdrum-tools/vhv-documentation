@@ -352,7 +352,9 @@ to shrink the input score.  To shrink the input score to 55%, use
 {% include display-vhv-link.html link="https://verovio.humdrum.org/?file=bach-wtc-fugues/wtc2f08.krn&filter=composite%20-l55" %}
 
 <a name="option-L"></a>
-Alternatively, the `-L` option can be used to shrink the composite analysis:
+Try changinge the 55% value in the above text to change the size
+of the original score.  Alternatively, the `-L` option can be used
+to shrink the composite analysis:
 
 {% include verovio.html
 	source="basicExample5"
@@ -432,7 +434,7 @@ Alternatively, the `-L` option can be used to shrink the composite analysis:
 
 <h3> System decoration adjustments </h3>
 
-If the score has staff number interpretations, such as `*staff2`
+If the score has staff number interpretations, such as `*staff2`,
 and a matching staff-decoration reference record, the analysis
 data will be attached to the input score with a single line rather
 than being included in the original system bracing or brackets.
@@ -694,9 +696,9 @@ A score can be grouped into two separate composite rhythm streams
 for use in polyrhythm analysis.  Each part or voice in a part can
 be labeled with the interpretations `*grp:A` and `*grp:B`.  These
 labels will then be used to split the score into two composite
-rhythms.  Example scores can be found in the <a target="_blank"
-href="https://verovio.humdrum.org/?file=poly">Polyrhythm Project
-dataset</a> on VHV.
+rhythms.  Example scores with this markup can be found in the <a
+target="_blank" href="https://verovio.humdrum.org/?file=poly">Polyrhythm
+Project dataset</a> on VHV.
 
 Here is an example score with group `A` and `B` labels:
 
@@ -799,7 +801,7 @@ Here is an example score with group `A` and `B` labels:
 <a name="option-o"></a>
 <h3> Extracting notes by group </h3>
 
-The `-o` option can be used to extract notes from a particular group, here is an example
+The `-o` option (for <i>output</i>) can be used to extract notes from a particular group, here is an example
 of extracting the group `A` notes:
 
 {% include verovio.html
@@ -1573,7 +1575,7 @@ Use the `-m` option to mark notes in the score and composite analyses that are c
 {% include display-vhv-link.html link="https://verovio.humdrum.org/?file=poly/129&filter=composite%20-mgF" %}
 
 <a name="option-M"></a>
-To only mark the coincidence notes in the input score without displaying any analyses, use the `-M` option:
+To mark only the coincidence notes in the input score without displaying any analyses, use the `-M` option:
 
 {% include verovio.html
 	source="coincidence3"
