@@ -1,0 +1,258 @@
+
+
+<!-- filter-options.html
+	vim: ts=3
+
+	This include file creates a list of options for a filter tool.
+
+	Input Parameters:
+		file		         File from which the options will be read.
+		lang		         Target language to display options with.
+
+-->
+
+<style>
+
+table.filter-options tr, table.filter-options td {
+	vertical-align: top;
+	background: purple;
+}
+
+td.filter-option {
+	font-weight: bold;
+	font-family: Courier;
+}
+
+td.option-category {
+	background: tan;
+	color: beige;
+	font-size: 1.75rem;
+	height: 20px;
+	letter-spacing: 1.5px;
+	word-spacing: 3px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+span.option-name.single::before {
+	content: "-"
+}
+
+span.option-question {
+	font-size: 2.25rem;
+	color: tan;
+	position: relative;
+	left: -30px;
+	margin-left: -20px;
+	display: none;
+}
+
+span.option-question.active {
+	display: inline-block;
+}
+
+span.option-question.active:hover {
+	color: crimson;
+}
+
+span.option-name.double::before {
+	content: "--"
+}
+
+span.option-type {
+	font-weight: normal;
+	font-family: Palatino,serif;
+	font-style: italic;
+	color: #aaa;
+}
+
+td.option-summary {
+	color: #666;
+}
+
+</style>
+
+<div class="filter-options"></div>
+
+<script>
+	fetch("{{include.file}}")
+		.then(data => data.text())
+		.then(text => {
+			let aton = new ATON;
+			let options = aton.parse(text);
+			prepareOptions(options.OPTIONS.OPTION, "div.filter-options");
+		})
+		.catch(err => {console.log("ERROR DOWNLOADING FILTER OPTIONS", "{{include.file}}", err)});
+
+
+
+//////////////////////////////
+//
+// prepareOptions --
+//
+
+function prepareOptions(optionList, selector) {
+	let element = document.querySelector(selector);
+	if (!element) {
+		return;
+	}
+	let output = "<table class='option-list'>";
+	for (let i=0; i<optionList.length; i++) {
+		let text = prepareOptionEntry(optionList[i]);
+		output += text;
+	}
+	output += "</table>";
+	element.innerHTML = output;
+
+	addQuestionPointers();
+}
+
+
+
+//////////////////////////////
+//
+// addQuestionPointers --
+//
+
+function addQuestionPointers() {
+	let list = document.querySelectorAll("td.filter-option .option-question");
+	console.log("LIST", list);
+	for (let i=0; i<list.length; i++) {
+		let entry = list[i];
+		let option = entry.dataset["option"];
+		console.warn("OPTION", option);
+		let name = `option-${option}`;
+		let selector = `a[name="${name}"]`;
+		let element = document.querySelector(selector);
+		console.warn("SELECTOR", selector, element);
+		if (element) {
+			console.log("ACTIVATING", element);
+			entry.classList.add("active");
+		}
+	}
+}
+
+
+
+//////////////////////////////
+//
+// gotoDocumentation --
+//
+
+function gotoDocumentation(element) {
+	console.log("EVENT", element);
+	let option = element.dataset["option"];
+	console.warn("OPTION", option);
+	let name = `option-${option}`;
+	let target = document.querySelector(`a[name="${name}"]`);
+	if (target) {
+		const yOffset = -120;  // needed to make visible below the header
+		y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+		window.scrollTo({top: y, behavior: 'smooth'});
+	}
+}
+
+
+
+//////////////////////////////
+//
+// prepareOptionEntry --
+//
+
+function prepareOptionEntry(entry) {
+	let output = "";
+	let definition = entry.DEFINITION;
+	let summary = entry.SUMMARY;
+	let dtype = "";
+	let matches = definition.match(/=([a-z])/);
+	if (matches) {
+		dtype = matches[1];
+	}
+	let odefault = "";
+	matches = definition.match(/:(.*)/);
+	if (matches) {
+		odefault = matches[1];
+	}
+	if (!dtype) {
+		return output;
+	}
+	let argument = entry.ARGUMENT;
+	let optionName = "";
+	matches = definition.match(/^([^|=]+)/);
+	if (matches) {
+		optionName = matches[1];
+	} else {
+		return output;
+	}
+	let dashes = "single";
+	if (optionName.length > 1) {
+		dashes = "double";
+	}
+
+	let category = entry.CATEGORY;
+	if (category) {
+		output += `<tr><td class="option-category" colspan="2">`;
+		output += entry.CATEGORY;
+		output += "</td></tr>";
+	}
+
+	output += "<tr>";
+
+	output += "<td class='filter-option'>";
+	output += `<span data-option="${optionName}" `;
+	output += `title="Go to documentation about the ${optionName} option" `;
+	output += `onclick="gotoDocumentation(this)" class='option-question'>`;
+	output += `<i class="fa fa-question-circle" aria-hidden="true"></i></span>`;
+	output += `<span class='option-name ${dashes}'>${optionName}</span>`;
+	if (dtype === "b") {
+		// boolean
+	} else if (dtype === "s") {
+		// string
+		if (argument) {
+			output += ` <span title="string" class="option-type">${argument}</span>`;
+		} else {
+			output += " <span class='option-type'>string</span>";
+		}
+	} else if (dtype === "d") {
+		// double (floating-point number)
+		if (argument) {
+			output += ` <span title="double" class="option-type">${argument}</span>`;
+		} else {
+			output += " <span class='option-type'>double</span>";
+		}
+	} else if (dtype === "i") {
+		// integer
+		if (argument) {
+			output += ` <span title="integer" class="option-type">${argument}</span>`;
+		} else {
+			output += " <span class='option-type'>integer</span>";
+		}
+	}
+	output += "</td>";
+
+	output += "<td class='option-summary'>";
+	output += summary;
+
+	if (odefault) {
+		output += "  Default is ";
+		if (odefault.match(/^[-+]\d+\.\d*/)) {
+			output += `<code>$odefault</code>.`;
+		} else {
+			output += `"<code>${odefault}</code>".`;
+		}
+	}
+	
+	output += "</td>";
+
+	output += "</tr>";
+
+	return output;
+}
+
+
+
+</script>
+
+
+
+

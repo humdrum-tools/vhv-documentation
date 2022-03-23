@@ -39,6 +39,7 @@
 		spacingNonLinear default 0.6
 		spacingStaff     default 12
 		spacingSystem    default 12
+		pageMarginTop    default 100
 		lyricTopMinMargin default 2.0
 		minLastJustification default 0.80
 
@@ -135,6 +136,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	var spacingLinear    = parseFloat("{{include.spacingLinear}}") || 0.25;
 	var spacingNonLinear = parseFloat("{{include.spacingNonLinear}}") || 0.6;
 	var spacingSystem    = parseInt("{{include.spacingSystem}}") || 12;
+	var pageMarginTop    = parseInt("{{include.pageMarginTop}}") || 100;
 	var spacingStaff     = parseInt("{{include.spacingStaff}}") || 12;
 	var lyricTopMinMargin = parseFloat("{{include.lyricTopMinMargin}}") || 2.0;
 	// var noheader         = !(parseInt("{{include.header}}") || 0);
@@ -153,6 +155,7 @@ window.addEventListener("DOMContentLoaded", function() {
 //		noFooter:         noFooter,
 		spacingStaff:     spacingStaff,
 		spacingSystem:    spacingSystem,
+		pageMarginTop:    pageMarginTop,
 		spacingNonLinear: spacingNonLinear,
 		minLastJustification: minLastJustification,
 		spacingLinear:    spacingLinear,

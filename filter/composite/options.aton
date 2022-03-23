@@ -1,0 +1,68 @@
+@@BEGIN:	OPTIONS
+@TOOL:		composite
+
+@@BEGIN:	OPTION
+@CATEGORY:	General options
+@DEFINITION:	l=d:100
+@ARGUMENT:      percent
+@SUMMARY:	Scale input score staff sizes.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	L=d:100
+@SUMMARY:	Scale analysis staff sizes.
+@ARGUMENT:      percent
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	u|up-stem=b
+@SUMMARY:	Display analysis data with up-stems.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	x|extract=b
+@SUMMARY:	Display only composite rhythm analyses.
+@@END: 		OPTION
+
+
+
+@@BEGIN:	OPTION
+@CATEGORY:	Polyrhythm grouping options
+@DEFINITION:	g|group|groups|grouping|groupings=b
+@SUMMARY:	Display group composite rhythm analyses.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	c|coincidence=b
+@SUMMARY:	Display coincidence analysis.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	F|no-full-composite=b
+@SUMMARY:	Do not show full composite rhythm analysis.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	m|mark=b
+@SUMMARY:	Mark coincidences in group analyses and input score.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	M|mark-input=b
+@SUMMARY:	Mark coincidences only in input score.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	o|only=s
+@ARGUMENT:      group
+@SUMMARY:	Filter only notes in input score of given group ("A" or "B").
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	C|color-full-composite=b
+@SUMMARY:	Color full composite rhythm.
+@@END: 		OPTION
+
+@@END:		OPTIONS
+
+
