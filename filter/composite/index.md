@@ -1905,110 +1905,174 @@ letter `n` to the `-A` option string:
 	scale="31"
 	spacingLinear="0.1"
 	spacingNonLinear="0.3"
-	pageWidth="1400"
+	pageWidth="1510"
 	humdrum-min-height="200px"
-	tabsize="16"
+	tabsize="10"
 %}
 <script type="text/x-humdrum" id="noteOnsetAnalysis">
-!!!filter: composite -eC -A n | colorgroups
-**kern	**kern	**dynam	**kern	**dynam
-*grp:A	*grp:B	*grp:B	*grp:A	*grp:A
-*part2	*part2	*part2	*part1	*part1
-*staff3	*staff2	*	*staff1	*
-*ICklav	*ICklav	*	*ICstr	*
-*Ipiano	*Ipiano	*	*Icello	*
-*I"Piano	*	*	*I"Violoncello	*
-*I'Pno.	*	*	*I'Vc.	*
-*clefF4	*clefG2	*	*clefF4	*
-*k[f#c#g#]	*k[f#c#g#]	*	*k[f#c#g#]	*
-*A:	*A:	*	*A:	*
-*M2/8	*M2/8	*	*M2/8	*
-=124	=124	=124	=124	=124
-*grp:A	*	*	*	*
-*	*	*	*Xtuplet	*
-!	!	!	!LO:TX:a:b:t=[[eighth]=84]	!
-24EE\	8.Gn&lt;L	.	24r	.
-*	*	*	*Xtuplet	*
-!	!	!	!	!LO:DY:ed=brack
-24ELL\	.	.	(24BB'LL	mf
-24EJJ 24G	.	.	24BB'JJ 24E	.
-8r	.	.	24BB'LL 24E	.
-.	.	.	24BB'JJ 24E)	.
-.	16B&lt;Jk)	.	.	.
-!	!	!	!	!LO:DY:t=espress. %s
-.	.	.	(24gn	f
-=125	=125	=125	=125	=125
-*^	*	*	*	*
-*	*ped	*	*	*	*
-*	*	*	*	*grp:B	*grp:B
-!	!	!	!LO:DY:a	!	!
-8ryy	24EE	(64ff#XLLLL	f	16aLL	.
-.	.	64ee	.	.	.
-!	!	!	!	!	!
-!	!	!	!	!	!
-.	.	64b	.	.	<
-.	24E'LL	.	.	.	.
-.	.	64gnJJJ	.	.	.
-.	.	64cc#XLLL	.	16gn	.
-.	.	64b	.	.	.
-.	24E'JJ 24Gn	.	.	.	.
-.	.	64g	.	.	.
-.	.	64eJJJJ)	.	.	.
-8BB/	24BB\	8r	.	16f#X	.
-.	24E'\LL	.	.	.	.
-.	.	.	.	16BJJ)	.
-.	24E'JJ 24G	.	.	.	.
-=126	=126	=126	=126	=126	=126
-8C#X/	24C#X\	8r	.	(8.eL	.
-.	24E'\LL	.	.	.	.
-.	24E'JJ 24Gn	.	.	.	.
-8BB/	24BB\	8r	.	.	.
-.	24E'\LL	.	.	.	.
-.	.	.	.	16gnJk)	.
-.	24E'JJ 24G	.	.	.	.
-=127	=127	=127	=127	=127	=127
-*	*ped	*	*	*	*
-8ryy	24EE	(64ff#XLLLL	.	(16aLL	.
-.	.	64ee	.	.	.
-.	.	64b	.	.	.
-.	24E'LL	.	.	.	.
-.	.	64gnJJJ	.	.	.
-.	.	64cc#XLLL	.	16gn	.
-.	.	64b	.	.	.
-.	24E'JJ 24Gn	.	.	.	.
-.	.	64g	.	.	.
-.	.	64eJJJJ)	.	.	.
-8BB/	24BB\	8r	.	16f#X	.
-.	24E'\LL	.	.	.	.
-.	.	.	.	16BJJ)	.
-.	24E'JJ 24G	.	.	.	.
-*v	*v	*	*	*	*
-=	=	=	=	=
-*-	*-	*-	*-	*-
-!!!system-decoration: s1[({(s2,s3)})]
-!!!RDF**kern: > = above
-!!!RDF**kern: < = below
+!!!filter: composite -eCAn | colorgroups
+!!!COM: Josquin des Prez
+!!!OTL: La Bernardina
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*Ivox	*Ivox	*Ivox
+*I"Contra	*I"Tenor	*I"Superius
+*I'C	*I'T	*I'S
+*clefGv2	*clefGv2	*clefG2
+*k[]	*k[]	*k[]
+*C:	*C:	*C:
+*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)
+=1-	=1-	=1-
+4C	0r	0r
+4D	.	.
+4E	.	.
+4F	.	.
+2G	.	.
+[2A	.	.
+=2	=2	=2
+4A]	0r	0r
+4G	.	.
+1c	.	.
+2B	.	.
+=3	=3	=3
+1c	4C	0r
+.	4D	.
+.	4E	.
+.	4F	.
+2r	2G	.
+[2F	[2A	.
+=4	=4	=4
+2F]	4A]	0r
+.	4G	.
+2E	1c	.
+1D	.	.
+.	2B	.
+=5	=5	=5
+2.C	[0c	4c
+.	.	4d
+.	.	4e
+4D	.	4f
+2E	.	2g
+[2F	.	[2a
+=6	=6	=6
+4F]	1c]	4a]
+4E	.	4g
+2A	.	1cc
+1G	1d	.
+.	.	2b
+=7	=7	=7
+1C	1.e	1.cc
+1r	.	.
+.	2d	4b
+.	.	4a
+=8	=8	=8
+1A	2e	2cc
+.	2f	2dd
+2G	2g	2b
+[2A	2e	[2cc
+=9	=9	=9
+4A]	1.f	4cc]
+4G	.	4b
+4F	.	4a
+4E	.	4g
+2D	.	2a
+[2A	2e	[2cc
+=10	=10	=10
+4A]	1.f	4cc]
+4G	.	4b
+4F	.	4a
+4E	.	4g
+2D	.	2a
+[2A	2e	[2cc
+=11	=11	=11
+4A]	2f	4cc]
+4G	.	4b
+4F	1g	4a
+4E	.	4g
+1D	.	1a
+.	2f#i	.
+=12	=12	=12
+2.G	0g	[0g
+4A	.	.
+2B	.	.
+2c	.	.
+=13	=13	=13
+2.G	1r	0g]
+4A	.	.
+2B	1G	.
+2E	.	.
+=14	=14	=14
+2.F	2.A	0r
+4E	4G	.
+1D	2A	.
+.	2B	.
+=15	=15	=15
+0A	0c	1r
+.	.	1c
+=16	=16	=16
+0G	0r	2.d
+.	.	4c
+.	.	2d
+.	.	2e
+=17	=17	=17
+0F	1r	0f
+.	1A	.
+=18	=18	=18
+0E	2.B	0r
+.	4A	.
+.	2B	.
+.	2c	.
+=19	=19	=19
+0B	0d	1r
+.	.	1d
+=	=	=
+*-	*-	*-
+!!!RDF**kern: l=long note in original notation
+!!!RDF**kern: i=editorial accidental
 </script>
-{% include display-vhv-link.html link="https://verovio.humdrum.org/?file=poly/129&filter=composite%20-eCAn|colorgroups" %}
+{% include display-vhv-link.html link="https://verovio.humdrum.org/?file=jrp/Jos/Jos2721-La_Bernardina.krn&filter=composite%20-eCAn|colorgroups" %}
 
 
 Here is an example of counting the note onsets for each event in
-the full composite rhythm:
+the full composite rhythm and then noting the metric position
+of the event:
 
 
 ```bash
-composite -An | extractx -i vdata-onsets | ridx -H | sortcount -p
+humcat h://jrp/Jos/Jos2721-La_Bernardina.krn | bin/composite -An \
+	| beat -p | extractx -s 1,3 | ridx -H | sortcount -p | sort -k 3
 ```
 
 ```
-54.76	1
-30.95	2
-11.9	3
-2.38	4
+2.24	.	0
+1.35	6	1
+3.59	8	1
+4.04	1	1
+4.93	2	1
+4.93	3	1
+6.73	4	1
+7.17	7	1
+8.52	5	1
+1.79	8	2
+11.21	1	2
+2.69	2	2
+2.69	6	2
+4.04	4	2
+5.83	7	2
+7.17	3	2
+7.17	5	2
+0.45	8	3
+1.79	3	3
+3.59	5	3
+4.04	1	3
+4.04	7	3
 ```
 
-54.76% of the events are the result of a single note onset.
-
+11.21% of the cases are two note onsets occurring at the beginning
+of a measure.  Three-note events occur at the half-note positions
+(1, 3, 5, 7) with position 3 being about 1/2 as common as the other
+positions.
 
 
 
