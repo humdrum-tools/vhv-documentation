@@ -24,7 +24,7 @@
 @SUMMARY:	Display only composite rhythm analyses.
 @@END: 		OPTION
 
-
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 @@BEGIN:	OPTION
 @CATEGORY:	Polyrhythm grouping options
@@ -61,6 +61,19 @@
 @@BEGIN:	OPTION
 @DEFINITION:	C|color-full-composite=b
 @SUMMARY:	Color full composite rhythm.
+@@END: 		OPTION
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	OPTION
+@CATEGORY:	Numeric analyses
+@DEFINITION:	e|events=b
+@SUMMARY:	Show event counts at starts of composite rhythm staves.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	A|analysis|analyses=s
+@SUMMARY:	Extract various numeric features for more detailed analyses.
 @@END: 		OPTION
 
 @@END:		OPTIONS

@@ -1762,5 +1762,253 @@ To mark only the coincidence notes in the input score without displaying any ana
 </script>
 {% include display-vhv-link.html link="https://verovio.humdrum.org/?file=poly/129&filter=composite%20-ugcmCl70|colorgroups" %}
 
+<h2> Numeric analyses </h2>
+
+<a name="option-e"></a>
+<h3> Event counts </h3>
+
+The `-e` option can be added to show the event count for each 
+composite rhythm staff at the start of the music:
+
+{% include verovio.html
+	source="eventCounts"
+	scale="30"
+	spacingLinear="0.1"
+	spacingNonLinear="0.1"
+	pageWidth="1650"
+	humdrum-min-height="200px"
+	tabsize="16"
+%}
+<script type="text/x-humdrum" id="eventCounts">
+!!!filter: composite -ugce
+**kern	**kern	**dynam	**kern	**dynam
+*grp:A	*grp:B	*grp:B	*grp:A	*grp:A
+*part2	*part2	*part2	*part1	*part1
+*staff3	*staff2	*	*staff1	*
+*ICklav	*ICklav	*	*ICstr	*
+*Ipiano	*Ipiano	*	*Icello	*
+*I"Piano	*	*	*I"Violoncello	*
+*I'Pno.	*	*	*I'Vc.	*
+*clefF4	*clefG2	*	*clefF4	*
+*k[f#c#g#]	*k[f#c#g#]	*	*k[f#c#g#]	*
+*A:	*A:	*	*A:	*
+*M2/8	*M2/8	*	*M2/8	*
+=124	=124	=124	=124	=124
+*grp:A	*	*	*	*
+*	*	*	*Xtuplet	*
+!	!	!	!LO:TX:a:b:t=[[eighth]=84]	!
+24EE\	8.Gn&lt;L	.	24r	.
+*	*	*	*Xtuplet	*
+!	!	!	!	!LO:DY:ed=brack
+24ELL\	.	.	(24BB'LL	mf
+24EJJ 24G	.	.	24BB'JJ 24E	.
+8r	.	.	24BB'LL 24E	.
+.	.	.	24BB'JJ 24E)	.
+.	16B&lt;Jk)	.	.	.
+!	!	!	!	!LO:DY:t=espress. %s
+.	.	.	(24gn	f
+=125	=125	=125	=125	=125
+*^	*	*	*	*
+*	*ped	*	*	*	*
+*	*	*	*	*grp:B	*grp:B
+!	!	!	!LO:DY:a	!	!
+8ryy	24EE	(64ff#XLLLL	f	16aLL	.
+.	.	64ee	.	.	.
+!	!	!	!	!	!
+!	!	!	!	!	!
+.	.	64b	.	.	<
+.	24E'LL	.	.	.	.
+.	.	64gnJJJ	.	.	.
+.	.	64cc#XLLL	.	16gn	.
+.	.	64b	.	.	.
+.	24E'JJ 24Gn	.	.	.	.
+.	.	64g	.	.	.
+.	.	64eJJJJ)	.	.	.
+8BB/	24BB\	8r	.	16f#X	.
+.	24E'\LL	.	.	.	.
+.	.	.	.	16BJJ)	.
+.	24E'JJ 24G	.	.	.	.
+=126	=126	=126	=126	=126	=126
+8C#X/	24C#X\	8r	.	(8.eL	.
+.	24E'\LL	.	.	.	.
+.	24E'JJ 24Gn	.	.	.	.
+8BB/	24BB\	8r	.	.	.
+.	24E'\LL	.	.	.	.
+.	.	.	.	16gnJk)	.
+.	24E'JJ 24G	.	.	.	.
+=127	=127	=127	=127	=127	=127
+*	*ped	*	*	*	*
+8ryy	24EE	(64ff#XLLLL	.	(16aLL	.
+.	.	64ee	.	.	.
+.	.	64b	.	.	.
+.	24E'LL	.	.	.	.
+.	.	64gnJJJ	.	.	.
+.	.	64cc#XLLL	.	16gn	.
+.	.	64b	.	.	.
+.	24E'JJ 24Gn	.	.	.	.
+.	.	64g	.	.	.
+.	.	64eJJJJ)	.	.	.
+8BB/	24BB\	8r	.	16f#X	.
+.	24E'\LL	.	.	.	.
+.	.	.	.	16BJJ)	.
+.	24E'JJ 24G	.	.	.	.
+*v	*v	*	*	*	*
+=	=	=	=	=
+*-	*-	*-	*-	*-
+!!!system-decoration: s1[({(s2,s3)})]
+!!!RDF**kern: > = above
+!!!RDF**kern: < = below
+</script>
+{% include display-vhv-link.html link="https://verovio.humdrum.org/?file=poly/129&filter=composite%20-ugce" %}
+
+In addition, event counts are added at the bottom of the output
+score in reference records for further numeric processing, such as
+the following examples:
+
+```tsv
+!!!group-b-event-count: 24
+!!!group-a-event-count: 24
+!!!composite-event-count: 42
+!!!coincidence-event-count: 6
+```
+
+These lines can be shown in VHV if the filter is compiled (causing the output
+anlaysis score to replace the input score in the VHV text editor).
+
+These values can then be processed automatically, such as extracting
+the coincidence event count from the Humdrum score in a command-line
+interface:
+
+```bash
+composite -ce file | grep "^\!\!\!coincidence-event-count:" | sed 's/.*: *//'
+```
+
+<a name="option-A"></a>
+<h2> Numeric analysis features </h2>
+
+Various analysis features can be extracted from a score along
+with composite rhythms.  These are selected with the `-A` option.  Here is a list
+of the characters than can be given in a string argument after the `-A` option flag:
+
+| character | meaning |
+| --------- | ------- |
+| `n`       | notes onset count |
+
+
+<h3> Note onset counts </h3>
+
+To extract a count of note onsets for each composite rhythm event, add the 
+letter `n` to the `-A` option string:
+
+{% include verovio.html
+	source="noteOnsetAnalysis"
+	scale="31"
+	spacingLinear="0.1"
+	spacingNonLinear="0.3"
+	pageWidth="1400"
+	humdrum-min-height="200px"
+	tabsize="16"
+%}
+<script type="text/x-humdrum" id="noteOnsetAnalysis">
+!!!filter: composite -eC -A n | colorgroups
+**kern	**kern	**dynam	**kern	**dynam
+*grp:A	*grp:B	*grp:B	*grp:A	*grp:A
+*part2	*part2	*part2	*part1	*part1
+*staff3	*staff2	*	*staff1	*
+*ICklav	*ICklav	*	*ICstr	*
+*Ipiano	*Ipiano	*	*Icello	*
+*I"Piano	*	*	*I"Violoncello	*
+*I'Pno.	*	*	*I'Vc.	*
+*clefF4	*clefG2	*	*clefF4	*
+*k[f#c#g#]	*k[f#c#g#]	*	*k[f#c#g#]	*
+*A:	*A:	*	*A:	*
+*M2/8	*M2/8	*	*M2/8	*
+=124	=124	=124	=124	=124
+*grp:A	*	*	*	*
+*	*	*	*Xtuplet	*
+!	!	!	!LO:TX:a:b:t=[[eighth]=84]	!
+24EE\	8.Gn&lt;L	.	24r	.
+*	*	*	*Xtuplet	*
+!	!	!	!	!LO:DY:ed=brack
+24ELL\	.	.	(24BB'LL	mf
+24EJJ 24G	.	.	24BB'JJ 24E	.
+8r	.	.	24BB'LL 24E	.
+.	.	.	24BB'JJ 24E)	.
+.	16B&lt;Jk)	.	.	.
+!	!	!	!	!LO:DY:t=espress. %s
+.	.	.	(24gn	f
+=125	=125	=125	=125	=125
+*^	*	*	*	*
+*	*ped	*	*	*	*
+*	*	*	*	*grp:B	*grp:B
+!	!	!	!LO:DY:a	!	!
+8ryy	24EE	(64ff#XLLLL	f	16aLL	.
+.	.	64ee	.	.	.
+!	!	!	!	!	!
+!	!	!	!	!	!
+.	.	64b	.	.	<
+.	24E'LL	.	.	.	.
+.	.	64gnJJJ	.	.	.
+.	.	64cc#XLLL	.	16gn	.
+.	.	64b	.	.	.
+.	24E'JJ 24Gn	.	.	.	.
+.	.	64g	.	.	.
+.	.	64eJJJJ)	.	.	.
+8BB/	24BB\	8r	.	16f#X	.
+.	24E'\LL	.	.	.	.
+.	.	.	.	16BJJ)	.
+.	24E'JJ 24G	.	.	.	.
+=126	=126	=126	=126	=126	=126
+8C#X/	24C#X\	8r	.	(8.eL	.
+.	24E'\LL	.	.	.	.
+.	24E'JJ 24Gn	.	.	.	.
+8BB/	24BB\	8r	.	.	.
+.	24E'\LL	.	.	.	.
+.	.	.	.	16gnJk)	.
+.	24E'JJ 24G	.	.	.	.
+=127	=127	=127	=127	=127	=127
+*	*ped	*	*	*	*
+8ryy	24EE	(64ff#XLLLL	.	(16aLL	.
+.	.	64ee	.	.	.
+.	.	64b	.	.	.
+.	24E'LL	.	.	.	.
+.	.	64gnJJJ	.	.	.
+.	.	64cc#XLLL	.	16gn	.
+.	.	64b	.	.	.
+.	24E'JJ 24Gn	.	.	.	.
+.	.	64g	.	.	.
+.	.	64eJJJJ)	.	.	.
+8BB/	24BB\	8r	.	16f#X	.
+.	24E'\LL	.	.	.	.
+.	.	.	.	16BJJ)	.
+.	24E'JJ 24G	.	.	.	.
+*v	*v	*	*	*	*
+=	=	=	=	=
+*-	*-	*-	*-	*-
+!!!system-decoration: s1[({(s2,s3)})]
+!!!RDF**kern: > = above
+!!!RDF**kern: < = below
+</script>
+{% include display-vhv-link.html link="https://verovio.humdrum.org/?file=poly/129&filter=composite%20-eCAn|colorgroups" %}
+
+
+Here is an example of counting the note onsets for each event in
+the full composite rhythm:
+
+
+```bash
+composite -An | extractx -i vdata-onsets | ridx -H | sortcount -p
+```
+
+```
+54.76	1
+30.95	2
+11.9	3
+2.38	4
+```
+
+54.76% of the events are the result of a single note onset.
+
+
 
 
