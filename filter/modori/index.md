@@ -739,6 +739,102 @@ For scribal errors, the LO:MO system can be used, although it is
 better to use [sic](/filter/sic) to allow corrections to be applied
 to both the diplomatic or modern editions.
 
+<h3> Interpretations </h3>
+
+Interpretations for modern/original displays can be switched with the
+modori filter.  Here is an example of changing the stem styling on 
+half notes:
+
+
+{% include verovio.html
+	source="interp"
+	scale="60"
+	spacingNonLinear="0.4"
+	spacingLinear="0.3"
+	humdrum-min-height="325px"
+	humdrum-min-width="250px"
+	pageWidth="700"
+	tabsize="12"
+%}
+<script type="text/x-humdrum" id="interp">
+**kern
+*clefG2
+*M4/4
+!LO:MO:mod=*dummy"
+*2\right
+=
+2cc
+2ff
+=
+2gg
+2ee
+==
+*-
+</script>
+
+The interpretation `*2\right` will be switched to `*blank` when the `modori -m` 
+filter is used to display the modern score:
+
+{% include verovio.html
+	source="interp"
+	scale="60"
+	spacingNonLinear="0.4"
+	spacingLinear="0.3"
+	humdrum-min-height="325px"
+	humdrum-min-width="250px"
+	pageWidth="700"
+	tabsize="12"
+%}
+<script type="text/x-humdrum" id="interp">
+!!!filter: modori -m
+**kern
+*clefG2
+*M4/4
+!LO:MO:mod=*dummy"
+*2\right
+=
+2cc
+2ff
+=
+2gg
+2ee
+==
+*-
+</script>
+
+The `*dummy` interpretation has no meaning, and is used as a placeholder
+so that the original interpretation can be restored with `modori -o`.
+Here is the compiled result of the filter:
+
+{% include verovio.html
+	source="interp2"
+	scale="60"
+	spacingNonLinear="0.4"
+	spacingLinear="0.3"
+	humdrum-min-height="325px"
+	humdrum-min-width="250px"
+	pageWidth="700"
+	tabsize="12"
+%}
+<script type="text/x-humdrum" id="interp2">
+!!!Xfilter: modori -m
+**kern
+*clefG2
+*M4/4
+!LO:MO:ori=*2\right"
+*dummy
+=
+2cc
+2ff
+=
+2gg
+2ee
+==
+*-
+</script>
+
+Note that null interpretations cannot be used, which is why `*dummy` is 
+used in this example.
 
 
 <h2> LO:TX / LO:DY </h2>
