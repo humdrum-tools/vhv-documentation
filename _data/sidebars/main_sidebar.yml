@@ -358,6 +358,10 @@ entries:
       output: web, pdf
       url: /filter/melisma
 
+    - title: modori
+      output: web, pdf
+      url: /filter/modori
+
     - title: myank
       output: web, pdf
       url: /filter/myank

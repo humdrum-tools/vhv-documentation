@@ -1,0 +1,16 @@
+@@BEGIN:	OPTIONS
+@TOOL:		composite
+
+@@BEGIN:	OPTION
+@DEFINITION:	m=b
+@SUMMARY:	Switch to modern version of file.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	o=b
+@SUMMARY:	Switch to original (diplomatic) version of file.
+@@END: 		OPTION
+
+@@END:		OPTIONS
+
+
