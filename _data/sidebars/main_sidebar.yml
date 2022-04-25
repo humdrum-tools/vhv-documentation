@@ -414,6 +414,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Splits
+      output: web, pdf
+      url: /topics/splits
+
     - title: URL parameters
       output: web, pdf
       url: /topics/url-parameters
