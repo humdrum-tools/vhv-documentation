@@ -204,6 +204,10 @@ entries:
       output: web, pdf
       url: /humdrum/fingering
 
+    - title: Harmonics
+      output: web, pdf
+      url: /humdrum/harmonics
+
     - title: Invisible rests
       output: web, pdf
       url: /humdrum/invisible_rests
