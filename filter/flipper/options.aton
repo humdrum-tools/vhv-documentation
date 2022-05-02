@@ -1,0 +1,32 @@
+@@BEGIN:	OPTIONS
+@TOOL:		flipper
+
+@@BEGIN:	OPTION
+@DEFINITION:	a|all=b
+@SUMMARY:	Flip globally, not just inside *flip/*Xflip regions.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	i|interp=s:kern
+@ARGUMENT:	exinterp
+@SUMMARY:	Flip only in given interpretation.
+@@END: 		OPTION
+
+@@BEGIN:	XOPTION
+@DEFINITION:	k|keep=b
+@SUMMARY:	Keep *flip/*Xflip instructions.
+@@END: 		XOPTION
+
+@@BEGIN:	XOPTION
+@DEFINITION:	s|strophe=b
+@SUMMARY:	Flip inside of strophes as well.
+@@END: 		XOPTION
+
+@@BEGIN:	XOPTION
+@DEFINITION:	S|strophe-only|only-strophe=b
+@SUMMARY:	Flip only inside of strophes.
+@@END: 		XOPTION
+
+@@END:		OPTIONS
+
+
