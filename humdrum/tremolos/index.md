@@ -220,12 +220,65 @@ Two-note tremolos also work with chords:
 *-
 </script>
 
+## Unmeasured tremolos ##
+
+Unmeasured tremolos are not expected to be played exactly as written, and
+function more as ornaments.  Thirty-second note tremolos are often
+unmeasured tremolos, and can be encoded in the following alternate way.
+
+{% include verovio.html
+	source="unmeasured"
+	humdrum-min-height="320px"
+	scale="75"
+%}
+<script type="application/json" id="unmeasured">
+**kern
+*M4/4
+=1
+4cO
+4dOO
+4eOOO
+4fOOOO
+=
+8cOOL
+8eOO
+8dOO
+8fOOJ
+=
+*-
+!!!RDF**kern: O = tremolo
+</script>
+
+The number of tremolo lines is indicated by the repetition of the letter `O`
+in the token.
+
+The line:
+
+```
+!!!RDF**kern: O = tremolo
+```
+
+defines the `O` character in `**kern` data to represent a tremolo.
+`O` is the upper case letter `o` which means a generic ornament in
+`**kern` data.  Other user signifiers could be used as well, but
+using `O` is useful if you want to categorize the tremolo as an
+ornament like a trill.
+
 
 
 ## Disabling tremolos ##
 
 Tremolos can be disabled from notation rendering by using the
-[shed](/filter/shed) filter:
+[shed](/filter/shed) filter.  Add the following line to a file
+to temporarily disable tremolos:
+
+
+```
+!!!filter: shed -e 's/^X?tremolo$//I'
+```
+
+This filter changes both `*tremolo` and `*Xtremolo` interpretations to the
+null interpretation, `*`.  
 
 
 {% include verovio.html
@@ -250,9 +303,11 @@ Tremolos can be disabled from notation rendering by using the
 16g 16b 16dd
 16e
 16g 16b 16ddJJ
+*Xtremolo
 =
 *-
 </script>
+
 
 {% include verovio.html
 	source="remove2"
@@ -277,9 +332,53 @@ Tremolos can be disabled from notation rendering by using the
 16g 16b 16dd
 16e
 16g 16b 16ddJJ
+*Xtremolo
 =
 *-
 </script>
+
+To preserve the tremolo interpretations within
+the data for later reconstruction of tremolos, use instead something like:
+
+```
+!!!filter: shed -e 's/^(X?tremolo)$/$1-disabled/I'
+```
+
+Here is the compiled output of this filter:
+
+{% include verovio.html
+	source="remove2"
+	humdrum-min-width="310px"
+	humdrum-min-height="320px"
+	scale="75"
+%}
+<script type="application/json" id="remove2">
+!!!Xfilter: shed -e 's/^(X?tremolo)$/$1-disabled/I'
+**kern
+*M3/4
+*tremolo-disabled
+16eLL
+16g
+16e
+16gJJ
+16e 16g 16bLL
+16g 16b 16dd
+16e 16g 16b
+16g 16b 16ddJJ
+16eLL
+16g 16b 16dd
+16e
+16g 16b 16ddJJ
+*Xtremolo-disabled
+=
+*-
+</script>
+
+To restore the tremolos again, use this filter:
+
+```
+!!!filter: shed -e 's/^(X?tremolo)-disabled$/$1/I'
+```
 
 
 ## Tremolo filter ##
