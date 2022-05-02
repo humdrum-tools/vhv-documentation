@@ -416,6 +416,14 @@ entries:
       output: web, pdf
       url: /options/list
 
+    - title: French beaming
+      output: web, pdf
+      url: /options/beamFrenchStyle
+
+    - title: Compressed notation
+      output: web, pdf
+      url: /options/evenNoteSpacing
+
 ###########################################################################
 
   - title: Other topics
