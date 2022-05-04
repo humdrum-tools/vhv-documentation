@@ -398,6 +398,10 @@ entries:
       output: web, pdf
       url: /filter/slurcheck
 
+    - title: synco
+      output: web, pdf
+      url: /filter/synco
+
     - title: transpose
       output: web, pdf
       url: /filter/transpose

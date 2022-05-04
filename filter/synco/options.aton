@@ -1,0 +1,30 @@
+@@BEGIN:	OPTIONS
+@TOOL:		composite
+
+@@BEGIN:	OPTION
+@DEFINITION:	c=s:skyblue
+@ARGUMENT:      color
+@SUMMARY:	Highlight color for syncopations.
+@@END: 		OPTION
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	OPTION
+@CATEGORY:	Command-line options
+@DEFINITION:	i|info=b
+@SUMMARY:	Display summary statistics information.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	f|filename=b
+@SUMMARY:	Display filename with summary statistics.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	a|all=b
+@SUMMARY:	Generate average statistics for all input files.
+@@END: 		OPTION
+
+@@END:		OPTIONS
+
+
