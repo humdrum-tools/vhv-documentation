@@ -197,7 +197,7 @@ Las ligaduras se pueden colorear dando un color SVG como parámetro de diseño `
 **kern
 *M4/4
 =1
-!LO:T:color=chartreuse
+!LO:T:color=limegreen
 [2f
 2f]
 =2
@@ -207,7 +207,7 @@ Las ligaduras se pueden colorear dando un color SVG como parámetro de diseño `
 [2f
 2f]
 =2
-!LO:T:n=1:dot:color=chartreuse
+!LO:T:n=1:dot:color=limegreen
 !LO:T:n=2:dash:color=hotpink
 [2c [2g
 2c] 2g]

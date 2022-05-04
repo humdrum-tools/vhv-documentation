@@ -2,12 +2,12 @@
 title: Encoding ties in Humdrum
 lang: en es
 ref: humdrum-getting_started-ties
+creation_date: 20 Aug 2017
+last_updated: 4 May 2022
 author: Craig Stuart Sapp
 translator: 
-keywords: humdrum encoding tutorial ties
-creation_date: 20 Aug 2017
 translation_date: 
-last_updated: 7 Dec 2019
+keywords: humdrum encoding tutorial ties
 tags: [all, humdrum, getting_started]
 verovio: "true"
 vim: ts=3 ft=javascript
@@ -25,8 +25,9 @@ There are two ways to control the placement of ties on the staff.  When
 a tie needs to be placed in an arbitrary position, use one of the following
 two systems.
 
-### By layout parameters ###
 
+
+### By layout parameters ###
 
 {% include verovio.html
 	humdrum-min-height="315px"
@@ -57,6 +58,8 @@ The `!LO:T:` layout prefix indicates that the layout parameter applies
 to the tie in the next data token in the spine.  To force the tie above
 the staff, add the parameter `a`, which is short for `a=true`.  To force the
 tie below the staff, add the parameter `b`.
+
+
 
 ### By RDF records ###
 
@@ -95,6 +98,7 @@ the `[` (or '_') character representing the tie start.  Other positions in
 the token will cause slur or beam to be oriented up or down, and
 placing the above/below signifiers after a note will move it to the
 next staff above or below the current one.
+
 
 
 ### Ties on chords ###
@@ -136,6 +140,7 @@ tie on the first note, `n=2` for the second note, and so on.
 </script>
 
 
+
 ## Dashed and dotted ties ##
 
 Layout parameters can be prefixed to the starting token of a tie
@@ -172,6 +177,7 @@ line, add the parameter `dash` which is equivalent to `dash=true`.
 To display the tie as a dotted line, add the parameter `dot`.
 
 
+
 ## Coloring ties ##
 
 Ties can be colored by giving an SVG color as a `color` layout parameter:
@@ -186,7 +192,7 @@ Ties can be colored by giving an SVG color as a `color` layout parameter:
 **kern
 *M4/4
 =1
-!LO:T:color=chartreuse
+!LO:T:color=limegreen
 [2f
 2f]
 =2
@@ -196,7 +202,7 @@ Ties can be colored by giving an SVG color as a `color` layout parameter:
 [2f
 2f]
 =2
-!LO:T:n=1:dot:color=chartreuse
+!LO:T:n=1:dot:color=limegreen
 !LO:T:n=2:dash:color=hotpink
 [2c [2g
 2c] 2g]
@@ -204,13 +210,14 @@ Ties can be colored by giving an SVG color as a `color` layout parameter:
 *-
 </script>
 
+
+
 ## Disjunct tied notes ##
 
 Sometimes ties connect two notes that are not directly adjacent.  This
 usually occurs in the case of written out arpeggios.  In such cases, double
 the tie signifier to indicate that the ending note of the tie does not
 directly follow the starting note of the tie.
-
 
 {% include verovio.html
 	humdrum-min-height="175px"
@@ -235,11 +242,11 @@ which all of the notes are tied, so it has a regular tie
 signifier.
 
 
+
 ## Cross-staff tied notes ##
 
 Cross-staff ties (in particular for piano music), can be created
 using an RDF record as in the following example:
-
 
 {% include verovio.html
 	humdrum-min-height="250px"
@@ -266,5 +273,99 @@ The RDF record `N = linked` is used to create the link between the two
 tie endpoints in the data.  The link signifier must come immediately
 in front of the tie signifiers in the data.  And the matching tie can be
 either adjacent or disjunct on the other staff.
+
+
+
+## Invalid tie highlighting ##
+
+When ties do not connect properly between notes, they are highlighted in
+red:
+
+{% include verovio.html
+	humdrum-min-height="250px"
+	source="error"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="error">
+**kern
+*clefG2
+*M4/4
+=1
+4c
+[4d
+4d
+4f
+=
+4c
+[4d
+4e]
+4f
+=
+*-
+</script>
+
+In the first measure the ending tie marker on the second D is missing, while
+in the second measure, the D and E are not the same pitch.
+
+Note that enharmonic pitches are allowed to tie to each other and will not
+be highlighted as an error:
+
+{% include verovio.html
+	humdrum-min-height="250px"
+	source="enharmonic"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="enharmonic">
+**kern
+*clefG2
+*M4/4
+=1
+[2c#
+2B##X]
+=2
+[2e#
+4g--X_
+4f]
+=
+*-
+</script>
+
+{% include warning.html content="Currently accidentals on secondary ties notes in such situations need to be forced to display by following the accidental with an X." %}
+
+
+
+## Laissez vibrer ties ##
+
+Laissez vibrer (<i>l.v.</i>) ties start on a note but do not have a
+specific ending on a following note.
+
+{% include verovio.html
+	humdrum-min-height="250px"
+	source="lvtie"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="lvtie">
+**kern
+*clefG2
+*M4/4
+=1
+[2f
+2r
+=2
+!LO:T:lv
+[2f
+2r
+=
+*-
+</script>
+
+In the first measure the tie is unclosed and therefore marked in
+red as a syntax error.  In the second measure, the `!LO:T:lv` means
+that the tie is not closed intentionally, because it is an <i>l.v.</i>
+tie.
+
 
 
