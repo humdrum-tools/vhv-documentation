@@ -216,6 +216,10 @@ entries:
       output: web, pdf
       url: /humdrum/ligatures
 
+    - title: Mensural notation
+      output: web, pdf
+      url: /humdrum/mens
+
     - title: Ottava marks
       output: web, pdf
       url: /humdrum/ottava_marks
@@ -244,6 +248,10 @@ entries:
       output: web, pdf
       url: /humdrum/ties
 
+    - title: Transposing parts
+      output: web, pdf
+      url: /humdrum/transposing
+
     - title: Tremolos
       output: web, pdf
       url: /humdrum/tremolos
@@ -252,17 +260,9 @@ entries:
       output: web, pdf
       url: /humdrum/trills
 
-    - title: Transposing parts
-      output: web, pdf
-      url: /humdrum/transposing
-
     - title: Tuplets
       output: web, pdf
       url: /humdrum/tuplets
-
-    - title: Mensural notation
-      output: web, pdf
-      url: /humdrum/mens
 
 ###########################################################################
 
