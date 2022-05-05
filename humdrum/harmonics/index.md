@@ -149,10 +149,10 @@ for analytic purposes, and it can be hidden by adding a single
 *Ivioln
 *clefG2
 =1
-2rA 2re 2eeo
-4rd 4ra 4aao
-4ra 4ree 4eeeo
-2ree 2rbb 2bbbo
+2rA 2re 2eeoy
+4rd 4ra 4aaoy
+4ra 4ree 4eeeoy
+2ree 2rbb 2bbboy
 =
 *-
 </script>
