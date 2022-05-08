@@ -7,7 +7,7 @@ translator:
 keywords: humdrum encoding tutorial key signatures
 creation_date: 15 Sep 2019
 translation_date: 
-last_updated: 15 Sep 2019
+last_updated: 8 May 2022
 tags: [all, humdrum, getting_started]
 verovio: "true"
 vim: ts=3 ft=javascript

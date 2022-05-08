@@ -186,4 +186,106 @@ the order in the key signature.  Here is an example of such a case:
 </script>
 
 
+### Modern/original key signatures  ###
+
+When encoding a modern or diplomatic score, the [modori](/filter/modori) filter can be used
+to switch the key signatures between the two encoding types.   When encoding a diplomatic score, 
+use the `*k[]` format for the original key signature, and `*mk[]` for the modern key signature (if they are
+different).  Likewise, when encoding a modernized version of a score, use `*k[]` for the modern
+key signature format, and `*ok[]` for the original key signature.
+
+Here is an example diplomatic score:
+
+
+{% include verovio.html
+	humdrum-min-height="325px"
+	source="original"
+	scale="55"
+	pageWidth="1300"
+%}
+<script type="application/x-humdrum" id="original">
+**kern
+*mclefG2
+*clefC1
+*mk[b-e-X]
+*k[b-]
+*M4/4
+=1
+4B-
+4c
+4d
+4e-
+=2
+4f
+4g
+4a
+4b-
+==
+*-
+</script>
+
+Applying the modori filter to display the modern score:
+
+{% include verovio.html
+	humdrum-min-height="325px"
+	source="modern"
+	scale="55"
+	pageWidth="1300"
+%}
+<script type="application/x-humdrum" id="modern">
+!!!filter: modori -m
+**kern
+*mclefG2
+*clefC1
+*mk[b-e-X]
+*k[b-]
+*M4/4
+=1
+4B-
+4c
+4d
+4e-
+=2
+4f
+4g
+4a
+4b-
+==
+*-
+</script>
+
+
+Notice that after compiling the modori filter in VHV, the modern
+key signature uses `*k[]` and the original is moved to `*ok[]`:
+
+{% include verovio.html
+	humdrum-min-height="325px"
+	source="modern2"
+	scale="55"
+	pageWidth="1300"
+%}
+<script type="application/x-humdrum" id="modern2">
+!!!Xfilter: modori -m
+**kern
+*clefG2
+*oclefC1
+*k[b-e-X]
+*ok[b-]
+*M4/4
+=1
+4B-
+4c
+4d
+4e-
+=2
+4f
+4g
+4a
+4b-
+==
+*-
+</script>
+
+
+
 

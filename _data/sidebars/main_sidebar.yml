@@ -212,6 +212,10 @@ entries:
       output: web, pdf
       url: /humdrum/invisible_rests
 
+    - title: Key signatures
+      output: web, pdf
+      url: /humdrum/keysig
+
     - title: Ligatures and coloration
       output: web, pdf
       url: /humdrum/ligatures
