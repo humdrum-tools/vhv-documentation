@@ -1,0 +1,42 @@
+
+
+## Parentheses/Brackets
+
+A layout parameter can be added immediately before a time signature to put it in 
+parentheses or brackets:
+
+{% include verovio.html
+	humdrum-min-height="310px"
+	source="enclose"
+	scale="55"
+	spacingNonLinear="0.4"
+	spacingLinear="0.05"
+	pageWidth="900"
+%}
+<script type="application/x-humdrum" id="enclose">
+**kern
+!LO:TS:paren
+*M4/4
+=1
+4g
+4a
+4b
+4cc
+=2
+!LO:TS:brack
+*M2/2
+8cL
+8d
+8e
+8fJ
+8gL
+8f
+8e
+8dJ
+==
+*-
+</script>
+
+
+
+

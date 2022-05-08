@@ -1,7 +1,7 @@
 ---
 title: tutorial de codificación de compases
 lang: en es
-ref: humdrum-getting_started-time_signatures
+ref: humdrum-getting_started-timesig
 author: Craig Stuart Sapp
 translator: David Rizo
 keywords: humdrum encoding tutorial time signatures
@@ -13,10 +13,10 @@ verovio: "true"
 vim: ts=3 ft=javascript
 summary: Un tutorial sobre cómo codificar compases en los datos de **kern.
 sidebar: main_sidebar
-permalink: /humdrum/getting_started/time_signatures-ES.html
+permalink: /humdrum/timesig/index-ES.html
 ---
 
-<!--{% include humdrum/time_signatures.txt %}-->
+<!--{% include humdrum/timesig.txt %}-->
 
 ## Compases ##
 

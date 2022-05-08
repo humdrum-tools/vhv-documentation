@@ -24,7 +24,7 @@ Cada ejemplo musical en el tutorial de abajo es interactivo, así que intenta aj
 {% include humdrum/clefs.txt %}
 {% include humdrum/octaves.txt %}
 {% include humdrum/barlines.txt %}
-{% include humdrum/time_signatures.txt %}
+{% include humdrum/timesig.txt %}
 {% include humdrum/accidentals.txt %}
 {% include humdrum/keysig.txt %}
 Consulta la [descripción completa de las armaduras](/humdrum/keysig/index.html) para obtener más información.

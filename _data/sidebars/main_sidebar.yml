@@ -252,6 +252,10 @@ entries:
       output: web, pdf
       url: /humdrum/ties
 
+    - title: Time signatures
+      output: web, pdf
+      url: /humdrum/timesig
+
     - title: Transposing parts
       output: web, pdf
       url: /humdrum/transposing

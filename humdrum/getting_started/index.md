@@ -36,7 +36,7 @@ you will have to reload the webpage to restart verovio again.]
 {% include humdrum/clefs.txt %}
 {% include humdrum/octaves.txt %}
 {% include humdrum/barlines.txt %}
-{% include humdrum/time_signatures.txt %}
+{% include humdrum/timesig.txt %}
 {% include humdrum/accidentals.txt %}
 {% include humdrum/keysig.txt %}
 See the [full description of key signatures](/humdrum/keysig/index.html) for more information.
