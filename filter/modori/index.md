@@ -148,7 +148,7 @@ used to select between modern and original key signatures.
 *clefC3
 *mclefG2
 *k[b-]
-*mk[b-e-]
+*mk[b-e-X]
 =
 4B-
 4c
@@ -174,7 +174,7 @@ Switching to the modern score:
 *clefC3
 *mclefG2
 *k[b-]
-*mk[b-e-]
+*mk[b-e-X]
 =
 4B-
 4c
@@ -197,7 +197,7 @@ This will create the "modern" view of the score:
 *oclefC3
 *clefG2
 *ok[b-]
-*k[b-e-]
+*k[b-e-X]
 =
 4B-
 4c
@@ -207,7 +207,7 @@ This will create the "modern" view of the score:
 *-
 </script>
 
-Which can be reverted to the "original" score with the `modori -o` filter:
+which can be reverted to the "original" score with the `modori -o` filter:
 
 {% include verovio.html
 	source="orikey"
@@ -221,7 +221,7 @@ Which can be reverted to the "original" score with the `modori -o` filter:
 *oclefC3
 *clefG2
 *ok[b-]
-*k[b-e-]
+*k[b-e-X]
 =
 4B-
 4c
@@ -284,6 +284,66 @@ from `*met` to `*omet`:
 =
 *-
 </script>
+
+
+If you want to alter the durations between original and modern scores,
+The [half](/filter/half) and [double](/filter/double) filters can be
+used:
+
+{% include verovio.html
+	source="half"
+	scale="60"
+	spacingNonLinear="0.55"
+	spacingLinear="0.2"
+	humdrum-min-height="250px"
+	pageWidth="700"
+%}
+<script type="text/x-humdrum" id="half">
+!!!filter: modori -m | half
+**kern
+*clefC3
+*mclefG2
+*M2/1
+*met(C|)
+=
+1c
+1d
+=
+0c
+=
+*-
+</script>
+
+{% include verovio.html
+	source="halfhalf"
+	scale="60"
+	spacingNonLinear="0.55"
+	spacingLinear="0.2"
+	humdrum-min-height="250px"
+	humdrum-min-width="300px"
+	pageWidth="700"
+%}
+<script type="text/x-humdrum" id="halfhalf">
+!!!filter: modori -m | half | half
+**kern
+*clefC3
+*mclefG2
+*M2/1
+*met(C|)
+=
+1c
+1d
+=
+0c
+=
+*-
+</script>
+
+
+When using the [half](/filter/half) filter, 
+The [autobeam](/filter/autobeam) filter can be used to add
+automatic beams according to the time signature:
+
 
 <h2> OMD reference records </h2>
 
@@ -636,7 +696,7 @@ Me	2e	lamb.	lamb.
 </script>
 
 
-<h2> LO:MO layout parameters </h2>
+<h2> Local LO:MO parameters </h2>
 
 Individual tokens can be swapped between original and modern
 variants.  
@@ -739,6 +799,94 @@ For scribal errors, the LO:MO system can be used, although it is
 better to use [sic](/filter/sic) to allow corrections to be applied
 to both the diplomatic or modern editions.
 
+<h2> Global LO:MO parameters </h2>
+
+Global LO:MO lines can be used to comment out data that is specific
+to the modern or original score, and the *modori* filter will switch
+the commenting/uncommenting of each marked region.  The basic
+structure for a global LO:MO group is:
+
+```
+!!LO:MO:mod
+[mod content here]
+!!LO:MO:ori
+[ori content here]
+!!LO:MO:end
+```
+
+Either `!!LO:MO:mod` or `!!LO:MO:ori` can come first, and the last
+one is terminated by `!!LO:MO:end`.  Both the `mod` and `ori` content
+can be paired as shown below, or they can occur in isolation for
+insertions and deletions in the score.
+
+Here is an example in the "original" state that contains an
+extra measure in the "modern" state:
+
+{% include verovio.html
+	source="global"
+	scale="60"
+	spacingNonLinear="0.4"
+	spacingLinear="0.3"
+	humdrum-min-height="300px"
+	humdrum-min-width="200px"
+	pageWidth="700"
+	tabsize="12"
+%}
+<script type="text/x-humdrum" id="global">
+**kern
+=1
+!!LO:MO:mod
+!! 4c
+!! 4d
+!! 4e
+!! 4f
+!!LO:MO:ori
+2c
+2d
+!!LO:MO:end
+=2
+1c
+=
+*-
+</script>
+
+The content between `!!LO:MO:mod` and `!!LO:MO:ori` is commented
+out with two exclamation marks followed by a single space.  When
+running the `modori -m` filter on the file, the `!! ` prefix on
+each line in the `mod` section will be removed:
+
+
+
+{% include verovio.html
+	source="global2"
+	scale="60"
+	spacingNonLinear="0.4"
+	spacingLinear="0.3"
+	humdrum-min-height="300px"
+	humdrum-min-width="200px"
+	pageWidth="700"
+	tabsize="12"
+%}
+<script type="text/x-humdrum" id="global2">
+!!!Xfilter: modori -m
+**kern
+=1
+!!LO:MO:mod
+4c
+4d
+4e
+4f
+!!LO:MO:ori
+!! 2c
+!! 2d
+!!LO:MO:end
+=2
+1c
+=
+*-
+</script>
+
+
 <h3> Interpretations </h3>
 
 Interpretations for modern/original displays can be switched with the
@@ -833,15 +981,16 @@ Here is the compiled result of the filter:
 *-
 </script>
 
-Note that null interpretations cannot be used, which is why `*dummy` is 
-used in this example.
+Note that null interpretations cannot be used, which is why `*dummy`
+is used in this example.
 
 
-<h2> LO:TX / LO:DY </h2>
+<h2> LO:TX / LO:DY (text directions and dynamics) </h2>
 
-LO:TX and LO:DY parameters allow modern/original text to be swapped out with the `modori` 
-filter.  Both of these LO parameters can have an added `mod` or `ori` parameter to store
-the modern or original text that should be alternated with the `t` text parameter.
+LO:TX and LO:DY parameters allow modern/original text to be swapped
+out with the `modori` filter.  Both of these LO parameters can have
+an added `mod` or `ori` parameter to store the modern or original
+text that should be alternated with the `t` text parameter.
 
 <h3> LO:TX example </h3>
 
@@ -896,7 +1045,9 @@ the modern or original text that should be alternated with the `t` text paramete
 *-
 </script>
 
+
 Applying `modori -m` to display the modern score:
+
 
 {% include verovio.html
 	source="lotx2"
@@ -952,7 +1103,7 @@ After compiling the modori filter:
 *-
 </script>
 
-<h3> LO:DY example </h3>
+<h3> Text and Dynamics </h3>
 
 {% include verovio.html
 	source="lody"
