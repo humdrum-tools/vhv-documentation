@@ -1,0 +1,16 @@
+@@BEGIN:	OPTIONS
+@TOOL:		half
+
+@@BEGIN:	OPTION
+@DEFINITION:	l|lyric-beam-break=b
+@SUMMARY:	Break beams at syllable starts
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@SUMMARY:
+@DEFINITION:
+@@END: 		OPTION
+
+@@END:		OPTIONS
+
+
