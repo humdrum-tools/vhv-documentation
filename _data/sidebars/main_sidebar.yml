@@ -350,6 +350,10 @@ entries:
       output: web, pdf
       url: /filter/dissonant
 
+    - title: double
+      output: web, pdf
+      url: /filter/double
+
     - title: extract
       output: web, pdf
       url: /filter/extract
@@ -357,6 +361,10 @@ entries:
     - title: flipper
       output: web, pdf
       url: /filter/flipper
+
+    - title: half
+      output: web, pdf
+      url: /filter/half
 
     - title: humdiff
       output: web, pdf
