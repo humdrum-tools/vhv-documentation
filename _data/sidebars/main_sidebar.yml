@@ -370,6 +370,10 @@ entries:
       output: web, pdf
       url: /filter/humdiff
 
+    - title: humtr
+      output: web, pdf
+      url: /filter/humtr
+
     - title: kern2mens
       output: web, pdf
       url: /filter/kern2mens

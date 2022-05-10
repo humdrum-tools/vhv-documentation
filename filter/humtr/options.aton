@@ -1,0 +1,105 @@
+@@BEGIN:	OPTIONS
+@TOOL:		humtr
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	OPTION
+@CATEGORY:	Substitutions
+@DEFINITION:	m|replace-map=s
+@SUMMARY:	Interleaved character substitution string.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	i|input=s
+@SUMMARY:	Input character string
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	o|output=s
+@SUMMARY:	Output character string
+@@END: 		OPTION
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	OPTION
+@CATEGORY:	Spine selection
+@DEFINITION:	d|data-type=s
+@SUMMARY:	Process only given exclusive interpretation(s).
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	s|spines=s
+@SUMMARY:	Process only given spine(s).
+@@END: 		OPTION
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	OPTION
+@CATEGORY:	Category exclusion
+@DEFINITION:	T|no-text|no-lyrics=b
+@SUMMARY:	Do not process lyrics in <tt>**text</tt> spines.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	L|no-local=b
+@SUMMARY:	Do not process local LO <i>t</i> parameters.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	G|no-global=b
+@SUMMARY:	Do not process global LO <i>t</i> parameters.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	R|no-reference=b
+@SUMMARY:	Do not process referrence record values.
+@@END: 		OPTION
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	OPTION
+@CATEGORY:	Category inclusions
+@DEFINITION:	t|text-only|lyrics-only=b
+@SUMMARY:	Process lyrics in <tt>**text</tt> spines.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	l|local-only=b
+@SUMMARY:	Process local layout <i>t</i> parameters.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	g|global-only=b
+@SUMMARY:	Process global layout <i>t</i> parameters.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	r|reference-only=b
+@SUMMARY:	Process reference record values.
+@@END: 		OPTION
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	OPTION
+@CATEGORY:	Predefined Substitution
+@DEFINITION:	p|popc|popc2=b
+@SUMMARY:	Character modernization set for NIFC POPC2 project.
+@@END: 		OPTION
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	OPTION
+@CATEGORY:	Debugging
+@DEFINITION:	M|display-mapping=b
+@SUMMARY:	Display character transliteration mappings.
+@@END: 		OPTION
+
+@@END:		OPTIONS
+
+
+
