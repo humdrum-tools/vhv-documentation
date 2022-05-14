@@ -1,0 +1,56 @@
+@@BEGIN:	OPTIONS
+@TOOL:		composite
+
+@@BEGIN:	OPTION
+@DEFINITION:	c=s:red
+@ARGUMENT:      color
+@SUMMARY:	Highlight color for CMR notes.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	d=d:6.0
+@ARGUMENT:      whole-notes
+@SUMMARY:	The maximum duration between the first and last note in a CMR.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	i=b
+@ARGUMENT:      
+@SUMMARY:	Print CMR inforation without score.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	m=s:@
+@ARGUMENT:      char
+@SUMMARY:	Marking character for CMR notes.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	n=i:3
+@ARGUMENT:      number
+@SUMMARY:	Number of note repeats to identify CMR.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	p=b
+@ARGUMENT:      
+@SUMMARY:	Identify only positive CMR.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	r=b
+@ARGUMENT:      
+@SUMMARY:	Identify only positive CMR.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	A=b
+@ARGUMENT:      
+@SUMMARY:	Identify potential CMRs that do not have syncopations or leaps.
+@@END: 		OPTION
+
+
+@@END:		OPTIONS
+
+
+

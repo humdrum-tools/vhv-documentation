@@ -338,6 +338,10 @@ entries:
       output: web, pdf
       url: /filter/cint
 
+    - title: cmr
+      output: web, pdf
+      url: /filter/cmr
+
     - title: colortriads
       output: web, pdf
       url: /filter/colortriads
