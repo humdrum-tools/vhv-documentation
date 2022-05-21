@@ -1,20 +1,22 @@
 ---
 title: articulations encoding tutorial
 lang: en es
-ref: humdrum-getting_started-articulations
+ref: articulations
 author: Craig Stuart Sapp
-translator: 
-keywords: humdrum encoding tutorial articulations
 creation_date: 20 Aug 2017
-translation_date: 
 last_updated: 25 Jan 2018
+translator: 
+translation_date: 
+keywords: humdrum encoding articulations
 tags: [all, humdrum, getting_started]
 verovio: "true"
 vim: ts=3 ft=javascript
-summary: A tutorial on how to encode articulations in **kern data.
+summary: How to encode articulations in **kern data.
 sidebar: main_sidebar
-permalink: /humdrum/getting_started/articulations.html
+permalink: /humdrum/articulations/index.html
 ---
 
 {% include humdrum/articulations.txt %}
+
+{% include humdrum/articulations-extended.txt %}
 

@@ -53,6 +53,9 @@ See the [full description of key signatures](/humdrum/keysig/index.html) for mor
 [More information about ties](/humdrum/ties)
 
 {% include humdrum/articulations.txt %}
+[More information about articulations](/humdrum/articulations)
+
+{% include humdrum/ornaments.txt %}
 {% include humdrum/lyrics.txt %}
 {% include humdrum/dynamics.txt %}
 {% include humdrum/multiple_voices.txt %}

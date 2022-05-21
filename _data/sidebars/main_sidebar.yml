@@ -192,6 +192,10 @@ entries:
       output: web, pdf
       url: /humdrum/getting_started
 
+    - title: Articulations
+      output: web, pdf
+      url: /humdrum/articulations
+
     - title: Cue-sized notes
       output: web, pdf
       url: /humdrum/cues

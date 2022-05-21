@@ -41,6 +41,9 @@ Consulta la [descripción completa de las armaduras](/humdrum/keysig/index.html)
 [Más información sobre ligaduras de prolongación](/humdrum/ties)
 
 {% include humdrum/articulations.txt %}
+[Más información sobre articulaciones](/humdrum/articulations)
+
+{% include humdrum/ornaments.txt %}
 {% include humdrum/lyrics.txt %}
 {% include humdrum/dynamics.txt %}
 {% include humdrum/multiple_voices.txt %}

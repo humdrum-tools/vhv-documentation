@@ -1,0 +1,19 @@
+## Additional articulations ##
+
+Here is a sampler of note articulations:
+
+{% include verovio.html
+	humdrum-min-height="250px"
+	source="extraartic"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="extraartic">
+**kern	**vdata	**vdata
+1b""	""	snap pizz.
+=	=	=
+*-	*-	*-
+</script>
+
+
+

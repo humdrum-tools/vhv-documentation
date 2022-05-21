@@ -14,9 +14,35 @@
 @@END: 		OPTION
 
 @@BEGIN:	OPTION
+@DEFINITION:	e=b
+@ARGUMENT:      
+@SUMMARY:	Highlight leaps preceding a local maximum pitch.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	E=b
+@ARGUMENT:      
+@SUMMARY:	Highlight leaps preceding a local maximum pitch without
+		continuing to CMR analysis.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
 @DEFINITION:	i=b
 @ARGUMENT:      
 @SUMMARY:	Print CMR inforation without score.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	l=b
+@ARGUMENT:      
+@SUMMARY:	Highlight local maximum notes in green.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	L=b
+@ARGUMENT:      
+@SUMMARY:	Highlight local maximum notes in green, but do not
+		continue CMR analysis.
 @@END: 		OPTION
 
 @@BEGIN:	OPTION
@@ -28,19 +54,31 @@
 @@BEGIN:	OPTION
 @DEFINITION:	n=i:3
 @ARGUMENT:      number
-@SUMMARY:	Number of note repeats to identify CMR.
+@SUMMARY:	Number of note repeats to identify a CMR.
 @@END: 		OPTION
 
 @@BEGIN:	OPTION
 @DEFINITION:	p=b
 @ARGUMENT:      
-@SUMMARY:	Identify only positive CMR.
+@SUMMARY:	Identify only positive CMRs.
 @@END: 		OPTION
 
 @@BEGIN:	OPTION
-@DEFINITION:	r=b
+@DEFINITION:	s=b
 @ARGUMENT:      
-@SUMMARY:	Identify only positive CMR.
+@SUMMARY:	Highlight syncopations.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	S=b
+@ARGUMENT:      
+@SUMMARY:	Highlight syncopations without continuing to CMR identification.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	t=b
+@ARGUMENT:      
+@SUMMARY:	Identify only negative CMRs.
 @@END: 		OPTION
 
 @@BEGIN:	OPTION
