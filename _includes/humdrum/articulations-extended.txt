@@ -1,6 +1,113 @@
+## Hiding articulations ##
+
+Articulations can be hidden by adding a single `y` after the articulation.
+
+{% include verovio.html
+	humdrum-min-height="400px"
+	source="hidden"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="hidden">
+**kern
+*M4/4
+=1
+16f'LL
+16cc'
+16a'
+16cc'JJ
+!LO:TX:b:i:t=simile
+16f'yLL
+16cc'y
+16a'y
+16cc'yJJ
+16f'yLL
+16cc'y
+16a'y
+16cc'yJJ
+16f'yLL
+16cc'y
+16a'y
+16cc'yJJ
+*-
+</script>
+
+A more efficient system of hiding articulations can be done using
+`*Xartic` and `*artic` interpretations.  The `*Xartic` interpretation
+can be used to suppress display of multiple articulations on a staff
+until an `*artic` interpretation is found on the staff.  The text
+_simile_ can be shown in the notation by adding it to the
+`*Xartic:simile` interpretation:
+
+{% include verovio.html
+	humdrum-min-height="400px"
+	source="simile"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="simile">
+**kern
+*M4/4
+=1
+16f'LL
+16cc'
+16a'
+16cc'JJ
+*Xartic:simile
+16f'LL
+16cc'
+16a'
+16cc'JJ
+16f'LL
+16cc'
+16a'
+16cc'JJ
+16f'LL
+16cc'
+16a'
+16cc'JJ
+*artic
+=2
+4c'
+4d'
+4e'
+4f'
+=3
+!! Not showing simile
+*Xartic
+4c'
+4d'
+4e'
+4f'
+=
+*-
+</script>
+
+
+## Regular/Textual tenutos ##
+
+Regular tenuto articulations are encoded as a tilde (`~`).  When the tenuto
+is written as "_ten._", use a double tilde (`~~`):
+
+{% include verovio.html
+	humdrum-min-height="100px"
+	source="tilde"
+	scale="55"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="tilde">
+**kern
+4e~
+4e~~
+=-
+*-
+</script>
+
+
+
 ## Additional articulations ##
 
-Here is a sampler of note articulations:
+Here are examples of additional note articulations:
 
 {% include verovio.html
 	humdrum-min-height="250px"
