@@ -1,5 +1,5 @@
 ---
-title: articulations encoding tutorial
+title: Articulations encoding tutorial
 lang: en es
 ref: articulations
 author: Craig Stuart Sapp
