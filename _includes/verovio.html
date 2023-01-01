@@ -122,7 +122,13 @@ window.addEventListener("DOMContentLoaded", function () {
 
 <script>
 
-window.addEventListener("DOMContentLoaded", function() {
+// window.addEventListener("DOMContentLoaded", function() {
+// Previous line was the for the older way of loading verovio.
+// Now the script is loaded after the webpage, so the function
+// below needs to be called after loading the verovio-toolkit script
+// onto the webpage.
+
+function InitializeVerovioNotationDisplay() {
 
 	// create the verovio options object:
 	var font             = "{{include.font}}" || "Leipzig";
@@ -171,7 +177,8 @@ window.addEventListener("DOMContentLoaded", function() {
 	}
 	// create initial SVG image of notation:
 	updateSvgDisplay(id, options);
-});
+}
+// });
 
 
 </script>

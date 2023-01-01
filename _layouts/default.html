@@ -116,6 +116,8 @@ function makeFlatTableData(jsonData) {
 var VEROVIO_QUEUE = [];
 
 var vrvToolkit;
+
+/* 
 var Module = {
     onRuntimeInitialized: function() {
 			vrvToolkit = new verovio.toolkit();
@@ -128,15 +130,27 @@ var Module = {
 			VEROVIO_QUEUE = [];
 		}
 };
+*/
+
+function initializeVerovioScript() {
+	verovio.module.onRuntimeInitialized = () => {
+		vrvToolkit = new verovio.toolkit();
+		// Now do initial display of music notation on page.
+		InitializeVerovioNotationDisplay();
+	}
+}
 
 document.addEventListener("DOMContentLoaded", function() {
+
 	{% if site.local == "true" %}
-		var script=document.createElement('script');
+		var script = document.createElement('script');
 		script.src="{{site.baseurl}}/js/local/verovio-toolkit-wasm.js";
+		script.onload = initializeVerovioScript;
 		document.body.appendChild(script);
 	{% else %}
-		var script=document.createElement('script');
-		script.src="https://verovio-script.humdrum.org/scripts/verovio-toolkit-wasm.js";
+		var script = document.createElement('script');
+		script.src = "https://verovio-script.humdrum.org/scripts/verovio-toolkit-wasm.js";
+		script.onload = initializeVerovioScript;
 		document.body.appendChild(script);
 	{% endif %}
 });
