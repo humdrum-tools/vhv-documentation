@@ -53,6 +53,7 @@
 window.addEventListener("DOMContentLoaded", function () {
 	var pre = document.querySelector("pre#{{include.source}}-humdrum");
 	pre.style.display = "block";
+	pre.style.resize = "both";
 	pre.addEventListener("keydown", function(event) {
 		if (event.keyCode==9 || event.which==9) {
 			event.preventDefault();
@@ -60,6 +61,55 @@ window.addEventListener("DOMContentLoaded", function () {
 			document.execCommand("insertHTML", true, "\t");
 		}
 	});
+
+	// create the verovio options object:
+	var font             = "{{include.font}}" || "Leipzig";
+	var inputFrom        = "{{include.inputFormat}}" || "{{include.inputFrom}}" || "{{include.from}}" || "{{include.format}}" || "auto";
+	var adjustPageHeight = parseInt("{{include.adjustPageHeight}}") || 1;
+	var pageHeight       = parseInt("{{include.pageHeight}}") || 60000;
+	var pageWidth        = parseInt("{{include.pageWidth}}") || 1350;
+	var scale            = parseFloat("{{include.scale}}") || 40;
+	var border           = parseInt("{{include.border}}") || 50;
+	var minLastJustification  = parseFloat("{{include.minLastJustification}}") || 0.80;
+	var evenNoteSpacing  = parseInt("{{include.evenNoteSpacing}}") || 0;
+	//var page             = parseInt("{{include.page}}") || 1;
+	var spacingLinear    = parseFloat("{{include.spacingLinear}}") || 0.25;
+	var spacingNonLinear = parseFloat("{{include.spacingNonLinear}}") || 0.6;
+	var spacingSystem    = parseInt("{{include.spacingSystem}}") || 12;
+	var pageMarginTop    = parseInt("{{include.pageMarginTop}}") || 100;
+	var spacingStaff     = parseInt("{{include.spacingStaff}}") || 12;
+	var lyricTopMinMargin = parseFloat("{{include.lyricTopMinMargin}}") || 2.0;
+	// var noheader         = !(parseInt("{{include.header}}") || 0);
+	// var nofooter         = !(parseInt("{{include.footer}}") || 0);
+
+	var options = {
+		adjustPageHeight: adjustPageHeight,
+		font:             font,
+		inputFrom:        inputFrom,
+		//page:           page,
+		pageHeight:       pageHeight,
+		pageWidth:        pageWidth,
+		humType:          1,
+		scale:            scale,
+//		noHeader:         noheader,
+//		noFooter:         noFooter,
+		spacingStaff:     spacingStaff,
+		spacingSystem:    spacingSystem,
+		pageMarginTop:    pageMarginTop,
+		spacingNonLinear: spacingNonLinear,
+		minLastJustification: minLastJustification,
+		spacingLinear:    spacingLinear,
+		lyricTopMinMargin: lyricTopMinMargin,
+		evenNoteSpacing:  evenNoteSpacing
+	};
+
+	var id = "{{include.source}}";
+	if (!initializeHumdrumText(id, options)) {
+		return;
+	}
+	// create initial SVG image of notation:
+	updateSvgDisplay(id, options);
+
 });
 </script>
 
@@ -127,58 +177,6 @@ window.addEventListener("DOMContentLoaded", function () {
 // Now the script is loaded after the webpage, so the function
 // below needs to be called after loading the verovio-toolkit script
 // onto the webpage.
-
-function InitializeVerovioNotationDisplay() {
-
-	// create the verovio options object:
-	var font             = "{{include.font}}" || "Leipzig";
-	var inputFrom        = "{{include.inputFormat}}" || "{{include.inputFrom}}" || "{{include.from}}" || "{{include.format}}" || "auto";
-	var adjustPageHeight = parseInt("{{include.adjustPageHeight}}") || 1;
-	var pageHeight       = parseInt("{{include.pageHeight}}") || 60000;
-	var pageWidth        = parseInt("{{include.pageWidth}}") || 1350;
-	var scale            = parseFloat("{{include.scale}}") || 40;
-	var border           = parseInt("{{include.border}}") || 50;
-	var minLastJustification  = parseFloat("{{include.minLastJustification}}") || 0.80;
-	var evenNoteSpacing  = parseInt("{{include.evenNoteSpacing}}") || 0;
-	//var page             = parseInt("{{include.page}}") || 1;
-	var spacingLinear    = parseFloat("{{include.spacingLinear}}") || 0.25;
-	var spacingNonLinear = parseFloat("{{include.spacingNonLinear}}") || 0.6;
-	var spacingSystem    = parseInt("{{include.spacingSystem}}") || 12;
-	var pageMarginTop    = parseInt("{{include.pageMarginTop}}") || 100;
-	var spacingStaff     = parseInt("{{include.spacingStaff}}") || 12;
-	var lyricTopMinMargin = parseFloat("{{include.lyricTopMinMargin}}") || 2.0;
-	// var noheader         = !(parseInt("{{include.header}}") || 0);
-	// var nofooter         = !(parseInt("{{include.footer}}") || 0);
-
-	var options = {
-		adjustPageHeight: adjustPageHeight,
-		font:             font,
-		inputFrom:        inputFrom,
-		//page:           page,
-		pageHeight:       pageHeight,
-		pageWidth:        pageWidth,
-		humType:          1,
-		scale:            scale,
-//		noHeader:         noheader,
-//		noFooter:         noFooter,
-		spacingStaff:     spacingStaff,
-		spacingSystem:    spacingSystem,
-		pageMarginTop:    pageMarginTop,
-		spacingNonLinear: spacingNonLinear,
-		minLastJustification: minLastJustification,
-		spacingLinear:    spacingLinear,
-		lyricTopMinMargin: lyricTopMinMargin,
-		evenNoteSpacing:  evenNoteSpacing
-	};
-
-	var id = "{{include.source}}";
-	if (!initializeHumdrumText(id, options)) {
-		return;
-	}
-	// create initial SVG image of notation:
-	updateSvgDisplay(id, options);
-}
-// });
 
 
 </script>

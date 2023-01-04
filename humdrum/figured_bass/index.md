@@ -3,10 +3,10 @@ title: Figured bass
 lang: en es
 ref: humdrum-figured_bass
 author: Craig Stuart Sapp
-translator: Best Western
+translator:
 keywords: humdrum figured bass
 creation_date: 9 May 2017
-translation_date: 10 Maj 2018
+translation_date:
 last_updated: 10 June 2019
 tags: [all, humdrum, figured bass]
 verovio: "true"

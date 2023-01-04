@@ -131,7 +131,7 @@ function fixNewline(event, target) {
 function updateSvgDisplay(id, options) {
 	if (!vrvToolkit) {
 		VEROVIO_QUEUE.push( { id:id, options:options });
-		// console.log("verovio not found, queuing job");
+		console.log("verovio not found, queuing notation rendering for", id);
 		return;
 	}
 	var targetid = id + "-svg";

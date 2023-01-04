@@ -202,8 +202,6 @@ entries:
 
     - title: Figured bass
       output: web, pdf
-      url: /humdrum/figured_bass
-
     - title: Fingering
       output: web, pdf
       url: /humdrum/fingering
@@ -243,6 +241,10 @@ entries:
     - title: Repetition
       output: web, pdf
       url: /humdrum/repetition-symbols
+
+    - title: Scale degrees
+      output: web, pdf
+      url: /humdrum/scale_degrees
 
     - title: Slurs
       output: web, pdf
