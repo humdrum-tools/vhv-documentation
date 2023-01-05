@@ -216,6 +216,88 @@ If you want to see the literal text of a `**deg` or `**degree` spine, then use t
 
 
 
+### Chromatic alterations ###
+
+A plus sign (`+`) can be added after the scale degree number to
+indicate that it is one semitone higher than the default position
+in the current key.  Two plus signs (`++`) means that the scale
+degree is two semitones above the default position in the key.
+
+Likewise `-` and `--` (minus signs) can be used to indicate that
+the scale degree is one or two semitones lower than the default
+position for the degree in the key.
+
+#### Displaying alterations as accidentals ####
+
+{% include verovio.html
+	source="altacc"
+	humdrum-min-height="325px"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="altacc">
+**kern	**deg
+*clefG2	*
+*M4/4	*
+*k[]	*
+*C:	*C:
+=1	=1
+4c	1
+4d	2
+4e-	3-
+4f#	4+
+4g	5
+4a-	6-
+4b--	7--
+4cc	1
+=	=
+*-	*-
+</script>
+
+It is still to be decided if the accidental should come before or after the scale degree in
+the music notation display (and/or should there be a tandem interpretation to control which
+side the scale degree the accidental should be displayed.  It is also still to be decided if
+the accidental should be relative or absolute.  In the current implementation it is relative,
+meaning that it indicates the number of semitones in the alteration.  An absolute display
+(not implemented) would be to show the accidental of the pitch class in the music notation.
+Absolute display will be more complicated since the key designation is required before the
+scale degree in order to determine the default scale degree accidental first.
+
+
+#### Displaying alterations as up/down ####
+
+To display alterations as up/down arrows after the scale degrees, use the 
+`*arrow` tandem interpretation.  `*Xarrow` can be used to return to the 
+default accidental display for alterations.
+
+{% include verovio.html
+	source="arrowalt"
+	humdrum-min-height="325px"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="arrowalt">
+**kern	**deg
+*clefG2	*arrow
+*M4/4	*
+*k[]	*
+*C:	*C:
+=1	=1
+4c	1
+4d	2
+4e-	3-
+4f#	4+
+4g	5
+4a-	6-
+4b--	7--
+4cc	1
+=	=
+*-	*-
+</script>
+
+Notice that two semitone alterations are displayed as a double-tailed arrow.
+
+
 ### Styling scale degrees ###
 
 By default scale degrees are displayed as plain numbers, but other 
@@ -524,154 +606,11 @@ two systems in a single spine by alternating between `*minnat` and `*minhar`.
 
 
 
-## Font styling ##
-
-There are several font-styling interpretations that are described in this section.
+{% include_relative melodic-contour.md %}
 
 
 
-### Font size ###
-
-The font size of scale degrees can be set by the `*fs:` interpretation followed by a font size, such as `*fs:80%`:
-
-
-{% include verovio.html
-	source="sizefont"
-	humdrum-min-height="325px"
-	scale="55"
-	pageWidth="800"
-%}
-<script type="application/x-humdrum" id="sizefont">
-**kern	**deg	**deg	**deg	**deg
-*clefG2	*	*fs:75%	*fs:120%	*fs:100%
-*M4/4	*	*circle	*	*box
-*k[]	*	*	*	*
-*C:	*C:	*C:	*C:	*C:
-=1	=1	=1	=1	=1
-4c	1	1	1	1
-4d	2	2	2	2
-4e	3	3	3	3
-4f	4	4	4	4
-*	*	*	*	*fs:50%
-4g	5	5	5	5
-4a	6	6	6	6
-*	*	*	*	*fs:200%
-4b	7	7	7	7
-4cc	1	1	1	1
-=	=	=	=	=
-*-	*-	*-	*-	*-
-</script>
-
-In addition to percentages, there are several symbolic font sizes that can be used:
-
-
-| fontsize   | percentage |
-| ---        | ---        |
-| `smallest` |  60%       |
-| `smaller`  |  75%       |
-| `small`    |  89%       |
-| `normal`   | 100%       |
-| `large`    | 120%       |
-| `largeer`  | 150%       |
-| `largest`  | 200%       |
-
-
-{% include verovio.html
-	source="symsize"
-	humdrum-min-height="325px"
-	scale="55"
-	pageWidth="800"
-%}
-<script type="application/x-humdrum" id="symsize">
-**kern	**deg	**deg	**deg
-*clefG2	*fs:normal	*fs:smallest	*fs:largest
-*M4/4	*	*circle	*box
-*k[]	*	*	*
-*C:	*C:	*C:	*C:
-=1	=1	=1	=1
-4c	1	1	1
-4d	2	2	2
-*	*	*fs:smallest	*fs:largest
-4e	3	3	3
-4f	4	4	4
-*	*	*fs:smaller	*fs:larger
-4g	5	5	5
-4a	6	6	6
-*	*	*fs:small	*fs:large
-4b	7	7	7
-4cc	1	1	1
-=	=	=	=
-*-	*-	*-	*-
-</script>
-
-
-
-### Font style ###
-
-Scale degrees can be displayed in italic and/or bold:
-
-{% include verovio.html
-	source="style"
-	humdrum-min-height="325px"
-	scale="55"
-	pageWidth="800"
-%}
-<script type="application/x-humdrum" id="style">
-**kern	**deg	**deg	**deg	**deg
-*clefG2	*	*italic	*bold	*italic
-*M4/4	*	*	*	*bold
-*k[]	*	*	*	*
-*C:	*C:	*C:	*C:	*C:
-=1	=1	=1	=1	=1
-4c	1	1	1	1
-4d	2	2	2	2
-4e	3	3	3	3
-4f	4	4	4	4
-4g	5	5	5	5
-*	*italic	*	*	*
-*	*bold	*	*	*
-*	*circle	*	*	*
-4a	6	6	6	6
-*	*Xitalic	*	*	*
-*	*Xbold	*	*	*
-*	*Xcircle	*	*	*
-4b	7	7	7	7
-4cc	1	1	1	1
-=	=	=	=	=
-*-	*-	*-	*-	*-
-</script>
-
-
-
-### Font color ###
-
-
-{% include verovio.html
-	source="color"
-	humdrum-min-height="325px"
-	scale="55"
-	pageWidth="800"
-%}
-<script type="application/x-humdrum" id="color">
-**kern	**deg	**deg	**deg	**deg
-*clefG2	*	*color:crimson	*color:#00f2	*color:hsl(180,100%,25%)
-*M4/4	*	*	*	*bold
-*k[]	*	*	*	*
-*C:	*C:	*C:	*C:	*C:
-=1	=1	=1	=1	=1
-4c	1	1	1	1
-4d	2	2	2	2
-4e	3	3	3	3
-4f	4	4	4	4
-*	*bold	*	*	*
-*	*color:limegreen	*	*	*
-4g	5	5	5	5
-4a	6	6	6	6
-4b	7	7	7	7
-4cc	1	1	1	1
-=	=	=	=	=
-*-	*-	*-	*-	*-
-</script>
+{% include_relative font-styling.md %}
 
 
 
@@ -713,11 +652,14 @@ notation:
 *-	*-	*-
 </script>
 
-The `-deg` suffix on `**cdata` is optional.  It will be conveyed to the final SVG image as the `deg` class, and
-with this information the degree data can be extracted from the SVG image or stylized with CSS in the image.
+The `-deg` suffix on `**cdata` is optional.  It will be conveyed
+to the final SVG image as the `deg` class, and with this information
+the degree data can be extracted from the SVG image or stylized
+with CSS in the image.
 
 
-Here is an example of automating the display of `**deg` data as text instead of formatted scale degrees:
+Here is an example of automating the display of `**deg` data as
+text instead of formatted scale degrees:
 
 {% include verovio.html
 	source="plaindeg"
@@ -745,81 +687,15 @@ Here is an example of automating the display of `**deg` data as text instead of 
 </script>
 
 
-
-## Embedded verovio options ##
-
-There are additional layout controls provided by <a href="https://verovio.org" target="_blank">verovio</a>
-that can be used to refine the notation.  Here is an example, first without the option:
-
-{% include verovio.html
-	source="verovio"
-	humdrum-min-height="325px"
-	scale="55"
-	pageWidth="800"
-%}
-<script type="application/x-humdrum" id="verovio">
-**kern	**deg	**deg	**deg	**deg
-*clefG2	*	*fs:75%	*fs:130%	*fs:100%
-*M4/4	*	*circle	*	*box
-*k[]	*	*	*	*
-*C:	*C:	*C:	*C:	*C:
-=1	=1	=1	=1	=1
-4c	1	1	1	1
-4d	2	2	2	2
-4e	3	3	3	3
-4f	4	4	4	4
-*	*	*	*	*fs:50%
-4g	5	5	5	5
-4a	6	6	6	6
-*	*	*	*	*fs:200%
-4b	7	7	7	7
-4cc	1	1	1	1
-=	=	=	=	=
-*-	*-	*-	*-	*-
-</script>
-
-
-And now with the verovio option:
-
-```
-!!!verovio: topMarginHarm 10
-```
-
-(still working on this example)
-
-{% include verovio.html
-	source="verovioout"
-	humdrum-min-height="325px"
-	scale="55"
-	pageWidth="800"
-%}
-<script type="application/x-humdrum" id="verovioout">
-!!!verovio: topMarginHarm 10
-**kern	**deg	**deg	**deg	**deg
-*clefG2	*	*fs:75%	*fs:130%	*fs:100%
-*M4/4	*	*circle	*	*box
-*k[]	*	*	*	*
-*C:	*C:	*C:	*C:	*C:
-=1	=1	=1	=1	=1
-4c	1	1	1	1
-4d	2	2	2	2
-4e	3	3	3	3
-4f	4	4	4	4
-*	*	*	*	*fs:50%
-4g	5	5	5	5
-4a	6	6	6	6
-*	*	*	*	*fs:200%
-4b	7	7	7	7
-4cc	1	1	1	1
-=	=	=	=	=
-*-	*-	*-	*-	*-
-</script>
+{% include_relative embedded-verovio-options.md %}
 
 
 ## To do ##
 
 * Implement key labels at key designation changes.
 * Implement horizontal lines between degrees.
+* melodic approaches across rests
+* differentiate between repeated notes, secondary tied notes, initial notes
 
 
 
