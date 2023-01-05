@@ -1,0 +1,68 @@
+
+<script>
+//
+// signifiertable.html -- 
+// create a keypress summary table which has keys grouped by category.  
+// See http://127.0.0.1:4000/maintenance/tables/#keypress-tables for
+// documentation on how to use the template.
+// 
+// vim: ts=3
+//
+
+
+$(document).ready(function() {
+	var dataid = "{{include.contentId}}";
+	var dataElement = document.querySelector("#" + dataid);
+	if (!dataElement) {
+		console.log("Cannot find data for table #", dataid);
+		return;
+	}
+	var flatData;
+	var columnInfo;
+	[columnInfo, flatData] = makeFlatTableData(dataElement.textContent);
+
+	// parameters passed from Liquid:
+	var numColumns  = Object.keys(flatData[0]).length - 1;
+	var groupColumn = 0;
+
+	$('table#{{include.contentId}}-table').dataTable({
+		paging:         false,
+		stateSave:      false,
+		searching:      false,
+		scrollCollapse: true,
+		ordering:       false,
+		orderCellsTop:  "group",
+		select:         true,
+		compact:        true,
+		data:           flatData,
+		columns:        columnInfo,
+		columnDefs: [ {visible: false, targets: groupColumn}],
+
+	drawCallback: function (settings) {
+		var api  = this.api();
+		var rows = api.rows( {page:'current'} ).nodes();
+		var last = null;
+		api.column(0, {page:'current'} ).data().each(function (category, i) {
+				if ( last !== category ) {
+					$(rows).eq(i).before(
+					'<tr class="group"><td colspan="'+numColumns+'">'+category+'</td></tr>'
+					);
+					last = category;
+				}
+			});
+		}
+
+	});
+});
+
+</script>
+
+<style>
+#{{include.contentId}}-table_info.dataTables_info { display:none; }
+</style>
+
+<table id="{{include.contentId}}-table" class="keytable"></table>
+
+
+
+

@@ -1,0 +1,235 @@
+{
+	"tableColumns":
+	[
+		{ "data": "keys",   "title": "Signifier" },
+		{ "data": "description", "title": "Meaning"}
+	],
+	"categoryList": 
+	[
+
+		{
+			"categoryName": "degrees and chromatic alterations",
+			"keyList":
+			[
+				{
+					"keys": "1&ndash;7",
+					"description": "Scale degree numbers from 1 through 7."
+				},
+				{
+					"keys": "/0&ndash;9",
+					"description": "Octave number 0 through 9, with the middle C octave being 4 (**degree data only)."
+				},
+				{
+					"keys": "+",
+					"description": "Scale degree is raised (one semitone) from default position in scale."
+				},
+				{
+					"keys": "++",
+					"description": "Scale degree is raised by two semitones from default position in scale."
+				},
+				{
+					"keys": "-",
+					"description": "(minus sign) Scale degree is lowered (one semitone) from default position in scale."
+				},
+				{
+					"keys": "--",
+					"description": "Scale degree is lowered two semitones from default position in scale."
+				}
+			]	
+		},
+		{
+			"categoryName": "melodic approach",
+			"keyList":
+			[
+
+				{
+					"keys": "^",
+					"description": "Scale degree is approached by a rising interval (previous note is lower).  When *refined is enabled, this means approached up by step."
+				},
+				{
+					"keys": "^^",
+					"description": "Scale degree is approached by a rising interval (previous note is lower).  When *refined is enabled, this means approached up by leap."
+				},
+				{
+					"keys": "v",
+					"description": "Scale degree is approached by a falling interval (previous note is higher).  When *refined is enabled, this means approached down by step."
+				},
+				{
+					"keys": "vv",
+					"description": "Scale degree is approached by a falling interval (previous note is higher).  When *refined is enabled, this means approached down by leap."
+				}
+			]	
+		},
+		{
+			"categoryName": "melodic departure",
+			"keyList":
+			[
+				{
+					"keys": "'",
+					"description": "Scale degree is departed by a rising interval (next note is higher).  When *refined is enabled, this means departed up by step."
+				},
+				{
+					"keys": "''",
+					"description": "(two single quotes) Scale degree is departed by a rising interval (next note is higher).  When *refined is enabled, this means departed up by leap."
+				},
+				{
+					"keys": ",",
+					"description": "(comma) Scale degree is departed by a falling interval (next note is lower).  When *refined is enabled, this means departed down by step."
+				},
+				{
+					"keys": ",,",
+					"description": "(two commas) Scale degree is departed by a falling interval (next note is lower).  When *refined is enabled, this means departed down by leap."
+				}
+			]	
+		},
+		{
+			"categoryName": "modality",
+			"keyList":
+			[
+				{
+					"keys": "*C:",
+					"description": "The following scale degrees are in reference to C major."
+				},
+				{
+					"keys": "*d:",
+					"description": "The following scale degrees are in reference to D minor."
+				},
+				{
+					"keys": "h",
+					"description": "In a minor key, the 7th scale degree is a major 7th above the tonic. (7th scale degree is in the harmonic minor scale)"
+				},
+				{
+					"keys": "n",
+					"description": "In a minor key, the 7th scale degree is a minor 7th above the tonic. (7th scale degree is in the natural minor scale)"
+				},
+				{
+					"keys": "m",
+					"description": "Scale degree is in a minor mode (use **minnat and **minhar to distinguish between natural and harmonic minor)."
+				},
+				{
+					"keys": "M",
+					"description": "Scale degree is in a major mode."
+				}
+			]	
+		},
+		{
+			"categoryName": "styling",
+			"keyList":
+			[
+
+				{
+					"keys": "y",
+					"description": "Suppress display of the scale degree component to the immediate left of the y (melodic approach, melodic departure, and in the future after degrees and octaves)."
+				},
+				{
+					"keys": "yy",
+					"description": "Suppress display of the entire scale degree token."
+				}
+			]	
+		},
+		{
+			"categoryName": "analysis",
+			"keyList":
+			[
+				{
+					"keys": "@, %, &lt;, &gt;",
+					"description": "Recommended RDF markers."
+				},
+				{
+					"keys": "(, ), {, }, ;",
+					"description": "Phrase marking."
+				}
+			]	
+		},
+		{
+			"categoryName": "interpretations",
+			"keyList":
+			[
+				{
+					"keys": "*C:",
+					"description": "Key signature that the scale degrees are in reference to.  This is the same as the key designations in **kern data, such as \"c:\" for C minor, \"*B-:\" for B&#x266d;\" major, and \"*f#:\" for F&#x266e; major.  Modal keys are not yet implemented."
+				},
+				{
+					"keys": "*arrow",
+					"description": "Display degree alterations as arrows."
+				},
+				{
+					"keys": "*Xarrow",
+					"description": "Stop Displaying degree alterations as arrows."
+				},
+				{
+					"keys": "*bold",
+					"description": "Display the scale degrees in an italic font."
+				},
+				{
+					"keys": "*Xbold",
+					"description": "Stop displaying the scale degrees in italic font."
+				},
+				{
+					"keys": "*box",
+					"description": "Display scale degrees within boxes."
+				},
+				{
+					"keys": "Xbox",
+					"description": "Stop displaying scale degrees within boxes."
+				},
+				{
+					"keys": "*circle",
+					"description": "Display scale degrees within circles."
+				},
+				{
+					"keys": "*Xcircle",
+					"description": "Stop displaying scale degrees within circles."
+				},
+				{
+					"keys": "*color:dodgerblue",
+					"description": "Set the color of the scale degrees to dodgerblue.  Any SVG color descriptor can be used. Use *color:black to return to the default color (black)."
+				},
+				{
+					"keys": "*dir",
+					"description": "Show melodic approach and departure information. (default)"
+				},
+				{
+					"keys": "*Xdir",
+					"description": "Hide melodic approach and departure information."
+				},
+				{
+					"keys": "*fs:80%",
+					"description": "Display the scale degrees at 80%.  The size may also be one of the following symbolic sizes: smallest (60%), smaller (75%), small (89%), normal (100%), large (120%), larger (150%), largest (200%)."
+				},
+				{
+					"keys": "*hat",
+					"description": "Display a hat (caret, circumflex) above the scale degree."
+				},
+				{
+					"keys": "*Xhat",
+					"description": "Stop displaying hats above scale degrees."
+				},
+				{
+					"keys": "*italic",
+					"description": "Display the scale degrees in an italic font."
+				},
+				{
+					"keys": "*Xitalic",
+					"description": "Stop displaying the scale degrees in italic font."
+				},
+				{
+					"keys": "*gross",
+					"description": "Approach and departure contour is gross (up/down by any interval). (default output of deg tool)"
+				},
+				{
+					"keys": "*refined",
+					"description": "Approach and departure contour is refined (up/down by step or leap)."
+				},
+				{
+					"keys": "*minnat",
+					"description": "Scale degrees displayed in the natural minor mode (7th degree is a minor 7th above the tonic)."
+				},
+				{
+					"keys": "*minhar",
+					"description": "Scale degrees in reference to the harmonic minor mode when in a minor key(default: 7th degree is a major 7th above the tonic)."
+				}
+			]	
+		}
+	]
+}
