@@ -32,9 +32,9 @@ tonic and the 7th scale degree, forming a lead tone to the tonic.
 *-	*-
 </script>
 
-To allow conversion between harmonic and natural minors, add `h` after a `7` scale degree
+To allow conversion between harmonic and natural minors, add `H` after a `7` scale degree
 to confirm that it is a major seventh above the first scale degree (or a minor second below
-the first scale degree).  To encode a 7th scale degree in a natural minor key, add `n` after the `7` 
+the first scale degree).  To encode a 7th scale degree in a natural minor key, add `N` after the `7` 
 for a minor seventh above or major second below the first scale degree.
 
 {% include verovio.html
@@ -56,7 +56,7 @@ for a minor seventh above or major second below the first scale degree.
 4f	4
 4g	5
 4a-	6
-4b	7h
+4b	7H
 4cc	1
 =1||	=1||
 4c	1
@@ -65,14 +65,14 @@ for a minor seventh above or major second below the first scale degree.
 4f	4
 4g	5
 4a-	6
-4b-	7n
+4b-	7N
 4cc	1
 =	=
 *-	*-
 </script>
 
-`7n` implies B-flat, and since the display is set to C harmonic minor, the `n` causes a flat to 
-be displayed for the 7th scale degree (`n` or `h` on any other scale degree will be ignored).
+`7N` implies B-flat, and since the display is set to C harmonic minor, the `N` causes a flat to 
+be displayed for the 7th scale degree (`N` or `H` on any other scale degree will be ignored).
 
 ### Major/minor mode markers ###
 
@@ -110,7 +110,7 @@ not affect rendering of scale degrees in music notation.
 4f	4m
 4g	5m
 4a-	6m
-4b-	7nm
+4b-	7Nm
 4cc	1m
 =	=
 *-	*-
@@ -121,7 +121,7 @@ not affect rendering of scale degrees in music notation.
 
 If you want to display the scale degrees in music notation using the natural minor scale, 
 add the interpretation `*minnat`.   This means that the scale degrees are based on the
-natural minor scale, with `7` and `7n` meaning a minor 7th and `7+` and `7h` meaning
+natural minor scale, with `7` and `7N` meaning a minor 7th and `7+` and `7H` meaning
 a major seventh.  The interpretation `*minhar` can be used to explicitly indicate
 that the harmonic minor is the prototype scale (or you can switch between the
 two systems in a single spine by alternating between `*minnat` and `*minhar`.
@@ -149,8 +149,8 @@ two systems in a single spine by alternating between `*minnat` and `*minhar`.
 4g	5	5
 4a-	6	6
 4b-X	7	7
-4b-X	7n	7n
-4b-X	7h-	7h-
+4b-X	7N	7N
+4b-X	7H-	7H-
 4cc	1	1
 =	=	=
 !!LO:TX:a:t=Harmonic minor degree display:color=dodgerblue:vg=2
@@ -161,8 +161,8 @@ two systems in a single spine by alternating between `*minnat` and `*minhar`.
 4g	5	5
 4a-	6	6
 4bn	7	7
-4bn	7h	7h
-4bn	7n+	7n+
+4bn	7H	7H
+4bn	7N+	7N+
 4cc	1	1
 =||	=||	=||
 *c	*minhar	*
@@ -175,8 +175,8 @@ two systems in a single spine by alternating between `*minnat` and `*minhar`.
 4g	5	5
 4a-	6	6
 4b-X	7	7
-4b-X	7n	7n
-4b-X	7h-	7h-
+4b-X	7N	7N
+4b-X	7H-	7H-
 4cc	1	1
 =	=	=
 !!LO:TX:a:t=Harmonic minor degree display:color=dodgerblue:vg=2
@@ -187,8 +187,8 @@ two systems in a single spine by alternating between `*minnat` and `*minhar`.
 4g	5	5
 4a-	6	6
 4bn	7	7
-4bn	7h	7h
-4bn	7n+	7n+
+4bn	7H	7H
+4bn	7N+	7N+
 4cc	1	1
 ==	==	==
 *-	*-	*-
