@@ -20,6 +20,18 @@
 					"description": "Octave number 0 through 9, with the middle C octave being 4 (**degree data only)."
 				},
 				{
+					"keys": "r",
+					"description": "A rest."
+				},
+				{
+					"keys": "rr",
+					"description": "A short rest (see the *irest interpretation for the definition of a short rest)."
+				},
+				{
+					"keys": "rR",
+					"description": "A long rest (see the *irest interpretation for the definition of a long rest)."
+				},
+				{
 					"keys": "+",
 					"description": "Scale degree is raised (one semitone) from default position in scale."
 				},
@@ -83,6 +95,28 @@
 			]	
 		},
 		{
+			"categoryName": "melodic contour rests",
+			"keyList":
+			[
+				{
+					"keys": "p",
+					"description": "Melodic approach contour crosses a small rest."
+				},
+				{
+					"keys": "pp",
+					"description": "Melodic approach contour crosses a big rest."
+				},
+				{
+					"keys": "P",
+					"description": "Melodic departure contour crosses a small rest."
+				},
+				{
+					"keys": "PP",
+					"description": "Melodic departure contour crosses a big rest."
+				}
+			]	
+		},
+		{
 			"categoryName": "modality",
 			"keyList":
 			[
@@ -96,15 +130,15 @@
 				},
 				{
 					"keys": "h",
-					"description": "In a minor key, the 7th scale degree is a major 7th above the tonic. (7th scale degree is in the harmonic minor scale)"
+					"description": "In a minor key, the 7th scale degree is a major 7th above the tonic (7th scale degree is in the harmonic minor scale)."
 				},
 				{
 					"keys": "n",
-					"description": "In a minor key, the 7th scale degree is a minor 7th above the tonic. (7th scale degree is in the natural minor scale)"
+					"description": "In a minor key, the 7th scale degree is a minor 7th above the tonic (7th scale degree is in the natural minor scale)."
 				},
 				{
 					"keys": "m",
-					"description": "Scale degree is in a minor mode (use **minnat and **minhar to distinguish between natural and harmonic minor)."
+					"description": "Scale degree is in a minor mode (use **minnat and **minhar to distinguish between natural and harmonic minor, although only the 7th scale degree needs to be labeled (see \"h\" and \"n\" signifiers)."
 				},
 				{
 					"keys": "M",
@@ -133,7 +167,7 @@
 			[
 				{
 					"keys": "@, %, &lt;, &gt;",
-					"description": "Recommended RDF markers."
+					"description": "Recommended user RDF markers."
 				},
 				{
 					"keys": "(, ), {, }, ;",
@@ -187,7 +221,7 @@
 				},
 				{
 					"keys": "*dir",
-					"description": "Show melodic approach and departure information. (default)"
+					"description": "Show melodic approach and departure information (default)."
 				},
 				{
 					"keys": "*Xdir",
@@ -206,6 +240,14 @@
 					"description": "Stop displaying hats above scale degrees."
 				},
 				{
+					"keys": "*irest<2",
+					"description": "Rests shorter than a half note are \"short\"."
+				},
+				{
+					"keys": "*irest<=4",
+					"description": "Short rests are a quarter note or shorter."
+				},
+				{
 					"keys": "*italic",
 					"description": "Display the scale degrees in an italic font."
 				},
@@ -215,11 +257,11 @@
 				},
 				{
 					"keys": "*gross",
-					"description": "Approach and departure contour is gross (up/down by any interval). (default output of deg tool)"
+					"description": "Approach and departure contours are gross (up/down by any interval, default output of deg tool)."
 				},
 				{
 					"keys": "*refined",
-					"description": "Approach and departure contour is refined (up/down by step or leap)."
+					"description": "Approach and departure contours are refined (up/down by step/leap)."
 				},
 				{
 					"keys": "*minnat",
@@ -228,6 +270,14 @@
 				{
 					"keys": "*minhar",
 					"description": "Scale degrees in reference to the harmonic minor mode when in a minor key(default: 7th degree is a major 7th above the tonic)."
+				},
+				{
+					"keys": "*solf",
+					"description": "Display scale degrees with chromatic moveable-do solf&egrave;ge."
+				},
+				{
+					"keys": "*Xsolf",
+					"description": "Stop displaying scale degrees with moveable-do solf&egrave;ge."
 				}
 			]	
 		}

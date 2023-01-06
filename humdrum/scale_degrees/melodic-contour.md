@@ -123,7 +123,7 @@ Both approaches and departures can be encoded and displayed at the same time:
 
 The Humdrum Toolkit `deg` tool does not distinguish between leaps and
 steps (so these currently have to be encoded by hand).   Instead
-the signifer `^` is used for both leaps and steps, as well as 
+the signifier `^` is used for both leaps and steps, as well as 
 for `v`.
 
 To explicitly indicate that the melodic contours do not distinguish
@@ -200,7 +200,50 @@ Here is an example to show all approaches as thick arrows:
 </script>
 
 
-### Suppress rendering of melodic contours ###
+### Contours across rests ###
+
+The Humdrum Toolkit command `deg` will not cross over rests to calculate
+melodic approaches; however, for a proposed extension to `deg` analysis,
+here is a representation system for rests breaking up melodic contours (both
+approaching and departing).
+
+A tandem interpretation can be given in a scale degree spine that describes
+the duration of rest that can be ignored when calculating melodic contour intervals.
+For example, the interpretation `*irest<4` means that any rests less than a quarter before
+the scale degree note can be ignored when calculating contours:
+
+{% include verovio.html
+	source="thickarrows"
+	humdrum-min-height="325px"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="thickarrows">
+!!!ONB: thin arrows for both steps and leaps
+!!!filter: shed -x deg -e "s/\^+/^^/g; s/v+/vv/g"
+**kern	**deg
+*clefG2	*
+*M4/4	*
+*k[]	*
+*C:	*C:
+=1	=1
+*	*arest<4
+4c	1
+8r	r
+4e	^3
+4f	^4
+4g	^5
+4e	vv3
+4c	vv1
+4G	vv5
+4c	^^1
+=	=
+*-	*-
+</script>
+
+
+
+### Hide melodic contours ###
 
 If the `**deg` tokens contain melodic contour information, then you
 can use the `*Xdir` tandem interpretation to hide this information
@@ -236,7 +279,7 @@ The `*dir` tandem interpretation can be used to start showing the melodic contou
 information again.
 
 An alternate method of hiding particular contours, add a `y` after the contour
-signifer:
+signifier:
 
 {% include verovio.html
 	source="ysuppress"
@@ -296,6 +339,45 @@ Here is an example using the shed filter to remove display of all contours:
 *-	*-
 </script>
 
+### Contours across slur/phrase boundaries ###
+
+In a future extension to the `deg` command, phrases (`{}`), slurs (`()`, and/or fermatas (;)
+can be encoded in `**deg` data in order to disallow labeling melodic contours to
+cross them.
+
+{% include verovio.html
+	source="phrase"
+	humdrum-min-height="325px"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="phrase">
+**kern	**deg
+*clefG2	*
+*M4/4	*
+*k[]	*
+*C:	*C:
+=1	=1
+{4c	{1'
+4d	^2'
+4e	^3'
+4f	^4'
+=2	=2
+4g	^5,,
+4e	vv3,,
+2c}	vv1}
+=3	=3
+{4cc	{1,
+4b	v7,
+4a	v6,
+4g	v5,,
+=4	=4
+4e	vv3''
+4g	^^5,
+2f}	v4}
+=	=
+*-	*-
+</script>
 
 
 ### Repeated notes ###
@@ -310,11 +392,117 @@ indicate that the current note is tied to the previous note.
 
 ### Melodic contours across rests ###
 
-It would be useful sometimes to record the contour to a previous/next note
-that is on the other side of a rest.  There would need to be a threshold
-for the size of the rest which can be crossed in order to trigger a melodic
-contour direction (typically allow a contour to be encoded when the rest
-is shorter than a beat).
+Melodic contours are usually short-circuited by rests that come between
+the note of the scale degree and a potential approach or departure pitch.
+A proposed extension to the `**deg` representation is to categories these
+rests into two basic categories of short rests that are allowed to be
+ignored and long rests that cannot be crossed when calculating 
+melodic contour approaches and departures.
+
+The information about the rest can be embedded in the scale degree tokens:
+
+| signifier | meaning |
+| 'p'       | The approach contour crosses a short rest  |
+| 'pp'      | The approach contour crosses a long rest   |
+| 'P'       | The departure contour crosses a short rest |
+| 'PP'      | The departure contour crosses a long rest  |
+
+
+{% include verovio.html
+	source="pcontour"
+	humdrum-min-height="325px"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="pcontour">
+**kern	**deg
+*clefG2	*
+*M4/4	*
+*k[f#c#g#d#]	*
+*E:	*E:
+=1	=1
+*	*irest<4
+4c	1'
+4d	^2PP'
+4r	r
+4f	pp^^4'
+4g	^5'
+8a	^6P'
+8r	r
+8b	p^7P'
+8r	r
+4cc	p^1
+=	=
+*-	*-
+</script>
+
+The `p` or `P` qualifiers should come before the melodic contour information.
+
+This information is not rendered in music notation (at least currently), but
+the <a href="/filter/shed">shed</a> filter can be used to remove melodic contours.
+Here is an example of removing melodic contours when they cross a large rest:
+
+{% include verovio.html
+	source="removep"
+	humdrum-min-height="325px"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="removep">
+!!!filter: shed -x deg -e "s/pp(\^\^?|vv?)|PP(''?|,,?)//g"
+**kern	**deg
+*clefG2	*
+*M4/4	*
+*k[]	*
+*C:	*C:
+=1	=1
+*	*irest<4
+4c	1'
+4d	^2PP'
+4r	rR0
+4f	pp^^4'
+4g	^5'
+8a	^6P'
+8r	rr
+8b	p^7P'
+8r	rr
+4cc	p^1
+=	=
+*-	*-
+</script>
+
+Here is an example of suppressing melodic contours across any rest type:
+
+{% include verovio.html
+	source="removeall"
+	humdrum-min-height="325px"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="removeall">
+!!!filter: shed -x deg -e "s/p+(\^\^?|vv?)|P+(''?|,,?)//g"
+**kern	**deg
+*clefG2	*
+*M4/4	*
+*k[]	*
+*C:	*C:
+=1	=1
+*	*irest<4
+4c	1'
+4d	^2PP'
+4r	rR0
+4f	pp^^4'
+4g	^5'
+8a	^6P'
+8r	rr0
+8b	p^7P'
+8r	rr0
+4cc	p^1
+=	=
+*-	*-
+</script>
+
+
 
 
 

@@ -48,7 +48,7 @@ In addition to percentages, there are several symbolic font sizes that can be us
 | `small`    |  89%       |
 | `normal`   | 100%       |
 | `large`    | 120%       |
-| `largeer`  | 150%       |
+| `larger`  | 150%       |
 | `largest`  | 200%       |
 
 
