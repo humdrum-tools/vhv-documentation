@@ -33,12 +33,15 @@ while `**deg` does not.
 
 {% include_relative solfege.md %}
 
+{% include_relative hide-scale-degrees.md %}
+
 {% include_relative chords.md %}
 
 {% include_relative plain-text.md %}
 
 {% include_relative embedded-verovio-options.md %}
 
+{% include_relative command-line.md %}
 
 ## To do ##
 

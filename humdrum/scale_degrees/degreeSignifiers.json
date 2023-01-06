@@ -272,6 +272,14 @@
 					"description": "Scale degrees in reference to the harmonic minor mode when in a minor key(default: 7th degree is a major 7th above the tonic, see \"n\" and \"h\" signifiers)."
 				},
 				{
+					"keys": "*octave",
+					"description": "Display octave information (for **degree data)."
+				},
+				{
+					"keys": "*Xoctave",
+					"description": "Do not display octave information (for **degree data)."
+				},
+				{
 					"keys": "*solf",
 					"description": "Display scale degrees with chromatic moveable-do solf&egrave;ge."
 				},

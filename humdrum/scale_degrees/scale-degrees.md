@@ -226,6 +226,36 @@ will be displayed as subscripts after the scale degree:
 *-	*-
 </script>
 
+Octave subscripts can be suppressed by adding an `*Xoctave` interpretation.  The `*octave` interpretation
+can be used to display octave information again:
+
+{% include verovio.html
+	source="octavex"
+	humdrum-min-height="325px"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="octavex">
+**kern	**degree
+*clefG2	*
+*M4/4	*
+*k[]	*
+*C:	*C:
+=1	=1
+*	*Xoctave
+4c	1/4
+4d	2/4
+4e	3/4
+4f	4/4
+4g	5/4
+*	*octave
+4a	6/4
+4b	7/4
+4ee	1/5
+=	=
+*-	*-
+</script>
+
 
 
 #### Using shed filter with scale degrees ####
