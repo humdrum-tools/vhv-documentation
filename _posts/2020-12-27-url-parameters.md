@@ -10,7 +10,7 @@ sidebar: main_sidebar
 tags: [all, news]
 ---
 
-A <a href="/topics/url-parameters">Documentation page</a> has been
+A <a href="/topics/url-parameters">documentation page</a> has been
 created that describes how to configure VHV when starting it up, 
 such as hiding the menus, loading a score from the web, searching
 the music and <a href="/filter">filtering a score<a/> after it has

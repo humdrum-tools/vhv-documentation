@@ -10,9 +10,9 @@ sidebar: main_sidebar
 tags: [all, news]
 ---
 
-Scale degree data in `**deg` spines can now be displayed in
-music notation.
-A <a href="/humdrum/scale-degrees">Documentation page</a> has been
-created that describes how to encode and style `**deg` data.
+Scale degree data in `**deg` spines can now be displayed in VHV music
+notation.  A <a href="/humdrum/scale_degrees">documentation page</a>
+has been created that describes how to encode and style `**deg`
+data.
 
 
