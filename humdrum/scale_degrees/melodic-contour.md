@@ -399,13 +399,13 @@ rests into two basic categories of short rests that are allowed to be
 ignored and long rests that cannot be crossed when calculating 
 melodic contour approaches and departures.
 
-The information about the rest can be embedded in the scale degree tokens:
+The information about the rest can be embedded in the scale degree tokens (`p` means "pause"):
 
 | signifier | meaning |
-| 'p'       | The approach contour crosses a short rest  |
-| 'pp'      | The approach contour crosses a long rest   |
-| 'P'       | The departure contour crosses a short rest |
-| 'PP'      | The departure contour crosses a long rest  |
+| `p`       | The approach contour crosses a short rest  |
+| `pp`      | The approach contour crosses a long rest   |
+| `P`       | The departure contour crosses a short rest |
+| `PP`      | The departure contour crosses a long rest  |
 
 
 {% include verovio.html
@@ -418,8 +418,8 @@ The information about the rest can be embedded in the scale degree tokens:
 **kern	**deg
 *clefG2	*
 *M4/4	*
-*k[f#c#g#d#]	*
-*E:	*E:
+*k[]	*
+*C:	*C:
 =1	=1
 *	*irest<4
 4c	1'

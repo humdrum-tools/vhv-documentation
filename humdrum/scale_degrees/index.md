@@ -2,7 +2,7 @@
 title: Scale degrees
 lang: en 
 ref: humdrum-scale_degrees
-author: ["Craig Stuart Sapp", "author 2"]
+author: "Craig Stuart Sapp"
 translator: 
 keywords: humdrum scale degrees
 creation_date: 31 Dec 2022

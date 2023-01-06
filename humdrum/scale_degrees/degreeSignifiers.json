@@ -78,7 +78,7 @@
 			[
 				{
 					"keys": "'",
-					"description": "Scale degree is departed by a rising interval (next note is higher).  When *refined is enabled, this means departed up by step."
+					"description": "(single quote) Scale degree is departed by a rising interval (next note is higher).  When *refined is enabled, this means departed up by step."
 				},
 				{
 					"keys": "''",
@@ -265,11 +265,11 @@
 				},
 				{
 					"keys": "*minnat",
-					"description": "Scale degrees displayed in the natural minor mode (7th degree is a minor 7th above the tonic)."
+					"description": "Scale degrees displayed in the natural minor mode (7th degree is a minor 7th above the tonic, see \"n\" and \"h\" signifiers)."
 				},
 				{
 					"keys": "*minhar",
-					"description": "Scale degrees in reference to the harmonic minor mode when in a minor key(default: 7th degree is a major 7th above the tonic)."
+					"description": "Scale degrees in reference to the harmonic minor mode when in a minor key(default: 7th degree is a major 7th above the tonic, see \"n\" and \"h\" signifiers)."
 				},
 				{
 					"keys": "*solf",

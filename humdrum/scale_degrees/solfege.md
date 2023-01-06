@@ -45,7 +45,7 @@ solf&egrave;ge.
 </script>
 
 Chromatic alterations with use the following system.  in C major, C is `do` while C&#x266f; `di`;
-E is `mi` while E&#X266e; is `me`:
+E is `mi` while E&#x266d; is `me`:
 
 
 | flatter |       | sharper |

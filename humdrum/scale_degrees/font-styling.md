@@ -121,6 +121,8 @@ Scale degrees can be displayed in italic and/or bold:
 
 ### Font color ###
 
+Any <a href="https://en.wikipedia.org/wiki/Web_colors" target="_blank">SVG/web color code</a> 
+can be used to add color to degree display in music notation:
 
 {% include verovio.html
 	source="color"
@@ -148,3 +150,11 @@ Scale degrees can be displayed in italic and/or bold:
 =	=	=	=	=
 *-	*-	*-	*-	*-
 </script>
+
+
+* `crimson` is a <a href="https://www.december.com/html/spec/colorsvg.html" target="_blank">symbolic color name</a>
+* `#00f2` is a hex color code (single digits): the first `0` for the amount of red (none), the second `0` for the amount of green (none), the third number is for the amount of blue (maximum), and the optional last digit `2` is the amount of opacity (12.5%).
+* `hsl(180,100%,25%)` is a color description in terms of hue (0&ndash;360), saturation (0%&ndash;100%) and brightness (light).
+
+
+
