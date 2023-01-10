@@ -184,6 +184,14 @@
 					"description": "Key signature that the scale degrees are in reference to.  This is the same as the key designations in **kern data, such as \"c:\" for C minor, \"*B-:\" for B&#x266d;\" major, and \"*f#:\" for F&#x266e; major.  Modal keys are not yet implemented."
 				},
 				{
+					"keys": "*acc",
+					"description": "Display degree alterations (accidentals or arrows)."
+				},
+				{
+					"keys": "*Xacc",
+					"description": "Stop displaying degree alterations (accidentals or arrows)."
+				},
+				{
 					"keys": "*arrow",
 					"description": "Display degree alterations as arrows."
 				},
