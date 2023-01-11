@@ -248,6 +248,14 @@
 					"description": "Stop displaying hats above scale degrees."
 				},
 				{
+					"keys": "*hide",
+					"description": "Hide all following scale degrees."
+				},
+				{
+					"keys": "*Xhide",
+					"description": "Start showing following scale degrees again."
+				},
+				{
 					"keys": "*irest<2",
 					"description": "Rests shorter than a half note are \"short\"."
 				},
