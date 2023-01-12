@@ -202,6 +202,8 @@ entries:
 
     - title: Figured bass
       output: web, pdf
+      url: /humdrum/figured_bass
+
     - title: Fingering
       output: web, pdf
       url: /humdrum/fingering
