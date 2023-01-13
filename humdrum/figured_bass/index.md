@@ -593,6 +593,59 @@ uppercase codes apply to the entire figure.
 
 
 
+## Negative numbers ##
+
+If you want to display a negative figured bass number, you can use the `~` signifier
+in front of the number to prefix it with a minus sign.
+
+E.g. to encode the exact distances between two voices with an *intervallsatz*:
+
+
+{% include verovio.html
+	source="negative"
+	tabsize="10"
+	humdrum-max-height="325px"
+	lyricTopMinMargin="4.0"
+	spacingLinear="0.30"
+	scale="55"
+	pageWidth="500"
+	minLastJustification="0.25"
+%}
+
+<script type="application/json" id="negative">
+**kern	**fb	**kern	**fb
+*clefG2	*	*clefG2	*
+*k[b-]	*	*k[b-]	*
+*M4/4	*	*M4/4	*
+*met(c|)	*	*met(c|)	*
+16r	.	[4a	.
+16g	.	.	2
+16f	.	.	3
+16e	.	.	4
+=	=	=	=
+8f	.	16a]	3
+.	.	16f	1
+8aa	.	16d	~12
+.	.	16f	~10
+8e	.	16g	3
+.	.	16e	1
+8gg	.	16c#	#~12
+.	.	16e	~10
+16d	.	8f	3
+16gg	.	.	~9
+16ff	.	8d	~10
+16ee	.	.	~9
+16dd	.	[4d	~8
+16cc	.	.	~7
+16b-	.	.	~6
+16a	.	.	~5
+=	=	=	=
+*-	*-	*-	*-
+!!!filter: autobeam
+</script>
+
+
+
 ## Adding figured-bass spines in VHV ##
 
 To add a figured-bass spine to music in the VHV editor, do these
