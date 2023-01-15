@@ -6,17 +6,14 @@ integers in the range from&nbsp;1 through&nbsp;7:
 
 {% include verovio.html
 	source="scale"
-	humdrum-min-height="325px"
+	humdrum-min-height="265px"
 	scale="55"
 	pageWidth="800"
 %}
 <script type="application/x-humdrum" id="scale">
 **kern	**deg
-*clefG2	*
-*M4/4	*
 *k[]	*
 *C:	*C:
-=1	=1
 4c	1
 4d	2
 4e	3
@@ -35,17 +32,15 @@ the pitch class `E` instead of `C` in C major.
 
 {% include verovio.html
 	source="emajor"
-	humdrum-min-height="325px"
+	humdrum-min-height="300px"
 	scale="55"
 	pageWidth="800"
+	tabsize="13"
 %}
 <script type="application/x-humdrum" id="emajor">
 **kern	**deg
-*clefG2	*
-*M4/4	*
 *k[f#c#g#d#]	*
 *E:	*E:
-=1	=1
 4e	1
 4f#	2
 4g#	3
@@ -67,6 +62,8 @@ for B&#x266d; major and `*F#:` for F&#x266f; major.  Minor keys use
 a lower-case letter for the tonic (see discussion for minor keys
 below).
 
+
+
 ### Rests ###
 
 Rests can be indicated by the letter `r`.  As an extension to the
@@ -85,18 +82,15 @@ the `*irest` interpretation is in the form of a `**recip` value.
 
 {% include verovio.html
 	source="restex"
-	humdrum-min-height="325px"
+	humdrum-min-height="315px"
 	scale="55"
 	pageWidth="800"
 	tabsize="9"
 %}
 <script type="application/x-humdrum" id="restex">
 **kern	**deg	**deg
-*clefG2	*	*
-*M4/4	*	*
 *k[]	*	*
 *C:	*C:	*
-=1	=1	=1
 *	*irest<4	*irest<=4
 4c	1	1
 4d	2	2
@@ -139,11 +133,8 @@ This will cause scale degree "0" to be displayed in the music notation:
 %}
 <script type="application/x-humdrum" id="restexzero">
 **kern	**deg
-*clefG2	*
-*M4/4	*
 *k[]	*
 *C:	*C:
-=1	=1
 *	*irest<4
 4c	1
 4d	2
@@ -174,11 +165,8 @@ unmarked:
 <script type="application/x-humdrum" id="restexzeroauto">
 !!!filter: shed -x deg -e "s/rR/rR0/g"
 **kern	**deg
-*clefG2	*
-*M4/4	*
 *k[]	*
 *C:	*C:
-=1	=1
 *	*irest<4
 4c	1
 4d	2
@@ -203,17 +191,14 @@ will be displayed as subscripts after the scale degree:
 
 {% include verovio.html
 	source="degreeoct"
-	humdrum-min-height="325px"
+	humdrum-min-height="250px"
 	scale="55"
 	pageWidth="800"
 %}
 <script type="application/x-humdrum" id="degreeoct">
 **kern	**degree
-*clefG2	*
-*M4/4	*
 *k[]	*
 *C:	*C:
-=1	=1
 4c	1/4
 4d	2/4
 4e	3/4
@@ -231,17 +216,14 @@ can be used to display octave information again:
 
 {% include verovio.html
 	source="octavex"
-	humdrum-min-height="325px"
+	humdrum-min-height="300px"
 	scale="55"
 	pageWidth="800"
 %}
 <script type="application/x-humdrum" id="octavex">
 **kern	**degree
-*clefG2	*
-*M4/4	*
 *k[]	*
 *C:	*C:
-=1	=1
 *	*Xoctave
 4c	1/4
 4d	2/4
@@ -266,18 +248,15 @@ of removing them before printing (but they remain in the original file):
 
 {% include verovio.html
 	source="degreenooct"
-	humdrum-min-height="325px"
+	humdrum-min-height="300px"
 	scale="55"
 	pageWidth="800"
 %}
 <script type="application/x-humdrum" id="degreenooct">
 !!!filter: shed -x degree -e "s/\/\d+//g"
 **kern	**degree
-*clefG2	*
-*M4/4	*
 *k[]	*
 *C:	*C:
-=1	=1
 4c	1/4
 4d	2/4
 4e	3/4
@@ -302,7 +281,7 @@ Meaning of the components in the shed filter:
 |           | There is nothing between the last two slashes which means replace the match (X) with nothing. |
 
 
-By default, the input Humdrum data in score (left side of the editor) remains unchanged when there are filters in the file.  
+By default, the input Humdrum data in score (left side of the editor) remains unchanged when there are filters in the file.
 If you want to see the result of the filter, press control-c (Windows) or option-c (MacOS) to "compile" the filter and replace
 the original file with the output of the filtering process.  The `!!!filter:` line will change to `!!!filter:` to indicate that
 the filter has already been processed.
@@ -401,8 +380,8 @@ scale degree in order to determine the default scale degree accidental first.
 
 #### Displaying alterations as arrows ####
 
-To display alterations as up/down arrows after the scale degrees, use the 
-`*arrow` tandem interpretation.  `*Xarrow` can be used to return to the 
+To display alterations as up/down arrows after the scale degrees, use the
+`*arr` tandem interpretation.  `*Xarr` can be used to return to the
 default accidental display for alterations.
 
 {% include verovio.html
@@ -413,7 +392,7 @@ default accidental display for alterations.
 %}
 <script type="application/x-humdrum" id="arrowalt">
 **kern	**deg
-*clefG2	*arrow
+*clefG2	*arr
 *M4/4	*
 *k[]	*
 *C:	*C:
@@ -435,15 +414,15 @@ Notice that two semitone alterations are displayed as a double-tailed arrow.
 
 ### Styling scale degrees ###
 
-By default scale degrees are displayed as plain numbers, but other 
-notation rendering styles can be given to them.  
+By default scale degrees are displayed as plain numbers, but other
+notation rendering styles can be given to them.
 
 
 
 #### Circles ####
 
 Circles can be drawn around scale degrees by adding the `*circle` interpretation.
-This style can be canceled by the interpretation `*Xcircle`.   Circles are 
+This style can be canceled by the interpretation `*Xcircle`.   Circles are
 typically drawn around scale degrees of a bass line.
 
 {% include verovio.html
@@ -477,7 +456,7 @@ typically drawn around scale degrees of a bass line.
 #### Boxes ####
 
 Boxes can be drawn around scale degrees by adding the `*box` interpretation.
-This style can be canceled by the interpretation `*Xbox`.   
+This style can be canceled by the interpretation `*Xbox`.
 
 {% include verovio.html
 	source="boxdeg"
@@ -507,7 +486,7 @@ This style can be canceled by the interpretation `*Xbox`.
 
 Boxes and circles are currently mutually exclusive, so only the most recent `*box` or
 `*circle` interpretation will be followed.   This may change in the future, so if you
-only want circles or boxes to be displayed on a scale degree and not both, use `*Xcircle` 
+only want circles or boxes to be displayed on a scale degree and not both, use `*Xcircle`
 before `*box`, and `*Xbox` before `*circle` to maintain a consistent rendering in the
 future.
 

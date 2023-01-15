@@ -45,7 +45,7 @@ for a minor seventh above or major second below the first scale degree.
 %}
 <script type="application/x-humdrum" id="bothminor">
 **kern	**deg
-*clefG2	*arrow
+*clefG2	*arr
 *M4/4	*
 *k[b-e-a-]	*
 *c:	*c:
@@ -136,7 +136,7 @@ two systems in a single spine by alternating between `*minnat` and `*minhar`.
 <script type="application/x-humdrum" id="minchange">
 **kern	**deg	**text
 *clefG2	*minnat	*v:**deg:
-*M4/4	*arrow	*vv:**deg:
+*M4/4	*arr	*vv:**deg:
 *k[b-e-a-]	*circle	*color:silver
 *c:	*c:	*c:
 =	=	=

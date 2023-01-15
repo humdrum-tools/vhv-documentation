@@ -47,7 +47,7 @@
 					"keys": "--",
 					"description": "Scale degree is lowered two semitones from default position in scale."
 				}
-			]	
+			]
 		},
 		{
 			"categoryName": "melodic approach",
@@ -70,7 +70,7 @@
 					"keys": "vv",
 					"description": "Scale degree is approached by a falling interval (previous note is higher).  When *refined is enabled, this means approached down by leap."
 				}
-			]	
+			]
 		},
 		{
 			"categoryName": "melodic departure",
@@ -92,7 +92,7 @@
 					"keys": ",,",
 					"description": "(two commas) Scale degree is departed by a falling interval (next note is lower).  When *refined is enabled, this means departed down by leap."
 				}
-			]	
+			]
 		},
 		{
 			"categoryName": "melodic contour rests",
@@ -114,7 +114,7 @@
 					"keys": "PP",
 					"description": "Melodic departure contour crosses a big rest."
 				}
-			]	
+			]
 		},
 		{
 			"categoryName": "modality",
@@ -129,22 +129,22 @@
 					"description": "The following scale degrees are in reference to D minor."
 				},
 				{
-					"keys": "h",
+					"keys": "H",
 					"description": "In a minor key, the 7th scale degree is a major 7th above the tonic (7th scale degree is in the harmonic minor scale)."
 				},
 				{
-					"keys": "n",
+					"keys": "N",
 					"description": "In a minor key, the 7th scale degree is a minor 7th above the tonic (7th scale degree is in the natural minor scale)."
 				},
 				{
 					"keys": "m",
-					"description": "Scale degree is in a minor mode (use **minnat and **minhar to distinguish between natural and harmonic minor, although only the 7th scale degree needs to be labeled (see \"h\" and \"n\" signifiers)."
+					"description": "Scale degree is in a minor mode (use **minnat and **minhar to distinguish between natural and harmonic minor, although only the 7th scale degree needs to be labeled (see \"H\" and \"N\" signifiers)."
 				},
 				{
 					"keys": "M",
 					"description": "Scale degree is in a major mode."
 				}
-			]	
+			]
 		},
 		{
 			"categoryName": "styling",
@@ -159,7 +159,7 @@
 					"keys": "yy",
 					"description": "Suppress display of the entire scale degree token."
 				}
-			]	
+			]
 		},
 		{
 			"categoryName": "analysis",
@@ -173,7 +173,7 @@
 					"keys": "(, ), {, }, ;",
 					"description": "Phrase marking."
 				}
-			]	
+			]
 		},
 		{
 			"categoryName": "interpretations",
@@ -192,11 +192,11 @@
 					"description": "Stop displaying degree alterations (accidentals or arrows)."
 				},
 				{
-					"keys": "*arrow",
+					"keys": "*arr",
 					"description": "Display degree alterations as arrows."
 				},
 				{
-					"keys": "*Xarrow",
+					"keys": "*Xarr",
 					"description": "Stop Displaying degree alterations as arrows."
 				},
 				{
@@ -281,11 +281,11 @@
 				},
 				{
 					"keys": "*minnat",
-					"description": "Scale degrees displayed in the natural minor mode (7th degree is a minor 7th above the tonic, see \"n\" and \"h\" signifiers)."
+					"description": "Scale degrees displayed in the natural minor mode (7th degree is a minor 7th above the tonic, see \"H\" and \"N\" signifiers)."
 				},
 				{
 					"keys": "*minhar",
-					"description": "Scale degrees in reference to the harmonic minor mode when in a minor key(default: 7th degree is a major 7th above the tonic, see \"n\" and \"h\" signifiers)."
+					"description": "Scale degrees in reference to the harmonic minor mode when in a minor key(default: 7th degree is a major 7th above the tonic, see \"N\" and \"H\" signifiers)."
 				},
 				{
 					"keys": "*octave",
@@ -303,7 +303,7 @@
 					"keys": "*Xsolf",
 					"description": "Stop displaying scale degrees with moveable-do solf&egrave;ge."
 				}
-			]	
+			]
 		}
 	]
 }

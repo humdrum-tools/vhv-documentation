@@ -15,7 +15,7 @@ notation:
 %}
 <script type="application/x-humdrum" id="degtext">
 **kern	**deg	**cdata-deg
-*clefG2	*arrow	*v:**deg:
+*clefG2	*arr	*v:**deg:
 *M4/4	*	*
 *k[]	*	*
 *C:	*C:	*C:
@@ -49,7 +49,7 @@ text instead of formatted scale degrees:
 <script type="application/x-humdrum" id="plaindeg">
 !!!filter: shed -e "s/deg/cdata/X"
 **kern	**deg
-*clefG2	*arrow
+*clefG2	*arr
 *M4/4	*
 *k[]	*
 *C:	*C:
