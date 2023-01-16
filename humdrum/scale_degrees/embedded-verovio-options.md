@@ -14,7 +14,7 @@ that can be used to refine the notation.  Here is an example, first without the 
 <script type="application/x-humdrum" id="verovio">
 **kern	**deg	**deg	**deg	**deg
 *clefG2	*	*fs:75%	*fs:130%	*fs:100%
-*M4/4	*	*circle	*	*box
+*M4/4	*	*circ	*	*box
 *k[]	*	*	*	*
 *C:	*C:	*C:	*C:	*C:
 =1	=1	=1	=1	=1
@@ -51,7 +51,7 @@ And now with the verovio option:
 !!!verovio: topMarginHarm 10
 **kern	**deg	**deg	**deg	**deg
 *clefG2	*	*fs:75%	*fs:130%	*fs:100%
-*M4/4	*	*circle	*	*box
+*M4/4	*	*circ	*	*box
 *k[]	*	*	*	*
 *C:	*C:	*C:	*C:	*C:
 =1	=1	=1	=1	=1

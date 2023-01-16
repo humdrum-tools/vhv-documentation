@@ -20,7 +20,7 @@ The font size of scale degrees can be set by the `*fs:` interpretation followed 
 <script type="application/x-humdrum" id="sizefont">
 **kern	**deg	**deg	**deg	**deg
 *clefG2	*	*fs:75%	*fs:120%	*fs:100%
-*M4/4	*	*circle	*	*box
+*M4/4	*	*circ	*	*box
 *k[]	*	*	*	*
 *C:	*C:	*C:	*C:	*C:
 =1	=1	=1	=1	=1
@@ -61,7 +61,7 @@ In addition to percentages, there are several symbolic font sizes that can be us
 <script type="application/x-humdrum" id="symsize">
 **kern	**deg	**deg	**deg
 *clefG2	*fs:normal	*fs:smallest	*fs:largest
-*M4/4	*	*circle	*box
+*M4/4	*	*circ	*box
 *k[]	*	*	*
 *C:	*C:	*C:	*C:
 =1	=1	=1	=1
@@ -106,11 +106,11 @@ Scale degrees can be displayed in italic and/or bold:
 4g	5	5	5	5
 *	*italic	*	*	*
 *	*bold	*	*	*
-*	*circle	*	*	*
+*	*circ	*	*	*
 4a	6	6	6	6
 *	*Xitalic	*	*	*
 *	*Xbold	*	*	*
-*	*Xcircle	*	*	*
+*	*Xcirc	*	*	*
 4b	7	7	7	7
 4cc	1	1	1	1
 =	=	=	=	=

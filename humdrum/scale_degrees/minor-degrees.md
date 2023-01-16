@@ -137,7 +137,7 @@ two systems in a single spine by alternating between `*minnat` and `*minhar`.
 **kern	**deg	**text
 *clefG2	*minnat	*v:**deg:
 *M4/4	*arr	*vv:**deg:
-*k[b-e-a-]	*circle	*color:silver
+*k[b-e-a-]	*circ	*color:silver
 *c:	*c:	*c:
 =	=	=
 !!LO:TX:a:t=**minnat:color=crimson

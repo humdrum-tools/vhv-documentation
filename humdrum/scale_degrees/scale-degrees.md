@@ -421,8 +421,8 @@ notation rendering styles can be given to them.
 
 #### Circles ####
 
-Circles can be drawn around scale degrees by adding the `*circle` interpretation.
-This style can be canceled by the interpretation `*Xcircle`.   Circles are
+Circles can be drawn around scale degrees by adding the `*circ` interpretation.
+This style can be canceled by the interpretation `*Xcirc`.   Circles are
 typically drawn around scale degrees of a bass line.
 
 {% include verovio.html
@@ -433,7 +433,7 @@ typically drawn around scale degrees of a bass line.
 %}
 <script type="application/x-humdrum" id="circleddegrees">
 **kern	**deg
-*clefG2	*circle
+*clefG2	*circ
 *M4/4	*
 *k[f#c#g#d#]	*
 *E:	*E:
@@ -443,7 +443,7 @@ typically drawn around scale degrees of a bass line.
 4g#	3
 4a	4
 4b	5
-*	*Xcircle
+*	*Xcirc
 4cc#	6
 4dd#	7
 4ee	1
@@ -485,9 +485,9 @@ This style can be canceled by the interpretation `*Xbox`.
 </script>
 
 Boxes and circles are currently mutually exclusive, so only the most recent `*box` or
-`*circle` interpretation will be followed.   This may change in the future, so if you
-only want circles or boxes to be displayed on a scale degree and not both, use `*Xcircle`
-before `*box`, and `*Xbox` before `*circle` to maintain a consistent rendering in the
+`*circ` interpretation will be followed.   This may change in the future, so if you
+only want circles or boxes to be displayed on a scale degree and not both, use `*Xcirc`
+before `*box`, and `*Xbox` before `*circ` to maintain a consistent rendering in the
 future.
 
 

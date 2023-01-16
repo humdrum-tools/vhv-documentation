@@ -216,11 +216,11 @@
 					"description": "Stop displaying scale degrees within boxes."
 				},
 				{
-					"keys": "*circle",
+					"keys": "*circ",
 					"description": "Display scale degrees within circles."
 				},
 				{
-					"keys": "*Xcircle",
+					"keys": "*Xcirc",
 					"description": "Stop displaying scale degrees within circles."
 				},
 				{
