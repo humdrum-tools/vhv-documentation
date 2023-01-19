@@ -358,6 +358,10 @@ entries:
       output: web, pdf
       url: /filter/composite
 
+    - title: deg
+      output: web, pdf
+      url: /filter/deg
+
     - title: dissonant
       output: web, pdf
       url: /filter/dissonant
@@ -369,6 +373,10 @@ entries:
     - title: extract
       output: web, pdf
       url: /filter/extract
+
+    - title: fb
+      output: web, pdf
+      url: /filter/fb
 
     - title: flipper
       output: web, pdf
