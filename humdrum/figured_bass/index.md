@@ -243,6 +243,34 @@ default position below the staff.
 *-	*-
 </script>
 
+Alternatively, you can use the exclusive interpretation `**fba` as a
+combination of `**fb` and `*above`. Note that you probably may want
+to add an empty placeholder `x` to align te numbers at the bottom.
+
+{% include verovio.html
+	source="fba"
+	scale="55"
+	humdrum-min-height="320px"
+	pageWidth="500"
+%}
+
+<script type="application/json" id="fba">
+**kern	**fba
+*M4/4	*
+=1	=1
+4e	x x 6
+4e	x x 5
+4e	x 4 2
+4e	6 4 2
+=2	=2
+4e	x x 6
+4e	x x 5
+4e	x 4 2
+4e	6 4 2
+==	==
+*-	*-
+</script>
+
 
 
 ## Accidentals ##
