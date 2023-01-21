@@ -266,3 +266,40 @@ track with `-b`.
 =	=
 *-	*-
 </script>
+
+
+
+## Base track ##
+
+By default, `fb` will use the first `**kern` spine as base track. But
+you can change this behaviour by using the `-b` option (`--base`).
+Valid values are numbers of the desired base `**kern` spine (compare
+to `-k`). This is especially useful in combination with `-i -m`.
+
+{% include verovio.html
+	source="base"
+	humdrum-min-height="275px"
+	scale="35"
+	tabsize="8"
+	pageWidth="900"
+%}
+<script type="application/x-humdrum" id="base">
+!!!filter: fb -i -m -b 3
+**kern	**kern	**kern
+*clefG2	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)
+=1	=1	=1
+2r	1b-	2r
+2B-	.	2dd
+2G	2b-	2dd
+2A	2a	2cc#
+=2	=2	=2
+2B	2g	2dd
+2c	2g	2ee
+2d	1f#	1a
+2d	.	.
+=	=	=
+*-	*-	*-
+</script>
