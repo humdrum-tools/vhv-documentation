@@ -240,3 +240,29 @@ exchange.
 =	=
 *-	*-
 </script>
+
+
+
+## Lowest pitch as base ##
+
+With the `-l` option (`--lowest`) you can let `fb` find the lowest
+pitch of each slice and use this note as base for all number
+calculations. This options will ignore a potentially passend base
+track with `-b`.
+
+{% include verovio.html
+	source="lowest"
+	humdrum-min-height="275px"
+	scale="50"
+	tabsize="8"
+	pageWidth="900"
+%}
+<script type="application/x-humdrum" id="lowest">
+!!!filter: fb -c -l
+**kern	**kern
+*clefF4	*clefG2
+4G	4b 4dd
+4B	4G 4dd
+=	=
+*-	*-
+</script>
