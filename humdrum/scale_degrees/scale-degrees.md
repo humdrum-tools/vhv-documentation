@@ -377,6 +377,35 @@ meaning that it indicates the number of semitones in the alteration.  An absolut
 Absolute display will be more complicated since the key designation is required before the
 scale degree in order to determine the default scale degree accidental first.
 
+If you want to display alteration accidentals after scale degrees,
+use the `*accR` interpretation ("accidentals reversed"):
+
+{% include verovio.html
+	source="altaccreverse"
+	humdrum-min-height="325px"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="altaccreverse">
+**kern	**deg
+*clefG2	*
+*M4/4	*
+*k[]	*
+*C:	*C:
+=1	=1
+*	*accR
+4c	1
+4d	2
+4e-	3-
+4f#	4+
+4g	5
+4a-	6-
+4b--	7--
+4cc	1
+=	=
+*-	*-
+</script>
+
 
 #### Displaying alterations as arrows ####
 
@@ -410,6 +439,34 @@ default accidental display for alterations.
 </script>
 
 Notice that two semitone alterations are displayed as a double-tailed arrow.
+
+If you want to display alteration arrows in front of scale degress rather
+than in front, use the `*arrR` interpretations ("arrows reversed"):
+
+{% include verovio.html
+	source="arrowaltreverse"
+	humdrum-min-height="325px"
+	scale="55"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="arrowaltreverse">
+**kern	**deg
+*clefG2	*arrR
+*M4/4	*
+*k[]	*
+*C:	*C:
+=1	=1
+4c	1
+4d	2
+4e-	3-
+4f#	4+
+4g	5
+4a-	6-
+4b--	7--
+4cc	1
+=	=
+*-	*-
+</script>
 
 
 ### Styling scale degrees ###

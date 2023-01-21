@@ -188,12 +188,20 @@
 					"description": "Display degree alterations (accidentals or arrows)."
 				},
 				{
+					"keys": "*accR",
+					"description": "Display chromatic alterations as accidentals after scale degree numbers."
+				},
+				{
 					"keys": "*Xacc",
 					"description": "Stop displaying degree alterations (accidentals or arrows)."
 				},
 				{
 					"keys": "*arr",
 					"description": "Display degree alterations as arrows."
+				},
+				{
+					"keys": "*arrR",
+					"description": "Display chromatic alterations as arrows in front of scale degree numbers."
 				},
 				{
 					"keys": "*Xarr",
