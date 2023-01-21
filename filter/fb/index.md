@@ -305,7 +305,6 @@ to `-k`). This is especially useful in combination with `-i -m`.
 </script>
 
 
-
 ## Selective analysis ##
 
 In addition to calculating the numbers of all `**kern` spines in a
