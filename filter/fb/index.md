@@ -39,7 +39,7 @@ Here is a basic example:
 4E	4e 4g 4cc
 4D	4f 4b 4dd
 4C	4g 4cc 4ee
-=   =
+=	=
 *-	*-
 </script>
 
@@ -71,7 +71,7 @@ interval of the distance between the base voice (defualt is the first
 4c	4e
 4c	4d
 4c	4c
-=   =
+=	=
 *-	*-
 </script>
 
@@ -109,6 +109,6 @@ used in combination with `-i`, 1 is displayed for a unison.
 4c	4e
 4c	4d
 4c	4c
-=   =
+=	=
 *-	*-
 </script>
