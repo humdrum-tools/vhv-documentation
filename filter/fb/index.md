@@ -345,9 +345,7 @@ the file, or with `-k` to select the nth `**kern` spine in the file.
 
 
 
-## Styling options ##
-
-### Place numbers above the staff ###
+## Place numbers above the staff ##
 
 By default numbers will be displayed below the staff when shown in a
 musical score. You can add the `--above` option to show them above the
