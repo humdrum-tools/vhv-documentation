@@ -206,3 +206,36 @@ You can hide the number 3 if the display is not necessary because of an existing
 =	=
 *-	*-
 </script>
+
+
+
+## Negative intervals ##
+
+By default, `fb` will ignore intervals if they are below the pitch of
+the base track. You can change this behaviour by adding an option `-m`
+(`--negative`). This is especially interesting in combination with the
+option `-i`, for example in renaissance music, when there is an voice
+exchange. 
+
+{% include verovio.html
+	source="neg"
+	humdrum-min-height="275px"
+	scale="50"
+	tabsize="8"
+	pageWidth="900"
+%}
+<script type="application/x-humdrum" id="neg">
+!!!filter: fb -m
+**kern	**kern
+*clefC3	*clefC3
+4c	4g
+4c	4f
+4c	4e
+4c	4d
+4c	4c
+4c	4B
+4c	4A
+4c	4G
+=	=
+*-	*-
+</script>
