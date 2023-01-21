@@ -342,3 +342,62 @@ the file, or with `-k` to select the nth `**kern` spine in the file.
 | `-k 1-4,6,9-$` | Analyze the first, second, third, fourth, sixth, and nineth through last kern spines. |
 | `-k $1`        | Analyze the penultimate kern spine.                                                   |
 | `-k $2-$`      | analyze from two kern spines before the end to the last kern spine.                   |
+
+
+
+## Styling options ##
+
+### Place numbers above the staff ###
+
+By default numbers will be displayed below the staff when shown in a
+musical score. You can add the `--above` option to show them above the
+staff.
+
+{% include verovio.html
+	source="above_f"
+	humdrum-min-height="275px"
+	scale="50"
+	tabsize="8"
+	pageWidth="900"
+%}
+<script type="application/x-humdrum" id="above_f">
+!!!filter: fb -f --above
+**kern	**kern
+*clefF4	*clefG2
+4F	4d 4g 4b
+4E	4e 4g 4cc
+4D	4f 4b 4dd
+4C	4g 4cc 4ee
+=	=
+*-	*-
+</script>
+
+This also works when using the `-i` option.
+
+{% include verovio.html
+	source="above_i"
+	humdrum-min-height="275px"
+	scale="50"
+	tabsize="8"
+	pageWidth="900"
+%}
+<script type="application/x-humdrum" id="above_i">
+!!!filter: fb -i --above
+**kern	**kern	**kern
+*clefG2	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)
+=1	=1	=1
+2r	1b-	2r
+2B-	.	2dd
+2G	2b-	2dd
+2A	2a	2cc#
+=2	=2	=2
+2B	2g	2dd
+2c	2g	2ee
+2d	1f#	1a
+2d	.	.
+=	=	=
+*-	*-	*-
+</script>
