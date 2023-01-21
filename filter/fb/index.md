@@ -77,4 +77,38 @@ interval of the distance between the base voice (defualt is the first
 
 
 
+## Compound intervals ##
 
+By default, `fb` will display the exact distance between the target
+and base note as compound intervals. If you want to display the
+numbers 2-7 as non-compound intervals reduced with an octave you can
+use the `-c` option (`--compound`) to do so. This is similar to the
+`-c` option of the `hint` command in the Humdrum Toolkit. When `-c` is
+used in combination with `-i`, 1 is displayed for a unison.
+
+{% include verovio.html
+	source="compound"
+	humdrum-min-height="275px"
+	scale="50"
+	tabsize="8"
+	pageWidth="900"
+%}
+<script type="application/x-humdrum" id="compound">
+!!!filter: fb -c
+**kern	**kern
+*clefF4	*clefG2
+4c	4gg
+4c	4ff
+4c	4ee
+4c	4dd
+4c	4cc
+4c	4b
+4c	4a
+4c	4g
+4c	4f
+4c	4e
+4c	4d
+4c	4c
+=   =
+*-	*-
+</script>
