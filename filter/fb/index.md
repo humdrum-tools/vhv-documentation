@@ -177,7 +177,8 @@ signature:
 *-	*-
 </script>
 
-You can hide the number 3 if the display is not necessary because of an existing accidental.
+You can hide the number 3 with the option `-3` (`--hide-three`) if the
+display is not necessary because of an existing accidental.
 
 {% include verovio.html
 	source="hide3"
