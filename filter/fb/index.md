@@ -482,9 +482,9 @@ note.
 {% include verovio.html
 	source="frequency"
 	humdrum-min-height="275px"
-	scale="50"
+	scale="40"
 	tabsize="8"
-	pageWidth="900"
+	pageWidth="1000"
 %}
 <script type="application/x-humdrum" id="frequency">
 !!!filter: fb -n --frequency 4
