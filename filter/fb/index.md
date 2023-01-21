@@ -468,3 +468,96 @@ numbers without attack or changing base note can be hidden.
 =	=	=
 *-	*-	*-
 </script>
+
+
+
+## Control the frequency of the numbers ##
+
+By default `fb` will calculate number for every single slice (=line).
+You can controll this by passing the option `--frequency` with a
+rhythmical value for a note duration (compare with `recip`). With this
+options you can tell `fb` to only display numbers on every quarter
+note.
+
+{% include verovio.html
+	source="frequency"
+	humdrum-min-height="275px"
+	scale="50"
+	tabsize="8"
+	pageWidth="900"
+%}
+<script type="application/x-humdrum" id="frequency">
+!!!filter: fb -n --frequency 4
+**kern	**kern	**kern	**kern
+*clefF4	*clefGv2	*clefG2	*clefG2
+*k[f#c#]	*k[f#c#]	*k[f#c#]	*k[f#c#]
+*M4/4	*M4/4	*M4/4	*M4/4
+*met(c)	*met(c)	*met(c)	*met(c)
+=1-	=1-	=1-	=1-
+8BL	4d	4f#	4b
+8AJ	.	.	.
+4G	8c#L	4e	4b
+.	8BJ	.	.
+8F#L	4c#	4f#	4a
+8E	.	.	.
+8D	4B	8f#L	4dd
+8BBJ	.	16gL	.
+.	.	16aJJ	.
+=2	=2	=2	=2
+8EL	4.B	8gL	8cc#L
+8D	.	8f#J	8bJ
+8E	.	4e	4cc#
+8F#J	8A#	.	.
+2BB;	2F#;	2d;	2b;
+=3	=3	=3	=3
+*-	*-	*-	*-
+</script>
+
+This option is particularly useful when the metre is ternary, e.g.
+*six-eighths* or *nine-eighths*.
+
+{% include verovio.html
+	source="frequency98"
+	humdrum-min-height="275px"
+	scale="35"
+	tabsize="8"
+	pageWidth="1500"
+%}
+<script type="application/x-humdrum" id="frequency98">
+!!!filter: fb -n --frequency 4.
+**kern	**kern
+*k[b-]	*k[b-]
+*M9/8	*M9/8
+(8FF'L 8C 8F 8A	4.s
+8FF' 8C 8F 8A	.
+8FF'J 8C 8F 8A	.
+8FF'L 8C 8F 8A	4.s
+8GG' 8C 8E 8G	.
+8FF'J 8C 8F 8A	.
+8EE'L 8C 8G 8B-	(8c
+8EE' 8C 8F 8A	8d
+8EE'J 8C 8E 8B-)	8c)
+=	=
+(8FF' 8C 8F 8A	[4.a
+8FF' 8C 8F 8A	.
+8FF' 8C 8F 8A	.
+8FF' 8C 8F 8A	8a]
+8FF' 8C 8F 8A	(8b-'
+8FF' 8C 8F 8A	8b')
+8FF' 8C 8F 8A	(8cc
+8FF' 8C 8F 8A	8a)
+8FF' 8C 8F 8A)	8f'
+=	=
+8BB- 8F 8B-	(4.e
+8BB- 8F 8B-	.
+8BB- 8F 8B-	.
+8BB- 8F 8B-	4.d)
+8BB- 8F 8B-	.
+8BB- 8F 8B-	.
+8AA 8C 8F 8B-	(4d
+8AA 8C 8F 8B-	.
+8AA 8C 8F 8B-	8c)
+=	=
+*-	*-
+!!!filter: autobeam
+</script>
