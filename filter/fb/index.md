@@ -398,3 +398,73 @@ This also works when using the `-i` option.
 =	=	=
 *-	*-	*-
 </script>
+
+
+
+## *Intervallsatz* ##
+
+When working e.g. with polyphonic renaissance music the
+*Intervallsatz* option `-i` (`--intervallsatz`) is the best way to
+display the numbers of each voice directly under it's staff. This is a
+good way for students to get a fast overview over the intervals and
+check for possible dissonant or parallel intervals. Recommended
+options are in combination with `-i -c -a -t -m`.
+
+{% include verovio.html
+	source="intervallsatz"
+	humdrum-min-height="275px"
+	scale="50"
+	tabsize="8"
+	pageWidth="900"
+%}
+<script type="application/x-humdrum" id="intervallsatz">
+!!!filter: fb -i
+**kern	**kern	**kern
+*clefG2	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)
+=1	=1	=1
+2r	1b-	2r
+2B-	.	2dd
+2G	2b-	2dd
+2A	2a	2cc#
+=2	=2	=2
+2B	2g	2dd
+2c	2g	2ee
+2d	1f#	1a
+2d	.	.
+=	=	=
+*-	*-	*-
+</script>
+
+When passing the `-t` option (`--ties`) in combination with `-i`
+numbers without attack or changing base note can be hidden.
+
+{% include verovio.html
+	source="ties"
+	humdrum-min-height="275px"
+	scale="50"
+	tabsize="8"
+	pageWidth="900"
+%}
+<script type="application/x-humdrum" id="ties">
+!!!filter: fb -i -t
+**kern	**kern	**kern
+*clefG2	*clefG2	*clefG2
+*k[b-]	*k[b-]	*k[b-]
+*M2/1	*M2/1	*M2/1
+*met(C|)	*met(C|)	*met(C|)
+=1	=1	=1
+2r	1b-	2r
+2B-	.	2dd
+2G	2b-	2dd
+2A	2a	2cc#
+=2	=2	=2
+2B	2g	2dd
+2c	2g	2ee
+2d	1f#	1a
+2d	.	.
+=	=	=
+*-	*-	*-
+</script>
