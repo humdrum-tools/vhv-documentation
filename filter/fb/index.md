@@ -112,3 +112,97 @@ used in combination with `-i`, 1 is displayed for a unison.
 =	=
 *-	*-
 </script>
+
+
+
+## Accidentals ##
+
+By default, `fb` will not display any accidentals. Use the `-a` option
+(`--accidentals`) to display naturals, sharps and flats infront of the
+numbers.
+
+{% include verovio.html
+	source="accidentals"
+	humdrum-min-height="275px"
+	scale="50"
+	tabsize="8"
+	pageWidth="900"
+%}
+<script type="application/x-humdrum" id="accidentals">
+!!!filter: fb -c -a
+**kern	**kern
+*clefF4	*clefG2
+4c	4cc
+4c	4bn
+4c	4a#
+4c	4g-
+4c	4f##
+4c	4e--
+4c	4d
+4c	4c
+=	=
+*-	*-
+</script>
+
+The display of naturals, sharps and flats depends on the current key
+signature:
+
+{% include verovio.html
+	source="keysig"
+	humdrum-min-height="275px"
+	scale="50"
+	tabsize="8"
+	pageWidth="900"
+%}
+<script type="application/x-humdrum" id="keysig">
+!!!filter: fb -a
+**kern	**kern
+*clefF4	*clefG2
+*k[b-e-a-]	*k[b-e-a-]
+4c	4a#
+4c	4a
+4c	4a-
+4c	4g#
+4c	4g
+4c	4g-
+=	=
+*k[f#c#g#]	*k[f#c#g#]
+4c	4a#
+4c	4a
+4c	4a-
+4c	4g#
+4c	4g
+4c	4g-
+=	=
+*-	*-
+</script>
+
+You can hide the number 3 if the display is not necessary because of an existing accidental.
+
+{% include verovio.html
+	source="hide3"
+	humdrum-min-height="275px"
+	scale="50"
+	tabsize="8"
+	pageWidth="900"
+%}
+<script type="application/x-humdrum" id="hide3">
+!!!filter: fb -a -3
+**kern	**kern
+*clefF4	*clefG2
+4c	4e#
+4c	4e
+4c	4e-
+=	=
+*k[b-e-]	*k[b-e-]
+4c	4e#
+4c	4e
+4c	4e-
+=	=
+*k[f#c#g#d#a#e#]	*k[f#c#g#d#a#e#]
+4c	4e#
+4c	4e
+4c	4e-
+=	=
+*-	*-
+</script>
