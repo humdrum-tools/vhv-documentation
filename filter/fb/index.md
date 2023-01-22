@@ -660,3 +660,31 @@ they do not need an accidental and remove any duplicate numbers.
 *-	*-
 !!!filter: autobeam
 </script>
+
+
+
+## Use abbreviated number figures ##
+
+With the `r` option (`--abbr`) numbers for once slice will get
+abbreviated for reasonable figured bass numbering.
+
+The current mapping is:
+
+| Numbers | Abbreviated numbers |
+|---------|---------------------|
+| 3       | –                   |
+| 5       | –                   |
+| 5 3     | –                   |
+| 6 3     | 6                   |
+| 5 4     | 4                   |
+| 7 5 3   | 7                   |
+| 7 3     | 7                   |
+| 7 5     | 7                   |
+| 6 5 3   | 6 5                 |
+| 6 4 3   | 4 3                 |
+| 6 4 2   | 4 2                 |
+| 9 5 3   | 9                   |
+| 9 5     | 9                   |
+| 9 3     | 9                   |
+
+Note that this mapping may change in future.
