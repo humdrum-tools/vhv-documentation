@@ -602,3 +602,57 @@ You can sort from small to large numbers (from top to bottom) with the
 =	=
 *-	*-
 </script>
+
+
+
+## Normalize numbers ##
+
+Normalizing figured base numbers with the `-n` option (`normalize`)
+will automatically add `-c -s`. It will remove the number 8 and 1 if
+they do not need an accidental and remove any duplicate numbers.
+
+{% include verovio.html
+	source="normalize"
+	humdrum-min-height="275px"
+	scale="35"
+	tabsize="8"
+	pageWidth="1500"
+%}
+<script type="application/x-humdrum" id="normalize">
+!!!filter: fb -n
+**kern	**kern
+*k[b-]	*k[b-]
+*M9/8	*M9/8
+(8FF'L 8C 8F 8A	4.s
+8FF' 8C 8F 8A	.
+8FF'J 8C 8F 8A	.
+8FF'L 8C 8F 8A	4.s
+8GG' 8C 8E 8G	.
+8FF'J 8C 8F 8A	.
+8EE'L 8C 8G 8B-	(8c
+8EE' 8C 8F 8A	8d
+8EE'J 8C 8E 8B-)	8c)
+=	=
+(8FF' 8C 8F 8A	[4.a
+8FF' 8C 8F 8A	.
+8FF' 8C 8F 8A	.
+8FF' 8C 8F 8A	8a]
+8FF' 8C 8F 8A	(8b-'
+8FF' 8C 8F 8A	8b')
+8FF' 8C 8F 8A	(8cc
+8FF' 8C 8F 8A	8a)
+8FF' 8C 8F 8A)	8f'
+=	=
+8BB- 8F 8B-	(4.e
+8BB- 8F 8B-	.
+8BB- 8F 8B-	.
+8BB- 8F 8B-	4.d)
+8BB- 8F 8B-	.
+8BB- 8F 8B-	.
+8AA 8C 8F 8B-	(4d
+8AA 8C 8F 8B-	.
+8AA 8C 8F 8B-	8c)
+=	=
+*-	*-
+!!!filter: autobeam
+</script>
