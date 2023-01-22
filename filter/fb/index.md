@@ -581,7 +581,7 @@ You can sort from small to large numbers (from top to bottom) with the
 	pageWidth="1500"
 %}
 <script type="application/x-humdrum" id="sort">
-!!!filter: fb -c -o
+!!!filter: fb -c -a -o
 **kern	**kern
 *clefF4	*clefG2
 *M6/8	*M6/8
@@ -623,7 +623,7 @@ they do not need an accidental and remove any duplicate numbers.
 	pageWidth="1500"
 %}
 <script type="application/x-humdrum" id="normalize">
-!!!filter: fb -n
+!!!filter: fb -n -a
 **kern	**kern
 *k[b-]	*k[b-]
 *M9/8	*M9/8
