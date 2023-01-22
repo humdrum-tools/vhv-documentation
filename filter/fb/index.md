@@ -561,3 +561,44 @@ This option is particularly useful when the metre is ternary, e.g.
 *-	*-
 !!!filter: autobeam
 </script>
+
+
+
+## Sort numbers ##
+
+You can sort from small to large numbers (from top to bottom) with the
+`-o` option (`--sort`).
+
+{% include verovio.html
+	source="sort"
+	humdrum-min-height="275px"
+	scale="35"
+	tabsize="8"
+	pageWidth="1500"
+%}
+<script type="application/x-humdrum" id="sort">
+!!!filter: fb -c -o
+**kern	**kern
+*clefF4	*clefG2
+*M6/8	*M6/8
+8A	8r
+=	=
+[4.f	8%6r
+4f]	.
+8e	.
+=	=
+*^	*^
+2.B	2.F	[4.g#	2.d#
+.	.	4g#]	.
+.	.	8a	.
+=	=	=	=
+[4.G#	[4.E	8a#	[4.dn
+.	.	[4b	.
+8G#]	8E]	8b]	8d]
+*v	*v	*	*
+*	*v	*v
+8r	8r
+8r	8r
+=	=
+*-	*-
+</script>
