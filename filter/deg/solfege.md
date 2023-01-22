@@ -2,7 +2,7 @@
 ## Solf&egrave;ge ##
 
 The `--solfege` option (short version `--solf`) can be used
-to display scale degrees as solf&ege;e syllables rather
+to display scale degrees as solf&egrave;ge syllables rather
 than as numbers.
 
 
@@ -32,7 +32,7 @@ than as numbers.
 
 
 By default the solf&egrave;ge syllables are relative to the key, so 1=do, 2=re, etc.  If you want 
-fixed sof&egrave; syllables (C=do, D=re, etc.), then use the `--force-key C` option:
+fixed solf&egrave;ge syllables (C=do, D=re, etc.), then use the `--force-key C` option:
 
 
 {% include verovio.html

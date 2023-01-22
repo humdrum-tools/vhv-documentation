@@ -3,7 +3,7 @@
 ## Selective analysis ##
 
 In addition to calculating the scale degrees of all `**kern` spines in
-a file, The deg filter can select a subset of the music to analyzed.
+a file, the deg filter can select a subset of the music to analyzed.
 Spines can be selected either by using `-s` to select the nth spine in
 the file, or with `-k` to select the nth `**kern` spine in the file.
 

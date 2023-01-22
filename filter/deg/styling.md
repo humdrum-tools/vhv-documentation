@@ -294,7 +294,7 @@ deg -k1 --color crimson | deg -k2 --color dodgerblue
 ### Place degrees above the staff  ###
 
 By default scale degrees will be displayed below the staff
-when shown in a musical score.  You can ass the `--above` option
+when shown in a musical score.  You can add the `--above` option
 to show them above the staff.
 
 {% include verovio.html
