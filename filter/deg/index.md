@@ -11,7 +11,7 @@ tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
-summary: 
+summary: "Automatically generate scale degree numbers."
 permalink: /filter/deg/index.html
 ---
 

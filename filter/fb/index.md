@@ -3,19 +3,19 @@ title: fb filter
 lang: en
 ref: filters-fb
 author: Wolfgang Drescher
-translator: 
 creation_date: 17 Jan 2023
-translation_date: 
 last_updated: 22 Jan 2023
+translator: 
+translation_date: 
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
-summary: 
+summary: "Automatically generate figured bass numbers."
 permalink: /filter/fb/index.html
 ---
 
-The `fb` filter analyzes the harmonies in `**kern` data and reduces
+The `fb` filter analyzes harmonies in `**kern` data and reduces
 them to figured bass like numbers. There are different modes of how
 the numbers can be displayed. This filter supports chords as well as
 spine splits. The reference note for the calculations is in each case
@@ -26,9 +26,11 @@ Here is a basic example:
 
 {% include verovio.html
 	source="basic"
-	humdrum-min-height="275px"
+	humdrum-min-height="190px"
+	humdrum-max-height="190px"
+	pageMarginTop="60"
 	scale="50"
-	tabsize="8"
+	tabsize="10"
 	pageWidth="900"
 %}
 <script type="application/x-humdrum" id="basic">
@@ -50,9 +52,9 @@ interval of the distance between the base voice (default is the first
 
 {% include verovio.html
 	source="fb"
-	humdrum-min-height="275px"
+	humdrum-min-height="340px"
 	scale="50"
-	tabsize="8"
+	tabsize="10"
 	pageWidth="900"
 %}
 <script type="application/x-humdrum" id="fb">
@@ -88,9 +90,9 @@ used in combination with `-i`, 1 is displayed for a unison.
 
 {% include verovio.html
 	source="compound"
-	humdrum-min-height="275px"
+	humdrum-min-height="335px"
 	scale="50"
-	tabsize="8"
+	tabsize="10"
 	pageWidth="900"
 %}
 <script type="application/x-humdrum" id="compound">
@@ -127,9 +129,9 @@ numbers.
 
 {% include verovio.html
 	source="accidentals_example"
-	humdrum-min-height="275px"
+	humdrum-min-height="260px"
 	scale="50"
-	tabsize="8"
+	tabsize="10"
 	pageWidth="900"
 %}
 <script type="application/x-humdrum" id="accidentals_example">
@@ -153,9 +155,10 @@ signature:
 
 {% include verovio.html
 	source="keysig"
-	humdrum-min-height="275px"
+	humdrum-min-height="395px"
+	humdrum-max-height="395px"
 	scale="50"
-	tabsize="8"
+	tabsize="12"
 	pageWidth="900"
 %}
 <script type="application/x-humdrum" id="keysig">
@@ -186,9 +189,14 @@ display is not necessary because of an existing accidental.
 
 {% include verovio.html
 	source="hide3"
-	humdrum-min-height="275px"
-	scale="50"
-	tabsize="8"
+	humdrum-min-height="355px"
+	humdrum-max-height="355px"
+	humdrum-min-width="275px"
+	spacingStaff="8"
+	spacingLinear="0.7"
+	pageMarginTop="70"
+	scale="40"
+	tabsize="17"
 	pageWidth="900"
 %}
 <script type="application/x-humdrum" id="hide3">
@@ -224,9 +232,10 @@ exchange.
 
 {% include verovio.html
 	source="neg"
-	humdrum-min-height="275px"
+	humdrum-min-height="265px"
+	humdrum-max-height="265px"
 	scale="50"
-	tabsize="8"
+	tabsize="10"
 	pageWidth="900"
 %}
 <script type="application/x-humdrum" id="neg">
@@ -256,9 +265,11 @@ track with `-b`.
 
 {% include verovio.html
 	source="lowest"
-	humdrum-min-height="275px"
+	humdrum-min-height="160px"
+	humdrum-max-height="160px"
+	pageMarginTop="60"
 	scale="50"
-	tabsize="8"
+	tabsize="10"
 	pageWidth="900"
 %}
 <script type="application/x-humdrum" id="lowest">
@@ -282,9 +293,12 @@ to `-k`). This is especially useful in combination with `-i -m`.
 
 {% include verovio.html
 	source="base"
-	humdrum-min-height="275px"
-	scale="35"
-	tabsize="8"
+	humdrum-min-height="355px"
+	humdrum-max-height="355px"
+	scale="40"
+	spacingStaff="8"
+	spacingSystem="0"
+	tabsize="10"
 	pageWidth="900"
 %}
 <script type="application/x-humdrum" id="base">
@@ -356,10 +370,14 @@ staff.
 
 {% include verovio.html
 	source="above_f"
-	humdrum-min-height="275px"
+	humdrum-min-height="190px"
+	humdrum-max-height="190px"
 	scale="50"
-	tabsize="8"
-	pageWidth="900"
+	pageMarginTop="50"
+	spacingStaff="14"
+	spacingLinear="0.7"
+	tabsize="10"
+	pageWidth="800"
 %}
 <script type="application/x-humdrum" id="above_f">
 !!!filter: fb -f --above
@@ -377,9 +395,11 @@ This also works in combination with the `-i` option.
 
 {% include verovio.html
 	source="above_i"
-	humdrum-min-height="275px"
+	humdrum-min-height="355px"
+	humdrum-max-height="355px"
 	scale="50"
-	tabsize="8"
+	spacingStaff="10"
+	tabsize="10"
 	pageWidth="900"
 %}
 <script type="application/x-humdrum" id="above_i">
