@@ -169,7 +169,7 @@ signature:
 4c	4g#
 4c	4g
 4c	4g-
-=	=
+=||	=||
 *k[f#c#g#]	*k[f#c#g#]
 4c	4a#
 4c	4a
@@ -177,7 +177,7 @@ signature:
 4c	4g#
 4c	4g
 4c	4g-
-=	=
+=||	=||
 *-	*-
 </script>
 
@@ -198,17 +198,17 @@ display is not necessary because of an existing accidental.
 4c	4e#
 4c	4e
 4c	4e-
-=	=
+=||	=||
 *k[b-e-]	*k[b-e-]
 4c	4e#
 4c	4e
 4c	4e-
-=	=
+=||	=||
 *k[f#c#g#d#a#e#]	*k[f#c#g#d#a#e#]
 4c	4e#
 4c	4e
 4c	4e-
-=	=
+=||	=||
 *-	*-
 </script>
 
