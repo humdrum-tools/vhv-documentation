@@ -688,3 +688,13 @@ The current mapping is:
 | 9 3     | 9                   |
 
 Note that this mapping may change in future.
+
+
+
+## Aliases ##
+
+For easy usage there are shortcuts for some option configurations.
+
+| Flag | Option          | Shortcut for        |
+|------|-----------------|---------------------|
+| `-f` | `-–figuredbass` | `-c -a -o -n -r -3` |
