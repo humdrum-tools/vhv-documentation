@@ -126,13 +126,13 @@ By default, `fb` will not display any accidentals. Use the `-a` option
 numbers.
 
 {% include verovio.html
-	source="accidentals"
+	source="accidentals_example"
 	humdrum-min-height="275px"
 	scale="50"
 	tabsize="8"
 	pageWidth="900"
 %}
-<script type="application/x-humdrum" id="accidentals">
+<script type="application/x-humdrum" id="accidentals_example">
 !!!filter: fb -c -a
 **kern	**kern
 *clefF4	*clefG2
@@ -415,13 +415,13 @@ possible dissonant or parallel intervals. Recommended options are in
 combination with `-i -c -a -t -m`.
 
 {% include verovio.html
-	source="intervallsatz"
+	source="intervallsatz_example"
 	humdrum-min-height="275px"
 	scale="50"
 	tabsize="8"
 	pageWidth="900"
 %}
-<script type="application/x-humdrum" id="intervallsatz">
+<script type="application/x-humdrum" id="intervallsatz_example">
 !!!filter: fb -i
 **kern	**kern	**kern
 *clefG2	*clefG2	*clefG2
