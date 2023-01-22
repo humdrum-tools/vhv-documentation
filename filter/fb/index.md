@@ -524,7 +524,7 @@ This option is particularly useful when the metre is ternary, e.g.
 	pageWidth="1500"
 %}
 <script type="application/x-humdrum" id="frequency98">
-!!!filter: fb -n --frequency 4.
+!!!filter: fb -c --frequency 4.
 **kern	**kern
 *k[b-]	*k[b-]
 *M9/8	*M9/8
