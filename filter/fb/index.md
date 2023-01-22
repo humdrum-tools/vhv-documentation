@@ -113,6 +113,10 @@ used in combination with `-i`, 1 is displayed for a unison.
 *-	*-
 </script>
 
+When using the `-c` option the `fb` filter will try to replace the number 2 with
+the number 9 when appropriate. Currently, this feature is not very
+sophisticated.
+
 
 
 ## Accidentals ##
