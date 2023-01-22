@@ -373,7 +373,7 @@ staff.
 *-	*-
 </script>
 
-This also works when using the `-i` option.
+This also works in combination with the `-i` option.
 
 {% include verovio.html
 	source="above_i"
