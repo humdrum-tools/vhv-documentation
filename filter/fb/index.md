@@ -44,7 +44,7 @@ Here is a basic example:
 </script>
 
 If you do not pass any additional options `fb` will calculate the
-interval of the distance between the base voice (defualt is the first
+interval of the distance between the base voice (default is the first
 `**kern` spine) and each note that occurs in a single slice of music
 (which corresponds to one line of the file in humdrum).
 
@@ -122,7 +122,7 @@ sophisticated.
 ## Accidentals ##
 
 By default, `fb` will not display any accidentals. Use the `-a` option
-(`--accidentals`) to display naturals, sharps and flats infront of the
+(`--accidentals`) to display naturals, sharps and flats in front of the
 numbers.
 
 {% include verovio.html
@@ -216,10 +216,10 @@ display is not necessary because of an existing accidental.
 
 ## Negative intervals ##
 
-By default, `fb` will ignore intervals if they are below the pitch of
+By default `fb` will ignore intervals if they are below the pitch of
 the base track. You can change this behaviour by adding an option `-m`
 (`--negative`). This is especially interesting in combination with the
-option `-i`, for example in renaissance music, when there is an voice
+option `-i`, for example in renaissance music, when there is a voice
 exchange. 
 
 {% include verovio.html
@@ -251,7 +251,7 @@ exchange.
 
 With the `-l` option (`--lowest`) you can let `fb` find the lowest
 pitch of each slice and use this note as base for all number
-calculations. This options will ignore a potentially passend base
+calculations. This options will ignore the potentially passend base
 track with `-b`.
 
 {% include verovio.html
@@ -275,7 +275,7 @@ track with `-b`.
 
 ## Base track ##
 
-By default, `fb` will use the first `**kern` spine as base track. But
+By default `fb` will use the first `**kern` spine as base track. But
 you can change this behaviour by using the `-b` option (`--base`).
 Valid values are numbers of the desired base `**kern` spine (compare
 to `-k`). This is especially useful in combination with `-i -m`.
@@ -407,12 +407,12 @@ This also works in combination with the `-i` option.
 
 ## *Intervallsatz* ##
 
-When working e.g. with polyphonic renaissance music the
-*Intervallsatz* option `-i` (`--intervallsatz`) is the best way to
-display the numbers of each voice directly under it's staff. This is a
-good way for students to get a fast overview over the intervals and
-check for possible dissonant or parallel intervals. Recommended
-options are in combination with `-i -c -a -t -m`.
+Especially with e.g. polyphonic renaissance music the *Intervallsatz*
+option `-i` (`--intervallsatz`) is the best way to display the numbers
+of each voice directly under it's staff. This is a good way for
+students to get a fast overview over the intervals and check for
+possible dissonant or parallel intervals. Recommended options are in
+combination with `-i -c -a -t -m`.
 
 {% include verovio.html
 	source="intervallsatz"
@@ -442,7 +442,7 @@ options are in combination with `-i -c -a -t -m`.
 *-	*-	*-
 </script>
 
-When passing the `-t` option (`--ties`) in combination with `-i`
+When passing the `-t` option (`--ties`) in combination with `-i`,
 numbers without attack or changing base note can be hidden.
 
 {% include verovio.html
@@ -478,10 +478,10 @@ numbers without attack or changing base note can be hidden.
 ## Control the frequency of the numbers ##
 
 By default `fb` will calculate number for every single slice (=line).
-You can controll this by passing the option `--frequency` with a
-rhythmical value for a note duration (compare with `recip`). With this
-options you can tell `fb` to only display numbers on every quarter
-note.
+You can control this by passing the option `--frequency` with a
+rhythmical value for a note duration (compare with the excolusive
+interpretation `**recip`). With this option you can e.g. tell `fb` to
+only display numbers on every quarter note.
 
 {% include verovio.html
 	source="frequency"
@@ -570,7 +570,7 @@ This option is particularly useful when the metre is ternary, e.g.
 
 ## Sort numbers ##
 
-You can sort from small to large numbers (from top to bottom) with the
+You can sort from small to large numbers (from bottom to top) with the
 `-o` option (`--sort`).
 
 {% include verovio.html
@@ -611,9 +611,10 @@ You can sort from small to large numbers (from top to bottom) with the
 
 ## Normalize numbers ##
 
-Normalizing figured base numbers with the `-n` option (`normalize`)
+Normalizing figured base numbers with the `-n` option (`--normalize`)
 will automatically add `-c -s`. It will remove the number 8 and 1 if
-they do not need an accidental and remove any duplicate numbers.
+they don't need to be displayed due to an accidental and remove any
+duplicate numbers.
 
 {% include verovio.html
 	source="normalize"
@@ -665,8 +666,9 @@ they do not need an accidental and remove any duplicate numbers.
 
 ## Use abbreviated number figures ##
 
-With the `r` option (`--abbr`) numbers for once slice will get
-abbreviated for reasonable figured bass numbering.
+With the `-r` option (`--abbr`) numbers for once slice will get
+abbreviated to match a reasonable and more or less typical figured
+bass numbering. This option will automatically add `-n -c -s`.
 
 The current mapping is:
 
@@ -687,7 +689,9 @@ The current mapping is:
 | 9 5     | 9                   |
 | 9 3     | 9                   |
 
-Note that this mapping may change in future.
+If the numbers of a slice don't match a mapping all numbers will be
+displayed as normalized numbers. Note that this mapping may change in
+future.
 
 
 
