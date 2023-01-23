@@ -752,6 +752,62 @@ If numbers for slice don't match a mapping all numbers will be
 displayed as normalized numbers. Note that this mapping may change in
 future.
 
+{% include verovio.html
+	source="reduce"
+	humdrum-min-height="460px"
+	humdrum-max-height="460px"
+	humdrum-max-width="260px"
+	humdrum-min-width="260px"
+	humdrum-width="260px"
+	spacingSystem="0"
+	scale="45"
+	tabsize="18"
+	pageWidth="1200"
+%}
+<script type="application/x-humdrum" id="reduce">
+!!!filter: fb -r -a
+**kern	**kern
+*k[b-]	*k[b-]
+*M9/8	*M9/8
+*^	*
+8F 8A	(8FF'L 8C	4.ryy
+8F 8A	8FF' 8C	.
+8F 8A	8FF'J 8C	.
+8F 8A	8FF'L 8C	4.ryy
+8E 8G	8GG' 8C	.
+8F 8A	8FF'J 8C	.
+8G 8B-	8EE'L 8C	(8c
+8F 8A	8EE' 8C	8d
+8E 8B-	8EE'J 8C)	8c)
+*v	*v	*
+=	=
+*	*^
+(8FF' 8C 8F	[4.a	8A
+8FF' 8C 8F	.	8A
+8FF' 8C 8F	.	8A
+8FF' 8C 8F	8a]	8A
+8FF' 8C 8F	(8b-'	8A
+8FF' 8C 8F	8b')	8A
+8FF' 8C 8F	(8cc	8A
+8FF' 8C 8F	8a)	8A
+8FF' 8C 8F)	8f'	8A
+=	=	=
+=	=	=
+8BB-	(4.e	8F 8B-
+8BB-	.	8F 8B-
+8BB-	.	8F 8B-
+8BB-	4.d)	8F 8B-
+8BB-	.	8F 8B-
+8BB-	.	8F 8B-
+8AA 8C	(4d	8F 8B-
+8AA 8C	.	8F 8B-
+8AA 8C	8c)	8F 8B-
+=	=	=
+*	*v	*v
+*-	*-
+!!!filter: autobeam
+</script>
+
 
 
 ## Aliases ##
