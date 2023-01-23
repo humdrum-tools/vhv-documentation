@@ -79,6 +79,12 @@ interval of the distance between the base voice (default is the first
 
 
 
+## Options ##
+
+{% include filter-options.html file="options.aton" lang="EN" %}
+
+
+
 ## Compound intervals ##
 
 By default, `fb` will display the exact distance between the target
