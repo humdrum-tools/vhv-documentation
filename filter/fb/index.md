@@ -129,7 +129,7 @@ numbers.
 
 {% include verovio.html
 	source="accidentals_example"
-	humdrum-min-height="260px"
+	humdrum-min-height="265px"
 	scale="50"
 	tabsize="10"
 	pageWidth="900"
@@ -225,7 +225,7 @@ display is not necessary because of an existing accidental.
 ## Negative intervals ##
 
 By default `fb` will ignore intervals if they are below the pitch of
-the base track. You can change this behaviour by adding an option `-m`
+the base track. You can change this behavior by adding an option `-m`
 (`--negative`). This is especially interesting in combination with the
 option `-i`, for example in renaissance music, when there is a voice
 exchange. 
@@ -287,7 +287,7 @@ track with `-b`.
 ## Base track ##
 
 By default `fb` will use the first `**kern` spine as base track. But
-you can change this behaviour by using the `-b` option (`--base`).
+you can change this behavior by using the `-b` option (`--base`).
 Valid values are numbers of the desired base `**kern` spine (compare
 to `-k`). This is especially useful in combination with `-i -m`.
 
@@ -340,8 +340,8 @@ the file, or with `-k` to select the nth `**kern` spine in the file.
 | `-s 1,4`       | Analyze the first and fourth spine.                                              |
 | `-s 2-4`       | Analyze the second, third and fourth spines.                                     |
 | `-s $`         | Analyze the last spine.                                                          |
-| `-s 3,$`       | Analyze the thrid and last spines.                                               |
-| `-s 1-4,6,9-$` | Analyze the first, second, third, fourth, sixth, and nineth through last spines. |
+| `-s 3,$`       | Analyze the third and last spines.                                               |
+| `-s 1-4,6,9-$` | Analyze the first, second, third, fourth, sixth, and ninth through last spines. |
 | `-s $1`        | Analyze the penultimate spine.                                                   |
 | `-s $2-$`      | analyze from two spines before the end to the last spine.                        |
 
@@ -355,8 +355,8 @@ the file, or with `-k` to select the nth `**kern` spine in the file.
 | `-k 1,4`       | Analyze the first and fourth kern spine.                                              |
 | `-k 2-4`       | Analyze the second, third and fourth kern spines.                                     |
 | `-k $`         | Analyze the last kern spine.                                                          |
-| `-k 3,$`       | Analyze the thrid and last kern spines.                                               |
-| `-k 1-4,6,9-$` | Analyze the first, second, third, fourth, sixth, and nineth through last kern spines. |
+| `-k 3,$`       | Analyze the third and last kern spines.                                               |
+| `-k 1-4,6,9-$` | Analyze the first, second, third, fourth, sixth, and ninth through last kern spines. |
 | `-k $1`        | Analyze the penultimate kern spine.                                                   |
 | `-k $2-$`      | analyze from two kern spines before the end to the last kern spine.                   |
 
@@ -397,8 +397,10 @@ This also works in combination with the `-i` option.
 	source="above_i"
 	humdrum-min-height="355px"
 	humdrum-max-height="355px"
-	scale="50"
+	scale="45"
+	pageMarginTop="50"
 	spacingStaff="10"
+	spacingSystem="14"
 	tabsize="10"
 	pageWidth="900"
 %}
@@ -436,9 +438,13 @@ combination with `-i -c -a -t -m`.
 
 {% include verovio.html
 	source="intervallsatz_example"
-	humdrum-min-height="275px"
-	scale="50"
-	tabsize="8"
+	humdrum-min-height="350px"
+	humdrum-max-height="350px"
+	spacingStaff="10"
+	spacingSystem="5"
+	pageMarginTop="50"
+	scale="45"
+	tabsize="10"
 	pageWidth="900"
 %}
 <script type="application/x-humdrum" id="intervallsatz_example">
@@ -467,9 +473,13 @@ numbers without attack or changing base note can be hidden.
 
 {% include verovio.html
 	source="ties"
-	humdrum-min-height="275px"
-	scale="50"
-	tabsize="8"
+	humdrum-min-height="350px"
+	humdrum-max-height="350px"
+	spacingStaff="10"
+	spacingSystem="5"
+	pageMarginTop="50"
+	scale="45"
+	tabsize="10"
 	pageWidth="900"
 %}
 <script type="application/x-humdrum" id="ties">
@@ -499,15 +509,19 @@ numbers without attack or changing base note can be hidden.
 
 By default `fb` will calculate number for every single slice (=line).
 You can control this by passing the option `--frequency` with a
-rhythmical value for a note duration (compare with the excolusive
+rhythmical value for a note duration (compare with the exclusive
 interpretation `**recip`). With this option you can e.g. tell `fb` to
 only display numbers on every quarter note.
 
 {% include verovio.html
 	source="frequency"
-	humdrum-min-height="275px"
-	scale="40"
-	tabsize="8"
+	humdrum-min-height="465px"
+	humdrum-max-height="465px"
+	humdrum-width="300px"
+	humdrum-min-width="310px"
+	humdrum-max-width="310px"
+	scale="45"
+	tabsize="10"
 	pageWidth="1000"
 %}
 <script type="application/x-humdrum" id="frequency">
@@ -537,15 +551,20 @@ only display numbers on every quarter note.
 *-	*-	*-	*-
 </script>
 
-This option is particularly useful when the metre is ternary, e.g.
+This option is particularly useful when the meter is ternary, e.g.
 *six-eighths* or *nine-eighths*.
 
 {% include verovio.html
 	source="frequency98"
-	humdrum-min-height="275px"
-	scale="35"
-	tabsize="8"
-	pageWidth="1500"
+	humdrum-min-height="460px"
+	humdrum-max-height="460px"
+	humdrum-max-width="260px"
+	humdrum-min-width="260px"
+	humdrum-width="260px"
+	spacingSystem="0"
+	scale="45"
+	tabsize="18"
+	pageWidth="1200"
 %}
 <script type="application/x-humdrum" id="frequency98">
 !!!filter: fb -c --frequency 4.
@@ -596,9 +615,9 @@ You can sort from small to large numbers (from bottom to top) with the
 {% include verovio.html
 	source="sort"
 	humdrum-min-height="275px"
-	scale="35"
+	scale="45"
 	tabsize="8"
-	pageWidth="1500"
+	pageWidth="1200"
 %}
 <script type="application/x-humdrum" id="sort">
 !!!filter: fb -c -a -o
@@ -638,10 +657,15 @@ duplicate numbers.
 
 {% include verovio.html
 	source="normalize"
-	humdrum-min-height="275px"
-	scale="35"
-	tabsize="8"
-	pageWidth="1500"
+	humdrum-min-height="460px"
+	humdrum-max-height="460px"
+	humdrum-max-width="260px"
+	humdrum-min-width="260px"
+	humdrum-width="260px"
+	spacingSystem="0"
+	scale="45"
+	tabsize="18"
+	pageWidth="1200"
 %}
 <script type="application/x-humdrum" id="normalize">
 !!!filter: fb -n -a
@@ -684,7 +708,7 @@ duplicate numbers.
 
 
 
-## Use abbreviated number figures ##
+## Abbreviated number figures ##
 
 With the `-r` option (`--abbr`) numbers for once slice will get
 abbreviated to match a reasonable and more or less typical figured
@@ -692,26 +716,26 @@ bass numbering. This option will automatically add `-n -c -s`.
 
 The current mapping is:
 
-| Numbers | Abbreviated numbers |
-|---------|---------------------|
-| 3       | –                   |
-| 5       | –                   |
-| 5 3     | –                   |
-| 6 3     | 6                   |
-| 5 4     | 4                   |
-| 7 5 3   | 7                   |
-| 7 3     | 7                   |
-| 7 5     | 7                   |
-| 6 5 3   | 6 5                 |
-| 6 4 3   | 4 3                 |
-| 6 4 2   | 4 2                 |
-| 9 5 3   | 9                   |
-| 9 5     | 9                   |
-| 9 3     | 9                   |
+| Numbers | Abbreviation |
+|---------|--------------|
+| 3       | –            |
+| 5       | –            |
+| 5 3     | –            |
+| 6 3     | 6            |
+| 5 4     | 4            |
+| 7 5 3   | 7            |
+| 7 3     | 7            |
+| 7 5     | 7            |
+| 6 5 3   | 6 5          |
+| 6 4 3   | 4 3          |
+| 6 4 2   | 4 2          |
+| 9 5 3   | 9            |
+| 9 5     | 9            |
+| 9 3     | 9            |
 
-If the numbers of a slice don't match a mapping all numbers will be
-displayed as normalized numbers. Note that this mapping may change in
-future.
+If numbers for slice don't match a mapping all numbers will be
+displayed as normalized numbers. Note that this mapping may change
+in future.
 
 
 
@@ -719,6 +743,9 @@ future.
 
 For easy usage there are shortcuts for some option configurations.
 
-| Flag | Option          | Shortcut for        |
-|------|-----------------|---------------------|
-| `-f` | `-–figuredbass` | `-c -a -o -n -r -3` |
+| Option | Long name       | Shortcut for        |
+|:------:|-----------------|---------------------|
+| `-f`   | `-–figuredbass` | `-acorn3`           |
+
+
+
