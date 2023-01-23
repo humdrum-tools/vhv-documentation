@@ -15,11 +15,11 @@ summary: "Automatically generate figured bass numbers."
 permalink: /filter/fb/index.html
 ---
 
-The `fb` filter analyzes harmonies in `**kern` data and reduces
-them to figured bass like numbers. There are different modes of how
-the numbers can be displayed. This filter supports chords as well as
-spine splits. The reference note for the calculations is in each case
-the lowest pitch within the base track that can be passed with the
+The `fb` filter analyzes harmonies in `**kern` data and reduces them
+to figured bass like numbers. There are different modes of how the
+numbers can be displayed. This filter supports chords as well as spine
+splits. The reference note for the calculations is in each case the
+lowest pitch within the base track that can be passed with the
 `--base` option.
 
 Here is a basic example:
@@ -121,17 +121,17 @@ used in combination with `-i`, 1 is displayed for a unison.
 *-	*-
 </script>
 
-When using the `-c` option the `fb` filter will try to replace the number 2 with
-the number 9 when appropriate. Currently, this feature is not very
-sophisticated.
+When using the `-c` option the `fb` filter will try to replace the
+number 2 with the number 9 when appropriate. Currently, this feature
+is not very sophisticated.
 
 
 
 ## Accidentals ##
 
 By default, `fb` will not display any accidentals. Use the `-a` option
-(`--accidentals`) to display naturals, sharps and flats in front of the
-numbers.
+(`--accidentals`) to display naturals, sharps and flats in front of
+the numbers.
 
 {% include verovio.html
 	source="accidentals_example"
@@ -749,8 +749,8 @@ The current mapping is:
 | 9 3     | 9            |
 
 If numbers for slice don't match a mapping all numbers will be
-displayed as normalized numbers. Note that this mapping may change
-in future.
+displayed as normalized numbers. Note that this mapping may change in
+future.
 
 
 
