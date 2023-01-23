@@ -85,6 +85,8 @@ interval of the distance between the base voice (default is the first
 
 
 
+<a name="option-c"></a>
+
 ## Compound intervals ##
 
 By default, `fb` will display the exact distance between the target
@@ -126,6 +128,8 @@ number 2 with the number 9 when appropriate. Currently, this feature
 is not very sophisticated.
 
 
+
+<a name="option-a"></a>
 
 ## Accidentals ##
 
@@ -190,6 +194,7 @@ signature:
 *-	*-
 </script>
 
+<a name="option-3"></a>
 You can hide the number 3 with the option `-3` (`--hide-three`) if the
 display is not necessary because of an existing accidental.
 
@@ -228,6 +233,8 @@ display is not necessary because of an existing accidental.
 
 
 
+<a name="option-m"></a>
+
 ## Negative intervals ##
 
 By default `fb` will ignore intervals if they are below the pitch of
@@ -262,6 +269,8 @@ exchange.
 
 
 
+<a name="option-l"></a>
+
 ## Lowest pitch as base ##
 
 With the `-l` option (`--lowest`) you can let `fb` find the lowest
@@ -288,6 +297,8 @@ calculations. This option ignores the base track passed with `-b`.
 </script>
 
 
+
+<a name="option-b"></a>
 
 ## Base track ##
 
@@ -336,6 +347,8 @@ Spines can be selected either by using `-s` to select the nth spine in
 the file, or with `-k` to select the nth `**kern` spine in the file.
 
 
+<a name="option-s"></a>
+
 ### Selecting spines with -s ###
 
 
@@ -352,6 +365,8 @@ the file, or with `-k` to select the nth `**kern` spine in the file.
 
 
 
+<a name="option-k"></a>
+
 ### Selecting spines with -k ###
 
 | Example        | Meaning                                                                               |
@@ -366,6 +381,8 @@ the file, or with `-k` to select the nth `**kern` spine in the file.
 | `-k $2-$`      | analyze from two kern spines before the end to the last kern spine.                   |
 
 
+
+<a name="option-above"></a>
 
 ## Place numbers above the staff ##
 
@@ -432,6 +449,8 @@ This also works in combination with the `-i` option.
 
 
 
+<a name="option-i"></a>
+
 ## *Intervallsatz* ##
 
 Especially with e.g. polyphonic renaissance music the *Intervallsatz*
@@ -473,6 +492,7 @@ combination with `-i -c -a -t -m`.
 *-	*-	*-
 </script>
 
+<a name="option-t"></a>
 When passing the `-t` option (`--ties`) in combination with `-i`,
 numbers without attack or changing base note can be hidden.
 
@@ -509,6 +529,8 @@ numbers without attack or changing base note can be hidden.
 </script>
 
 
+
+<a name="option-rate"></a>
 
 ## Control the rate of the numbers ##
 
@@ -617,6 +639,8 @@ This option is particularly useful when the meter is ternary, e.g.
 
 
 
+<a name="option-o"></a>
+
 ## Sort numbers ##
 
 You can sort from small to large numbers (from bottom to top) with the
@@ -657,6 +681,8 @@ You can sort from small to large numbers (from bottom to top) with the
 </script>
 
 
+
+<a name="option-n"></a>
 
 ## Normalize numbers ##
 
@@ -722,6 +748,8 @@ duplicate numbers.
 </script>
 
 
+
+<a name="option-r"></a>
 
 ## Abbreviated number figures ##
 
@@ -811,6 +839,8 @@ future.
 
 
 ## Aliases ##
+
+<a name="option-f"></a>
 
 For easy usage there are shortcuts for some option configurations.
 
