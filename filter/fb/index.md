@@ -504,16 +504,16 @@ numbers without attack or changing base note can be hidden.
 
 
 
-## Control the frequency of the numbers ##
+## Control the rate of the numbers ##
 
 By default `fb` will calculate number for every single slice (=line).
-You can control this by passing the option `--frequency` with a
-rhythmical value for a note duration (compare with the exclusive
-interpretation `**recip`). With this option you can e.g. tell `fb` to
-only display numbers on every quarter note.
+You can control this by passing the option `--rate` with a rhythmical
+value for a note duration (compare with the exclusive interpretation
+`**recip`). With this option you can e.g. tell `fb` to only display
+numbers on every quarter note.
 
 {% include verovio.html
-	source="frequency"
+	source="rate"
 	humdrum-min-height="465px"
 	humdrum-max-height="465px"
 	humdrum-width="300px"
@@ -523,8 +523,8 @@ only display numbers on every quarter note.
 	tabsize="10"
 	pageWidth="1000"
 %}
-<script type="application/x-humdrum" id="frequency">
-!!!filter: fb -n --frequency 4
+<script type="application/x-humdrum" id="rate">
+!!!filter: fb -n --rate 4
 **kern	**kern	**kern	**kern
 *clefF4	*clefGv2	*clefG2	*clefG2
 *k[f#c#]	*k[f#c#]	*k[f#c#]	*k[f#c#]
@@ -554,7 +554,7 @@ This option is particularly useful when the meter is ternary, e.g.
 *six-eighths* or *nine-eighths*.
 
 {% include verovio.html
-	source="frequency98"
+	source="rate98"
 	humdrum-min-height="460px"
 	humdrum-max-height="460px"
 	humdrum-max-width="260px"
@@ -565,8 +565,8 @@ This option is particularly useful when the meter is ternary, e.g.
 	tabsize="18"
 	pageWidth="1200"
 %}
-<script type="application/x-humdrum" id="frequency98">
-!!!filter: fb -c --frequency 4.
+<script type="application/x-humdrum" id="rate98">
+!!!filter: fb -c --rate 4.
 **kern	**kern
 *k[b-]	*k[b-]
 *M9/8	*M9/8
