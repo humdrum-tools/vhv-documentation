@@ -1,0 +1,100 @@
+@@BEGIN: OPTIONS
+@TOOL: fb
+
+@@BEGIN: OPTION
+@DEFINITION: c=b
+@ARGUMENT:
+@SUMMARY: Output reasonable figured bass numbers within octave
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: a=b
+@ARGUMENT:
+@SUMMARY: Display accidentals in front of the numbers
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: 3=b
+@ARGUMENT:
+@SUMMARY: Hide number 3 if it has an accidental
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: m=b
+@ARGUMENT:
+@SUMMARY: Show negative numbers
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: l=b
+@ARGUMENT:
+@SUMMARY: Use lowest note as base note
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: b=i:1
+@ARGUMENT:
+@SUMMARY: Number of the base kern track (compare with -k)
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: k=s
+@ARGUMENT:
+@SUMMARY: Process only the specified kern spines
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: s=s
+@ARGUMENT:
+@SUMMARY: Process only the specified spines
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: above=b
+@ARGUMENT:
+@SUMMARY: Show numbers above the staff (**fba)
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: i=b
+@ARGUMENT:
+@SUMMARY: Display numbers under their voice instead of under the base staff
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: t=b
+@ARGUMENT:
+@SUMMARY: Hide numbers without attack or changing base (needs -i)
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: rate=s:
+@ARGUMENT:
+@SUMMARY: Rate to display the numbers (use a **recip value, e.g. 4, 4.)
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: o=b
+@ARGUMENT:
+@SUMMARY: Sort figured bass numbers by size
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: n=b
+@ARGUMENT:
+@SUMMARY: Remove number 8 and doubled numbers; adds -co
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: r=b
+@ARGUMENT:
+@SUMMARY: Use abbreviated figures; adds -nco
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: f=b
+@ARGUMENT:
+@SUMMARY: Shortcut for -acorn3
+@@END: OPTION
+
+@@END: OPTIONS

@@ -15,11 +15,11 @@ summary: "Automatically generate figured bass numbers."
 permalink: /filter/fb/index.html
 ---
 
-The `fb` filter analyzes harmonies in `**kern` data and reduces
-them to figured bass like numbers. There are different modes of how
-the numbers can be displayed. This filter supports chords as well as
-spine splits. The reference note for the calculations is in each case
-the lowest pitch within the base track that can be passed with the
+The `fb` filter analyzes harmonies in `**kern` data and reduces them
+to figured bass like numbers. There are different modes of how the
+numbers can be displayed. This filter supports chords as well as spine
+splits. The reference note for the calculations is in each case the
+lowest pitch within the base track that can be passed with the
 `--base` option.
 
 Here is a basic example:
@@ -79,6 +79,12 @@ interval of the distance between the base voice (default is the first
 
 
 
+## Options ##
+
+{% include filter-options.html file="options.aton" lang="EN" %}
+
+
+
 ## Compound intervals ##
 
 By default, `fb` will display the exact distance between the target
@@ -115,17 +121,17 @@ used in combination with `-i`, 1 is displayed for a unison.
 *-	*-
 </script>
 
-When using the `-c` option the `fb` filter will try to replace the number 2 with
-the number 9 when appropriate. Currently, this feature is not very
-sophisticated.
+When using the `-c` option the `fb` filter will try to replace the
+number 2 with the number 9 when appropriate. Currently, this feature
+is not very sophisticated.
 
 
 
 ## Accidentals ##
 
 By default, `fb` will not display any accidentals. Use the `-a` option
-(`--accidentals`) to display naturals, sharps and flats in front of the
-numbers.
+(`--accidentals`) to display naturals, sharps and flats in front of
+the numbers.
 
 {% include verovio.html
 	source="accidentals_example"
@@ -260,8 +266,7 @@ exchange.
 
 With the `-l` option (`--lowest`) you can let `fb` find the lowest
 pitch of each slice and use this note as base for all number
-calculations. This options will ignore the potentially passend base
-track with `-b`.
+calculations. This option ignores the base track passed with `-b`.
 
 {% include verovio.html
 	source="lowest"
@@ -505,16 +510,16 @@ numbers without attack or changing base note can be hidden.
 
 
 
-## Control the frequency of the numbers ##
+## Control the rate of the numbers ##
 
 By default `fb` will calculate number for every single slice (=line).
-You can control this by passing the option `--frequency` with a
-rhythmical value for a note duration (compare with the exclusive
-interpretation `**recip`). With this option you can e.g. tell `fb` to
-only display numbers on every quarter note.
+You can control this by passing the option `--rate` with a rhythmical
+value for a note duration (compare with the exclusive interpretation
+`**recip`). With this option you can e.g. tell `fb` to only display
+numbers on every quarter note.
 
 {% include verovio.html
-	source="frequency"
+	source="rate"
 	humdrum-min-height="465px"
 	humdrum-max-height="465px"
 	humdrum-width="300px"
@@ -524,8 +529,8 @@ only display numbers on every quarter note.
 	tabsize="10"
 	pageWidth="1000"
 %}
-<script type="application/x-humdrum" id="frequency">
-!!!filter: fb -n --frequency 4
+<script type="application/x-humdrum" id="rate">
+!!!filter: fb -n --rate 4
 **kern	**kern	**kern	**kern
 *clefF4	*clefGv2	*clefG2	*clefG2
 *k[f#c#]	*k[f#c#]	*k[f#c#]	*k[f#c#]
@@ -555,7 +560,7 @@ This option is particularly useful when the meter is ternary, e.g.
 *six-eighths* or *nine-eighths*.
 
 {% include verovio.html
-	source="frequency98"
+	source="rate98"
 	humdrum-min-height="460px"
 	humdrum-max-height="460px"
 	humdrum-max-width="260px"
@@ -566,41 +571,46 @@ This option is particularly useful when the meter is ternary, e.g.
 	tabsize="18"
 	pageWidth="1200"
 %}
-<script type="application/x-humdrum" id="frequency98">
-!!!filter: fb -c --frequency 4.
+<script type="application/x-humdrum" id="rate98">
+!!!filter: fb -c --rate 4.
 **kern	**kern
 *k[b-]	*k[b-]
 *M9/8	*M9/8
-(8FF'L 8C 8F 8A	4.s
-8FF' 8C 8F 8A	.
-8FF'J 8C 8F 8A	.
-8FF'L 8C 8F 8A	4.s
-8GG' 8C 8E 8G	.
-8FF'J 8C 8F 8A	.
-8EE'L 8C 8G 8B-	(8c
-8EE' 8C 8F 8A	8d
-8EE'J 8C 8E 8B-)	8c)
+*^	*
+8F 8A	(8FF'L 8C	4.ryy
+8F 8A	8FF' 8C	.
+8F 8A	8FF'J 8C	.
+8F 8A	8FF'L 8C	4.ryy
+8E 8G	8GG' 8C	.
+8F 8A	8FF'J 8C	.
+8G 8B-	8EE'L 8C	(8c
+8F 8A	8EE' 8C	8d
+8E 8B-	8EE'J 8C)	8c)
+*v	*v	*
 =	=
-(8FF' 8C 8F 8A	[4.a
-8FF' 8C 8F 8A	.
-8FF' 8C 8F 8A	.
-8FF' 8C 8F 8A	8a]
-8FF' 8C 8F 8A	(8b-'
-8FF' 8C 8F 8A	8b')
-8FF' 8C 8F 8A	(8cc
-8FF' 8C 8F 8A	8a)
-8FF' 8C 8F 8A)	8f'
-=	=
-8BB- 8F 8B-	(4.e
-8BB- 8F 8B-	.
-8BB- 8F 8B-	.
-8BB- 8F 8B-	4.d)
-8BB- 8F 8B-	.
-8BB- 8F 8B-	.
-8AA 8C 8F 8B-	(4d
-8AA 8C 8F 8B-	.
-8AA 8C 8F 8B-	8c)
-=	=
+*	*^
+(8FF' 8C 8F	[4.a	8A
+8FF' 8C 8F	.	8A
+8FF' 8C 8F	.	8A
+8FF' 8C 8F	8a]	8A
+8FF' 8C 8F	(8b-'	8A
+8FF' 8C 8F	8b')	8A
+8FF' 8C 8F	(8cc	8A
+8FF' 8C 8F	8a)	8A
+8FF' 8C 8F)	8f'	8A
+=	=	=
+=	=	=
+8BB-	(4.e	8F 8B-
+8BB-	.	8F 8B-
+8BB-	.	8F 8B-
+8BB-	4.d)	8F 8B-
+8BB-	.	8F 8B-
+8BB-	.	8F 8B-
+8AA 8C	(4d	8F 8B-
+8AA 8C	.	8F 8B-
+8AA 8C	8c)	8F 8B-
+=	=	=
+*	*v	*v
 *-	*-
 !!!filter: autobeam
 </script>
@@ -672,36 +682,41 @@ duplicate numbers.
 **kern	**kern
 *k[b-]	*k[b-]
 *M9/8	*M9/8
-(8FF'L 8C 8F 8A	4.s
-8FF' 8C 8F 8A	.
-8FF'J 8C 8F 8A	.
-8FF'L 8C 8F 8A	4.s
-8GG' 8C 8E 8G	.
-8FF'J 8C 8F 8A	.
-8EE'L 8C 8G 8B-	(8c
-8EE' 8C 8F 8A	8d
-8EE'J 8C 8E 8B-)	8c)
+*^	*
+8F 8A	(8FF'L 8C	4.ryy
+8F 8A	8FF' 8C	.
+8F 8A	8FF'J 8C	.
+8F 8A	8FF'L 8C	4.ryy
+8E 8G	8GG' 8C	.
+8F 8A	8FF'J 8C	.
+8G 8B-	8EE'L 8C	(8c
+8F 8A	8EE' 8C	8d
+8E 8B-	8EE'J 8C)	8c)
+*v	*v	*
 =	=
-(8FF' 8C 8F 8A	[4.a
-8FF' 8C 8F 8A	.
-8FF' 8C 8F 8A	.
-8FF' 8C 8F 8A	8a]
-8FF' 8C 8F 8A	(8b-'
-8FF' 8C 8F 8A	8b')
-8FF' 8C 8F 8A	(8cc
-8FF' 8C 8F 8A	8a)
-8FF' 8C 8F 8A)	8f'
-=	=
-8BB- 8F 8B-	(4.e
-8BB- 8F 8B-	.
-8BB- 8F 8B-	.
-8BB- 8F 8B-	4.d)
-8BB- 8F 8B-	.
-8BB- 8F 8B-	.
-8AA 8C 8F 8B-	(4d
-8AA 8C 8F 8B-	.
-8AA 8C 8F 8B-	8c)
-=	=
+*	*^
+(8FF' 8C 8F	[4.a	8A
+8FF' 8C 8F	.	8A
+8FF' 8C 8F	.	8A
+8FF' 8C 8F	8a]	8A
+8FF' 8C 8F	(8b-'	8A
+8FF' 8C 8F	8b')	8A
+8FF' 8C 8F	(8cc	8A
+8FF' 8C 8F	8a)	8A
+8FF' 8C 8F)	8f'	8A
+=	=	=
+=	=	=
+8BB-	(4.e	8F 8B-
+8BB-	.	8F 8B-
+8BB-	.	8F 8B-
+8BB-	4.d)	8F 8B-
+8BB-	.	8F 8B-
+8BB-	.	8F 8B-
+8AA 8C	(4d	8F 8B-
+8AA 8C	.	8F 8B-
+8AA 8C	8c)	8F 8B-
+=	=	=
+*	*v	*v
 *-	*-
 !!!filter: autobeam
 </script>
@@ -710,7 +725,7 @@ duplicate numbers.
 
 ## Abbreviated number figures ##
 
-With the `-r` option (`--abbr`) numbers for once slice will get
+With the `-r` option (`--reduce`) numbers for once slice will get
 abbreviated to match a reasonable and more or less typical figured
 bass numbering. This option will automatically add `-n -c -s`.
 
@@ -734,8 +749,64 @@ The current mapping is:
 | 9 3     | 9            |
 
 If numbers for slice don't match a mapping all numbers will be
-displayed as normalized numbers. Note that this mapping may change
-in future.
+displayed as normalized numbers. Note that this mapping may change in
+future.
+
+{% include verovio.html
+	source="reduce"
+	humdrum-min-height="460px"
+	humdrum-max-height="460px"
+	humdrum-max-width="260px"
+	humdrum-min-width="260px"
+	humdrum-width="260px"
+	spacingSystem="0"
+	scale="45"
+	tabsize="18"
+	pageWidth="1200"
+%}
+<script type="application/x-humdrum" id="reduce">
+!!!filter: fb -r -a
+**kern	**kern
+*k[b-]	*k[b-]
+*M9/8	*M9/8
+*^	*
+8F 8A	(8FF'L 8C	4.ryy
+8F 8A	8FF' 8C	.
+8F 8A	8FF'J 8C	.
+8F 8A	8FF'L 8C	4.ryy
+8E 8G	8GG' 8C	.
+8F 8A	8FF'J 8C	.
+8G 8B-	8EE'L 8C	(8c
+8F 8A	8EE' 8C	8d
+8E 8B-	8EE'J 8C)	8c)
+*v	*v	*
+=	=
+*	*^
+(8FF' 8C 8F	[4.a	8A
+8FF' 8C 8F	.	8A
+8FF' 8C 8F	.	8A
+8FF' 8C 8F	8a]	8A
+8FF' 8C 8F	(8b-'	8A
+8FF' 8C 8F	8b')	8A
+8FF' 8C 8F	(8cc	8A
+8FF' 8C 8F	8a)	8A
+8FF' 8C 8F)	8f'	8A
+=	=	=
+=	=	=
+8BB-	(4.e	8F 8B-
+8BB-	.	8F 8B-
+8BB-	.	8F 8B-
+8BB-	4.d)	8F 8B-
+8BB-	.	8F 8B-
+8BB-	.	8F 8B-
+8AA 8C	(4d	8F 8B-
+8AA 8C	.	8F 8B-
+8AA 8C	8c)	8F 8B-
+=	=	=
+*	*v	*v
+*-	*-
+!!!filter: autobeam
+</script>
 
 
 
