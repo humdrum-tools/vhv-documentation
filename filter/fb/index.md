@@ -676,36 +676,41 @@ duplicate numbers.
 **kern	**kern
 *k[b-]	*k[b-]
 *M9/8	*M9/8
-(8FF'L 8C 8F 8A	4.s
-8FF' 8C 8F 8A	.
-8FF'J 8C 8F 8A	.
-8FF'L 8C 8F 8A	4.s
-8GG' 8C 8E 8G	.
-8FF'J 8C 8F 8A	.
-8EE'L 8C 8G 8B-	(8c
-8EE' 8C 8F 8A	8d
-8EE'J 8C 8E 8B-)	8c)
+*^	*
+8F 8A	(8FF'L 8C	4.ryy
+8F 8A	8FF' 8C	.
+8F 8A	8FF'J 8C	.
+8F 8A	8FF'L 8C	4.ryy
+8E 8G	8GG' 8C	.
+8F 8A	8FF'J 8C	.
+8G 8B-	8EE'L 8C	(8c
+8F 8A	8EE' 8C	8d
+8E 8B-	8EE'J 8C)	8c)
+*v	*v	*
 =	=
-(8FF' 8C 8F 8A	[4.a
-8FF' 8C 8F 8A	.
-8FF' 8C 8F 8A	.
-8FF' 8C 8F 8A	8a]
-8FF' 8C 8F 8A	(8b-'
-8FF' 8C 8F 8A	8b')
-8FF' 8C 8F 8A	(8cc
-8FF' 8C 8F 8A	8a)
-8FF' 8C 8F 8A)	8f'
-=	=
-8BB- 8F 8B-	(4.e
-8BB- 8F 8B-	.
-8BB- 8F 8B-	.
-8BB- 8F 8B-	4.d)
-8BB- 8F 8B-	.
-8BB- 8F 8B-	.
-8AA 8C 8F 8B-	(4d
-8AA 8C 8F 8B-	.
-8AA 8C 8F 8B-	8c)
-=	=
+*	*^
+(8FF' 8C 8F	[4.a	8A
+8FF' 8C 8F	.	8A
+8FF' 8C 8F	.	8A
+8FF' 8C 8F	8a]	8A
+8FF' 8C 8F	(8b-'	8A
+8FF' 8C 8F	8b')	8A
+8FF' 8C 8F	(8cc	8A
+8FF' 8C 8F	8a)	8A
+8FF' 8C 8F)	8f'	8A
+=	=	=
+=	=	=
+8BB-	(4.e	8F 8B-
+8BB-	.	8F 8B-
+8BB-	.	8F 8B-
+8BB-	4.d)	8F 8B-
+8BB-	.	8F 8B-
+8BB-	.	8F 8B-
+8AA 8C	(4d	8F 8B-
+8AA 8C	.	8F 8B-
+8AA 8C	8c)	8F 8B-
+=	=	=
+*	*v	*v
 *-	*-
 !!!filter: autobeam
 </script>
