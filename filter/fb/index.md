@@ -725,7 +725,7 @@ duplicate numbers.
 
 ## Abbreviated number figures ##
 
-With the `-r` option (`--abbr`) numbers for once slice will get
+With the `-r` option (`--abbreviate`) numbers for once slice will get
 abbreviated to match a reasonable and more or less typical figured
 bass numbering. This option will automatically add `-n -c -s`.
 
