@@ -260,8 +260,7 @@ exchange.
 
 With the `-l` option (`--lowest`) you can let `fb` find the lowest
 pitch of each slice and use this note as base for all number
-calculations. This options will ignore the potentially passend base
-track with `-b`.
+calculations. This option ignores the base track passed with `-b`.
 
 {% include verovio.html
 	source="lowest"
