@@ -10,27 +10,27 @@ last_updated: 20 May 2018
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands layers
-summary: "The <span class='keypress'>alt-shift-l</span> command adds an empty local comment line above the current line in the text editor."
+summary: "El comando <span class='keypress'>alt-shift-l</span> añade un comentario local vacío en la línea superior a la actual en el editor de texto."
 permalink: /commands/alt-shift-l/index-ES.html
 ---
 
-Pressing <span class="keypress">alt-shift-l</span> will add an empty
-local comment line above the current line, provided that the current
-line contains spines (not a global comment, empty line, or exclusive
-interpretation line).  The added local comment line will have the same
-number of spine fields as the current line.
+Al pulsar <span class="keypress">alt-shift-l</span> se añadirá una línea de comentario
+línea de comentario local vacía sobre la línea actual, siempre que ésta
+actual contenga espinas (no un comentario global, una línea vacía o una línea de
+exclusiva). La línea de comentario local añadida tendrá el mismo
+número de campos de columna que la línea actual.
 
-After the empty local comment line has been added, layout commands
-can be added (or any other use you have for local comments).  Below
-is an example of adding some text in the score through a layout
-comment.
+Una vez añadida la línea de comentario local vacía, pueden añadirse comandos de diseño
+(o cualquier otro uso que tenga para los comentarios locales).  Abajo
+se muestra un ejemplo de adición de texto en la partitura a través de un comentario de diseño.
+
 
 
 {% include image.html
 	file="textlayout.gif"
-	alt="adding a layout command."
+	alt="añadir un comando de diseño."
 	max-width="75%"
-	caption="Adding a layout command after pressing alt-shift-l."
+	caption="Añadir un comando de diseño después de pulsar alt-shift-l."
 %}
 
 
