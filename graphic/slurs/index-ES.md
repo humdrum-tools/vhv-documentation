@@ -1,12 +1,11 @@
 ---
 title: Ligaduras de expresión
 lang: en es
-ref: graphic-slurs
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 5 Mar 2017
 translation_date: 9 Aug 2021
-last_updated: 7 Mar 2017
+translation_update:
+ref: graphic-slurs
 tags: [all, graphic_editing, RDF]
 sidebar: main_sidebar
 datatable: "true"

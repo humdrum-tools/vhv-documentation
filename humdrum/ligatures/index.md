@@ -1,13 +1,12 @@
 ---
 title: Ligature and coloration brackets
 lang: en es
-ref: humdrum-ligatures
+page_language: en
 author: Craig Stuart Sapp
-translator: 
-keywords: humdrum ligature coloration
 creation_date: 18 Mar 2018
-translation_date: 
-last_updated: 18 Mar 2018
+last_updated:
+ref: humdrum-ligatures
+keywords: humdrum ligature coloration
 tags: [all, humdrum]
 verovio: "true"
 vim: ts=3 ft=javascript

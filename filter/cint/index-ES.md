@@ -1,12 +1,11 @@
 ---
 title: cint filter
 lang: en es
-ref: filters-cint
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 3 Jun 2017
 translation_date: 7 Aug 2021
-last_updated: 3 Jun 2017
+translation_update:
+ref: filters-cint
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

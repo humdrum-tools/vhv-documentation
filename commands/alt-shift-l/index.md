@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-shift-l</span>
-lang: en pl es
-ref: commands-alt-shift-l
+lang: en es pl
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 20 May 2018
-translation_date: 
-last_updated: 20 May 2018
+last_updated:
+ref: commands-alt-shift-l
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands layers

@@ -1,12 +1,11 @@
 ---
 title: shed filter
 lang: en es
-ref: filters-shed
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 29 Oct 2019
-translation_date: 
-last_updated: 29 Oct 2019
+last_updated:
+ref: filters-shed
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

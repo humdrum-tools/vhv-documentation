@@ -1,12 +1,11 @@
 ---
 title: URL parameters
 lang: en es
-ref: url-parameters
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 26 Dec 2020
-translation_date: 
-last_updated: 26 Dec 2020
+last_updated:
+ref: url-parameters
 tags: [all]
 keywords: interface url
 summary: "This page lists URL parameters that set up VHV as it is loaded."

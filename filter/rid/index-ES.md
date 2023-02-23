@@ -1,12 +1,11 @@
 ---
 title: rid filter
 lang: en es
-ref: filters-rid
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 18 Feb 2020
 translation_date: 8 Aug 2021
-last_updated: 18 Feb 2020
+translation_update:
+ref: filters-rid
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

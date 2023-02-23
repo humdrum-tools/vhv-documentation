@@ -1,13 +1,12 @@
 ---
 title: VHV online repertories
 lang: en es
-ref: repertory
+page_language: en
 author: Craig Stuart Sapp
-translator: 
-keywords: humdrum online repertories github
 creation_date: 10 May 2017
-translation_date: 
-last_updated: 10 May 2017
+last_updated:
+ref: repertory
+keywords: humdrum online repertories github
 tags: [all, repertories]
 vim: ts=3 ft=javascript
 summary: "VHV contains a set of online repertories of digital scores."

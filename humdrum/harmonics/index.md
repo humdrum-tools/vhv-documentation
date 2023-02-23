@@ -1,13 +1,12 @@
 ---
 title: Harmonics
 lang: en
-ref: humdrum-harmonics
+page_language: en
 author: Craig Stuart Sapp
-translator: 
-keywords: humdrum harmonics
 creation_date: 29 Apr 2019
-translation_date: 
-last_updated: 29 Apr 2019
+last_updated:
+ref: humdrum-harmonics
+keywords: humdrum harmonics
 tags: [all, humdrum]
 verovio: "true"
 vim: ts=3 ft=javascript

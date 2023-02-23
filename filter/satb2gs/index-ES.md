@@ -1,12 +1,11 @@
 ---
 title: filtro satb2gs
 lang: en es
-ref: filters-satb2gs
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 23 Apr 2017
 translation_date: 8 Aug 2021
-last_updated: 23 Apr 2017
+translation_update:
+ref: filters-satb2gs
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

@@ -1,12 +1,11 @@
 ---
 title: filtro kern2mens
 lang: en es
-ref: filters-kern2mens
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 10 May 2018
 translation_date: 8 Aug 2021
-last_updated: 10 May 2018
+translation_update:
+ref: filters-kern2mens
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

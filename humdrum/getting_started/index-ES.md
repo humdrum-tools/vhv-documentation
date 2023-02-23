@@ -1,13 +1,12 @@
 ---
 title: Tutorial de codificación musical en Humdrum
 lang: en es
-ref: humdrum-getting_started
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum encoding tutorial
-creation_date: 20 Aug 2017
 translation_date: 17 Aug 2021
-last_updated: 25 Jan 2018
+translation_update:
+ref: humdrum-getting_started
+keywords: humdrum encoding tutorial
 tags: [all, humdrum, getting_started]
 verovio: "true"
 vim: ts=3 ft=javascript

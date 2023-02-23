@@ -1,12 +1,11 @@
 ---
 title: Key command summary
 lang: en es
-ref: graphic-summary
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 15 Mar 2017
-translation_date: 
-last_updated: 15 Mar 2017
+last_updated:
+ref: graphic-summary
 tags: [all, graphic_editing]
 sidebar: main_sidebar
 keywords: graphic editing 

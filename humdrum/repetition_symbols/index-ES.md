@@ -1,13 +1,12 @@
 ---
 title: Repetition symbols
 lang: en es
-ref: humdrum-repetition-symbols
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum repetition symbols
-creation_date: 7 Mar 2019
 translation_date: 10 Aug 2021
-last_updated: 7 Mar 2019
+translation_update:
+ref: humdrum-repetition-symbols
+keywords: humdrum repetition symbols
 tags: [all, humdrum]
 verovio: "true"
 vim: ts=3 ft=javascript

@@ -1,16 +1,15 @@
 ---
 title: <span class='keypress'>alt-l</span>
-lang: en pl es
-ref: command-alt-l
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: es
 translator: Mauro Loch
-creation_date: 3 Mar 2017
 translation_date: 6 Jun 2021
-last_updated: 3 Mar 2017
+translation_update:
+ref: command-alt-l
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands layers
-summary: "El comando <span class='keypress'>alt-l</span> alterna el coloreado de las capas secundarias de la notación gráfica.  "
+summary: "El comando <span class='keypress'>alt-l</span> alterna el coloreado de las capas secundarias de la notación gráfica."
 permalink: /commands/alt-l/index-ES.html
 ---
 

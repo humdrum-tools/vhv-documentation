@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-shift-i</span>
-lang: en pl es
-ref: commands-alt-shift-i
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: es
 translator: Mauro Loch
-creation_date: 20 May 2018
 translation_date: 6 Jun 2021
-last_updated: 20 May 2018
+translation_update:
+ref: commands-alt-shift-i
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands layers

@@ -1,12 +1,11 @@
 ---
 title: filtro dissonant
 lang: en es
+page_language: es
+translator: David Rizo
+translation_date: 8 Aug 2021
+translation_update:
 ref: filters-dissonant
-author: ["Alexander Morgan", "Craig Sapp"]
-translator: 
-creation_date: 29 May 2017
-translation_date: 
-last_updated: 10 Jun 2017
 tags: [all, filters]
 sidebar: main_sidebar
 examplewidth: 1200

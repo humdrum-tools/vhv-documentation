@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-l</span>
-lang: pl en es
-ref: command-alt-l
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: pl
 translator: Marcin Konik 
-creation_date: 3 Mar 2017
 translation_date: 2 Jan 2019
-last_updated: 3 Mar 2017
+translation_update:
+ref: command-alt-l
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu warstwy

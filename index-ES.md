@@ -1,11 +1,10 @@
 ---
 title: Verovio Humdrum Viewer
-lang: en pl es
+lang: en es pl
+page_language: es
 translator: Ana Cartagena Pérez
 translation_date: 6 Jun 2021
-author: Craig Stuart Sapp
-creation_date: 3 Mar 2017
-last_updated: 4 Mar 2017
+translation_update:
 tags: [getting_started]
 sidebar: main_sidebar
 keywords: homepage

@@ -1,12 +1,12 @@
 ---
 title: Silencios invisibles
 lang: en es
-ref: humdrum-invisible_rests
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
 translation_date: 10 Aug 2021
+translation_update:
+ref: humdrum-invisible_rests
 keywords: humdrum invisible rests
-last_updated: 4 Mar 2017
 verovio: "true"
 tags: [all, humdrum, RDF]
 summary: "Descripción de los silencios invisibles y cómo mostrarlos para su corrección."

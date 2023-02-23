@@ -1,12 +1,11 @@
 ---
 title: filtro melisma
 lang: en es
-ref: filters-melisma
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 15 Sep 2019
 translation_date: 8 Aug 2021
-last_updated: 15 Sep 2019
+translation_update:
+ref: filters-melisma
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

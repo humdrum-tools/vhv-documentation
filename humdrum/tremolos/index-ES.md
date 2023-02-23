@@ -1,13 +1,12 @@
 ---
 title: Trémolos
 lang: en es
-ref: humdrum-tremolos
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum tremolo
-creation_date: 18 Mar 2018
 translation_date: 10 Aug 2021
-last_updated: 18 Mar 2018
+translation_update:
+ref: humdrum-tremolos
+keywords: humdrum tremolo
 tags: [all, humdrum]
 verovio: "true"
 vim: ts=3 ft=javascript

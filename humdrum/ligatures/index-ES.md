@@ -1,13 +1,12 @@
 ---
 title: Ligature y corchetes de coloración
 lang: en es
-ref: humdrum-ligatures
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum ligature coloration
-creation_date: 18 Mar 2018
 translation_date: 10 Aug 2021
-last_updated: 18 Mar 2018
+translation_update:
+ref: humdrum-ligatures
+keywords: humdrum ligature coloration
 tags: [all, humdrum]
 verovio: "true"
 vim: ts=3 ft=javascript

@@ -1,13 +1,12 @@
 ---
 title: Cue-sized notes
 lang: en es
-ref: humdrum-cues
+page_language: en
 author: Craig Stuart Sapp
-translator: 
-keywords: humdrum cue
 creation_date: 27 Mar 2018
-translation_date: 
-last_updated: 27 Mar 2018
+last_updated:
+ref: humdrum-cues
+keywords: humdrum cue
 tags: [all, humdrum]
 verovio: "true"
 vim: ts=3 ft=javascript

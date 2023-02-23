@@ -1,12 +1,11 @@
 ---
 title: Encoding ties in Humdrum
 lang: en es
-ref: humdrum-getting_started-ties
+page_language: en
+author: Craig Stuart Sapp
 creation_date: 20 Aug 2017
 last_updated: 4 May 2022
-author: Craig Stuart Sapp
-translator: 
-translation_date: 
+ref: humdrum-getting_started-ties
 keywords: humdrum encoding tutorial ties
 tags: [all, humdrum, getting_started]
 verovio: "true"

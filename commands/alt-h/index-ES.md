@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-h</span>
-lang: en pl es
-ref: commands-alt-h
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: es
 translator: David Rizo
-creation_date: 27 Apr 2017
 translation_date: 5 Aug 2021
-last_updated: 27 Apr 2017
+translation_update:
+ref: commands-alt-h
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands svg

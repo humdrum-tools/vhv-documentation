@@ -1,12 +1,11 @@
 ---
 title: humdiff filter
 lang: en es
-ref: filters-humdiff
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 15 Sep 2019
-translation_date: 
-last_updated: 15 Sep 2019
+last_updated:
+ref: filters-humdiff
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

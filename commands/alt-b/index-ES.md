@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-b</span>
-lang: en pl es
-ref: commands-alt-b
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: es
 translator: Mauro Loch
-creation_date: 9 May 2017
 translation_date: 6 Jun 2021
-last_updated: 9 May 2017
+translation_update:
+ref: commands-alt-b
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands logo 

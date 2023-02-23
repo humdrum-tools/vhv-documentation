@@ -1,12 +1,11 @@
 ---
 title: Search toolbar
 lang: en es
-ref: interface-toolbar
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 27 Aug 2020
 translation_date: 29 Jul 2021
-last_updated: 3 Sep 2020
+translation_update:
+ref: interface-toolbar
 tags: [all, getting_started]
 keywords: interface search toolbar
 summary: "How to use the search toolbar."

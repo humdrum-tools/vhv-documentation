@@ -1,12 +1,11 @@
 ---
 title: chord filter
 lang: en
+page_language: en
+author:
+creation_date:
+last_updated:
 ref: filters-chord
-author: Craig Stuart Sapp
-translator: 
-creation_date: 30 May 2021
-translation_date: 
-last_updated: 30 May 2021
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

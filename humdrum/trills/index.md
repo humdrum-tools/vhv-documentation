@@ -1,13 +1,12 @@
 ---
 title: Trills
 lang: en es
-ref: humdrum-trills
+page_language: en
 author: Craig Stuart Sapp
-translator: 
-keywords: humdrum trill
 creation_date: 27 Mar 2018
-translation_date: 
-last_updated: 27 Mar 2018
+last_updated:
+ref: humdrum-trills
+keywords: humdrum trill
 tags: [all, humdrum]
 verovio: "true"
 vim: ts=3 ft=javascript

@@ -1,13 +1,12 @@
 ---
 title: Codificación de ligaduras de prolongacióm en Humdrum
 lang: en es
-ref: humdrum-getting_started-ties
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum encoding tutorial ties
-creation_date: 20 Aug 2017
 translation_date: 18 Aug 2021
-last_updated: 7 Dec 2019
+translation_update:
+ref: humdrum-getting_started-ties
+keywords: humdrum encoding tutorial ties
 tags: [all, humdrum, getting_started]
 verovio: "true"
 vim: ts=3 ft=javascript

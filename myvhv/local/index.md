@@ -1,13 +1,12 @@
 ---
-search: exclude
 title: Running VHV locally
 lang: en es
-ref: myvhv-local
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 20 Aug 2017
-translation_date: 
-last_updated: 20 Aug 2017
+last_updated:
+ref: myvhv-local
+search: exclude
 tags: [all, maintenance]
 sidebar: main_sidebar
 keywords: maintenance local webserver

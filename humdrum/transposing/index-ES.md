@@ -1,13 +1,12 @@
 ---
 title: Instrumentos transpositores
 lang: en es
-ref: humdrum-transposing
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum transposing parts
-creation_date: 25 Jan 2018
 translation_date: 10 Aug 2021
-last_updated: 25 Jan 2018
+translation_update:
+ref: humdrum-transposing
+keywords: humdrum transposing parts
 tags: [all, humdrum]
 verovio: "true"
 vim: ts=3 ft=javascript

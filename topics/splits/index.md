@@ -1,12 +1,11 @@
 ---
 title: Splits
 lang: en
-ref: splits
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 25 Apr 2022
-translation_date: 
-last_updated: 25 Apr 2022
+last_updated:
+ref: splits
 tags: [all]
 keywords: interface url
 summary: "Splits are used to speed up data correction on long scores."

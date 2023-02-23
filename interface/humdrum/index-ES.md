@@ -1,12 +1,11 @@
 ---
 title: Load/Save Humdrum data
 lang: en es
-ref: interface-humdrum
-author: Craig Stuart Sapp
-translator: María Yagüe Gran, Helena Martínez Olivas 
-creation_date: 6 Mar 2017
+page_language: es
+translator: ["María Yagüe Gran", "Helena Martínez Olivas"]
 translation_date: 6 Jun 2021
-last_updated: 6 Mar 2017
+translation_update:
+ref: interface-humdrum
 tags: [all, getting_started, humdrum]
 keywords: interface humdrum load save import export
 summary: "Humdrum data can be loaded or saved in multiple ways."

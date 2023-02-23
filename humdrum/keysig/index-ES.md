@@ -1,13 +1,12 @@
 ---
 title: Armaduras
 lang: en es
-ref: humdrum-key_signatures
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum encoding tutorial key signatures
-creation_date: 15 Sep 2019
 translation_date: 17 Aug 2021
-last_updated: 15 Sep 2019
+translation_update:
+ref: humdrum-key_signatures
+keywords: humdrum encoding tutorial key signatures
 tags: [all, humdrum, getting_started]
 verovio: "true"
 vim: ts=3 ft=javascript
@@ -17,6 +16,7 @@ permalink: /humdrum/keysig/index-ES.html
 ---
 
 <!-- % include humdrum/keysig-ES.txt -->
+
 ## Armaduras ##
 Las armaduras se representan mediante interpretaciones de la forma `*k[X]`, donde `X` es una lista de las alteraciones en el orden en que aparecen en la armadura.  Aquí una escala en Do sostenido mayor y Do bemol mayor, mostrando todas las alteraciones en su orden correcto:
 

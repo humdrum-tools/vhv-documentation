@@ -1,12 +1,11 @@
 ---
 title: filtros URL
 lang: en es
-ref: filters-url
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 8 May 2017
 translation_date: 9 Aug 2021
-last_updated: 8 May 2017
+translation_update:
+ref: filters-url
 tags: [all, filters]
 sidebar: main_sidebar
 keywords: url filters

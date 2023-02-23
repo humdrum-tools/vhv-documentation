@@ -1,13 +1,12 @@
 ---
-search: exclude
 title: Creating verovio figures
 lang: en
-ref: maintenance-verovio
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 10 Mar 2017
-translation_date: 
-last_updated: 10 Mar 2017
+last_updated:
+ref: maintenance-verovio
+search: exclude
 tags: [all, maintenance]
 vim: ts=3 ft=javascript
 verovio: "true"

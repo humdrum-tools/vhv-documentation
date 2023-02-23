@@ -1,12 +1,11 @@
 ---
 title: Articulations encoding tutorial
 lang: en es
-ref: articulations
+page_language: en
 author: Craig Stuart Sapp
 creation_date: 20 Aug 2017
 last_updated: 25 Jan 2018
-translator: 
-translation_date: 
+ref: articulations
 keywords: humdrum encoding articulations
 tags: [all, humdrum, getting_started]
 verovio: "true"

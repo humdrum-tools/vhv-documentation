@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-g</span>
-lang: en pl es
-ref: commands-alt-g
+lang: en es pl
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 23 Apr 2017
-translation_date: 
-last_updated: 23 Apr 2017
+last_updated:
+ref: commands-alt-g
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands svg

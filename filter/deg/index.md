@@ -1,12 +1,11 @@
 ---
 title: deg filter
 lang: en
-ref: filters-deg
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 19 Jan 2023
-translation_date: 
-last_updated: 19 Jan 2023
+last_updated:
+ref: filters-deg
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

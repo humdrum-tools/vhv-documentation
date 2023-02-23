@@ -1,12 +1,11 @@
 ---
 title: "**vvdata"
 lang: en es
-ref: data types
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 6 Sep 2019
-translation_date: 
-last_updated: 6 Sep 2019
+last_updated:
+ref: data types
 tags: [all, graphic_editing]
 sidebar: main_sidebar
 keywords: data types

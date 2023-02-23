@@ -1,13 +1,11 @@
 ---
 title: Tono y ritmo incrustados en las imágenes SVG
 lang: en es
-ref: myvhv-svg_notes
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-vim: ts=3 ft=javascript
-creation_date: 16 Mar 2017
 translation_date: 10 Aug 2021
-last_updated: Sat Apr 22 23:48:50 PDT 2017
+translation_update:
+ref: myvhv-svg_notes
 tags: [all]
 sidebar: main_sidebar
 datatable: "true"

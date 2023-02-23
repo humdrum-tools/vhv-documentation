@@ -1,12 +1,11 @@
 ---
 title: Codificación de articulaciones
 lang: en es
-ref: humdrum-getting_started-articulations
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 20 Aug 2017
-last_updated: 25 Jan 2018
 translation_date: 17 Aug 2021
+translation_update:
+ref: humdrum-getting_started-articulations
 keywords: humdrum encoding articulations
 tags: [all, humdrum]
 verovio: "true"

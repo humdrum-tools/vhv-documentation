@@ -1,12 +1,11 @@
 ---
 title: Filtro chooser
 lang: en es
-ref: filters-chooser
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 15 Sep 2019
 translation_date: 7 Aug 2021
-last_updated: 15 Sep 2019
+translation_update:
+ref: filters-chooser
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

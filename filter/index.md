@@ -1,12 +1,11 @@
 ---
 title: Filters
 lang: en es
-ref: filters
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 31 Aug 2020
-translation_date: 
 last_updated: 23 Apr 2020
+ref: filters
 tags: [all, filters]
 sidebar: main_sidebar
 aton: "true"

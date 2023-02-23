@@ -1,9 +1,10 @@
 ---
 title: Saving buffers
 lang: en es
+page_language: en
 author: Craig Stuart Sapp
 creation_date: 18 Jun 2017
-last_updated: 18 Jun 2017
+last_updated:
 tags: [all, getting_started, humdrum]
 keywords: interface load save buffer
 summary: "The contents of the editor can be cached into several persistent and temporary buffers."

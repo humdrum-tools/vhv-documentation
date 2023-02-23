@@ -1,13 +1,12 @@
 ---
-search: exclude
 title: Keypress icons
 lang: en
-ref: maintenance-keypresses
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 11 Mar 2017
-translation_date: 
-last_updated: 11 Mar 2017
+last_updated:
+ref: maintenance-keypresses
+search: exclude
 tags: [all, maintenance]
 datatable: "true"
 sidebar: main_sidebar

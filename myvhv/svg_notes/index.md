@@ -1,13 +1,12 @@
 ---
 title: Embedded pitch and rhythm in SVG images
 lang: en es
-ref: myvhv-svg_notes
+page_language: en
 author: Craig Stuart Sapp
-translator: 
-vim: ts=3 ft=javascript
 creation_date: 16 Mar 2017
-translation_date: 
-last_updated: Sat Apr 22 23:48:50 PDT 2017
+last_updated: 22 Apr 2017
+ref: myvhv-svg_notes
+vim: ts=3
 tags: [all]
 sidebar: main_sidebar
 datatable: "true"

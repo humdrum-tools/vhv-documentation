@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-u</span>
-lang: pl en es
-ref: commands-alt-u
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: pl
 translator: Marcin Konik
-creation_date: 12 May 2018
 translation_date: 3 Jan 2019
-last_updated: 12 May 2018
+translation_update:
+ref: commands-alt-u
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu widok pliku TSV i CSV

@@ -1,12 +1,11 @@
 ---
 title: Uso de Verovio en un terminal
 lang: en es
-ref: myvhv-command_line
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 10 Mar 2017
 translation_date: 10 Aug 2021
-last_updated: 10 Mar 2017
+translation_update:
+ref: myvhv-command_line
 sidebar: main_sidebar
 tags: [all]
 vim: ts=3

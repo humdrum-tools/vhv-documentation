@@ -1,12 +1,11 @@
 ---
 title: Altura, tono
 lang: en es
-ref: graphic-pitch
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 7 Mar 2017
 translation_date: 9 Aug 2021
-last_updated: 19 May 2018
+translation_update:
+ref: graphic-pitch
 tags: [all, graphic_editing, RDF]
 sidebar: main_sidebar
 keywords: graphic editing pitch

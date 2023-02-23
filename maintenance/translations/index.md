@@ -1,13 +1,12 @@
 ---
-search: exclude
 title: Creating page translations
 lang: en
-ref: maintenance-translations
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 11 Jun 2018
-translation_date: 
-last_updated: 11 Jun 2018
+last_updated:
+ref: maintenance-translations
+search: exclude
 tags: [all, maintenance]
 sidebar: main_sidebar
 keywords: maintenance translation 

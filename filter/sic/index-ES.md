@@ -1,12 +1,11 @@
 ---
 title: filtro sic
 lang: en es
-ref: filters-sic
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 13 Aug 2020
 translation_date: 9 Aug 2021
-last_updated: 13 Aug 2020
+translation_update:
+ref: filters-sic
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

@@ -1,13 +1,12 @@
 ---
 title: Humdrum music encoding tutorial
 lang: en es
-ref: humdrum-getting_started
+page_language: en
 author: Craig Stuart Sapp
-translator: 
-keywords: humdrum encoding tutorial
 creation_date: 20 Aug 2017
-translation_date: 
 last_updated: 25 Jan 2018
+ref: humdrum-getting_started
+keywords: humdrum encoding tutorial
 tags: [all, humdrum, getting_started]
 verovio: "true"
 vim: ts=3 ft=javascript

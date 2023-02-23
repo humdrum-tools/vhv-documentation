@@ -1,12 +1,11 @@
 ---
 title: flipper filter
 lang: en
-ref: filters-flipper
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 30 May 2021
-translation_date: 
-last_updated: 30 May 2021
+last_updated:
+ref: filters-flipper
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

@@ -1,12 +1,11 @@
 ---
 title: Barrado
 lang: en es
-ref: graphic-beams
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 1 Jun 2018
 translation_date: 9 Aug 2021
-last_updated: 1 Jun 2018
+translation_update:
+ref: graphic-beams
 tags: [all, graphic_editing, RDF]
 sidebar: main_sidebar
 datatable: "true"

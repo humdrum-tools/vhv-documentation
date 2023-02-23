@@ -1,13 +1,12 @@
 ---
-search: exclude
 title: Ejecutar VHV localmente
 lang: en es
-ref: myvhv-local
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 20 Aug 2017
 translation_date: 10 Aug 2021
-last_updated: 20 Aug 2017
+translation_update:
+ref: myvhv-local
+search: exclude
 tags: [all, maintenance]
 sidebar: main_sidebar
 keywords: maintenance local webserver

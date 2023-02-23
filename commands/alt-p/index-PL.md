@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-p</span>
-lang: pl en es
-ref: commands-alt-p
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: pl
 translator: Marcin Konik 
-creation_date: 9 May 2017
 translation_date: 2 Jan 2019
-last_updated: 9 May 2017
+translation_update:
+ref: commands-alt-p
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu edycja źródłowa

@@ -1,13 +1,12 @@
 ---
 title: Creación de imágenes dinámicas en el navegador
 lang: en es
-ref: myvhv-dynamic
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-vim: ts=3
-creation_date: 11 Mar 2017
 translation_date: 10 Aug 2021
-last_updated: 11 Mar 2017
+translation_update:
+ref: myvhv-dynamic
+vim: ts=3
 tags: [all]
 sidebar: main_sidebar
 verovio: "true"

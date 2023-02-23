@@ -1,13 +1,12 @@
 ---
 title: Notación mensural
 lang: en es
-ref: humdrum-mens
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum mensural notation
-creation_date: 8 May 2018
 translation_date: 11 Aug 2021
-last_updated: 14 Dec 2020
+translation_update:
+ref: humdrum-mens
+keywords: humdrum mensural notation
 tags: [all, humdrum ]
 verovio: "true"
 vim: ts=3 ft=javascript

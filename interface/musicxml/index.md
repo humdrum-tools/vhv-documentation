@@ -1,15 +1,14 @@
 ---
 title: MusicXML import
 lang: en es
-ref: interface-musicxml
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 6 Mar 2017
-translation_date: 
-verovio: "true"
-last_updated: 6 Mar 2017
+last_updated:
+ref: interface-musicxml
 tags: [all, getting_started]
 keywords: interface musicxml
+verovio: "true"
 summary: "MusicXML files can be dragged/dropped onto the VHV page to automatically convert them into Humdrum data."
 sidebar: main_sidebar
 permalink: /interface/musicxml/index.html

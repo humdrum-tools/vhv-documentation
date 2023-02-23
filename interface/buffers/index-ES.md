@@ -1,9 +1,10 @@
 ---
 title: Guardando buffers
 lang: en es
-author: Craig Stuart Sapp
-creation_date: 18 Jun 2017
-last_updated: 18 Jun 2017
+page_language: es
+translator: David Rizo
+translation_date: 11 Jun 2021
+translation_update:
 tags: [all, getting_started, humdrum]
 keywords: interface load save buffer
 summary: "Los contenidos del editor se pueden almacenar en varios buffers persistentes y temporales."

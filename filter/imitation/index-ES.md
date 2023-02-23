@@ -1,12 +1,11 @@
 ---
 title: filtro imitation
 lang: en es
-ref: filters-imitation
-author: "Craig Sapp"
+page_language: es
 translator: David Rizo
-creation_date: 18 Jun 2017
 translation_date: 8 Aug 2021
-last_updated: 18 Jun 2017
+translation_update:
+ref: filters-imitation
 tags: [all, filters]
 sidebar: main_sidebar
 examplewidth: 1200

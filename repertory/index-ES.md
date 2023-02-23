@@ -1,13 +1,12 @@
 ---
 title: Repertorios en línea de VHV
 lang: en es
-ref: repertory
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum online repertories github
-creation_date: 10 May 2017
 translation_date: 9 Aug 2021
-last_updated: 10 May 2017
+translation_update:
+ref: repertory
+keywords: humdrum online repertories github
 tags: [all, repertories]
 vim: ts=3 ft=javascript
 summary: "VHV contiene un conjunto de repertorios en línea de partituras digitales."

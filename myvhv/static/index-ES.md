@@ -1,13 +1,12 @@
 ---
 title: Creación de imágenes estáticas en el navegador
 lang: en es
-ref: myvhv-static
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-vim: ts=3
-creation_date: 9 Mar 2017
 translation_date: 10 Aug 2021
-last_updated: 9 Mar 2017
+translation_update:
+ref: myvhv-static
+vim: ts=3
 sidebar: main_sidebar
 tags: [all]
 verovio: "true"

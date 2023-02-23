@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-o</span>
-lang: pl en es
-ref: commands-alt-o
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: pl
 translator: Marcin Konik
-creation_date: 15 Mar 2017
 translation_date: 2 Jan 2019
-last_updated: 15 Mar 2017
+translation_update:
+ref: commands-alt-o
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu oryginalne klucze

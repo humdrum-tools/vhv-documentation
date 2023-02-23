@@ -1,12 +1,11 @@
 ---
 title: modori filter
 lang: en
-ref: filters-modori
+page_language: en
 author: Craig Stuart Sapp
-translator:
 creation_date: 30 May 2021
-translation_date:
 last_updated: 17 Apr 2022
+ref: filters-modori
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

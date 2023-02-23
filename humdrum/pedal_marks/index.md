@@ -1,13 +1,12 @@
 ---
 title: Pedal marks
 lang: en es
-ref: humdrum-pedal_marks
+page_language: en
 author: Craig Stuart Sapp
-translator: 
-keywords: humdrum pedal marks
 creation_date: 18 Mar 2017
-translation_date: 
-last_updated: 18 Mar 2017
+last_updated:
+ref: humdrum-pedal_marks
+keywords: humdrum pedal marks
 tags: [all, humdrum ]
 verovio: "true"
 vim: ts=3 ft=javascript

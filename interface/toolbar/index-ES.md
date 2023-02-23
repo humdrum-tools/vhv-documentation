@@ -1,12 +1,11 @@
 ---
 title: Toolbar
 lang: en es
-ref: interface-toolbar
-author: Craig Stuart Sapp
-translator: Ana Cartagena Pérez, María Yagüe Gran
-creation_date: 24 Aug 2020
+page_language: es
+translator: ["Ana Cartagena Pérez", "María Yagüe Gran"]
 translation_date: 6 Jun 2021
-last_updated: 3 Sep 2020
+translation_update:
+ref: interface-toolbar
 tags: [all, getting_started]
 keywords: interface toolbar
 summary: "A Description of the VHV toolbar."

@@ -1,12 +1,11 @@
 ---
 title: extract filter
 lang: en es
-ref: filters-extract
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 23 Apr 2017
-translation_date: 
-last_updated: 23 Apr 2017
+last_updated:
+ref: filters-extract
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

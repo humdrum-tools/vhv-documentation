@@ -1,12 +1,11 @@
 ---
 title: Marcar notas con <span class='keypress'>at</span>
 lang: en es
-ref: graphic-marks
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 15 Mar 2017
 translation_date: 9 Aug 2021
-last_updated: 15 Mar 2017
+translation_update:
+ref: graphic-marks
 tags: [all, commands, RDF]
 sidebar: main_sidebar
 keywords: interface commands 

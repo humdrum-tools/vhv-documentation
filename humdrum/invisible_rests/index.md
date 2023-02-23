@@ -1,11 +1,12 @@
 ---
 title: Invisible rests
 lang: en es
-ref: humdrum-invisible_rests
+page_language: en
 author: Craig Stuart Sapp
-translator: 
+cration_date: 4 Mar 2017
+last_updated:
+ref: humdrum-invisible_rests
 keywords: humdrum invisible rests
-last_updated: 4 Mar 2017
 verovio: "true"
 tags: [all, humdrum, RDF]
 summary: "Description of invisible rests and how to display them for proof-reading."

@@ -1,11 +1,10 @@
 ---
 title: Verovio Humdrum Viewer 
-lang: en pl es
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: pl
 translator: Marcin Konik
-creation_date: 3 Mar 2017
-translation_date: 1 Jan 2019
-last_updated: 4 Mar 2017
+translation_date: 9 Jan 2019
+translation_update:
 tags: [getting_started]
 sidebar: main_sidebar
 keywords: homepage

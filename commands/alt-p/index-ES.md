@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-p</span>
-lang: en pl es
-ref: commands-alt-p
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: es
 translator: David Rizo
-creation_date: 9 May 2017
 translation_date: 5 Aug 2021
-last_updated: 9 May 2017
+translation_update:
+ref: commands-alt-p
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands erase clear

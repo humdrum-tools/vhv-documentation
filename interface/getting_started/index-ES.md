@@ -1,13 +1,12 @@
 ---
 title: Resumen del interfaz de usuario
 lang: en es
-ref: interface-getting_started-2
-author: Craig Stuart Sapp
+page_language: es
 translator: Ana Cartagena Pérez
-keywords: interface commands documentation 
-creation_date: 3 Mar 2017
 translation_date: 6 Jun 2021
-last_updated: 3 Mar 2017
+translation_update:
+ref: interface-getting_started-2
+keywords: interface commands documentation 
 tags: [all, getting_started]
 summary: "Descripción de las dos subventanas en la interfaz de VHV."
 sidebar: main_sidebar

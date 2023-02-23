@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-shift-d</span>
-lang: pl en es
-ref: commands-alt-shift-d
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: pl
 translator: Marcin Konik
-creation_date: 20 May 2018
 translation_date: 2 Jan 2019
-last_updated: 20 May 2018
+translation_update:
+ref: commands-alt-shift-d
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands layers

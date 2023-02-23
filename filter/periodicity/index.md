@@ -1,12 +1,11 @@
 ---
 title: periodicity filter
 lang: en
-ref: filters-periodicity
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 30 May 2021
-translation_date: 
-last_updated: 30 May 2021
+last_updated:
+ref: filters-periodicity
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

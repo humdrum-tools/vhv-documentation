@@ -1,11 +1,11 @@
 ---
 title: Validación de sintaxis
 lang: en es
+page_language: es
+translator: ["Olga Francés Zoroa", "Mauro Loch"]
+translation_date: 19 Aug 2019
+translation_update:
 ref: interface-validation
-author: Craig Stuart Sapp
-translator: Olga Francés Zoroa, Mauro Loch
-creation_date: 19 Aug 2017
-last_updated: 19 Aug 2017
 tags: [all, getting_started]
 keywords: interface syntax validation
 summary: "VHV validará la estructura y la sintaxis rítmica de los archivos Humdrum antes de intentar convertirlos en notación gráfica."

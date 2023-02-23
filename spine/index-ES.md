@@ -1,12 +1,11 @@
 ---
 title: Tipos de columnas entendidos por VHV
 lang: en es
-ref: data types
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 2 Sep 2019
 translation_date: 10 Aug 2021
-last_updated: 2 Sep 2019
+translation_update:
+ref: data types
 tags: [all]
 sidebar: main_sidebar
 keywords: data types

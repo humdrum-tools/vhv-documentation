@@ -1,13 +1,12 @@
 ---
 title: Notas guía
 lang: en es
-ref: humdrum-cues
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum cue
-creation_date: 27 Mar 2018
 translation_date: 10 Aug 2021
-last_updated: 27 Mar 2018
+translation_update:
+ref: humdrum-cues
+keywords: humdrum cue
 tags: [all, humdrum]
 verovio: "true"
 vim: ts=3 ft=javascript

@@ -1,13 +1,12 @@
 ---
 title: Scale degrees
 lang: en 
-ref: humdrum-scale_degrees
+page_language: en
 author: "Craig Stuart Sapp"
-translator: 
-keywords: humdrum scale degrees
 creation_date: 31 Dec 2022
-translation_date:
-last_updated: 31 Dec 2022
+last_updated:
+ref: humdrum-scale_degrees
+keywords: humdrum scale degrees
 tags: [all, humdrum, scale degrees]
 verovio: "true"
 datatable: "true"

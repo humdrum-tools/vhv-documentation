@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-t</span>/<span class='keypress'>alt-T</span>
-lang: pl en es
-ref: commands-alt-t
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: pl
 translator: Marcin Konik
-creation_date: 16 Oct 2017
 translation_date: 3 Jan 2019
-last_updated: 16 Oct 2017
+translation_update:
+ref: commands-alt-t
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu zapisywanie pliku pdf

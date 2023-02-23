@@ -1,12 +1,11 @@
 ---
 title: Resumen de comandos clave
 lang: en es
-ref: graphic-summary
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 15 Mar 2017
 translation_date: 9 Aug 2021
-last_updated: 15 Mar 2017
+translation_update:
+ref: graphic-summary
 tags: [all, graphic_editing]
 sidebar: main_sidebar
 keywords: graphic editing 

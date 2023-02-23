@@ -1,13 +1,12 @@
 ---
 title: Creating static in-browser images from EsAC data
 lang: en es
-ref: myvhv-static-esac
+page_language: en
 author: Craig Stuart Sapp
-translator: 
-vim: ts=3
 creation_date: 10 Jun 2017
-translation_date: 
-last_updated: 10 Jun 2017
+last_updated:
+ref: myvhv-static-esac
+vim: ts=3
 sidebar: main_sidebar
 tags: [all]
 verovio: "true"

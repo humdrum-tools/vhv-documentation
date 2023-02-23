@@ -1,13 +1,12 @@
 ---
 title: Creating static in-browser images
 lang: en es
-ref: myvhv-static
+page_language: en
 author: Craig Stuart Sapp
-translator: 
-vim: ts=3
 creation_date: 9 Mar 2017
-translation_date: 
-last_updated: 9 Mar 2017
+last_updated:
+ref: myvhv-static
+vim: ts=3
 sidebar: main_sidebar
 tags: [all]
 verovio: "true"

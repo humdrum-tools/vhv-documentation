@@ -1,12 +1,11 @@
 ---
 title: Importación de datos EsAC
 lang: en es
-ref: interface-esac
-author: Craig Stuart Sapp
+page_language: es
 translator: Olga Francés Zoroa
-creation_date: 10 Jun 2017
 translation_date: 6 Jun 2021
-last_updated: 10 Jun 2017
+translation_update:
+ref: interface-esac
 tags: [all]
 keywords: interface esac
 summary: "Se pueden arrastrar ficheros EsAC en la página de VHV page para convertirlos automáticamente en datos Humdrum. También se pueden pegar datos EsAC en el editor de texto para editarlos como datos EsAC."

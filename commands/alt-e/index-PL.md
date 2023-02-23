@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-e</span>
-lang: pl en es
-ref: commands-alt-e
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: pl
 translator: Marcin Konik 
-creation_date: 9 May 2017
 translation_date: 1 Jan 2019
-last_updated: 9 May 2017
+translation_update:
+ref: commands-alt-e
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: polecenia interfejsu kasowanie danych

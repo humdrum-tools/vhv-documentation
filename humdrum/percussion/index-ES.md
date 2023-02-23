@@ -1,13 +1,12 @@
 ---
 title: Percusión
 lang: en es
-ref: humdrum-tuplet_styling
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum percussion
-creation_date: 11 Oct 2020
 translation_date: 10 Aug 2021
-last_updated: 11 Oct 2020
+translation_update:
+ref: humdrum-tuplet_styling
+keywords: humdrum percussion
 tags: [all, humdrum ]
 verovio: "true"
 vim: ts=3 ft=javascript

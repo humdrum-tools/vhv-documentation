@@ -1,12 +1,11 @@
 ---
 title: Beams
 lang: en es
-ref: graphic-beams
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 1 Jun 2018
-translation_date: 
-last_updated: 1 Jun 2018
+last_updated:
+ref: graphic-beams
 tags: [all, graphic_editing, RDF]
 sidebar: main_sidebar
 datatable: "true"

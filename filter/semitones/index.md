@@ -1,12 +1,11 @@
 ---
 title: semitones filter
 lang: en es
-ref: filters-semitones
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 15 Nov 2020
-translation_date: 
-last_updated: 15 Nov 2020
+last_updated:
+ref: filters-semitones
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

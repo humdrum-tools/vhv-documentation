@@ -1,13 +1,12 @@
 ---
 title: J.S. Bach chorales
 lang: en es
-ref: repertory-bach-chorales
+page_language: en
 author: Craig Stuart Sapp
-translator:
-keywords: humdrum Bach chorales
 creation_date: 18 Mar 2017
-translation_date:
-last_updated: 18 Mar 2017
+last_updated:
+ref: repertory-bach-chorales
+keywords: humdrum Bach chorales
 verovio: "true"
 tags: [all, repertories]
 vim: ts=3 ft=javascript

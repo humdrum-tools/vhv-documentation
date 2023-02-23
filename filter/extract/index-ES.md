@@ -1,12 +1,11 @@
 ---
 title: filtro extract
 lang: en es
-ref: filters-extract
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 23 Apr 2017
 translation_date: 8 Aug 2021
-last_updated: 23 Apr 2017
+translation_update:
+ref: filters-extract
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

@@ -1,12 +1,11 @@
 ---
 title: myVHV introduction
 lang: en es
-ref: myvhv-introduction
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 10 Mar 2017
-translation_date: 
-last_updated: 10 Mar 2017
+last_updated:
+ref: myvhv-introduction
 sidebar: main_sidebar
 tags: [all]
 verovio: "true"

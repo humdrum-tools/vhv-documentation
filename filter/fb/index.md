@@ -1,12 +1,11 @@
 ---
 title: fb filter
 lang: en
-ref: filters-fb
+page_language: en
 author: Wolfgang Drescher
 creation_date: 17 Jan 2023
 last_updated: 22 Jan 2023
-translator: 
-translation_date: 
+ref: filters-fb
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

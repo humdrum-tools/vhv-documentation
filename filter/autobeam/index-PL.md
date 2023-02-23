@@ -1,12 +1,11 @@
 ---
 title: autobeam filter
-lang: pl en es
-ref: filters-autobeam
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: pl
 translator: Marcin Konik 
-creation_date: 23 Apr 2017
 translation_date: 9 Jan 2019
-last_updated: 23 Apr 2017
+translation_update:
+ref: filters-autobeam
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

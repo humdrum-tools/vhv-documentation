@@ -1,12 +1,11 @@
 ---
 title: Edit modes and syntax highlighting
 lang: en es
-ref: interface-edit_modes
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 19 Jun 2017
 translation_date: 5 Aug 2021
-last_updated: 19 Jun 2017
+translation_update:
+ref: interface-edit_modes
 tags: [all, getting_started]
 keywords: interface color colorize coloring syntax highlighting
 summary: "A Description of the two editing modes in VHV, and Humdrum syntax coloring."

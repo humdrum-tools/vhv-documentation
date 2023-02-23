@@ -1,12 +1,11 @@
 ---
 title: Syntax validation
 lang: en es
-ref: interface-validation
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 19 Aug 2017
-translation_date: 
-last_updated: 19 Aug 2017
+last_updated:
+ref: interface-validation
 tags: [all, getting_started]
 keywords: interface syntax validation
 summary: "VHV will validate the structure and rhythmic syntax of Humdrum files before attempting to render them to graphical notation."

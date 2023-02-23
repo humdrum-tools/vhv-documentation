@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-e</span>
-lang: en pl es
-ref: commands-alt-e
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: es
 translator: Mauro Loch
-creation_date: 9 May 2017
 translation_date: 6 Jun 2021
-last_updated: 9 May 2017
+translation_update:
+ref: commands-alt-e
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands erase clear

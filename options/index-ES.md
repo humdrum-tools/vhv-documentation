@@ -1,12 +1,11 @@
 ---
 title: Embedded verovio options
 lang: en es
-ref: verovio options
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 20 Mar 2019
 translation_date: 9 Aug 2021
-last_updated: 20 Mar 2019
+translation_update:
+ref: verovio options
 tags: [all, options]
 sidebar: main_sidebar
 verovio: "true"

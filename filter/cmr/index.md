@@ -1,12 +1,11 @@
 ---
 title: cmr filter
 lang: en
-ref: filters-cmr
+page_language: en
 author: Craig Stuart Sapp
 creation_date: 4 May 2022
-last_updated: 4 May 2022
-translator:
-translation_date:
+last_updated:
+ref: filters-cmr
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

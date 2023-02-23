@@ -1,12 +1,11 @@
 ---
 title: Embedded verovio options list
 lang: en
-ref: verovio options beamFrenchStyle
+page_language: en
 author: Craig Stuart Sapp
 creation_date: 2 May 2022
-translator: 
-translation_date: 
-last_updated: 2 May 2022
+last_updated:
+ref: verovio options beamFrenchStyle
 tags: [all, options]
 sidebar: main_sidebar
 verovio: "true"

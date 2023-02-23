@@ -1,13 +1,12 @@
 ---
 title: Digitación
 lang: en es
-ref: humdrum-fingering
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum fingering
-creation_date: 23 Mar 2018
 translation_date: 10 Aug 2021
-last_updated: 23 Mar 2018
+translation_update: 22 Feb 2023
+ref: humdrum-fingering
+keywords: humdrum fingering
 tags: [all, humdrum ]
 verovio: "true"
 vim: ts=3 ft=javascript

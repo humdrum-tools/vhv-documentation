@@ -1,15 +1,14 @@
 ---
 title: MusicXML import
 lang: en es
-ref: interface-musicxml
-author: Craig Stuart Sapp
-translator: Helena Martínez Olivas, Olga Francés Zoroa
-creation_date: 6 Mar 2017
+page_language: es
+translator: ["Helena Martínez Olivas", "Olga Francés Zoroa"]
 translation_date: 6 Jun 2021
-verovio: "true"
-last_updated: 6 Mar 2017
+translation_update:
+ref: interface-musicxml
 tags: [all, getting_started]
 keywords: interface musicxml
+verovio: "true"
 summary: "MusicXML files can be dragged/dropped onto the VHV page to automatically convert them into Humdrum data."
 sidebar: main_sidebar
 permalink: /interface/musicxml/index-ES.html

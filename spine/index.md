@@ -1,12 +1,11 @@
 ---
 title: Spine types understood by VHV
 lang: en es
-ref: data types
+page_langauge: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 2 Sep 2019
-translation_date: 
-last_updated: 2 Sep 2019
+last_updated:
+ref: data types
 tags: [all]
 sidebar: main_sidebar
 keywords: data types

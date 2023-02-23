@@ -1,12 +1,11 @@
 ---
 title: Slurs
 lang: en es
-ref: graphic-slurs
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 5 Mar 2017
-translation_date: 
 last_updated: 7 Mar 2017
+ref: graphic-slurs
 tags: [all, graphic_editing, RDF]
 sidebar: main_sidebar
 datatable: "true"

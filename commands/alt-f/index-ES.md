@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-f</span>
-lang: en pl es
-ref: commands-alt-f
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: es
 translator: Mauro Loch
-creation_date: 5 Mar 2017
 translation_date: 6 Jun 2021
-last_updated: 5 Mar 2017
+translation_update:
+ref: commands-alt-f
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands freeze notation

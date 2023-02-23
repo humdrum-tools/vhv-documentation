@@ -1,12 +1,11 @@
 ---
 title: Pitch
 lang: en es
-ref: graphic-pitch
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 7 Mar 2017
-translation_date: 
 last_updated: 19 May 2018
+ref: graphic-pitch
 tags: [all, graphic_editing, RDF]
 sidebar: main_sidebar
 keywords: graphic editing pitch

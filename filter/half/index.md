@@ -1,12 +1,11 @@
 ---
 title: half filter
 lang: en
-ref: filters-half
+page_language: en
 author: Craig Stuart Sapp
 creation_date: 09 May 2022
-last_updated: 09 May 2022
-translator:
-translation_date:
+last_updated:
+ref: filters-half
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

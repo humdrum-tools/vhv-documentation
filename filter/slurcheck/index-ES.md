@@ -1,12 +1,11 @@
 ---
 title: filtro slurcheck
 lang: en es
-ref: filters-slurcheck
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-creation_date: 31 Jul 2018
 translation_date: 9 Aug 2021
-last_updated: 31 Jul 2018
+translation_update:
+ref: filters-slurcheck
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

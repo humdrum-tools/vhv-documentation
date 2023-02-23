@@ -1,13 +1,12 @@
 ---
 title: System decorating
 lang: en es
-ref: system decoration instrument names
+page_language: en
 author: Craig Stuart Sapp
-translator: 
-keywords: humdrum instrument names
 creation_date: 24 Feb 2020
-translation_date: 
-last_updated: 24 Feb 2020
+last_updated:
+ref: system decoration instrument names
+keywords: humdrum instrument names
 tags: [all, humdrum ]
 verovio: "true"
 vim: ts=3 ft=javascript

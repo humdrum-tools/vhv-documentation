@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-m</span>
-lang: en pl es
-ref: commands-alt-m
+lang: en es pl
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 5 Mar 2017
-translation_date: 
-last_updated: 5 Mar 2017
+last_updated:
+ref: commands-alt-m
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands 

@@ -1,12 +1,11 @@
 ---
 title: composite filter
 lang: en es
-ref: filters-composite
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 15 Sep 2019
-translation_date: 
 last_updated: 22 Mar 2022
+ref: filters-composite
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"

@@ -1,12 +1,11 @@
 ---
 title: "**cdata"
 lang: en es
-ref: data types
+page_language: en
 author: Craig Stuart Sapp
-translator:
 creation_date: 6 Sep 2019
-translation_date:
 last_updated: 7 Sep 2019
+ref: data types
 vim: ft=text
 verovio: "true"
 tags: [all, data_type]

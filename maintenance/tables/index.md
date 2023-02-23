@@ -1,13 +1,12 @@
 ---
-search: exclude
 title: Tables
 lang: en
-ref: maintenance-tables
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 12 Mar 2017
-translation_date: 
-last_updated: 12 Mar 2017
+last_updated:
+ref: maintenance-tables
+search: exclude
 tags: [all, maintenance]
 datatable: "true"
 vim: ts=3

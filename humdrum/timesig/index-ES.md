@@ -1,13 +1,12 @@
 ---
 title: tutorial de codificación de compases
 lang: en es
-ref: humdrum-getting_started-timesig
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum encoding tutorial time signatures
-creation_date: 20 Aug 2017
 translation_date: 10 Aug 2021
-last_updated: 25 Jan 2018
+translation_update:
+ref: humdrum-getting_started-timesig
+keywords: humdrum encoding tutorial time signatures
 tags: [all, humdrum, getting_started]
 verovio: "true"
 vim: ts=3 ft=javascript

@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-t</span>/<span class='keypress'>alt-T</span>
-lang: en pl es
-ref: commands-alt-t
+lang: en es pl
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 16 Oct 2017
-translation_date: 
-last_updated: 16 Oct 2017
+last_updated:
+ref: commands-alt-t
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands 

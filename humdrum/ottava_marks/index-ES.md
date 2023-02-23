@@ -1,14 +1,13 @@
 ---
 title: Marcas de transposición de octava
 lang: en es
-ref: humdrum-ottava_marks
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum ottava marks
-creation_date: 18 Mar 2017
 translation_date: 10 Aug 2021
-last_updated: 18 Mar 2017
-tags: [all, humdrum ]
+translation_update:
+ref: humdrum-ottava_marks
+keywords: humdrum ottava marks
+tags: [all, humdrum]
 verovio: "true"
 vim: ts=3 ft=javascript
 summary: "Una descripción de cómo codificar las marcas de la transposición de octava en las columnas de **kern"

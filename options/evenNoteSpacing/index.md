@@ -1,12 +1,11 @@
 ---
 title: Maximally compressed notation
 lang: en
-ref: verovio options evenNoteSpacing
+page_language: en
 author: Craig Stuart Sapp
 creation_date: 2 May 2022
-translator: 
-translation_date: 
-last_updated: 2 May 2022
+last_updated:
+ref: verovio options evenNoteSpacing
 tags: [all, options]
 sidebar: main_sidebar
 verovio: "true"

@@ -1,12 +1,11 @@
 ---
 title: Help menu
 lang: en es
-ref: interface-help_menu
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 3 Mar 2017
-translation_date: 
 last_updated: 6 Mar 2017
+ref: interface-help_menu
 tags: [all, getting_started]
 keywords: interface help menu
 summary: "A Description of the VHV help menu."

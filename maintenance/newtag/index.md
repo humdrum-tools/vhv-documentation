@@ -1,13 +1,12 @@
 ---
-search: exclude
 title: Creating a new tag
 lang: en
-ref: maintenance-newtag
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 14 Mar 2017
-translation_date: 
-last_updated: 14 Mar 2017
+last_updated:
+ref: maintenance-newtag
+search: exclude
 tags: [all, maintenance]
 sidebar: main_sidebar
 keywords: maintenance new tag

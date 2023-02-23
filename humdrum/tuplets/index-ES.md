@@ -1,13 +1,12 @@
 ---
 title: Grupos de valoración especial
 lang: en es
-ref: humdrum-tuplet_styling
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum tuplet styling
-creation_date: 18 Mar 2017
 translation_date: 10 Aug 2021
-last_updated: 21 Mar 2019
+translation_update:
+ref: humdrum-tuplet_styling
+keywords: humdrum tuplet styling
 tags: [all, humdrum ]
 verovio: "true"
 vim: ts=3 ft=javascript

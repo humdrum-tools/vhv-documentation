@@ -1,12 +1,11 @@
 ---
 title: Marking notes with <span class='keypress'>at</span>
 lang: en es
-ref: graphic-marks
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 15 Mar 2017
-translation_date: 
-last_updated: 15 Mar 2017
+last_updated:
+ref: graphic-marks
 tags: [all, commands, RDF]
 sidebar: main_sidebar
 keywords: interface commands 

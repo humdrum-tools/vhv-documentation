@@ -1,13 +1,12 @@
 ---
 title: Tuplet styling
 lang: en es
-ref: humdrum-tuplet_styling
+page_language: en
 author: Craig Stuart Sapp
-translator: 
-keywords: humdrum tuplet styling
 creation_date: 18 Mar 2017
-translation_date: 
 last_updated: 21 Mar 2019
+ref: humdrum-tuplet_styling
+keywords: humdrum tuplet styling
 tags: [all, humdrum ]
 verovio: "true"
 vim: ts=3 ft=javascript

@@ -1,13 +1,12 @@
 ---
-search: exclude
 title: Tables
 lang: en
-ref: maintenance-tasso-tmp
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 12 Mar 2017
-translation_date: 
-last_updated: 12 Mar 2017
+last_updated:
+ref: maintenance-tasso-tmp
+search: exclude
 tags: [all, maintenance]
 datatable: "true"
 aton: "true"

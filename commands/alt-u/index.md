@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-u</span>
-lang: en pl es
-ref: commands-alt-u
+lang: en es pl
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 12 May 2018
-translation_date: 
-last_updated: 12 May 2018
+last_updated:
+ref: commands-alt-u
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands compile filters

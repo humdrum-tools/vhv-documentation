@@ -1,12 +1,11 @@
 ---
 title: <span class='keypress'>alt-v</span>
-lang: en pl es
-ref: commands-alt-v
-author: Craig Stuart Sapp
+lang: en es pl
+page_language: es
 translator: David Rizo
-creation_date: 3 Mar 2017
 translation_date: 5 Aug 2021
-last_updated: 5 Mar 2017
+translation_update:
+ref: commands-alt-v
 tags: [all, commands]
 sidebar: main_sidebar
 keywords: interface commands editor vim

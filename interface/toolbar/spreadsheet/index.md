@@ -1,12 +1,11 @@
 ---
 title: Spreadsheet Toolbar
 lang: en
-ref: interface-toolbar
+page_language: en
 author: Craig Stuart Sapp
-translator: 
 creation_date: 20 Sep 2020
-translation_date: 
 last_updated: 2 Oct 2020
+ref: interface-toolbar
 tags: [all, getting_started]
 keywords: interface toolbar
 summary: "A Description of the spreadsheet toolbar."

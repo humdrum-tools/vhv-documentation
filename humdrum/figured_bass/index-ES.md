@@ -1,13 +1,12 @@
 ---
 title: Bajo cifrado
 lang: en es
-ref: humdrum-figured_bass
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum figured bass
-creation_date: 9 May 2017
 translation_date: 10 Aug 2021
-last_updated: 10 June 2019
+translation_update:
+ref: humdrum-figured_bass
+keywords: humdrum figured bass
 tags: [all, humdrum, figured bass]
 verovio: "true"
 vim: ts=3 ft=javascript

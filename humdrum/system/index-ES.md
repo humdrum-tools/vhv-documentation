@@ -1,12 +1,12 @@
 ---
 title: Corchetes y llaves de sistemas
 lang: en es
-ref: system decoration instrument names
-author: Craig Stuart Sapp
+page_language: es
 translator: David Rizo
-keywords: humdrum instrument names
-creation_date: 24 Feb 2020
 translation_date: 10 Aug 2021
+translation_update:
+ref: system decoration instrument names
+keywords: humdrum instrument names
 last_updated: 24 Feb 2020
 tags: [all, humdrum ]
 verovio: "true"
