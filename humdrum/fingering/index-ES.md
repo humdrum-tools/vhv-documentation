@@ -1,5 +1,5 @@
 ---
-title: Digitacióm
+title: Digitación
 lang: en es
 ref: humdrum-fingering
 author: Craig Stuart Sapp
