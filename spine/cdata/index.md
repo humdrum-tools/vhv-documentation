@@ -305,7 +305,7 @@ svg .number {
 }
 </style>
 
-
+See also the [data display how-to](/howto/data-display) for more information (including `**adata` and `**bdata`).
 
 
 

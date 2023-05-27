@@ -290,7 +290,7 @@ entries:
       output: web, pdf
       url: /spine/index.html
 
-    - title: "**cdata"
+    - title: "**adata, **bdata, **cdata"
       output: web, pdf
       url: /spine/cdata/index.html
 
