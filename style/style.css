@@ -1782,4 +1782,9 @@ table.keytable tr td:last-child {
 	color: yellow;
 }
 
+div.vhvlink {
+	margin-top: -25px;
+	font-size: small;
+}
+
 

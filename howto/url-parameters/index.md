@@ -10,7 +10,7 @@ tags: [all]
 keywords: interface url
 summary: "This page lists URL parameters that set up VHV as it is loaded."
 sidebar: main_sidebar
-permalink: /topics/url-parameters/index.html
+permalink: /howto/url-parameters/index.html
 ---
 
 {% include_relative scripts-local.html %}

@@ -470,17 +470,25 @@ entries:
 
 ###########################################################################
 
-  - title: Other topics
+  - title: How tos
     output: web, pdf
     folderitems:
 
+    - title: List of How-tos
+      output: web, pdf
+      url: /howto
+
+    - title: Data display
+      output: web, pdf
+      url: /howto/data-display
+
     - title: Splits
       output: web, pdf
-      url: /topics/splits
+      url: /howto/splits
 
     - title: URL parameters
       output: web, pdf
-      url: /topics/url-parameters
+      url: /howto/url-parameters
 
 ###########################################################################
 

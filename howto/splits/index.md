@@ -10,7 +10,7 @@ tags: [all]
 keywords: interface url
 summary: "Splits are used to speed up data correction on long scores."
 sidebar: main_sidebar
-permalink: /topics/splits/index.html
+permalink: /howto/splits/index.html
 ---
 
 The View&rarr;Splits menu list splitting options.

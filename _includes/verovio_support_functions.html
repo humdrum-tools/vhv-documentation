@@ -212,9 +212,36 @@ function cleanOptions(content, options) {
 	return output;
 }
 
-
-
-
+document.addEventListener("click", function(event) {
+	let element = event.target;
+	while (element) {
+		if (element.nodeName != "A") {
+			element = element.parentNode;
+			continue;
+		}
+		let className = element.className;
+		if (!className.match("vhvlink")) {
+			return;
+		}
+		let id = element.id;
+		if (!id) {
+			break;
+		}
+		id = id.replace("-vhvlink", "");
+		let helement = document.querySelector("script#" + id);
+		if (!helement) {
+			break;
+		}
+		let text = helement.textContent;
+		text = text.replace(/^\s+/, "", "s");
+		let encoded = btoa(text);
+		let url = `https://verovio.humdrum.org/?k=e&t=${encoded}`;
+		event.preventDefault();
+		event.stopPropagation();
+		window.open(url, "_blank")
+		break;
+	}
+});
 
 </script>
 
