@@ -1,0 +1,79 @@
+
+
+## **adata and **bdata ##
+
+The `**adata` and `**bdata` data types are similar to `**cdata`, but will
+display spines above/below the staff respectively by default.
+
+{% include verovio.html
+	source="adata-bdata"
+	humdrum-min-width="450"
+	scale="55"
+	tabsize="13"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="adata-bdata">
+**kern	**adata-aaa	**adata-bbb	**bdata-ccc	**bdata-ddd
+*M4/4	*	*	*	*
+=	=	=	=	=
+4f	a1	b1	c1	d1
+4g	a2	b2	c2	d2
+4a	a3	b3	c3	d3
+4b	a4	b4	c4	d4
+=	=	=	=	=
+*-	*-	*-	*-	*-
+</script>
+
+
+In addition, the tag after `**adata-` or `**bdata-` will displayed
+as a label before the first data token in the spine:
+
+{% include warning.html
+	content="Currently there is a spacing problem after notes that have labels attached to them (see the [verovio issue](https://github.com/rism-digital/verovio/issues/3307) related to this)."
+%}
+
+Here is an example of placing data text above the staff using the
+[shed](/filter/shed) filter (data labels):
+
+{% include verovio.html
+	source="auto-adata"
+	humdrum-min-width="350"
+	scale="55"
+	tabsize="8"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="auto-adata">
+!!!filter: shed -e "s/^([abc]{3})$/adata-$1/X"
+**kern	**aaa	**bbb	**ccc	**ddd
+*M4/4	*	*	*	*
+=	=	=	=	=
+4f	a1	b1	c1	d1
+4g	a2	b2	c2	d2
+4a	a3	b3	c3	d3
+4b	a4	b4	c4	d4
+=	=	=	=	=
+*-	*-	*-	*-	*-
+</script>
+
+
+Without initial data labels:
+
+{% include verovio.html
+	source="auto-adata-nolabel"
+	humdrum-min-width="350"
+	scale="55"
+	tabsize="8"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="auto-adata-nolabel">
+!!!filter: shed -e "s/^[abc]{3}$/adata/X"
+**kern	**aaa	**bbb	**ccc	**ddd
+*M4/4	*	*	*	*
+=	=	=	=	=
+4f	a1	b1	c1	d1
+4g	a2	b2	c2	d2
+4a	a3	b3	c3	d3
+4b	a4	b4	c4	d4
+=	=	=	=	=
+*-	*-	*-	*-	*-
+</script>

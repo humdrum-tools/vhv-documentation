@@ -482,6 +482,10 @@ entries:
       output: web, pdf
       url: /howto/data-display
 
+    - title: Embedded data URLs
+      output: web, pdf
+      url: /howto/embedded-data-urls
+
     - title: Splits
       output: web, pdf
       url: /howto/splits

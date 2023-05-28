@@ -1,5 +1,5 @@
 ---
-title: "**cdata"
+title: "**adata, **bdata and **cdata"
 lang: en es
 page_language: en
 author: Craig Stuart Sapp
@@ -11,7 +11,7 @@ verovio: "true"
 tags: [all, data_type]
 sidebar: main_sidebar
 keywords: data types
-summary: "**cdata: for general text display as lyric text in music notation."
+summary: "**adata, **bdata and **cdata can be used to display data spines as text in music notation."
 permalink: /spine/cdata/index.html
 ---
 
@@ -224,6 +224,12 @@ to the staff created by the first `**kern` spine found to the left of the `**cda
 *-	*-	*-	*-	*-	*-
 </script>
 
+{% include howto/staff-placement-of-cdata.txt %}
+
+{% include howto/adata-bdata.txt %}
+
+{% include howto/color-data.txt %}
+
 
 ## SVG labeling of data ##
 
@@ -280,7 +286,7 @@ The text coloring and font changes are done with the following CSS code:
 
 ```css
 svg .letter {
-	fill: chartreuse;
+	fill: limegreen;
   	text-shadow: 0px 0px 10px orange;
 }
 
@@ -294,9 +300,8 @@ svg .number {
 
 <style>
 svg .letter {
-	fill: chartreuse;
+	fill: limegreen;
   	text-shadow: 0px 0px 10px orange;
-
 }
 svg .number {
 	fill: hotpink;
@@ -305,7 +310,35 @@ svg .number {
 }
 </style>
 
-See also the [data display how-to](/howto/data-display) for more information (including `**adata` and `**bdata`).
+### Embedded SVG CSS ###
+
+SVG styling can be embedded within the output SVG image of music notation generated
+by verovio.  Here is an example of embedding the SVG styling of data text:
+
+
+{% include verovio.html
+	source="embeddedCss"
+	humdrum-min-width="400"
+	humdrum-min-height="275"
+	tabsize="15"
+	scale="55"
+	pageWidth="1000"
+%}
+<script type="application/x-humdrum" id="embeddedCss">
+**kern	**cdata-letter	**cdata-number
+*M4/4	*	*
+=1	=1	=1
+4B	z	0
+4c	a	1
+4g	b	2
+4d	c	3
+=2	=2	=2
+1f	d	4
+==	==	==
+*-	*-	*-
+!!!verovio: svgCss g.letter { fill: limegreen; text-shadow: 0px 0px 10px orange; }
+!!!verovio: svgCss g.number { fill: hotpink; font-family: Helvetica; font-weight: bold; }
+</script>
 
 
 

@@ -1,0 +1,147 @@
+
+Certain tandem spines are be displayed by default when rendering
+music notation from Humdurm data.  This page describes how to display
+data spines that are otherwise ignored.  This can be done by using
+`**adata`, `**bdata`, `**cdata` or `*vdata` spines to display other
+spine types as lines of text in the music notation.
+
+As an example, `**harm` is one data format that is converted from
+text format into a more graphical form when displaying music:
+
+
+{% include verovio.html
+	source="harm"
+	scale="55"
+	tabsize="15"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="harm">
+**kern	**harm
+*M3/4	*
+*C:	*C:
+=	=
+2.c 2.e 2.g	Ia
+=	=
+2.e 2.g 2.cc	Ib
+=	=
+2.g 2.cc 2.ee	Ic
+=	=
+*-	*-
+</script>
+
+
+Other exclusive interpretations that are displayed by default in
+graphical notation include `**deg`, `**degree`, `**dynam`, `**fb`
+(figured bass), `**fa` (figured bass above the staff), and `**fing`
+(fingerings).
+
+To display `**harm` data spines as text in the score rather than
+graphical renderings, change `**harm` to `**cdata`, where "cdata"
+means "chord-like data":
+
+
+{% include verovio.html
+	source="cdata"
+	scale="55"
+	tabsize="15"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="cdata">
+**kern	**cdata
+*M3/4	*
+*C:	*C:
+=	=
+2.c 2.e 2.g	Ia
+=	=
+2.e 2.g 2.cc	Ib
+=	=
+2.g 2.cc 2.ee	Ic
+=	=
+*-	*-
+</script>
+
+
+The data type of the original spine can be preserved by adding a
+dash after `**cdata` followed by original exclusive interpretation:
+
+
+{% include verovio.html
+	source="cdata-harm"
+	scale="55"
+	tabsize="15"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="cdata-harm">
+**kern	**cdata-harm
+*M3/4	*
+*C:	*C:
+=	=
+2.c 2.e 2.g	Ia
+=	=
+2.e 2.g 2.cc	Ib
+=	=
+2.g 2.cc 2.ee	Ic
+=	=
+*-	*-
+</script>
+
+
+Here is an example of restoring the original exclusive interpretations
+in a file using the [shed](/filter/shed) filter:
+
+
+{% include verovio.html
+	source="cdata-harm3"
+	scale="55"
+	tabsize="15"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="cdata-harm3">
+!!!filter: shed -e s/^cdata-//X
+**kern	**cdata-harm
+*M3/4	*
+*C:	*C:
+=	=
+2.c 2.e 2.g	Ia
+=	=
+2.e 2.g 2.cc	Ib
+=	=
+2.g 2.cc 2.ee	Ic
+=	=
+*-	*-
+</script>
+
+
+Here is an example of showing the original text along with the rendered version
+using the [extract](/filter/extract) and [shed](/filter/shed) filters:
+
+
+{% include verovio.html
+	source="cdata-both"
+	scale="55"
+	tabsize="13"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="cdata-both">
+!!!filter: extract -s 1,2,2 | shed -s $ -e "s/^harm$/cdata-harm/X"
+**kern	**harm
+*M3/4	*
+*C:	*C:
+=	=
+2.c 2.e 2.g	Ia
+=	=
+2.e 2.g 2.cc	Ib
+=	=
+2.g 2.cc 2.ee	Ic
+=	=
+*-	*-
+</script>
+
+
+`extract -s 1,2,2` (no spaces in the spine list unless you enclose
+in quotes) will duplicate the second spine, `shed -s $` applies the
+shed filter only to the last (new) spine, and  `shed -e "s/^harm$/cdata-harm/X`
+changes the exclusive interpretation "harm" to "cdata-harm".
+
+
+

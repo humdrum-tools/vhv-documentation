@@ -1,0 +1,53 @@
+
+
+## Staff placement of **cdata ##
+
+Data can be placed above the staff by using the `*above` tandem
+interpretation, and `*below` to return display of the data spine below the staff.
+
+{% include verovio.html
+	source="cdata-above"
+	scale="55"
+	tabsize="16"
+	pageWidth="1400"
+%}
+<script type="application/x-humdrum" id="cdata-above">
+**kern	**cdata
+*M3/4	*above
+*C:	*C:
+2.c 2.e 2.g	Ia
+=	=
+2.e 2.g 2.cc	Ib
+=	=
+*	*below
+2.g 2.cc 2.ee	Ic
+=	=
+*-	*-
+</script>
+
+
+When there are multiple data spines to display above or below the staff, tandem
+spines from left to right will be placed near to far with respect to the staff:
+
+{% include verovio.html
+	source="cdata-both-place"
+	humdrum-min-width="450"
+	scale="55"
+	tabsize="13"
+	pageWidth="1100"
+%}
+<script type="application/x-humdrum" id="cdata-both-place">
+**kern	**cdata-aaa	**cdata-bbb	**cdata-ccc	**cdata-ddd
+*M4/4	*above	*above	*below	*below
+=	=	=	=	=
+4f	a1	b1	c1	d1
+.	a1.5	.	.	.
+4g	a2	b2	c2	d2
+.	.	b2.5	.	.
+4a	a3	b3	c3	d3
+.	.	.	c3.5	.
+4b	a4	b4	c4	d4
+.	.	.	.	d4.5
+=	=	=	=	=
+*-	*-	*-	*-	*-
+</script>

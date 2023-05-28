@@ -1,0 +1,68 @@
+
+
+
+## **vdata ##
+
+Another text-rendering exclusive interpretation is `**vdata`,  which
+converts data into verse-like text rather than chord-like text. 
+
+{% include verovio.html
+	source="vdata1"
+	humdrum-min-width="350"
+	scale="55"
+	tabsize="8"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="vdata1">
+**kern	**vdata
+*M4/4	*
+=	=
+4f	a1
+4g	a2
+4a	a3
+4b	a4
+=	=
+*-	*-
+</script>
+
+
+{% include note.html
+	content="**vdata cannot be placed above the staff due to current limitations in verovio."
+%}
+
+{% include warning.html
+	content ="A limitation of **vdata is that it can only be displayed if there is a note to attached to in the associated **kern data at the same time instant; otherwise, an unattached data token will not be displayed in the score."
+%}
+
+Here is an example of given a label to the spine data in the score `*v:` followed by a label will
+be displayed at the start of the music, and `*vv:` labels will repeat at the start of each system.
+This feature is not available for `**adata`, `**bdata` or `**cdata`.
+
+
+{% include verovio.html
+	source="vdata2"
+	humdrum-min-width="350"
+	scale="55"
+	tabsize="8"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="vdata2">
+**kern	**vdata
+*M4/4	*
+*	*v:data:
+*	*vv:D:
+=	=
+1f	a1
+=	=
+1g	a2
+=	=
+1a	a3
+=	=
+1b	a4
+=	=
+1cc	a5
+=	=
+1dd	a6
+=	=
+*-	*-
+</script>

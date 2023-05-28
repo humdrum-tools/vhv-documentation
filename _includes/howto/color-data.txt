@@ -1,0 +1,23 @@
+
+## Coloring data ##
+
+Each data spine's text can be given a different color:
+
+{% include verovio.html
+	source="color"
+	humdrum-min-width="350"
+	scale="55"
+	tabsize="16"
+	pageWidth="800"
+%}
+<script type="application/x-humdrum" id="color">
+**kern	**cdata-aaa	**cdata-bbb	**cdata-ccc
+*M4/4	*color:red	*	*color:limegreen
+=	=	=	=
+4f	a1	b1	c1
+4g	a2	b2	c2
+4a	a3	b3	c3
+4b	a4	b4	c4
+=	=	=	=
+*-	*-	*-	*-
+</script>
