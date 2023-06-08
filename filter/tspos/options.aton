@@ -1,0 +1,81 @@
+@@BEGIN: OPTIONS
+@TOOL: tspos
+
+@@BEGIN: OPTION
+@DEFINITION: 3|no-thirds=b
+@ARGUMENT:
+@SUMMARY: Do not include incomplete triads that are only thirds in analyses.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: 5|no-fifths=b
+@ARGUMENT:
+@SUMMARY: Do not include incomplete triads that are only fifths in analyses.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: T|no-triads=b
+@ARGUMENT:
+@SUMMARY: Do not include complete triads (incomplete triads containing only thirds and/or fifths).
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: d|double=b
+@ARGUMENT:
+@SUMMARY: Highlight only doubled pitch classs in triads.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: d|double=b
+@ARGUMENT:
+@SUMMARY: Highlight only doubled pitch classs in triads.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: x|attacks=b
+@ARGUMENT:
+@SUMMARY: Analyze sonorities that have at least three unique
+	traid pitch-classes (other voices may sustain the 
+	same pitch classes from a previous sonority).
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: v|voice-count=i:0
+@ARGUMENT:
+@SUMMARY: Analyze only sonorities with the given number of 
+	sounding pitches (sustained or attacked).  Zero voices
+	means any number of voices.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: e|even-note-spacing=b
+@ARGUMENT:
+@SUMMARY: Add the verovio option to condense the notation
+	(so that more notation can be seen at the same time).
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: top=b
+@ARGUMENT:
+@SUMMARY: Add the verovio option to condense the notation
+	(so that more notation can be seen at the same time).
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: t|table=b
+@ARGUMENT:
+@SUMMARY: Display a statistics table showing the number
+	of triad degrees used by each voice.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: V|all-voices=b
+@ARGUMENT:
+@SUMMARY: Require all voices in score to be sounding
+	(full texture of score).
+@@END: OPTION
+
+@@END: OPTIONS
+
+
+

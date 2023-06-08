@@ -446,6 +446,10 @@ entries:
       output: web, pdf
       url: /filter/transpose
 
+    - title: tspos
+      output: web, pdf
+      url: /filter/tspos
+
 ###########################################################################
 
   - title: Embedded options
