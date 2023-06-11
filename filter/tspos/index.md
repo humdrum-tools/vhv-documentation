@@ -10,15 +10,17 @@ tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
-summary: "Analyze triadic positions in sonorities."
+summary: "identify root/third/fifth positions of notes in triadic sonorities."
 permalink: /filter/tspos/index.html
 ---
 
-The `tspos` filter identifies triadic sonorities (diminished, minor,
-major, and augmented triads).  The root of the triad is colored
-red, the third green and the fifth blue.  This tool is useful to
-visualize the triad degree used in each voice, as well as extra
-statistics about the invarions these triads.
+The `tspos` filter identifies, labels and analyzes triadic sonorities
+(diminished, minor, major, and augmented triads).  The <span
+style="color:#DC143C;">root</span> of the triad is colored red, the
+<span style="color:#32CD32;">third</span> green, and the <span
+style="color:#4169E1;">fifth</span> blue.  This tool is useful to
+visualize the triadic degrees used in each voice, as well as
+statistics about the inversions these triads.
 
 Here is a basic example:
 
@@ -27,7 +29,7 @@ Here is a basic example:
 	humdrum-min-width="250px"
 	humdrum-max-height="250px"
 	pageMarginTop="60"
-	scale="50"
+	scale="40"
 %}
 <script type="application/x-humdrum" id="basic">
 !!!filter: tspos
@@ -43,7 +45,5 @@ Here is a basic example:
 ## Options ##
 
 {% include filter-options.html file="options.aton" lang="EN" %}
-
-
 
 
