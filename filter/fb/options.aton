@@ -97,4 +97,10 @@
 @SUMMARY: Shortcut for -acorn3
 @@END: OPTION
 
+@@BEGIN: OPTION
+@DEFINITION: hint=b
+@ARGUMENT:
+@SUMMARY: Determine harmonic intervals with interval quality
+@@END: OPTION
+
 @@END: OPTIONS
