@@ -837,6 +837,81 @@ future.
 
 
 
+## Interval quality ##
+
+Similar to the [`hint`
+command](https://www.humdrum.org/Humdrum/commands/hint.html) of the
+original Humdrum Toolkit, it is possible to display the intervals with
+their interval quality by using the `--hint` option. This option uses
+a `**hint` spine instead of `**fb`. For example, this option encodes a
+perfect fifth as `P5` or a major sixth as `M6`. You probably want to
+use this option in combination with `-c` to display the intervals as
+non-compound intervals. Note that intervals are always calculated with
+the lowest note as base when `--hint` is enabled. Otherwise
+`diminished` and `augmented` intervals will be displayed incorrectly.
+
+Unlike the `hint` command of the original Humdrum Toolkit, with this
+option null tokens in a harmonix interval will always contain the
+calculated intervals with their quality.
+
+If you apply `fb --hint -c` to this input data:
+
+{% include verovio.html
+	source="hint_input"
+	humdrum-min-height="250px"
+	humdrum-max-height="460px"
+	humdrum-max-width="260px"
+	humdrum-min-width="260px"
+	humdrum-width="260px"
+	spacingSystem="0"
+	scale="45"
+	tabsize="10"
+	pageWidth="1200"
+%}
+<script type="application/x-humdrum" id="hint_input">
+**kern	**kern
+*k[b-e-]	*k[b-e-]
+*g:	*g:
+*	*
+1E- 1G	4b-
+.	4b
+.	4cc
+.	4cc#
+=	=
+1D 1F#	1dd
+*-	*-
+</script>
+
+you will get this output:
+
+{% include verovio.html
+	source="hint_output"
+	humdrum-min-height="250px"
+	humdrum-max-height="460px"
+	humdrum-max-width="260px"
+	humdrum-min-width="260px"
+	humdrum-width="260px"
+	spacingSystem="0"
+	scale="45"
+	tabsize="10"
+	pageWidth="1200"
+%}
+<script type="application/x-humdrum" id="hint_output">
+**kern	**hint	**kern
+*k[b-e-]	*	*k[b-e-]
+*g:	*	*g:
+*	*	*
+1E- 1G	P5 M3	4b-
+.	A5 M3	4b
+.	M6 M3	4cc
+.	A6 M3	4cc#
+=	=	=
+1D 1F#	P8 M3	1dd
+*-	*-	*-
+</script>
+
+
+
 ## Aliases ##
 
 <a name="option-f"></a>
