@@ -143,7 +143,7 @@ meters containing 2, 3 and or 4 beats respectively.  To switch to
 a simple metric interpretation of such meters, us `*beat:8` to
 define the beat as an eighth note rather than a dotted quarter note.
 Using `*beat:4.` will redefine the beat as a dotted quarter note.
-Note that the beat defintion will be cleared whenever there is a
+Note that the beat definition will be cleared whenever there is a
 new time signature found for in the given spine.
 
 {% include verovio.html
@@ -223,7 +223,7 @@ of the music:
 </script>
 
 Adding the `-r` option will add metric positions for rests, adding "r" after 
-the position value to distinguist it from notes:
+the position value to distinguish it from notes:
 
 {% include verovio.html
 	source="rest2"
