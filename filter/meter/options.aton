@@ -1,0 +1,47 @@
+@@BEGIN:	OPTIONS
+@TOOL:		meter
+
+@@BEGIN:	OPTION
+@CATEGORY:	General options
+@DEFINITION:	f|float=b
+@SUMMARY:	Display beat positions as floating-point numbers instead of rational numbers.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	r|rest=b
+@SUMMARY:	Extract metric positions of rests as well as notes.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	z|zero=b
+@SUMMARY:	Display beat positions starting from zero rather than one.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	c|comma=b
+@SUMMARY:	Display comma instead of decimal points (when using -f option).
+@@END: 		OPTION
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	OPTION
+@CATEGORY:	Time signature information
+@DEFINITION:	t|time-signature|tsig|m|meter=b
+@SUMMARY:	Extract time signature for each note into separate analysis spine for each kern spine.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	n|numerator=b
+@SUMMARY:	Extract top of time signature for each note into sepearate analysis spine..
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	d|denominator=b
+@SUMMARY:	Extract bottom of time signature for each note into sepearate analysis spine.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	B|no-beat=b
+@SUMMARY:	Do not display beat positions (useful for extracting only time signature information).
+@@END: 		OPTION
+

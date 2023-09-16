@@ -406,6 +406,10 @@ entries:
       output: web, pdf
       url: /filter/melisma
 
+    - title: meter
+      output: web, pdf
+      url: /filter/meter
+
     - title: modori
       output: web, pdf
       url: /filter/modori
