@@ -1,0 +1,50 @@
+
+@@BEGIN:	OPTIONS
+@TOOL:		autostem
+
+@@BEGIN:	OPTION
+@CATEGORY:	General options
+@DEFINITION:	r|remove=b
+@SUMMARY:	Remove stems.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	R|removeall=b
+@SUMMARY:	Remove all stems including explicit beams.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	o|overwrite|replace=b
+@SUMMARY:	Overwrite non-explicit stems.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	O|overwriteall|replaceall=b
+@SUMMARY:	Overwrite all stems.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	L|no-long|not-long|not-longs=b
+@SUMMARY:	Do not put stems on whole notes or breves.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	u|up=b
+@SUMMARY:	Middle note on staff has stem up.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	p|pos=b
+@SUMMARY:	Display only note vertical positions on staves.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	v|voice=b
+@SUMMARY:	Display only voice/layer information.
+@@END: 		OPTION
+
+
+
+@@END:	OPTIONS
+
+

@@ -334,9 +334,21 @@ entries:
       output: web, pdf
       url: /filter/url
 
+    - title: autoaccid
+      output: web, pdf
+      url: /filter/autoaccid
+
     - title: autobeam
       output: web, pdf
       url: /filter/autobeam
+
+    - title: autostem
+      output: web, pdf
+      url: /filter/autostem
+
+    - title: chantize
+      output: web, pdf
+      url: /filter/chantize
 
     - title: chooser
       output: web, pdf
@@ -413,6 +425,10 @@ entries:
     - title: modori
       output: web, pdf
       url: /filter/modori
+
+    - title: msearch
+      output: web, pdf
+      url: /filter/msearch
 
     - title: myank
       output: web, pdf

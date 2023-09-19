@@ -1,0 +1,68 @@
+
+@@BEGIN:	OPTIONS
+@TOOL:		msearch
+
+@@BEGIN:	OPTION
+@CATEGORY:	Search options
+@DEFINITION:	q|query=s
+@SUMMARY:	Combined rhythm/pitch query.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	p|pitch=s
+@SUMMARY:	Pitch-class query to search for.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	i|interval=s
+@SUMMARY:	Interval query to search for.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	r|rhythm|duration=s
+@SUMMARY:	Rhythm query to search for.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	t|text=s
+@SUMMARY:	Lyrical text to search for.
+@@END: 		OPTION
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	OPTION
+@CATEGORY:	Search qualifiers
+@DEFINITION:	O|no-overlap=b
+@SUMMARY:	Do not allow matches to overlap.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	x|cross=b
+@SUMMARY:	Search across parts.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	c|color=s
+@SUMMARY:	Highlighting color
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	m|mark|marker=s
+@DEFAULT:	@
+@SUMMARY:	do not mark matches
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	M|no-mark|no-marker=b
+@SUMMARY:	do not mark matches
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	Q|quiet=b
+@SUMMARY:	Quiet mode: do not summarize matches.
+@@END: 		OPTION
+
+
+@@END:	OPTIONS

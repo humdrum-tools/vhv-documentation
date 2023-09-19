@@ -1,0 +1,59 @@
+
+
+@@BEGIN:	OPTIONS
+@TOOL:		chantize
+
+@@BEGIN:	OPTION
+@CATEGORY:	General options
+@DEFINITION:	R|no-reference-records=b
+@SUMMARY:	Do not add reference records.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	r|only-add-reference-records=b
+@SUMMARY:	Only add reference records.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	B|do-not-delete-breaks=b
+@SUMMARY:	Do not delete system/page break markers.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	b|only-delete-breaks=b
+@SUMMARY:	Only delete system/page breaks.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	A|do-not-fix-instrument-abbreviations=b
+@SUMMARY:	Do not fix instrument abbreviations.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	a|only-fix-instrument-abbreviations=b
+@SUMMARY:	Only fix instrument abbreviations.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	E|do-not-fix-editorial-accidentals=b
+@SUMMARY:	Do not fix editorial accidentals.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	e|only-fix-editorial-accidentals=b
+@SUMMARY:	Only fix editorial accidentals.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	N|do-not-remove-empty-transpositions=b
+@SUMMARY:	Do not remove empty transposition instructions.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	n|only-remove-empty-transpositions=b
+@SUMMARY:	Only remove empty transposition instructions.
+@@END: 		OPTION
+
+@@END:	OPTIONS
+
+

@@ -14,9 +14,13 @@ summary:
 permalink: /filter/chantize/index.html
 ---
 
+Convert raw MusicXML entry of chant notation into
+a more direct chant representation.
 
 
+<h2> Options </h2>
 
+{% include filter-options.html file="options.aton" lang="EN" %}
 
 
 

@@ -1,0 +1,61 @@
+
+
+
+@@BEGIN:	OPTIONS
+@TOOL:		chord
+
+@@BEGIN:	OPTION
+@CATEGORY:	General options
+@DEFINITION:	u|sort-upwards=b
+@SUMMARY:	Sort notes from lowest first in chord.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	d|sort-downwards=b
+@SUMMARY:	Sort notes from highest first in chord.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	t|top-note=b
+@SUMMARY:	Extract top note of chords.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	b|bottom-note=b
+@SUMMARY:	Extract bottom  note of chords.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	f|first-note=b
+@SUMMARY:	Extract first note of chords.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	p|primary=b
+@SUMMARY:	Place prefix/suffic/beams on first note in chord.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	l|last-note=b
+@SUMMARY:	Extract last note of chords.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	s|spine=b
+@SUMMARY:	Spine to process (indexed from 1)
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	m|minimize=b
+@SUMMARY:	Minimize chord.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	M|maximize=b
+@SUMMARY:	Maximize chord.
+@@END: 		OPTION
+
+@@END:	OPTIONS
+
+
+

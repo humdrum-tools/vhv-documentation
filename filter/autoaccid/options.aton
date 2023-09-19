@@ -1,0 +1,29 @@
+
+@@BEGIN:	OPTIONS
+@TOOL:		autoaccid
+
+@@BEGIN:	OPTION
+@CATEGORY:	General options
+@DEFINITION:	x|visual=b
+@SUMMARY:	Mark visual accidentals only.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	y|suppressed=b
+@SUMMARY:	Mark hidden accidentals only.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	r|remove=b
+@SUMMARY:	Remove accidental qualifications.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	c|keep-cautionary|keep-courtesy|cautionary|caution|courtesy=b
+@SUMMARY:	Keep cautionary accidentals when removing markers.
+@@END: 		OPTION
+
+
+@@END:	OPTIONS
+
+

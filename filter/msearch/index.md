@@ -14,6 +14,15 @@ summary:
 permalink: /filter/msearch/index.html
 ---
 
+The `msearch` tool stands for "music search".  It can be used
+to search for melodic and harmonic sequences in and across
+kern spines.
+
+
+<h2> Options </h2>
+
+{% include filter-options.html file="options.aton" lang="EN" %}
+
 
 
 
