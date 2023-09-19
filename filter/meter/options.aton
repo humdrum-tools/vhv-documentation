@@ -3,6 +3,11 @@
 
 @@BEGIN:	OPTION
 @CATEGORY:	General options
+@DEFINITION:	c|comma=b
+@SUMMARY:	Display comma instead of decimal points (when using -f option).
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
 @DEFINITION:	f|float=b
 @SUMMARY:	Display beat positions as floating-point numbers instead of rational numbers.
 @@END: 		OPTION
@@ -18,8 +23,14 @@
 @@END: 		OPTION
 
 @@BEGIN:	OPTION
-@DEFINITION:	c|comma=b
-@SUMMARY:	Display comma instead of decimal points (when using -f option).
+@DEFINITION:	D|digits=i:0
+@SUMMARY:	Number of digits for -f option.  An integer from 0 to 15 with 0 meaning default number of digits.
+@DEFAULT:	0
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	L|no-label=b
+@SUMMARY:	Do not display labels at starts of analysis spines.
 @@END: 		OPTION
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -31,17 +42,59 @@
 @@END: 		OPTION
 
 @@BEGIN:	OPTION
+@DEFINITION:	d|denominator=b
+@SUMMARY:	Extract bottom of time signature for each note into sepearate analysis spine.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
 @DEFINITION:	n|numerator=b
 @SUMMARY:	Extract top of time signature for each note into sepearate analysis spine..
 @@END: 		OPTION
 
 @@BEGIN:	OPTION
-@DEFINITION:	d|denominator=b
-@SUMMARY:	Extract bottom of time signature for each note into sepearate analysis spine.
+@DEFINITION:	j|join=b
+@SUMMARY:	Join time signature information into single spine with beat positions.
 @@END: 		OPTION
 
 @@BEGIN:	OPTION
 @DEFINITION:	B|no-beat=b
 @SUMMARY:	Do not display beat positions (useful for extracting only time signature information).
 @@END: 		OPTION
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	OPTION
+@CATEGORY:	Fix-size metric units
+@DEFINITION:	w|whole=b
+@SUMMARY:	Show metric positions in whole note units rather than beats.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	h|half=b
+@SUMMARY:	Show metric positions in half note units rather than beats.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	q|quarter=b
+@SUMMARY:	Show metric positions in quarter note units rather than beats.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	e|eighth=b
+@SUMMARY:	Show metric positions in eighth note units rather than beats.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	s|sixteenth=b
+@SUMMARY:	Show metric positions in eighth note units rather than beats.
+@@END: 		OPTION
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	OPTION
+@CATEGORY:	Tandem interpretations
+@TANDEM:	beat
+@SUMMARY:	Set the duration of a beat (to distinguish between simple and compound meters sharing the same time signature).
+@@END: 		OPTION
+
 

@@ -41,7 +41,11 @@ span.option-name.single::before {
 	content: "-"
 }
 
-span.option-question {
+span.option-name.star::before {
+	content: "*"
+}
+
+span.option-question, span.tandem-question {
 	font-size: 2.25rem;
 	color: tan;
 	position: relative;
@@ -50,11 +54,11 @@ span.option-question {
 	display: none;
 }
 
-span.option-question.active {
+span.option-question.active, span.tandem-question.active {
 	display: inline-block;
 }
 
-span.option-question.active:hover {
+span.option-question.active:hover, span.tandem-question.active:hover {
 	color: crimson;
 }
 
@@ -118,21 +122,33 @@ function prepareOptions(optionList, selector) {
 //
 
 function addQuestionPointers() {
+
 	let list = document.querySelectorAll("td.filter-option .option-question");
-	console.log("LIST", list);
 	for (let i=0; i<list.length; i++) {
 		let entry = list[i];
 		let option = entry.dataset["option"];
-		console.warn("OPTION", option);
 		let name = `option-${option}`;
 		let selector = `a[name="${name}"]`;
 		let element = document.querySelector(selector);
-		console.warn("SELECTOR", selector, element);
 		if (element) {
-			console.log("ACTIVATING", element);
 			entry.classList.add("active");
 		}
 	}
+
+	list = document.querySelectorAll("td.filter-option .tandem-question");
+console.error("LIST===============", list);
+	for (let i=0; i<list.length; i++) {
+		let entry = list[i];
+		let option = entry.dataset["tandem"];
+		let name = `tandem-${option}`;
+console.warn("NAME", name);
+		let selector = `a[name="${name}"]`;
+		let element = document.querySelector(selector);
+		if (element) {
+			entry.classList.add("active");
+		}
+	}
+
 }
 
 
@@ -145,8 +161,20 @@ function addQuestionPointers() {
 function gotoDocumentation(element) {
 	console.log("EVENT", element);
 	let option = element.dataset["option"];
-	console.warn("OPTION", option);
-	let name = `option-${option}`;
+	let tandem;
+	if (!option) {
+		tandem = element.dataset["tandem"];
+	}
+	if (!option && !tandem) {
+		console.error("OPTION/TANDEM UNDEFINED FOR", element);
+	}
+	console.warn("OPTION", option, "TANDEM", tandem);
+	let name;
+	if (option) {
+		name = `option-${option}`;
+	} else if (tandem) {
+		name = `tandem-${tandem}`;
+	}
 	let target = document.querySelector(`a[name="${name}"]`);
 	if (target) {
 		const yOffset = -120;  // needed to make visible below the header
@@ -163,29 +191,42 @@ function gotoDocumentation(element) {
 //
 
 function prepareOptionEntry(entry) {
+console.warn("ENTRY", entry);
 	let output = "";
 	let definition = entry.DEFINITION;
+	let tandem = entry.TANDEM;
 	let summary = entry.SUMMARY;
 	let dtype = "";
-	let matches = definition.match(/=([a-z])/);
+	let matches;
+	if (definition) {
+		matches = definition.match(/=([a-z])/);
+	}
 	if (matches) {
 		dtype = matches[1];
 	}
 	let odefault = "";
-	matches = definition.match(/:(.*)/);
+	if (definition) {
+		matches = definition.match(/:(.*)/);
+	}
 	if (matches) {
 		odefault = matches[1];
 	}
 	if (!dtype) {
-		return output;
+		if (!tandem) {
+			return output;
+		}
 	}
 	let argument = entry.ARGUMENT;
 	let optionName = "";
-	matches = definition.match(/^([^|=]+)/);
+	if (definition) {
+		matches = definition.match(/^([^|=]+)/);
+	}
 	if (matches) {
 		optionName = matches[1];
 	} else {
-		return output;
+		if (!tandem) {
+			return output;
+		}
 	}
 	let dashes = "single";
 	if (optionName.length > 1) {
@@ -202,11 +243,19 @@ function prepareOptionEntry(entry) {
 	output += "<tr>";
 
 	output += "<td class='filter-option'>";
-	output += `<span data-option="${optionName}" `;
-	output += `title="Go to documentation about the ${optionName} option" `;
-	output += `onclick="gotoDocumentation(this)" class='option-question'>`;
-	output += `<i class="fa fa-question-circle" aria-hidden="true"></i></span>`;
-	output += `<span class='option-name ${dashes}'>${optionName}</span>`;
+	if (definition) {
+		output += `<span data-option="${optionName}" `;
+		output += `title="Go to documentation about the ${optionName} option" `;
+		output += `onclick="gotoDocumentation(this)" class='option-question'>`;
+		output += `<i class="fa fa-question-circle" aria-hidden="true"></i></span>`;
+		output += `<span class='option-name ${dashes}'>${optionName}</span>`;
+	} else if (tandem) {
+		output += `<span data-tandem="${tandem}" `;
+		output += `title="Go to documentation about the ${tandem} tandem interpretation" `;
+		output += `onclick="gotoDocumentation(this)" class='tandem-question'>`;
+		output += `<i class="fa fa-question-circle" aria-hidden="true"></i></span>`;
+		output += `<span class='option-name star'>${tandem}</span>`;
+	}
 	if (dtype === "b") {
 		// boolean
 	} else if (dtype === "s") {
@@ -255,7 +304,6 @@ function prepareOptionEntry(entry) {
 
 
 </script>
-
 
 
 
