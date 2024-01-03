@@ -44,7 +44,6 @@
 		minLastJustification default 0.80
 		uri
 		filter
-
 -->
 
 <script>
@@ -140,6 +139,8 @@ window.addEventListener("DOMContentLoaded", function () {
 }
 </style>
 
+<div class="humdrum">
+<div style="display:none;" id="PREHTML-{{include.source}}"></div>
 <table class="humdrum-verovio">
 <tbody>
 <tr valign="top">
@@ -172,6 +173,8 @@ window.addEventListener("DOMContentLoaded", function () {
 </tr>
 </tbody>
 </table>
+<div style="display:none;" id="POSTHTML-{{include.source}}"></div>
+</div>
 
 <script>
 
@@ -180,7 +183,6 @@ window.addEventListener("DOMContentLoaded", function () {
 // Now the script is loaded after the webpage, so the function
 // below needs to be called after loading the verovio-toolkit script
 // onto the webpage.
-
 
 </script>
 

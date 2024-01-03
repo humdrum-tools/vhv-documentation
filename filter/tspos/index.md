@@ -10,7 +10,7 @@ tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"
 keywords: interface commands 
-summary: "identify root/third/fifth positions of notes in triadic sonorities."
+summary: "Identify root/third/fifth positions of notes in triadic sonorities."
 permalink: /filter/tspos/index.html
 ---
 
@@ -45,5 +45,10 @@ Here is a basic example:
 ## Options ##
 
 {% include filter-options.html file="options.aton" lang="EN" %}
+
+## Data summary table ##
+
+{% include_relative table.html %}
+
 
 
