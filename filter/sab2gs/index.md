@@ -1,10 +1,10 @@
 ---
 title: sab2gs filter
-lang: en es
+lang: en
 page_language: en
 author: Craig Stuart Sapp
 creation_date: 1 Apr 2024
-last_updated:
+last_updated: 1 Apr 2024
 ref: filters-sab2gs
 tags: [all, filters]
 sidebar: main_sidebar
