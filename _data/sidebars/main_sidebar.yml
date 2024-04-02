@@ -438,6 +438,10 @@ entries:
       output: web, pdf
       url: /filter/rid
 
+    - title: sab2gs
+      output: web, pdf
+      url: /filter/sab2gs
+
     - title: satb2gs
       output: web, pdf
       url: /filter/satb2gs
