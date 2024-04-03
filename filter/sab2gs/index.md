@@ -14,30 +14,156 @@ summary:
 permalink: /filter/sab2gs/index.html
 ---
 
-The sab2gs filter can be used convert SAB (or STB) arrangement of parts on three
-staves into a two-staff grand staff arrangement.
+The sab2gs filter can be used convert SAB (or STB) arrangement of
+parts on three staves into a two-staff grand staff arrangement.
 
-The middle voice will be associated with the top staff.  To move the middle
-voice to the bottom staff, add a `*clefF4` interpretation.  Then to move
-back to the top staff by using `*clefG2` in the middle voice.
-
-An alternate method that can be used by itself or by mixing with the clef 
-method: use `*down` to move the middle voice to the bottom staff, and `*Xdown`
-to move back to the top staff.
-
-Here is an example of processing a Bach three-part invention.  In this case
-the bottom staff changes to `*clefG2`, requiring using `*down` to move the
-middle voice to the bottom staff (although `*clefF4` could be used, but it
-would not look good in open-score format being displayed in the wrong clef.
+The middle voice will be associated with the top staff.  To move
+the middle voice to the bottom staff, add a `*clefF4` interpretation.
+Then to move back to the top staff by using `*clefG2` in the middle
+voice.
 
 {% include verovio.html
-	source="sonfonia11"
+	source="clef"
+	scale="40"
+	pageWidth="1350"
+	tabsize="10"
+	humdrum-min-height="410px"
+%}
+<script type="text/x-humdrum" id="clef">
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*clefF4	*clefG2	*clefG2
+*M4/4	*M4/4	*M4/4
+=1	=1	=1
+4C	4g	4ee
+2E	8eL	4dd
+.	8dJ	.
+.	8cL	8ccL
+*	*clefF4	*
+.	16BL	8eeJ
+.	16GJJ	.
+4A	8AL	4ff
+*	*clefG2	*
+.	8aJ	.
+=2	=2	=2
+1c	1g	1ee
+=	=	=
+*-	*-	*-
+!!!verovio: spacingStaff 8
+</script>
+
+{% include verovio.html
+	source="clef2"
+	scale="40"
+	pageWidth="1350"
+	tabsize="10"
+	humdrum-min-height="410px"
+%}
+<script type="text/x-humdrum" id="clef2">
+!!!filter: sab2gs
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*clefF4	*clefG2	*clefG2
+*M4/4	*M4/4	*M4/4
+=1	=1	=1
+4C	4g	4ee
+2E	8eL	4dd
+.	8dJ	.
+.	8cL	8ccL
+*	*clefF4	*
+.	16BL	8eeJ
+.	16GJJ	.
+4A	8AL	4ff
+*	*clefG2	*
+.	8aJ	.
+=2	=2	=2
+1c	1g	1ee
+=	=	=
+*-	*-	*-
+!!!verovio: spacingStaff 8
+</script>
+
+An alternate method that can be used by itself or by mixing with
+the clef method: use `*down` to move the middle voice to the bottom
+staff, and `*Xdown` to move back to the top staff.  This allows the
+middle staff to have its own clefs in open-score format.
+
+{% include verovio.html
+	source="down"
+	scale="40"
+	pageWidth="1350"
+	tabsize="10"
+	humdrum-min-height="410px"
+%}
+<script type="text/x-humdrum" id="down">
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*clefF4	*clefG2	*clefG2
+*M4/4	*M4/4	*M4/4
+=1	=1	=1
+4C	4g	4ee
+2E	8eL	4dd
+.	8dJ	.
+.	8cL	8ccL
+*	*down	*
+.	16BL	8eeJ
+.	16GJJ	.
+4A	8AL	4ff
+*	*Xdown	*
+.	8aJ	.
+=2	=2	=2
+1c	1g	1ee
+=	=	=
+*-	*-	*-
+!!!verovio: spacingStaff 8
+</script>
+
+{% include verovio.html
+	source="down2"
+	scale="40"
+	pageWidth="1350"
+	tabsize="10"
+	humdrum-height="250px"
+	humdrum-min-height="410px"
+%}
+<script type="text/x-humdrum" id="down2">
+!!!filter: sab2gs
+**kern	**kern	**kern
+*staff3	*staff2	*staff1
+*clefF4	*clefG2	*clefG2
+*M4/4	*M4/4	*M4/4
+=1	=1	=1
+4C	4g	4ee
+2E	8eL	4dd
+.	8dJ	.
+.	8cL	8ccL
+*	*down	*
+.	16BL	8eeJ
+.	16GJJ	.
+4A	8AL	4ff
+*	*Xdown	*
+.	8aJ	.
+=2	=2	=2
+1c	1g	1ee
+=	=	=
+*-	*-	*-
+!!!verovio: spacingStaff 8
+</script>
+
+Here is an example of processing a Bach three-part invention.  In
+this case the bottom staff changes to `*clefG2`, requiring using
+`*down` to move the middle voice to the bottom staff (although
+`*clefF4` could be used, but it would not look good in open-score
+format being displayed in the wrong clef.
+
+{% include verovio.html
+	source="sinfonia11"
 	scale="40"
 	pageWidth="1350"
 	tabsize="10"
 %}
-
-<script type="application/json" id="sinfonia11">
+<script type="text/x-humdrum" id="sinfonia11">
+!!!filter: sab2gs
 !!!COM: Bach, Johann Sebastian
 !!!CDT: 1685/03/31-1750/07/28
 !!!OTL: Sinfonia 11 in G minor
