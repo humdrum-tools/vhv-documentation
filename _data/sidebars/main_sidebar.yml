@@ -398,6 +398,10 @@ entries:
       output: web, pdf
       url: /filter/half
 
+    - title: humbreak
+      output: web, pdf
+      url: /filter/humbreak
+
     - title: humdiff
       output: web, pdf
       url: /filter/humdiff

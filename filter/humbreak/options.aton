@@ -1,0 +1,41 @@
+@@BEGIN: OPTIONS
+@TOOL: humbreak
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: m|measures=s
+@ARGUMENT: measure-list
+@SUMMARY: Comma-seprated list of measures to apply line breaks to (at start of measures).
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: p|page-breaks=s
+@ARGUMENT: measure-list
+@SUMMARY: Comma-seprated list of measures to apply page breaks to (at start of measures).
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: g|group=s:original
+@ARGUMENT: label
+@SUMMARY: group label to apply to breaks.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: r|remove-breaks=b
+@ARGUMENT: 
+@SUMMARY: Remove line/page breaks.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: l|page-to-line-breaks=b
+@ARGUMENT: 
+@SUMMARY: Convert page breaks to line breaks.
+@@END: OPTION
+
+@@END: OPTIONS
+
+
