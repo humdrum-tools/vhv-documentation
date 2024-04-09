@@ -152,6 +152,10 @@ entries:
       output: web, pdf
       url: /commands/alt-v
 
+    - title: <span class="keypress">alt-X</span>&colon; Toggle caut. acc.
+      output: web, pdf
+      url: /commands/alt-shift-x
+
 ###########################################################################
 
   - title: Graphic editing
