@@ -23,11 +23,13 @@ Here's an example of cautionary accidental highlighting after using
 the <span class="keypress">alt-shift-x</span> key combination:
 
 {% include image.html
-    file="textlayout.gif"
-    alt="adding a layout command."
+    file="caution-accid.png"
+    alt="displaying cautionary accidentals."
     max-width="75%"
-    caption="Adding a layout command after pressing alt-shift-x."
+    caption="Highlighting cautionary accidentals after pressing alt-shift-x."
 %}
+
+View example score in VHV: [Vivaldi, op. 1, no. 1, mvt. 5](https://verovio.humdrum.org/?file=vivaldi/op01/vivaldi-op01n01m05.krn&k=X)
 
 Pink accidentals represent cautionary ones. In measures 2 and 3,
 accidentals aren't really necessary since the same pitch has already been
