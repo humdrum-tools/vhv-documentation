@@ -24,7 +24,7 @@
 
 @@BEGIN: OPTION
 @CATEGORY: 
-@DEFINITION: r|remove-breaks=b
+@DEFINITION: r|remove|remove-breaks=b
 @ARGUMENT: 
 @SUMMARY: Remove line/page breaks.
 @@END: OPTION
