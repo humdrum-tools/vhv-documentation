@@ -152,7 +152,7 @@ entries:
       output: web, pdf
       url: /commands/alt-v
 
-    - title: <span class="keypress">alt-X</span>&colon; cautionary acc.
+    - title: <span class="keypress">alt-X</span>&colon; Cautionary acc.
       output: web, pdf
       url: /commands/alt-shift-x
 
