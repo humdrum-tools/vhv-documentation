@@ -338,6 +338,10 @@ entries:
       output: web, pdf
       url: /filter/url
 
+    - title: addtempo
+      output: web, pdf
+      url: /filter/addtempo
+
     - title: autoaccid
       output: web, pdf
       url: /filter/autoaccid

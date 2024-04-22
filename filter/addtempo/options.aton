@@ -1,0 +1,14 @@
+@@BEGIN: OPTIONS
+@TOOL: thru
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: q|quarter-notes-per-minute=b
+@ARGUMENT:
+@SUMMARY: Set initial tempo to given tempo in units of quarter notes per minute.
+@@END: OPTION
+
+@@END: OPTIONS
+
+
+
