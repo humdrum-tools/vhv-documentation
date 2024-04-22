@@ -474,6 +474,10 @@ entries:
       output: web, pdf
       url: /filter/synco
 
+    - title: thru
+      output: web, pdf
+      url: /filter/thru
+
     - title: transpose
       output: web, pdf
       url: /filter/transpose

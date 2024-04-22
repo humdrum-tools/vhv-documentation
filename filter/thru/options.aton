@@ -1,0 +1,42 @@
+@@BEGIN: OPTIONS
+@TOOL: thru
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: k|keep=b
+@ARGUMENT:
+@SUMMARY: Keep expansion lists in output.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: i|info=b
+@ARGUMENT:
+@SUMMARY: Print info list of labels in file. (What is the difference copared to <code>-l</code>?)
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: l|list=b
+@ARGUMENT:
+@SUMMARY: Display a list of labels within the file.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: v|variant|variation=s
+@ARGUMENT: variant
+@SUMMARY: Choose expansion list to process (if not default expansion list).
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: r|realization=s
+@ARGUMENT: lable-list
+@SUMMARY: Alternate realization label sequence (similar to <code>-v</code>, but create a sequence not defined in embedded expansion lists.
+@@END: OPTION
+
+@@END: OPTIONS
+
+
+
