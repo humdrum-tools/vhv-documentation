@@ -1,0 +1,32 @@
+@@BEGIN: OPTIONS
+@TOOL: addkey
+
+d|default=s:   Default expansion list
+r|norep=s:     norep expansion list
+l|labels=s:    List of labels to insert
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: d|default=s
+@ARGUMENT: list
+@SUMMARY: Set the default expansion list.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: r|norep=s
+@ARGUMENT: list
+@SUMMARY: Set the <code>norep</code> expansion list ("no-repeat", meaning take second endings.)
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: l|labels
+@ARGUMENT: list
+@SUMMARY: Add labels in the specified measures.
+@@END: OPTION
+
+@@END: OPTIONS
+
+
+

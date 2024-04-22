@@ -338,6 +338,14 @@ entries:
       output: web, pdf
       url: /filter/url
 
+    - title: addkey
+      output: web, pdf
+      url: /filter/addkey
+
+    - title: addlabels
+      output: web, pdf
+      url: /filter/addlabels
+
     - title: addtempo
       output: web, pdf
       url: /filter/addtempo
