@@ -1,0 +1,21 @@
+@@BEGIN: OPTIONS
+@TOOL: addkey
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: k|key=s
+@ARGUMENT: keydesig
+@SUMMARY: Set the key designation in the header to specified value.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: K|reference-key=b
+@ARGUMENT: 
+@SUMMARY: Also update the <code>!!!key:</code> record with the <code>-k</code> key designation.
+@@END: OPTION
+
+@@END: OPTIONS
+
+
+
