@@ -366,6 +366,10 @@ entries:
       output: web, pdf
       url: /filter/chantize
 
+    - title: chint
+      output: web, pdf
+      url: /filter/chint
+
     - title: chooser
       output: web, pdf
       url: /filter/chooser
@@ -497,6 +501,10 @@ entries:
     - title: tspos
       output: web, pdf
       url: /filter/tspos
+
+    - title: vcross
+      output: web, pdf
+      url: /filter/vcross
 
 ###########################################################################
 

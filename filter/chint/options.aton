@@ -1,0 +1,89 @@
+@@BEGIN: OPTIONS
+@TOOL: chint
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: b|bottom-part=i:1
+@ARGUMENT: integer
+@SUMMARY: Select the bottom analysis staff.  The bottom staff is "1", and each
+	staff above it increases by one.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: t|top-part=i:$
+@ARGUMENT: integer
+@SUMMARY: Select the bottom analysis staff.  The bottom staff is "1", and each
+	staff above it increases by one.  To indicate the top staff where there
+	are any number of staves between the top and bottom staff, use "$" to 
+	indicate the highest staff on the system.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: i|interval=b
+@ARGUMENT: 
+@SUMMARY: Display intervals associated with the colors.   This will be
+	displayed above the top analysis staff (see <code>-m</code> option).
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: d|diatonic=b
+@ARGUMENT: 
+@SUMMARY: Display diatonic intervals rather than chromatic intervals.  For
+	example, display "1" instead of "P1", "3" instead of "m3" or "M3", and
+	so on.  Diminished and augmented intervals retain their chromatic
+	qualifiers.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: m|middle=b
+@ARGUMENT: 
+@SUMMARY: Display diatonic intervals below the top analysis staff (which is
+	in the middle between the two analysis staves if they are adjacent
+	on the system.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: n|negative=b
+@ARGUMENT: 
+@SUMMARY: When the voices cross, add a minus sign before the displayed intervals.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: 8|preserve-octave=b
+@ARGUMENT: 
+@SUMMARY: When the harmonic interval is a perfect octave (or two, etc.), do not
+       fully collapse to a perfect unison in the displayed intervals.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: T|no-color-top=b
+@ARGUMENT: 
+@SUMMARY: Do not colorize the top analysis staff notes.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: B|no-color-bottom=b
+@ARGUMENT: 
+@SUMMARY: Do not colorize the bottom analysis staff notes.
+@@END: OPTION
+
+@@BEGIN: OPTION
+@CATEGORY: 
+@DEFINITION: c|chromatic-coloring=b
+@ARGUMENT: 
+@SUMMARY: Alternate coloring for chromatic intervals.
+@@END: OPTION
+
+
+@@END: OPTIONS
+
+
+

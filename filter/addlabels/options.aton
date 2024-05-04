@@ -1,10 +1,6 @@
 @@BEGIN: OPTIONS
 @TOOL: addkey
 
-d|default=s:   Default expansion list
-r|norep=s:     norep expansion list
-l|labels=s:    List of labels to insert
-
 @@BEGIN: OPTION
 @CATEGORY: 
 @DEFINITION: d|default=s
