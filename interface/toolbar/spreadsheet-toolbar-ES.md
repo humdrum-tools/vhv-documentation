@@ -1,14 +1,23 @@
 
 
-<div class="toolbar" id="toolbar-6">
-	<input id="scriptid"  type="text" spellcheck="false" placeholder="ID de la secuencia de comandos de la hoja de cálculo">
-	<div title="Cargar los datos en la hoja de cálculo" onclick="uploadDataToSpreadsheet()" class='nav-icon fa fa-cloud-upload'></div>
-	<div title="Descargar los datos de la hoja de cálculo" class='nav-icon fa fa-cloud-download'></div>
-	<div title="Abrir la hoja de cálculo vinculada" class='nav-icon fa fa-file-text'></div>
-	<div title="Sobre las hojas de cálculo" onclick="showSpreadsheetHelp()" class='nav-icon fas fa-question-circle'></div>
-	<span id="line-break-icon" onclick="gotoNextToolbar(6, event)">
-		<div title="Ir al siguiente menú de herramientas (alt-n)" class='nav-icon fa fa-superpowers'></div>
-	</span>
+<div class="toolbar" id="toolbar-6">
+
+	<input id="scriptid"  type="text" spellcheck="false" placeholder="ID de la secuencia de comandos de la hoja de cálculo">
+
+	<div title="Cargar los datos en la hoja de cálculo" onclick="uploadDataToSpreadsheet()" class='nav-icon fa fa-cloud-upload'></div>
+
+	<div title="Descargar los datos de la hoja de cálculo" class='nav-icon fa fa-cloud-download'></div>
+
+	<div title="Abrir la hoja de cálculo vinculada" class='nav-icon fa fa-file-text'></div>
+
+	<div title="Sobre las hojas de cálculo" onclick="showSpreadsheetHelp()" class='nav-icon fas fa-question-circle'></div>
+
+	<span id="line-break-icon" onclick="gotoNextToolbar(6, event)">
+
+		<div title="Ir al siguiente menú de herramientas (alt-n)" class='nav-icon fa fa-superpowers'></div>
+
+	</span>
+
 </div>
 
 <br><br>
@@ -22,13 +31,20 @@ en la parte superior de la hoja mientras se edita más abajo en la partitura.
 
 <table class="toolbar-info">
 
-<tr><td>
-<div style="font-size:3rem !important;" class="toolbar">
-	<span id="search-group">
-		<input id="scriptid2" type="text" autocomplete="off" spellcheck="false" placeholder="ID de la secuencia de comandos">
-	</span>
-</div>
-</td>
+<tr><td>
+
+<div style="font-size:3rem !important;" class="toolbar">
+
+	<span id="search-group">
+
+		<input id="scriptid2" type="text" autocomplete="off" spellcheck="false" placeholder="ID de la secuencia de comandos">
+
+	</span>
+
+</div>
+
+</td>
+
 <td>
 
     <span class="summary-icon">Identificación de la secuencia de comandos de la hoja de cálculo.</span>
@@ -37,15 +53,21 @@ en la parte superior de la hoja mientras se edita más abajo en la partitura.
     para saber cómo crear una secuencia de comandos (script) y obtener su ID para pegarlo en este cuadro con el fin de
     conectarse a una hoja de cálculo en particular.
 
-</td>
+</td>
+
 </tr>
 
 
-<tr><td>
-<div class="toolbar">
-	<div title="Cargar el contenido del editor en la hoja de cálculo" class='nav-icon fa fa-cloud-upload'></div>
-</div>
-</td>
+<tr><td>
+
+<div class="toolbar">
+
+	<div title="Cargar el contenido del editor en la hoja de cálculo" class='nav-icon fa fa-cloud-upload'></div>
+
+</div>
+
+</td>
+
 <td>
 
     <span class="summary-icon">Subir a la hoja de cálculo.</span>
@@ -55,16 +77,22 @@ en la parte superior de la hoja mientras se edita más abajo en la partitura.
     para evitar el filtro del tabulador, que también permite cargar datos Humdrum no válidos
     (que podrían ser más fáciles de arreglar en la hoja de cálculo).
 
-</td>
+</td>
+
 </tr>
 
 
 
-<tr><td>
-<div class="toolbar">
-	<div title="Descargar el contenido de la hoja de cálculo al editor" class='nav-icon fa fa-cloud-download'></div>
-</div>
-</td>
+<tr><td>
+
+<div class="toolbar">
+
+	<div title="Descargar el contenido de la hoja de cálculo al editor" class='nav-icon fa fa-cloud-download'></div>
+
+</div>
+
+</td>
+
 <td>
 
     <span class="summary-icon">Descargar de la hoja de cálculo.</span>
@@ -74,16 +102,22 @@ en la parte superior de la hoja mientras se edita más abajo en la partitura.
     para evitar el filtro del tabulador, que también permite descargar datos no válidos
     (que podrían ser más fáciles de arreglar en el editor de texto).
 
-</td>
+</td>
+
 </tr>
 
 
 
-<tr><td>
-<div class="toolbar">
-	<div title="Abrir la hoja de cálculo vinculada" class='nav-icon fa fa-file-text'></div>
-</div>
-</td>
+<tr><td>
+
+<div class="toolbar">
+
+	<div title="Abrir la hoja de cálculo vinculada" class='nav-icon fa fa-file-text'></div>
+
+</div>
+
+</td>
+
 <td>
 
     <span class="summary-icon">Abrir hoja de cálculo vinculada.</span>
@@ -94,39 +128,54 @@ en la parte superior de la hoja mientras se edita más abajo en la partitura.
     aparecerá, y puedes hacer clic en él para abrir la hoja de cálculo
     en otra pestaña.
 
-</td>
+</td>
+
 </tr>
 
 
 
-<tr><td>
-<div class="toolbar">
-	<div title="Sobre la barra de herramientas" class='nav-icon fa fa-question-circle'></div>
-</div>
-</td>
+<tr><td>
+
+<div class="toolbar">
+
+	<div title="Sobre la barra de herramientas" class='nav-icon fa fa-question-circle'></div>
+
+</div>
+
+</td>
+
 <td>
 
     <span class="summary-icon"><a href="spreadsheet">Documentación de la barra de herramientas de la hoja de cálculo.</a></span>
 
-</td>
+</td>
+
 </tr>
 
 
 
-<tr><td>
-<div class="toolbar">
-	<div title="Ir al siguiente menú de herramientas (alt-n)" class='nav-icon fa fa-superpowers'></div>
-</div>
-	<span class="keypress">alt-n</span>
-	<span class="keypress">#-alt-n</span>
-</td>
+<tr><td>
+
+<div class="toolbar">
+
+	<div title="Ir al siguiente menú de herramientas (alt-n)" class='nav-icon fa fa-superpowers'></div>
+
+</div>
+
+	<span class="keypress">alt-n</span>
+
+	<span class="keypress">#-alt-n</span>
+
+</td>
+
 <td>
 
     <span class="summary-icon">Ir a la siguiente barra de herramientas.</span>
     
     Para volver a esta barra de herramientas directamente, pulsa <span class="keypress">6+alt-n</span>.
 
-</td>
+</td>
+
 </tr>
 
 </table>

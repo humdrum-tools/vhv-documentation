@@ -50,6 +50,10 @@ entries:
       output: web, pdf
       url: /interface/help_menu
 
+    - title: Page modes
+      output: web, pdf
+      url: /interface/page-modes
+
     - title: Toolbar
       output: web, pdf
       url: /interface/toolbar
