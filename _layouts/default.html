@@ -117,23 +117,6 @@ var VEROVIO_QUEUE = [];
 
 var vrvToolkit;
 
-/* 
-var Module = {
-    onRuntimeInitialized: function() {
-			vrvToolkit = new verovio.toolkit();
-			console.log(`Verovio (WASM) ${vrvToolkit.getVersion()} loaded`);
-
-			console.log("QUEUE", VEROVIO_QUEUE);
-			for (var z=0; z<VEROVIO_QUEUE.length; z++) {
-				// console.log("RUNNING QUEUED JOB", VEROVIO_QUEUE[z]);
-				updateSvgDisplay(VEROVIO_QUEUE[z].id, VEROVIO_QUEUE[z].options);
-			}
-			VEROVIO_QUEUE = [];
-
-		}
-};
-*/
-
 function initializeVerovioScript() {
 	verovio.module.onRuntimeInitialized = () => {
 		vrvToolkit = new verovio.toolkit();

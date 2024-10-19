@@ -170,9 +170,20 @@ Most pages on this website have editing buttons that can be used
 to fix typos or add content, provided you have a <a
 href="https://github.com">Github</a> account.
 
-## Presentations ##
+## Presentation slides ##
 
 <dl>
+
+<dt><a target="_blank" href="https://bit.ly/IDMC-humdrum-1">Introduction to Humdrum</a> <br>
+    <a target="_blank" href="https://bit.ly/IDMC-humdrum-2">Advanced Humdrum</a> <br>
+</dt>
+<dd> Humdrum workshops at the International Digital Musicology Conference, Warsaw, Poland (23–25 October 2024). </dd>
+
+<dt><a target="_blank" href="https://bit.ly/kobe-humdrum-1">Day 1</a> (Humdrum data format and VHV) <br>
+    <a target="_blank" href="https://bit.ly/kobe-humdrum-2">Day 2</a> (VHV filters) <br>
+    <a target="_blank" href="https://bit.ly/kobe-humdrum-3">Day 3</a> (using command-line tools) <br>
+</dt>
+<dd> Humdrum workshop at Kobe University (20–22 November 2023). </dd>
 
 <dt><a target="_blank" href="http://bit.ly/mec2021-humdrum">MEC
 2021 Humdrum workshop</a></dt> <dd> Humdrum workshop at the 2021

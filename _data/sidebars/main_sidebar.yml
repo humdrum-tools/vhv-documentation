@@ -342,6 +342,10 @@ entries:
       output: web, pdf
       url: /filter/url
 
+    - title: addic
+      output: web, pdf
+      url: /filter/addic
+
     - title: addkey
       output: web, pdf
       url: /filter/addkey

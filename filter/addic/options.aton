@@ -1,0 +1,13 @@
+
+@@BEGIN:	OPTIONS
+@TOOL:		autoaccid
+
+@@BEGIN:	OPTION
+@CATEGORY:	General options
+@DEFINITION:	f|fix=b
+@SUMMARY:	Fix incorrect instrument class entries.
+@@END: 		OPTION
+
+@@END:	OPTIONS
+
+
