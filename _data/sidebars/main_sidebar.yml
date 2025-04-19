@@ -366,6 +366,10 @@ entries:
       output: web, pdf
       url: /filter/autobeam
 
+    - title: autocadence
+      output: web, pdf
+      url: /filter/autocadence
+
     - title: autostem
       output: web, pdf
       url: /filter/autostem

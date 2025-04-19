@@ -1,0 +1,78 @@
+@@BEGIN:	OPTIONS
+@TOOL:		autocadence
+
+@@BEGIN:	OPTION
+@DEFINITION:	c|color-cadence-notes=b
+@SUMMARY:	Color notes involved in cadential definitions.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	d|show-fourmla-index=b
+@SUMMARY:	Append cadential formula index after CVF label.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	e|even-note-spacing=b
+@SUMMARY:	Compress notation as much as possible.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	i|include-intervals=b
+@SUMMARY:	Display interval strings for notes in score (no further analysis).
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	l|lowest=b
+@SUMMARY:	Use fourth above lowest note for dissonance label instead of suspensions.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	m|matches=b
+@SUMMARY:	Give list of matching sequences only.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	p|pitches=b
+@SUMMARY:	Display extracted base-7 pitches only.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	r|regex=b
+@SUMMARY:	Display table of cadence formula regexes.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	s|sequences=b
+@SUMMARY:	Give list of extracted sequences only.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	B|no-back-highlight=b
+@SUMMARY:	Do not color start of sustain note at start of cadence definition.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	I|intervals-only=b
+@SUMMARY:	Display interval strings for notes in score (no further analysis).
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	S|do-not-show-suspensions=b   
+@SUMMARY:	Do not show suspensions/agents.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	color=s:dodgerblue
+@SUMMARY:	Color cadence formula notes with given color.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	count|match-count=b
+@SUMMARY:	Return number of cadence formulas that match.
+@@END: 		OPTION
+
+
+@@END:		OPTIONS
+
+
+
