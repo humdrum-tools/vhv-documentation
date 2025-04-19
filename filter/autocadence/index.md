@@ -250,6 +250,23 @@ The `-r` option will show all a list of all of the cadential definitions
 found in the score.
 
 
-score
+
+## Tips ##
+
+To compare lowest-note identification of dissonant fourths compared to suspension identification
+of dissonant fourths, use this filter:
+
+```
+autocadence -clidr | autocadence -dS --color orange 
+```
+
+To remove lyric text before analysis, use `extract -i kern`:
+
+```
+extract -i kern | autocadence -cldr | autocadence -dS --color orange 
+```
+
+
+
 
 
