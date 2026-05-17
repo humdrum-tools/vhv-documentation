@@ -40,19 +40,114 @@ flags are necessary, but if you wish you can explicitly specify it with `-l`
 %}
 <script type="text/x-humdrum" id="basic-lowest">
 !!!filter: extremis
+!!!COM: Bach, Johann Sebastian
+!!!CDT: 1685/3/-1750/7/28
+!!!OPR@@DE: Das wohltemperierte Klavier
+!!!OPR@EN: The Well-Tempered Clavier
+!!!OTL: The Well-Tempered Clavier, Book 1, Fugue 1 in C major
+!!!SCT: BWV 846b
+!!!parts: 4
 **kern	**kern	**kern	**kern
-*clefF4	*clefC3	*clefG2	*clefG2
-*M4/4	*M4/4	*M4/4	*M4/4
+*staff2	*staff2	*staff1	*staff1
+*clefF4	*clefF4	*clefG2	*clefG2
 *k[]	*k[]	*k[]	*k[]
-4C	4G	4e	4g
-4D	4F	4d	4a
-4E	4G	4c	4b
-4C	4E	4g	4cc
+*M4/4	*M4/4	*M4/4	*M4/4
+*C:	*C:	*C:	*C:
+*MM62	*MM62	*MM62	*MM62
+=1	=1	=1	=1
+1r	1r	8r	1r
+.	.	8c	.
+.	.	8dL	.
+.	.	8eJ	.
+.	.	8.fL	.
+.	.	32g	.
+.	.	32fJ	.
+.	.	8eL	.
+.	.	8aJ	.
 =2	=2	=2	=2
-4F	4A	4f	4cc
-4G	4G	4e	4b
-4A	4F	4d	4a
-4G	4E	4e	4b
+1r	1r	8dL	2r
+.	.	[8gJ	.
+.	.	16g]L	.
+.	.	16a	.
+.	.	16g	.
+.	.	16fJ	.
+.	.	16eL	8r
+.	.	16f	.
+.	.	16e	8g
+.	.	16dJ	.
+.	.	16cL	8aL
+.	.	16d	.
+.	.	16c	8bJ
+.	.	16BJ	.
+=3	=3	=3	=3
+1r	1r	8AL	8.ccL
+.	.	8f#J	.
+.	.	.	32dd
+.	.	.	32ccJ
+.	.	[4g	8bL
+.	.	.	8eeJ
+.	.	8g]L	8aL
+.	.	16f#	[8ddJ
+.	.	16eJ	.
+.	.	8f#L	16dd]L
+.	.	.	16ee
+.	.	8dJ	16dd
+.	.	.	16ccJ
+=4	=4	=4	=4
+1r	8r	8gL	16bL
+.	.	.	16g
+.	8G	8fnJ	16a
+.	.	.	16bJ
+.	8AL	8eL	16ccL
+.	.	.	16b
+.	8BJ	8dJ	16cc
+.	.	.	16ddJ
+.	8.cL	8c	16eeL
+.	.	.	16dd
+*	*	*strophe	*
+*	*	*^	*
+*	*	*S/sic	*S/ossia	*
+.	.	8r	8axxL	16ee
+.	32d	.	.	16ff#J
+.	32cJ	.	.	.
+.	8BL	8r	8dxxJ	8ggL
+*	*	*v	*v	*
+*	*	*Xstrophe	*
+.	8eJ	[8g	8bJ
+=5	=5	=5	=5
+2r	8AL	8g]L	8ccL
+.	[8dJ	16f	8aJ
+.	.	16eJ	.
+.	16d]L	[4f	16ddL
+.	16e	.	16cc
+.	16d	.	16b
+.	16cJ	.	16aJ
+8r	8BL	16f]L	8.gL
+.	.	16f	.
+8C	[8cJ	8eJ	.
+.	.	.	16gJ
+8DL	8c]L	4d	16fL
+.	.	.	16e
+8EJ	8B-J	.	16f
+.	.	.	16gJ
+=6	=6	=6	=6
+8.FL	8AL	8cL	16aL
+.	.	.	16g
+.	8dJ	8fJ	16a
+32G	.	.	16bJ
+32FJ	.	.	.
+8EL	8GL	16r	2cc
+.	.	16gL	.
+8AJ	8cJ	16f	.
+.	.	16eJ	.
+8DL	16r	8fL	.
+.	16AL	.	.
+[8GJ	16B	8dJ	.
+.	16cJ	.	.
+16G]L	4d	[4g	4b
+16A	.	.	.
+16G	.	.	.
+16FJ	.	.	.
 ==	==	==	==
 *-	*-	*-	*-
 </script>
@@ -72,19 +167,114 @@ sounding pitches instead.  The synthetic spine uses a treble clef (`*clefG2`).
 %}
 <script type="text/x-humdrum" id="highest-pitch">
 !!!filter: extremis -h
+!!!COM: Bach, Johann Sebastian
+!!!CDT: 1685/3/-1750/7/28
+!!!OPR@@DE: Das wohltemperierte Klavier
+!!!OPR@EN: The Well-Tempered Clavier
+!!!OTL: The Well-Tempered Clavier, Book 1, Fugue 1 in C major
+!!!SCT: BWV 846b
+!!!parts: 4
 **kern	**kern	**kern	**kern
-*clefF4	*clefC3	*clefG2	*clefG2
-*M4/4	*M4/4	*M4/4	*M4/4
+*staff2	*staff2	*staff1	*staff1
+*clefF4	*clefF4	*clefG2	*clefG2
 *k[]	*k[]	*k[]	*k[]
-4C	4G	4e	4g
-4D	4F	4d	4a
-4E	4G	4c	4b
-4C	4E	4g	4cc
+*M4/4	*M4/4	*M4/4	*M4/4
+*C:	*C:	*C:	*C:
+*MM62	*MM62	*MM62	*MM62
+=1	=1	=1	=1
+1r	1r	8r	1r
+.	.	8c	.
+.	.	8dL	.
+.	.	8eJ	.
+.	.	8.fL	.
+.	.	32g	.
+.	.	32fJ	.
+.	.	8eL	.
+.	.	8aJ	.
 =2	=2	=2	=2
-4F	4A	4f	4cc
-4G	4G	4e	4b
-4A	4F	4d	4a
-4G	4E	4e	4b
+1r	1r	8dL	2r
+.	.	[8gJ	.
+.	.	16g]L	.
+.	.	16a	.
+.	.	16g	.
+.	.	16fJ	.
+.	.	16eL	8r
+.	.	16f	.
+.	.	16e	8g
+.	.	16dJ	.
+.	.	16cL	8aL
+.	.	16d	.
+.	.	16c	8bJ
+.	.	16BJ	.
+=3	=3	=3	=3
+1r	1r	8AL	8.ccL
+.	.	8f#J	.
+.	.	.	32dd
+.	.	.	32ccJ
+.	.	[4g	8bL
+.	.	.	8eeJ
+.	.	8g]L	8aL
+.	.	16f#	[8ddJ
+.	.	16eJ	.
+.	.	8f#L	16dd]L
+.	.	.	16ee
+.	.	8dJ	16dd
+.	.	.	16ccJ
+=4	=4	=4	=4
+1r	8r	8gL	16bL
+.	.	.	16g
+.	8G	8fnJ	16a
+.	.	.	16bJ
+.	8AL	8eL	16ccL
+.	.	.	16b
+.	8BJ	8dJ	16cc
+.	.	.	16ddJ
+.	8.cL	8c	16eeL
+.	.	.	16dd
+*	*	*strophe	*
+*	*	*^	*
+*	*	*S/sic	*S/ossia	*
+.	.	8r	8axxL	16ee
+.	32d	.	.	16ff#J
+.	32cJ	.	.	.
+.	8BL	8r	8dxxJ	8ggL
+*	*	*v	*v	*
+*	*	*Xstrophe	*
+.	8eJ	[8g	8bJ
+=5	=5	=5	=5
+2r	8AL	8g]L	8ccL
+.	[8dJ	16f	8aJ
+.	.	16eJ	.
+.	16d]L	[4f	16ddL
+.	16e	.	16cc
+.	16d	.	16b
+.	16cJ	.	16aJ
+8r	8BL	16f]L	8.gL
+.	.	16f	.
+8C	[8cJ	8eJ	.
+.	.	.	16gJ
+8DL	8c]L	4d	16fL
+.	.	.	16e
+8EJ	8B-J	.	16f
+.	.	.	16gJ
+=6	=6	=6	=6
+8.FL	8AL	8cL	16aL
+.	.	.	16g
+.	8dJ	8fJ	16a
+32G	.	.	16bJ
+32FJ	.	.	.
+8EL	8GL	16r	2cc
+.	.	16gL	.
+8AJ	8cJ	16f	.
+.	.	16eJ	.
+8DL	16r	8fL	.
+.	16AL	.	.
+[8GJ	16B	8dJ	.
+.	16cJ	.	.
+16G]L	4d	[4g	4b
+16A	.	.	.
+16G	.	.	.
+16FJ	.	.	.
 ==	==	==	==
 *-	*-	*-	*-
 </script>
