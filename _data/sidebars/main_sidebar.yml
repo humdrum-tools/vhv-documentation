@@ -418,6 +418,10 @@ entries:
       output: web, pdf
       url: /filter/extract
 
+    - title: extremis
+      output: web, pdf
+      url: /filter/extremis
+
     - title: fb
       output: web, pdf
       url: /filter/fb

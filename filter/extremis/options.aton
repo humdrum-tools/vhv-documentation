@@ -1,0 +1,19 @@
+@@BEGIN:	OPTIONS
+@TOOL:		extremis
+
+@@BEGIN:	OPTION
+@DEFINITION:	l|low|lowest=b
+@SUMMARY:	Extract lowest sounding pitches (default behavior).
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	h|high|highest=b
+@SUMMARY:	Extract highest sounding pitches.
+@@END: 		OPTION
+
+@@BEGIN:	OPTION
+@DEFINITION:	b|both=b
+@SUMMARY:	Extract both lowest and highest sounding pitches.
+@@END: 		OPTION
+
+@@END:		OPTIONS
