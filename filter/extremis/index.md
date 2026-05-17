@@ -9,7 +9,7 @@ ref: filters-extremis
 tags: [all, filters]
 sidebar: main_sidebar
 verovio: "true"
-keywords: interface commands analysis extremis
+keywords: interface commands analysis extremis continuo figured bass
 summary: 
 permalink: /filter/extremis/index.html
 ---
