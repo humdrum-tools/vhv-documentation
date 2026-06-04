@@ -16,30 +16,43 @@ measure&nbsp;1:
 *clefG2
 =1
 1c
+!LO:TX:b:rj:vg=5:t=plain
 =2
 1d
-=3
+!LO:TX:b:vg=5:t=double
+=3||
 1e
+!LO:TX:b:vg=5:t=invisible
 =4
 1f
-=5
+!LO:TX:b:vg=5:t=fermata
+=5;
 1g
-=6
+!LO:TX:b:vg=5:t=double fermata
+=6;;
 1a
-=7
+!LO:TX:b:vg=5:t=dash
+=6:
 1b
-=8
+!LO:TX:b:vg=5:t=breath
+=7,
 1cc
-=9
-1dd
-=10
-1ee
-=11
-1ff
-=12
-1gg
-=
+!LO:TX:b:vg=5:t=dotted
+=8.
+1g
+!LO:TX:b:vg=5:t=repeat-left
+=5!|:
+1g
+!LO:TX:b:vg=5:t=rpeat-both
+=6:|!|:
+1a
+!LO:TX:b:vg=5:t=repeat-right
+=7:|!
+1b
+!LO:TX:rj:a:vg=5:t=final:vj=5
+==
 *-
+!!!verovio: spacingLinear 0.7
 </script>
 
 
@@ -122,3 +135,6 @@ the duration of the pickup measure:
 ==
 *-
 </script>
+
+
+
