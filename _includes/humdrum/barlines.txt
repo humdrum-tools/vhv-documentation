@@ -16,6 +16,50 @@ measure&nbsp;1:
 *clefG2
 =1
 1c
+=2
+1d
+=3
+1e
+=4
+1f
+=5
+1g
+=6
+1a
+=7
+1b
+=8
+1cc
+=9
+1dd
+=10
+1ee
+=11
+1ff
+=12
+1gg
+=
+*-
+</script>
+
+
+Following the measure number can be an optional styling for the barline. `-` means an
+invisible barline, `||` is a double thin barline, `|!:` is a left-repeat, 
+`:|!|:` is a left-right repeat.  A special style is `==`, representing a final
+barline.  This bar usually does not include a bar number, since it is the last
+one in the piece/movement.
+
+{% include verovio.html
+	source="bar2"
+	scale="55"
+	humdrum-min-height="340px"
+	pageWidth="900"
+%}
+<script type="application/x-humdrum" id="bar2">
+**kern
+*clefG2
+=1
+1c
 !LO:TX:b:rj:vg=5:t=plain
 =2
 1d
@@ -53,40 +97,6 @@ measure&nbsp;1:
 ==
 *-
 !!!verovio: spacingLinear 0.7
-</script>
-
-
-Following the measure number can be an optional styling for the barline. `-` means an
-invisible barline, `||` is a double thin barline, `|!:` is a left-repeat, 
-`:|!|:` is a left-right repeat.  A special style is `==`, representing a final
-barline.  This bar usually does not include a bar number, since it is the last
-one in the piece/movement.
-
-{% include verovio.html
-	source="bar2"
-	scale="55"
-	humdrum-min-height="340px"
-	pageWidth="900"
-%}
-<script type="application/x-humdrum" id="bar2">
-**kern
-*clefG2
-=1
-1c
-=2-
-1d
-=3||
-1e
-=4
-1f
-=5!|:
-1g
-=6:|!|:
-1a
-=7:|!
-1b
-==
-*-
 </script>
 
 
