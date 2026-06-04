@@ -23,13 +23,9 @@ and `**text` for lyrics.  Also see other pages in the *Humdrum
 encoding* section of the navigation menu for special encoding topics
 (to the left or above).
 
-Each musical example in the tutorial below is interactive, so trying
-tweaking the examples to see what happens.  A text box containing
-the Humdrum data used to produce the notation is given on the left
-side of each notation example.  The text in these boxes is editable,
-and changing the text will update the notation as you type.
-[If the notation no longer updates when editing the Humdrum text,
-you will have to reload the webpage to restart verovio again.]
+{% include note.html
+	content=" Each musical example in the tutorial below is interactive, so trying tweaking the examples to see what happens.  A text box containing the Humdrum data used to produce the notation is given on the left side of each notation example.  The text in these boxes is editable, and changing the text will update the notation as you type.  [If the notation no longer updates when editing the Humdrum text, you will have to reload the webpage to restart verovio again.]"
+%}
 
 {% include humdrum/pitch.txt %}
 {% include humdrum/clefs.txt %}
