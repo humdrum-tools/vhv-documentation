@@ -458,6 +458,10 @@ entries:
       output: web, pdf
       url: /filter/meter
 
+    - title: mint
+      output: web, pdf
+      url: /filter/mint
+
     - title: modori
       output: web, pdf
       url: /filter/modori
