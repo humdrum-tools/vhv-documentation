@@ -1,0 +1,46 @@
+@@BEGIN: OPTIONS
+@TOOL: mint
+
+@@BEGIN: OPTION
+@DEFINITION: a|absolute=b
+@ARGUMENT:
+@SUMMARY: Hide the direction (+/-) of the interval
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: c|compound=b
+@ARGUMENT:
+@SUMMARY: Reduce compound intervals to simple intervals (within an octave)
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: d|diatonic=b
+@ARGUMENT:
+@SUMMARY: Show only the diatonic interval number, without its quality
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: l|lowest=b
+@ARGUMENT:
+@SUMMARY: Use the lowest note of a chord instead of the highest note
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: x|cdata=b
+@ARGUMENT:
+@SUMMARY: Label the output spine **cdata-mint instead of **mint
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: k|kern-tracks=s
+@ARGUMENT:
+@SUMMARY: Process only the specified kern spines
+@@END: OPTION
+
+@@BEGIN: OPTION
+@DEFINITION: s|spine=s
+@ARGUMENT:
+@SUMMARY: Process only the specified spines
+@@END: OPTION
+
+@@END: OPTIONS
